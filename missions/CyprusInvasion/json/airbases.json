@@ -1,0 +1,60 @@
+{
+    "AIRBASE-1": {
+        "component": "airbase",
+        "label": "Akrotiri",
+        "radius": 2300.0208,
+        "ship_groups": [],
+        "static_groups": [
+            "Akrotiri Airwing Warehouse"
+        ],
+        "vehicle_groups": [
+            "AIRBASE Support 1",
+            "AIRBASE Support 1-2",
+            "AIRBASE Support 1-3",
+            "FARP MASH 1-3",
+            "FARP MASH 1-4",
+            "FARP MASH 1-5"
+        ],
+        "x": -35801.632508829,
+        "y": -269213.50220033
+    },
+    "AIRBASE-2": {
+        "component": "airbase",
+        "label": "Paphos",
+        "radius": 2000,
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicle_groups": [
+            "AIRBASE Support 1-1",
+            "FARP MASH 1-10",
+            "FARP MASH 1-11",
+            "FARP MASH 1-7",
+            "FARP MASH 1-8",
+            "FARP MASH 1-9"
+        ],
+        "x": -18608.350455741,
+        "y": -314346.45856857
+    },
+    "AIRBASE-3": {
+        "component": "airbase",
+        "label": "Larnaca",
+        "radius": 2000,
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicle_groups": [
+            "AIRBASE Support 1-4",
+            "AIRBASE Support 1-5",
+            "AIRBASE Support 1-6",
+            "AIRBASE Support 1-7",
+            "FARP MASH 1-12",
+            "FARP MASH 1-13",
+            "FARP MASH 1-14",
+            "FARP MASH 1-15",
+            "FARP MASH 1-16",
+            "FARP MASH 1-17",
+            "FARP MASH 1-18"
+        ],
+        "x": -7688.4182977514,
+        "y": -208827.88085964
+    }
+}

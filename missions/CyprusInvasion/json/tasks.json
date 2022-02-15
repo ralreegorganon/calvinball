@@ -1,0 +1,451 @@
+{
+    "TASK-1": {
+        "auftrag": "ANTISHIP",
+        "completeSound": "",
+        "component": "task",
+        "description": "The tanker 'Seawise Giant' is offshore preparing to deliver critical fuel supplies. Destroy it before it can resupply the enemy.",
+        "groupTargetNameContains": "CLOWNS",
+        "label": "Deny Fuel Resupply",
+        "ship_groups": [
+            "RED NAVAL 1",
+            "RED NAVAL 1-1",
+            "RED NAVAL 1-2",
+            "RED NAVAL 1-3",
+            "RED NAVAL 1-4",
+            "RED NAVAL 1-5",
+            "RED NAVAL 1-6",
+            "RED NAVAL 1-7",
+            "RED NAVAL 1-8",
+            "TASK-1-CLOWNS-1"
+        ],
+        "staticTargetNameContains": "",
+        "static_groups": [],
+        "targetUnitTypes": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -35526.334397309,
+                "y": -291519.84663419
+            },
+            {
+                "x": -35228.100296178,
+                "y": -290958.09351249
+            },
+            {
+                "x": -34519.597061216,
+                "y": -291581.38700427
+            },
+            {
+                "x": -34783.116081792,
+                "y": -292192.05683039
+            }
+        ],
+        "x": -35014.286959124,
+        "y": -291562.84599534
+    },
+    "TASK-10": {
+        "auftrag": "ANTISHIP",
+        "completeSound": "",
+        "component": "task",
+        "description": "A small floatilla of missile boats has been wreaking havoc with merchant shipping.  We are not sure of their exact position, but it is somewhere off the shore West of Patos.  Sink their oiler too, for good measure. ",
+        "groupTargetNameContains": "MBOAT1",
+        "label": "Sink Missile Boats",
+        "ship_groups": [
+            "MBOAT1"
+        ],
+        "staticTargetNameContains": "",
+        "static_groups": [],
+        "targetUnitTypes": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -7483.7926915358,
+                "y": -337661.90730912
+            },
+            {
+                "x": -5337.7477776983,
+                "y": -334256.343902
+            },
+            {
+                "x": -2840.5762215802,
+                "y": -334905.20511308
+            },
+            {
+                "x": -4986.1540753651,
+                "y": -338930.65458489
+            }
+        ],
+        "x": -5162.0676915448,
+        "y": -336438.52772727
+    },
+    "TASK-11": {
+        "auftrag": "BOMBING",
+        "completeSound": "",
+        "component": "task",
+        "description": "A hateful demagogue, no doubt under the sway of Jae, is dispensing his wrathful gospel upon the people of this area.  The only option is to blow up the Orthodox Church he calls home.",
+        "groupTargetNameContains": "",
+        "label": "Destroy Hateful Mouthpiece",
+        "sceneryTargetZoneNames": [],
+        "ship_groups": [],
+        "staticTargetNameContains": "HATEFULIMAM1",
+        "static_groups": [
+            "HATEFULIMAM1"
+        ],
+        "targetUnitTypes": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -26571.172126979,
+                "y": -263479.23056907
+            },
+            {
+                "x": -26553.091316448,
+                "y": -263369.94211431
+            },
+            {
+                "x": -26485.99141959,
+                "y": -263410.52348905
+            },
+            {
+                "x": -26521.751244862,
+                "y": -263488.87366802
+            }
+        ],
+        "x": -26533.00152697,
+        "y": -263437.14246011
+    },
+    "TASK-12": {
+        "auftrag": "BOMBING",
+        "completeSound": "",
+        "component": "task",
+        "description": "The data center has the only copy of the Remedy source code, destroy it and ensure it can never be used again!",
+        "groupTargetNameContains": "",
+        "label": "Destroy Data Center",
+        "sceneryTargetZoneNames": [],
+        "ship_groups": [],
+        "staticTargetNameContains": "TASK12REMEDY",
+        "static_groups": [
+            "TASK12REMEDY"
+        ],
+        "targetUnitTypes": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -1727.7470271342,
+                "y": -208563.27724382
+            },
+            {
+                "x": -1726.910110811,
+                "y": -208500.92697774
+            },
+            {
+                "x": -1663.7229284084,
+                "y": -208503.43772671
+            },
+            {
+                "x": -1667.9075100245,
+                "y": -208565.36953463
+            }
+        ],
+        "x": -1696.5718940945,
+        "y": -208533.25287073
+    },
+    "TASK-2": {
+        "auftrag": "SEAD",
+        "completeSound": "",
+        "component": "task",
+        "description": "Destroy the radars at the SA-2 battery on Mount Olympos.",
+        "groupTargetNameContains": "THUNDER",
+        "label": "Destroy SA-2 Battery",
+        "ship_groups": [],
+        "staticTargetNameContains": "",
+        "static_groups": [],
+        "targetUnitTypes": [
+            "SNR_75V",
+            "p-19 s-125 sr"
+        ],
+        "vehicle_groups": [
+            "RED EWR 1",
+            "RED SAM SA-2 THUNDER 1"
+        ],
+        "vertices": [
+            {
+                "x": 2981.706484162,
+                "y": -278513.24537787
+            },
+            {
+                "x": 2866.7879234616,
+                "y": -277758.0662647
+            },
+            {
+                "x": 3499.9106771341,
+                "y": -277734.51152865
+            },
+            {
+                "x": 3589.8469420301,
+                "y": -278359.78270365
+            }
+        ],
+        "x": 3234.563006697,
+        "y": -278091.40146872
+    },
+    "TASK-3": {
+        "auftrag": "BOMBING",
+        "completeSound": "",
+        "component": "task",
+        "description": "Disrupt enemy communications by destroying the comms tower located in the industrial complex north of Ypsonas.",
+        "groupTargetNameContains": "",
+        "label": "Destroy Comms Tower #1",
+        "sceneryTargetZoneNames": [],
+        "ship_groups": [],
+        "staticTargetNameContains": "TASK3TALKER",
+        "static_groups": [
+            "RED TASK-3 TASK3TALKER COMMS TOWER-1",
+            "Static Container 20ft-1",
+            "Static Container 40ft-1",
+            "Static Container 40ft-2",
+            "Static Electric power box-1",
+            "Static Excavator-1",
+            "Static FARP Tent-3",
+            "Static FARP Tent-4",
+            "Static Fuel tank-1",
+            "Static Road outpost-2"
+        ],
+        "targetUnitTypes": [],
+        "vehicle_groups": [
+            "RED GROUND TASK-3 1"
+        ],
+        "vertices": [
+            {
+                "x": -22699.459348376,
+                "y": -271260.33748012
+            },
+            {
+                "x": -22695.606014252,
+                "y": -270758.11959935
+            },
+            {
+                "x": -22399.541509088,
+                "y": -270779.95515938
+            },
+            {
+                "x": -22396.972619672,
+                "y": -271341.89971907
+            }
+        ],
+        "x": -22547.894872847,
+        "y": -271035.07798948
+    },
+    "TASK-4": {
+        "auftrag": "CSAR",
+        "completeSound": "",
+        "component": "task",
+        "description": "Do the thing.",
+        "label": "Evacuate Medical Staff",
+        "ship_groups": [],
+        "static_groups": [],
+        "targetName": "Dr. Feelgood",
+        "targetZone": "MEDSTAFFEVAC-1",
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -22729.249620167,
+                "y": -268686.27150988
+            },
+            {
+                "x": -22690.692947086,
+                "y": -268615.66597626
+            },
+            {
+                "x": -22626.741526383,
+                "y": -268649.77340063
+            },
+            {
+                "x": -22662.554321977,
+                "y": -268722.25167743
+            }
+        ],
+        "x": -22677.309603903,
+        "y": -268668.49064105
+    },
+    "TASK-5": {
+        "auftrag": "BOMBING",
+        "completeSound": "",
+        "component": "task",
+        "description": "Disrupt enemy olive oil by destroying the olive oil factory.  It is vital to the war effort.",
+        "groupTargetNameContains": "",
+        "label": "Destroy Olive Oil Factory",
+        "sceneryTargetZoneNames": [],
+        "ship_groups": [],
+        "staticTargetNameContains": "OLIVEOIL1",
+        "static_groups": [
+            "OLIVEOIL1"
+        ],
+        "targetUnitTypes": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -25079.947079501,
+                "y": -263517.68158693
+            },
+            {
+                "x": -25037.812749545,
+                "y": -263445.19625658
+            },
+            {
+                "x": -24951.758736667,
+                "y": -263477.68968053
+            },
+            {
+                "x": -24989.251148916,
+                "y": -263576.59823475
+            }
+        ],
+        "x": -25014.692428657,
+        "y": -263504.2914397
+    },
+    "TASK-6": {
+        "auftrag": "BOMBING",
+        "completeSound": "",
+        "component": "task",
+        "description": "A clique of notorious gamers has taken up residence in a beachfront apartment, paid for by wealthy corporate sponsors.  Eliminate them at once.",
+        "groupTargetNameContains": "",
+        "label": "Destroy Gamer House",
+        "sceneryTargetZoneNames": [],
+        "ship_groups": [],
+        "staticTargetNameContains": "GAMERHOUSE1",
+        "static_groups": [
+            "GAMERHOUSE1"
+        ],
+        "targetUnitTypes": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -24952.146472333,
+                "y": -260316.40239033
+            },
+            {
+                "x": -24882.99831943,
+                "y": -260034.3024037
+            },
+            {
+                "x": -24649.85277734,
+                "y": -260053.27225096
+            },
+            {
+                "x": -24676.777721834,
+                "y": -260421.04251552
+            }
+        ],
+        "x": -24790.443822734,
+        "y": -260206.25489013
+    },
+    "TASK-7": {
+        "auftrag": "BOMBING",
+        "completeSound": "",
+        "component": "task",
+        "description": "Destroy this water treatment plant to ensure that Jae is forced to boil his pasta water much longer than usual to make it safe.",
+        "groupTargetNameContains": "",
+        "label": "Destroy Water Treatment Plant",
+        "sceneryTargetZoneNames": [],
+        "ship_groups": [],
+        "staticTargetNameContains": "SIPHAPPENS",
+        "static_groups": [
+            "SIPHAPPENS1"
+        ],
+        "targetUnitTypes": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -23982.953712773,
+                "y": -257105.58100698
+            },
+            {
+                "x": -24013.385736211,
+                "y": -256890.21591804
+            },
+            {
+                "x": -23900.436110759,
+                "y": -256877.3408312
+            },
+            {
+                "x": -23817.333277524,
+                "y": -257071.63759622
+            }
+        ],
+        "x": -23928.527209317,
+        "y": -256986.19383811
+    },
+    "TASK-8": {
+        "auftrag": "BOMBING",
+        "completeSound": "",
+        "component": "task",
+        "description": "Destroy this hydroelectric dam control center to assure that a catastrophe ensues in the future that can be easily blamed on Jae.",
+        "groupTargetNameContains": "",
+        "label": "Destroy Hydroelectric Dam Control Center",
+        "sceneryTargetZoneNames": [],
+        "ship_groups": [],
+        "staticTargetNameContains": "OHDAM",
+        "static_groups": [
+            "OHDAM"
+        ],
+        "targetUnitTypes": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -19227.221057239,
+                "y": -259167.15768959
+            },
+            {
+                "x": -19237.593446102,
+                "y": -259135.44211595
+            },
+            {
+                "x": -19215.45238526,
+                "y": -259128.8596384
+            },
+            {
+                "x": -19203.683713281,
+                "y": -259158.38105286
+            }
+        ],
+        "x": -19220.987650471,
+        "y": -259147.4601242
+    },
+    "TASK-9": {
+        "auftrag": "ANTISHIP",
+        "completeSound": "",
+        "component": "task",
+        "description": "An Anglo frigate recommissioned by the Sons of Jae has been sighted on the horizon...  wait, but there's two!  Little Iron Maiden joke there hehe.",
+        "groupTargetNameContains": "FRIGATE1,FRIGATE2",
+        "label": "Sink Frigate",
+        "ship_groups": [
+            "FRIGATE1",
+            "FRIGATE2"
+        ],
+        "staticTargetNameContains": "",
+        "static_groups": [],
+        "targetUnitTypes": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -37807.703463725,
+                "y": -324367.43699552
+            },
+            {
+                "x": -37509.469362594,
+                "y": -323805.68387382
+            },
+            {
+                "x": -36800.966127632,
+                "y": -324428.9773656
+            },
+            {
+                "x": -37064.485148208,
+                "y": -325039.64719172
+            }
+        ],
+        "x": -37295.65602554,
+        "y": -324410.43635667
+    }
+}

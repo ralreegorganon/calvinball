@@ -1,0 +1,365 @@
+MissionDb = {
+	objectives = {
+{% 		for objective_name, objective in obj["objectives"].items() %}
+		{
+			name = "{{objective_name}}",
+			strand = "{{objective["strand"]}}",
+			completeSound = "{{objective["completeSound"]}}",
+			nodes = {
+{% 				for node_name in objective["nodes"].keys() %}
+				{ name = "{{node_name}}" },
+{% 				endfor %}
+			},
+			tasks = {
+{% 				for task_name in objective["tasks"] %}
+{% 				set task = tasks[task_name] %}
+				{
+					name = "{{task_name}}",
+					completeSound = "{{task["completeSound"]}}",
+					auftrag = "{{task["auftrag"]}}",
+					vehicleGroups = {
+{%  					for group_name in task["vehicle_groups"] %}
+						{ name = "{{group_name}}" },
+{% 						endfor %}
+					},
+					shipGroups = {
+{%  					for group_name in task["ship_groups"] %}
+						{ name = "{{group_name}}" },
+{% 						endfor %}
+					},
+					staticGroups = {
+{%  					for group_name in task["static_groups"] %}
+{%						set static = statics["red"][group_name] %}
+						{
+							name = "{{group_name}}#00001",
+							template = {
+								name = "{{static["name"]}}",
+								type = "{{static["type"]}}",
+								x = {{static["x"]}},
+								y = {{static["y"]}},
+								heading = {{static["heading"]}},
+								category = "{{static["category"]}}",
+								canCargo = {{static["canCargo"] | string | lower}},
+								shape_name = "{{static["shape_name"]}}",
+								rate = {{static["rate"]}},
+								dead = false
+							}
+						},
+{% 						endfor %}
+					}
+				},
+{% 				endfor %}
+			},
+			farps = {
+{% 				for farp_name in objective["farps"] %}
+{% 				set farp = farps[farp_name] %}
+				{
+					name = "{{farp_name}}",
+					vehicleGroups = {
+{%  					for group_name in farp["vehicle_groups"] %}
+						{ name = "{{group_name}}" },
+{% 						endfor %}
+					},
+					shipGroups = {
+{%  					for group_name in farp["ship_groups"] %}
+						{ name = "{{group_name}}" },
+{% 						endfor %}
+					},
+					staticGroups = {
+{%  					for group_name in farp["static_groups"] %}
+{%						set static = statics["blue"][group_name] %}
+						{
+							name = "{{group_name}}#00001",
+							template = {
+								name = "{{static["name"]}}",
+								type = "{{static["type"]}}",
+								x = {{static["x"]}},
+								y = {{static["y"]}},
+								heading = {{static["heading"]}},
+								category = "{{static["category"]}}",
+								canCargo = {{static["canCargo"] | string | lower}},
+								shape_name = "{{static["shape_name"]}}",
+								rate = {{static["rate"]}},
+								dead = false
+							}
+						},
+{% 						endfor %}
+					},
+					clients = {
+{% 						set clients = farp_groups[farp_name] %}
+{%  					for client_name in clients %}
+							"{{client_name}}",
+{% 						endfor %}
+					}
+				},
+{% 				endfor %}
+			},
+			airbases = {
+{% 				for airbase_name in objective["airbases"] %}
+{% 				set airbase = airbases[airbase_name] %}
+				{
+					name = "{{airbase_name}}",
+					vehicleGroups = {
+{%  					for group_name in airbase["vehicle_groups"] %}
+						{ name = "{{group_name}}" },
+{% 						endfor %}
+					},
+					shipGroups = {
+{%  					for group_name in airbase["ship_groups"] %}
+						{ name = "{{group_name}}" },
+{% 						endfor %}
+					},
+					staticGroups = {
+{%  					for group_name in airbase["static_groups"] %}
+{%						set static = statics["blue"][group_name] %}
+						{
+							name = "{{group_name}}#00001",
+							template = {
+								name = "{{static["name"]}}",
+								type = "{{static["type"]}}",
+								x = {{static["x"]}},
+								y = {{static["y"]}},
+								heading = {{static["heading"]}},
+								category = "{{static["category"]}}",
+								canCargo = {{static["canCargo"] | string | lower}},
+								shape_name = "{{static["shape_name"]}}",
+								rate = {{static["rate"]}},
+								dead = false
+							}
+						},
+{% 						endfor %}
+					},
+					clients = {
+{% 						set clients = airbase_groups[airbase["label"]] %}
+{%  					for client_name in clients %}
+							"{{client_name}}",
+{% 						endfor %}
+					}
+				},
+{% 				endfor %}
+			},
+			qrfs = {
+{% 				for qrf_name in objective["qrfs"] %}
+{% 				set qrf = qrfs[qrf_name] %}
+				{
+					name = "{{qrf_name}}",
+					spawnGroups = {
+{% 						for spawn_name in qrf["vehicleQrfTemplates"] %}
+						{ name = "{{spawn_name}}" },
+{%						endfor %}
+					},
+					vehicleGroups = {
+{%  					for group_name in qrf["vehicle_groups"] %}
+						{ name = "{{group_name}}" },
+{% 						endfor %}
+					},
+					shipGroups = {
+{%  					for group_name in qrf["ship_groups"] %}
+						{ name = "{{group_name}}" },
+{% 						endfor %}
+					},
+					staticGroups = {
+{%  					for group_name in qrf["static_groups"] %}
+{%						set static = statics["red"][group_name] %}
+						{
+							name = "{{group_name}}#00001",
+							template = {
+								name = "{{static["name"]}}",
+								type = "{{static["type"]}}",
+								x = {{static["x"]}},
+								y = {{static["y"]}},
+								heading = {{static["heading"]}},
+								category = "{{static["category"]}}",
+								canCargo = {{static["canCargo"] | string | lower}},
+								shape_name = "{{static["shape_name"]}}",
+								rate = {{static["rate"]}},
+								dead = false
+							}
+						},
+{% 						endfor %}
+					},
+				},
+{% 				endfor %}
+			},
+			reinforcements = {
+{% 				for reinforcement_name in objective["reinforcements"] %}
+{% 				set reinforcement = reinforcements[reinforcement_name] %}
+				{
+					name = "{{reinforcement_name}}",
+					spawnGroups = {
+{% 						for spawn_name in reinforcement["vehicleReinforcementTemplates"] %}
+						{ name = "{{spawn_name}}" },
+{%						endfor %}
+					},
+					vehicleGroups = {
+{%  					for group_name in reinforcement["vehicle_groups"] %}
+						{ name = "{{group_name}}" },
+{% 						endfor %}
+					},
+					shipGroups = {
+{%  					for group_name in reinforcement["ship_groups"] %}
+						{ name = "{{group_name}}" },
+{% 						endfor %}
+					},
+					staticGroups = {
+{%  					for group_name in reinforcement["static_groups"] %}
+{%						set static = statics["blue"][group_name] %}
+						{
+							name = "{{group_name}}#00001",
+							template = {
+								name = "{{static["name"]}}",
+								type = "{{static["type"]}}",
+								x = {{static["x"]}},
+								y = {{static["y"]}},
+								heading = {{static["heading"]}},
+								category = "{{static["category"]}}",
+								canCargo = {{static["canCargo"] | string | lower}},
+								shape_name = "{{static["shape_name"]}}",
+								rate = {{static["rate"]}},
+								dead = false
+							}
+						},
+{% 						endfor %}
+					},
+				},
+{% 				endfor %}
+			},
+			vehicleGroups = {
+{%  			for group_name in objective["vehicle_groups"] %}
+				{ name = "{{group_name}}" },
+{% 				endfor %}
+			},
+			shipGroups = {
+{%  			for group_name in objective["ship_groups"] %}
+				{ name = "{{group_name}}" },
+{% 				endfor %}
+			},
+			staticGroups = {
+{%  			for group_name in objective["static_groups"] %}
+{%				set static = statics["red"][group_name] %}
+				{
+					name = "{{group_name}}#00001",
+					template = {
+						name = "{{static["name"]}}",
+						type = "{{static["type"]}}",
+						x = {{static["x"]}},
+						y = {{static["y"]}},
+						heading = {{static["heading"]}},
+						category = "{{static["category"]}}",
+						canCargo = {{static["canCargo"] | string | lower}},
+						shape_name = "{{static["shape_name"]}}",
+						rate = {{static["rate"]}},
+						dead = false
+					}
+				},
+{% 				endfor %}
+			}
+		},
+{% 		endfor %}
+	},
+	strands = {
+{% 		for strand_name, strands in obj["strands"].items() %}
+		{
+			name = "{{strand_name}}",
+			sequence = {
+{% 				for objective_name in strands %}
+				"{{objective_name}}",
+{% 				endfor %}
+				},
+			},
+{% 		endfor %}
+	},
+	ctld = {
+		groups = {
+{% 		for ctld_group in ctld_groups %}
+			"{{ctld_group}}",
+{% 		endfor %}
+		}
+	},
+	csar = {
+		groups = {
+{% 		for csar_group in csar_groups %}
+			"{{csar_group}}",
+{% 		endfor %}
+		}
+	},
+	autolase = {},
+	playerRecce = {},
+	strandtasks = {},
+	samnetwork = {},
+	redchief = {
+	    airwings = {
+{%  		for airwing_name, airwing in red_airwings.items() %}
+			{
+				name = "{{airwing_name}}",
+				warehouse = "{{airwing["warehouse"]}}",
+				airbase = "{{airwing["airbase"]}}",
+				squadrons = {
+{%  				for squadron_name, squadron in airwing["squadrons"].items() %}
+					{
+						name = "{{squadron_name}}",
+						templateGroupName = "{{squadron["groupName"]}}",
+						initialInventory = {{squadron["initialInventory"]}},
+						capabilities = {
+{% 						for mission, performance in squadron["capabilities"].items() %}
+							{ mission = {{mission}}, performance = {{performance}} },
+{% 						endfor %}
+						},
+						livery = "{{squadron["livery"]}}",
+						payloads = {
+{%  						for group_name, loadout in squadron["loadoutGroups"].items() %}
+							{
+								templateGroupName = "{{group_name}}",
+								missionTypes = {{loadout}}
+							},
+{% 							endfor %}
+						}
+					},
+{% 					endfor %}
+				}
+			},
+{% 			endfor %}
+		}
+	},
+	bluechief = {
+	    airwings = {
+{%  		for airwing_name, airwing in blue_airwings.items() %}
+			{
+				name = "{{airwing_name}}",
+				warehouse = "{{airwing["warehouse"]}}",
+				airbase = "{{airwing["airbase"]}}",
+				squadrons = {
+{%  				for squadron_name, squadron in airwing["squadrons"].items() %}
+					{
+						name = "{{squadron_name}}",
+						templateGroupName = "{{squadron["groupName"]}}",
+						initialInventory = {{squadron["initialInventory"]}},
+						capabilities = {
+{% 						for mission, performance in squadron["capabilities"].items() %}
+							{ mission = {{mission}}, performance = {{performance}} },
+{% 						endfor %}
+						},
+						livery = "{{squadron["livery"]}}",
+						payloads = {
+{%  						for group_name, loadout in squadron["loadoutGroups"].items() %}
+							{
+								templateGroupName = "{{group_name}}",
+								missionTypes = {{loadout}}
+							},
+{% 							endfor %}
+						}
+					},
+{% 					endfor %}
+				}
+			},
+{% 			endfor %}
+		}
+	},
+	units = {},
+	devmode = {{ devmode | string | lower }},
+	lateActivateStatics = {{ late_activate_statics | string | lower }},
+	missionName = "{{missionName}}",
+	settings = {
+		blueCasevacChance = 10
+	}
+}

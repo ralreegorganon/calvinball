@@ -1,0 +1,5 @@
+-e git+https://github.com/pydcs/dcs@a72d92f0ad382dfead784a835220f8a4ed2db6a0#egg=pydcs
+pyproj
+PrettyTable
+shapely
+jinja2

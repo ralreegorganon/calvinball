@@ -1,0 +1,29 @@
+{
+    "AIRBASE-1": {
+        "component": "airbase",
+        "label": "Batumi",
+        "radius": 2300.0208,
+        "ship_groups": [],
+        "static_groups": [
+            "Batumi Airwing Warehouse"
+        ],
+        "vehicle_groups": [
+            "AIRBASE Support 1-1",
+            "MASH 1-1",
+            "MASH 1-2",
+            "MASH 1-3"
+        ],
+        "x": -355778.2376342,
+        "y": 617371.82397845
+    },
+    "AIRBASE-2": {
+        "component": "airbase",
+        "label": "Kobuleti",
+        "radius": 2300.0208,
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicle_groups": [],
+        "x": -317913.80030696,
+        "y": 635621.34727888
+    }
+}

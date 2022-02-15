@@ -1,0 +1,318 @@
+{
+    "QRF-1": {
+        "component": "qrf",
+        "label": "QRF 1",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [
+            "RED QRF 1",
+            "RED QRF 2",
+            "RED QRF 3",
+            "RED QRF 4",
+            "RED QRF 5",
+            "RED QRF 6",
+            "RED QRF 7",
+            "RED QRF 8",
+            "RED QRF 1",
+            "RED QRF 1",
+            "RED QRF 1"
+        ],
+        "vehicle_groups": [
+            "RED QRF 1",
+            "RED QRF 2",
+            "RED QRF 3",
+            "RED QRF 4",
+            "RED QRF 5",
+            "RED QRF 6",
+            "RED QRF 7",
+            "RED QRF 8"
+        ],
+        "vertices": [
+            {
+                "x": -19337.663536383,
+                "y": -272129.51006609
+            },
+            {
+                "x": -19227.887504998,
+                "y": -271889.21292652
+            },
+            {
+                "x": -18861.391148246,
+                "y": -272049.9872717
+            },
+            {
+                "x": -18965.116532232,
+                "y": -272279.91187287
+            }
+        ],
+        "x": -19098.014680465,
+        "y": -272087.1555343
+    },
+    "QRF-2": {
+        "component": "qrf",
+        "label": "QRF 2",
+        "ship_groups": [],
+        "static_groups": [
+            "Larnaca Airwing Warehouse"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -6384.3499464601,
+                "y": -208523.60890772
+            },
+            {
+                "x": -6348.6589065561,
+                "y": -208485.0198774
+            },
+            {
+                "x": -6311.9001859712,
+                "y": -208519.94828825
+            },
+            {
+                "x": -6347.2861742521,
+                "y": -208557.16458627
+            }
+        ],
+        "x": -6348.0488033099,
+        "y": -208521.43541491
+    },
+    "QRF-3": {
+        "component": "qrf",
+        "label": "QRF 3",
+        "ship_groups": [],
+        "static_groups": [
+            "Paphos Airwing Warehouse"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -19218.66584558,
+                "y": -312190.344368
+            },
+            {
+                "x": -19155.608924284,
+                "y": -312161.7227867
+            },
+            {
+                "x": -19129.670616234,
+                "y": -312219.86037371
+            },
+            {
+                "x": -19193.174749737,
+                "y": -312246.46950007
+            }
+        ],
+        "x": -19174.280033959,
+        "y": -312204.59925712
+    },
+    "QRF-4": {
+        "component": "qrf",
+        "label": "QRF 4",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [
+            "RED QRF 1-1",
+            "RED QRF 2-1",
+            "RED QRF 3-1",
+            "RED QRF 4-1",
+            "RED QRF 5-1",
+            "RED QRF 6-1",
+            "RED QRF 7-1",
+            "RED QRF 8-1",
+            "RED QRF 1-1",
+            "RED QRF 1-1",
+            "RED QRF 1-1"
+        ],
+        "vehicle_groups": [
+            "RED QRF 1-1",
+            "RED QRF 2-1",
+            "RED QRF 3-1",
+            "RED QRF 4-1",
+            "RED QRF 5-1",
+            "RED QRF 6-1",
+            "RED QRF 7-1",
+            "RED QRF 8-1"
+        ],
+        "vertices": [
+            {
+                "x": -17815.809519676,
+                "y": -291734.67021454
+            },
+            {
+                "x": -17940.193740079,
+                "y": -290683.18965369
+            },
+            {
+                "x": -17366.001466823,
+                "y": -290560.25176143
+            },
+            {
+                "x": -17332.735919506,
+                "y": -291660.90747918
+            }
+        ],
+        "x": -17613.685161521,
+        "y": -291159.75477721
+    },
+    "QRF-5": {
+        "component": "qrf",
+        "label": "QRF 5",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [
+            "RED QRF 1-2",
+            "RED QRF 2-2",
+            "RED QRF 3-2",
+            "RED QRF 4-2",
+            "RED QRF 5-2",
+            "RED QRF 6-2",
+            "RED QRF 7-2",
+            "RED QRF 8-2",
+            "RED QRF 1-2",
+            "RED QRF 1-2",
+            "RED QRF 1-2"
+        ],
+        "vehicle_groups": [
+            "RED QRF 1-2",
+            "RED QRF 2-2",
+            "RED QRF 3-2",
+            "RED QRF 4-2",
+            "RED QRF 5-2",
+            "RED QRF 6-2",
+            "RED QRF 7-2",
+            "RED QRF 8-2"
+        ],
+        "vertices": [
+            {
+                "x": -7162.1896002419,
+                "y": -238200.96768653
+            },
+            {
+                "x": -7203.7939045357,
+                "y": -237519.19392584
+            },
+            {
+                "x": -6493.8365828765,
+                "y": -237611.79705475
+            },
+            {
+                "x": -6493.8365828765,
+                "y": -238187.54694321
+            }
+        ],
+        "x": -6838.4141676326,
+        "y": -237879.87640258
+    },
+    "QRF-6": {
+        "component": "qrf",
+        "label": "QRF 6",
+        "ship_groups": [],
+        "static_groups": [
+            "Gecitkale Airwing Warehouse"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": 31618.672007892,
+                "y": -200270.4317209
+            },
+            {
+                "x": 31434.748481442,
+                "y": -195134.72094387
+            },
+            {
+                "x": 32616.103439794,
+                "y": -195396.45826997
+            },
+            {
+                "x": 32750.509093738,
+                "y": -200093.58217624
+            }
+        ],
+        "x": 32105.008255717,
+        "y": -197723.79827775
+    },
+    "QRF-7": {
+        "component": "qrf",
+        "label": "QRF 7",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [
+            "RED QRF 1-3",
+            "RED QRF 2-3",
+            "RED QRF 3-3",
+            "RED QRF 4-3",
+            "RED QRF 5-3",
+            "RED QRF 6-3",
+            "RED QRF 7-3",
+            "RED QRF 8-3",
+            "RED QRF 1-3",
+            "RED QRF 1-3",
+            "RED QRF 1-3"
+        ],
+        "vehicle_groups": [
+            "RED QRF 1-3",
+            "RED QRF 2-3",
+            "RED QRF 3-3",
+            "RED QRF 4-3",
+            "RED QRF 5-3",
+            "RED QRF 6-3",
+            "RED QRF 7-3",
+            "RED QRF 8-3"
+        ],
+        "vertices": [
+            {
+                "x": 6743.2818930299,
+                "y": -197539.14533588
+            },
+            {
+                "x": 7741.405138859,
+                "y": -196999.92932951
+            },
+            {
+                "x": 8140.6544371907,
+                "y": -197894.79844646
+            },
+            {
+                "x": 7163.1820171373,
+                "y": -198475.31610438
+            }
+        ],
+        "x": 7447.1308715542,
+        "y": -197727.29730406
+    },
+    "QRF-8": {
+        "component": "qrf",
+        "label": "QRF 8",
+        "ship_groups": [],
+        "static_groups": [
+            "Ercan Airwing Warehouse"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": 24736.944576531,
+                "y": -218525.72284933
+            },
+            {
+                "x": 24704.742482163,
+                "y": -218488.34541836
+            },
+            {
+                "x": 24743.461667058,
+                "y": -218451.35134567
+            },
+            {
+                "x": 24776.622157092,
+                "y": -218490.45388883
+            }
+        ],
+        "x": 24740.442720711,
+        "y": -218488.96837555
+    }
+}

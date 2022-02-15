@@ -1,0 +1,1920 @@
+{
+    "objectives": {
+        "OBJ-1": {
+            "airbases": [
+                "AIRBASE-1"
+            ],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Limassol Front",
+            "nodes": {
+                "NODE-1": {
+                    "label": "Zakaki Junction",
+                    "radius": 260,
+                    "x": -28487,
+                    "y": -267631
+                },
+                "NODE-2": {
+                    "label": "Farmland Crossroads",
+                    "radius": 260,
+                    "x": -29286.836943485,
+                    "y": -269338.98121727
+                },
+                "NODE-3": {
+                    "label": "Technical Appreciation Club",
+                    "radius": 260,
+                    "x": -27622.793742685,
+                    "y": -271175.08669849
+                },
+                "NODE-4": {
+                    "label": "Anti-Ship Missile Battery",
+                    "radius": 260,
+                    "x": -30276.829638883,
+                    "y": -266747.95576508
+                },
+                "NODE-5": {
+                    "label": "Farmer's Village",
+                    "radius": 260,
+                    "x": -30325.254196548,
+                    "y": -271374.093535
+                }
+            },
+            "qrfs": [
+                "QRF-1",
+                "QRF-2",
+                "QRF-3",
+                "QRF-4",
+                "QRF-5",
+                "QRF-6",
+                "QRF-8",
+                "QRF-7"
+            ],
+            "reinforcements": [
+                "REINFORCEMENT-1"
+            ],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [
+                "Ground-10",
+                "Ground-11",
+                "Ground-3",
+                "Ground-4",
+                "Ground-5",
+                "RED GROUND 1",
+                "RED GROUND 1-18",
+                "RED GROUND 1-60",
+                "RED GROUND 1-61",
+                "RED GROUND 1-62",
+                "RED GROUND 1-63",
+                "RED GROUND 1-64",
+                "RED SAM SA-9 1-34"
+            ],
+            "vertices": [
+                {
+                    "x": -31405.951462594,
+                    "y": -272397.84774343
+                },
+                {
+                    "x": -32033.716808162,
+                    "y": -264473.79509677
+                },
+                {
+                    "x": -26918.720946981,
+                    "y": -268217.12450656
+                },
+                {
+                    "x": -27216.212430707,
+                    "y": -272833.75160586
+                }
+            ],
+            "x": -29393.650412111,
+            "y": -269480.62973815
+        },
+        "OBJ-10": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Botched Ambush",
+            "nodes": {
+                "NODE-32": {
+                    "label": "Doing It Wrong",
+                    "radius": 260,
+                    "x": -24681.959335382,
+                    "y": -301082.45430022
+                },
+                "NODE-33": {
+                    "label": "Camping Corners",
+                    "radius": 260,
+                    "x": -24634.67248011,
+                    "y": -302733.1223883
+                },
+                "NODE-34": {
+                    "label": "Speed Trap",
+                    "radius": 260,
+                    "x": -24683.386310211,
+                    "y": -298156.01932235
+                },
+                "NODE-35": {
+                    "label": "Arty Party",
+                    "radius": 260,
+                    "x": -23124.654344855,
+                    "y": -303101.07623256
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [
+                "Static Road outpost-4",
+                "Static Watch tower armed-2"
+            ],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED AAA GROUND 1-3",
+                "RED AAA GROUND 1-4",
+                "RED EWR 1-6",
+                "RED EWR 1-7",
+                "RED GROUND 1-75",
+                "RED GROUND 10",
+                "RED GROUND 10-1",
+                "RED GROUND 10-10",
+                "RED GROUND 10-11",
+                "RED GROUND 10-12",
+                "RED GROUND 10-13",
+                "RED GROUND 10-14",
+                "RED GROUND 10-2",
+                "RED GROUND 10-3",
+                "RED GROUND 10-4",
+                "RED GROUND 10-5",
+                "RED GROUND 10-6",
+                "RED GROUND 10-7",
+                "RED GROUND 10-8",
+                "RED GROUND 10-9",
+                "RED SAM SA-13 GROUND 1-5",
+                "RED SAM SA-13 GROUND 1-6"
+            ],
+            "vertices": [
+                {
+                    "x": -24796.602078566,
+                    "y": -303718.16019289
+                },
+                {
+                    "x": -27219.463536304,
+                    "y": -296529.43659575
+                },
+                {
+                    "x": -24134.000687048,
+                    "y": -297222.69423037
+                },
+                {
+                    "x": -22289.4746942,
+                    "y": -303549.58616468
+                }
+            ],
+            "x": -24609.88524903,
+            "y": -300254.96929592
+        },
+        "OBJ-11": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Taking Paphos",
+            "nodes": {
+                "NODE-29": {
+                    "label": "Control Tower",
+                    "radius": 260,
+                    "x": -18016.519236387,
+                    "y": -314402.92634107
+                },
+                "NODE-36": {
+                    "label": "Terminal",
+                    "radius": 260,
+                    "x": -19418.852275041,
+                    "y": -313806.36525456
+                },
+                "NODE-37": {
+                    "label": "Hangars",
+                    "radius": 260,
+                    "x": -18715.494912845,
+                    "y": -312984.08668739
+                },
+                "NODE-38": {
+                    "label": "Administration",
+                    "radius": 260,
+                    "x": -19250.73524055,
+                    "y": -311988.62461306
+                },
+                "NODE-39": {
+                    "label": "E606 Interchange",
+                    "radius": 260,
+                    "x": -15699.71156732,
+                    "y": -312237.25161279
+                },
+                "NODE-40": {
+                    "label": "B6 Interchange",
+                    "radius": 260,
+                    "x": -18286.843629412,
+                    "y": -310035.07359456
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [
+                "Naval-2"
+            ],
+            "static_groups": [
+                "Paphos Airwing Warehouse",
+                "Static Fueltank-1",
+                "Static Fueltank-2",
+                "Static ISO container small-1",
+                "Static ISO container small-2",
+                "Static ISO container small-3",
+                "Static ISO container small-4",
+                "Static ISO container small-5",
+                "Static ISO container small-6",
+                "Static ISO container small-7",
+                "Static ISO container small-8",
+                "Static ISO container small-9",
+                "Static Oiltank-1",
+                "Static Oiltank-2"
+            ],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED AIR DEFENSE BATTERY A 381-1",
+                "RED AIR DEFENSE BATTERY A 381-2",
+                "RED AIR DEFENSE BATTERY B 383",
+                "RED AIR DEFENSE BATTERY B 383-1",
+                "RED AIR DEFENSE BATTERY C 385",
+                "RED EWR 1-3",
+                "RED EWR 1-4",
+                "RED EWR 1-5",
+                "RED GROUND 1-76",
+                "RED GROUND 1-77",
+                "RED SAM SA-2 373-1",
+                "RED SAM SA-2 373-2",
+                "RED SAM SA-3 375",
+                "RED SAM SA-6 377",
+                "RED SAM SA-8 379"
+            ],
+            "vertices": [
+                {
+                    "x": -18722.456280884,
+                    "y": -320193.02278169
+                },
+                {
+                    "x": -21938.212186426,
+                    "y": -311385.40612702
+                },
+                {
+                    "x": -16774.612305503,
+                    "y": -308427.13633137
+                },
+                {
+                    "x": -15263.612630021,
+                    "y": -312619.70958153
+                }
+            ],
+            "x": -18174.723350709,
+            "y": -313156.3187054
+        },
+        "OBJ-12": {
+            "airbases": [
+                "AIRBASE-2"
+            ],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Crossing Dhiarizos",
+            "nodes": {
+                "NODE-41": {
+                    "label": "Hennimore!",
+                    "radius": 260,
+                    "x": -15435.102297925,
+                    "y": -308258.47366838
+                },
+                "NODE-53": {
+                    "label": "Bridge Alpha",
+                    "radius": 260,
+                    "x": -17727.94169296,
+                    "y": -303576.39608061
+                },
+                "NODE-55": {
+                    "label": "Bridge Bravo",
+                    "radius": 260,
+                    "x": -13912.149688981,
+                    "y": -299538.22441781
+                },
+                "NODE-56": {
+                    "label": "Bridge Charlie",
+                    "radius": 260,
+                    "x": -12366.839545433,
+                    "y": -295259.3973369
+                },
+                "NODE-57": {
+                    "label": "Angel Summoner",
+                    "radius": 260,
+                    "x": -12008.051381779,
+                    "y": -301549.08939051
+                },
+                "NODE-58": {
+                    "label": "Numberwang",
+                    "radius": 260,
+                    "x": -14291.241349741,
+                    "y": -303410.32593246
+                },
+                "NODE-59": {
+                    "label": "BMX Bandit",
+                    "radius": 260,
+                    "x": -10638.478139753,
+                    "y": -295817.49278573
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [
+                "REINFORCEMENT-4"
+            ],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED GROUND 1-120",
+                "RED GROUND 1-121",
+                "RED GROUND 1-122",
+                "RED GROUND 1-123",
+                "RED GROUND 1-124",
+                "RED GROUND 1-125",
+                "RED GROUND 1-126",
+                "RED GROUND 1-127",
+                "RED GROUND 1-128",
+                "RED GROUND 1-78",
+                "RED GROUND 1-89",
+                "RED GROUND 1-91",
+                "RED GROUND 1-92",
+                "RED GROUND 1-94",
+                "RED GROUND 1-95",
+                "RED GROUND 1-96",
+                "RED GROUND 10-15",
+                "RED GROUND 10-16",
+                "RED GROUND 10-17",
+                "RED GROUND 10-18",
+                "RED SAM SA-8 379-1"
+            ],
+            "vertices": [
+                {
+                    "x": -15474.515860089,
+                    "y": -309176.52086416
+                },
+                {
+                    "x": -18369.525878104,
+                    "y": -303380.23862233
+                },
+                {
+                    "x": -10538.030110684,
+                    "y": -290585.70863343
+                },
+                {
+                    "x": -9177.184219873,
+                    "y": -295921.04430562
+                }
+            ],
+            "x": -13389.814017188,
+            "y": -299765.87810639
+        },
+        "OBJ-13": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Taking Larnaca",
+            "nodes": {
+                "NODE-47": {
+                    "label": "Aces High",
+                    "radius": 259.9944,
+                    "x": -7966.025921787,
+                    "y": -210020.52402391
+                },
+                "NODE-48": {
+                    "label": "Fuel Dump",
+                    "radius": 259.9944,
+                    "x": -8242.9328268311,
+                    "y": -210804.7989369
+                },
+                "NODE-49": {
+                    "label": "Handle With Care",
+                    "radius": 259.9944,
+                    "x": -6872.6866856289,
+                    "y": -208704.2338253
+                },
+                "NODE-50": {
+                    "label": "Heavy Metal",
+                    "radius": 259.9944,
+                    "x": -8289.3904795139,
+                    "y": -209319.57225088
+                },
+                "NODE-51": {
+                    "label": "Nowhere To Hide",
+                    "radius": 259.9944,
+                    "x": -6346.3213100465,
+                    "y": -208518.39867553
+                },
+                "NODE-52": {
+                    "label": "Tanc a lelek Intensifies",
+                    "radius": 259.9944,
+                    "x": -8588.8683210253,
+                    "y": -207756.83230913
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [
+                "Larnaca Airwing Warehouse"
+            ],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED EWR 1-16",
+                "RED EWR 1-17",
+                "RED GROUND 1-34",
+                "RED GROUND 1-88",
+                "RED GROUND 1-90",
+                "RED GROUND 1-93",
+                "RED GROUND 1-97",
+                "RED GROUND 1-98",
+                "RED SAM SA-10 DW 1-99",
+                "RED SAM SA-13 GROUND 1-13",
+                "RED SAM SA-13 GROUND 1-14",
+                "RED SAM SA-15 DW 1-1"
+            ],
+            "vertices": [
+                {
+                    "x": -7806.3531991276,
+                    "y": -213407.50623493
+                },
+                {
+                    "x": -10560.12461003,
+                    "y": -209131.55023014
+                },
+                {
+                    "x": -7108.8303813769,
+                    "y": -205904.0160949
+                },
+                {
+                    "x": -4847.7433087057,
+                    "y": -210536.60425866
+                }
+            ],
+            "x": -7580.7628748101,
+            "y": -209744.91920466
+        },
+        "OBJ-14": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [
+                "FARP-3"
+            ],
+            "label": "Hind Heaven",
+            "nodes": {
+                "NODE-43": {
+                    "label": "Kofinou Holdout",
+                    "radius": 259.9944,
+                    "x": -12072.894273752,
+                    "y": -230400.22715021
+                },
+                "NODE-44": {
+                    "label": "Hasty Defense",
+                    "radius": 259.9944,
+                    "x": -14114.763718484,
+                    "y": -226500.15769442
+                },
+                "NODE-45": {
+                    "label": "Strength In Numbers",
+                    "radius": 259.9944,
+                    "x": -15703.745530503,
+                    "y": -222655.73087187
+                },
+                "NODE-46": {
+                    "label": "Tunguska Event",
+                    "radius": 259.9944,
+                    "x": -12696.770851109,
+                    "y": -218229.12141477
+                },
+                "NODE-54": {
+                    "label": "Shen Yun's Revenge",
+                    "radius": 259.9944,
+                    "x": -10452.590913097,
+                    "y": -227531.8795551
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [
+                "REINFORCEMENT-5"
+            ],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [
+                "DWRED GROUND 1-91",
+                "DWRED GROUND 1-94",
+                "DWRED GROUND 1-95",
+                "RED EWR 1-13",
+                "RED EWR 1-15",
+                "RED GROUND 1-100",
+                "RED GROUND 1-101",
+                "RED GROUND 1-102",
+                "RED GROUND 1-103",
+                "RED GROUND 1-104",
+                "RED GROUND 1-105",
+                "RED GROUND 1-106",
+                "RED GROUND 1-107",
+                "RED GROUND 1-108",
+                "RED GROUND 1-109",
+                "RED GROUND 1-110",
+                "RED GROUND 1-111",
+                "RED GROUND 1-112",
+                "RED GROUND 1-113",
+                "RED GROUND 1-114",
+                "RED GROUND 1-115",
+                "RED GROUND 1-116",
+                "RED GROUND 1-117",
+                "RED GROUND 1-118",
+                "RED GROUND 1-119",
+                "RED GROUND 1-197",
+                "RED GROUND 1-198",
+                "RED GROUND 1-207",
+                "RED GROUND 1-208",
+                "RED GROUND 1-210",
+                "RED GROUND 1-68",
+                "RED GROUND 1-69",
+                "RED GROUND 1-99",
+                "RED SAM SA-13 GROUND 1-11",
+                "RED SAM SA-13 GROUND 1-9",
+                "RED SAM SA-19 DW 1-65",
+                "RED SAM SA-8 379-7"
+            ],
+            "vertices": [
+                {
+                    "x": -21456.507013567,
+                    "y": -231996.75059574
+                },
+                {
+                    "x": -12725.913592543,
+                    "y": -213788.35080325
+                },
+                {
+                    "x": -5632.1777292871,
+                    "y": -217861.98786853
+                },
+                {
+                    "x": -12248.222356416,
+                    "y": -234313.06363909
+                }
+            ],
+            "x": -13015.705172953,
+            "y": -224490.03822665
+        },
+        "OBJ-15": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Road to Glory",
+            "nodes": {
+                "NODE-60": {
+                    "label": "Tank Staging Ground",
+                    "radius": 260,
+                    "x": -8221.7026687788,
+                    "y": -251148.93566512
+                },
+                "NODE-61": {
+                    "label": "Hermit Ridge",
+                    "radius": 260,
+                    "x": -5282.5245235627,
+                    "y": -259749.71489599
+                },
+                "NODE-62": {
+                    "label": "Backwater Special Forces Camp",
+                    "radius": 260,
+                    "x": -7691.9082701045,
+                    "y": -258787.50893651
+                },
+                "NODE-63": {
+                    "label": "Calamity Canyon",
+                    "radius": 260,
+                    "x": -8728.6933426001,
+                    "y": -262472.33778849
+                },
+                "NODE-64": {
+                    "label": "Switchback Station",
+                    "radius": 260,
+                    "x": -10712.529339727,
+                    "y": -257477.51407034
+                },
+                "NODE-65": {
+                    "label": "Conjunctivitis Junction",
+                    "radius": 260,
+                    "x": -13178.251231058,
+                    "y": -263907.39388994
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [
+                "BNKground1",
+                "BNKground2-1",
+                "BNKground2-11",
+                "BNKground2-12",
+                "BNKground2-13",
+                "BNKground2-2",
+                "BNKground2-3",
+                "BNKground2-4",
+                "BNKground2-5",
+                "BNKground2-6",
+                "BNKground2-7",
+                "BNKground2-8",
+                "BNKground2-9",
+                "RED SAM SA-8 BNK 2-10"
+            ],
+            "vertices": [
+                {
+                    "x": -15005.536302525,
+                    "y": -264298.66796755
+                },
+                {
+                    "x": -15641.820562651,
+                    "y": -257048.15228552
+                },
+                {
+                    "x": -6079.0775680659,
+                    "y": -246482.21456931
+                },
+                {
+                    "x": -3528.6086548691,
+                    "y": -263522.71933348
+                }
+            ],
+            "x": -10063.760772028,
+            "y": -257837.93853897
+        },
+        "OBJ-16": {
+            "airbases": [
+                "AIRBASE-3"
+            ],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Larnaca's Remedy",
+            "nodes": {
+                "NODE-66": {
+                    "label": "Cognitive Email Analysis",
+                    "radius": 260,
+                    "x": -169.90676534415,
+                    "y": -210158.14245913
+                },
+                "NODE-67": {
+                    "label": "Containerization Advocacy",
+                    "radius": 260,
+                    "x": -2132.1761051988,
+                    "y": -207017.41574678
+                },
+                "NODE-68": {
+                    "label": "Embedded Multi-Cloud Capabilities",
+                    "radius": 260,
+                    "x": 4923.0803828667,
+                    "y": -208867.90734582
+                },
+                "NODE-69": {
+                    "label": "Predictive Service Management",
+                    "radius": 260,
+                    "x": -3520.9120578475,
+                    "y": -213726.11108725
+                },
+                "NODE-70": {
+                    "label": "DevOps",
+                    "radius": 260,
+                    "x": -2023.8010092739,
+                    "y": -210323.33951754
+                },
+                "NODE-71": {
+                    "label": "Knowledged Centered Service",
+                    "radius": 260,
+                    "x": 2385.9533624737,
+                    "y": -207818.95030381
+                },
+                "NODE-72": {
+                    "label": "Workflow Orchestration",
+                    "radius": 260,
+                    "x": 1417.5968250275,
+                    "y": -212925.87530433
+                },
+                "NODE-73": {
+                    "label": "Asset Depreciation",
+                    "radius": 260,
+                    "x": 3594.5810131874,
+                    "y": -202456.13015949
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [
+                "REINFORCEMENT-6"
+            ],
+            "ship_groups": [
+                "Naval-3",
+                "Naval-4"
+            ],
+            "static_groups": [
+                "Static FARP Tent-17",
+                "Static FARP Tent-18",
+                "Static Fueltank-3",
+                "Static Fueltank-4",
+                "Static Fueltank-5",
+                "Static Fueltank-6",
+                "Static Fueltank-7",
+                "Static Fueltank-8",
+                "Static ISO container small-10",
+                "Static ISO container small-11",
+                "Static ISO container small-12",
+                "Static ISO container small-13",
+                "Static ISO container small-14",
+                "Static ISO container small-15",
+                "Static ISO container small-16",
+                "Static ISO container small-17",
+                "Static Oiltank-3",
+                "Static Oiltank-4",
+                "Static Oiltank-5",
+                "Static Oiltank-6",
+                "Static Oiltank-7",
+                "Static Oiltank-8",
+                "Static Repair workshop-1",
+                "TASK12REMEDY"
+            ],
+            "strand": "STRAND-2",
+            "tasks": [
+                "TASK-12"
+            ],
+            "vehicle_groups": [
+                "RED AIR DEFENSE BATTERY A 381-3",
+                "RED AIR DEFENSE BATTERY B 383-2",
+                "RED EWR 1-18",
+                "RED EWR 1-19",
+                "RED GROUND 1-129",
+                "RED GROUND 1-130",
+                "RED GROUND 1-131",
+                "RED GROUND 1-132",
+                "RED GROUND 1-133",
+                "RED GROUND 1-134",
+                "RED GROUND 1-135",
+                "RED GROUND 1-136",
+                "RED GROUND 1-137",
+                "RED GROUND 1-138",
+                "RED GROUND 1-139",
+                "RED GROUND 1-140",
+                "RED GROUND 1-141",
+                "RED GROUND 1-142",
+                "RED GROUND 1-143",
+                "RED GROUND 1-144",
+                "RED GROUND 1-145",
+                "RED GROUND 1-146",
+                "RED GROUND 1-147",
+                "RED GROUND 1-148",
+                "RED GROUND 1-149",
+                "RED GROUND 1-150",
+                "RED GROUND 1-151",
+                "RED GROUND 1-152",
+                "RED GROUND 1-153",
+                "RED GROUND 1-154",
+                "RED GROUND 1-155",
+                "RED GROUND 1-156",
+                "RED GROUND 1-157",
+                "RED GROUND 1-158",
+                "RED GROUND 1-159",
+                "RED GROUND 10-19",
+                "RED GROUND 10-20",
+                "RED GROUND 10-21",
+                "RED RG 1",
+                "RED SAM SA-2 RG-1",
+                "RED SAM SA-2 RG-2",
+                "RED SAM SA-2 RG-3",
+                "RED SAM SA-6 377-1",
+                "RED SAM SA-8 379-2"
+            ],
+            "vertices": [
+                {
+                    "x": -3764.2486599194,
+                    "y": -215066.27971278
+                },
+                {
+                    "x": -5676.8915845403,
+                    "y": -206827.00886297
+                },
+                {
+                    "x": 5661.1090612817,
+                    "y": -199842.35591063
+                },
+                {
+                    "x": 5145.0438476494,
+                    "y": -213453.57592018
+                }
+            ],
+            "x": 341.25316611785,
+            "y": -208797.30510164
+        },
+        "OBJ-17": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Noisy Neighbors",
+            "nodes": {
+                "NODE-74": {
+                    "label": "Occupied Amphitheatre",
+                    "radius": 260,
+                    "x": -13552.360756484,
+                    "y": -320972.92987089
+                },
+                "NODE-75": {
+                    "label": "Hospital",
+                    "radius": 260,
+                    "x": -10591.971910182,
+                    "y": -317276.74107688
+                },
+                "NODE-76": {
+                    "label": "A Bit Moorish",
+                    "radius": 260,
+                    "x": -11349.197859973,
+                    "y": -321203.40594456
+                },
+                "NODE-77": {
+                    "label": "Day At The Races",
+                    "radius": 260,
+                    "x": -15699.014799048,
+                    "y": -318046.83671539
+                },
+                "NODE-83": {
+                    "label": "Funny Warcrime Jokes",
+                    "radius": 260,
+                    "x": -11157.782242784,
+                    "y": -319865.51350186
+                },
+                "NODE-84": {
+                    "label": "Imposter Syndrome",
+                    "radius": 260,
+                    "x": -12138.716785533,
+                    "y": -318356.31824116
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [
+                "DWNaval-1",
+                "DWNaval-5"
+            ],
+            "static_groups": [
+                "DWStatic SAM SA-10 S-300 TEL C-1",
+                "DWStatic SAM SA-10 S-300 TEL C-2",
+                "Static CNS Almirante Condell (PFG-06)-1",
+                "Static Mi-8MTV2-1",
+                "Static SAM SA-10 S-300 TEL C-1",
+                "Static SAM SA-10 S-300 TEL C-2"
+            ],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "DWGround-1",
+                "DWGround-2",
+                "DWGround-3",
+                "DWRED GROUND 1-1",
+                "DWRED GROUND 1-10",
+                "DWRED GROUND 1-11",
+                "DWRED GROUND 1-12",
+                "DWRED GROUND 1-13",
+                "DWRED GROUND 1-14",
+                "DWRED GROUND 1-160",
+                "DWRED GROUND 1-161",
+                "DWRED GROUND 1-17",
+                "DWRED GROUND 1-18",
+                "DWRED GROUND 1-19",
+                "DWRED GROUND 1-2",
+                "DWRED GROUND 1-20",
+                "DWRED GROUND 1-21",
+                "DWRED GROUND 1-22",
+                "DWRED GROUND 1-23",
+                "DWRED GROUND 1-25",
+                "DWRED GROUND 1-26",
+                "DWRED GROUND 1-27",
+                "DWRED GROUND 1-28",
+                "DWRED GROUND 1-29",
+                "DWRED GROUND 1-3",
+                "DWRED GROUND 1-30",
+                "DWRED GROUND 1-31",
+                "DWRED GROUND 1-32",
+                "DWRED GROUND 1-33",
+                "DWRED GROUND 1-34",
+                "DWRED GROUND 1-35",
+                "DWRED GROUND 1-36",
+                "DWRED GROUND 1-37",
+                "DWRED GROUND 1-38",
+                "DWRED GROUND 1-39",
+                "DWRED GROUND 1-4",
+                "DWRED GROUND 1-40",
+                "DWRED GROUND 1-41",
+                "DWRED GROUND 1-42",
+                "DWRED GROUND 1-43",
+                "DWRED GROUND 1-44",
+                "DWRED GROUND 1-45",
+                "DWRED GROUND 1-46",
+                "DWRED GROUND 1-5",
+                "DWRED GROUND 1-59",
+                "DWRED GROUND 1-6",
+                "DWRED GROUND 1-60",
+                "DWRED GROUND 1-61",
+                "DWRED GROUND 1-68",
+                "DWRED GROUND 1-69",
+                "DWRED GROUND 1-7",
+                "DWRED GROUND 1-70",
+                "DWRED GROUND 1-71",
+                "DWRED GROUND 1-72",
+                "DWRED GROUND 1-73",
+                "DWRED GROUND 1-74",
+                "DWRED GROUND 1-75",
+                "DWRED GROUND 1-76",
+                "DWRED GROUND 1-77",
+                "DWRED GROUND 1-78",
+                "DWRED GROUND 1-79",
+                "DWRED GROUND 1-8",
+                "DWRED GROUND 1-80",
+                "DWRED GROUND 1-81",
+                "DWRED GROUND 1-82",
+                "DWRED GROUND 1-83",
+                "DWRED GROUND 1-85",
+                "DWRED GROUND 1-9",
+                "RED EWR 1-1",
+                "RED EWR 1-2",
+                "RED SAM SA-10 DW 1-15",
+                "RED SAM SA-10 DW 1-16",
+                "RED SAM SA-6 DW 1-24"
+            ],
+            "vertices": [
+                {
+                    "x": -10959.471694037,
+                    "y": -322192.1068378
+                },
+                {
+                    "x": -17712.921544933,
+                    "y": -321045.82387958
+                },
+                {
+                    "x": -14451.520003508,
+                    "y": -314101.25094005
+                },
+                {
+                    "x": -8742.4259964648,
+                    "y": -317222.86648117
+                }
+            ],
+            "x": -12966.584809736,
+            "y": -318640.51203465
+        },
+        "OBJ-18": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [
+                "FARP-4"
+            ],
+            "label": "Gilded Exit",
+            "nodes": {
+                "NODE-78": {
+                    "label": "Terminus",
+                    "radius": 260,
+                    "x": 3536.7218139331,
+                    "y": -196939.26350691
+                },
+                "NODE-79": {
+                    "label": "Expat Apartments",
+                    "radius": 260,
+                    "x": 5853.3494307704,
+                    "y": -198604.31709731
+                },
+                "NODE-80": {
+                    "label": "Leaving Xylofagou",
+                    "radius": 260,
+                    "x": 2327.5149370263,
+                    "y": -185230.04234406
+                },
+                "NODE-81": {
+                    "label": "Company Town",
+                    "radius": 260,
+                    "x": 4862.8592358656,
+                    "y": -194101.87115204
+                },
+                "NODE-82": {
+                    "label": "Executive Retreat",
+                    "radius": 260,
+                    "x": 3976.0434588119,
+                    "y": -199151.99607564
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [
+                "REINFORCEMENT-7"
+            ],
+            "ship_groups": [
+                "Naval-10",
+                "Naval-11",
+                "Naval-12",
+                "Naval-13",
+                "Naval-14",
+                "Naval-15",
+                "Naval-16",
+                "Naval-17",
+                "Naval-20",
+                "Naval-21",
+                "Naval-22",
+                "Naval-23",
+                "Naval-24",
+                "Naval-25",
+                "Naval-26",
+                "Naval-27",
+                "Naval-28",
+                "Naval-29",
+                "Naval-5",
+                "Naval-6",
+                "Naval-7",
+                "Naval-8",
+                "Naval-9"
+            ],
+            "static_groups": [
+                "Static Container 40ft-3",
+                "Static Container 40ft-4",
+                "Static Container 40ft-5",
+                "Static Container 40ft-6",
+                "Static Container 40ft-7",
+                "Static Container 40ft-8",
+                "Static FARP Tent-23",
+                "Static FARP Tent-24",
+                "Static FARP Tent-25",
+                "Static FARP Tent-26",
+                "Static FARP Tent-27",
+                "Static FARP Tent-28",
+                "Static FARP Tent-29",
+                "Static Fueltank-10",
+                "Static Fueltank-11",
+                "Static Fueltank-12",
+                "Static Fueltank-13",
+                "Static Fueltank-14",
+                "Static Fueltank-9",
+                "Static Oiltank-10",
+                "Static Oiltank-11",
+                "Static Oiltank-12",
+                "Static Oiltank-13",
+                "Static Oiltank-14",
+                "Static Oiltank-9"
+            ],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED AIR DEFENSE BATTERY B 383-3",
+                "RED AIR DEFENSE BATTERY C 385-1",
+                "RED AIR DEFENSE BATTERY C 385-2",
+                "RED AIR DEFENSE BATTERY C 385-3",
+                "RED EWR 1-20",
+                "RED EWR 1-21",
+                "RED GROUND 1-160",
+                "RED GROUND 1-161",
+                "RED GROUND 1-162",
+                "RED GROUND 1-163",
+                "RED GROUND 1-164",
+                "RED GROUND 1-165",
+                "RED GROUND 1-166",
+                "RED GROUND 1-167",
+                "RED GROUND 1-168",
+                "RED GROUND 1-169",
+                "RED GROUND 1-170",
+                "RED GROUND 1-171",
+                "RED GROUND 1-172",
+                "RED GROUND 1-173",
+                "RED GROUND 1-174",
+                "RED GROUND 1-175",
+                "RED GROUND 1-176",
+                "RED GROUND 1-177",
+                "RED GROUND 1-178",
+                "RED GROUND 1-200",
+                "RED GROUND RG 1-1",
+                "RED GROUND RG 1-2",
+                "RED GROUND RG 1-3",
+                "RED GROUND RG 1-4",
+                "RED GROUND RG 1-5",
+                "RED GROUND RG 1-6",
+                "RED GROUND RG 1-7",
+                "RED SAM SA-2 RG-4",
+                "RED SAM SA-2 RG-5",
+                "RED SAM SA-2 RG-6"
+            ],
+            "vertices": [
+                {
+                    "x": 3637.8807568653,
+                    "y": -200587.25376875
+                },
+                {
+                    "x": 643.90072701879,
+                    "y": -184649.94454384
+                },
+                {
+                    "x": 4569.7914860132,
+                    "y": -184276.70673714
+                },
+                {
+                    "x": 6966.9233263593,
+                    "y": -199244.52449871
+                }
+            ],
+            "x": 3954.6240740642,
+            "y": -192189.60738711
+        },
+        "OBJ-19": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Foothill Throwdown",
+            "nodes": {
+                "NODE-28": {
+                    "label": "Flaksylvania",
+                    "radius": 260,
+                    "x": -10374.951696024,
+                    "y": -309884.90210287
+                },
+                "NODE-86": {
+                    "label": "Whats Aksilou With You?",
+                    "radius": 260,
+                    "x": -9426.6623499913,
+                    "y": -306311.70799531
+                },
+                "NODE-87": {
+                    "label": "Uragans Ahoy",
+                    "radius": 260,
+                    "x": -7465.2174306218,
+                    "y": -304502.49462192
+                },
+                "NODE-88": {
+                    "label": "Border Checkpoint",
+                    "radius": 260,
+                    "x": -8498.5220715027,
+                    "y": -315648.62985922
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [
+                "Static FARP Ammo Storage-1"
+            ],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "DWRED GROUND 1-15",
+                "DWRED GROUND 1-16",
+                "RED AAA GROUND 1-1",
+                "RED EWR 1-11",
+                "RED EWR 1-12",
+                "RED EWR 1-14",
+                "RED EWR 1-24",
+                "RED EWR 1-25",
+                "RED EWR 1-26",
+                "RED GROUND 1-212",
+                "RED GROUND 1-215",
+                "RED GROUND 1-216",
+                "RED GROUND 1-217",
+                "RED GROUND 1-218",
+                "RED GROUND 1-219",
+                "RED GROUND 1-220",
+                "RED GROUND 1-221",
+                "RED GROUND 1-222",
+                "RED GROUND 1-223",
+                "RED GROUND 1-224",
+                "RED GROUND 1-225",
+                "RED GROUND 10-22",
+                "RED GROUND 10-23",
+                "RED GROUND 10-24",
+                "RED GROUND 10-25",
+                "RED GROUND 300",
+                "RED SAM SA-13 GROUND 1-1",
+                "RED SAM SA-8 379-6"
+            ],
+            "vertices": [
+                {
+                    "x": -8327.7642339993,
+                    "y": -316463.72799166
+                },
+                {
+                    "x": -14943.751382444,
+                    "y": -312583.49172724
+                },
+                {
+                    "x": -9375.7836656828,
+                    "y": -297362.97942741
+                },
+                {
+                    "x": -5572.1223603911,
+                    "y": -308039.94465829
+                }
+            ],
+            "x": -9554.8554106293,
+            "y": -308612.53595115
+        },
+        "OBJ-2": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Battle for Limassol",
+            "nodes": {
+                "NODE-27": {
+                    "label": "Scud Party",
+                    "radius": 260,
+                    "x": -25141.780354996,
+                    "y": -267609.1692686
+                },
+                "NODE-7": {
+                    "label": "Precious Cargo",
+                    "radius": 259.9944,
+                    "x": -28666.177451891,
+                    "y": -265431.77712835
+                },
+                "NODE-8": {
+                    "label": "Yachtsman's Resort",
+                    "radius": 260,
+                    "x": -27312.776356723,
+                    "y": -263557.86879801
+                },
+                "NODE-9": {
+                    "label": "High-Traffic Bridge",
+                    "radius": 260,
+                    "x": -23317.081795703,
+                    "y": -264537.58259795
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [
+                "HATEFULIMAM1",
+                "Static Chemical tank A-1",
+                "Static Chemical tank A-2",
+                "Static FARP Fuel Depot-1",
+                "Static FARP Fuel Depot-2",
+                "Static FARP Tent-1",
+                "Static FARP Tent-2",
+                "Static Mi-26-1",
+                "Static Mi-26-2",
+                "Static Mi-26-3",
+                "Static Mi-26-4",
+                "Static PAD Single-1",
+                "Static PAD Single-2",
+                "Static PAD Single-3",
+                "Static PAD Single-4",
+                "Static PAD Single-5"
+            ],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [
+                "DWRED GROUND 1-100",
+                "DWRED GROUND 1-179",
+                "DWRED GROUND 1-197",
+                "DWRED GROUND 1-212",
+                "DWRED GROUND 1-48",
+                "DWRED GROUND 1-49",
+                "DWRED GROUND 1-50",
+                "DWRED GROUND 1-51",
+                "DWRED GROUND 1-52",
+                "DWRED GROUND 1-67",
+                "DWRED GROUND 1-86",
+                "DWRED GROUND 1-87",
+                "DWRED GROUND 1-88",
+                "DWRED GROUND 1-90",
+                "DWRED GROUND 1-97",
+                "DWRED GROUND 1-98",
+                "Ground-12",
+                "Ground-13",
+                "Ground-15",
+                "RED GROUND 1-10",
+                "RED GROUND 1-179",
+                "RED GROUND 1-180",
+                "RED GROUND 1-181",
+                "RED GROUND 1-182",
+                "RED GROUND 1-183",
+                "RED GROUND 1-184",
+                "RED GROUND 1-185",
+                "RED GROUND 1-186",
+                "RED GROUND 1-187",
+                "RED GROUND 1-19",
+                "RED GROUND 1-193",
+                "RED GROUND 1-194",
+                "RED GROUND 1-195",
+                "RED GROUND 1-196",
+                "RED GROUND 1-201",
+                "RED GROUND 1-202",
+                "RED GROUND 1-203",
+                "RED GROUND 1-204",
+                "RED GROUND 1-205",
+                "RED GROUND 1-206",
+                "RED GROUND 1-21",
+                "RED GROUND 1-211",
+                "RED GROUND 1-213",
+                "RED GROUND 1-214",
+                "RED GROUND 1-25",
+                "RED GROUND 1-26",
+                "RED GROUND 1-28",
+                "RED GROUND 1-29",
+                "RED GROUND 1-30",
+                "RED GROUND 1-31",
+                "RED GROUND 1-33",
+                "RED SAM SA-8 379-3"
+            ],
+            "vertices": [
+                {
+                    "x": -30124.099207317,
+                    "y": -265672.7355452
+                },
+                {
+                    "x": -27246.84479765,
+                    "y": -262601.48939744
+                },
+                {
+                    "x": -22817.852534318,
+                    "y": -264759.78004353
+                },
+                {
+                    "x": -25173.125402185,
+                    "y": -269025.10431846
+                }
+            ],
+            "x": -26340.480485367,
+            "y": -265514.77732616
+        },
+        "OBJ-3": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Western Beachhead",
+            "nodes": {
+                "NODE-12": {
+                    "label": "Coastal Flatlands",
+                    "radius": 260,
+                    "x": -28803.645979279,
+                    "y": -276616.01373282
+                },
+                "NODE-17": {
+                    "label": "Southern Junction",
+                    "radius": 260,
+                    "x": -30395.543354366,
+                    "y": -274267.50898774
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED GROUND 1-43",
+                "RED GROUND 1-46",
+                "RED GROUND 1-48",
+                "RED GROUND 1-51",
+                "RED GROUND 1-54",
+                "RED GROUND 1-55",
+                "RED GROUND 1-58"
+            ],
+            "vertices": [
+                {
+                    "x": -31240.881973834,
+                    "y": -275520.11396183
+                },
+                {
+                    "x": -31323.182725671,
+                    "y": -272464.97479535
+                },
+                {
+                    "x": -28219.903575513,
+                    "y": -272873.17157739
+                },
+                {
+                    "x": -28360.000595877,
+                    "y": -277266.75549212
+                }
+            ],
+            "x": -29785.992217724,
+            "y": -274531.25395667
+        },
+        "OBJ-4": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [
+                "FARP-1"
+            ],
+            "label": "Coastal Push",
+            "nodes": {
+                "NODE-13": {
+                    "label": "River Crossing",
+                    "radius": 260,
+                    "x": -27846.382032978,
+                    "y": -275215.17917489
+                },
+                "NODE-14": {
+                    "label": "Strategic Bridge",
+                    "radius": 260,
+                    "x": -24615.472025986,
+                    "y": -274882.46903495
+                },
+                "NODE-15": {
+                    "label": "Kolossi Outskirts",
+                    "radius": 260,
+                    "x": -26209.225533316,
+                    "y": -273502.27815848
+                },
+                "NODE-16": {
+                    "label": "Occupied Ruins",
+                    "radius": 260,
+                    "x": -26950.094661855,
+                    "y": -277595.48853329
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [
+                "REINFORCEMENT-2"
+            ],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED GROUND 1-40",
+                "RED GROUND 1-41",
+                "RED GROUND 1-42",
+                "RED GROUND 1-44",
+                "RED GROUND 1-45",
+                "RED GROUND 1-47",
+                "RED GROUND 1-49",
+                "RED GROUND 1-50",
+                "RED GROUND 1-52",
+                "RED GROUND 1-53",
+                "RED GROUND 1-56",
+                "RED GROUND 1-57",
+                "RED GROUND 1-59"
+            ],
+            "vertices": [
+                {
+                    "x": -28320.133982774,
+                    "y": -277370.49841168
+                },
+                {
+                    "x": -28148.158687105,
+                    "y": -272857.39926117
+                },
+                {
+                    "x": -24226.760140374,
+                    "y": -273408.15446181
+                },
+                {
+                    "x": -24571.005901741,
+                    "y": -279000.49556395
+                }
+            ],
+            "x": -26316.514677998,
+            "y": -275659.13692465
+        },
+        "OBJ-5": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [
+                "FARP-2"
+            ],
+            "label": "Germasogeia Reservoir",
+            "nodes": {
+                "NODE-18": {
+                    "label": "Akrounta Village",
+                    "radius": 260,
+                    "x": -17055.287913858,
+                    "y": -259115.4302576
+                },
+                "NODE-19": {
+                    "label": "The Crossroads",
+                    "radius": 260,
+                    "x": -18440.37412085,
+                    "y": -254844.49605009
+                },
+                "NODE-20": {
+                    "label": "Mathikoloni Village",
+                    "radius": 260,
+                    "x": -15549.244216202,
+                    "y": -262159.74111894
+                },
+                "NODE-6": {
+                    "label": "Lower Reservoir",
+                    "radius": 260,
+                    "x": -19448.611725078,
+                    "y": -259079.6460996
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [
+                "REINFORCEMENT-3"
+            ],
+            "ship_groups": [],
+            "static_groups": [
+                "OHDAM",
+                "Static FARP Ammo Storage-B-1",
+                "Static FARP Fuel Depot-B-1",
+                "Static FARP Tent-B-1",
+                "Static FARP Tent-B-2"
+            ],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED GROUND 1-1",
+                "RED GROUND 1-2",
+                "RED GROUND 1-3",
+                "RED GROUND 1-4",
+                "RED GROUND 1-5",
+                "RED GROUND 1-6"
+            ],
+            "vertices": [
+                {
+                    "x": -20160.846919388,
+                    "y": -259658.75691952
+                },
+                {
+                    "x": -18764.215524002,
+                    "y": -254026.06170507
+                },
+                {
+                    "x": -15691.043745665,
+                    "y": -257050.33542854
+                },
+                {
+                    "x": -15174.801660205,
+                    "y": -262740.50916497
+                }
+            ],
+            "x": -17447.726962315,
+            "y": -258368.91580453
+        },
+        "OBJ-6": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Forest Fighting",
+            "nodes": {
+                "NODE-21": {
+                    "label": "Ruins Stronghold",
+                    "radius": 260,
+                    "x": -25852.007094265,
+                    "y": -279821.51369954
+                },
+                "NODE-22": {
+                    "label": "Flak Town",
+                    "radius": 260,
+                    "x": -25689.469873625,
+                    "y": -284550.5728334
+                },
+                "NODE-23": {
+                    "label": "Reinforcement Convoy",
+                    "radius": 260,
+                    "x": -23552.612931207,
+                    "y": -283452.48696688
+                },
+                "NODE-24": {
+                    "label": "Entrenched City",
+                    "radius": 259.9944,
+                    "x": -25277.003042793,
+                    "y": -282298.70471041
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED EWR 1-8",
+                "RED GROUND 1-11",
+                "RED GROUND 1-12",
+                "RED GROUND 1-14",
+                "RED GROUND 1-15",
+                "RED GROUND 1-16",
+                "RED GROUND 1-17",
+                "RED GROUND 1-7",
+                "RED GROUND 1-8",
+                "RED GROUND 1-9",
+                "RED SAM SA-13 GROUND 1-7"
+            ],
+            "vertices": [
+                {
+                    "x": -26787.659883568,
+                    "y": -285245.64688726
+                },
+                {
+                    "x": -26935.290254284,
+                    "y": -278159.3890929
+                },
+                {
+                    "x": -22467.529035252,
+                    "y": -280350.53459511
+                },
+                {
+                    "x": -22296.588606002,
+                    "y": -284033.52384349
+                }
+            ],
+            "x": -24621.766944777,
+            "y": -281947.27360469
+        },
+        "OBJ-7": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Hearts and Minds",
+            "nodes": {
+                "NODE-10": {
+                    "label": "Around the Roundabout",
+                    "radius": 260,
+                    "x": -23115.335708706,
+                    "y": -259181.39188287
+                },
+                "NODE-11": {
+                    "label": "Industrial Park",
+                    "radius": 259.9944,
+                    "x": -23503.870339474,
+                    "y": -260952.6548422
+                },
+                "NODE-25": {
+                    "label": "Olive Oil Factory",
+                    "radius": 260,
+                    "x": -25209.467846848,
+                    "y": -263239.20870785
+                },
+                "NODE-85": {
+                    "label": "It means \"Cube\"",
+                    "radius": 260,
+                    "x": -21981.613669659,
+                    "y": -259993.85526568
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [
+                "GAMERHOUSE1",
+                "OLIVEOIL1",
+                "Static Fuel tank-4",
+                "Static Fuel tank-5",
+                "Static Fuel tank-6",
+                "Static Fuel tank-7",
+                "Static Road outpost-1",
+                "Static Workshop A-1",
+                "Static Workshop A-2"
+            ],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [
+                "DWRED GROUND 1-101",
+                "DWRED GROUND 1-102",
+                "DWRED GROUND 1-89",
+                "Ground-16",
+                "Ground-17",
+                "RED AAA GROUND 1-34",
+                "RED EWR 1-22",
+                "RED EWR 1-23",
+                "RED GROUND 1-13",
+                "RED GROUND 1-188",
+                "RED GROUND 1-189",
+                "RED GROUND 1-190",
+                "RED GROUND 1-191",
+                "RED GROUND 1-192",
+                "RED GROUND 1-20",
+                "RED GROUND 1-22",
+                "RED GROUND 1-23",
+                "RED GROUND 1-24",
+                "RED GROUND 1-27",
+                "RED GROUND 1-32",
+                "RED GROUND 1-65",
+                "RED GROUND 1-66",
+                "RED GROUND 1-67",
+                "RED SAM SA-13 DW 379-5",
+                "RED SAM SA-6 DW 379-1",
+                "RED SAM SA-8 379-4",
+                "RED SAM SA-9 1-13"
+            ],
+            "vertices": [
+                {
+                    "x": -27175.872564663,
+                    "y": -262565.95067211
+                },
+                {
+                    "x": -24331.355334355,
+                    "y": -257709.65893689
+                },
+                {
+                    "x": -21555.675680963,
+                    "y": -259451.43830325
+                },
+                {
+                    "x": -22781.299568275,
+                    "y": -264709.64481669
+                }
+            ],
+            "x": -23961.050787064,
+            "y": -261109.17318223
+        },
+        "OBJ-8": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Strategic Targets",
+            "nodes": {},
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-3",
+            "tasks": [
+                "TASK-9",
+                "TASK-10",
+                "TASK-1",
+                "TASK-3",
+                "TASK-2",
+                "TASK-11",
+                "TASK-5",
+                "TASK-6",
+                "TASK-7",
+                "TASK-8"
+            ],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": -38041.166048978,
+                    "y": -274094.73153295
+                },
+                {
+                    "x": -38051.706467948,
+                    "y": -273432.73269403
+                },
+                {
+                    "x": -37614.235341528,
+                    "y": -273451.54865646
+                },
+                {
+                    "x": -37607.44802623,
+                    "y": -274103.58292117
+                }
+            ],
+            "x": -37828.638971171,
+            "y": -273770.64895115
+        },
+        "OBJ-9": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Eastbound Highway",
+            "nodes": {
+                "NODE-26": {
+                    "label": "Highway Overpass",
+                    "radius": 260,
+                    "x": -16752.90068319,
+                    "y": -235126.15395188
+                },
+                "NODE-30": {
+                    "label": "Catch Of The Day",
+                    "radius": 260,
+                    "x": -23288.799412211,
+                    "y": -238092.66303925
+                },
+                "NODE-31": {
+                    "label": "Mountain Village",
+                    "radius": 260,
+                    "x": -17182.964014925,
+                    "y": -239495.19814236
+                },
+                "NODE-42": {
+                    "label": "Turned Tides",
+                    "radius": 259.9944,
+                    "x": -22203.838820225,
+                    "y": -235955.24873164
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [
+                "Naval-1"
+            ],
+            "static_groups": [
+                "Static AS32-31A-1",
+                "Static CV-59 Hyster 60-1",
+                "Static CV-59 Large Forklift-1",
+                "Static Road outpost-3",
+                "Static Watch tower armed-1"
+            ],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED EWR 1-10",
+                "RED EWR 1-9",
+                "RED GROUND 1-199",
+                "RED GROUND 1-209",
+                "RED GROUND 1-35",
+                "RED GROUND 1-36",
+                "RED GROUND 1-37",
+                "RED GROUND 1-38",
+                "RED GROUND 1-39",
+                "RED GROUND 1-70",
+                "RED GROUND 1-71",
+                "RED GROUND 1-72",
+                "RED GROUND 1-73",
+                "RED GROUND 1-74",
+                "RED GROUND 1-79",
+                "RED GROUND 1-80",
+                "RED GROUND 1-81",
+                "RED GROUND 1-82",
+                "RED GROUND 1-83",
+                "RED GROUND 1-84",
+                "RED GROUND 1-85",
+                "RED GROUND 1-86",
+                "RED GROUND 1-87",
+                "RED SAM SA-13 GROUND 1-15",
+                "RED SAM SA-13 GROUND 1-8",
+                "RED SAM SA-8 379-5"
+            ],
+            "vertices": [
+                {
+                    "x": -23916.797666524,
+                    "y": -242702.66195991
+                },
+                {
+                    "x": -22663.499419408,
+                    "y": -231840.74381824
+                },
+                {
+                    "x": -16022.778132264,
+                    "y": -234240.777858
+                },
+                {
+                    "x": -16734.498780781,
+                    "y": -242932.35383663
+                }
+            ],
+            "x": -19834.393499744,
+            "y": -237929.13436819
+        }
+    },
+    "strands": {
+        "STRAND-1": [
+            "OBJ-3",
+            "OBJ-4",
+            "OBJ-6",
+            "OBJ-10",
+            "OBJ-11",
+            "OBJ-12",
+            "OBJ-17",
+            "OBJ-19"
+        ],
+        "STRAND-2": [
+            "OBJ-1",
+            "OBJ-2",
+            "OBJ-7",
+            "OBJ-5",
+            "OBJ-15",
+            "OBJ-9",
+            "OBJ-14",
+            "OBJ-13",
+            "OBJ-16",
+            "OBJ-18"
+        ],
+        "STRAND-3": [
+            "OBJ-8"
+        ]
+    }
+}
