@@ -316,6 +316,51 @@ MissionDb = {
 					staticGroups = {
 					},
 				},
+				{
+					name = "QRF-9",
+					spawnGroups = {
+						{ name = "RED QRF 9-2" },
+						{ name = "RED QRF 10-2" },
+					},
+					vehicleGroups = {
+						{ name = "RED QRF 9-2" },
+						{ name = "RED QRF 10-2" },
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					},
+				},
+				{
+					name = "QRF-10",
+					spawnGroups = {
+						{ name = "RED QRF 9-1" },
+						{ name = "RED QRF 10-1" },
+					},
+					vehicleGroups = {
+						{ name = "RED QRF 9-1" },
+						{ name = "RED QRF 10-1" },
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					},
+				},
+				{
+					name = "QRF-11",
+					spawnGroups = {
+						{ name = "RED QRF 9" },
+						{ name = "RED QRF 10" },
+					},
+					vehicleGroups = {
+						{ name = "RED QRF 9" },
+						{ name = "RED QRF 10" },
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					},
+				},
 			},
 			reinforcements = {
 				{
