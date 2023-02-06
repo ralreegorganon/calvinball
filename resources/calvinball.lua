@@ -1659,6 +1659,7 @@ local function initializeCtld()
     MissionDb.ctld.instance.enableslingload = true
     MissionDb.ctld.instance.cratecountry = country.id.CJTF_BLUE
     MissionDb.ctld.instance.buildtime = 0
+    MissionDb.ctld.instance.usesubcats = true
 
     MissionDb.ctld.instance.enableLoadSave = true
     MissionDb.ctld.instance.saveinterval = 600
@@ -1673,19 +1674,19 @@ local function initializeCtld()
     MissionDb.ctld.instance:AddTroopsCargo("JTAC (1)", { "CTLD BLUE RECCE JTAC" }, CTLD_CARGO.Enum.TROOPS, 1, 80)
     MissionDb.ctld.instance:AddTroopsCargo("MORTAR (5)", { "CTLD MORTAR" }, CTLD_CARGO.Enum.TROOPS, 5, 122)
 
-    MissionDb.ctld.instance:AddCratesCargo("HMMWV - JTAC", { "CTLD BLUE RECCE JTAC HMMWV" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350)
-    MissionDb.ctld.instance:AddCratesCargo("HMMWV - MG", { "CTLD HMMWV MG" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350)
-    MissionDb.ctld.instance:AddCratesCargo("HMMWV - TOW", { "CTLD HMMWV TOW" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350)
-    MissionDb.ctld.instance:AddCratesCargo("AVENGER", { "CTLD AVENGER" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350)
-    MissionDb.ctld.instance:AddCratesCargo("M939 - AMMO", { "CTLD M818" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350)
-    MissionDb.ctld.instance:AddCratesCargo("M60A3", { "CTLD M60" }, CTLD_CARGO.Enum.VEHICLE, 2, 1350)
-    MissionDb.ctld.instance:AddCratesCargo("STRYKER - MGS", { "CTLD STRYKER MGS" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350)
-    MissionDb.ctld.instance:AddCratesCargo("STRYKER - ICV", { "CTLD STRYKER ICV" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350)
-    MissionDb.ctld.instance:AddCratesCargo("HAWK Launcher", { "CTLD HAWK LN" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350)
-    MissionDb.ctld.instance:AddCratesCargo("HAWK Search Radar", { "CTLD HAWK SR" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350)
-    MissionDb.ctld.instance:AddCratesCargo("HAWK Track Radar", { "CTLD HAWK TR" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350)
-    MissionDb.ctld.instance:AddCratesCargo("HAWK PCP", { "CTLD HAWK PCP" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350)
-    MissionDb.ctld.instance:AddCratesCargo("HAWK CWAR", { "CTLD HAWK CWAR" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350)
+    MissionDb.ctld.instance:AddCratesCargo("HMMWV - JTAC", { "CTLD BLUE RECCE JTAC HMMWV" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Vehicles")
+    MissionDb.ctld.instance:AddCratesCargo("HMMWV - MG", { "CTLD HMMWV MG" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Vehicles")
+    MissionDb.ctld.instance:AddCratesCargo("HMMWV - TOW", { "CTLD HMMWV TOW" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Vehicles")
+    MissionDb.ctld.instance:AddCratesCargo("AVENGER", { "CTLD AVENGER" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Vehicles")
+    MissionDb.ctld.instance:AddCratesCargo("M939 - AMMO", { "CTLD M818" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Vehicles")
+    MissionDb.ctld.instance:AddCratesCargo("M60A3", { "CTLD M60" }, CTLD_CARGO.Enum.VEHICLE, 2, 1350, nil, "Vehicles")
+    MissionDb.ctld.instance:AddCratesCargo("STRYKER - MGS", { "CTLD STRYKER MGS" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Vehicles")
+    MissionDb.ctld.instance:AddCratesCargo("STRYKER - ICV", { "CTLD STRYKER ICV" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Vehicles")
+    MissionDb.ctld.instance:AddCratesCargo("HAWK Launcher", { "CTLD HAWK LN" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "SAMs")
+    MissionDb.ctld.instance:AddCratesCargo("HAWK Search Radar", { "CTLD HAWK SR" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "SAMs")
+    MissionDb.ctld.instance:AddCratesCargo("HAWK Track Radar", { "CTLD HAWK TR" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "SAMs")
+    MissionDb.ctld.instance:AddCratesCargo("HAWK PCP", { "CTLD HAWK PCP" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "SAMs")
+    MissionDb.ctld.instance:AddCratesCargo("HAWK CWAR", { "CTLD HAWK CWAR" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "SAMs")
 
     CTLD_HERCULES:New(coalition.side.BLUE, "Jaelifter Fixed Wing", MissionDb.ctld.instance)
 
