@@ -3150,6 +3150,128 @@ MissionDb = {
 			}
 		},
 		{
+			name = "OBJ-20",
+			strand = "STRAND-1",
+			completeSound = "",
+			nodes = {
+				{ name = "NODE-89" },
+				{ name = "NODE-90" },
+				{ name = "NODE-91" },
+				{ name = "NODE-92" },
+				{ name = "NODE-93" },
+			},
+			tasks = {
+			},
+			farps = {
+			},
+			airbases = {
+			},
+			qrfs = {
+			},
+			reinforcements = {
+			},
+			vehicleGroups = {
+				{ name = "GORED GROUND 1-53" },
+				{ name = "GORED GROUND 1-56" },
+				{ name = "DWRED GROUND 1-58" },
+				{ name = "GORED GROUND 1-62" },
+				{ name = "GORED GROUND 1-63" },
+				{ name = "GORED GROUND 1-64" },
+				{ name = "GORED GROUND 1-65" },
+				{ name = "GORED GROUND 1-66" },
+				{ name = "GORED GROUND 1-220" },
+				{ name = "GORED GROUND 1-227" },
+				{ name = "GORED GROUND 1-96" },
+				{ name = "GORED GROUND 1-99" },
+				{ name = "GORED GROUND 1-232" },
+				{ name = "GORED GROUND 1-235" },
+				{ name = "GORED GROUND 1-57" },
+				{ name = "GORED GROUND 1-230" },
+				{ name = "GORED GROUND 1-103" },
+				{ name = "GODWRED GROUND 1-55" },
+				{ name = "GORED AAA GROUND 1-2" },
+				{ name = "GORED SAM SA-2 373-3" },
+				{ name = "GORED GROUND 1-84" },
+				{ name = "GORED SAM SA-2 373-4" },
+				{ name = "GORED GROUND 1-105" },
+				{ name = "DWRED GROUND 1-107" },
+				{ name = "GORED GROUND 1-215" },
+				{ name = "GORED GROUND 1-3" },
+				{ name = "GORED GROUND 1-24" },
+				{ name = "GORED GROUND 1-54" },
+				{ name = "GORED GROUND 1-47" },
+				{ name = "GORED GROUND 1-93" },
+				{ name = "GORED GROUND 1-92" },
+				{ name = "GORED GROUND 1-231" },
+				{ name = "GORED GROUND 1-233" },
+				{ name = "GORED GROUND 1-104" },
+				{ name = "DWRED GROUND 1-106" },
+				{ name = "GORED GROUND 1-108" },
+				{ name = "GORED GROUND 1-1" },
+			},
+			shipGroups = {
+			},
+			staticGroups = {
+			}
+		},
+		{
+			name = "OBJ-21",
+			strand = "STRAND-2",
+			completeSound = "",
+			nodes = {
+				{ name = "NODE-94" },
+				{ name = "NODE-95" },
+				{ name = "NODE-96" },
+				{ name = "NODE-97" },
+				{ name = "NODE-98" },
+			},
+			tasks = {
+			},
+			farps = {
+			},
+			airbases = {
+			},
+			qrfs = {
+			},
+			reinforcements = {
+			},
+			vehicleGroups = {
+				{ name = "GORED GROUND 1-5" },
+				{ name = "GORED GROUND 1-7" },
+				{ name = "GORED GROUND 1-9" },
+				{ name = "GORED GROUND 1-11" },
+				{ name = "GORED GROUND 1-14" },
+				{ name = "GORED GROUND 1-16" },
+				{ name = "GORED GROUND 1-18" },
+				{ name = "GORED GROUND 1-20" },
+				{ name = "GORED GROUND 1-21" },
+				{ name = "GORED GROUND 1-23" },
+				{ name = "GORED GROUND 1-26" },
+				{ name = "GORED GROUND 1-221" },
+				{ name = "GORED GROUND 1-28" },
+				{ name = "GORED GROUND 1-30" },
+				{ name = "GORED GROUND 1-4" },
+				{ name = "GORED GROUND 1-6" },
+				{ name = "GORED GROUND 1-8" },
+				{ name = "GORED GROUND 1-10" },
+				{ name = "GORED GROUND 1-13" },
+				{ name = "GORED GROUND 1-15" },
+				{ name = "GORED GROUND 1-17" },
+				{ name = "GORED GROUND 1-19" },
+				{ name = "GORED GROUND 1-2" },
+				{ name = "GORED GROUND 1-22" },
+				{ name = "GORED GROUND 1-25" },
+				{ name = "GORED GROUND 1-216" },
+				{ name = "GORED GROUND 1-27" },
+				{ name = "GORED GROUND 1-29" },
+			},
+			shipGroups = {
+				{ name = "Naval-18" },
+			},
+			staticGroups = {
+			}
+		},
+		{
 			name = "OBJ-3",
 			strand = "STRAND-1",
 			completeSound = "",
@@ -4618,6 +4740,7 @@ MissionDb = {
 				"OBJ-12",
 				"OBJ-17",
 				"OBJ-19",
+				"OBJ-20",
 				},
 			},
 		{
@@ -4633,6 +4756,7 @@ MissionDb = {
 				"OBJ-13",
 				"OBJ-16",
 				"OBJ-18",
+				"OBJ-21",
 				},
 			},
 		{

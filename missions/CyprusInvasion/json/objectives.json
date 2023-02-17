@@ -1146,7 +1146,7 @@
                     "y": -199244.52449871
                 }
             ],
-            "x": 3954.6240740642,
+            "x": 3954.6240740641,
             "y": -192189.60738711
         },
         "OBJ-19": {
@@ -1369,6 +1369,207 @@
             ],
             "x": -26340.480485367,
             "y": -265514.77732616
+        },
+        "OBJ-20": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Western Exposure",
+            "nodes": {
+                "NODE-89": {
+                    "label": "Border Checkpoint",
+                    "radius": 260,
+                    "x": -8261.4060462775,
+                    "y": -319290.80991904
+                },
+                "NODE-90": {
+                    "label": "Wagner Group",
+                    "radius": 260,
+                    "x": -7079.9319133998,
+                    "y": -316756.69550293
+                },
+                "NODE-91": {
+                    "label": "Eastern Flank",
+                    "radius": 260,
+                    "x": -4698.6054401411,
+                    "y": -311984.19859908
+                },
+                "NODE-92": {
+                    "label": "Cumtown",
+                    "radius": 260,
+                    "x": -4356.1099944811,
+                    "y": -318332.86807588
+                },
+                "NODE-93": {
+                    "label": "Mountain SAM Site",
+                    "radius": 260,
+                    "x": -2237.5505020668,
+                    "y": -315754.89553997
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "GORED GROUND 1-53",
+                "GORED GROUND 1-56",
+                "DWRED GROUND 1-58",
+                "GORED GROUND 1-62",
+                "GORED GROUND 1-63",
+                "GORED GROUND 1-64",
+                "GORED GROUND 1-65",
+                "GORED GROUND 1-66",
+                "GORED GROUND 1-220",
+                "GORED GROUND 1-227",
+                "GORED GROUND 1-96",
+                "GORED GROUND 1-99",
+                "GORED GROUND 1-232",
+                "GORED GROUND 1-235",
+                "GORED GROUND 1-57",
+                "GORED GROUND 1-230",
+                "GORED GROUND 1-103",
+                "GODWRED GROUND 1-55",
+                "GORED AAA GROUND 1-2",
+                "GORED SAM SA-2 373-3",
+                "GORED GROUND 1-84",
+                "GORED SAM SA-2 373-4",
+                "GORED GROUND 1-105",
+                "DWRED GROUND 1-107",
+                "GORED GROUND 1-215",
+                "GORED GROUND 1-3",
+                "GORED GROUND 1-24",
+                "GORED GROUND 1-54",
+                "GORED GROUND 1-47",
+                "GORED GROUND 1-93",
+                "GORED GROUND 1-92",
+                "GORED GROUND 1-231",
+                "GORED GROUND 1-233",
+                "GORED GROUND 1-104",
+                "DWRED GROUND 1-106",
+                "GORED GROUND 1-108",
+                "GORED GROUND 1-1"
+            ],
+            "vertices": [
+                {
+                    "x": -2913.1161451622,
+                    "y": -323523.54688556
+                },
+                {
+                    "x": -10315.421825144,
+                    "y": -322266.01232989
+                },
+                {
+                    "x": -4641.7541522452,
+                    "y": -307484.44629406
+                },
+                {
+                    "x": -838.09284695354,
+                    "y": -318161.41152494
+                }
+            ],
+            "x": -4677.0962423762,
+            "y": -317858.85425861
+        },
+        "OBJ-21": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Eastern Peninsula",
+            "nodes": {
+                "NODE-94": {
+                    "label": "Kalahari",
+                    "radius": 260,
+                    "x": 3347.0721290986,
+                    "y": -179020.30162045
+                },
+                "NODE-95": {
+                    "label": "Chula Vista",
+                    "radius": 260,
+                    "x": 3572.2512898172,
+                    "y": -175652.08403226
+                },
+                "NODE-96": {
+                    "label": "Refuelling Station",
+                    "radius": 260,
+                    "x": 1726.0996073411,
+                    "y": -168725.82678045
+                },
+                "NODE-97": {
+                    "label": "Last Stand",
+                    "radius": 260,
+                    "x": -289.78136082833,
+                    "y": -166213.76207461
+                },
+                "NODE-98": {
+                    "label": "Noah's Ark",
+                    "radius": 260,
+                    "x": 5370.2667215965,
+                    "y": -168304.05210855
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [
+                "Naval-18"
+            ],
+            "static_groups": [],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [
+                "GORED GROUND 1-5",
+                "GORED GROUND 1-7",
+                "GORED GROUND 1-9",
+                "GORED GROUND 1-11",
+                "GORED GROUND 1-14",
+                "GORED GROUND 1-16",
+                "GORED GROUND 1-18",
+                "GORED GROUND 1-20",
+                "GORED GROUND 1-21",
+                "GORED GROUND 1-23",
+                "GORED GROUND 1-26",
+                "GORED GROUND 1-221",
+                "GORED GROUND 1-28",
+                "GORED GROUND 1-30",
+                "GORED GROUND 1-4",
+                "GORED GROUND 1-6",
+                "GORED GROUND 1-8",
+                "GORED GROUND 1-10",
+                "GORED GROUND 1-13",
+                "GORED GROUND 1-15",
+                "GORED GROUND 1-17",
+                "GORED GROUND 1-19",
+                "GORED GROUND 1-2",
+                "GORED GROUND 1-22",
+                "GORED GROUND 1-25",
+                "GORED GROUND 1-216",
+                "GORED GROUND 1-27",
+                "GORED GROUND 1-29"
+            ],
+            "vertices": [
+                {
+                    "x": 2046.1593767644,
+                    "y": -182564.80512617
+                },
+                {
+                    "x": -1336.0048746837,
+                    "y": -165161.64350322
+                },
+                {
+                    "x": 6070.5067139304,
+                    "y": -166959.75614323
+                },
+                {
+                    "x": 6413.982278487,
+                    "y": -182838.78948309
+                }
+            ],
+            "x": 3298.6608736245,
+            "y": -174381.24856393
         },
         "OBJ-3": {
             "airbases": [],
@@ -1902,7 +2103,8 @@
             "OBJ-11",
             "OBJ-12",
             "OBJ-17",
-            "OBJ-19"
+            "OBJ-19",
+            "OBJ-20"
         ],
         "STRAND-2": [
             "OBJ-1",
@@ -1914,7 +2116,8 @@
             "OBJ-14",
             "OBJ-13",
             "OBJ-16",
-            "OBJ-18"
+            "OBJ-18",
+            "OBJ-21"
         ],
         "STRAND-3": [
             "OBJ-8"
