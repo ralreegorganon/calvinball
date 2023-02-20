@@ -1864,3 +1864,8 @@ SCHEDULER:New(nil, randomFriendlyReinforcement, {}, math.random(1800, 3600), 360
 SCHEDULER:New(nil, randomChiefMissions, {}, math.random(300, 600), 2700)
 
 SCHEDULER:New(nil, standardAirwingReinforcement, {}, 120, 3600)
+
+-- Global wrappers for local functions, to be called from discord bot
+function DebugRandomEnemyReinforcement()
+    randomEnemyReinforcement()
+end
