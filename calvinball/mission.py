@@ -70,7 +70,7 @@ class Mission:
         self.m.forced_options.permit_crash = False
         self.m.forced_options.external_views = True
         self.m.forced_options.options_view = dcs.forcedoptions.ForcedOptions.Views.OnlyAllies
-        self.m.forced_options.labels = dcs.forcedoptions.ForcedOptions.Labels.None_
+        self.m.forced_options.labels = dcs.forcedoptions.ForcedOptions.Labels.NeutralDot
         self.m.forced_options.easy_flight = False
         self.m.forced_options.easy_radar = False
         self.m.forced_options.immortal = False
