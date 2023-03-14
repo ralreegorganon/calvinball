@@ -60,7 +60,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.M_2000C, "count": 1, "parking": [14], "fuel": 1, "loadout": "Empty", "livery": "2003 Tigermeet" },
                     { "airframe": dcs.planes.MiG_21Bis, "count": 2, "parking": [29, 7], "fuel": 1, "loadout": "Empty", "livery": "HuAF 31st AB (Turul Sqn)" },
                     { "airframe": dcs.planes.MiG_19P, "count": 1, "parking": [16], "fuel": 1, "loadout": "Empty", "livery": "DDR - Fictional" },
-                    { "airframe": dcs.planes.Mirage_F1CE, "count": 1, "parking": [17], "fuel": 1, "loadout": "Empty", "livery": "USA AGGRESSOR Colour (CE)" },
+                    { "airframe": dcs.planes.Mirage_F1EE, "count": 1, "parking": [17], "fuel": 1, "loadout": "Empty", "livery": "USA AGGRESSOR Colour (CE)" },
                     { "airframe": dcs.planes.F_86F_Sabre, "count": 1, "parking": [6], "fuel": 1, "loadout": "Empty", "livery": "Royal Saudi Air Force" },
                     { "airframe": dcs.planes.MB_339A, "count": 2, "parking": [40, 41], "fuel": 1, "loadout": "Empty", "livery": "MB339AN 'NIGERIA'" },
                 ]
@@ -90,7 +90,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.M_2000C, "count": 1, "parking": [33], "fuel": 1, "loadout": "Empty", "livery": "2003 Tigermeet" },
                     { "airframe": dcs.planes.MiG_21Bis, "count": 1, "parking": [24], "fuel": 1, "loadout": "Empty", "livery": "HuAF 31st AB (Turul Sqn)" },
                     { "airframe": dcs.planes.MiG_19P, "count": 1, "parking": [26], "fuel": 1, "loadout": "Empty", "livery": "DDR - Fictional" },
-                    { "airframe": dcs.planes.Mirage_F1CE, "count": 1, "parking": [27], "fuel": 1, "loadout": "Empty", "livery": "USA AGGRESSOR Colour (CE)" },
+                    { "airframe": dcs.planes.Mirage_F1EE, "count": 1, "parking": [27], "fuel": 1, "loadout": "Empty", "livery": "USA AGGRESSOR Colour (CE)" },
                     { "airframe": dcs.planes.F_86F_Sabre, "count": 1, "parking": [28], "fuel": 1, "loadout": "Empty", "livery": "Royal Saudi Air Force" },
                     { "airframe": dcs.planes.MB_339A, "count": 1, "parking": [35], "fuel": 1, "loadout": "Empty", "livery": "MB339AN 'NIGERIA'" },
                 ]
@@ -120,7 +120,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.M_2000C, "count": 1, "parking": [30], "fuel": 1, "loadout": "Empty", "livery": "2003 Tigermeet" },
                     { "airframe": dcs.planes.MiG_21Bis, "count": 2, "parking": [38, 29], "fuel": 1, "loadout": "Empty", "livery": "HuAF 31st AB (Turul Sqn)" },
                     { "airframe": dcs.planes.MiG_19P, "count": 2, "parking": [31, 32], "fuel": 1, "loadout": "Empty", "livery": "DDR - Fictional" },
-                    { "airframe": dcs.planes.Mirage_F1CE, "count": 1, "parking": [39], "fuel": 1, "loadout": "Empty", "livery": "USA AGGRESSOR Colour (CE)" },
+                    { "airframe": dcs.planes.Mirage_F1EE, "count": 1, "parking": [39], "fuel": 1, "loadout": "Empty", "livery": "USA AGGRESSOR Colour (CE)" },
                     { "airframe": dcs.planes.F_86F_Sabre, "count": 1, "parking": [27], "fuel": 1, "loadout": "Empty", "livery": "Royal Saudi Air Force" },
                     { "airframe": dcs.planes.MB_339A, "count": 2, "parking": [2, 3], "fuel": 1, "loadout": "Empty", "livery": "MB339AN 'NIGERIA'" },
                 ]
