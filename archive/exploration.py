@@ -66,9 +66,47 @@ def livery_ids(a):
 
     print(table)
 
+def radios():
+    csv_rows = []
+    field_names = ["Airframe", "Radio", "Channel", "Frequency"]
+
+    table = PrettyTable()
+    table.field_names = field_names
+    table.sortby = "Airframe"
+
+    for p in dcs.planes.plane_map.values():
+        if(p.flyable):
+            if p.panel_radio:
+                for radioid, channels in p.panel_radio.items():
+                    for c,f in sorted(channels["channels"].items()):
+                        table.add_row([p.id, radioid, c, f])
+                        csv_rows.append([p.id, radioid, c, f])
+            else:
+                table.add_row([p.id, None, None, p.radio_frequency])
+                csv_rows.append([p.id, None, None, p.radio_frequency])
+                    
+
+    for p in dcs.helicopters.helicopter_map.values():
+        if(p.flyable):
+            if p.panel_radio:
+                for radioid, channels in p.panel_radio.items():
+                    for c,f in sorted(channels["channels"].items()):
+                        table.add_row([p.id, radioid, c, f])
+                        csv_rows.append([p.id, radioid, c, f])
+            else:
+                table.add_row([p.id, None, None, p.radio_frequency])
+                csv_rows.append([p.id, None, None, p.radio_frequency])
+    
+    print(table)
+
+    # with open("radios.csv", "w", newline='') as outfile:
+    #     w = csv.writer(outfile)
+    #     w.writerow(field_names)
+    #     w.writerows(csv_rows)
+
 #parking_slot_names(dcs.terrain.Syria().airports["Akrotiri"])
 #parking_slot_names(dcs.terrain.Syria().airports["Paphos"])
-parking_slot_names(dcs.terrain.Syria().airports["Larnaca"])
+#parking_slot_names(dcs.terrain.Syria().airports["Larnaca"])
 #livery_ids(dcs.helicopters.AH_64D_BLK_II)
 
 #airport_slots()
@@ -77,4 +115,6 @@ parking_slot_names(dcs.terrain.Syria().airports["Larnaca"])
 
 #airport_slots()
 
-parking_slot_names(dcs.terrain.Caucasus().airports["Batumi"])
+#parking_slot_names(dcs.terrain.Caucasus().airports["Batumi"])
+
+radios()
