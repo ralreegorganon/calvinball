@@ -271,12 +271,60 @@ class CyprusInvasionClients(calvinball.clients.Clients):
             },
         ]
 
+        comms_plan = {
+            "uhf": { 1: 250, 2: 251, 3: 252, 4: 253, 5: 254 },
+            "vhf_am": { 1: 135, 2: 136, 3: 137, 4: 138, 5: 139 },
+            "vhf_fm": { 1: 31, 2: 32, 3: 33, 4: 34, 5: 35 }
+        }
+
+        radio_override = {
+            dcs.helicopters.Ka_50_3: { "radio": 2, "frequency": 135 },
+            dcs.helicopters.SA342L: { "radio": 1, "frequency": 135 },
+            dcs.helicopters.SA342M: { "radio": 1, "frequency": 135 },
+        }
+
+        radios = {
+            dcs.helicopters.AH_64D_BLK_II: ["vhf_am", "uhf", "vhf_fm"],
+            dcs.helicopters.Ka_50_3: ["vhf_fm"],
+            dcs.helicopters.Mi_24P: ["vhf_am", "vhf_fm"],
+            dcs.helicopters.Mi_8MT: ["vhf_am", "vhf_fm"],
+            dcs.helicopters.SA342L: ["vhf_fm"],
+            dcs.helicopters.SA342M: ["vhf_fm"],
+            dcs.helicopters.UH_1H: ["uhf"],
+            dcs.planes.A_10A: ["vhf_am"],
+            dcs.planes.A_10C_2: ["vhf_am", "uhf", "vhf_fm"],
+            dcs.planes.AJS37: ["uhf"],
+            dcs.planes.AV8BNA: ["vhf_am", "uhf", "vhf_fm"],
+            dcs.planes.C_101CC: ["uhf"],
+            dcs.planes.F_5E_3: ["uhf"],
+            dcs.planes.F_86F_Sabre: ["uhf"],
+            dcs.planes.L_39ZA: ["uhf"],
+            dcs.planes.M_2000C: ["uhf", "vhf_am"],
+            dcs.planes.MB_339A: ["uhf"],
+            dcs.planes.MiG_19P: ["vhf_am"],
+            dcs.planes.MiG_21Bis: ["uhf"],
+            dcs.planes.Mirage_F1EE: ["vhf_am", "uhf"],
+            dcs.planes.P_51D_30_NA: ["vhf_am"],
+            dcs.planes.Su_25: ["vhf_am"],
+            dcs.planes.Su_25T: ["vhf_am"],
+        }
+
         if not edit:
             airport_set[0]["airframes"].append({ "airframe": A_4E_C, "count": 2, "parking": [15, 25], "fuel": 1, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
             airport_set[1]["airframes"].append({ "airframe": A_4E_C, "count": 1, "parking": [25], "fuel": 1, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
             airport_set[2]["airframes"].append({ "airframe": A_4E_C, "count": 2, "parking": [26, 28], "fuel": 1, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
             # airport_set[0]["airframes"].append({ "airframe": Bronco_OV_10A, "count": 2, "parking": [6, 7], "fuel": 1, "loadout": "Empty", "livery": "colombian 2221" })
             # airport_set[0]["airframes"].append({ "airframe": Hercules, "count": 2, "parking": [40, 41], "fuel": 0.6, "loadout": "Empty" })
+
+            radios[A_4E_C] = ["uhf"]
+
+        for airport in airport_set:
+            for airframe in airport["airframes"]:
+                airframe["radios"] = {}
+                if airframe["airframe"] in radio_override:
+                    airframe["radio_override"] = radio_override[airframe["airframe"]]
+                for i, template in enumerate(radios[airframe["airframe"]]):
+                    airframe["radios"][i+1] = comms_plan[template]
 
         return airport_set
 

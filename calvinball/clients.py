@@ -38,11 +38,19 @@ class Clients:
                             p["country"], group_name, a["airframe"], p["airport"], group_size=1, start_type=p["start_type"], parking_slots=parking
                         )
 
+                        fg.set_client()
+
                         if "loadout" in a:
                             if a["loadout"] == "Empty":
                                 fg.reset_loadout()
                             else:
                                 fg.load_loadout(a["loadout"])
+
+                        setFreq = False
+
+                        if "radio_override" in a:
+                            fg.set_frequency(a["radio_override"]["frequency"], a["radio_override"]["radio"])
+                            setFreq = True
 
                         for u in fg.units:
                             u.fuel = a.get("fuel", 1) * a["airframe"].fuel_max
@@ -52,7 +60,15 @@ class Clients:
                             if "racks" in a:
                                 u.hardpoint_racks = a["racks"]
 
-                        fg.set_client()
+                            if "radios" in a:
+                                for radio, channels in a["radios"].items():
+                                    for channel, frequency in channels.items():
+                                        if not setFreq:
+                                            fg.set_frequency(frequency, radio)
+                                            setFreq = True
+                                        if channel <= u.num_radio_channels(radio):
+                                            u.set_radio_channel_preset(radio, channel, frequency)
+
 
                         if a["airframe"].helicopter:
                             ctld_groups.append(group_name)
@@ -71,6 +87,8 @@ class Clients:
 
                         fg = m.flight_group(p["country"], group_name, a["airframe"], None,  position=dcs.mapping.Point(pos["x"], pos["y"], m.terrain),  group_size=1, start_type=p["start_type"])
 
+                        fg.set_client()
+
                         fg.points[0].type = "TakeOffGround"
                         fg.points[0].action = dcs.point.PointAction.FromGroundArea
                         fg.units[0].heading = pos["heading"]
@@ -81,6 +99,12 @@ class Clients:
                             else:
                                 fg.load_loadout(a["loadout"])
 
+                        setFreq = False
+
+                        if "radio_override" in a:
+                            fg.set_frequency(a["radio_override"]["frequency"], a["radio_override"]["radio"])
+                            setFreq = True
+
                         for u in fg.units:
                             u.fuel = a.get("fuel", 1) * a["airframe"].fuel_max
                             if "livery" in a:
@@ -89,7 +113,14 @@ class Clients:
                             if "racks" in a:
                                 u.hardpoint_racks = a["racks"]
 
-                        fg.set_client()
+                            if "radios" in a:
+                                for radio, channels in a["radios"].items():
+                                    for channel, frequency in channels.items():
+                                        if not setFreq:
+                                            fg.set_frequency(frequency, radio)
+                                            setFreq = True
+                                        if channel <= u.num_radio_channels(radio):
+                                            u.set_radio_channel_preset(radio, channel, frequency)
 
                         if a["airframe"].helicopter:
                             ctld_groups.append(group_name)
