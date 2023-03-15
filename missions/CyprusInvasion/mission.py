@@ -278,16 +278,16 @@ class CyprusInvasionClients(calvinball.clients.Clients):
         }
 
         radio_override = {
-            dcs.helicopters.Ka_50_3: { "radio": 2, "frequency": 135 },
+            dcs.helicopters.Ka_50_3: { "radio": 2, "frequency": 250 },
             dcs.helicopters.SA342L: { "radio": 1, "frequency": 135 },
             dcs.helicopters.SA342M: { "radio": 1, "frequency": 135 },
         }
 
         radios = {
-            dcs.helicopters.AH_64D_BLK_II: ["vhf_am", "uhf", "vhf_fm"],
+            dcs.helicopters.AH_64D_BLK_II: ["vhf_am", "uhf", "vhf_fm", "vhf_fm"],
             dcs.helicopters.Ka_50_3: ["vhf_fm"],
-            dcs.helicopters.Mi_24P: ["vhf_am", "vhf_fm"],
-            dcs.helicopters.Mi_8MT: ["vhf_am", "vhf_fm"],
+            dcs.helicopters.Mi_24P: ["uhf", "vhf_fm"],
+            dcs.helicopters.Mi_8MT: ["uhf", "vhf_fm"],
             dcs.helicopters.SA342L: ["vhf_fm"],
             dcs.helicopters.SA342M: ["vhf_fm"],
             dcs.helicopters.UH_1H: ["uhf"],
