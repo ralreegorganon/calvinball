@@ -1378,6 +1378,12 @@ local function initializeBlueChief()
     if blueAwacsZone then
         MissionDb.bluechief.instance:AddAwacsZone(blueAwacsZone)
     end
+
+    local blueUAVzone = ZONE:FindByName("BLUE UAV ZONE")
+    local newUAV = AUFTRAG:NewRECON(blueUAVzone, 28000, 200)
+    if blueUAVzone then
+        MissionDb.bluechief.instance:AddMission(newUAV)
+    end
 end
 
 local function initializeRedChief2()
