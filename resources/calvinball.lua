@@ -1380,9 +1380,12 @@ local function initializeBlueChief()
     end
 
     local blueUAVzone = ZONE:FindByName("BLUE UAV ZONE")
-    local newUAV = AUFTRAG:NewRECON(blueUAVzone, 28000, 200)
+    local newUAV = AUFTRAG:NewRECON(blueUAVzone, 19000, 300)
     if blueUAVzone then
         MissionDb.bluechief.instance:AddMission(newUAV)
+        SCHEDULER:New(nil, function()
+            newUAV:Cancel()
+        end, {}, 300)
     end
 end
 
