@@ -58,8 +58,8 @@
             "RED QRF 10-1"
         ],
         "vehicle_groups": [
-            "RED QRF 9-1",
-            "RED QRF 10-1"
+            "RED QRF 10-1",
+            "RED QRF 9-1"
         ],
         "vertices": [
             {
@@ -92,8 +92,8 @@
             "RED QRF 10"
         ],
         "vehicle_groups": [
-            "RED QRF 9",
-            "RED QRF 10"
+            "RED QRF 10",
+            "RED QRF 9"
         ],
         "vertices": [
             {
@@ -393,8 +393,8 @@
             "RED QRF 10-2"
         ],
         "vehicle_groups": [
-            "RED QRF 9-2",
-            "RED QRF 10-2"
+            "RED QRF 10-2",
+            "RED QRF 9-2"
         ],
         "vertices": [
             {
