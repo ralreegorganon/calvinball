@@ -5647,6 +5647,21 @@ MissionDb = {
 							},
 						}
 					},
+					{
+						name = "GGD-02 JTAC",
+						templateGroupName = "BLUE 1st - Akrotiri GGD-02 JTAC MQ-9 Reaper",
+						initialInventory = 99,
+						capabilities = {
+							{ mission = AUFTRAG.Type.RECON, performance = 50 },
+						},
+						livery = "standard",
+						payloads = {
+							{
+								templateGroupName = "BLUE 1st - Akrotiri GGD-02 JTAC MQ-9 Reaper LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.RECON }
+							},
+						}
+					},
 				}
 			},
 		}

@@ -1577,7 +1577,6 @@ local function debugResupplyAirwing(menuArgs)
     end
 end
 
-
 local function randomChiefMissions()
     local bombingPotentials = {}
     local baiPotentials = {}
@@ -1615,6 +1614,27 @@ local function randomChiefMissions()
     end
 end
 
+local function requestUav(menuArgs)
+    for _, objective in ipairs(MissionDb.objectives) do
+        if objective.state == "active" and objective.strand == menuArgs.strand then
+            if #objective.nodes > 0 then
+                local reconZones = SET_ZONE:New()
+                for _, node in ipairs(objective.nodes) do
+                    reconZones:AddZone(node.opsZone:GetZone())
+                end
+                local reconMission = AUFTRAG:NewRECON(reconZones, nil, 30000, true, true)
+                MissionDb.bluechief.instance:AddMission(reconMission)
+
+                local objectiveZone = ZONE:FindByName(objective.name)
+                local objectiveLabelText = objectiveZone:GetProperty("label")
+                local text=string.format("BLUE has requested a recon mission at %s. Units will be dispatched when available.", objectiveLabelText)
+                MESSAGE:New(text, 15):ToAll()
+            end
+            break
+        end
+    end
+end
+
 local function initializeStrandMenus()
     local menuMissionStatus = MENU_MISSION:New("Mission Status")
     MENU_MISSION_COMMAND:New("Overall Status", menuMissionStatus, reportOverallMissionStatus)
@@ -1633,7 +1653,6 @@ local function initializeStrandMenus()
         MENU_MISSION_COMMAND:New("Spawn Enemy Air Missions", menuDebug, randomChiefMissions)
         MENU_MISSION_COMMAND:New("Spawn Friendly Reinforcement", menuDebug, randomFriendlyReinforcement)
 
-
         local menuDebugSquadronResupply = MENU_MISSION:New("Resupply Squadrons", menuDebug)
         for _, airwing in ipairs(MissionDb.redchief.airwings) do
             if airwing.state == "active" then
@@ -1645,6 +1664,12 @@ local function initializeStrandMenus()
         for _, airwing in ipairs(MissionDb.redchief.airwings) do
             MENU_MISSION_COMMAND:New(airwing.name, menuDebugAirwingResupply, debugResupplyAirwing, { name = airwing.name, state = airwing.state })
         end
+    end
+
+    local menuRequest = MENU_MISSION:New("Request")
+    for _, strand in ipairs(MissionDb.strands) do
+        local menuIndividualStrand = MENU_MISSION:New(strand.name, menuRequest)
+        MENU_MISSION_COMMAND:New("Request UAV", menuIndividualStrand, requestUav, {strand = strand.name})
     end
 end
 

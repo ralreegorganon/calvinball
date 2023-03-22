@@ -764,8 +764,20 @@ class CyprusInvasionBlueAirwings(calvinball.blueairwing.BlueAirwings):
                         "capabilities": {
                             "AUFTRAG.Type.AWACS": 50
                         }
+                    },
+                    "GGD-02 JTAC": {
+                        "airframe": dcs.planes.MQ_9_Reaper,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "standard",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.RECON }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.RECON": 50
+                        }
                     }
                 }
-            }
+            },
         }
         return blue_airwings
