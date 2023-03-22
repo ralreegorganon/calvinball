@@ -17,7 +17,6 @@ class Ctld:
             dcs.vehicles.AirDefence.Soldier_stinger,
             dcs.vehicles.AirDefence.Soldier_stinger,
             dcs.vehicles.AirDefence.Soldier_stinger,
-            dcs.vehicles.AirDefence.Stinger_comm,
             dcs.vehicles.Infantry.Soldier_M4,
             dcs.vehicles.Infantry.Soldier_M4
         ], dcs.mapping.Point(-209829, -437097, m.terrain)).late_activation = True
@@ -51,6 +50,7 @@ class Ctld:
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD HAWK LN", dcs.vehicles.AirDefence.Hawk_ln, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD HAWK PCP", dcs.vehicles.AirDefence.Hawk_pcp, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD HAWK CWAR", dcs.vehicles.AirDefence.Hawk_cwar, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
+        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD MLRS", dcs.vehicles.Artillery.MLRS, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
 
         # CSAR required group
 
