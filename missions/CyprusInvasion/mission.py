@@ -269,6 +269,42 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     },
                 ]
             },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "farp": "FARP Pano Akourdaleia",
+                "farp_zone": "FARP-5",
+                "start_type": dcs.mission.StartType.Cold,
+                "airframes": [
+                    {
+                        "airframe": dcs.helicopters.Mi_24P, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation",
+                        "positions": [{"heading":135,"x":6416.8698221042,"y":-316259.49784665},{"heading":182,"x":6445.8874281572,"y":-316172.8371583},{"heading":141,"x":6433.9274689052,"y":-316234.59760362},{"heading":162,"x":6444.3189089112,"y":-316201.65869945}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.Mi_8MT, "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN",
+                        "positions": [{"heading":119,"x":6364.9881715072,"y":-316287.11454153},{"heading":106,"x":6334.5047376012,"y":-316294.34392763},{"heading":72,"x":6300.1042586812,"y":-316291.8485561},{"heading":116,"x":6394.1812594312,"y":-316276.63341788}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.UH_1H, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972",
+                        "positions": [{"heading":255,"x":6357.2126358882,"y":-316055.80017074},{"heading":251,"x":6339.7256719062,"y":-316054.16469929},{"heading":257,"x":6319.6840397192,"y":-316054.41631028},{"heading":247,"x":6373.1899339152,"y":-316061.83883456}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
+                        "positions": [{"heading":30,"x":6209.6292167132,"y":-316218.75555923},{"heading":63,"x":6272.3895930472,"y":-316283.88832093},{"heading":45,"x":6248.0777516522,"y":-316268.07773627},{"heading":40,"x":6224.9418858532,"y":-316247.00851215}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.SA342L, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2",
+                        "positions": [{"heading":225,"x":6423.9281587112,"y":-316099.50888355}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.SA342M, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet",
+                        "positions": [{"heading":234,"x":6407.8508364392,"y":-316084.2158209}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf",
+                        "positions": [{"heading":212,"x":6435.8881179632,"y":-316119.31143903},{"heading":208,"x":6444.9071036282,"y":-316141.85890319}]
+                    },
+                ]
+            },
         ]
 
         comms_plan = {

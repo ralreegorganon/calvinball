@@ -1575,7 +1575,9 @@
             "airbases": [],
             "completeSound": "",
             "component": "objective",
-            "farps": [],
+            "farps": [
+                "FARP-5"
+            ],
             "label": "Run for the Hills!",
             "nodes": {
                 "NODE-100": {

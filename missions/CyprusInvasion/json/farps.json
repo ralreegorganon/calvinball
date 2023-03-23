@@ -1,5 +1,6 @@
 {
     "FARP-1": {
+        "clearScenery": null,
         "component": "farp",
         "label": "FARP Pissouri",
         "radius": 137.16,
@@ -31,6 +32,7 @@
         "y": -292207.07941827
     },
     "FARP-2": {
+        "clearScenery": null,
         "component": "farp",
         "label": "FARP Pyrgos",
         "radius": 137.16,
@@ -62,6 +64,7 @@
         "y": -249853.70558637
     },
     "FARP-3": {
+        "clearScenery": null,
         "component": "farp",
         "label": "FARP Stavrovouni",
         "radius": 137.16,
@@ -93,6 +96,7 @@
         "y": -224855.22756355
     },
     "FARP-4": {
+        "clearScenery": null,
         "component": "farp",
         "label": "FARP Xylofagou",
         "radius": 137.16,
@@ -122,5 +126,37 @@
         ],
         "x": -375.02760177519,
         "y": -185831.77743075
+    },
+    "FARP-5": {
+        "clearScenery": "all",
+        "component": "farp",
+        "label": "FARP Pano Akourdaleia",
+        "radius": 137.16,
+        "ship_groups": [],
+        "static_groups": [
+            "MASH Tent 1-8",
+            "MASH Tent 1-9",
+            "Static Container 20ft-14",
+            "Static Container 20ft-15",
+            "Static Container 20ft-16",
+            "Static FARP Tent-30",
+            "Static FARP Tent-31",
+            "Static FARP Tent-32",
+            "Static FARP Tent-33",
+            "Static Invisible FARP-17",
+            "Static Invisible FARP-18",
+            "Static Invisible FARP-19",
+            "Static Invisible FARP-20",
+            "Static Watch tower armed-7",
+            "Static Windsock-5"
+        ],
+        "vehicle_groups": [
+            "FARP MASH 1-20",
+            "FARP Support 1-13",
+            "FARP Support 1-14",
+            "FARP Support 1-15"
+        ],
+        "x": 6326.3432897668,
+        "y": -316178.25561954
     }
 }

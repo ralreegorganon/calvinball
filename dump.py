@@ -180,11 +180,14 @@ def get_farp_zones(m: dcs.Mission):
     for z in m.triggers.zones():
         label = None
         component = None
+        clearScenery = None
         for v in z.properties.values():
             if(v["key"] == "label"):
                 label = v["value"]
             if(v["key"] == "component"):
                 component = v["value"]
+            if(v["key"] == "clearScenery"):
+                clearScenery =  v.get("value", "")
         
         if(component == None):
             continue
@@ -195,6 +198,7 @@ def get_farp_zones(m: dcs.Mission):
                 "x": z.position.x,
                 "y": z.position.y,
                 "radius": z.radius,
+                "clearScenery": clearScenery,
                 "vehicle_groups": [],
                 "ship_groups": [],
                 "static_groups": [],

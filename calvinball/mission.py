@@ -382,8 +382,23 @@ class Mission:
                 props_a = [
                     {"key": "label", "value": farp["label"]},
                     {"key": "component", "value": "farp"},
+                    {"key": "clearScenery", "value": farp["clearScenery"]},
                 ]
 
                 props = {k+1: v for k, v in enumerate(props_a)}
 
-                self.m.triggers.add_triggerzone(dcs.mapping.Point(farp["x"], farp["y"], self.m.terrain), farp["radius"], name=farp_name, properties=props)
+                z = self.m.triggers.add_triggerzone(dcs.mapping.Point(farp["x"], farp["y"], self.m.terrain), farp["radius"], name=farp_name, properties=props)
+
+                removeType = None
+                match farp["clearScenery"]:
+                    case "all":
+                        removeType = dcs.action.RemoveSceneObjectsMask.ALL
+                    case "trees":
+                        removeType = dcs.action.RemoveSceneObjectsMask.TREES_ONLY
+                    case "objects":
+                        removeType = dcs.action.RemoveSceneObjectsMask.OBJECTS_ONLY
+
+                if removeType is not None:
+                    load_trigger = dcs.triggers.TriggerStart()
+                    load_trigger.actions.append(dcs.action.RemoveSceneObjects(removeType, z.id))
+                    self.m.triggerrules.triggers.append(load_trigger)
