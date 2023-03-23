@@ -1,6 +1,6 @@
 {
     "FARP-1": {
-        "clearScenery": null,
+        "clearScenery": "",
         "component": "farp",
         "label": "FARP Pissouri",
         "radius": 137.16,
@@ -32,7 +32,7 @@
         "y": -292207.07941827
     },
     "FARP-2": {
-        "clearScenery": null,
+        "clearScenery": "",
         "component": "farp",
         "label": "FARP Pyrgos",
         "radius": 137.16,
@@ -50,9 +50,9 @@
             "Static Invisible FARP-5",
             "Static Invisible FARP-6",
             "Static Invisible FARP-7",
-            "Static Invisible FARP-8",
+            "Static Windsock-2",
             "Static Watch tower armed-4",
-            "Static Windsock-2"
+            "Static Invisible FARP-8"
         ],
         "vehicle_groups": [
             "FARP MASH 1-1",
@@ -64,7 +64,7 @@
         "y": -249853.70558637
     },
     "FARP-3": {
-        "clearScenery": null,
+        "clearScenery": "",
         "component": "farp",
         "label": "FARP Stavrovouni",
         "radius": 137.16,
@@ -83,8 +83,8 @@
             "Static Invisible FARP-11",
             "Static Invisible FARP-12",
             "Static Invisible FARP-9",
-            "Static Watch tower armed-5",
-            "Static Windsock-3"
+            "Static Windsock-3",
+            "Static Watch tower armed-5"
         ],
         "vehicle_groups": [
             "FARP MASH 1-6",
@@ -96,7 +96,7 @@
         "y": -224855.22756355
     },
     "FARP-4": {
-        "clearScenery": null,
+        "clearScenery": "",
         "component": "farp",
         "label": "FARP Xylofagou",
         "radius": 137.16,

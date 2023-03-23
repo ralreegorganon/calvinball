@@ -1129,21 +1129,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Watch tower armed-5#00001",
-							template = {
-								name = "Static Watch tower armed-5",
-								type = "house2arm",
-								x = -3326.0576579165,
-								y = -224845.89427218,
-								heading = 3.6302848441482,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "",
-								rate = 10,
-								dead = false
-							}
-						},
-						{
 							name = "Static Windsock-3#00001",
 							template = {
 								name = "Static Windsock-3",
@@ -1155,6 +1140,21 @@ MissionDb = {
 								canCargo = false,
 								shape_name = "H-Windsock_RW",
 								rate = 3,
+								dead = false
+							}
+						},
+						{
+							name = "Static Watch tower armed-5#00001",
+							template = {
+								name = "Static Watch tower armed-5",
+								type = "house2arm",
+								x = -3326.0576579165,
+								y = -224845.89427218,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "",
+								rate = 10,
 								dead = false
 							}
 						},
@@ -3551,21 +3551,34 @@ MissionDb = {
 			qrfs = {
 			},
 			reinforcements = {
+				{
+					name = "REINFORCEMENT-8",
+					spawnGroups = {
+						{ name = "BLUE REINFORCEMENT 8" },
+					},
+					vehicleGroups = {
+						{ name = "BLUE REINFORCEMENT 8" },
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					},
+				},
 			},
 			vehicleGroups = {
+				{ name = "DWRED GROUND 1-24" },
 				{ name = "DWRED GROUND 14" },
 				{ name = "DWRED GROUND 14-1" },
-				{ name = "RED SAM SA-6 14-2" },
 				{ name = "DWRED GROUND 14-3" },
 				{ name = "DWRED GROUND 14-4" },
 				{ name = "RED GROUND 1-226" },
-				{ name = "RED SAM SA-13 GROUND 1-2" },
-				{ name = "DWRED GROUND 1-24" },
 				{ name = "RED GROUND 1-227" },
 				{ name = "RED GROUND 1-228" },
 				{ name = "RED GROUND 1-229" },
 				{ name = "RED GROUND 1-230" },
 				{ name = "RED GROUND 1-231" },
+				{ name = "RED SAM SA-13 GROUND 1-2" },
+				{ name = "RED SAM SA-6 14-2" },
 			},
 			shipGroups = {
 			},
@@ -4122,17 +4135,17 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Invisible FARP-8#00001",
+							name = "Static Windsock-2#00001",
 							template = {
-								name = "Static Invisible FARP-8",
-								type = "Invisible FARP",
-								x = -23201.176861371,
-								y = -249754.08505416,
+								name = "Static Windsock-2",
+								type = "Windsock",
+								x = -23200.094892974,
+								y = -249853.39255558,
 								heading = 0.0,
-								category = "Heliports",
+								category = "Fortifications",
 								canCargo = false,
-								shape_name = "invisiblefarp",
-								rate = 100,
+								shape_name = "H-Windsock_RW",
+								rate = 3,
 								dead = false
 							}
 						},
@@ -4152,17 +4165,17 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Windsock-2#00001",
+							name = "Static Invisible FARP-8#00001",
 							template = {
-								name = "Static Windsock-2",
-								type = "Windsock",
-								x = -23200.094892974,
-								y = -249853.39255558,
+								name = "Static Invisible FARP-8",
+								type = "Invisible FARP",
+								x = -23201.176861371,
+								y = -249754.08505416,
 								heading = 0.0,
-								category = "Fortifications",
+								category = "Heliports",
 								canCargo = false,
-								shape_name = "H-Windsock_RW",
-								rate = 3,
+								shape_name = "invisiblefarp",
+								rate = 100,
 								dead = false
 							}
 						},

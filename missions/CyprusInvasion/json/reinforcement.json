@@ -222,5 +222,37 @@
         ],
         "x": -482.92918020458,
         "y": -185208.22564703
+    },
+    "REINFORCEMENT-8": {
+        "component": "reinforcement",
+        "label": "REINFORCEMENT 8",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleReinforcementTemplates": [
+            "BLUE REINFORCEMENT 8"
+        ],
+        "vehicle_groups": [
+            "BLUE REINFORCEMENT 8"
+        ],
+        "vertices": [
+            {
+                "x": 6494.865636757,
+                "y": -316201.02385011
+            },
+            {
+                "x": 6509.1444817655,
+                "y": -316165.72337217
+            },
+            {
+                "x": 6636.4641830907,
+                "y": -316243.86038513
+            },
+            {
+                "x": 6620.2021651644,
+                "y": -316280.74740141
+            }
+        ],
+        "x": 6565.1691166944,
+        "y": -316222.83875221
     }
 }

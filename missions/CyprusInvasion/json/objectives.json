@@ -1612,25 +1612,27 @@
                 }
             },
             "qrfs": [],
-            "reinforcements": [],
+            "reinforcements": [
+                "REINFORCEMENT-8"
+            ],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",
             "tasks": [],
             "vehicle_groups": [
+                "DWRED GROUND 1-24",
                 "DWRED GROUND 14",
                 "DWRED GROUND 14-1",
-                "RED SAM SA-6 14-2",
                 "DWRED GROUND 14-3",
                 "DWRED GROUND 14-4",
                 "RED GROUND 1-226",
-                "RED SAM SA-13 GROUND 1-2",
-                "DWRED GROUND 1-24",
                 "RED GROUND 1-227",
                 "RED GROUND 1-228",
                 "RED GROUND 1-229",
                 "RED GROUND 1-230",
-                "RED GROUND 1-231"
+                "RED GROUND 1-231",
+                "RED SAM SA-13 GROUND 1-2",
+                "RED SAM SA-6 14-2"
             ],
             "vertices": [
                 {
