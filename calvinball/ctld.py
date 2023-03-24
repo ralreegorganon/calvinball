@@ -36,6 +36,19 @@ class Ctld:
             dcs.vehicles.Artillery.X_2B11_mortar,
         ], dcs.mapping.Point(-209829, -437097, m.terrain)).late_activation = True
 
+        m.vehicle_group_platoon(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD HAWK", [
+            dcs.vehicles.AirDefence.Hawk_sr,
+            dcs.vehicles.AirDefence.Hawk_tr,
+            dcs.vehicles.AirDefence.Hawk_pcp,
+            dcs.vehicles.AirDefence.Hawk_cwar,
+            dcs.vehicles.AirDefence.Hawk_ln,
+            dcs.vehicles.AirDefence.Hawk_ln,
+            dcs.vehicles.AirDefence.Hawk_ln,
+            dcs.vehicles.AirDefence.Hawk_ln,
+            dcs.vehicles.AirDefence.Hawk_ln,
+            dcs.vehicles.AirDefence.Hawk_ln,
+        ], dcs.mapping.Point(-209829, -437097, m.terrain), formation=dcs.unitgroup.VehicleGroup.Formation.Scattered).late_activation = True
+
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD BLUE RECCE JTAC", dcs.vehicles.Infantry.Soldier_M4, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD BLUE RECCE JTAC HMMWV", dcs.vehicles.Unarmed.Hummer, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD HMMWV MG", dcs.vehicles.Armor.M1043_HMMWV_Armament, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
@@ -45,15 +58,9 @@ class Ctld:
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD M60", dcs.vehicles.Armor.M_60, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD STRYKER MGS", dcs.vehicles.Armor.M1128_Stryker_MGS, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD STRYKER ICV", dcs.vehicles.Armor.M1126_Stryker_ICV, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
-        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD HAWK SR", dcs.vehicles.AirDefence.Hawk_sr, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
-        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD HAWK TR", dcs.vehicles.AirDefence.Hawk_tr, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
-        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD HAWK LN", dcs.vehicles.AirDefence.Hawk_ln, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
-        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD HAWK PCP", dcs.vehicles.AirDefence.Hawk_pcp, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
-        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD HAWK CWAR", dcs.vehicles.AirDefence.Hawk_cwar, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD MLRS", dcs.vehicles.Artillery.MLRS, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
 
         # CSAR required group
-
         m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "Downed Pilot", dcs.vehicles.Infantry.Soldier_M4, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1).late_activation = True
 
         # Herc required groups/names
