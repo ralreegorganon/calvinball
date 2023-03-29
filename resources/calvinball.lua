@@ -1708,6 +1708,7 @@ local function initializeCtld()
     MissionDb.ctld.instance:AddCratesCargo("STRYKER - MGS", { "CTLD STRYKER MGS" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Vehicles")
     MissionDb.ctld.instance:AddCratesCargo("STRYKER - ICV", { "CTLD STRYKER ICV" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Vehicles")
     MissionDb.ctld.instance:AddCratesCargo("MLRS", { "CTLD MLRS" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Vehicles")
+    MissionDb.ctld.instance:AddCratesCargo("MLRS", { "CTLD M-109" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Vehicles")
     MissionDb.ctld.instance:AddCratesCargo("HAWK", { "CTLD HAWK" }, CTLD_CARGO.Enum.VEHICLE, 3, 1350, nil, "SAMs")
 
     CTLD_HERCULES:New(coalition.side.BLUE, "Jaelifter Fixed Wing", MissionDb.ctld.instance)

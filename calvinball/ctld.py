@@ -59,6 +59,7 @@ class Ctld:
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD STRYKER MGS", dcs.vehicles.Armor.M1128_Stryker_MGS, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD STRYKER ICV", dcs.vehicles.Armor.M1126_Stryker_ICV, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD MLRS", dcs.vehicles.Artillery.MLRS, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
+        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD M-109", dcs.vehicles.Artillery.M_109, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1)).late_activation = True
 
         # CSAR required group
         m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "Downed Pilot", dcs.vehicles.Infantry.Soldier_M4, dcs.mapping.Point(-209829, -437097, m.terrain), group_size=1).late_activation = True
