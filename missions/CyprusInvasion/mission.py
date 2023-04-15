@@ -46,7 +46,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 4, "parking": [10, 11, 12, 13], "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
                     { "airframe": dcs.helicopters.SA342L, "count": 1, "parking": [20], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2" },
                     { "airframe": dcs.helicopters.SA342M, "count": 1, "parking": [21], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet" },
-                    { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "parking": [38, 39], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf" },
+                    { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "parking": [38, 39], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
                     { "airframe": dcs.planes.AV8BNA, "count": 2, "parking": [32, 37], "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
                     { "airframe": dcs.planes.A_10C_2, "count": 1, "parking": [30], "fuel": 0.6, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
                     { "airframe": dcs.planes.A_10A, "count": 1, "parking": [31], "fuel": 1, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
@@ -76,7 +76,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 4, "parking": [10, 11, 12, 13], "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
                     { "airframe": dcs.helicopters.SA342L, "count": 1, "parking": [2], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2" },
                     { "airframe": dcs.helicopters.SA342M, "count": 1, "parking": [4], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet" },
-                    { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "parking": [8, 9], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf" },
+                    { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "parking": [8, 9], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
                     { "airframe": dcs.planes.AV8BNA, "count": 2, "parking": [6, 7], "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
                     { "airframe": dcs.planes.A_10C_2, "count": 1, "parking": [34], "fuel": 0.6, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
                     { "airframe": dcs.planes.A_10A, "count": 1, "parking": [36], "fuel": 1, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
@@ -106,7 +106,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 4, "parking": [35, 7, 34, 6], "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
                     { "airframe": dcs.helicopters.SA342L, "count": 1, "parking": [36], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2" },
                     { "airframe": dcs.helicopters.SA342M, "count": 1, "parking": [37], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet" },
-                    { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "parking": [4, 5], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf" },
+                    { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "parking": [4, 5], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
                     { "airframe": dcs.planes.AV8BNA, "count": 2, "parking": [23, 24], "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
                     { "airframe": dcs.planes.A_10C_2, "count": 1, "parking": [25], "fuel": 0.6, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
                     { "airframe": dcs.planes.A_10A, "count": 2, "parking": [22], "fuel": 1, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
@@ -157,7 +157,8 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     },
                     {
                         "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf",
-                        "positions": [{"heading":208,"x":-25619.60684021,"y":-292171.04230084},{"heading":212,"x":-25628.625825875,"y":-292148.49483668}]
+                        "positions": [{"heading":208,"x":-25619.60684021,"y":-292171.04230084},{"heading":212,"x":-25628.625825875,"y":-292148.49483668}],
+                        "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
                 ]
             },
@@ -193,7 +194,8 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     },
                     {
                         "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf",
-                        "positions": [{"heading":208,"x":-23079.220146748,"y":-249816.99563631},{"heading":212,"x":-23088.239132413,"y":-249794.44817215}]
+                        "positions": [{"heading":208,"x":-23079.220146748,"y":-249816.99563631},{"heading":212,"x":-23088.239132413,"y":-249794.44817215}],
+                        "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
                 ]
             },
@@ -229,7 +231,8 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     },
                     {
                         "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf",
-                        "positions": [{"heading":212,"x":-3225.5079168575,"y":-224796.16761219},{"heading":208,"x":-3216.4889311925,"y":-224818.71507635}]
+                        "positions": [{"heading":212,"x":-3225.5079168575,"y":-224796.16761219},{"heading":208,"x":-3216.4889311925,"y":-224818.71507635}],
+                        "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
                 ]
             },
@@ -265,7 +268,8 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     },
                     {
                         "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf",
-                        "positions": [{"heading":212,"x":-263.34963565755,"y":-185773.05193914},{"heading":208,"x":-254.33064999255,"y":-185795.5994033}]
+                        "positions": [{"heading":212,"x":-263.34963565755,"y":-185773.05193914},{"heading":208,"x":-254.33064999255,"y":-185795.5994033}],
+                        "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
                 ]
             },
@@ -301,7 +305,8 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     },
                     {
                         "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf",
-                        "positions": [{"heading":212,"x":6435.8881179632,"y":-316119.31143903},{"heading":208,"x":6444.9071036282,"y":-316141.85890319}]
+                        "positions": [{"heading":212,"x":6435.8881179632,"y":-316119.31143903},{"heading":208,"x":6444.9071036282,"y":-316141.85890319}],
+                        "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
                 ]
             },

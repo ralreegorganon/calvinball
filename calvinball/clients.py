@@ -69,12 +69,16 @@ class Clients:
                                         if channel <= u.num_radio_channels(radio):
                                             u.set_radio_channel_preset(radio, channel, frequency)
 
+                            if "properties" in a:
+                                for key, value in a["properties"].items():
+                                        u.set_property(key, value)
 
                         if a["airframe"].helicopter:
                             ctld_groups.append(group_name)
 
                         if a["airframe"].helicopter or a["airframe"] == Bronco_OV_10A:
                             csar_groups.append(group_name)
+
                 if "farp" in p:
                     if p["farp_zone"] not in farp_groups:
                         farp_groups[p["farp_zone"]] = []
@@ -121,6 +125,10 @@ class Clients:
                                             setFreq = True
                                         if channel <= u.num_radio_channels(radio):
                                             u.set_radio_channel_preset(radio, channel, frequency)
+
+                            if "properties" in a:
+                                for key, value in a["properties"].items():
+                                        u.set_property(key, value)
 
                         if a["airframe"].helicopter:
                             ctld_groups.append(group_name)
