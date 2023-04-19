@@ -1655,6 +1655,93 @@
             "x": 1611.515182298,
             "y": -307462.36178155
         },
+        "OBJ-23": {
+            "airbases": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Eastern Buffer Zone",
+            "nodes": {
+                "NODE-104": {
+                    "label": "Kapparis Beach",
+                    "radius": 260,
+                    "x": 10195.177301571,
+                    "y": -171256.39344057
+                },
+                "NODE-105": {
+                    "label": "Deryneia Crosspoint",
+                    "radius": 260,
+                    "x": 12952.7361626,
+                    "y": -176885.44179199
+                },
+                "NODE-106": {
+                    "label": "Operations",
+                    "radius": 260,
+                    "x": 13292.794454976,
+                    "y": -185956.98262655
+                },
+                "NODE-107": {
+                    "label": "Buffer Harbour",
+                    "radius": 260,
+                    "x": 12039.34461916,
+                    "y": -173088.88159739
+                },
+                "NODE-108": {
+                    "label": "East Crossing",
+                    "radius": 260,
+                    "x": 12320.01412388,
+                    "y": -181309.10479552
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [
+                "SNAPNaval-1",
+                "SNAPNaval-2"
+            ],
+            "static_groups": [],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [
+                "SNAPRED GROUND 1",
+                "SNAP RED GROUND 105",
+                "RED SAM SA-13 GROUND 106",
+                "SNAP RED GROUND 106-2",
+                "SNAP RED GROUND 107",
+                "SNAP RED GROUND 104",
+                "SNAP RED GROUND BORDER 1",
+                "SNAP RED GROUND BORDER 2",
+                "SNAP RED GROUND BORDER 3",
+                "SNAP RED GROUND BORDER 3-1",
+                "SNAP RED GROUND BORDER 3-2",
+                "SNAP RED GROUND BORDER 3-3",
+                "SNAP RED GROUND BORDER 3-4",
+                "SNAP RED GROUND BORDER 3-5",
+                "SNAP RED GROUND BORDER 3-6",
+                "SNAP RED GROUND BORDER 3-7",
+                "SNAP RED GROUND BORDER 3-8"
+            ],
+            "vertices": [
+                {
+                    "x": 7590.0487621345,
+                    "y": -187963.29065674
+                },
+                {
+                    "x": 7822.1067740835,
+                    "y": -169350.33135005
+                },
+                {
+                    "x": 14923.435662719,
+                    "y": -172550.73559214
+                },
+                {
+                    "x": 15266.911227276,
+                    "y": -188429.768932
+                }
+            ],
+            "x": 11400.625606553,
+            "y": -179573.53163273
+        },
         "OBJ-3": {
             "airbases": [],
             "completeSound": "",
@@ -2202,7 +2289,8 @@
             "OBJ-13",
             "OBJ-16",
             "OBJ-18",
-            "OBJ-21"
+            "OBJ-21",
+            "OBJ-23"
         ],
         "STRAND-3": [
             "OBJ-8"

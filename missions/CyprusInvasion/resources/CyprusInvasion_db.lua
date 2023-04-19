@@ -3586,6 +3586,53 @@ MissionDb = {
 			}
 		},
 		{
+			name = "OBJ-23",
+			strand = "STRAND-2",
+			completeSound = "",
+			nodes = {
+				{ name = "NODE-104" },
+				{ name = "NODE-105" },
+				{ name = "NODE-106" },
+				{ name = "NODE-107" },
+				{ name = "NODE-108" },
+			},
+			tasks = {
+			},
+			farps = {
+			},
+			airbases = {
+			},
+			qrfs = {
+			},
+			reinforcements = {
+			},
+			vehicleGroups = {
+				{ name = "SNAPRED GROUND 1" },
+				{ name = "SNAP RED GROUND 105" },
+				{ name = "RED SAM SA-13 GROUND 106" },
+				{ name = "SNAP RED GROUND 106-2" },
+				{ name = "SNAP RED GROUND 107" },
+				{ name = "SNAP RED GROUND 104" },
+				{ name = "SNAP RED GROUND BORDER 1" },
+				{ name = "SNAP RED GROUND BORDER 2" },
+				{ name = "SNAP RED GROUND BORDER 3" },
+				{ name = "SNAP RED GROUND BORDER 3-1" },
+				{ name = "SNAP RED GROUND BORDER 3-2" },
+				{ name = "SNAP RED GROUND BORDER 3-3" },
+				{ name = "SNAP RED GROUND BORDER 3-4" },
+				{ name = "SNAP RED GROUND BORDER 3-5" },
+				{ name = "SNAP RED GROUND BORDER 3-6" },
+				{ name = "SNAP RED GROUND BORDER 3-7" },
+				{ name = "SNAP RED GROUND BORDER 3-8" },
+			},
+			shipGroups = {
+				{ name = "SNAPNaval-1" },
+				{ name = "SNAPNaval-2" },
+			},
+			staticGroups = {
+			}
+		},
+		{
 			name = "OBJ-3",
 			strand = "STRAND-1",
 			completeSound = "",
@@ -5072,6 +5119,7 @@ MissionDb = {
 				"OBJ-16",
 				"OBJ-18",
 				"OBJ-21",
+				"OBJ-23",
 				},
 			},
 		{
