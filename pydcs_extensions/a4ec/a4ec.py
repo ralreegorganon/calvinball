@@ -1,10 +1,10 @@
-from enum import Enum
+from typing import Any, Dict, Set
 
 from dcs import task
 from dcs.planes import PlaneType
 from dcs.weapons_data import Weapons
-from dcs.liveries_scanner import Liveries
 
+from pydcs_extensions.modsupport import planemod
 from pydcs_extensions.weapon_injector import inject_weapons
 
 
@@ -87,39 +87,49 @@ class WeaponsA4EC:
         "name": "BDU-33 *6 (MER)",
         "weight": 167.6,
     }
-    CBU_1_A = {"clsid": "{CBU-1/A}", "name": "CBU-1/A", "weight": 458.921706}
+    BLU_3B_x_19 = {"clsid": "{BLU_3B_GROUP}", "name": "BLU-3B x 19", "weight": 0.793786}
+    BLU_4B_x_27 = {
+        "clsid": "{BLU_4B_GROUP}",
+        "name": "BLU-4B x 27",
+        "weight": 0.5443104,
+    }
+    CBU_1_A = {"clsid": "{CBU-1/A}", "name": "CBU-1/A", "weight": 337.2910112}
+    CBU_1_A_2 = {"clsid": "{CBU-1/A*2}", "name": "CBU-1/A*2", "weight": 616.5222464}
     CBU_1_A__2 = {
         "clsid": "{CBU-1/A_TER_2_L}",
         "name": "CBU-1/A *2",
-        "weight": 713.473056,
+        "weight": 722.1820224,
     }
     CBU_1_A__2_ = {
         "clsid": "{CBU-1/A_TER_2_R}",
         "name": "CBU-1/A *2",
-        "weight": 713.473056,
+        "weight": 722.1820224,
     }
-    CBU_2B_A = {"clsid": "{CBU-2B/A}", "name": "CBU-2B/A", "weight": 379.543106}
+    CBU_2B_A = {"clsid": "{CBU-2B/A}", "name": "CBU-2B/A", "weight": 344.616522}
+    CBU_2B_A_2 = {"clsid": "{CBU-2B/A*2}", "name": "CBU-2B/A*2", "weight": 631.173268}
     CBU_2B_A__2 = {
         "clsid": "{CBU-2B/A_TER_2_L}",
         "name": "CBU-2B/A *2",
-        "weight": 806.686212,
+        "weight": 827.324648,
     }
     CBU_2B_A__2_ = {
         "clsid": "{CBU-2B/A_TER_2_R}",
         "name": "CBU-2B/A *2",
-        "weight": 806.686212,
+        "weight": 827.324648,
     }
-    CBU_2_A = {"clsid": "{CBU-2/A}", "name": "CBU-2/A", "weight": 343.822736}
+    CBU_2_A = {"clsid": "{CBU-2/A}", "name": "CBU-2/A", "weight": 344.616522}
+    CBU_2_A_2 = {"clsid": "{CBU-2/A*2}", "name": "CBU-2/A*2", "weight": 631.173268}
     CBU_2_A__2 = {
         "clsid": "{CBU-2/A_TER_2_L}",
         "name": "CBU-2/A *2",
-        "weight": 735.245472,
+        "weight": 736.833044,
     }
     CBU_2_A__2_ = {
         "clsid": "{CBU-2/A_TER_2_R}",
         "name": "CBU-2/A *2",
-        "weight": 735.245472,
+        "weight": 736.833044,
     }
+    CBU_DUMMY = {"clsid": "{CBU_DUMMY}", "name": "CBU_DUMMY", "weight": 58.059776}
     Fuel_Tank_150_gallons = {
         "clsid": "{DFT-150gal}",
         "name": "Fuel Tank 150 gallons",
@@ -440,6 +450,7 @@ class WeaponsA4EC:
 inject_weapons(WeaponsA4EC)
 
 
+@planemod
 class A_4E_C(PlaneType):
     id = "A-4E-C"
     flyable = True
@@ -483,9 +494,10 @@ class A_4E_C(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "HideECMPanel": False,
         "Auto_Catapult_Power": False,
+        "Night_Vision": False,
         "CBU2ATPP": 0,
         "CBU2BATPP": 0,
         "CMS_BURSTS": 1,
@@ -501,69 +513,71 @@ class A_4E_C(PlaneType):
         class Auto_Catapult_Power:
             id = "Auto_Catapult_Power"
 
+        class Night_Vision:
+            id = "Night_Vision"
+
         class CBU2ATPP:
             id = "CBU2ATPP"
 
             class Values:
-                _1_tube = 0
-                _2_tubes = 1
-                _3_tubes = 2
-                _4_tubes = 3
-                _6_tubes = 4
-                _17_tubes__salvo = 5
+                x_1_tube = 0
+                x_2_tubes = 1
+                x_3_tubes = 2
+                x_4_tubes = 3
+                x_6_tubes = 4
+                x_17_tubes__salvo = 5
 
         class CBU2BATPP:
             id = "CBU2BATPP"
 
             class Values:
-                _2_tubes = 0
-                _4_tubes = 1
-                _6_tubes = 2
+                x_2_tubes = 0
+                x_4_tubes = 1
+                x_6_tubes = 2
 
         class CMS_BURSTS:
             id = "CMS_BURSTS"
 
             class Values:
-                _1 = 1
-                _2 = 2
-                _3 = 3
-                _4 = 4
+                x_1 = 1
+                x_2 = 2
+                x_3 = 3
+                x_4 = 4
 
         class CMS_BURST_INTERVAL:
             id = "CMS_BURST_INTERVAL"
 
             class Values:
-                _0_2_seconds = 1
-                _0_3_seconds = 2
-                _0_4_seconds = 3
-                _0_5_seconds = 4
+                x_0_2_seconds = 1
+                x_0_3_seconds = 2
+                x_0_4_seconds = 3
+                x_0_5_seconds = 4
 
         class CMS_SALVOS:
             id = "CMS_SALVOS"
 
             class Values:
-                _8 = 1
-                _12 = 2
-                _16 = 3
-                _20 = 4
-                _24 = 5
-                _28 = 6
-                _32 = 7
+                x_8 = 1
+                x_12 = 2
+                x_16 = 3
+                x_20 = 4
+                x_24 = 5
+                x_28 = 6
+                x_32 = 7
 
         class CMS_SALVO_INTERVAL:
             id = "CMS_SALVO_INTERVAL"
 
             class Values:
-                _2_seconds = 1
-                _4_seconds = 2
-                _6_seconds = 3
-                _8_seconds = 4
-                _10_seconds = 5
-                _12_seconds = 6
-                _14_seconds = 7
+                x_2_seconds = 1
+                x_4_seconds = 2
+                x_6_seconds = 3
+                x_8_seconds = 4
+                x_10_seconds = 5
+                x_12_seconds = 6
+                x_14_seconds = 7
 
     livery_name = "A-4E-C"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         LAU_7_with_AIM_9B_Sidewinder_IR_AAM = (
@@ -1019,9 +1033,9 @@ class A_4E_C(PlaneType):
             Weapons.SUU_25_x_8_LUU_2___Target_Marker_Flares,
         )
 
-        # ERRR <CLEAN>
+    # ERRR <CLEAN>
 
-    pylons = {1, 2, 3, 4, 5}
+    pylons: Set[int] = {1, 2, 3, 4, 5}
 
     tasks = [
         task.CAP,

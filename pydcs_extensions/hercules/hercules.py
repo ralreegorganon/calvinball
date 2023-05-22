@@ -1,10 +1,10 @@
-from enum import Enum
+from typing import Set
 
 from dcs import task
 from dcs.planes import PlaneType
 from dcs.weapons_data import Weapons
-from dcs.liveries_scanner import Liveries
 
+from pydcs_extensions.modsupport import planemod
 from pydcs_extensions.weapon_injector import inject_weapons
 
 
@@ -685,6 +685,7 @@ class HerculesWeapons:
 inject_weapons(HerculesWeapons)
 
 
+@planemod
 class Hercules(PlaneType):
     id = "Hercules"
     flyable = True
@@ -698,43 +699,42 @@ class Hercules(PlaneType):
     charge_total = 1680
     chaff_charge_size = 1
     flare_charge_size = 1
-    radio_frequency = 254
+    radio_frequency = 305
 
     panel_radio = {
         1: {
             "channels": {
-                1: 264,
-                2: 265,
-                4: 254,
-                8: 258,
-                16: 267,
-                17: 251,
-                9: 262,
-                18: 253,
-                5: 250,
-                10: 259,
-                20: 252,
-                11: 268,
-                3: 256,
-                6: 270,
-                12: 269,
-                13: 260,
-                7: 257,
-                14: 263,
-                19: 266,
-                15: 261,
+                1: 305,
+                2: 264,
+                4: 256,
+                8: 257,
+                16: 261,
+                17: 267,
+                9: 255,
+                18: 251,
+                5: 254,
+                10: 262,
+                20: 266,
+                11: 259,
+                3: 265,
+                6: 250,
+                12: 252,
+                13: 269,
+                7: 270,
+                14: 260,
+                19: 253,
+                15: 263,
             },
         },
     }
 
-    livery_name = "Hercules"  # from type
-    Liveries = Liveries()[livery_name]
+    livery_name = "HERCULES"  # from type
 
     class Pylon1:
         Herc_JATO = (1, HerculesWeapons.Herc_JATO)
 
     class Pylon2:
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (
+        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (
             2,
             Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum,
         )
@@ -744,11 +744,14 @@ class Hercules(PlaneType):
         Smokewinder___white = (2, Weapons.Smokewinder___white)
         Smokewinder___yellow = (2, Weapons.Smokewinder___yellow)
         Smokewinder___orange = (2, Weapons.Smokewinder___orange)
-        MER_6_Mk_82 = (2, Weapons.MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD)
+        MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD = (
+            2,
+            Weapons.MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD,
+        )
         Herc_Ext_Fuel_Tank = (2, HerculesWeapons.Herc_Ext_Fuel_Tank)
 
     class Pylon3:
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (
+        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (
             3,
             Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum,
         )
@@ -758,11 +761,14 @@ class Hercules(PlaneType):
         Smokewinder___white = (3, Weapons.Smokewinder___white)
         Smokewinder___yellow = (3, Weapons.Smokewinder___yellow)
         Smokewinder___orange = (3, Weapons.Smokewinder___orange)
-        MER_6_Mk_82 = (3, Weapons.MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD)
+        MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD = (
+            3,
+            Weapons.MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD,
+        )
         Herc_Ext_Fuel_Tank = (3, HerculesWeapons.Herc_Ext_Fuel_Tank)
 
     class Pylon4:
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (
+        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (
             4,
             Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum,
         )
@@ -772,11 +778,14 @@ class Hercules(PlaneType):
         Smokewinder___white = (4, Weapons.Smokewinder___white)
         Smokewinder___yellow = (4, Weapons.Smokewinder___yellow)
         Smokewinder___orange = (4, Weapons.Smokewinder___orange)
-        MER_6_Mk_82 = (4, Weapons.MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD)
+        MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD = (
+            4,
+            Weapons.MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD,
+        )
         Herc_Ext_Fuel_Tank = (4, HerculesWeapons.Herc_Ext_Fuel_Tank)
 
     class Pylon5:
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (
+        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (
             5,
             Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum,
         )
@@ -786,7 +795,10 @@ class Hercules(PlaneType):
         Smokewinder___white = (5, Weapons.Smokewinder___white)
         Smokewinder___yellow = (5, Weapons.Smokewinder___yellow)
         Smokewinder___orange = (5, Weapons.Smokewinder___orange)
-        MER_6_Mk_82 = (5, Weapons.MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD)
+        MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD = (
+            5,
+            Weapons.MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD,
+        )
         Herc_Ext_Fuel_Tank = (5, HerculesWeapons.Herc_Ext_Fuel_Tank)
 
     class Pylon6:
@@ -1203,7 +1215,7 @@ class Hercules(PlaneType):
         Herc_APC_BTR_82A_Air = (12, HerculesWeapons.Herc_APC_BTR_82A_Air)
         Herc_APC_BTR_82A_Skid = (12, HerculesWeapons.Herc_APC_BTR_82A_Skid)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
 
     tasks = [task.Transport, task.CAS, task.GroundAttack]
     task_default = task.Transport

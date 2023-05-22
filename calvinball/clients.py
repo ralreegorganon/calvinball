@@ -1,7 +1,5 @@
 import dcs
-from pydcs_extensions.hercules.hercules import Hercules
-from pydcs_extensions.a4ec.a4ec import A_4E_C
-from pydcs_extensions.bronco.bronco import Bronco_OV_10A
+import pydcs_extensions
 
 class Clients:
     def __park(self, slots, airport):
@@ -76,7 +74,7 @@ class Clients:
                         if a["airframe"].helicopter:
                             ctld_groups.append(group_name)
 
-                        if a["airframe"].helicopter or a["airframe"] == Bronco_OV_10A:
+                        if a["airframe"].helicopter or a["airframe"] == pydcs_extensions.Bronco_OV_10A:
                             csar_groups.append(group_name)
 
                 if "farp" in p:
@@ -133,7 +131,7 @@ class Clients:
                         if a["airframe"].helicopter:
                             ctld_groups.append(group_name)
 
-                        if a["airframe"].helicopter or a["airframe"] == Bronco_OV_10A:
+                        if a["airframe"].helicopter or a["airframe"] == pydcs_extensions.Bronco_OV_10A:
                             csar_groups.append(group_name)
 
 
