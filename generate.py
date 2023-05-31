@@ -5,8 +5,5 @@ from missions.NotTheFrat.mission import NotTheFrat
 m = CyprusInvasion()
 m.build(True, False)
 
-m = NewbieCTI()
-m.build(True, False)
-
 m = NotTheFrat()
 m.build(True, False)
