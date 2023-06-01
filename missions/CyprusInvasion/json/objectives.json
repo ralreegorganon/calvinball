@@ -4,6 +4,9 @@
             "airbases": [
                 "AIRBASE-1"
             ],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -98,6 +101,9 @@
         },
         "OBJ-10": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -184,6 +190,9 @@
         },
         "OBJ-11": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -291,6 +300,9 @@
             "airbases": [
                 "AIRBASE-2"
             ],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -393,6 +405,9 @@
         },
         "OBJ-13": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -480,6 +495,9 @@
         },
         "OBJ-14": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [
@@ -588,6 +606,9 @@
         },
         "OBJ-15": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -677,6 +698,9 @@
             "airbases": [
                 "AIRBASE-3"
             ],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -838,6 +862,9 @@
         },
         "OBJ-17": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -994,6 +1021,9 @@
         },
         "OBJ-18": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [
@@ -1151,6 +1181,9 @@
         },
         "OBJ-19": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -1242,6 +1275,9 @@
         },
         "OBJ-2": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -1372,6 +1408,9 @@
         },
         "OBJ-20": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -1476,6 +1515,9 @@
         },
         "OBJ-21": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -1573,6 +1615,9 @@
         },
         "OBJ-22": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [
@@ -1657,6 +1702,9 @@
         },
         "OBJ-23": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -1744,6 +1792,9 @@
         },
         "OBJ-3": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -1800,6 +1851,9 @@
         },
         "OBJ-4": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [
@@ -1878,6 +1932,9 @@
         },
         "OBJ-5": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [
@@ -1955,6 +2012,9 @@
         },
         "OBJ-6": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -2027,6 +2087,9 @@
         },
         "OBJ-7": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -2125,6 +2188,9 @@
         },
         "OBJ-8": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -2171,6 +2237,9 @@
         },
         "OBJ-9": {
             "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],

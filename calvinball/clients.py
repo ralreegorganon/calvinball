@@ -18,6 +18,7 @@ class Clients:
         csar_groups = []
         farp_groups = {}
         airbase_groups = {}
+        carrier_groups = {}
 
         for p in airport_set:
             for a in p["airframes"]:
@@ -134,8 +135,64 @@ class Clients:
                         if a["airframe"].helicopter or a["airframe"] == pydcs_extensions.Bronco_OV_10A:
                             csar_groups.append(group_name)
 
+                if "carrier" in p:
+                    if p["carrier"] not in carrier_groups:
+                        carrier_groups[p["carrier"]] = []
 
-        return ctld_groups, csar_groups, farp_groups, airbase_groups
+                    airport_name = p["carrier"]
+
+                    sg = p["country"].find_ship_group(airport_name)
+
+                    airframe_name = a["airframe"].id
+                    for i in range(a["count"]):
+                        group_name = f"{airport_name} {airframe_name} {str(i+1)}"
+                        carrier_groups[airport_name].append(group_name)
+                        fg = m.flight_group_from_unit(
+                            p["country"], group_name, a["airframe"], sg, group_size=1, start_type=p["start_type"]
+                        )
+
+                        fg.set_client()
+
+                        if "loadout" in a:
+                            if a["loadout"] == "Empty":
+                                fg.reset_loadout()
+                            else:
+                                fg.load_loadout(a["loadout"])
+
+                        setFreq = False
+
+                        if "radio_override" in a:
+                            fg.set_frequency(a["radio_override"]["frequency"], a["radio_override"]["radio"])
+                            setFreq = True
+
+                        for u in fg.units:
+                            u.fuel = a.get("fuel", 1) * a["airframe"].fuel_max
+                            if "livery" in a:
+                                u.livery_id = a["livery"]
+
+                            if "racks" in a:
+                                u.hardpoint_racks = a["racks"]
+
+                            if "radios" in a:
+                                for radio, channels in a["radios"].items():
+                                    for channel, frequency in channels.items():
+                                        if not setFreq:
+                                            fg.set_frequency(frequency, radio)
+                                            setFreq = True
+                                        if channel <= u.num_radio_channels(radio):
+                                            u.set_radio_channel_preset(radio, channel, frequency)
+
+                            if "properties" in a:
+                                for key, value in a["properties"].items():
+                                        u.set_property(key, value)
+
+                        if a["airframe"].helicopter:
+                            ctld_groups.append(group_name)
+
+                        if a["airframe"].helicopter or a["airframe"] == pydcs_extensions.Bronco_OV_10A:
+                            csar_groups.append(group_name)
+
+        return ctld_groups, csar_groups, farp_groups, airbase_groups, carrier_groups
 
 
 

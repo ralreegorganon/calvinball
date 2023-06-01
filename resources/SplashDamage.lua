@@ -113,7 +113,7 @@ splash_damage_options = {
     ["AGM_123"] = 274,
     ["AGM_130"] = 582,
     ["AGM_119"] = 176,
-    ["AGM_154C"]  = 305,
+    ["AGM_154"]  = 305,
     ["S-24A"] = 24,
     ["S-24B"] = 123,
     ["S-25OF"]  = 194,
@@ -356,6 +356,7 @@ splash_damage_options = {
             trigger.action.outText(ordnance:getTypeName().." missing from Splash Damage script", 10)
             debugMsg("desc: "..mist.utils.tableShow(weapon_desc))
           end
+          return
         end
         if (weapon_desc.category ~= 0) and event.initiator then
           if (weapon_desc.category == 1) then

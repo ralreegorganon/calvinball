@@ -1,0 +1,62 @@
+{
+    "REINFORCEMENT-1": {
+        "component": "reinforcement",
+        "label": "REINFORCEMENT 1",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleReinforcementTemplates": [
+            "BLUE REINFORCEMENT 1"
+        ],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": 111719.77174204,
+                "y": -156934.52647306
+            },
+            {
+                "x": 111630.56165486,
+                "y": -156908.11559198
+            },
+            {
+                "x": 111800.1782022,
+                "y": -156536.01562307
+            },
+            {
+                "x": 111827.17599175,
+                "y": -156639.89842197
+            }
+        ],
+        "x": 111744.42189771,
+        "y": -156754.63902752
+    },
+    "REINFORCEMENT-2": {
+        "component": "reinforcement",
+        "label": "REINFORCEMENT 2",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleReinforcementTemplates": [
+            "BLUE REINFORCEMENT 1"
+        ],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": 134376.66755098,
+                "y": -134058.991492
+            },
+            {
+                "x": 133959.4770196,
+                "y": -134096.15501634
+            },
+            {
+                "x": 134009.82760098,
+                "y": -134009.83973399
+            },
+            {
+                "x": 134434.21107255,
+                "y": -133977.47150311
+            }
+        ],
+        "x": 134195.04581103,
+        "y": -134035.61443636
+    }
+}

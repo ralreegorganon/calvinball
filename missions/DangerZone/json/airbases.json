@@ -1,0 +1,42 @@
+{
+    "AIRBASE-1": {
+        "component": "airbase",
+        "label": "Needs Oar Point",
+        "radius": 2300.0208,
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicle_groups": [],
+        "x": 140924.32677492,
+        "y": -85134.810699691
+    },
+    "AIRBASE-2": {
+        "component": "airbase",
+        "label": "Evreux",
+        "radius": 2300.0208,
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicle_groups": [],
+        "x": -46148.313683039,
+        "y": 112448.07842076
+    },
+    "AIRBASE-3": {
+        "component": "airbase",
+        "label": "Stoney Cross",
+        "radius": 2300.0208,
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicle_groups": [],
+        "x": 155985.88565425,
+        "y": -101206.29040119
+    },
+    "AIRBASE-4": {
+        "component": "airbase",
+        "label": "Lymington",
+        "radius": 2300.0208,
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicle_groups": [],
+        "x": 139755,
+        "y": -90846
+    }
+}

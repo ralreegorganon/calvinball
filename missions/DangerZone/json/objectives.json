@@ -1,0 +1,524 @@
+{
+    "objectives": {
+        "OBJ-1": {
+            "airbases": [],
+            "borderZones": [
+                "BORDER-1",
+                "BORDER-2",
+                "BORDER-3",
+                "BORDER-4"
+            ],
+            "capZones": [
+                "CAP-1",
+                "CAP-2",
+                "CAP-3"
+            ],
+            "carriers": [
+                "Teddy",
+                "Forrestal",
+                "Invincible",
+                "Tarawa",
+                "Peleliu"
+            ],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Strategic Targets",
+            "nodes": {},
+            "qrfs": [
+                "QRF-1",
+                "QRF-2"
+            ],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-3",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": 56187.285908028,
+                    "y": -186636.08163346
+                },
+                {
+                    "x": 56038.930986326,
+                    "y": -185436.70522421
+                },
+                {
+                    "x": 57115.026545147,
+                    "y": -185332.22992724
+                },
+                {
+                    "x": 57048.162355084,
+                    "y": -186479.368688
+                }
+            ],
+            "x": 56597.351448646,
+            "y": -185971.09636823
+        },
+        "OBJ-2": {
+            "airbases": [],
+            "borderZones": [],
+            "capZones": [
+                "CAP-4"
+            ],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Foothold Portland",
+            "nodes": {
+                "NODE-1": {
+                    "label": "Tip Of The Spear",
+                    "radius": 260,
+                    "x": 112854.73574422,
+                    "y": -156653.01525301
+                },
+                "NODE-2": {
+                    "label": "Edge Of The Knife",
+                    "radius": 260,
+                    "x": 115821.46733605,
+                    "y": -155146.6551613
+                },
+                "NODE-4": {
+                    "label": "Crack Of My Ass",
+                    "radius": 260,
+                    "x": 117308.86961076,
+                    "y": -157180.03242674
+                }
+            },
+            "qrfs": [
+                "QRF-3",
+                "QRF-7",
+                "QRF-10",
+                "QRF-8",
+                "QRF-11",
+                "QRF-9",
+                "QRF-6"
+            ],
+            "reinforcements": [],
+            "ship_groups": [
+                "RED RG 1"
+            ],
+            "static_groups": [
+                "Static Fueltank-1",
+                "Static Fueltank-2",
+                "Static Oiltank-1",
+                "Static Oiltank-2"
+            ],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED AIR DEFENSE BATTERY A RG 1",
+                "RED AIR DEFENSE BATTERY B RG 1",
+                "RED AIR DEFENSE BATTERY C RG 1",
+                "RED SAM SA-2 RG 1",
+                "RED SAM SA-3 RG 1"
+            ],
+            "vertices": [
+                {
+                    "x": 111592.4200141,
+                    "y": -159586.17690869
+                },
+                {
+                    "x": 112415.21037387,
+                    "y": -149590.55522897
+                },
+                {
+                    "x": 123586.23343698,
+                    "y": -154200.80385643
+                },
+                {
+                    "x": 116530.12760222,
+                    "y": -159889.10375458
+                }
+            ],
+            "x": 116030.99785679,
+            "y": -155816.65993717
+        },
+        "OBJ-3": {
+            "airbases": [],
+            "borderZones": [],
+            "capZones": [
+                "CAP-4"
+            ],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [
+                "FARP-1"
+            ],
+            "label": "Storming Weymouth",
+            "nodes": {
+                "NODE-10": {
+                    "label": "Ssssmokin",
+                    "radius": 260,
+                    "x": 122396.70659477,
+                    "y": -159447.04151461
+                },
+                "NODE-11": {
+                    "label": "Terminus",
+                    "radius": 260,
+                    "x": 122695.40660874,
+                    "y": -157088.55136512
+                },
+                "NODE-12": {
+                    "label": "Penitence",
+                    "radius": 260,
+                    "x": 125907.59038669,
+                    "y": -154861.49097115
+                },
+                "NODE-13": {
+                    "label": "A Bridge Over A Road... With A View",
+                    "radius": 260,
+                    "x": 127834.65481573,
+                    "y": -157726.65383508
+                },
+                "NODE-5": {
+                    "label": "Chesil Watching",
+                    "radius": 260,
+                    "x": 120193.64981147,
+                    "y": -159686.42726666
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [
+                "REINFORCEMENT-1"
+            ],
+            "ship_groups": [],
+            "static_groups": [
+                "Static Fueltank-3",
+                "Static Fueltank-4",
+                "Static Fueltank-5",
+                "Static Fueltank-6",
+                "Static Oiltank-3",
+                "Static Oiltank-4",
+                "Static Oiltank-5",
+                "Static Oiltank-6"
+            ],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED AIR DEFENSE BATTERY A RG 145",
+                "RED AIR DEFENSE BATTERY B RG 147",
+                "RED AIR DEFENSE BATTERY C RG 149",
+                "RED RG 151",
+                "RED RG 151-1",
+                "RED RG 151-2",
+                "RED RG 151-3",
+                "RED RG 151-4",
+                "RED RG 151-5",
+                "RED RG 151-6",
+                "RED RG 152",
+                "RED RG 153",
+                "RED SAM SA-2 RG 2",
+                "RED SAM SA-2 RG 3"
+            ],
+            "vertices": [
+                {
+                    "x": 118726.60038008,
+                    "y": -158246.30949468
+                },
+                {
+                    "x": 124309.9556578,
+                    "y": -153738.35732708
+                },
+                {
+                    "x": 130402.9557588,
+                    "y": -156968.99512585
+                },
+                {
+                    "x": 123599.12184091,
+                    "y": -164243.60503147
+                }
+            ],
+            "x": 124259.6584094,
+            "y": -158299.31674477
+        },
+        "OBJ-4": {
+            "airbases": [],
+            "borderZones": [],
+            "capZones": [
+                "CAP-4"
+            ],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Locomotion",
+            "nodes": {
+                "NODE-14": {
+                    "label": "Supply",
+                    "radius": 260,
+                    "x": 132043.13702573,
+                    "y": -148474.33585665
+                },
+                "NODE-15": {
+                    "label": "Demand",
+                    "radius": 260,
+                    "x": 129849.55777049,
+                    "y": -142683.09136021
+                },
+                "NODE-16": {
+                    "label": "Split Decision",
+                    "radius": 260,
+                    "x": 129845.68631651,
+                    "y": -134496.32554629
+                },
+                "NODE-17": {
+                    "label": "Lulworth Camp",
+                    "radius": 260,
+                    "x": 124230.09447294,
+                    "y": -141323.44549486
+                },
+                "NODE-6": {
+                    "label": "Departing Dorchester",
+                    "radius": 260,
+                    "x": 133730.04953958,
+                    "y": -156407.09273011
+                }
+            },
+            "qrfs": [
+                "QRF-5"
+            ],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": 123407.69705371,
+                    "y": -153140.43758343
+                },
+                {
+                    "x": 120725.98176842,
+                    "y": -139076.78566744
+                },
+                {
+                    "x": 130920.59407434,
+                    "y": -133242.51958875
+                },
+                {
+                    "x": 135731.30470062,
+                    "y": -159302.24140689
+                }
+            ],
+            "x": 127696.39439927,
+            "y": -146190.49606163
+        },
+        "OBJ-5": {
+            "airbases": [],
+            "borderZones": [],
+            "capZones": [
+                "CAP-4"
+            ],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [
+                "FARP-2"
+            ],
+            "label": "Foothold",
+            "nodes": {
+                "NODE-3": {
+                    "label": "Doing It Wrong",
+                    "radius": 260,
+                    "x": 127180.02815745,
+                    "y": -127683.81361781
+                }
+            },
+            "qrfs": [
+                "QRF-4"
+            ],
+            "reinforcements": [
+                "REINFORCEMENT-2"
+            ],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": 121853.07555367,
+                    "y": -138173.63713309
+                },
+                {
+                    "x": 119787.9932463,
+                    "y": -121359.06307539
+                },
+                {
+                    "x": 129466.78230501,
+                    "y": -117917.1229277
+                },
+                {
+                    "x": 129637.69556753,
+                    "y": -133725.06924366
+                }
+            ],
+            "x": 125186.38666813,
+            "y": -127793.72309496
+        },
+        "OBJ-6": {
+            "airbases": [],
+            "borderZones": [],
+            "capZones": [
+                "CAP-4"
+            ],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Foothold",
+            "nodes": {
+                "NODE-8": {
+                    "label": "Doing It Wrong",
+                    "radius": 260,
+                    "x": 144521.67373185,
+                    "y": -96082.215184201
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [
+                "Stoney Cross Airwing Warehouse"
+            ],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": 129600.59791581,
+                    "y": -98554.956501632
+                },
+                {
+                    "x": 145246.89247458,
+                    "y": -73050.890927912
+                },
+                {
+                    "x": 163130.70507763,
+                    "y": -98382.298895238
+                },
+                {
+                    "x": 155913.61713034,
+                    "y": -116096.96931132
+                }
+            ],
+            "x": 148472.95314959,
+            "y": -96521.278909026
+        },
+        "OBJ-7": {
+            "airbases": [],
+            "borderZones": [],
+            "capZones": [
+                "CAP-4"
+            ],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Foothold",
+            "nodes": {
+                "NODE-7": {
+                    "label": "Doing It Wrong",
+                    "radius": 260,
+                    "x": 138978.91411052,
+                    "y": -120364.78114433
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": 129828.89738731,
+                    "y": -125189.74227112
+                },
+                {
+                    "x": 129390.13381533,
+                    "y": -98986.781752372
+                },
+                {
+                    "x": 144192.14094125,
+                    "y": -108827.16306858
+                },
+                {
+                    "x": 142006.53308471,
+                    "y": -132149.83116593
+                }
+            ],
+            "x": 136354.42630715,
+            "y": -116288.3795645
+        },
+        "OBJ-8": {
+            "airbases": [
+                "AIRBASE-1",
+                "AIRBASE-3",
+                "AIRBASE-4"
+            ],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Foothold",
+            "nodes": {
+                "NODE-9": {
+                    "label": "Doing It Wrong",
+                    "radius": 260,
+                    "x": 127678.02350464,
+                    "y": -78574.67410768
+                }
+            },
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": 118989.26408205,
+                    "y": -76250.422589601
+                },
+                {
+                    "x": 130984.04420048,
+                    "y": -52058.361348439
+                },
+                {
+                    "x": 144137.24115342,
+                    "y": -74374.459549498
+                },
+                {
+                    "x": 129415.31283399,
+                    "y": -98466.131214412
+                }
+            ],
+            "x": 130881.46556748,
+            "y": -75287.343675487
+        }
+    },
+    "strands": {
+        "STRAND-1": [
+            "OBJ-2",
+            "OBJ-3",
+            "OBJ-4",
+            "OBJ-5",
+            "OBJ-7",
+            "OBJ-6",
+            "OBJ-8"
+        ],
+        "STRAND-3": [
+            "OBJ-1"
+        ]
+    }
+}

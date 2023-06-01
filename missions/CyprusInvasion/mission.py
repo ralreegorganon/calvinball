@@ -10,10 +10,33 @@ class CyprusInvasion(calvinball.mission.Mission):
         clients = CyprusInvasionClients()
         red_airwings = CyprusInvasionRedAirwings()
         blue_airwings = CyprusInvasionBlueAirwings()
+        carriers = CyprusInvasionCarriers()
+        qrf = CyprusInvasionQrf()
+        reinforcement = CyprusInvasionReinforcement()
+        red_brigades = CyprusInvasionRedBrigades()
+        blue_brigades = CyprusInvasionBlueBrigades()
 
-        super().__init__(t, miz_name, ctld, clients, red_airwings, blue_airwings)
+        super().__init__(t, miz_name, ctld, clients, red_airwings, blue_airwings, carriers, qrf, reinforcement, red_brigades, blue_brigades)
 
 class CyprusInvasionCtld(calvinball.ctld.Ctld):
+    def __init__(self) -> None:
+        super().__init__()
+
+    def build(self, m: dcs.Mission):
+        super().build(m)
+
+class CyprusInvasionCarriers(calvinball.carriers.Carriers):
+    def __init__(self) -> None:
+        super().__init__()
+
+class CyprusInvasionQrf(calvinball.qrf.Qrf):
+    def __init__(self) -> None:
+        super().__init__()
+
+    def build(self, m: dcs.Mission):
+        super().build(m)
+
+class CyprusInvasionReinforcement(calvinball.reinforcement.Reinforcement):
     def __init__(self) -> None:
         super().__init__()
 
@@ -831,3 +854,21 @@ class CyprusInvasionBlueAirwings(calvinball.blueairwing.BlueAirwings):
             },
         }
         return blue_airwings
+
+class CyprusInvasionRedBrigades(calvinball.redbrigade.RedBrigades):
+    def __init__(self) -> None:
+        super().__init__()
+
+    def define(self, m: dcs.Mission):
+        red_brigades = {
+        }
+        return red_brigades
+
+class CyprusInvasionBlueBrigades(calvinball.bluebrigade.BlueBrigades):
+    def __init__(self) -> None:
+        super().__init__()
+
+    def define(self, m: dcs.Mission):
+        blue_brigades = {
+        }
+        return blue_brigades

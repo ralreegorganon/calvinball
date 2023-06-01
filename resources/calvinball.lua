@@ -29,12 +29,20 @@ local function loadState()
     local nodestates = {}
     local taskstates = {}
     local qrfstates = {}
-    local reinformcementstates = {}
+    local qrfvehiclegroupstates = {}
+    local qrfshipgroupstates = {}
+    local qrfstaticgroupstates = {}
+    local reinforcementstates = {}
+    local reinforcementvehiclegroupstates = {}
+    local reinforcementshipgroupstates = {}
+    local reinforcementstaticgroupstates = {}
     local taskvehiclegroupstates = {}
     local taskshipgroupstates = {}
     local taskstaticgroupstates = {}
     local redairwingstates = {}
     local blueairwingstates = {}
+    local redbrigadestates = {}
+    local bluebrigadestates = {}
 
     if io then
         if UTILS.CheckFileExists(defaultDrive,"progress.csv") then
@@ -158,6 +166,39 @@ local function loadState()
             end
         end
 
+        if UTILS.CheckFileExists(defaultDrive,"qrfvehiclegroups.csv") then
+            local _, loadeddata = UTILS.LoadFromFile(defaultDrive, "qrfvehiclegroups.csv")
+            for _, _entry in pairs (loadeddata) do
+                local dataset = UTILS.Split(_entry,",")
+                -- name,state
+                local name = dataset[1]
+                local state = dataset[2]
+                qrfvehiclegroupstates[name] = state
+            end
+        end
+
+        if UTILS.CheckFileExists(defaultDrive,"qrfshipgroups.csv") then
+            local _, loadeddata = UTILS.LoadFromFile(defaultDrive, "qrfshipgroups.csv")
+            for _, _entry in pairs (loadeddata) do
+                local dataset = UTILS.Split(_entry,",")
+                -- name,state
+                local name = dataset[1]
+                local state = dataset[2]
+                qrfshipgroupstates[name] = state
+            end
+        end
+
+        if UTILS.CheckFileExists(defaultDrive,"qrfstaticgroups.csv") then
+            local _, loadeddata = UTILS.LoadFromFile(defaultDrive, "qrfstaticgroups.csv")
+            for _, _entry in pairs (loadeddata) do
+                local dataset = UTILS.Split(_entry,",")
+                -- name,state
+                local name = dataset[1]
+                local state = dataset[2]
+                qrfstaticgroupstates[name] = state
+            end
+        end
+
         if UTILS.CheckFileExists(defaultDrive,"reinforcements.csv") then
             local _, loadeddata = UTILS.LoadFromFile(defaultDrive, "reinforcements.csv")
             for _, _entry in pairs (loadeddata) do
@@ -165,7 +206,40 @@ local function loadState()
                 -- name,state
                 local name = dataset[1]
                 local state = dataset[2]
-                reinformcementstates[name] = state
+                reinforcementstates[name] = state
+            end
+        end
+
+        if UTILS.CheckFileExists(defaultDrive,"reinforcementvehiclegroups.csv") then
+            local _, loadeddata = UTILS.LoadFromFile(defaultDrive, "reinforcementvehiclegroups.csv")
+            for _, _entry in pairs (loadeddata) do
+                local dataset = UTILS.Split(_entry,",")
+                -- name,state
+                local name = dataset[1]
+                local state = dataset[2]
+                reinforcementvehiclegroupstates[name] = state
+            end
+        end
+
+        if UTILS.CheckFileExists(defaultDrive,"reinforcementshipgroups.csv") then
+            local _, loadeddata = UTILS.LoadFromFile(defaultDrive, "reinforcementshipgroups.csv")
+            for _, _entry in pairs (loadeddata) do
+                local dataset = UTILS.Split(_entry,",")
+                -- name,state
+                local name = dataset[1]
+                local state = dataset[2]
+                reinforcementshipgroupstates[name] = state
+            end
+        end
+
+        if UTILS.CheckFileExists(defaultDrive,"reinforcementstaticgroups.csv") then
+            local _, loadeddata = UTILS.LoadFromFile(defaultDrive, "reinforcementstaticgroups.csv")
+            for _, _entry in pairs (loadeddata) do
+                local dataset = UTILS.Split(_entry,",")
+                -- name,state
+                local name = dataset[1]
+                local state = dataset[2]
+                reinforcementstaticgroupstates[name] = state
             end
         end
 
@@ -188,6 +262,28 @@ local function loadState()
                 local name = dataset[1]
                 local state = dataset[2]
                 blueairwingstates[name] = state
+            end
+        end
+
+        if UTILS.CheckFileExists(defaultDrive,"redbrigades.csv") then
+            local _, loadeddata = UTILS.LoadFromFile(defaultDrive, "redbrigades.csv")
+            for _, _entry in pairs (loadeddata) do
+                local dataset = UTILS.Split(_entry,",")
+                -- name,state
+                local name = dataset[1]
+                local state = dataset[2]
+                redbrigadestates[name] = state
+            end
+        end
+
+        if UTILS.CheckFileExists(defaultDrive,"bluebrigades.csv") then
+            local _, loadeddata = UTILS.LoadFromFile(defaultDrive, "bluebrigades.csv")
+            for _, _entry in pairs (loadeddata) do
+                local dataset = UTILS.Split(_entry,",")
+                -- name,state
+                local name = dataset[1]
+                local state = dataset[2]
+                bluebrigadestates[name] = state
             end
         end
     end
@@ -232,12 +328,54 @@ local function loadState()
             else
                 qrf.state = "unactivated"
             end
+            for _, group in ipairs(qrf.vehicleGroups) do
+                if qrfvehiclegroupstates[group.name] ~= nil then
+                    group.state = qrfvehiclegroupstates[group.name]
+                else
+                    group.state = "unactivated"
+                end
+            end
+            for _, group in ipairs(qrf.shipGroups) do
+                if qrfshipgroupstates[group.name] ~= nil then
+                    group.state = qrfshipgroupstates[group.name]
+                else
+                    group.state = "unactivated"
+                end
+            end
+            for _, group in ipairs(qrf.staticGroups) do
+                if qrfstaticgroupstates[group.name] ~= nil then
+                    group.state = qrfstaticgroupstates[group.name]
+                else
+                    group.state = "unactivated"
+                end
+            end
         end
         for _, reinforcement in ipairs(objective.reinforcements) do
-            if reinformcementstates[reinforcement.name] ~= nil then
-                reinforcement.state = reinformcementstates[reinforcement.name]
+            if reinforcementstates[reinforcement.name] ~= nil then
+                reinforcement.state = reinforcementstates[reinforcement.name]
             else
                 reinforcement.state = "unactivated"
+            end
+            for _, group in ipairs(reinforcement.vehicleGroups) do
+                if reinforcementvehiclegroupstates[group.name] ~= nil then
+                    group.state = reinforcementvehiclegroupstates[group.name]
+                else
+                    group.state = "unactivated"
+                end
+            end
+            for _, group in ipairs(reinforcement.shipGroups) do
+                if reinforcementshipgroupstates[group.name] ~= nil then
+                    group.state = reinforcementshipgroupstates[group.name]
+                else
+                    group.state = "unactivated"
+                end
+            end
+            for _, group in ipairs(reinforcement.staticGroups) do
+                if reinforcementstaticgroupstates[group.name] ~= nil then
+                    group.state = reinforcementstaticgroupstates[group.name]
+                else
+                    group.state = "unactivated"
+                end
             end
         end
         for _, task in ipairs(objective.tasks) do
@@ -290,6 +428,22 @@ local function loadState()
         end
     end
 
+    for _, brigade in ipairs(MissionDb.redchief.brigades) do
+        if redbrigadestates[brigade.name] ~= nil then
+            brigade.state = redbrigadestates[brigade.name]
+        else
+            brigade.state = "active"
+        end
+    end
+
+    for _, brigade in ipairs(MissionDb.bluechief.brigades) do
+        if bluebrigadestates[brigade.name] ~= nil then
+            brigade.state = bluebrigadestates[brigade.name]
+        else
+            brigade.state = "active"
+        end
+    end
+
     -- todo, some sort of culling of the unit states from groups who are dead, since if they're dead we won't be spawning them again
 end
 
@@ -308,12 +462,20 @@ local function saveState()
     local nodedata = ""
     local taskdata = ""
     local qrfdata = ""
+    local qrfvehiclegroupdata = ""
+    local qrfshipgroupdata = ""
+    local qrfstaticgroupdata = ""
     local reinforcementdata = ""
+    local reinforcementvehiclegroupdata = ""
+    local reinforcementshipgroupdata = ""
+    local reinforcementstaticgroupdata = ""
     local taskvehiclegroupdata = ""
     local taskshipgroupdata = ""
     local taskstaticgroupdata = ""
     local redairwingdata = ""
     local blueairwingdata = ""
+    local redbrigadedata = ""
+    local bluebrigadedata = ""
     for _, objective in ipairs(MissionDb.objectives) do
         objectivedata = string.format("%s%s,%s\n",objectivedata, objective.name, objective.state)
         for _, group in ipairs(objective.vehicleGroups) do
@@ -342,9 +504,27 @@ local function saveState()
         end
         for _, qrf in pairs(objective.qrfs) do
             qrfdata = string.format("%s%s,%s\n",qrfdata, qrf.name, qrf.state)
+            for _, group in ipairs(qrf.vehicleGroups) do
+                qrfvehiclegroupdata = string.format("%s%s,%s\n",qrfvehiclegroupdata, group.name, group.state)
+            end
+            for _, group in ipairs(qrf.shipGroups) do
+                qrfshipgroupdata = string.format("%s%s,%s\n",qrfshipgroupdata, group.name, group.state)
+            end
+            for _, group in ipairs(qrf.staticGroups) do
+                qrfstaticgroupdata = string.format("%s%s,%s\n",qrfstaticgroupdata, group.name, group.state)
+            end
         end
         for _, reinforcement in pairs(objective.reinforcements) do
             reinforcementdata = string.format("%s%s,%s\n",reinforcementdata, reinforcement.name, reinforcement.state)
+            for _, group in ipairs(reinforcement.vehicleGroups) do
+                reinforcementvehiclegroupdata = string.format("%s%s,%s\n",reinforcementvehiclegroupdata, group.name, group.state)
+            end
+            for _, group in ipairs(reinforcement.shipGroups) do
+                reinforcementshipgroupdata = string.format("%s%s,%s\n",reinforcementshipgroupdata, group.name, group.state)
+            end
+            for _, group in ipairs(reinforcement.staticGroups) do
+                reinforcementstaticgroupdata = string.format("%s%s,%s\n",reinforcementstaticgroupdata, group.name, group.state)
+            end
         end
     end
     for name, state in pairs(MissionDb.units) do
@@ -356,6 +536,12 @@ local function saveState()
     for _, airwing in pairs(MissionDb.bluechief.airwings) do
         blueairwingdata = string.format("%s%s,%s\n",blueairwingdata, airwing.name, airwing.state)
     end
+    for _, brigade in pairs(MissionDb.redchief.brigades) do
+        redbrigadedata = string.format("%s%s,%s\n",redbrigadedata, brigade.name, brigade.state)
+    end
+    for _, brigade in pairs(MissionDb.bluechief.brigades) do
+        bluebrigadedata = string.format("%s%s,%s\n",bluebrigadedata, brigade.name, brigade.state)
+    end
 
     UTILS.SaveToFile(defaultDrive,"progress.csv", objectivedata)
     UTILS.SaveToFile(defaultDrive,"objectivevehiclegroups.csv", objectivevehiclegroupdata)
@@ -365,12 +551,20 @@ local function saveState()
     UTILS.SaveToFile(defaultDrive,"nodes.csv", nodedata)
     UTILS.SaveToFile(defaultDrive,"tasks.csv", taskdata)
     UTILS.SaveToFile(defaultDrive,"qrfs.csv", qrfdata)
+    UTILS.SaveToFile(defaultDrive,"qrfvehiclegroups.csv", qrfvehiclegroupdata)
+    UTILS.SaveToFile(defaultDrive,"qrfshipgroups.csv", qrfshipgroupdata)
+    UTILS.SaveToFile(defaultDrive,"qrfstaticgroups.csv", qrfstaticgroupdata)
     UTILS.SaveToFile(defaultDrive,"reinforcements.csv", reinforcementdata)
+    UTILS.SaveToFile(defaultDrive,"reinforcementvehiclegroups.csv", reinforcementvehiclegroupdata)
+    UTILS.SaveToFile(defaultDrive,"reinforcementshipgroups.csv", reinforcementshipgroupdata)
+    UTILS.SaveToFile(defaultDrive,"reinforcementstaticgroups.csv", reinforcementstaticgroupdata)
     UTILS.SaveToFile(defaultDrive,"taskvehiclegroups.csv", taskvehiclegroupdata)
     UTILS.SaveToFile(defaultDrive,"taskshipgroups.csv", taskshipgroupdata)
     UTILS.SaveToFile(defaultDrive,"taskstaticgroups.csv", taskstaticgroupdata)
     UTILS.SaveToFile(defaultDrive,"redairwings.csv", redairwingdata)
     UTILS.SaveToFile(defaultDrive,"blueairwings.csv", blueairwingdata)
+    UTILS.SaveToFile(defaultDrive,"redbrigades.csv", redbrigadedata)
+    UTILS.SaveToFile(defaultDrive,"bluebrigades.csv", bluebrigadedata)
 end
 
 -- stupid forward declaration shit
@@ -547,6 +741,17 @@ local function showFarpUnlockedUpdate(farp, strandName)
     MESSAGE:New(m, 30):ToAll()
 end
 
+local function showCarrierUnlockedUpdate(carrier, strandName)
+    local labelText = carrier.name
+
+    local r = {}
+    table.insert(r, "CARRIER UPDATE")
+    table.insert(r, "")
+    table.insert(r, string.format("%s is now unlocked in %s", labelText, strandName))
+    local m = table.concat(r, "\n")
+    MESSAGE:New(m, 30):ToAll()
+end
+
 local function showAirbaseUnlockedUpdate(airbase, strandName)
     local zone = ZONE:FindByName(airbase.name)
     local labelText = zone:GetProperty("label")
@@ -559,6 +764,52 @@ local function showAirbaseUnlockedUpdate(airbase, strandName)
     MESSAGE:New(m, 30):ToAll()
 end
 
+local function showIndustryPercentageUpdate()
+    if(not MissionDb.industry.enabled) then
+        return
+    end
+
+    local r = {}
+    table.insert(r, "INDUSTRY UPDATE")
+    table.insert(r, "")
+    table.insert(r, string.format("Enemy industry is at %.f%% capacity, with %i active industry targets", MissionDb.industry.percentage, MissionDb.industry.alive))
+    local m = table.concat(r, "\n")
+    MESSAGE:New(m, 30):ToAll()
+end
+
+local function calculateIndustryPercentage()
+    local alive = 0
+    local total = 0
+    for _, objective in ipairs(MissionDb.objectives) do
+        for _, qrf in ipairs(objective.qrfs) do
+            if qrf.state == "active" and #qrf.staticGroups > 0 then
+                for _, static in ipairs(qrf.staticGroups) do
+                    if string.find(static.name, "INDUSTRYTARGET") then
+                        total = total + 1
+                        if static.state ~= "dead" then
+                            alive = alive + 1
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    local percent = 100
+    if total > 0 then
+        percent = UTILS.Round((alive / total) * 100, 2)
+    end
+
+    local changed = MissionDb.industry.percentage ~= percent or MissionDb.industry.alive ~= alive
+
+    MissionDb.industry.percentage = percent
+    MissionDb.industry.alive = alive
+    MissionDb.industry.enabled = not (percent == 100 and alive == 0)
+
+    if changed then
+        showIndustryPercentageUpdate()
+    end
+end
 
 local function enemyReinforceZone(targetZoneName)
     local zone = ZONE:FindByName(targetZoneName)
@@ -584,8 +835,9 @@ local function enemyReinforceZone(targetZoneName)
     end
 
     if closestQrf ~= nil then
+        local qrfZone = ZONE:FindByName(closestQrf.name)
         local sg = closestQrf.spawnGroups[math.random(#closestQrf.spawnGroups)]
-        local g = sg.instance:Spawn()
+        local g = SPAWN:NewWithAlias(sg.name, string.format("%s-%d", sg.name, math.random(1,100000))):SpawnInZone(qrfZone, true)
 
         g:OptionDisperseOnAttack(0)
 
@@ -648,8 +900,9 @@ local function friendlyReinforceZone(targetZoneName)
     end
 
     if closestReinforcement ~= nil then
+        local reinforcementZone = ZONE:FindByName(closestReinforcement.name)
         local sg = closestReinforcement.spawnGroups[math.random(#closestReinforcement.spawnGroups)]
-        local g = sg.instance:Spawn()
+        local g = SPAWN:NewWithAlias(sg.name, string.format("%s-%d", sg.name, math.random(1,100000))):SpawnInZone(reinforcementZone, true)
 
         g:OptionDisperseOnAttack(0)
         g:HandleEvent( EVENTS.Dead )
@@ -716,6 +969,18 @@ local function randomEnemyReinforcement()
     end
 end
 
+local function industryAwareRandomEnemyReinforcement()
+    if MissionDb.industry.enabled and MissionDb.industry.percentage < 100 then
+        local delaySeconds = (100 - MissionDb.industry.percentage)/100 * MissionDb.settings.redQrfMission.industryDelay
+        MESSAGE:New(string.format("Enemy reinforcement convoy delayed by %s due to industry capacity of %.f%%.", UTILS.SecondsToClock(delaySeconds, true), MissionDb.industry.percentage), 30):ToAll()
+        SCHEDULER:New(nil, function()
+            randomEnemyReinforcement()
+        end, {}, delaySeconds)
+    else
+        randomEnemyReinforcement()
+    end
+end
+
 local function randomFriendlyReinforcement()
     local potentials = {}
     for _, objective in ipairs(MissionDb.objectives) do
@@ -747,6 +1012,57 @@ local function standardAirwingReinforcement()
     end
     if didIt then
         MESSAGE:New(string.format("New airframes have been delivered to the enemy warehouses"), 30):ToAll()
+    end
+end
+
+local function standardBrigadeReinforcement()
+    local didIt = false
+    for _, brigade in ipairs(MissionDb.redchief.brigades) do
+        if brigade.state == "active" then
+            for _, platoon in ipairs(brigade.platoons) do
+                local brigade = platoon.instance:GetBrigade()
+                brigade:AddAssetToPlatoon(platoon.instance, 1)
+            end
+            didIt = true
+        end
+    end
+    if didIt then
+        MESSAGE:New(string.format("New ground units have been delivered to the enemy warehouses"), 30):ToAll()
+    end
+end
+
+local function blueBrigadeReinforcement()
+    for _, brigade in ipairs(MissionDb.bluechief.brigades) do
+        if brigade.state == "active" then
+            for _, platoon in ipairs(brigade.platoons) do
+                local brigade = platoon.instance:GetBrigade()
+                brigade:AddAssetToPlatoon(platoon.instance, 1)
+            end
+        end
+    end
+end
+
+local function industryAwareStandardAirwingReinforcement()
+    if MissionDb.industry.enabled and MissionDb.industry.percentage < 100 then
+        local delaySeconds = (100 - MissionDb.industry.percentage)/100 * MissionDb.settings.redAirwingReinforcement.industryDelay
+        MESSAGE:New(string.format("Enemy airframe delivery delayed by %s due to industry capacity of %.f%%.", UTILS.SecondsToClock(delaySeconds, true), MissionDb.industry.percentage), 30):ToAll()
+        SCHEDULER:New(nil, function()
+            standardAirwingReinforcement()
+        end, {}, delaySeconds)
+    else
+        standardAirwingReinforcement()
+    end
+end
+
+local function industryAwareStandardBrigadeReinforcement()
+    if MissionDb.industry.enabled and MissionDb.industry.percentage < 100 then
+        local delaySeconds = (100 - MissionDb.industry.percentage)/100 * MissionDb.settings.redBrigadeReinforcement.industryDelay
+        MESSAGE:New(string.format("Enemy ground unit delivery delayed by %s due to industry capacity of %.f%%.", UTILS.SecondsToClock(delaySeconds, true), MissionDb.industry.percentage), 30):ToAll()
+        SCHEDULER:New(nil, function()
+            standardBrigadeReinforcement()
+        end, {}, delaySeconds)
+    else
+        standardBrigadeReinforcement()
     end
 end
 
@@ -914,6 +1230,45 @@ local function unlockFarpsForObjective(objective)
     end
 end
 
+local function unlockCarriersForObjective(objective)
+    for _, carrier in ipairs(objective.carriers) do
+        local unitName = string.format("%s Unit #1", carrier.name)
+
+        -- Hardcoded for now...
+        if carrier.name == "Tarawa" or carrier.name == "Peleliu" then
+            MissionDb.ctld.instance:AddCTLDZone(unitName, CTLD.CargoZoneType.SHIP, SMOKECOLOR.Blue, true, false, 240, 20)
+        end
+
+        local ng = NAVYGROUP:New(carrier.name)
+        ng:ClearWaypoints()
+        ng:SetPatrolAdInfinitum(true)
+
+        for _, waypoint in ipairs(carrier.waypoints) do
+            ng:AddWaypoint(COORDINATE:New(waypoint.x, 0, waypoint.y), waypoint.speed, nil, 0, true)
+        end
+
+        ng:SwitchTACAN(carrier.tacan_channel)
+        ng:SwitchRadio(carrier.radio)
+        
+        if carrier.icls_channel ~= nil then
+            ng:SwitchICLS(carrier.icls_channel)
+        end
+
+        if carrier.link4 ~= nil then
+            local g = ng:GetGroup()
+            g:CommandActivateLink4(carrier.link4)
+            g:CommandActivateACLS()
+        end
+
+        for _, client in ipairs(carrier.clients) do
+            local carrierSlot = USERFLAG:New(client)
+            carrierSlot:Set(0)
+        end
+
+        showCarrierUnlockedUpdate(carrier, objective.strand)
+    end
+end
+
 local function unlockAirbasesForObjective(objective)
     for _, airbase in ipairs(objective.airbases) do
         spawnGroupsAtThing(airbase, country.id.CJTF_BLUE)
@@ -935,9 +1290,9 @@ local function unlockReinforcementsForObjective(objective)
     for _, reinforcement in ipairs(objective.reinforcements) do
         reinforcement.state = "active"
         spawnGroupsAtThing(reinforcement, country.id.CJTF_BLUE)
-        for _, spawnGroup in ipairs(reinforcement.spawnGroups) do
-            spawnGroup.instance = SPAWN:New(spawnGroup.name)
-        end
+        -- for _, spawnGroup in ipairs(reinforcement.spawnGroups) do
+        --     spawnGroup.instance = SPAWN:New(spawnGroup.name)
+        -- end
     end
 end
 
@@ -945,9 +1300,67 @@ local function unlockQrfsForObjective(objective)
     for _, qrf in ipairs(objective.qrfs) do
         qrf.state = "active"
         spawnGroupsAtThing(qrf, country.id.CJTF_RED)
-        for _, spawnGroup in ipairs(qrf.spawnGroups) do
-            spawnGroup.instance = SPAWN:New(spawnGroup.name)
+        -- for _, spawnGroup in ipairs(qrf.spawnGroups) do
+        --     spawnGroup.instance = SPAWN:New(spawnGroup.name)
+        -- end
+    end
+end
+
+local function updateBorderZones()
+    MissionDb.redchief.borderZones:Clear()
+    for _, objective in ipairs(MissionDb.objectives) do
+        if objective.state == "active" then
+            for _, borderZoneName in ipairs(objective.borderZones) do
+                local borderZone = ZONE:FindByName(borderZoneName)
+                MissionDb.redchief.borderZones:AddZone(borderZone)
+            end
         end
+    end
+end
+
+local function updateCapZones()
+    local intendedCapZones = {}
+    for _, objective in ipairs(MissionDb.objectives) do
+        if objective.state == "active" then
+            for _, capZoneName in ipairs(objective.capZones) do
+                table.insert(intendedCapZones, capZoneName)
+            end
+        end
+    end
+
+    local commander = MissionDb.redchief.instance:GetCommander()
+
+    for i=#commander.capZones,1,-1 do
+        local capZone = commander.capZones[i]
+        local found = false
+        for _, capZoneName in ipairs(intendedCapZones) do
+            if capZoneName == capZone.zone:GetName() then
+                found = true
+                break
+            end
+        end
+        if not found then
+            table.remove(commander.capZones, i)
+        end
+    end
+
+    for i=#intendedCapZones,1,-1 do
+        local capZoneName = intendedCapZones[i]
+        local found = false
+        for _, capZone in ipairs(commander.capZones) do
+            if capZoneName == capZone.zone:GetName() then
+                found = true
+                break
+            end
+        end
+        if found then
+            table.remove(intendedCapZones, i)
+        end
+    end
+
+    for _, capZoneName in ipairs(intendedCapZones) do
+        local capZone = ZONE:FindByName(capZoneName)
+        MissionDb.redchief.instance:AddCapZone(capZone)
     end
 end
 
@@ -993,7 +1406,9 @@ local function startObjective(objective)
         MissionDb.ctld.instance:AddCTLDZone(node.name, CTLD.CargoZoneType.MOVE, SMOKECOLOR.Blue, true, false)
 
         -- Temporarily disabled because it seems like they hyper-fixate on it instead of running missions in the general zone.
-        --MissionDb.redchief.instance:AddStrategicZone(node.opsZone)
+        -- ... lets give it a try.
+        MissionDb.redchief.instance:AddStrategicZone(node.opsZone)
+        MissionDb.bluechief.instance:AddStrategicZone(node.opsZone)
     end
 
     spawnGroupsAtThing(objective, country.id.CJTF_RED)
@@ -1147,6 +1562,7 @@ local function startObjective(objective)
     end
 
     unlockFarpsForObjective(objective)
+    unlockCarriersForObjective(objective)
     unlockAirbasesForObjective(objective)
     unlockReinforcementsForObjective(objective)
     unlockQrfsForObjective(objective)
@@ -1168,6 +1584,9 @@ local function startObjective(objective)
             end, {}, 270)
         end
     end
+
+    updateBorderZones()
+    updateCapZones()
 end
 
 local function spawnCasevacForCompletedObjective(objective)
@@ -1290,6 +1709,8 @@ completeObjective = function(objective, killLinkedUnits)
     end
 
     for _, node in ipairs(objective.nodes) do
+        MissionDb.redchief.instance:RemoveStrategicZone(node.opsZone)
+        MissionDb.bluechief.instance:RemoveStrategicZone(node.opsZone)
         node.opsZone:SetDrawZone(false)
         node.opsZone:GetZone():UndrawZone()
         node.opsZone:Stop()
@@ -1346,6 +1767,17 @@ local function lockAllFarpSlots()
     end
 end
 
+local function lockAllCarrierSlots()
+    for _, objective in ipairs(MissionDb.objectives) do
+        for _, carrier in ipairs(objective.carriers) do
+            for _, client in ipairs(carrier.clients) do
+                local carrierSlot = USERFLAG:New(client)
+                carrierSlot:Set(100)
+            end
+        end
+    end
+end
+
 local function lockAllAirbaseSlots()
     for _, objective in ipairs(MissionDb.objectives) do
         for _, airbase in ipairs(objective.airbases) do
@@ -1363,7 +1795,13 @@ local function initializeRedChief()
     MissionDb.redchief.instance:SetTacticalOverviewOn()
     MissionDb.redchief.instance:SetStrategy(CHIEF.Strategy.AGGRESSIVE)
     MissionDb.redchief.conflictZones = SET_ZONE:New()
+    MissionDb.redchief.borderZones = SET_ZONE:New()
     MissionDb.redchief.instance:SetConflictZones(MissionDb.redchief.conflictZones)
+
+    local redAwacsZone = ZONE:FindByName("RED AWACS ZONE")
+    if redAwacsZone then
+        MissionDb.redchief.instance:AddAwacsZone(redAwacsZone)
+    end
 end
 
 local function initializeBlueChief()
@@ -1398,11 +1836,17 @@ local function initializeRedChief2()
             end
 
             function airwing.instance:OnAfterFlightOnMission(From, Event, To, Flightgroup, Mission)
-                if Mission:GetType() == AUFTRAG.Type.BOMBCARPET or Mission:GetType() ~= AUFTRAG.Type.BAI then
+                if Mission:GetType() == AUFTRAG.Type.BOMBCARPET or Mission:GetType() == AUFTRAG.Type.BAI then
                     if math.random(1, 100) <= 25 then
                         local escortMission = AUFTRAG:NewESCORT(Flightgroup:GetGroup())
                         MissionDb.redchief.instance:AddMission(escortMission)
                     end
+                end
+
+                if Mission:GetType() == AUFTRAG.Type.AWACS then
+                    local escortMission = AUFTRAG:NewESCORT(Flightgroup:GetGroup())
+                    MissionDb.redchief.instance:AddMission(escortMission)
+                    MissionDb.samnetwork.instance:SetAwacs(Flightgroup:GetName())
                 end
 
                 local text=string.format("RED has launched a new mission: %s.", Mission:GetType())
@@ -1413,6 +1857,13 @@ local function initializeRedChief2()
                 squadron.instance = SQUADRON:New(squadron.templateGroupName, squadron.initialInventory, squadron.name)
                 squadron.instance:SetSkill(AI.Skill.EXCELLENT)
                 squadron.instance:SetTakeoffHot()
+
+                -- Hacks... really we should push takeoff type to definition.
+                if squadron.instance.aircrafttype == "Mi-26" then
+                    squadron.instance:SetTakeoffCold()
+                end
+
+
                 for _, capability in ipairs(squadron.capabilities) do
                     squadron.instance:AddMissionCapability({capability.mission}, capability.performance)
                 end
@@ -1424,6 +1875,30 @@ local function initializeRedChief2()
                 end
             end
             MissionDb.redchief.instance:AddAirwing(airwing.instance)
+        end
+    end
+
+    for _, brigade in ipairs(MissionDb.redchief.brigades) do
+        if brigade.state == "active" then
+            brigade.instance = BRIGADE:New(brigade.warehouse, brigade.name)
+
+            function brigade.instance:OnAfterArmyOnMission(From, Event, To, ArmyGroup, Mission)
+                local text=string.format("RED has launched a new mission: %s.", Mission:GetType())
+                MESSAGE:New(text, 15):ToAll()
+            end
+
+            for _, platoon in ipairs(brigade.platoons) do
+                platoon.instance = PLATOON:New(platoon.templateGroupName, platoon.initialInventory, platoon.name)
+                platoon.instance:SetSkill(AI.Skill.EXCELLENT)
+
+                for _, capability in ipairs(platoon.capabilities) do
+                    platoon.instance:AddMissionCapability({capability.mission}, capability.performance)
+                end
+                -- squadron.instance:SetLivery(squadron.livery)
+
+                brigade.instance:AddPlatoon(platoon.instance)
+            end
+            MissionDb.redchief.instance:AddBrigade(brigade.instance)
         end
     end
 
@@ -1458,6 +1933,29 @@ local function initializeBlueChief2()
         end
     end
 
+    for _, brigade in ipairs(MissionDb.bluechief.brigades) do
+        if brigade.state == "active" then
+            brigade.instance = BRIGADE:New(brigade.warehouse, brigade.name)
+
+            function brigade.instance:OnAfterArmyOnMission(From, Event, To, ArmyGroup, Mission)
+                local text=string.format("BLUE has launched a new mission: %s.", Mission:GetType())
+                MESSAGE:New(text, 15):ToAll()
+            end
+
+            for _, platoon in ipairs(brigade.platoons) do
+                platoon.instance = PLATOON:New(platoon.templateGroupName, platoon.initialInventory, platoon.name)
+                platoon.instance:SetSkill(AI.Skill.EXCELLENT)
+
+                for _, capability in ipairs(platoon.capabilities) do
+                    platoon.instance:AddMissionCapability({capability.mission}, capability.performance)
+                end
+
+                brigade.instance:AddPlatoon(platoon.instance)
+            end
+            MissionDb.bluechief.instance:AddBrigade(brigade.instance)
+        end
+    end
+
     MissionDb.bluechief.instance:__Start(15)
 end
 
@@ -1466,6 +1964,7 @@ local function initializeObjectives()
     saveState()
 
     lockAllFarpSlots()
+    lockAllCarrierSlots()
     lockAllAirbaseSlots()
     initializeRedChief()
     initializeBlueChief()
@@ -1485,6 +1984,7 @@ local function initializeObjectives()
         elseif objective.state == "finished" then
             finishedCount = finishedCount + 1
             unlockFarpsForObjective(objective)
+            unlockCarriersForObjective(objective)
             unlockAirbasesForObjective(objective)
             unlockReinforcementsForObjective(objective)
             unlockQrfsForObjective(objective)
@@ -1554,18 +2054,6 @@ local function reportOverallMissionStatus()
     MESSAGE:New(m, 30):ToAll()
 end
 
-local function debugResupplySquadron(menuArgs)
-    for _, airwing in ipairs(MissionDb.redchief.airwings) do
-        if airwing.state == "active" then
-            for _, squadron in ipairs(airwing.squadrons) do
-                if squadron.name == menuArgs.name then
-                    airwing.instance:AddAssetToSquadron(squadron.instance, 1)
-                end
-            end
-        end
-    end
-end
-
 local function debugResupplyAirwing(menuArgs)
     for _, airwing in ipairs(MissionDb.redchief.airwings) do
         if airwing.name == menuArgs.name and airwing.state == "active" then
@@ -1573,7 +2061,14 @@ local function debugResupplyAirwing(menuArgs)
                 airwing.instance:AddAssetToSquadron(squadron.instance, 1)
             end
         end
+    end
+end
 
+local function debugResupplyBrigade(menuArgs)
+    if menuArgs.brigade.state == "active" then
+        for _, platoon in ipairs(menuArgs.brigade.platoons) do
+            menuArgs.brigade.instance:AddAssetToPlatoon(platoon.instance, 1)
+        end
     end
 end
 
@@ -1614,7 +2109,7 @@ local function randomChiefMissions()
     end
 end
 
-local function requestUav(menuArgs)
+local function requestReconFlight(menuArgs)
     for _, objective in ipairs(MissionDb.objectives) do
         if objective.state == "active" and objective.strand == menuArgs.strand then
             if #objective.nodes > 0 then
@@ -1635,6 +2130,22 @@ local function requestUav(menuArgs)
     end
 end
 
+local function pruneCtldForInactiveObjectives()
+    local finishedObjectiveZones = SET_ZONE:New()
+
+    for _, objective in ipairs(MissionDb.objectives) do
+        if objective.state == "finished" then
+            finishedObjectiveZones:AddZone(ZONE:FindByName(objective.name))
+        end
+    end
+
+    local ctldGroups = SET_GROUP:New():FilterCoalitions("blue"):FilterPrefixes("CTLD"):FilterActive():FilterZones(finishedObjectiveZones):FilterOnce()
+    ctldGroups:ForEachGroup(function(g)
+        -- MESSAGE:New(string.format("CTLD cleanup destroying %s.", g.GroupName), 5):ToAll()
+        g:Destroy(false)
+    end)
+end
+
 local function initializeStrandMenus()
     local menuMissionStatus = MENU_MISSION:New("Mission Status")
     MENU_MISSION_COMMAND:New("Overall Status", menuMissionStatus, reportOverallMissionStatus)
@@ -1653,23 +2164,28 @@ local function initializeStrandMenus()
         MENU_MISSION_COMMAND:New("Spawn Enemy Air Missions", menuDebug, randomChiefMissions)
         MENU_MISSION_COMMAND:New("Spawn Friendly Reinforcement", menuDebug, randomFriendlyReinforcement)
 
-        local menuDebugSquadronResupply = MENU_MISSION:New("Resupply Squadrons", menuDebug)
-        for _, airwing in ipairs(MissionDb.redchief.airwings) do
-            if airwing.state == "active" then
-                MENU_MISSION_COMMAND:New(squadron.templateGroupName, menuDebugSquadronResupply, debugResupplySquadron, { name = squadron.name, state = airwing.state })
-            end
-        end
-
         local menuDebugAirwingResupply = MENU_MISSION:New("Resupply Airwings", menuDebug)
         for _, airwing in ipairs(MissionDb.redchief.airwings) do
             MENU_MISSION_COMMAND:New(airwing.name, menuDebugAirwingResupply, debugResupplyAirwing, { name = airwing.name, state = airwing.state })
         end
+
+        local menuDebugBrigadeResupply = MENU_MISSION:New("Resupply Brigades", menuDebug)
+        local menuDebugBrigadeResupplyRed = MENU_MISSION:New("RED", menuDebugBrigadeResupply)
+        for _, brigade in ipairs(MissionDb.redchief.brigades) do
+            MENU_MISSION_COMMAND:New(brigade.name, menuDebugBrigadeResupplyRed, debugResupplyBrigade, { brigade = brigade })
+        end
+        local menuDebugBrigadeResupplyBlue = MENU_MISSION:New("BLUE", menuDebugBrigadeResupply)
+        for _, brigade in ipairs(MissionDb.bluechief.brigades) do
+            MENU_MISSION_COMMAND:New(brigade.name, menuDebugBrigadeResupplyBlue, debugResupplyBrigade, { brigade = brigade })
+        end
+
+        MENU_MISSION_COMMAND:New("CTLD Cleanup", menuDebug, pruneCtldForInactiveObjectives)
     end
 
     local menuRequest = MENU_MISSION:New("Request")
     for _, strand in ipairs(MissionDb.strands) do
         local menuIndividualStrand = MENU_MISSION:New(strand.name, menuRequest)
-        MENU_MISSION_COMMAND:New("Request UAV", menuIndividualStrand, requestUav, {strand = strand.name})
+        MENU_MISSION_COMMAND:New("Request Recon Flight", menuIndividualStrand, requestReconFlight, {strand = strand.name})
     end
 end
 
@@ -1685,6 +2201,8 @@ local function initializeCtld()
     MissionDb.ctld.instance.cratecountry = country.id.CJTF_BLUE
     MissionDb.ctld.instance.buildtime = 0
     MissionDb.ctld.instance.usesubcats = true
+    MissionDb.ctld.instance.nobuildinloadzones = false
+    MissionDb.ctld.instance.movecratesbeforebuild = false
 
     MissionDb.ctld.instance.enableLoadSave = true
     MissionDb.ctld.instance.saveinterval = 600
@@ -1781,6 +2299,13 @@ local function initializeCsar()
     MissionDb.csar.instance.csarUsePara = true
     MissionDb.csar.instance.allowbronco = true
     MissionDb.csar.instance.autosmoke = true
+    MissionDb.csar.instance.rescuehoverheight  = 30
+    MissionDb.csar.instance.rescuehoverdistance  = 30
+
+    MissionDb.csar.instance.enableLoadSave = true
+    MissionDb.csar.instance.saveinterval = 600
+    MissionDb.csar.instance.filename = "csar.csv"
+    MissionDb.csar.instance.filepath = defaultDrive
 
     function MissionDb.csar.instance:OnAfterRescued(from, event, to, heliunit, heliname, pilotssaved)
         local potentials = {}
@@ -1808,6 +2333,7 @@ local function initializeCsar()
     end
 
     MissionDb.csar.instance:Start()
+    MissionDb.csar.instance:__Load(10)
 end
 
 local function initializeAutolase()
@@ -1843,6 +2369,7 @@ end
 
 local function initializeMantis()
     MissionDb.samnetwork.instance = MANTIS:New("BlapBlap", "RED SAM", "RED EWR", nil, "red", true)
+    --MissionDb.samnetwork.instance:Debug(true)
     MissionDb.samnetwork.instance:Start()
 end
 
@@ -1864,32 +2391,23 @@ initializeMantis()
 
 SCHEDULER:New(nil, initializeObjectives, {}, 30)
 
--- not ready for prime time
-
-
--- local function doIt()
---     STATIC:FindByName("RED TASK-3 TASK3TALKER COMMS TOWER-1#00001"):Destroy(true)
--- end
-
--- MENU_MISSION_COMMAND:New("Complete Tasks", nil, doIt)
-
 MESSAGE:New("CALVINBALL END!", 5):ToAll()
 
 SCHEDULER:New(nil, saveState, {}, 600, 600)
 
--- Dispatch a random enemy reinforcement to an active node somewhere between 30 and 60 minutes
--- after the game starts, and then every hour after that point.
-SCHEDULER:New(nil, randomEnemyReinforcement, {}, math.random(1800, 3600), 3600)
+SCHEDULER:New(nil, industryAwareRandomEnemyReinforcement, {}, math.random(MissionDb.settings.redQrfMission.minStart, MissionDb.settings.redQrfMission.maxStart), MissionDb.settings.redQrfMission.repeatAfter)
 
--- Dispatch a random friendly reinforcement to an active node somewhere between 30 and 60 minutes
--- after the game starts, and then every hour after that point.
-SCHEDULER:New(nil, randomFriendlyReinforcement, {}, math.random(1800, 3600), 3600)
+SCHEDULER:New(nil, randomFriendlyReinforcement, {}, math.random(MissionDb.settings.blueConvoyMission.minStart, MissionDb.settings.blueConvoyMission.maxStart), MissionDb.settings.blueConvoyMission.repeatAfter)
 
--- Dispatch random chief missions somewhere between 5 and 10 minutes after the game starts
--- and every 30 minutes after that point.
-SCHEDULER:New(nil, randomChiefMissions, {}, math.random(300, 600), 2700)
+SCHEDULER:New(nil, randomChiefMissions, {}, math.random(MissionDb.settings.redChiefAirMission.minStart, MissionDb.settings.redChiefAirMission.maxStart), MissionDb.settings.redChiefAirMission.repeatAfter)
 
-SCHEDULER:New(nil, standardAirwingReinforcement, {}, 120, 3600)
+SCHEDULER:New(nil, industryAwareStandardAirwingReinforcement, {}, math.random(MissionDb.settings.redAirwingReinforcement.minStart, MissionDb.settings.redAirwingReinforcement.maxStart), MissionDb.settings.redAirwingReinforcement.repeatAfter)
+
+SCHEDULER:New(nil, industryAwareStandardBrigadeReinforcement, {}, math.random(MissionDb.settings.redBrigadeReinforcement.minStart, MissionDb.settings.redBrigadeReinforcement.maxStart), MissionDb.settings.redBrigadeReinforcement.repeatAfter)
+
+SCHEDULER:New(nil, blueBrigadeReinforcement, {}, math.random(120, 120), 3600)
+
+SCHEDULER:New(nil, calculateIndustryPercentage, {}, 60, 60)
 
 -- Global wrappers for local functions, to be called from discord bot
 function DebugRandomEnemyReinforcement()

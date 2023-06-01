@@ -4,6 +4,10 @@ MissionDb = {
 			name = "OBJ-1",
 			strand = "STRAND-2",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-1" },
 				{ name = "NODE-2" },
@@ -90,6 +94,8 @@ MissionDb = {
 							"Akrotiri MB-339A 2",
 					}
 				},
+			},
+			carriers = {
 			},
 			qrfs = {
 				{
@@ -401,6 +407,10 @@ MissionDb = {
 			name = "OBJ-10",
 			strand = "STRAND-1",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-32" },
 				{ name = "NODE-33" },
@@ -412,6 +422,8 @@ MissionDb = {
 			farps = {
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -480,6 +492,10 @@ MissionDb = {
 			name = "OBJ-11",
 			strand = "STRAND-1",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-29" },
 				{ name = "NODE-36" },
@@ -493,6 +509,8 @@ MissionDb = {
 			farps = {
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -735,6 +753,10 @@ MissionDb = {
 			name = "OBJ-12",
 			strand = "STRAND-1",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-41" },
 				{ name = "NODE-53" },
@@ -807,6 +829,8 @@ MissionDb = {
 					}
 				},
 			},
+			carriers = {
+			},
 			qrfs = {
 			},
 			reinforcements = {
@@ -856,6 +880,10 @@ MissionDb = {
 			name = "OBJ-13",
 			strand = "STRAND-2",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-47" },
 				{ name = "NODE-48" },
@@ -869,6 +897,8 @@ MissionDb = {
 			farps = {
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -912,6 +942,10 @@ MissionDb = {
 			name = "OBJ-14",
 			strand = "STRAND-2",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-43" },
 				{ name = "NODE-44" },
@@ -1185,6 +1219,8 @@ MissionDb = {
 			},
 			airbases = {
 			},
+			carriers = {
+			},
 			qrfs = {
 			},
 			reinforcements = {
@@ -1250,6 +1286,10 @@ MissionDb = {
 			name = "OBJ-15",
 			strand = "STRAND-2",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-60" },
 				{ name = "NODE-61" },
@@ -1263,6 +1303,8 @@ MissionDb = {
 			farps = {
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -1293,6 +1335,10 @@ MissionDb = {
 			name = "OBJ-16",
 			strand = "STRAND-2",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-66" },
 				{ name = "NODE-67" },
@@ -1399,6 +1445,8 @@ MissionDb = {
 							"Larnaca MB-339A 2",
 					}
 				},
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -1834,6 +1882,10 @@ MissionDb = {
 			name = "OBJ-17",
 			strand = "STRAND-1",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-74" },
 				{ name = "NODE-75" },
@@ -1847,6 +1899,8 @@ MissionDb = {
 			farps = {
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -2028,6 +2082,10 @@ MissionDb = {
 			name = "OBJ-18",
 			strand = "STRAND-2",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-78" },
 				{ name = "NODE-79" },
@@ -2300,6 +2358,8 @@ MissionDb = {
 				},
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -2763,6 +2823,10 @@ MissionDb = {
 			name = "OBJ-19",
 			strand = "STRAND-1",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-28" },
 				{ name = "NODE-86" },
@@ -2774,6 +2838,8 @@ MissionDb = {
 			farps = {
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -2833,6 +2899,10 @@ MissionDb = {
 			name = "OBJ-2",
 			strand = "STRAND-2",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-27" },
 				{ name = "NODE-7" },
@@ -2844,6 +2914,8 @@ MissionDb = {
 			farps = {
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -3152,6 +3224,10 @@ MissionDb = {
 			name = "OBJ-20",
 			strand = "STRAND-1",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-89" },
 				{ name = "NODE-90" },
@@ -3164,6 +3240,8 @@ MissionDb = {
 			farps = {
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -3217,6 +3295,10 @@ MissionDb = {
 			name = "OBJ-21",
 			strand = "STRAND-2",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-94" },
 				{ name = "NODE-95" },
@@ -3229,6 +3311,8 @@ MissionDb = {
 			farps = {
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -3274,6 +3358,10 @@ MissionDb = {
 			name = "OBJ-22",
 			strand = "STRAND-1",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-100" },
 				{ name = "NODE-101" },
@@ -3547,6 +3635,8 @@ MissionDb = {
 			},
 			airbases = {
 			},
+			carriers = {
+			},
 			qrfs = {
 			},
 			reinforcements = {
@@ -3588,6 +3678,10 @@ MissionDb = {
 			name = "OBJ-23",
 			strand = "STRAND-2",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-104" },
 				{ name = "NODE-105" },
@@ -3600,6 +3694,8 @@ MissionDb = {
 			farps = {
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -3635,6 +3731,10 @@ MissionDb = {
 			name = "OBJ-3",
 			strand = "STRAND-1",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-12" },
 				{ name = "NODE-17" },
@@ -3644,6 +3744,8 @@ MissionDb = {
 			farps = {
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -3667,6 +3769,10 @@ MissionDb = {
 			name = "OBJ-4",
 			strand = "STRAND-1",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-13" },
 				{ name = "NODE-14" },
@@ -3939,6 +4045,8 @@ MissionDb = {
 			},
 			airbases = {
 			},
+			carriers = {
+			},
 			qrfs = {
 			},
 			reinforcements = {
@@ -3980,6 +4088,10 @@ MissionDb = {
 			name = "OBJ-5",
 			strand = "STRAND-2",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-18" },
 				{ name = "NODE-19" },
@@ -4252,6 +4364,8 @@ MissionDb = {
 			},
 			airbases = {
 			},
+			carriers = {
+			},
 			qrfs = {
 			},
 			reinforcements = {
@@ -4361,6 +4475,10 @@ MissionDb = {
 			name = "OBJ-6",
 			strand = "STRAND-1",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-21" },
 				{ name = "NODE-22" },
@@ -4372,6 +4490,8 @@ MissionDb = {
 			farps = {
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -4399,6 +4519,10 @@ MissionDb = {
 			name = "OBJ-7",
 			strand = "STRAND-2",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-10" },
 				{ name = "NODE-11" },
@@ -4410,6 +4534,8 @@ MissionDb = {
 			farps = {
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -4588,6 +4714,10 @@ MissionDb = {
 			name = "OBJ-8",
 			strand = "STRAND-3",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 			},
 			tasks = {
@@ -4947,6 +5077,8 @@ MissionDb = {
 			},
 			airbases = {
 			},
+			carriers = {
+			},
 			qrfs = {
 			},
 			reinforcements = {
@@ -4962,6 +5094,10 @@ MissionDb = {
 			name = "OBJ-9",
 			strand = "STRAND-2",
 			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
 			nodes = {
 				{ name = "NODE-26" },
 				{ name = "NODE-30" },
@@ -4973,6 +5109,8 @@ MissionDb = {
 			farps = {
 			},
 			airbases = {
+			},
+			carriers = {
 			},
 			qrfs = {
 			},
@@ -6025,6 +6163,8 @@ MissionDb = {
 					},
 				}
 			},
+		},
+		brigades = {
 		}
 	},
 	bluechief = {
@@ -6066,13 +6206,47 @@ MissionDb = {
 					},
 				}
 			},
+		},
+		brigades = {
 		}
 	},
 	units = {},
+	industry = {
+		percentage = 100,
+		active = 0
+	},
 	devmode = true,
 	lateActivateStatics = false,
 	missionName = "CyprusInvasion",
 	settings = {
-		blueCasevacChance = 10
+		blueCasevacChance = 10,
+		blueConvoyMission = {
+			minStart = 1800,
+			maxStart = 3600,
+			repeatAfter = 3600
+		},
+		redQrfMission = {
+			minStart = 1800,
+			maxStart = 3600,
+			repeatAfter = 3600,
+			industryDelay = 1800
+		},
+		redChiefAirMission = {
+			minStart = 300,
+			maxStart = 600,
+			repeatAfter = 2700
+		},
+		redAirwingReinforcement = {
+			minStart = 120,
+			maxStart = 120,
+			repeatAfter = 3600,
+			industryDelay = 1800
+		},
+		redBrigadeReinforcement = {
+			minStart = 120,
+			maxStart = 120,
+			repeatAfter = 3600,
+			industryDelay = 1800
+		},
 	}
 }

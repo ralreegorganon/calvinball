@@ -5,6 +5,16 @@ MissionDb = {
 			name = "{{objective_name}}",
 			strand = "{{objective["strand"]}}",
 			completeSound = "{{objective["completeSound"]}}",
+			borderZones = {
+{% 				for border_zone in objective["borderZones"] %}
+				"{{border_zone}}",
+{%				endfor %}
+			},
+			capZones = {
+{% 				for cap_zone in objective["capZones"] %}
+				"{{cap_zone}}",
+{%				endfor %}
+			},
 			nodes = {
 {% 				for node_name in objective["nodes"].keys() %}
 				{ name = "{{node_name}}" },
@@ -138,6 +148,33 @@ MissionDb = {
 				},
 {% 				endfor %}
 			},
+			carriers = {
+{% 				for carrier_name in objective["carriers"] %}
+{% 				set carrier = carriers[carrier_name] %}
+				{
+					name = "{{carrier_name}}",
+					clients = {
+{% 						set clients = carrier_groups[carrier_name] %}
+{%  					for client_name in clients %}
+							"{{client_name}}",
+{% 						endfor %}
+					},
+					waypoints = {
+{%  					for waypoint in carrier["waypoints"] %}
+						{ 
+							x = {{waypoint["x"]}},
+							y = {{waypoint["y"]}},
+							speed = {{waypoint["speed"]}},
+						},
+{% 						endfor %}
+					},
+					tacan_channel = {{carrier["tacan_channel"]}},
+					radio = {{carrier["radio"]}},
+					link4 = {{carrier["link4"] | default("nil", true)}},
+					icls_channel = {{carrier["icls_channel"] | default("nil", true)}},
+				},
+{% 				endfor %}
+			},
 			qrfs = {
 {% 				for qrf_name in objective["qrfs"] %}
 {% 				set qrf = qrfs[qrf_name] %}
@@ -172,7 +209,7 @@ MissionDb = {
 								category = "{{static["category"]}}",
 								canCargo = {{static["canCargo"] | string | lower}},
 								shape_name = "{{static["shape_name"]}}",
-								rate = {{static["rate"]}},
+								rate = {{static["rate"] | default(50, true)}},
 								dead = false
 							}
 						},
@@ -319,6 +356,28 @@ MissionDb = {
 				}
 			},
 {% 			endfor %}
+		},
+		brigades = {
+{%  		for brigade_name, brigade in red_brigades.items() %}
+			{
+				name = "{{brigade_name}}",
+				warehouse = "{{brigade["warehouse"]}}",
+				platoons = {
+{%  				for platoon_name, platoon in brigade["platoons"].items() %}
+					{
+						name = "{{platoon_name}}",
+						templateGroupName = "{{platoon["groupName"]}}",
+						initialInventory = {{platoon["initialInventory"]}},
+						capabilities = {
+{% 						for mission, performance in platoon["capabilities"].items() %}
+							{ mission = {{mission}}, performance = {{performance}} },
+{% 						endfor %}
+						},
+					},
+{% 					endfor %}
+				}
+			},
+{% 			endfor %}
 		}
 	},
 	bluechief = {
@@ -353,13 +412,67 @@ MissionDb = {
 				}
 			},
 {% 			endfor %}
+		},
+		brigades = {
+{%  		for brigade_name, brigade in blue_brigades.items() %}
+			{
+				name = "{{brigade_name}}",
+				warehouse = "{{brigade["warehouse"]}}",
+				platoons = {
+{%  				for platoon_name, platoon in brigade["platoons"].items() %}
+					{
+						name = "{{platoon_name}}",
+						templateGroupName = "{{platoon["groupName"]}}",
+						initialInventory = {{platoon["initialInventory"]}},
+						capabilities = {
+{% 						for mission, performance in platoon["capabilities"].items() %}
+							{ mission = {{mission}}, performance = {{performance}} },
+{% 						endfor %}
+						},
+					},
+{% 					endfor %}
+				}
+			},
+{% 			endfor %}
 		}
 	},
 	units = {},
+	industry = {
+		percentage = 100,
+		active = 0
+	},
 	devmode = {{ devmode | string | lower }},
 	lateActivateStatics = {{ late_activate_statics | string | lower }},
 	missionName = "{{missionName}}",
 	settings = {
-		blueCasevacChance = 10
+		blueCasevacChance = 10,
+		blueConvoyMission = {
+			minStart = 1800,
+			maxStart = 3600,
+			repeatAfter = 3600
+		},
+		redQrfMission = {
+			minStart = 1800,
+			maxStart = 3600,
+			repeatAfter = 3600,
+			industryDelay = 1800
+		},
+		redChiefAirMission = {
+			minStart = 300,
+			maxStart = 600,
+			repeatAfter = 2700
+		},
+		redAirwingReinforcement = {
+			minStart = 120,
+			maxStart = 120,
+			repeatAfter = 3600,
+			industryDelay = 1800
+		},
+		redBrigadeReinforcement = {
+			minStart = 120,
+			maxStart = 120,
+			repeatAfter = 3600,
+			industryDelay = 1800
+		},
 	}
 }

@@ -11,7 +11,8 @@ class RedAirwings:
         p = dcs.mapping.Point(0, 0, m.terrain)
         for airwing_name, airwing in red_airwings.items():
             if "airbase" in airwing:
-                m.terrain.airports[airwing["airbase"]].set_red()
+                if airwing["airbase"] in m.terrain.airports:
+                    m.terrain.airports[airwing["airbase"]].set_red()
             for squadron_name, squadron in airwing["squadrons"].items():
                 airframe = squadron["airframe"]
                 squadron["groupName"] = f"RED {airwing_name} {squadron_name} {airframe.id}"

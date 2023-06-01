@@ -62,6 +62,9 @@ def get_objective_zones(m: dcs.Mission):
         label = None
         component = None
         completeSound = None
+        borderZones = None
+        capZones = None
+        carriers = None
         for v in z.properties.values():
             if(v["key"] == "label"):
                 label = v["value"]
@@ -69,6 +72,12 @@ def get_objective_zones(m: dcs.Mission):
                 component = v["value"]
             if(v["key"] == "completeSound"):
                 completeSound = v.get("value", "")
+            if(v["key"] == "borderZones"):
+                borderZones = v.get("value", "")
+            if(v["key"] == "capZones"):
+                capZones = v.get("value", "")
+            if(v["key"] == "carriers"):
+                carriers = v.get("value", "")
         
         if(component == None):
             continue
@@ -80,6 +89,9 @@ def get_objective_zones(m: dcs.Mission):
                 "y": z.position.y,
                 "vertices": [{"x": v.x, "y": v.y } for v in z.verticies],
                 "completeSound": completeSound,
+                "borderZones": [x.strip() for x in borderZones.split(',') if x],
+                "capZones": [x.strip() for x in capZones.split(',') if x],
+                "carriers": [x.strip() for x in carriers.split(',') if x],
                 "nodes": {},
                 "tasks": [],
                 "farps": [],
@@ -246,6 +258,13 @@ def get_unclassified_zones(m: dcs.Mission):
         
         if(component == None and isinstance(z, dcs.triggers.TriggerZoneCircular)):
             zones[z.name] = { "x": z.position.x, "y": z.position.y, "radius": z.radius }
+
+        if(component == None and isinstance(z, dcs.triggers.TriggerZoneQuadPoint)):
+            zones[z.name] = { 
+                "x": z.position.x,
+                "y": z.position.y,
+                "vertices": [{"x": v.x, "y": v.y } for v in z.verticies]
+            }
 
     return zones
 
@@ -577,7 +596,7 @@ def dumpit(miz_export_path):
     merged = assign_objective_zones_to_strands(objective_zones, strands)
     unclassified_zones = get_unclassified_zones(m)
 
-    #debug_aircraft(m, farp_zones)
+    debug_aircraft(m, farp_zones)
     report_units_in_obj(m, objective_zones)
 
     obj_filter = ["OBJ-6"]
@@ -612,10 +631,10 @@ def dumpit(miz_export_path):
     with open("temp/temp-farps.json", "w") as outfile:
         json.dump(farp_zones, outfile, sort_keys=True)
 
-from missions.CyprusInvasion.mission import CyprusInvasion
-m = CyprusInvasion()
-dumpit(m.miz_export_path)
-
-# from missions.NotTheFrat.mission import NotTheFrat
-# m = NotTheFrat()
+# from missions.CyprusInvasion.mission import CyprusInvasion
+# m = CyprusInvasion()
 # dumpit(m.miz_export_path)
+
+from missions.DangerZone.mission import DangerZone
+m = DangerZone()
+dumpit(m.miz_export_path)

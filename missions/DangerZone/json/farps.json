@@ -1,0 +1,45 @@
+{
+    "FARP-1": {
+        "clearScenery": "all",
+        "component": "farp",
+        "label": "FARP Portland Bill",
+        "radius": 137.16,
+        "ship_groups": [],
+        "static_groups": [
+            "MASH Tent 1",
+            "MASH Tent 1-1",
+            "Static Container 20ft-2",
+            "Static Container 20ft-3",
+            "Static Container 20ft-4",
+            "Static FARP Tent-5",
+            "Static FARP Tent-6",
+            "Static FARP Tent-7",
+            "Static FARP Tent-8",
+            "Static Invisible FARP-1",
+            "Static Invisible FARP-2",
+            "Static Invisible FARP-3",
+            "Static Invisible FARP-4",
+            "Static Watch tower armed-3",
+            "Static Windsock-1"
+        ],
+        "vehicle_groups": [
+            "FARP MASH 1-2",
+            "FARP Support 1-1",
+            "FARP Support 1-2",
+            "FARP Support 1-3"
+        ],
+        "x": 111531.35177591,
+        "y": -157069.50280131
+    },
+    "FARP-2": {
+        "clearScenery": "all",
+        "component": "farp",
+        "label": "FARP Morden Bog",
+        "radius": 137.16,
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicle_groups": [],
+        "x": 134151.8137747,
+        "y": -133818.48342646
+    }
+}

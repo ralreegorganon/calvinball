@@ -134,7 +134,7 @@ def build_copypasta_templates(m: dcs.Mission):
             ]
         },
         "low intensity": {
-            "qty": 0,
+            "qty": 1,
             "templates": [
                 { "id": "loose infantry", "min": 1, "max": 2},
                 { "id": "bmp-1 squad", "min": 0, "max": 3},
@@ -153,11 +153,11 @@ def build_copypasta_templates(m: dcs.Mission):
         }
     }
 
-    anchorx = -24465
-    anchory = -272276
+    anchorx = 230084
+    anchory = -156468
     goffset = 0
     gc = m.next_group_id()
-    prefix = "RED QRF"
+    prefix = "RED RG"
 
     for c in compositions.values():
         for i in range(c["qty"]):
@@ -314,4 +314,4 @@ def build_sam_templates(m: dcs.Mission):
     for gname, units in templates.items():
         gid = m.next_group_id()
         group_name = f"{gname} {gid}"
-        m.vehicle_group_platoon(m.country(dcs.countries.CombinedJointTaskForcesRed.name), group_name, units, dcs.mapping.Point(-17918, -314365, m.terrain))
+        m.vehicle_group_platoon(m.country(dcs.countries.CombinedJointTaskForcesRed.name), group_name, units, dcs.mapping.Point(230084, -156468, m.terrain))

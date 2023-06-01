@@ -9,13 +9,18 @@ from pathlib import Path
 import calvinball
 
 class Mission:
-    def __init__(self, terrain: dcs.terrain, miz_name: str, ctld: calvinball.ctld.Ctld, clients: calvinball.clients.Clients, red_airwings: calvinball.redairwing.RedAirwings, blue_airwings: calvinball.blueairwing.BlueAirwings) -> None:
+    def __init__(self, terrain: dcs.terrain, miz_name: str, ctld: calvinball.ctld.Ctld, clients: calvinball.clients.Clients, red_airwings: calvinball.redairwing.RedAirwings, blue_airwings: calvinball.blueairwing.BlueAirwings, carriers: calvinball.carriers.Carriers, qrf: calvinball.qrf.Qrf, reinforcement: calvinball.reinforcement.Reinforcement, red_brigades: calvinball.redbrigade.RedBrigades, blue_brigades: calvinball.bluebrigade.BlueBrigades) -> None:
         self.m = dcs.Mission(terrain=terrain)
         self.miz_name = miz_name
         self.ctld = ctld
+        self.qrf = qrf
+        self.reinforcement = reinforcement
         self.clients = clients
         self.red_airwings = red_airwings
         self.blue_airwings = blue_airwings
+        self.carriers = carriers
+        self.red_brigades = red_brigades
+        self.blue_brigades = blue_brigades
         self.json_root = os.path.realpath(os.path.join(sys.modules[self.__module__].__file__, '../' 'json'))
         self.mission_resource_path = os.path.realpath(os.path.join(sys.modules[self.__module__].__file__, '../' 'resources'))
         self.common_resource_path = os.path.realpath(os.path.join(sys.modules[self.__module__].__file__, '../../../' 'resources'))
@@ -43,6 +48,8 @@ class Mission:
         if edit:
             self.__build_static_groups()
         self.ctld.build(self.m)
+        self.qrf.build(self.m)
+        self.reinforcement.build(self.m)
         self.__tasks()
         self.__farps()
         self.__airbases()
@@ -50,10 +57,13 @@ class Mission:
         self.__reinforcements()
         self.__objectives()
         self.__unclassified()
-        ctld_groups, csar_groups, farp_groups, airbase_groups = self.clients.build(self.m, edit)
+        carriers = self.carriers.build(self.m, edit)
+        ctld_groups, csar_groups, farp_groups, airbase_groups, carrier_groups = self.clients.build(self.m, edit)
         red_airwings = self.red_airwings.build(self.m)
         blue_airwings = self.blue_airwings.build(self.m)
-        self.__write_db(ctld_groups, csar_groups, farp_groups, airbase_groups, red_airwings, blue_airwings, edit, True)
+        red_brigades = self.red_brigades.build(self.m)
+        blue_brigades = self.blue_brigades.build(self.m)
+        self.__write_db(ctld_groups, csar_groups, farp_groups, airbase_groups, red_airwings, blue_airwings, carriers, carrier_groups, red_brigades, blue_brigades, edit, True)
         self.__save_mission(package, edit)
 
         print("Make sure to manually add a late activated `Downed Pilot`")
@@ -109,6 +119,7 @@ class Mission:
             load_trigger = dcs.triggers.TriggerStart()
             load_trigger.actions.append(dcs.action.DoScriptFile(self.m.map_resource.add_resource_file(self.__common_resource("Moose.lua"))))
             load_trigger.actions.append(dcs.action.DoScriptFile(self.m.map_resource.add_resource_file(self.__common_resource("SplashDamage.lua"))))
+            load_trigger.actions.append(dcs.action.DoScriptFile(self.m.map_resource.add_resource_file(self.__common_resource("Hercules_Cargo.lua"))))
             load_trigger.actions.append(dcs.action.DoScript(dcs.translation.String(f"trigger.action.setUserFlag(\"SSB\",100)")))
 
             if self.m.terrain.name == "Syria":
@@ -135,7 +146,7 @@ class Mission:
         self.m.save(self.miz_export_path)
 
 
-    def __write_db(self, ctld_groups, csar_groups, farp_groups, airbase_groups, red_airwings, blue_airwings, configure_for_editor, devmode):
+    def __write_db(self, ctld_groups, csar_groups, farp_groups, airbase_groups, red_airwings, blue_airwings, carriers, carrier_groups, red_brigades, blue_brigades, configure_for_editor, devmode):
         with open(self.objectives_json_path) as json_file:
             obj = json.load(json_file)
         with open(self.tasks_json_path) as json_file:
@@ -153,7 +164,7 @@ class Mission:
         with open(self.__mission_resource(f"{self.miz_name}_db.lua"), "w") as lua_file:
             with open(self.__common_resource("calvinball_db.jinja2")) as jinja_file:
                 template = Template(jinja_file.read(), trim_blocks=True, lstrip_blocks=True)
-                lua_file.write(template.render(obj=obj, ctld_groups=ctld_groups, csar_groups=csar_groups, airbases=airbases, tasks=tasks, statics=statics, qrfs=qrfs, reinforcements=reinforcements, farps=farps, farp_groups=farp_groups, airbase_groups=airbase_groups, red_airwings=red_airwings, blue_airwings=blue_airwings, late_activate_statics=not configure_for_editor, devmode=devmode, missionName=self.miz_name))
+                lua_file.write(template.render(obj=obj, ctld_groups=ctld_groups, csar_groups=csar_groups, airbases=airbases, tasks=tasks, statics=statics, qrfs=qrfs, reinforcements=reinforcements, farps=farps, farp_groups=farp_groups, airbase_groups=airbase_groups, red_airwings=red_airwings, blue_airwings=blue_airwings, carriers=carriers, carrier_groups=carrier_groups, red_brigades=red_brigades, blue_brigades=blue_brigades, late_activate_statics=not configure_for_editor, devmode=devmode, missionName=self.miz_name))
 
     def __build_vehicle_groups(self):
         with open(self.vehicle_groups_path) as json_file:
@@ -237,12 +248,19 @@ class Mission:
             ]
 
             for objective_name, objective in obj["objectives"].items():
+                props_a = [
+                    {"key": "label", "value": objective["label"]},
+                    {"key": "component", "value": "objective"},
+                    {"key": "completeSound", "value": objective["completeSound"]},
+                    {"key": "borderZones", "value": ",".join(objective["borderZones"])},
+                    {"key": "capZones", "value": ",".join(objective["capZones"])},
+                    {"key": "carriers", "value": ",".join(objective["carriers"])},
+                ]
+
+                props = {k+1: v for k, v in enumerate(props_a)}
+
                 p = dcs.mapping.Point(objective["x"], objective["y"], self.m.terrain)
-                oz = self.m.triggers.add_triggerzone_quad(p, [dcs.mapping.Point(v["x"], v["y"], self.m.terrain) for v in objective["vertices"]], name=objective_name, properties={
-                    1: {"key": "label", "value": objective["label"]}, 
-                    2: {"key": "component", "value": "objective"},
-                    3: {"key": "completeSound", "value": objective["completeSound"]}
-                })
+                oz = self.m.triggers.add_triggerzone_quad(p, [dcs.mapping.Point(v["x"], v["y"], self.m.terrain) for v in objective["vertices"]], name=objective_name, properties=props)
                 objective_zones[oz.name] = oz
                 for node_name, node in objective["nodes"].items():
                     self.m.triggers.add_triggerzone(dcs.mapping.Point(node["x"], node["y"], self.m.terrain), node["radius"], name=node_name, properties={1: {"key": "label", "value": node["label"]}, 2: {"key": "component", "value": "node"}})
@@ -290,7 +308,7 @@ class Mission:
 
             si = 0
             for strand_name, sequence in obj["strands"].items():
-                fg = self.m.flight_group_inflight(self.m.country(dcs.countries.CombinedJointTaskForcesBlue.name), strand_name, dcs.planes.F_16C_50, dcs.mapping.Point(-42916, -278277, self.m.terrain), 420, group_size=1)
+                fg = self.m.flight_group_inflight(self.m.country(dcs.countries.CombinedJointTaskForcesBlue.name), strand_name, dcs.planes.F_16C_50, dcs.mapping.Point(self.m.terrain.bullseye_blue["x"], self.m.terrain.bullseye_blue["y"], self.m.terrain), 420, group_size=1)
                 fg.late_activation = True
                 for obj in sequence:
                     fg.add_waypoint(objective_centers[obj], 420)
@@ -344,7 +362,10 @@ class Mission:
             unclassified = json.load(json_file)
             for unclassified_name, unclassified in unclassified.items():
                 p = dcs.mapping.Point(unclassified["x"], unclassified["y"], self.m.terrain)
-                self.m.triggers.add_triggerzone(p, unclassified["radius"], name=unclassified_name)
+                if "radius" in unclassified:
+                    self.m.triggers.add_triggerzone(p, unclassified["radius"], name=unclassified_name)
+                if "vertices" in unclassified:
+                    self.m.triggers.add_triggerzone_quad(p, [dcs.mapping.Point(v["x"], v["y"], self.m.terrain) for v in unclassified["vertices"]], name=unclassified_name)
 
     def __qrfs(self):
         with open(self.qrfs_json_path) as json_file:

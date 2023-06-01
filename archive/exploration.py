@@ -15,8 +15,8 @@ def airport_slots():
 
     terrains = [dcs.terrain.Syria(), dcs.terrain.Caucasus(), dcs.terrain.Falklands(), dcs.terrain.MarianaIslands(), dcs.terrain.Nevada(), dcs.terrain.Normandy(), dcs.terrain.PersianGulf(), dcs.terrain.TheChannel()]
     for t in terrains:
-        if t.name != "Syria":
-            continue
+        # if t.name != "Syria":
+        #     continue
         for x in t.airports.values():
             large = len(x.free_parking_slots(dcs.planes.C_130))
             helo = sum(s.helicopter for s in x.parking_slots)
@@ -26,10 +26,10 @@ def airport_slots():
 
     print(slots_table)
 
-    # with open("airport-slots.csv", "w", newline='') as outfile:
-    #     w = csv.writer(outfile)
-    #     w.writerow(field_names)
-    #     w.writerows(csv_rows)
+    with open("airport-slots.csv", "w", newline='') as outfile:
+        w = csv.writer(outfile)
+        w.writerow(field_names)
+        w.writerows(csv_rows)
 
 def playable_aircraft():
     field_names = ["Airframe", "Max Speed (km/h)", "Max Fuel"]
@@ -112,9 +112,8 @@ def radios():
 #airport_slots()
 #playable_aircraft()
 
-
-#airport_slots()
+airport_slots()
 
 #parking_slot_names(dcs.terrain.Caucasus().airports["Batumi"])
 
-radios()
+#radios()

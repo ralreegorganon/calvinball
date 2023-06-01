@@ -1,8 +1,8 @@
 from missions.CyprusInvasion.mission import CyprusInvasion
-from missions.NotTheFrat.mission import NotTheFrat
+from missions.DangerZone.mission import DangerZone
 
 m = CyprusInvasion()
 m.build(True, False)
 
-m = NotTheFrat()
+m = DangerZone()
 m.build(True, False)
