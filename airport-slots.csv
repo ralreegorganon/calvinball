@@ -1,0 +1,243 @@
+Terrain,Airport,Total,Large,Helo,Is Civilian?
+Syria,Abu al-Duhur,36,0,16,False
+Syria,Adana Sakirpasa,39,1,39,True
+Syria,Al Qusayr,34,0,19,False
+Syria,An Nasiriyah,20,0,0,False
+Syria,Tha'lah,16,0,0,False
+Syria,Beirut-Rafic Hariri,41,7,34,True
+Syria,Damascus,71,6,55,False
+Syria,Marj as Sultan South,20,0,20,False
+Syria,Al-Dumayr,57,0,12,False
+Syria,Eyn Shemer,5,0,5,True
+Syria,Gaziantep,12,0,12,True
+Syria,H4,12,0,0,False
+Syria,Haifa,16,0,16,True
+Syria,Hama,46,0,27,False
+Syria,Hatay,10,0,10,True
+Syria,Incirlik,126,18,68,False
+Syria,Jirah,28,0,16,False
+Syria,Khalkhalah,55,0,25,False
+Syria,King Hussein Air College,52,0,28,False
+Syria,Kiryat Shmona,5,0,5,True
+Syria,Bassel Al-Assad,53,6,53,False
+Syria,Marj as Sultan North,14,0,14,False
+Syria,Marj Ruhayyil,53,0,26,False
+Syria,Megiddo,9,0,7,False
+Syria,Mezzeh,40,0,24,False
+Syria,Minakh,20,0,15,False
+Syria,Aleppo,22,0,16,True
+Syria,Palmyra,22,0,6,False
+Syria,Qabr as Sitt,9,0,9,False
+Syria,Ramat David,42,0,12,False
+Syria,Kuweires,37,0,26,False
+Syria,Rayak,12,0,12,False
+Syria,Rene Mouawad,13,0,9,False
+Syria,Rosh Pina,9,0,9,False
+Syria,Sayqal,59,0,10,False
+Syria,Shayrat,57,0,13,False
+Syria,Tabqa,29,0,11,False
+Syria,Taftanaz,48,0,48,False
+Syria,Tiyas,82,0,29,False
+Syria,Wujah Al Hajar,6,0,6,False
+Syria,Gazipasa,6,0,6,True
+Syria,Deir ez-Zor,16,2,12,False
+Syria,Akrotiri,45,8,31,False
+Syria,Kingsfield,2,0,1,False
+Syria,Paphos,43,10,42,False
+Syria,Larnaca,45,6,45,True
+Syria,Lakatamia,8,0,8,False
+Syria,Ercan,7,0,7,True
+Syria,Gecitkale,3,0,3,False
+Syria,Pinarbashi,5,0,3,False
+Syria,Naqoura,9,0,9,False
+Syria,H3,68,0,52,False
+Syria,H3 Northwest,29,0,21,False
+Syria,H3 Southwest,30,0,22,False
+Syria,Ruwayshid,24,0,16,False
+Syria,Sanliurfa,11,2,11,True
+Syria,Kharab Ishk,11,0,11,False
+Syria,Tal Siman,4,0,4,False
+Syria,At Tanf,2,0,2,False
+Caucasus,Anapa-Vityazevo,92,16,40,True
+Caucasus,Krasnodar-Center,56,6,23,False
+Caucasus,Novorossiysk,38,8,16,False
+Caucasus,Krymsk,57,22,30,False
+Caucasus,Maykop-Khanskaya,57,20,57,False
+Caucasus,Gelendzhik,13,3,13,True
+Caucasus,Sochi-Adler,68,23,41,True
+Caucasus,Krasnodar-Pashkovsky,19,7,19,True
+Caucasus,Sukhumi-Babushara,23,5,23,True
+Caucasus,Gudauta,31,10,10,False
+Caucasus,Batumi,10,2,10,True
+Caucasus,Senaki-Kolkhi,68,3,16,False
+Caucasus,Kobuleti,42,10,26,True
+Caucasus,Kutaisi,58,13,25,True
+Caucasus,Mineralnye Vody,28,15,28,True
+Caucasus,Nalchik,15,5,15,True
+Caucasus,Mozdok,39,14,39,False
+Caucasus,Tbilisi-Lochini,74,8,44,True
+Caucasus,Soganlug,5,3,5,True
+Caucasus,Vaziani,92,2,19,False
+Caucasus,Beslan,15,0,15,True
+Falklands,Port Stanley,16,2,16,True
+Falklands,Mount Pleasant,37,2,21,False
+Falklands,San Carlos FOB,13,0,6,False
+Falklands,Rio Gallegos,24,2,18,False
+Falklands,Rio Grande,7,0,7,False
+Falklands,Ushuaia,8,2,8,False
+Falklands,Ushuaia Helo Port,8,0,8,False
+Falklands,Punta Arenas,50,5,24,False
+Falklands,Pampa Guanaco,2,0,2,True
+Falklands,San Julian,9,0,1,False
+Falklands,Puerto Williams,5,0,5,False
+Falklands,Puerto Natales,4,0,4,False
+Falklands,El Calafate,10,0,10,False
+Falklands,Puerto Santa Cruz,10,0,10,False
+Falklands,Comandante Luis Piedrabuena,9,0,9,False
+Falklands,Aerodromo De Tolhuin,7,0,7,False
+Falklands,Porvenir Airfield,7,0,7,False
+Falklands,Almirante Schroeders,14,2,14,False
+Falklands,Rio Turbio,3,0,3,False
+Falklands,Rio Chico,3,0,3,False
+Falklands,CaletaTortel,0,0,0,True
+Falklands,Franco Bianco,10,0,9,True
+Falklands,Goose Green,6,0,6,True
+Falklands,Hipico Flying Club,4,0,4,True
+Falklands,Aeropuerto de Gobernador Gregores,6,0,6,False
+Falklands,Aerodromo O'Higgins,4,0,4,False
+Falklands,Gull Point,1,0,1,True
+MarianaIslands,Rota Intl,9,0,9,True
+MarianaIslands,Saipan Intl,19,5,19,True
+MarianaIslands,Tinian Intl,4,1,4,True
+MarianaIslands,Antonio B. Won Pat Intl,23,10,23,True
+MarianaIslands,Olf Orote,4,0,4,False
+MarianaIslands,Andersen AFB,194,92,180,False
+MarianaIslands,Pagan Airstrip,3,0,3,False
+MarianaIslands,North West Field,8,0,8,False
+Nevada,Creech,51,0,13,False
+Nevada,Groom Lake,52,0,9,False
+Nevada,McCarran International,15,5,14,False
+Nevada,Nellis,247,6,51,False
+Nevada,Beatty,3,0,3,False
+Nevada,Boulder City,37,0,22,False
+Nevada,Echo Bay,2,0,2,False
+Nevada,Henderson Executive,43,0,26,False
+Nevada,Jean,4,0,4,False
+Nevada,Laughlin,16,2,16,False
+Nevada,Lincoln County,6,0,6,False
+Nevada,Mesquite,11,0,1,False
+Nevada,Mina,0,0,0,False
+Nevada,North Las Vegas,47,0,15,True
+Nevada,Pahute Mesa,5,0,5,False
+Nevada,Tonopah,25,0,25,False
+Nevada,Tonopah Test Range,68,2,6,False
+Normandy,Saint Pierre du Mont,117,0,91,False
+Normandy,Lignerolles,66,0,57,False
+Normandy,Cretteville,56,0,48,False
+Normandy,Maupertus,7,2,3,False
+Normandy,Brucheville,107,0,84,False
+Normandy,Meautis,46,0,36,False
+Normandy,Cricqueville-en-Bessin,73,0,59,False
+Normandy,Lessay,57,1,47,False
+Normandy,Sainte-Laurent-sur-Mer,42,8,34,False
+Normandy,Biniville,32,0,26,False
+Normandy,Cardonville,116,0,90,False
+Normandy,Deux Jumeaux,106,0,83,False
+Normandy,Chippelle,38,0,24,False
+Normandy,Beuzeville,36,0,28,False
+Normandy,Azeville,31,0,20,False
+Normandy,Picauville,36,0,19,False
+Normandy,Le Molay,36,0,23,False
+Normandy,Longues-sur-Mer,46,0,36,False
+Normandy,Carpiquet,47,0,22,False
+Normandy,Bazenville,60,0,60,False
+Normandy,Sainte-Croix-sur-Mer,36,0,20,False
+Normandy,Beny-sur-Mer,49,0,35,False
+Normandy,Rucqueville,40,0,32,False
+Normandy,Sommervieu,24,0,15,False
+Normandy,Lantheuil,66,0,55,False
+Normandy,Evreux,24,0,14,False
+Normandy,Chailey,56,0,53,False
+Normandy,Needs Oar Point,55,0,39,False
+Normandy,Funtington,27,0,17,False
+Normandy,Tangmere,15,0,11,False
+Normandy,Ford,20,0,10,False
+Normandy,Argentan,32,0,26,False
+Normandy,Goulet,32,0,26,False
+Normandy,Barville,17,0,7,False
+Normandy,Essay,32,0,26,False
+Normandy,Hauterive,32,0,26,False
+Normandy,Lymington,56,0,53,False
+Normandy,Vrigny,32,0,26,False
+Normandy,Odiham,13,0,13,False
+Normandy,Conches,13,2,13,False
+Normandy,West Malling,11,0,0,False
+Normandy,Villacoublay,76,0,61,False
+Normandy,Kenley,11,0,6,False
+Normandy,Beauvais-Tille,13,0,8,False
+Normandy,Cormeilles-en-Vexin,15,0,2,False
+Normandy,Creil,78,0,63,False
+Normandy,Guyancourt,7,0,4,False
+Normandy,Lonrai,14,0,8,False
+Normandy,Dinan-Trelivan,17,0,15,False
+Normandy,Fecamp-Benouville,19,0,16,False
+Normandy,Farnborough,8,0,8,False
+Normandy,Friston,32,0,26,False
+Normandy,Deanland,32,0,26,False
+Normandy,Triqueville,32,0,26,False
+Normandy,Poix,24,0,14,False
+Normandy,Orly,78,0,78,False
+Normandy,Stoney Cross,39,0,30,False
+Normandy,Amiens-Glisy,13,0,8,False
+Normandy,Ronai,17,0,7,False
+Normandy,Rouen-Boos,32,0,26,False
+Normandy,Deauville,3,0,1,False
+Normandy,Saint-Aubin,4,0,2,False
+Normandy,Flers,32,0,26,False
+Normandy,Avranches Le Val-Saint-Pere,32,0,26,False
+Normandy,Gravesend,44,0,35,False
+Normandy,Beaumont-le-Roger,7,0,4,False
+Normandy,Broglie,32,0,26,False
+Normandy,Bernay Saint Martin,19,0,16,False
+Normandy,Saint-Andre-de-lEure,30,0,30,False
+PersianGulf,Abu Musa Island,8,0,8,False
+PersianGulf,Bandar Abbas Intl,50,0,29,True
+PersianGulf,Bandar Lengeh,5,0,0,False
+PersianGulf,Al Dhafra AFB,250,5,23,False
+PersianGulf,Dubai Intl,96,66,96,True
+PersianGulf,Al Maktoum Intl,69,37,69,True
+PersianGulf,Fujairah Intl,4,1,4,True
+PersianGulf,Tunb Island AFB,4,0,0,False
+PersianGulf,Havadarya,22,0,12,False
+PersianGulf,Khasab,12,0,5,False
+PersianGulf,Lar,5,0,5,False
+PersianGulf,Al Minhad AFB,62,2,31,False
+PersianGulf,Qeshm Island,12,0,12,False
+PersianGulf,Sharjah Intl,47,10,47,True
+PersianGulf,Sirri Island,2,0,2,False
+PersianGulf,Tunb Kochak,2,0,0,False
+PersianGulf,Sir Abu Nuayr,4,0,4,False
+PersianGulf,Kerman,42,12,42,False
+PersianGulf,Shiraz Intl,119,6,89,False
+PersianGulf,Sas Al Nakheel,87,0,87,False
+PersianGulf,Bandar-e-Jask,4,0,2,False
+PersianGulf,Abu Dhabi Intl,126,45,112,True
+PersianGulf,Al-Bateen,48,0,22,True
+PersianGulf,Kish Intl,46,0,28,True
+PersianGulf,Al Ain Intl,74,5,29,True
+PersianGulf,Lavan Island,3,0,0,False
+PersianGulf,Jiroft,3,0,0,True
+PersianGulf,Ras Al Khaimah Intl,18,1,18,True
+PersianGulf,Liwa AFB,65,3,14,False
+TheChannel,Abbeville Drucat,27,0,18,False
+TheChannel,Merville Calonne,51,0,44,False
+TheChannel,Saint Omer Longuenesse,37,0,16,False
+TheChannel,Dunkirk Mardyck,19,0,19,False
+TheChannel,Manston,68,12,58,False
+TheChannel,Hawkinge,54,0,37,False
+TheChannel,Lympne,22,0,22,False
+TheChannel,Detling,32,0,31,False
+TheChannel,Eastchurch,42,0,32,False
+TheChannel,High Halden,79,0,76,False
+TheChannel,Headcorn,77,0,71,False
+TheChannel,Biggin Hill,64,0,46,False
