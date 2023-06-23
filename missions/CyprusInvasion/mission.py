@@ -318,6 +318,8 @@ class CyprusInvasionClients(calvinball.clients.Clients):
             },
         ]
 
+        m.terrain.airports["Ramat David"].set_blue()
+
         comms_plan = {
             "uhf": { 1: 250, 2: 251, 3: 252, 4: 253, 5: 254 },
             "vhf_am": { 1: 135, 2: 136, 3: 137, 4: 138, 5: 139 },
