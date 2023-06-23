@@ -308,6 +308,14 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     },
                 ]
             },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "airport": m.terrain.airports["Ramat David"],
+                "start_type": dcs.mission.StartType.Cold,
+                "airframes": [
+                    { "airframe": dcs.planes.F_15ESE, "count": 5, "parking": [38, 39, 40, 41, 42], "fuel": 1, "loadout": "Empty", "livery": "USAF 494th Panthers FS 91-603 75th D-Day Anniversary", "properties": { dcs.planes.F_15ESE.Properties.NetCrewControlPriority.id: dcs.planes.F_15ESE.Properties.NetCrewControlPriority.Values.Equally_Responsible } },
+                ]
+            },
         ]
 
         comms_plan = {
@@ -346,6 +354,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
             dcs.planes.P_51D_30_NA: ["vhf_am"],
             dcs.planes.Su_25: ["vhf_am"],
             dcs.planes.Su_25T: ["vhf_am"],
+            dcs.planes.F_15ESE: ["uhf", "vhf_am"],
         }
 
         if not edit:
