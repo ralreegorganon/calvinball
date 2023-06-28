@@ -1807,7 +1807,7 @@ end
 local function initializeBlueChief()
     local blueAgents = SET_GROUP:New():FilterCoalitions("blue"):FilterStart()
     MissionDb.bluechief.instance = CHIEF:New(coalition.side.BLUE, blueAgents, "Blue Chief")
-    -- MissionDb.bluechief.instance:SetTacticalOverviewOn()
+    --MissionDb.bluechief.instance:SetTacticalOverviewOn()
     MissionDb.bluechief.instance:SetStrategy(CHIEF.Strategy.DEFENSIVE)
     MissionDb.bluechief.conflictZones = SET_ZONE:New()
     MissionDb.bluechief.instance:SetConflictZones(MissionDb.bluechief.conflictZones)
@@ -2130,6 +2130,25 @@ local function requestReconFlight(menuArgs)
     end
 end
 
+local function requestCAP(menuArgs)
+    for _, objective in ipairs(MissionDb.objectives) do
+        if objective.state == "active" and objective.strand == menuArgs.strand then
+            if #objective.nodes > 0 then
+                local objectiveZone = ZONE:FindByName(objective.name)
+                local capZone =  ZONE_RADIUS:New( string.format("BLUECAP-%d", math.random(1,100000)), objectiveZone:GetVec2(), objectiveZone:GetRadius())
+                local capMission = AUFTRAG:NewCAP(capZone, 10000, 350)
+                MissionDb.bluechief.instance:AddMission(capMission)
+
+                local objectiveZone = ZONE:FindByName(objective.name)
+                local objectiveLabelText = objectiveZone:GetProperty("label")
+                local text=string.format("BLUE has requested a CAP mission at %s. Units will be dispatched when available.", objectiveLabelText)
+                MESSAGE:New(text, 15):ToAll()
+            end
+            break
+        end
+    end
+end
+
 local function pruneCtldForInactiveObjectives()
     local finishedObjectiveZones = SET_ZONE:New()
 
@@ -2186,6 +2205,7 @@ local function initializeStrandMenus()
     for _, strand in ipairs(MissionDb.strands) do
         local menuIndividualStrand = MENU_MISSION:New(strand.name, menuRequest)
         MENU_MISSION_COMMAND:New("Request Recon Flight", menuIndividualStrand, requestReconFlight, {strand = strand.name})
+        MENU_MISSION_COMMAND:New("Request CAP", menuIndividualStrand, requestCAP, {strand = strand.name})
     end
 end
 

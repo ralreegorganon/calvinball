@@ -2451,6 +2451,28 @@ MissionDb = {
 					},
 				}
 			},
+			{
+				name = "2nd CAW - Teddy",
+				warehouse = "Teddy Unit #1",
+				airbase = "Teddy",
+				squadrons = {
+					{
+						name = "GGD-03",
+						templateGroupName = "BLUE 2nd CAW - Teddy GGD-03 FA-18C_hornet",
+						initialInventory = 99,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+						},
+						livery = "Canada 150 Demo Jet",
+						payloads = {
+							{
+								templateGroupName = "BLUE 2nd CAW - Teddy GGD-03 FA-18C_hornet LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP }
+							},
+						}
+					},
+				}
+			},
 		},
 		brigades = {
 			{

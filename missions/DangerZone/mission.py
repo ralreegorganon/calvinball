@@ -598,7 +598,27 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                         "capabilities": {
                             "AUFTRAG.Type.OPSTRANSPORT": 50
                         }
-                    },
+                    }
+                }
+            },
+            "2nd CAW - Teddy": {
+                "airbase": "Teddy",
+                "warehouse": "Teddy Unit #1",
+                "squadrons": {
+                    "GGD-03": {
+                        "airframe": dcs.planes.FA_18C_hornet,
+                        "groupSize": 2,
+                        "initialInventory": 99,
+                        "livery": "Canada 150 Demo Jet",
+                        "loadouts": {
+                            "AIM-9X*2, AIM-120C-5*6, FUEL*3": "{ AUFTRAG.Type.CAP }",
+                           #"AIM-9X*2, AIM-120C-5*1, GBU-38*4, GBU-12*4, ATFLIR, FUEL": "{ AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            #"AUFTRAG.Type.CASENHANCED": 50,
+                        }
+                    }
                 }
             },
         }
