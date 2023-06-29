@@ -218,7 +218,9 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "start_type": dcs.mission.StartType.Cold,
                 "airframes": [
                     { "airframe": dcs.planes.F_14B, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True }  },
+                    { "airframe": dcs.planes.F_14B, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True }, "start_type": dcs.mission.StartType.Warm },
                     { "airframe": dcs.planes.FA_18C_hornet, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "Santa" },
+                    { "airframe": dcs.planes.FA_18C_hornet, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "Santa", "start_type": dcs.mission.StartType.Warm },
                 ]
             },
             {
@@ -227,7 +229,9 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "start_type": dcs.mission.StartType.Cold,
                 "airframes": [
                     { "airframe": dcs.planes.F_14B, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True } },
+                    { "airframe": dcs.planes.F_14B, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True }, "start_type": dcs.mission.StartType.Warm },
                     { "airframe": dcs.planes.FA_18C_hornet, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "Santa" },
+                    { "airframe": dcs.planes.FA_18C_hornet, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "Santa", "start_type": dcs.mission.StartType.Warm },
                 ]
             },
             {
@@ -236,6 +240,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "start_type": dcs.mission.StartType.Cold,
                 "airframes": [
                     { "airframe": dcs.planes.AV8BNA, "count": 3, "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
+                    { "airframe": dcs.planes.AV8BNA, "count": 3, "fuel": 1, "loadout": "Empty", "livery": "vma-214", "start_type": dcs.mission.StartType.Warm },
                 ]
             },
             {
@@ -340,7 +345,9 @@ class DangerZoneClients(calvinball.clients.Clients):
 
         if not edit:
             airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
+            airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits", "start_type": dcs.mission.StartType.Warm })
             airport_set[1]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
+            airport_set[1]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits", "start_type": dcs.mission.StartType.Warm })
 
             radios[pydcs_extensions.A_4E_C] = ["uhf"]
 

@@ -22,6 +22,7 @@ class Clients:
 
         for p in airport_set:
             for a in p["airframes"]:
+                start_type = a.get("start_type", p["start_type"])
                 if "airport" in p:
                     airport_name = p["airport"].name
 
@@ -31,10 +32,10 @@ class Clients:
                     airframe_name = a["airframe"].id
                     parking = self.__park(a["parking"], p["airport"])
                     for i in range(a["count"]):
-                        group_name = f"{airport_name} {airframe_name} {str(i+1)}"
+                        group_name = f"{airport_name} {airframe_name} {start_type.name} {str(i+1)}"
                         airbase_groups[airport_name].append(group_name)
                         fg = m.flight_group_from_airport(
-                            p["country"], group_name, a["airframe"], p["airport"], group_size=1, start_type=p["start_type"], parking_slots=parking
+                            p["country"], group_name, a["airframe"], p["airport"], group_size=1, start_type=start_type, parking_slots=parking
                         )
 
                         fg.set_client()
@@ -85,10 +86,10 @@ class Clients:
                     airport_name = p["farp"]
                     airframe_name = a["airframe"].id
                     for i, pos in enumerate(a["positions"]):
-                        group_name = f"{airport_name} {airframe_name} {str(i+1)}"
+                        group_name = f"{airport_name} {airframe_name} {start_type.name} {str(i+1)}"
                         farp_groups[p["farp_zone"]].append(group_name)
 
-                        fg = m.flight_group(p["country"], group_name, a["airframe"], None,  position=dcs.mapping.Point(pos["x"], pos["y"], m.terrain),  group_size=1, start_type=p["start_type"])
+                        fg = m.flight_group(p["country"], group_name, a["airframe"], None,  position=dcs.mapping.Point(pos["x"], pos["y"], m.terrain),  group_size=1, start_type=start_type)
 
                         fg.set_client()
 
@@ -145,10 +146,10 @@ class Clients:
 
                     airframe_name = a["airframe"].id
                     for i in range(a["count"]):
-                        group_name = f"{airport_name} {airframe_name} {str(i+1)}"
+                        group_name = f"{airport_name} {airframe_name} {start_type.name} {str(i+1)}"
                         carrier_groups[airport_name].append(group_name)
                         fg = m.flight_group_from_unit(
-                            p["country"], group_name, a["airframe"], sg, group_size=1, start_type=p["start_type"]
+                            p["country"], group_name, a["airframe"], sg, group_size=1, start_type=start_type
                         )
 
                         fg.set_client()
