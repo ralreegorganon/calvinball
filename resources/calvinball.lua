@@ -2319,6 +2319,7 @@ local function initializeCsar()
     MissionDb.csar.instance.csarUsePara = true
     MissionDb.csar.instance.allowbronco = true
     MissionDb.csar.instance.autosmoke = true
+    MissionDb.csar.instance.immortalcrew = false
     MissionDb.csar.instance.rescuehoverheight  = 30
     MissionDb.csar.instance.rescuehoverdistance  = 30
 
