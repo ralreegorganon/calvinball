@@ -1300,9 +1300,13 @@ local function unlockQrfsForObjective(objective)
     for _, qrf in ipairs(objective.qrfs) do
         qrf.state = "active"
         spawnGroupsAtThing(qrf, country.id.CJTF_RED)
-        -- for _, spawnGroup in ipairs(qrf.spawnGroups) do
-        --     spawnGroup.instance = SPAWN:New(spawnGroup.name)
-        -- end
+
+        local qrfZone = ZONE:FindByName(qrf.name)
+        local qrfLabelText = qrfZone:GetProperty("label")
+        if qrfLabelText ~= "" then
+            qrf.labelMarkId = qrfZone:GetCoordinate(0):Translate(qrfZone:GetRadius() + 50, 0, false, true):TextToAll(qrfLabelText, -1, {0,0,0}, 1, {1,1,1}, 0.0, 20, true)
+            qrf.circleMarkId = qrfZone:GetCoordinate(0):CircleToAll(qrfZone:GetRadius(), -1, {1,0,0}, 1, {1,0,0}, 0.15, 3, true)
+        end
     end
 end
 
