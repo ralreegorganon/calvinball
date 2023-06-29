@@ -250,8 +250,8 @@
                 "NODE-14": {
                     "label": "Supply",
                     "radius": 260,
-                    "x": 132043.13702573,
-                    "y": -148474.33585665
+                    "x": 132051.57344167,
+                    "y": -148469.00759395
                 },
                 "NODE-15": {
                     "label": "Demand",
@@ -286,7 +286,30 @@
             "static_groups": [],
             "strand": "STRAND-1",
             "tasks": [],
-            "vehicle_groups": [],
+            "vehicle_groups": [
+                "RED GROUND 1-91",
+                "RED GROUND 1-78",
+                "RED GROUND 1-125",
+                "RED GROUND 1-92",
+                "RED SAM SA-8 379-1",
+                "RED GROUND 1-126",
+                "RED GROUND 1-127",
+                "RED GROUND 1-94",
+                "RED GROUND 1-120",
+                "RED GROUND 1-128",
+                "RED GROUND 1-95",
+                "RED GROUND 1-121",
+                "RED GROUND 1-89",
+                "RED GROUND 1-96",
+                "RED GROUND 10-15",
+                "RED EWR 1-1",
+                "RED GROUND 10-16",
+                "RED GROUND 1-123",
+                "RED GROUND 1-124",
+                "RED GROUND 1-122",
+                "RED GROUND 10-17",
+                "RED GROUND 10-18"
+            ],
             "vertices": [
                 {
                     "x": 123407.69705371,
