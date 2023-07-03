@@ -665,6 +665,28 @@
             "x": 164506.37686379,
             "y": -144292.52920343
         },
+        "Lymington Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.2617993877992,
+            "name": "Lymington Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 139345.40388958,
+            "y": -90788.699777832
+        },
+        "Needs Oar Point Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.8992128717408,
+            "name": "Needs Oar Point Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 140314.3410004,
+            "y": -85524.362236823
+        },
         "Static Container 40ft-1": {
             "canCargo": false,
             "category": "Fortifications",
@@ -1578,8 +1600,8 @@
             "rate": 100,
             "shape_name": "SkladC",
             "type": ".Ammunition depot",
-            "x": 155591.10852155,
-            "y": -101456.78901333
+            "x": 155591.78112467,
+            "y": -101442.96449276
         }
     }
 }

@@ -167,35 +167,17 @@
         "label": "FOB Yes Minister",
         "ship_groups": [],
         "static_groups": [
-            "Static Excavator-4",
-            "Static Small warehouse 3-3",
-            "Static Mi-24P-3",
-            "Static Mi-26-4",
-            "Static Container 40ft-6",
-            "Static Excavator-5",
-            "Static Tank 1-4",
-            "Static Mi-24P-4",
-            "Static Military staff-4",
             "FOB Yes Minister Airwing Warehouse",
-            "Static Tank 1-5",
-            "Static Excavator-6",
-            "Static Military staff-5",
-            "Static Mi-26-5",
-            "Static Military staff-6",
             "FOB Yes Minister Brigade Warehouse",
-            "Static Small warehouse 3-4",
-            "Static Tank 1-6",
-            "Static Container 40ft-7",
             "FOB Yes Minister Farp",
-            "Static Container 40ft-8",
-            "Static Mi-26-6",
-            "Static Container 40ft-9",
             "Static Container 40ft-10",
-            "Static Mi-24P-5",
-            "Static Mi-24P-6",
-            "Static Tank 1-7",
-            "Static Tank 1-8",
-            "Static Tank 1-9",
+            "Static Container 40ft-6",
+            "Static Container 40ft-7",
+            "Static Container 40ft-8",
+            "Static Container 40ft-9",
+            "Static Excavator-4",
+            "Static Excavator-5",
+            "Static Excavator-6",
             "Static FARP Tent-19",
             "Static FARP Tent-20",
             "Static FARP Tent-21",
@@ -203,25 +185,43 @@
             "Static FARP Tent-23",
             "Static FARP Tent-24",
             "Static FARP Tent-25",
-            "Static FARP Tent-26"
+            "Static FARP Tent-26",
+            "Static Mi-24P-3",
+            "Static Mi-24P-4",
+            "Static Mi-24P-5",
+            "Static Mi-24P-6",
+            "Static Mi-26-4",
+            "Static Mi-26-5",
+            "Static Mi-26-6",
+            "Static Military staff-4",
+            "Static Military staff-5",
+            "Static Military staff-6",
+            "Static Small warehouse 3-3",
+            "Static Small warehouse 3-4",
+            "Static Tank 1-4",
+            "Static Tank 1-5",
+            "Static Tank 1-6",
+            "Static Tank 1-7",
+            "Static Tank 1-8",
+            "Static Tank 1-9"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
-            "RED RG 152-8",
-            "RED RG 152-9",
+            "RED AIR DEFENSE BATTERY A 242-2",
+            "RED AIR DEFENSE BATTERY C RG 246-2",
             "RED RG 152-10",
             "RED RG 152-11",
             "RED RG 152-12",
             "RED RG 152-13",
             "RED RG 152-14",
-            "RED SAM SA-8 RG 240-3",
+            "RED RG 152-8",
+            "RED RG 152-9",
             "RED SAM SA-2 RG 234-2",
-            "RED SAM SA-6 238-3",
-            "RED AIR DEFENSE BATTERY C RG 246-2",
             "RED SAM SA-3 236-2",
+            "RED SAM SA-6 238-3",
             "RED SAM SA-6 238-4",
-            "RED SAM SA-8 RG 240-4",
-            "RED AIR DEFENSE BATTERY A 242-2"
+            "RED SAM SA-8 RG 240-3",
+            "RED SAM SA-8 RG 240-4"
         ],
         "vertices": [
             {
@@ -243,6 +243,66 @@
         ],
         "x": 145517.3655238,
         "y": -122372.76558145
+    },
+    "QRF-13": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [
+            "Lymington Airwing Warehouse"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": 139359.70438024,
+                "y": -90742.81186481
+            },
+            {
+                "x": 139313.21329587,
+                "y": -90756.96132527
+            },
+            {
+                "x": 139332.75302698,
+                "y": -90833.098898222
+            },
+            {
+                "x": 139380.59167901,
+                "y": -90820.970789257
+            }
+        ],
+        "x": 139346.56559552,
+        "y": -90788.46071939
+    },
+    "QRF-14": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [
+            "Needs Oar Point Airwing Warehouse"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": 140357.61512757,
+                "y": -85492.428915397
+            },
+            {
+                "x": 140302.70175241,
+                "y": -85470.344188429
+            },
+            {
+                "x": 140268.67933519,
+                "y": -85561.070634351
+            },
+            {
+                "x": 140327.49926569,
+                "y": -85576.900576561
+            }
+        ],
+        "x": 140314.12387021,
+        "y": -85525.186078684
     },
     "QRF-2": {
         "component": "qrf",
@@ -396,24 +456,24 @@
         "vehicle_groups": [],
         "vertices": [
             {
-                "x": 155621.11339694,
-                "y": -101439.30293081
+                "x": 155624.9920317,
+                "y": -101412.27303384
             },
             {
-                "x": 155575.87654079,
-                "y": -101424.41485157
+                "x": 155579.18388407,
+                "y": -101398.98867103
             },
             {
-                "x": 155559.27060626,
-                "y": -101477.95467499
+                "x": 155557.89636183,
+                "y": -101474.06098244
             },
             {
-                "x": 155604.79377162,
-                "y": -101491.98382657
+                "x": 155603.41952719,
+                "y": -101488.09013402
             }
         ],
-        "x": 155590.2635789,
-        "y": -101458.41407099
+        "x": 155591.3729512,
+        "y": -101443.35320533
     },
     "QRF-7": {
         "component": "qrf",

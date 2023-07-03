@@ -451,11 +451,11 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                     },
                 }
             },
-            "2nd Goon Wing - Stoney Cross": {
+            "Stoney Cross": {
                 "airbase": "Stoney Cross",
                 "warehouse": "Stoney Cross Airwing Warehouse#00001",
                 "squadrons": {
-                    "2GW-Stoney Cross-2": {
+                    "Stoney Cross 1": {
                         "airframe": dcs.planes.JF_17,
                         "groupSize": 2,
                         "initialInventory": 1,
@@ -476,7 +476,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
                     },
-                    "2GW-Stoney Cross-3": {
+                    "Stoney Cross 2": {
                         "airframe": dcs.planes.F_16C_50,
                         "groupSize": 2,
                         "initialInventory": 1,
@@ -497,8 +497,14 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.SEAD": 50,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
-                    },
-                    "2GW-Stoney Cross-4": {
+                    }
+                }
+            },
+            "Lymington": {
+                "airbase": "Lymington",
+                "warehouse": "Lymington Airwing Warehouse#00001",
+                "squadrons": {
+                    "Lymington 1": {
                         "airframe": dcs.planes.F_5E_3,
                         "groupSize": 2,
                         "initialInventory": 1,
@@ -517,7 +523,31 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
                     },
-                    "2GW-Stoney Cross-5": {
+                    "Lymington 2": {
+                        "airframe": dcs.planes.Su_25TM,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Flight Research Institute  VVS",
+                        "loadouts": {
+                            "Kh-58*2,Kh-25MPU*4,R-73*2,ECM": "{ AUFTRAG.Type.SEAD }",
+                            "APU-8 Vikhr-M*2,R-60M*2,R-73*2,SPPU-22*2,Mercury LLTV Pod": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
+                            "FAB-500*6,R-60M*2,Fuel*2": "{ AUFTRAG.Type.BOMBCARPET }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50,
+                            "AUFTRAG.Type.SEAD": 50
+                        }
+                    }
+                }
+            },
+            "Needs Oar Point": {
+                "airbase": "Needs Oar Point",
+                "warehouse": "Needs Oar Point Airwing Warehouse#00001",
+                "squadrons": {
+                    "Needs Oar Point 1": {
                         "airframe": dcs.planes.Mirage_F1EE,
                         "groupSize": 2,
                         "initialInventory": 1,
@@ -536,7 +566,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
                     },
-                    "2GW-Stoney Cross-6": {
+                    "Needs Oar Point 2": {
                         "airframe": dcs.planes.MiG_21Bis,
                         "groupSize": 2,
                         "initialInventory": 1,

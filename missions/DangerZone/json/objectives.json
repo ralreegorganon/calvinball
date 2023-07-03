@@ -9,8 +9,6 @@
                 "BORDER-4"
             ],
             "capZones": [
-                "CAP-1",
-                "CAP-2",
                 "CAP-3"
             ],
             "carriers": [
@@ -94,7 +92,9 @@
                 "QRF-8",
                 "QRF-11",
                 "QRF-9",
-                "QRF-6"
+                "QRF-6",
+                "QRF-13",
+                "QRF-14"
             ],
             "reinforcements": [],
             "ship_groups": [
