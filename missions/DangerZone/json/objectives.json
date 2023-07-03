@@ -211,7 +211,7 @@
                 "RED RG 151-6",
                 "RED RG 152",
                 "RED RG 153",
-                "DW RED SAM SA-2 RG 2",
+                "RED SAM SA-2 DW 2",
                 "RED SAM SA-2 RG 3"
             ],
             "vertices": [
@@ -388,10 +388,10 @@
                 "DW RED GROUND 10-2",
                 "DW RED GROUND 10-3",
                 "DW RED GROUND 10-4",
-                "DW RED SAM SA-2 RG 2-1",
+                "RED SAM SA-2 DW 2-1",
                 "DW RED GROUND 1-1",
-                "DW RED SAM Rapier RG 3",
-                "DW RED SAM Rapier RG 3-1",
+                "RED SAM Rapier DW 3",
+                "RED SAM Rapier DW 3-1",
                 "RED AIR DEFENSE BATTERY C RG 149-1",
                 "DW RED GROUND 10-5",
                 "DWRED GROUND 10-1",

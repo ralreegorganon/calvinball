@@ -615,7 +615,7 @@
                 "y": -128787.21752413
             }
         ],
-        "DW RED SAM Rapier RG 3": [
+        "RED SAM Rapier DW 3": [
             {
                 "heading": 71.45493770691995,
                 "type": "rapier_fsa_blindfire_radar",
@@ -659,7 +659,7 @@
                 "y": -129202.82050827
             }
         ],
-        "DW RED SAM Rapier RG 3-1": [
+        "RED SAM Rapier DW 3-1": [
             {
                 "heading": 71.45493770691995,
                 "type": "rapier_fsa_blindfire_radar",
@@ -703,7 +703,7 @@
                 "y": -123281.55986665
             }
         ],
-        "DW RED SAM SA-2 RG 2": [
+        "RED SAM SA-2 DW 2": [
             {
                 "heading": 219.99999999999858,
                 "type": "p-19 s-125 sr",
@@ -813,7 +813,7 @@
                 "y": -163596.21530233
             }
         ],
-        "DW RED SAM SA-2 RG 2-1": [
+        "RED SAM SA-2 DW 2-1": [
             {
                 "heading": 219.99999999999858,
                 "type": "p-19 s-125 sr",
