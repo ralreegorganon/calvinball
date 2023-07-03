@@ -793,21 +793,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Small warehouse 3-2#00001",
-							template = {
-								name = "Static Small warehouse 3-2",
-								type = "Small werehouse 3",
-								x = 136129.50951197,
-								y = -173047.26271771,
-								heading = 3.1415926535898,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "s3",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
 							name = "Static Tank 1-1#00001",
 							template = {
 								name = "Static Tank 1-1",
@@ -823,12 +808,12 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Tank 1-2#00001",
+							name = "Static Tank 1-3#00001",
 							template = {
-								name = "Static Tank 1-2",
+								name = "Static Tank 1-3",
 								type = "Tank",
-								x = 136520.06938404,
-								y = -173167.77489501,
+								x = 136520.75832681,
+								y = -173227.02397344,
 								heading = 0.0645788929948,
 								category = "Warehouses",
 								canCargo = false,
@@ -838,12 +823,27 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Tank 1-3#00001",
+							name = "Static Small warehouse 3-2#00001",
 							template = {
-								name = "Static Tank 1-3",
+								name = "Static Small warehouse 3-2",
+								type = "Small werehouse 3",
+								x = 136129.50951197,
+								y = -173047.26271771,
+								heading = 3.1415926535898,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "s3",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-2#00001",
+							template = {
+								name = "Static Tank 1-2",
 								type = "Tank",
-								x = 136520.75832681,
-								y = -173227.02397344,
+								x = 136520.06938404,
+								y = -173167.77489501,
 								heading = 0.0645788929948,
 								category = "Warehouses",
 								canCargo = false,
@@ -878,72 +878,102 @@ MissionDb = {
 					},
 					staticGroups = {
 						{
-							name = "INDUSTRYTARGET-4#00001",
+							name = "INDUSTRYTARGET-1#00001",
 							template = {
-								name = "INDUSTRYTARGET-4",
-								type = "Boiler-house A",
-								x = 164584.54179892,
-								y = -144072.87786851,
-								heading = 1.5882496193148,
-								category = "Fortifications",
+								name = "INDUSTRYTARGET-1",
+								type = "Warehouse",
+								x = 164605.4838359,
+								y = -144273.32307957,
+								heading = 3.1415926535898,
+								category = "Warehouses",
 								canCargo = false,
-								shape_name = "kotelnaya_a",
+								shape_name = "sklad",
 								rate = 100,
 								dead = false
 							}
 						},
 						{
-							name = "INDUSTRYTARGET-3#00001",
+							name = "INDUSTRYTARGET-11#00001",
 							template = {
-								name = "INDUSTRYTARGET-3",
-								type = "Boiler-house A",
-								x = 164587.77622174,
-								y = -144128.67194259,
-								heading = 1.5882496193148,
-								category = "Fortifications",
+								name = "INDUSTRYTARGET-11",
+								type = "Tank",
+								x = 164504.91441029,
+								y = -144249.53307059,
+								heading = 0.0,
+								category = "Warehouses",
 								canCargo = false,
-								shape_name = "kotelnaya_a",
+								shape_name = "bak",
 								rate = 100,
 								dead = false
 							}
 						},
 						{
-							name = "INDUSTRYTARGET-2#00001",
+							name = "INDUSTRYTARGET-12#00001",
 							template = {
-								name = "INDUSTRYTARGET-2",
-								type = "Boiler-house A",
-								x = 164587.77622174,
-								y = -144182.42865565,
-								heading = 1.5882496193148,
+								name = "INDUSTRYTARGET-12",
+								type = "Workshop A",
+								x = 164508.98172624,
+								y = -144137.29253737,
+								heading = 1.5707963267949,
 								category = "Fortifications",
 								canCargo = false,
-								shape_name = "kotelnaya_a",
+								shape_name = "tec_a",
 								rate = 100,
 								dead = false
 							}
 						},
 						{
-							name = "INDUSTRYTARGET-21#00001",
+							name = "INDUSTRYTARGET-13#00001",
 							template = {
-								name = "INDUSTRYTARGET-21",
-								type = "Chemical tank A",
-								x = 164333.21643434,
-								y = -144092.09258181,
+								name = "INDUSTRYTARGET-13",
+								type = "Tech hangar A",
+								x = 164457.65757337,
+								y = -144250.28352559,
+								heading = 5.9341194567807,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "ceh_ang_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-14#00001",
+							template = {
+								name = "INDUSTRYTARGET-14",
+								type = "Tech hangar A",
+								x = 164398.48748824,
+								y = -144242.58330904,
 								heading = 0.0,
 								category = "Fortifications",
 								canCargo = false,
-								shape_name = "him_bak_a",
+								shape_name = "ceh_ang_a",
 								rate = 100,
 								dead = false
 							}
 						},
 						{
-							name = "INDUSTRYTARGET-19#00001",
+							name = "INDUSTRYTARGET-15#00001",
 							template = {
-								name = "INDUSTRYTARGET-19",
+								name = "INDUSTRYTARGET-15",
+								type = "Repair workshop",
+								x = 164343.63595538,
+								y = -144256.06761686,
+								heading = 1.535889741755,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "tech",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-16#00001",
+							template = {
+								name = "INDUSTRYTARGET-16",
 								type = "Chemical tank A",
-								x = 164335.73287047,
-								y = -144129.15282304,
+								x = 164378.74105165,
+								y = -144183.59935028,
 								heading = 0.0,
 								category = "Fortifications",
 								canCargo = false,
@@ -968,21 +998,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "INDUSTRYTARGET-20#00001",
-							template = {
-								name = "INDUSTRYTARGET-20",
-								type = "Chemical tank A",
-								x = 164370.50544249,
-								y = -144102.15832634,
-								heading = 0.0,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "him_bak_a",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
 							name = "INDUSTRYTARGET-18#00001",
 							template = {
 								name = "INDUSTRYTARGET-18",
@@ -998,16 +1013,76 @@ MissionDb = {
 							}
 						},
 						{
-							name = "INDUSTRYTARGET-16#00001",
+							name = "INDUSTRYTARGET-19#00001",
 							template = {
-								name = "INDUSTRYTARGET-16",
+								name = "INDUSTRYTARGET-19",
 								type = "Chemical tank A",
-								x = 164378.74105165,
-								y = -144183.59935028,
+								x = 164335.73287047,
+								y = -144129.15282304,
 								heading = 0.0,
 								category = "Fortifications",
 								canCargo = false,
 								shape_name = "him_bak_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-2#00001",
+							template = {
+								name = "INDUSTRYTARGET-2",
+								type = "Boiler-house A",
+								x = 164587.77622174,
+								y = -144182.42865565,
+								heading = 1.5882496193148,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "kotelnaya_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-20#00001",
+							template = {
+								name = "INDUSTRYTARGET-20",
+								type = "Chemical tank A",
+								x = 164370.50544249,
+								y = -144102.15832634,
+								heading = 0.0,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "him_bak_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-21#00001",
+							template = {
+								name = "INDUSTRYTARGET-21",
+								type = "Chemical tank A",
+								x = 164333.21643434,
+								y = -144092.09258181,
+								heading = 0.0,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "him_bak_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-22#00001",
+							template = {
+								name = "INDUSTRYTARGET-22",
+								type = "Tech combine",
+								x = 164253.84871285,
+								y = -144164.25490365,
+								heading = 3.08923277603,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "kombinat",
 								rate = 100,
 								dead = false
 							}
@@ -1028,27 +1103,42 @@ MissionDb = {
 							}
 						},
 						{
-							name = "INDUSTRYTARGET-15#00001",
+							name = "INDUSTRYTARGET-3#00001",
 							template = {
-								name = "INDUSTRYTARGET-15",
-								type = "Repair workshop",
-								x = 164343.63595538,
-								y = -144256.06761686,
-								heading = 1.535889741755,
+								name = "INDUSTRYTARGET-3",
+								type = "Boiler-house A",
+								x = 164587.77622174,
+								y = -144128.67194259,
+								heading = 1.5882496193148,
 								category = "Fortifications",
 								canCargo = false,
-								shape_name = "tech",
+								shape_name = "kotelnaya_a",
 								rate = 100,
 								dead = false
 							}
 						},
 						{
-							name = "INDUSTRYTARGET-7#00001",
+							name = "INDUSTRYTARGET-4#00001",
 							template = {
-								name = "INDUSTRYTARGET-7",
+								name = "INDUSTRYTARGET-4",
+								type = "Boiler-house A",
+								x = 164584.54179892,
+								y = -144072.87786851,
+								heading = 1.5882496193148,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "kotelnaya_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-5#00001",
+							template = {
+								name = "INDUSTRYTARGET-5",
 								type = "Tank",
-								x = 164543.81567333,
-								y = -144259.18526368,
+								x = 164546.15559893,
+								y = -144348.39492705,
 								heading = 0.0,
 								category = "Warehouses",
 								canCargo = false,
@@ -1073,91 +1163,16 @@ MissionDb = {
 							}
 						},
 						{
-							name = "INDUSTRYTARGET-5#00001",
+							name = "INDUSTRYTARGET-7#00001",
 							template = {
-								name = "INDUSTRYTARGET-5",
+								name = "INDUSTRYTARGET-7",
 								type = "Tank",
-								x = 164546.15559893,
-								y = -144348.39492705,
+								x = 164543.81567333,
+								y = -144259.18526368,
 								heading = 0.0,
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "INDUSTRYTARGET-9#00001",
-							template = {
-								name = "INDUSTRYTARGET-9",
-								type = "Tank",
-								x = 164506.37686379,
-								y = -144292.52920343,
-								heading = 0.0,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "INDUSTRYTARGET-11#00001",
-							template = {
-								name = "INDUSTRYTARGET-11",
-								type = "Tank",
-								x = 164504.91441029,
-								y = -144249.53307059,
-								heading = 0.0,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "INDUSTRYTARGET-22#00001",
-							template = {
-								name = "INDUSTRYTARGET-22",
-								type = "Tech combine",
-								x = 164253.84871285,
-								y = -144164.25490365,
-								heading = 3.08923277603,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "kombinat",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "INDUSTRYTARGET-14#00001",
-							template = {
-								name = "INDUSTRYTARGET-14",
-								type = "Tech hangar A",
-								x = 164398.48748824,
-								y = -144242.58330904,
-								heading = 0.0,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "ceh_ang_a",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "INDUSTRYTARGET-12#00001",
-							template = {
-								name = "INDUSTRYTARGET-12",
-								type = "Workshop A",
-								x = 164508.98172624,
-								y = -144137.29253737,
-								heading = 1.5707963267949,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "tec_a",
 								rate = 100,
 								dead = false
 							}
@@ -1178,31 +1193,16 @@ MissionDb = {
 							}
 						},
 						{
-							name = "INDUSTRYTARGET-13#00001",
+							name = "INDUSTRYTARGET-9#00001",
 							template = {
-								name = "INDUSTRYTARGET-13",
-								type = "Tech hangar A",
-								x = 164457.65757337,
-								y = -144250.28352559,
-								heading = 5.9341194567807,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "ceh_ang_a",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "INDUSTRYTARGET-1#00001",
-							template = {
-								name = "INDUSTRYTARGET-1",
-								type = "Warehouse",
-								x = 164605.4838359,
-								y = -144273.32307957,
-								heading = 3.1415926535898,
+								name = "INDUSTRYTARGET-9",
+								type = "Tank",
+								x = 164506.37686379,
+								y = -144292.52920343,
+								heading = 0.0,
 								category = "Warehouses",
 								canCargo = false,
-								shape_name = "sklad",
+								shape_name = "bak",
 								rate = 100,
 								dead = false
 							}
@@ -1636,7 +1636,7 @@ MissionDb = {
 				{ name = "RED RG 151-6" },
 				{ name = "RED RG 152" },
 				{ name = "RED RG 153" },
-				{ name = "RED SAM SA-2 RG 2" },
+				{ name = "DW RED SAM SA-2 RG 2" },
 				{ name = "RED SAM SA-2 RG 3" },
 			},
 			shipGroups = {
@@ -1812,28 +1812,28 @@ MissionDb = {
 			reinforcements = {
 			},
 			vehicleGroups = {
-				{ name = "RED GROUND 1-91" },
-				{ name = "RED GROUND 1-78" },
-				{ name = "RED GROUND 1-125" },
-				{ name = "RED GROUND 1-92" },
-				{ name = "RED SAM SA-8 379-1" },
-				{ name = "RED GROUND 1-126" },
-				{ name = "RED GROUND 1-127" },
-				{ name = "RED GROUND 1-94" },
-				{ name = "RED GROUND 1-120" },
-				{ name = "RED GROUND 1-128" },
-				{ name = "RED GROUND 1-95" },
-				{ name = "RED GROUND 1-121" },
-				{ name = "RED GROUND 1-89" },
-				{ name = "RED GROUND 1-96" },
-				{ name = "RED GROUND 10-15" },
 				{ name = "RED EWR 1-1" },
-				{ name = "RED GROUND 10-16" },
+				{ name = "RED GROUND 1-120" },
+				{ name = "RED GROUND 1-121" },
+				{ name = "RED GROUND 1-122" },
 				{ name = "RED GROUND 1-123" },
 				{ name = "RED GROUND 1-124" },
-				{ name = "RED GROUND 1-122" },
+				{ name = "RED GROUND 1-125" },
+				{ name = "RED GROUND 1-126" },
+				{ name = "RED GROUND 1-127" },
+				{ name = "RED GROUND 1-128" },
+				{ name = "RED GROUND 1-78" },
+				{ name = "RED GROUND 1-89" },
+				{ name = "RED GROUND 1-91" },
+				{ name = "RED GROUND 1-92" },
+				{ name = "RED GROUND 1-94" },
+				{ name = "RED GROUND 1-95" },
+				{ name = "RED GROUND 1-96" },
+				{ name = "RED GROUND 10-15" },
+				{ name = "RED GROUND 10-16" },
 				{ name = "RED GROUND 10-17" },
 				{ name = "RED GROUND 10-18" },
+				{ name = "RED SAM SA-8 379-1" },
 			},
 			shipGroups = {
 			},
@@ -1850,6 +1850,9 @@ MissionDb = {
 				"CAP-4",
 			},
 			nodes = {
+				{ name = "NODE-18" },
+				{ name = "NODE-19" },
+				{ name = "NODE-20" },
 				{ name = "NODE-3" },
 			},
 			tasks = {
@@ -1907,8 +1910,33 @@ MissionDb = {
 				},
 			},
 			vehicleGroups = {
+				{ name = "DW RED GROUND 10-1" },
+				{ name = "DW RED GROUND 10-2" },
+				{ name = "DW RED GROUND 10-3" },
+				{ name = "DW RED GROUND 10-4" },
+				{ name = "DW RED SAM SA-2 RG 2-1" },
+				{ name = "DW RED GROUND 1-1" },
+				{ name = "DW RED SAM Rapier RG 3" },
+				{ name = "DW RED SAM Rapier RG 3-1" },
+				{ name = "RED AIR DEFENSE BATTERY C RG 149-1" },
+				{ name = "DW RED GROUND 10-5" },
+				{ name = "DWRED GROUND 10-1" },
+				{ name = "DWRED GROUND 10-2" },
+				{ name = "RED GROUND 1-1" },
+				{ name = "RED GROUND 1-2" },
+				{ name = "RED GROUND 1-3" },
+				{ name = "RED GROUND 1-4" },
+				{ name = "RED GROUND 1-5" },
+				{ name = "RED GROUND 1-6" },
+				{ name = "DW RED GROUND 1-7" },
+				{ name = "DW RED GROUND 1-2" },
+				{ name = "DW RED GROUND 1-3" },
+				{ name = "DW RED GROUND 1-4" },
+				{ name = "DW RED GROUND 1-5" },
 			},
 			shipGroups = {
+				{ name = "Naval-1" },
+				{ name = "Naval-2" },
 			},
 			staticGroups = {
 			}

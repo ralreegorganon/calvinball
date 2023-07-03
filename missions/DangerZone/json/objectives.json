@@ -211,7 +211,7 @@
                 "RED RG 151-6",
                 "RED RG 152",
                 "RED RG 153",
-                "RED SAM SA-2 RG 2",
+                "DW RED SAM SA-2 RG 2",
                 "RED SAM SA-2 RG 3"
             ],
             "vertices": [
@@ -287,28 +287,28 @@
             "strand": "STRAND-1",
             "tasks": [],
             "vehicle_groups": [
-                "RED GROUND 1-91",
-                "RED GROUND 1-78",
-                "RED GROUND 1-125",
-                "RED GROUND 1-92",
-                "RED SAM SA-8 379-1",
-                "RED GROUND 1-126",
-                "RED GROUND 1-127",
-                "RED GROUND 1-94",
-                "RED GROUND 1-120",
-                "RED GROUND 1-128",
-                "RED GROUND 1-95",
-                "RED GROUND 1-121",
-                "RED GROUND 1-89",
-                "RED GROUND 1-96",
-                "RED GROUND 10-15",
                 "RED EWR 1-1",
-                "RED GROUND 10-16",
+                "RED GROUND 1-120",
+                "RED GROUND 1-121",
+                "RED GROUND 1-122",
                 "RED GROUND 1-123",
                 "RED GROUND 1-124",
-                "RED GROUND 1-122",
+                "RED GROUND 1-125",
+                "RED GROUND 1-126",
+                "RED GROUND 1-127",
+                "RED GROUND 1-128",
+                "RED GROUND 1-78",
+                "RED GROUND 1-89",
+                "RED GROUND 1-91",
+                "RED GROUND 1-92",
+                "RED GROUND 1-94",
+                "RED GROUND 1-95",
+                "RED GROUND 1-96",
+                "RED GROUND 10-15",
+                "RED GROUND 10-16",
                 "RED GROUND 10-17",
-                "RED GROUND 10-18"
+                "RED GROUND 10-18",
+                "RED SAM SA-8 379-1"
             ],
             "vertices": [
                 {
@@ -345,11 +345,29 @@
             ],
             "label": "Foothold",
             "nodes": {
-                "NODE-3": {
-                    "label": "Doing It Wrong",
+                "NODE-18": {
+                    "label": "Pain Train",
                     "radius": 260,
-                    "x": 127180.02815745,
-                    "y": -127683.81361781
+                    "x": 122358.13765759,
+                    "y": -123141.90262039
+                },
+                "NODE-19": {
+                    "label": "Excuse Me",
+                    "radius": 260,
+                    "x": 128553.87413397,
+                    "y": -127499.13133044
+                },
+                "NODE-20": {
+                    "label": "Royal Pain",
+                    "radius": 260,
+                    "x": 127028.0248943,
+                    "y": -131929.73926684
+                },
+                "NODE-3": {
+                    "label": "Serenity Now",
+                    "radius": 260,
+                    "x": 124660.73751297,
+                    "y": -128757.90642034
                 }
             },
             "qrfs": [
@@ -358,11 +376,38 @@
             "reinforcements": [
                 "REINFORCEMENT-2"
             ],
-            "ship_groups": [],
+            "ship_groups": [
+                "Naval-1",
+                "Naval-2"
+            ],
             "static_groups": [],
             "strand": "STRAND-1",
             "tasks": [],
-            "vehicle_groups": [],
+            "vehicle_groups": [
+                "DW RED GROUND 10-1",
+                "DW RED GROUND 10-2",
+                "DW RED GROUND 10-3",
+                "DW RED GROUND 10-4",
+                "DW RED SAM SA-2 RG 2-1",
+                "DW RED GROUND 1-1",
+                "DW RED SAM Rapier RG 3",
+                "DW RED SAM Rapier RG 3-1",
+                "RED AIR DEFENSE BATTERY C RG 149-1",
+                "DW RED GROUND 10-5",
+                "DWRED GROUND 10-1",
+                "DWRED GROUND 10-2",
+                "RED GROUND 1-1",
+                "RED GROUND 1-2",
+                "RED GROUND 1-3",
+                "RED GROUND 1-4",
+                "RED GROUND 1-5",
+                "RED GROUND 1-6",
+                "DW RED GROUND 1-7",
+                "DW RED GROUND 1-2",
+                "DW RED GROUND 1-3",
+                "DW RED GROUND 1-4",
+                "DW RED GROUND 1-5"
+            ],
             "vertices": [
                 {
                     "x": 121853.07555367,
