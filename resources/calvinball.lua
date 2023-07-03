@@ -1202,6 +1202,47 @@ local function spawnGroupsAtThing(thing, staticCountry)
     end
 end
 
+local function activateBrigades(chief, side)
+    for _, brigade in ipairs(chief.brigades) do
+        if brigade.state ~= "dead" and brigade.instance == nil then
+
+            local warehouse = UNIT:FindByName(brigade.warehouse)
+            if warehouse == nil then
+                warehouse = STATIC:FindByName(brigade.warehouse, false)
+            end
+
+            if warehouse ~= nil then
+                brigade.instance = BRIGADE:New(brigade.warehouse, brigade.name)
+
+                if side == coalition.side.BLUE then
+                    function brigade.instance:OnAfterArmyOnMission(From, Event, To, ArmyGroup, Mission)
+                        local text=string.format("BLUE has launched a new mission: %s.", Mission:GetType())
+                        MESSAGE:New(text, 15):ToAll()
+                    end
+                else
+                    function brigade.instance:OnAfterArmyOnMission(From, Event, To, ArmyGroup, Mission)
+                        local text=string.format("RED has launched a new mission: %s.", Mission:GetType())
+                        MESSAGE:New(text, 15):ToAll()
+                    end
+                end
+
+                for _, platoon in ipairs(brigade.platoons) do
+                    platoon.instance = PLATOON:New(platoon.templateGroupName, platoon.initialInventory, platoon.name)
+                    platoon.instance:SetSkill(AI.Skill.EXCELLENT)
+
+                    for _, capability in ipairs(platoon.capabilities) do
+                        platoon.instance:AddMissionCapability({capability.mission}, capability.performance)
+                    end
+
+                    brigade.instance:AddPlatoon(platoon.instance)
+                end
+                chief.instance:AddBrigade(brigade.instance)
+                brigade.state = "active"
+            end
+        end
+    end
+end
+
 local function activateAirwings(chief, side)
     for _, airwing in ipairs(chief.airwings) do
         if airwing.state ~= "dead" and airwing.instance == nil then
@@ -1279,6 +1320,7 @@ local function activateAirwings(chief, side)
                 end
 
                 chief.instance:AddAirwing(airwing.instance)
+                airwing.state = "active"
             end
         end
     end
@@ -1653,6 +1695,8 @@ local function startObjective(objective)
     unlockQrfsForObjective(objective)
     activateAirwings(MissionDb.bluechief, coalition.side.BLUE)
     activateAirwings(MissionDb.redchief, coalition.side.RED)
+    activateBrigades(MissionDb.bluechief, coalition.side.BLUE)
+    activateBrigades(MissionDb.redchief, coalition.side.RED)
 
     objective.state = "active"
 
@@ -1905,61 +1949,6 @@ local function initializeBlueChief()
     end
 end
 
-local function initializeRedChief2()
-    for _, brigade in ipairs(MissionDb.redchief.brigades) do
-        if brigade.state == "active" then
-            brigade.instance = BRIGADE:New(brigade.warehouse, brigade.name)
-
-            function brigade.instance:OnAfterArmyOnMission(From, Event, To, ArmyGroup, Mission)
-                local text=string.format("RED has launched a new mission: %s.", Mission:GetType())
-                MESSAGE:New(text, 15):ToAll()
-            end
-
-            for _, platoon in ipairs(brigade.platoons) do
-                platoon.instance = PLATOON:New(platoon.templateGroupName, platoon.initialInventory, platoon.name)
-                platoon.instance:SetSkill(AI.Skill.EXCELLENT)
-
-                for _, capability in ipairs(platoon.capabilities) do
-                    platoon.instance:AddMissionCapability({capability.mission}, capability.performance)
-                end
-                -- squadron.instance:SetLivery(squadron.livery)
-
-                brigade.instance:AddPlatoon(platoon.instance)
-            end
-            MissionDb.redchief.instance:AddBrigade(brigade.instance)
-        end
-    end
-
-    MissionDb.redchief.instance:__Start(15)
-end
-
-local function initializeBlueChief2()
-    for _, brigade in ipairs(MissionDb.bluechief.brigades) do
-        if brigade.state == "active" then
-            brigade.instance = BRIGADE:New(brigade.warehouse, brigade.name)
-
-            function brigade.instance:OnAfterArmyOnMission(From, Event, To, ArmyGroup, Mission)
-                local text=string.format("BLUE has launched a new mission: %s.", Mission:GetType())
-                MESSAGE:New(text, 15):ToAll()
-            end
-
-            for _, platoon in ipairs(brigade.platoons) do
-                platoon.instance = PLATOON:New(platoon.templateGroupName, platoon.initialInventory, platoon.name)
-                platoon.instance:SetSkill(AI.Skill.EXCELLENT)
-
-                for _, capability in ipairs(platoon.capabilities) do
-                    platoon.instance:AddMissionCapability({capability.mission}, capability.performance)
-                end
-
-                brigade.instance:AddPlatoon(platoon.instance)
-            end
-            MissionDb.bluechief.instance:AddBrigade(brigade.instance)
-        end
-    end
-
-    MissionDb.bluechief.instance:__Start(15)
-end
-
 local function initializeObjectives()
     loadState()
     saveState()
@@ -1995,11 +1984,11 @@ local function initializeObjectives()
 
     activateAirwings(MissionDb.bluechief, coalition.side.BLUE)
     activateAirwings(MissionDb.redchief, coalition.side.RED)
+    activateBrigades(MissionDb.bluechief, coalition.side.BLUE)
+    activateBrigades(MissionDb.redchief, coalition.side.RED)
 
-    SCHEDULER:New(nil, function()
-        initializeBlueChief2()
-        initializeRedChief2()
-    end, {}, 60)
+    MissionDb.bluechief.instance:__Start(75)
+    MissionDb.redchief.instance:__Start(75)
 
     -- All finished so reset them so it can start over
     if(finishedCount == #MissionDb.objectives) then
@@ -2055,6 +2044,13 @@ local function reportOverallMissionStatus()
         end
         table.insert(r, "")
     end
+
+    if(MissionDb.industry.enabled) then
+        table.insert(r, "")
+        table.insert(r, string.format("Enemy industry is at %.f%% capacity, with %i active industry targets", MissionDb.industry.percentage, MissionDb.industry.alive))
+        table.insert(r, "")
+    end
+
     local m = table.concat(r, "\n")
     MESSAGE:New(m, 30):ToAll()
 end
