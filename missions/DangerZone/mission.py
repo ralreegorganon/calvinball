@@ -377,9 +377,7 @@ class DangerZoneClients(calvinball.clients.Clients):
 
         if not edit:
             airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
-            airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits", "start_type": dcs.mission.StartType.Warm })
             airport_set[1]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
-            airport_set[1]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits", "start_type": dcs.mission.StartType.Warm })
 
             radios[pydcs_extensions.A_4E_C] = ["uhf"]
 

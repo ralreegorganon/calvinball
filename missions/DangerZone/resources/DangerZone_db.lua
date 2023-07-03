@@ -5082,12 +5082,14 @@ MissionDb = {
 				{ name = "DW RED GROUND 1-3" },
 				{ name = "DW RED GROUND 1-4" },
 				{ name = "DW RED GROUND 1-5" },
+				{ name = "DW RED GROUND 1-51" },
 				{ name = "DW RED GROUND 1-7" },
 				{ name = "DW RED GROUND 10-1" },
 				{ name = "DW RED GROUND 10-2" },
 				{ name = "DW RED GROUND 10-3" },
 				{ name = "DW RED GROUND 10-4" },
 				{ name = "DW RED GROUND 10-5" },
+				{ name = "DW RED GROUND 2" },
 				{ name = "DWRED GROUND 10-1" },
 				{ name = "DWRED GROUND 10-2" },
 				{ name = "RED AIR DEFENSE BATTERY C RG 149-1" },
@@ -5095,11 +5097,9 @@ MissionDb = {
 				{ name = "RED EWR 2-2" },
 				{ name = "RED EWR 2-3" },
 				{ name = "RED EWR 2-4" },
-				{ name = "DW RED GROUND 2" },
 				{ name = "RED GROUND 1-2" },
 				{ name = "RED GROUND 1-3" },
 				{ name = "RED GROUND 1-4" },
-				{ name = "DW RED GROUND 1-51" },
 				{ name = "RED GROUND 1-6" },
 				{ name = "RED SAM Rapier DW 3" },
 				{ name = "RED SAM Rapier DW 3-1" },
@@ -5244,34 +5244,34 @@ MissionDb = {
 			reinforcements = {
 			},
 			vehicleGroups = {
-				{ name = "DWRED GROUND 10-3" },
-				{ name = "DW RED GROUND 1-6" },
-				{ name = "RED GROUND 1-7" },
-				{ name = "RED GROUND 1-8" },
-				{ name = "RED EWR 2-6" },
-				{ name = "RED EWR 2-7" },
-				{ name = "RED SAM Rapier DW 3-2" },
-				{ name = "RED SAM Rapier DW 3-3" },
-				{ name = "RED EWR 2-8" },
-				{ name = "DW RED GROUND 10-6" },
-				{ name = "DW RED GROUND 10-7" },
-				{ name = "DW RED GROUND 1-9" },
 				{ name = "DW RED GROUND 1-10" },
 				{ name = "DW RED GROUND 1-11" },
-				{ name = "RED GROUND 1-9" },
-				{ name = "RED GROUND 1-10" },
-				{ name = "RED GROUND 1-11" },
-				{ name = "RED GROUND 1-12" },
-				{ name = "RED GROUND 1-13" },
-				{ name = "RED GROUND 1-14" },
 				{ name = "DW RED GROUND 1-12" },
 				{ name = "DW RED GROUND 1-13" },
 				{ name = "DW RED GROUND 1-14" },
 				{ name = "DW RED GROUND 1-15" },
 				{ name = "DW RED GROUND 1-16" },
 				{ name = "DW RED GROUND 1-19" },
+				{ name = "DW RED GROUND 1-6" },
+				{ name = "DW RED GROUND 1-9" },
+				{ name = "DW RED GROUND 10-6" },
+				{ name = "DW RED GROUND 10-7" },
+				{ name = "DWRED GROUND 10-3" },
+				{ name = "RED EWR 2-6" },
+				{ name = "RED EWR 2-7" },
+				{ name = "RED EWR 2-8" },
 				{ name = "RED GROUND 1-1" },
+				{ name = "RED GROUND 1-10" },
+				{ name = "RED GROUND 1-11" },
+				{ name = "RED GROUND 1-12" },
+				{ name = "RED GROUND 1-13" },
+				{ name = "RED GROUND 1-14" },
 				{ name = "RED GROUND 1-5" },
+				{ name = "RED GROUND 1-7" },
+				{ name = "RED GROUND 1-8" },
+				{ name = "RED GROUND 1-9" },
+				{ name = "RED SAM Rapier DW 3-2" },
+				{ name = "RED SAM Rapier DW 3-3" },
 				{ name = "RED SAM Roland DW" },
 			},
 			shipGroups = {
@@ -5279,36 +5279,6 @@ MissionDb = {
 				{ name = "Naval-4" },
 			},
 			staticGroups = {
-				{
-					name = "Static Tank Car blue-4#00001",
-					template = {
-						name = "Static Tank Car blue-4",
-						type = "Coach a tank blue",
-						x = 135450.60743396,
-						y = -125082.558041,
-						heading = 1.4486232791553,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
-					name = "Static Flatcar-2#00001",
-					template = {
-						name = "Static Flatcar-2",
-						type = "Boxcartrinity",
-						x = 135447.09081878,
-						y = -125112.84781969,
-						heading = 1.4660765716752,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
 				{
 					name = "Static Bunker 1-1#00001",
 					template = {
@@ -5325,12 +5295,102 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static Well Car-1#00001",
+					name = "Static Bunker 1-2#00001",
 					template = {
-						name = "Static Well Car-1",
-						type = "Wellcarnsc",
-						x = 135456.84356486,
-						y = -125031.96567071,
+						name = "Static Bunker 1-2",
+						type = "Sandbox",
+						x = 137151.65625846,
+						y = -118755.04863081,
+						heading = 3.4033920413889,
+						category = "Fortifications",
+						canCargo = false,
+						shape_name = "",
+						rate = 5,
+						dead = false
+					}
+				},
+				{
+					name = "Static Bunker 1-3#00001",
+					template = {
+						name = "Static Bunker 1-3",
+						type = "Sandbox",
+						x = 141091.98377319,
+						y = -108870.33616842,
+						heading = 3.7699111843078,
+						category = "Fortifications",
+						canCargo = false,
+						shape_name = "",
+						rate = 5,
+						dead = false
+					}
+				},
+				{
+					name = "Static Bunker 1-4#00001",
+					template = {
+						name = "Static Bunker 1-4",
+						type = "Sandbox",
+						x = 139692.42604539,
+						y = -108410.80703919,
+						heading = 4.6774823953448,
+						category = "Fortifications",
+						canCargo = false,
+						shape_name = "",
+						rate = 5,
+						dead = false
+					}
+				},
+				{
+					name = "Static Coach Platform-1#00001",
+					template = {
+						name = "Static Coach Platform-1",
+						type = "Coach a platform",
+						x = 135460.82906206,
+						y = -124991.1729347,
+						heading = 1.4835298641952,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Coach Platform-2#00001",
+					template = {
+						name = "Static Coach Platform-2",
+						type = "Coach a platform",
+						x = 135462.04815532,
+						y = -124976.77825659,
+						heading = 1.4835298641952,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Flatcar-1#00001",
+					template = {
+						name = "Static Flatcar-1",
+						type = "Boxcartrinity",
+						x = 135449.06012328,
+						y = -125096.24939608,
+						heading = 1.4660765716752,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Flatcar-2#00001",
+					template = {
+						name = "Static Flatcar-2",
+						type = "Boxcartrinity",
+						x = 135447.09081878,
+						y = -125112.84781969,
 						heading = 1.4660765716752,
 						category = "",
 						canCargo = false,
@@ -5355,36 +5415,6 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static Bunker 1-2#00001",
-					template = {
-						name = "Static Bunker 1-2",
-						type = "Sandbox",
-						x = 137151.65625846,
-						y = -118755.04863081,
-						heading = 3.4033920413889,
-						category = "Fortifications",
-						canCargo = false,
-						shape_name = "",
-						rate = 5,
-						dead = false
-					}
-				},
-				{
-					name = "Static Well Car-2#00001",
-					template = {
-						name = "Static Well Car-2",
-						type = "Wellcarnsc",
-						x = 135459.18797498,
-						y = -125009.5062218,
-						heading = 1.4835298641952,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
 					name = "Static Freight Van-1#00001",
 					template = {
 						name = "Static Freight Van-1",
@@ -5392,36 +5422,6 @@ MissionDb = {
 						x = 135442.68332777,
 						y = -125144.59113266,
 						heading = 1.4311699866353,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
-					name = "Static Bunker 1-3#00001",
-					template = {
-						name = "Static Bunker 1-3",
-						type = "Sandbox",
-						x = 141091.98377319,
-						y = -108870.33616842,
-						heading = 3.7699111843078,
-						category = "Fortifications",
-						canCargo = false,
-						shape_name = "",
-						rate = 5,
-						dead = false
-					}
-				},
-				{
-					name = "Static Coach Platform-1#00001",
-					template = {
-						name = "Static Coach Platform-1",
-						type = "Coach a platform",
-						x = 135460.82906206,
-						y = -124991.1729347,
-						heading = 1.4835298641952,
 						category = "",
 						canCargo = false,
 						shape_name = "",
@@ -5445,73 +5445,13 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static Bunker 1-4#00001",
-					template = {
-						name = "Static Bunker 1-4",
-						type = "Sandbox",
-						x = 139692.42604539,
-						y = -108410.80703919,
-						heading = 4.6774823953448,
-						category = "Fortifications",
-						canCargo = false,
-						shape_name = "",
-						rate = 5,
-						dead = false
-					}
-				},
-				{
-					name = "Static Coach Platform-2#00001",
-					template = {
-						name = "Static Coach Platform-2",
-						type = "Coach a platform",
-						x = 135462.04815532,
-						y = -124976.77825659,
-						heading = 1.4835298641952,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
 					name = "Static Loco ES44AH-1#00001",
 					template = {
 						name = "Static Loco ES44AH-1",
 						type = "ES44AH",
-						x = 135464.95522386,
-						y = -124937.48594306,
+						x = 135464.48309296,
+						y = -124944.55528693,
 						heading = 1.5184364492351,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 10,
-						dead = false
-					}
-				},
-				{
-					name = "Static Tank Car blue-1#00001",
-					template = {
-						name = "Static Tank Car blue-1",
-						type = "Coach a tank blue",
-						x = 135454.78048396,
-						y = -125048.89231174,
-						heading = 1.4835298641952,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
-					name = "Static DR 50-ton flat wagon-1#00001",
-					template = {
-						name = "Static DR 50-ton flat wagon-1",
-						type = "DR_50Ton_Flat_Wagon",
-						x = 135463.17347217,
-						y = -124964.35288298,
-						heading = 1.4835298641952,
 						category = "",
 						canCargo = false,
 						shape_name = "",
@@ -5535,6 +5475,81 @@ MissionDb = {
 					}
 				},
 				{
+					name = "Static Tank Car blue-4#00001",
+					template = {
+						name = "Static Tank Car blue-4",
+						type = "Coach a tank blue",
+						x = 135450.60743396,
+						y = -125082.558041,
+						heading = 1.4486232791553,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Well Car-1#00001",
+					template = {
+						name = "Static Well Car-1",
+						type = "Wellcarnsc",
+						x = 135456.84356486,
+						y = -125031.96567071,
+						heading = 1.4660765716752,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Well Car-2#00001",
+					template = {
+						name = "Static Well Car-2",
+						type = "Wellcarnsc",
+						x = 135459.18797498,
+						y = -125009.5062218,
+						heading = 1.4835298641952,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Coach Platform-3#00001",
+					template = {
+						name = "Static Coach Platform-3",
+						type = "Coach a platform",
+						x = 135463.16493837,
+						y = -124962.78020704,
+						heading = 1.4835298641952,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Tank Car blue-1#00001",
+					template = {
+						name = "Static Tank Car blue-1",
+						type = "Coach a tank blue",
+						x = 135454.78048396,
+						y = -125048.89231174,
+						heading = 1.4835298641952,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
 					name = "Static Tank Car blue-2#00001",
 					template = {
 						name = "Static Tank Car blue-2",
@@ -5550,21 +5565,6 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static DR 50-ton flat wagon-2#00001",
-					template = {
-						name = "Static DR 50-ton flat wagon-2",
-						type = "DR_50Ton_Flat_Wagon",
-						x = 135463.92368341,
-						y = -124953.66237285,
-						heading = 1.4835298641952,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 10,
-						dead = false
-					}
-				},
-				{
 					name = "Static Tank Car blue-3#00001",
 					template = {
 						name = "Static Tank Car blue-3",
@@ -5572,21 +5572,6 @@ MissionDb = {
 						x = 135452.06096823,
 						y = -125071.16420784,
 						heading = 1.4835298641952,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
-					name = "Static Flatcar-1#00001",
-					template = {
-						name = "Static Flatcar-1",
-						type = "Boxcartrinity",
-						x = 135449.06012328,
-						y = -125096.24939608,
-						heading = 1.4660765716752,
 						category = "",
 						canCargo = false,
 						shape_name = "",
