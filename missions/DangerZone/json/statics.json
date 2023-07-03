@@ -1153,8 +1153,8 @@
             "heading": 5.9864793343406,
             "name": "Stoney Cross Airwing Warehouse",
             "rate": 100,
-            "shape_name": "sklad",
-            "type": "Warehouse",
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
             "x": 155591.10852155,
             "y": -101456.78901333
         }

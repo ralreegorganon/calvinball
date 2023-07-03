@@ -215,38 +215,33 @@ class DangerZoneClients(calvinball.clients.Clients):
             {
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "carrier": "Teddy",
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.planes.F_14B, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True }  },
-                    { "airframe": dcs.planes.F_14B, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True }, "start_type": dcs.mission.StartType.Warm },
                     { "airframe": dcs.planes.FA_18C_hornet, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "Santa" },
-                    { "airframe": dcs.planes.FA_18C_hornet, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "Santa", "start_type": dcs.mission.StartType.Warm },
                 ]
             },
             {
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "carrier": "Forrestal",
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.planes.F_14B, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True } },
-                    { "airframe": dcs.planes.F_14B, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True }, "start_type": dcs.mission.StartType.Warm },
                     { "airframe": dcs.planes.FA_18C_hornet, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "Santa" },
-                    { "airframe": dcs.planes.FA_18C_hornet, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "Santa", "start_type": dcs.mission.StartType.Warm },
                 ]
             },
             {
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "carrier": "Invincible",
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.planes.AV8BNA, "count": 3, "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
-                    { "airframe": dcs.planes.AV8BNA, "count": 3, "fuel": 1, "loadout": "Empty", "livery": "vma-214", "start_type": dcs.mission.StartType.Warm },
                 ]
             },
             {
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "carrier": "Tarawa",
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.helicopters.Mi_24P, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation" },
                     { "airframe": dcs.helicopters.Mi_8MT, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
@@ -257,7 +252,7 @@ class DangerZoneClients(calvinball.clients.Clients):
             {
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "carrier": "Peleliu",
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.helicopters.UH_1H, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972" },
                     { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
@@ -268,7 +263,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "farp": "FARP Portland Bill",
                 "farp_zone": "FARP-1",
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     {
                         "airframe": dcs.helicopters.Mi_24P, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation",
@@ -305,7 +300,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "farp": "FARP Morden Bog",
                 "farp_zone": "FARP-2",
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     {
                         "airframe": dcs.helicopters.Mi_24P, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation",
@@ -656,11 +651,9 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                         "livery": "Canada 150 Demo Jet",
                         "loadouts": {
                             "AIM-9X*2, AIM-120C-5*6, FUEL*3": "{ AUFTRAG.Type.CAP }",
-                           #"AIM-9X*2, AIM-120C-5*1, GBU-38*4, GBU-12*4, ATFLIR, FUEL": "{ AUFTRAG.Type.CASENHANCED }"
                         },
                         "capabilities": {
                             "AUFTRAG.Type.CAP": 50,
-                            #"AUFTRAG.Type.CASENHANCED": 50,
                         }
                     }
                 }
@@ -764,7 +757,7 @@ class DangerZoneBlueBrigades(calvinball.bluebrigade.BlueBrigades):
                             dcs.vehicles.Infantry.Soldier_RPG,
                             dcs.vehicles.Infantry.Soldier_RPG,
                         ],
-                        "initialInventory": 1,
+                        "initialInventory": 99,
                         "capabilities": {
                             "AUFTRAG.Type.ONGUARD": 50
                         }
