@@ -181,7 +181,9 @@
                     "y": -159686.42726666
                 }
             },
-            "qrfs": [],
+            "qrfs": [
+                "QRF-15"
+            ],
             "reinforcements": [
                 "REINFORCEMENT-1"
             ],
@@ -279,7 +281,8 @@
                 }
             },
             "qrfs": [
-                "QRF-5"
+                "QRF-5",
+                "QRF-16"
             ],
             "reinforcements": [],
             "ship_groups": [],
@@ -372,7 +375,9 @@
             },
             "qrfs": [
                 "QRF-4",
-                "QRF-12"
+                "QRF-12",
+                "QRF-17",
+                "QRF-18"
             ],
             "reinforcements": [
                 "REINFORCEMENT-2"
@@ -459,6 +464,8 @@
             "reinforcements": [],
             "ship_groups": [],
             "static_groups": [
+                "Lymington Airwing Warehouse",
+                "Needs Oar Point Airwing Warehouse",
                 "Stoney Cross Airwing Warehouse"
             ],
             "strand": "STRAND-1",

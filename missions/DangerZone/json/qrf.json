@@ -304,6 +304,284 @@
         "x": 140314.12387021,
         "y": -85525.186078684
     },
+    "QRF-15": {
+        "component": "qrf",
+        "label": "Industry Target",
+        "ship_groups": [],
+        "static_groups": [
+            "INDUSTRYTARGET-67",
+            "INDUSTRYTARGET-68",
+            "INDUSTRYTARGET-69",
+            "INDUSTRYTARGET-70",
+            "INDUSTRYTARGET-71",
+            "INDUSTRYTARGET-72",
+            "INDUSTRYTARGET-73",
+            "INDUSTRYTARGET-74",
+            "INDUSTRYTARGET-75",
+            "INDUSTRYTARGET-76",
+            "INDUSTRYTARGET-77",
+            "INDUSTRYTARGET-78",
+            "INDUSTRYTARGET-79",
+            "INDUSTRYTARGET-80",
+            "INDUSTRYTARGET-81",
+            "INDUSTRYTARGET-82",
+            "INDUSTRYTARGET-83",
+            "INDUSTRYTARGET-84",
+            "INDUSTRYTARGET-85",
+            "INDUSTRYTARGET-86",
+            "INDUSTRYTARGET-87",
+            "INDUSTRYTARGET-88",
+            "INDUSTRYTARGET-111",
+            "INDUSTRYTARGET-112",
+            "INDUSTRYTARGET-113",
+            "INDUSTRYTARGET-114",
+            "INDUSTRYTARGET-115",
+            "INDUSTRYTARGET-116",
+            "INDUSTRYTARGET-117",
+            "INDUSTRYTARGET-118",
+            "INDUSTRYTARGET-119",
+            "INDUSTRYTARGET-120",
+            "INDUSTRYTARGET-121",
+            "INDUSTRYTARGET-122",
+            "INDUSTRYTARGET-123",
+            "INDUSTRYTARGET-124",
+            "INDUSTRYTARGET-125",
+            "INDUSTRYTARGET-126",
+            "INDUSTRYTARGET-127"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [
+            "RED RG 1-6",
+            "RED RG 1-7"
+        ],
+        "vertices": [
+            {
+                "x": 144587.99170285,
+                "y": -169939.28722738
+            },
+            {
+                "x": 143623.36025396,
+                "y": -169901.88315079
+            },
+            {
+                "x": 143673.95971441,
+                "y": -170965.23484411
+            },
+            {
+                "x": 144568.10265348,
+                "y": -170967.43716662
+            }
+        ],
+        "x": 144113.35358118,
+        "y": -170443.46059722
+    },
+    "QRF-16": {
+        "component": "qrf",
+        "label": "Industry Target",
+        "ship_groups": [],
+        "static_groups": [
+            "INDUSTRYTARGET-45",
+            "INDUSTRYTARGET-46",
+            "INDUSTRYTARGET-47",
+            "INDUSTRYTARGET-48",
+            "INDUSTRYTARGET-49",
+            "INDUSTRYTARGET-50",
+            "INDUSTRYTARGET-51",
+            "INDUSTRYTARGET-52",
+            "INDUSTRYTARGET-53",
+            "INDUSTRYTARGET-54",
+            "INDUSTRYTARGET-55",
+            "INDUSTRYTARGET-56",
+            "INDUSTRYTARGET-57",
+            "INDUSTRYTARGET-58",
+            "INDUSTRYTARGET-59",
+            "INDUSTRYTARGET-60",
+            "INDUSTRYTARGET-61",
+            "INDUSTRYTARGET-62",
+            "INDUSTRYTARGET-63",
+            "INDUSTRYTARGET-64",
+            "INDUSTRYTARGET-65",
+            "INDUSTRYTARGET-66"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [
+            "RED RG 1-4",
+            "RED RG 1-5"
+        ],
+        "vertices": [
+            {
+                "x": 150970.07051428,
+                "y": -133977.94234445
+            },
+            {
+                "x": 150307.59324294,
+                "y": -134001.60224699
+            },
+            {
+                "x": 149982.55557182,
+                "y": -135072.8120086
+            },
+            {
+                "x": 150750.5591962,
+                "y": -134969.02937339
+            }
+        ],
+        "x": 150502.69463131,
+        "y": -134505.34649336
+    },
+    "QRF-17": {
+        "component": "qrf",
+        "label": "Industry Target",
+        "ship_groups": [],
+        "static_groups": [
+            "INDUSTRYTARGET-10",
+            "INDUSTRYTARGET-24",
+            "INDUSTRYTARGET-25",
+            "INDUSTRYTARGET-26",
+            "INDUSTRYTARGET-27",
+            "INDUSTRYTARGET-28",
+            "INDUSTRYTARGET-29",
+            "INDUSTRYTARGET-30",
+            "INDUSTRYTARGET-31",
+            "INDUSTRYTARGET-32",
+            "INDUSTRYTARGET-33",
+            "INDUSTRYTARGET-34",
+            "INDUSTRYTARGET-35",
+            "INDUSTRYTARGET-36",
+            "INDUSTRYTARGET-37",
+            "INDUSTRYTARGET-38",
+            "INDUSTRYTARGET-39",
+            "INDUSTRYTARGET-40",
+            "INDUSTRYTARGET-41",
+            "INDUSTRYTARGET-42",
+            "INDUSTRYTARGET-43",
+            "INDUSTRYTARGET-44",
+            "INDUSTRYTARGET-128",
+            "INDUSTRYTARGET-129",
+            "INDUSTRYTARGET-130",
+            "INDUSTRYTARGET-131",
+            "INDUSTRYTARGET-132",
+            "INDUSTRYTARGET-133",
+            "INDUSTRYTARGET-134",
+            "INDUSTRYTARGET-135",
+            "INDUSTRYTARGET-136",
+            "INDUSTRYTARGET-137",
+            "INDUSTRYTARGET-138",
+            "INDUSTRYTARGET-139",
+            "INDUSTRYTARGET-140",
+            "INDUSTRYTARGET-141",
+            "INDUSTRYTARGET-142",
+            "INDUSTRYTARGET-143",
+            "INDUSTRYTARGET-144"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [
+            "RED RG 1-2",
+            "RED RG 1-3"
+        ],
+        "vertices": [
+            {
+                "x": 157123.2283131,
+                "y": -132652.89451433
+            },
+            {
+                "x": 156476.35780102,
+                "y": -132626.78385564
+            },
+            {
+                "x": 156431.71699745,
+                "y": -133218.9062124
+            },
+            {
+                "x": 157100.48677166,
+                "y": -133229.01356415
+            }
+        ],
+        "x": 156782.9474708,
+        "y": -132931.89953663
+    },
+    "QRF-18": {
+        "component": "qrf",
+        "label": "Industry Target",
+        "ship_groups": [],
+        "static_groups": [
+            "INDUSTRYTARGET-89",
+            "INDUSTRYTARGET-90",
+            "INDUSTRYTARGET-91",
+            "INDUSTRYTARGET-92",
+            "INDUSTRYTARGET-93",
+            "INDUSTRYTARGET-94",
+            "INDUSTRYTARGET-95",
+            "INDUSTRYTARGET-96",
+            "INDUSTRYTARGET-97",
+            "INDUSTRYTARGET-98",
+            "INDUSTRYTARGET-99",
+            "INDUSTRYTARGET-100",
+            "INDUSTRYTARGET-101",
+            "INDUSTRYTARGET-102",
+            "INDUSTRYTARGET-103",
+            "INDUSTRYTARGET-104",
+            "INDUSTRYTARGET-105",
+            "INDUSTRYTARGET-106",
+            "INDUSTRYTARGET-107",
+            "INDUSTRYTARGET-108",
+            "INDUSTRYTARGET-109",
+            "INDUSTRYTARGET-110",
+            "INDUSTRYTARGET-145",
+            "INDUSTRYTARGET-146",
+            "INDUSTRYTARGET-147",
+            "INDUSTRYTARGET-148",
+            "INDUSTRYTARGET-149",
+            "INDUSTRYTARGET-150",
+            "INDUSTRYTARGET-151",
+            "INDUSTRYTARGET-152",
+            "INDUSTRYTARGET-153",
+            "INDUSTRYTARGET-154",
+            "INDUSTRYTARGET-155",
+            "INDUSTRYTARGET-156",
+            "INDUSTRYTARGET-157",
+            "INDUSTRYTARGET-158",
+            "INDUSTRYTARGET-159",
+            "INDUSTRYTARGET-160",
+            "INDUSTRYTARGET-161",
+            "INDUSTRYTARGET-162",
+            "INDUSTRYTARGET-163",
+            "INDUSTRYTARGET-164",
+            "INDUSTRYTARGET-165",
+            "INDUSTRYTARGET-166",
+            "INDUSTRYTARGET-167",
+            "INDUSTRYTARGET-168",
+            "INDUSTRYTARGET-169",
+            "INDUSTRYTARGET-170",
+            "INDUSTRYTARGET-171",
+            "INDUSTRYTARGET-172"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [
+            "RED RG 1-8",
+            "RED RG 1-9"
+        ],
+        "vertices": [
+            {
+                "x": 157571.29413678,
+                "y": -119773.0585142
+            },
+            {
+                "x": 156708.22918618,
+                "y": -119702.79800117
+            },
+            {
+                "x": 156613.28254695,
+                "y": -120466.16898059
+            },
+            {
+                "x": 157576.04146875,
+                "y": -120498.45083792
+            }
+        ],
+        "x": 157117.21183467,
+        "y": -120110.11908347
+    },
     "QRF-2": {
         "component": "qrf",
         "label": "",
