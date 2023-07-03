@@ -377,6 +377,41 @@
             "x": -45937.516753441,
             "y": 113150.41067526
         },
+        "FOB Yes Minister Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 3.5430183815485,
+            "name": "FOB Yes Minister Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 145949.80953861,
+            "y": -122099.55128433
+        },
+        "FOB Yes Minister Brigade Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 2.3736477827123,
+            "name": "FOB Yes Minister Brigade Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 145436.07536451,
+            "y": -122436.8177019
+        },
+        "FOB Yes Minister Farp": {
+            "canCargo": false,
+            "category": "Heliports",
+            "heading": 2.1118483949131,
+            "heliport_callsign_id": 0,
+            "heliport_frequency": 127.5,
+            "heliport_modulation": 0,
+            "name": "FOB Yes Minister Farp",
+            "shape_name": "FARPS",
+            "type": "FARP",
+            "x": 145762.62294347,
+            "y": -122415.88361338
+        },
         "Funtington Airwing Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
@@ -641,6 +676,17 @@
             "x": 135932.2369729,
             "y": -173001.67910306
         },
+        "Static Container 40ft-10": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.7278759594744,
+            "name": "Static Container 40ft-10",
+            "rate": 1,
+            "shape_name": "container_40ft",
+            "type": "container_40ft",
+            "x": 145792.87252663,
+            "y": -122694.49581192
+        },
         "Static Container 40ft-2": {
             "canCargo": false,
             "category": "Fortifications",
@@ -685,6 +731,50 @@
             "x": 135942.92258246,
             "y": -172964.3931463
         },
+        "Static Container 40ft-6": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.5009831567151,
+            "name": "Static Container 40ft-6",
+            "rate": 1,
+            "shape_name": "container_40ft",
+            "type": "container_40ft",
+            "x": 145775.2019227,
+            "y": -122711.16619298
+        },
+        "Static Container 40ft-7": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.553343034275,
+            "name": "Static Container 40ft-7",
+            "rate": 1,
+            "shape_name": "container_40ft",
+            "type": "container_40ft",
+            "x": 145763.53265596,
+            "y": -122682.49313755
+        },
+        "Static Container 40ft-8": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.6057029118348,
+            "name": "Static Container 40ft-8",
+            "rate": 1,
+            "shape_name": "container_40ft",
+            "type": "container_40ft",
+            "x": 145765.53310168,
+            "y": -122696.49625765
+        },
+        "Static Container 40ft-9": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.7453292519943,
+            "name": "Static Container 40ft-9",
+            "rate": 1,
+            "shape_name": "container_40ft",
+            "type": "container_40ft",
+            "x": 145794.87297236,
+            "y": -122705.83167104
+        },
         "Static Excavator-1": {
             "canCargo": false,
             "category": "Fortifications",
@@ -717,6 +807,39 @@
             "type": "345 Excavator",
             "x": 136251.37964551,
             "y": -172446.51922519
+        },
+        "Static Excavator-4": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static Excavator-4",
+            "rate": 3,
+            "shape_name": "cat_345l",
+            "type": "345 Excavator",
+            "x": 145800.53506843,
+            "y": -122114.91228844
+        },
+        "Static Excavator-5": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.1344640137963,
+            "name": "Static Excavator-5",
+            "rate": 3,
+            "shape_name": "cat_345l",
+            "type": "345 Excavator",
+            "x": 146019.68374777,
+            "y": -122531.43745813
+        },
+        "Static Excavator-6": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static Excavator-6",
+            "rate": 3,
+            "shape_name": "cat_345l",
+            "type": "345 Excavator",
+            "x": 145726.03889405,
+            "y": -122734.79778515
         },
         "Static FARP Tent-1": {
             "canCargo": false,
@@ -784,6 +907,17 @@
             "x": 127093.56699148,
             "y": -132024.03230612
         },
+        "Static FARP Tent-19": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-19",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 145531.02360096,
+            "y": -122672.95543604
+        },
         "Static FARP Tent-2": {
             "canCargo": false,
             "category": "Fortifications",
@@ -794,6 +928,83 @@
             "type": "FARP Tent",
             "x": 136359.77307015,
             "y": -173405.40964598
+        },
+        "Static FARP Tent-20": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-20",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 145515.27034648,
+            "y": -122686.87081083
+        },
+        "Static FARP Tent-21": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-21",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 145550.02583269,
+            "y": -122661.77146934
+        },
+        "Static FARP Tent-22": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-22",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 145497.41665807,
+            "y": -122699.47341442
+        },
+        "Static FARP Tent-23": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-23",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 145548.61473513,
+            "y": -122698.94830593
+        },
+        "Static FARP Tent-24": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-24",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 145567.78119475,
+            "y": -122690.80912445
+        },
+        "Static FARP Tent-25": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-25",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 145530.23593824,
+            "y": -122711.28835528
+        },
+        "Static FARP Tent-26": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-26",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 145510.54437014,
+            "y": -122724.1535131
         },
         "Static FARP Tent-3": {
             "canCargo": false,
@@ -948,6 +1159,58 @@
             "x": 136425.04175849,
             "y": -173021.54852512
         },
+        "Static Mi-24P-3": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 1.5707963267949,
+            "livery_id": "georgian air force",
+            "name": "Static Mi-24P-3",
+            "rate": 20,
+            "type": "Mi-24P",
+            "x": 145946.29624674,
+            "y": -121980.50670623
+        },
+        "Static Mi-24P-4": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 1.553343034275,
+            "livery_id": "georgian air force",
+            "name": "Static Mi-24P-4",
+            "rate": 20,
+            "type": "Mi-24P",
+            "x": 145973.30070409,
+            "y": -121955.89744547
+        },
+        "Static Mi-24P-5": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 1.5707963267949,
+            "livery_id": "georgian air force",
+            "name": "Static Mi-24P-5",
+            "rate": 20,
+            "type": "Mi-24P",
+            "x": 145927.82948953,
+            "y": -121933.6018822
+        },
+        "Static Mi-24P-6": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 1.553343034275,
+            "livery_id": "georgian air force",
+            "name": "Static Mi-24P-6",
+            "rate": 20,
+            "type": "Mi-24P",
+            "x": 145960.39274641,
+            "y": -121920.9872872
+        },
         "Static Mi-26-1": {
             "canCargo": false,
             "category": "Helicopters",
@@ -987,6 +1250,45 @@
             "x": 136552.9363683,
             "y": -173008.18876801
         },
+        "Static Mi-26-4": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 6.0737457969403,
+            "livery_id": "7th Separate Brigade of AA (Kalinov)",
+            "name": "Static Mi-26-4",
+            "rate": "30",
+            "type": "Mi-26",
+            "x": 145921.96441369,
+            "y": -122181.38185551
+        },
+        "Static Mi-26-5": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 6.0737457969403,
+            "livery_id": "7th Separate Brigade of AA (Kalinov)",
+            "name": "Static Mi-26-5",
+            "rate": "30",
+            "type": "Mi-26",
+            "x": 146000.86102405,
+            "y": -122222.87603766
+        },
+        "Static Mi-26-6": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 6.0737457969403,
+            "livery_id": "7th Separate Brigade of AA (Kalinov)",
+            "name": "Static Mi-26-6",
+            "rate": "30",
+            "type": "Mi-26",
+            "x": 145951.78494111,
+            "y": -122271.9521206
+        },
         "Static Military staff-1": {
             "canCargo": false,
             "category": "Fortifications",
@@ -1019,6 +1321,39 @@
             "type": "Military staff",
             "x": 136491.26996448,
             "y": -172580.98158419
+        },
+        "Static Military staff-4": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.9896753472735,
+            "name": "Static Military staff-4",
+            "rate": 100,
+            "shape_name": "aviashtab",
+            "type": "Military staff",
+            "x": 145812.60804752,
+            "y": -121873.91206889
+        },
+        "Static Military staff-5": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.0594885173533,
+            "name": "Static Military staff-5",
+            "rate": 100,
+            "shape_name": "aviashtab",
+            "type": "Military staff",
+            "x": 145738.98924137,
+            "y": -121909.72662323
+        },
+        "Static Military staff-6": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.9722220547536,
+            "name": "Static Military staff-6",
+            "rate": 100,
+            "shape_name": "aviashtab",
+            "type": "Military staff",
+            "x": 145776.79349318,
+            "y": -121891.57063388
         },
         "Static Oiltank-1": {
             "canCargo": true,
@@ -1114,6 +1449,28 @@
             "x": 136129.50951197,
             "y": -173047.26271771
         },
+        "Static Small warehouse 3-3": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.9444441095072,
+            "name": "Static Small warehouse 3-3",
+            "rate": 100,
+            "shape_name": "s3",
+            "type": "Small werehouse 3",
+            "x": 145514.5411652,
+            "y": -122277.80265483
+        },
+        "Static Small warehouse 3-4": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.9618974020271,
+            "name": "Static Small warehouse 3-4",
+            "rate": 100,
+            "shape_name": "s3",
+            "type": "Small werehouse 3",
+            "x": 145493.37454114,
+            "y": -122300.11342074
+        },
         "Static Tank 1-1": {
             "canCargo": false,
             "category": "Warehouses",
@@ -1146,6 +1503,72 @@
             "type": "Tank",
             "x": 136520.75832681,
             "y": -173227.02397344
+        },
+        "Static Tank 1-4": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0645788929948,
+            "name": "Static Tank 1-4",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 145961.07516338,
+            "y": -122762.81585643
+        },
+        "Static Tank 1-5": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0645788929948,
+            "name": "Static Tank 1-5",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 145901.69916495,
+            "y": -122805.08351633
+        },
+        "Static Tank 1-6": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0645788929948,
+            "name": "Static Tank 1-6",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 145840.31042081,
+            "y": -122849.36392194
+        },
+        "Static Tank 1-7": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0645788929948,
+            "name": "Static Tank 1-7",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 145963.36617683,
+            "y": -122687.13134802
+        },
+        "Static Tank 1-8": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0645788929948,
+            "name": "Static Tank 1-8",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 145911.1362536,
+            "y": -122730.38425319
+        },
+        "Static Tank 1-9": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0645788929948,
+            "name": "Static Tank 1-9",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 145848.29712721,
+            "y": -122777.71762112
         },
         "Stoney Cross Airwing Warehouse": {
             "canCargo": false,

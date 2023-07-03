@@ -589,6 +589,38 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                     },
                 }
             },
+            "FOB Yes Minister": {
+                "airbase": "FOB Yes Minister Farp#00001",
+                "warehouse": "FOB Yes Minister Airwing Warehouse#00001",
+                "squadrons": {
+                    "Yes Minister 1": {
+                        "airframe": dcs.helicopters.Mi_26,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    },
+                    "Yes Minister 2": {
+                        "airframe": dcs.helicopters.Mi_24P,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Russian Air Force",
+                        "loadouts": {
+                            "2xB8V20 (S-8KOM)+8xATGM 9M114": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                }
+            },
         }
         return red_airwings
 
@@ -707,6 +739,46 @@ class DangerZoneRedBrigades(calvinball.redbrigade.RedBrigades):
                     }
                 }
             },
+            "FOB Yes Minister": {
+                "warehouse": "FOB Yes Minister Brigade Warehouse#00001",
+                "platoons": {
+                    "FOB Yes Minister 1": {
+                        "units": [
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                        ],
+                        "initialInventory": 3,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    },
+                    "FOB Yes Minister 2": {
+                        "units": [
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Unarmed.Ural_375,
+                            dcs.vehicles.Unarmed.Ural_375
+                        ],
+                        "initialInventory": 1,
+                        "capabilities": {
+                            "AUFTRAG.Type.ARTY": 50
+                        }
+                    }
+                }
+            }
             # "2nd Goonwalker": {
             #     "warehouse": "Anglo Brigade Warehouse#00001",
             #     "platoons": {

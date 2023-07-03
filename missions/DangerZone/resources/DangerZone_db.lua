@@ -1609,7 +1609,6 @@ MissionDb = {
 				},
 			},
 			vehicleGroups = {
-				{ name = "RED SAM SA-2 DW 2" },
 				{ name = "RED AIR DEFENSE BATTERY A RG 145" },
 				{ name = "RED AIR DEFENSE BATTERY B RG 147" },
 				{ name = "RED AIR DEFENSE BATTERY C RG 149" },
@@ -1622,6 +1621,7 @@ MissionDb = {
 				{ name = "RED RG 151-6" },
 				{ name = "RED RG 152" },
 				{ name = "RED RG 153" },
+				{ name = "RED SAM SA-2 DW 2" },
 				{ name = "RED SAM SA-2 RG 3" },
 			},
 			shipGroups = {
@@ -2128,6 +2128,587 @@ MissionDb = {
 					staticGroups = {
 					},
 				},
+				{
+					name = "QRF-12",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+						{ name = "RED RG 152-8" },
+						{ name = "RED RG 152-9" },
+						{ name = "RED RG 152-10" },
+						{ name = "RED RG 152-11" },
+						{ name = "RED RG 152-12" },
+						{ name = "RED RG 152-13" },
+						{ name = "RED RG 152-14" },
+						{ name = "RED SAM SA-8 RG 240-3" },
+						{ name = "RED SAM SA-2 RG 234-2" },
+						{ name = "RED SAM SA-6 238-3" },
+						{ name = "RED AIR DEFENSE BATTERY C RG 246-2" },
+						{ name = "RED SAM SA-3 236-2" },
+						{ name = "RED SAM SA-6 238-4" },
+						{ name = "RED SAM SA-8 RG 240-4" },
+						{ name = "RED AIR DEFENSE BATTERY A 242-2" },
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "Static Excavator-4#00001",
+							template = {
+								name = "Static Excavator-4",
+								type = "345 Excavator",
+								x = 145800.53506843,
+								y = -122114.91228844,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "cat_345l",
+								rate = 3,
+								dead = false
+							}
+						},
+						{
+							name = "Static Small warehouse 3-3#00001",
+							template = {
+								name = "Static Small warehouse 3-3",
+								type = "Small werehouse 3",
+								x = 145514.5411652,
+								y = -122277.80265483,
+								heading = 3.9444441095072,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "s3",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-24P-3#00001",
+							template = {
+								name = "Static Mi-24P-3",
+								type = "Mi-24P",
+								x = 145946.29624674,
+								y = -121980.50670623,
+								heading = 1.5707963267949,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 20,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-26-4#00001",
+							template = {
+								name = "Static Mi-26-4",
+								type = "Mi-26",
+								x = 145921.96441369,
+								y = -122181.38185551,
+								heading = 6.0737457969403,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 30,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 40ft-6#00001",
+							template = {
+								name = "Static Container 40ft-6",
+								type = "container_40ft",
+								x = 145775.2019227,
+								y = -122711.16619298,
+								heading = 1.5009831567151,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_40ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Excavator-5#00001",
+							template = {
+								name = "Static Excavator-5",
+								type = "345 Excavator",
+								x = 146019.68374777,
+								y = -122531.43745813,
+								heading = 1.1344640137963,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "cat_345l",
+								rate = 3,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-4#00001",
+							template = {
+								name = "Static Tank 1-4",
+								type = "Tank",
+								x = 145961.07516338,
+								y = -122762.81585643,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-24P-4#00001",
+							template = {
+								name = "Static Mi-24P-4",
+								type = "Mi-24P",
+								x = 145973.30070409,
+								y = -121955.89744547,
+								heading = 1.553343034275,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 20,
+								dead = false
+							}
+						},
+						{
+							name = "Static Military staff-4#00001",
+							template = {
+								name = "Static Military staff-4",
+								type = "Military staff",
+								x = 145812.60804752,
+								y = -121873.91206889,
+								heading = 1.9896753472735,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "aviashtab",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "FOB Yes Minister Airwing Warehouse#00001",
+							template = {
+								name = "FOB Yes Minister Airwing Warehouse",
+								type = ".Ammunition depot",
+								x = 145949.80953861,
+								y = -122099.55128433,
+								heading = 3.5430183815485,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-5#00001",
+							template = {
+								name = "Static Tank 1-5",
+								type = "Tank",
+								x = 145901.69916495,
+								y = -122805.08351633,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Excavator-6#00001",
+							template = {
+								name = "Static Excavator-6",
+								type = "345 Excavator",
+								x = 145726.03889405,
+								y = -122734.79778515,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "cat_345l",
+								rate = 3,
+								dead = false
+							}
+						},
+						{
+							name = "Static Military staff-5#00001",
+							template = {
+								name = "Static Military staff-5",
+								type = "Military staff",
+								x = 145738.98924137,
+								y = -121909.72662323,
+								heading = 2.0594885173533,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "aviashtab",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-26-5#00001",
+							template = {
+								name = "Static Mi-26-5",
+								type = "Mi-26",
+								x = 146000.86102405,
+								y = -122222.87603766,
+								heading = 6.0737457969403,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 30,
+								dead = false
+							}
+						},
+						{
+							name = "Static Military staff-6#00001",
+							template = {
+								name = "Static Military staff-6",
+								type = "Military staff",
+								x = 145776.79349318,
+								y = -121891.57063388,
+								heading = 1.9722220547536,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "aviashtab",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "FOB Yes Minister Brigade Warehouse#00001",
+							template = {
+								name = "FOB Yes Minister Brigade Warehouse",
+								type = ".Ammunition depot",
+								x = 145436.07536451,
+								y = -122436.8177019,
+								heading = 2.3736477827123,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Small warehouse 3-4#00001",
+							template = {
+								name = "Static Small warehouse 3-4",
+								type = "Small werehouse 3",
+								x = 145493.37454114,
+								y = -122300.11342074,
+								heading = 3.9618974020271,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "s3",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-6#00001",
+							template = {
+								name = "Static Tank 1-6",
+								type = "Tank",
+								x = 145840.31042081,
+								y = -122849.36392194,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 40ft-7#00001",
+							template = {
+								name = "Static Container 40ft-7",
+								type = "container_40ft",
+								x = 145763.53265596,
+								y = -122682.49313755,
+								heading = 1.553343034275,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_40ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "FOB Yes Minister Farp#00001",
+							template = {
+								name = "FOB Yes Minister Farp",
+								type = "FARP",
+								x = 145762.62294347,
+								y = -122415.88361338,
+								heading = 2.1118483949131,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "FARPS",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 40ft-8#00001",
+							template = {
+								name = "Static Container 40ft-8",
+								type = "container_40ft",
+								x = 145765.53310168,
+								y = -122696.49625765,
+								heading = 1.6057029118348,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_40ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-26-6#00001",
+							template = {
+								name = "Static Mi-26-6",
+								type = "Mi-26",
+								x = 145951.78494111,
+								y = -122271.9521206,
+								heading = 6.0737457969403,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 30,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 40ft-9#00001",
+							template = {
+								name = "Static Container 40ft-9",
+								type = "container_40ft",
+								x = 145794.87297236,
+								y = -122705.83167104,
+								heading = 1.7453292519943,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_40ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 40ft-10#00001",
+							template = {
+								name = "Static Container 40ft-10",
+								type = "container_40ft",
+								x = 145792.87252663,
+								y = -122694.49581192,
+								heading = 1.7278759594744,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_40ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-24P-5#00001",
+							template = {
+								name = "Static Mi-24P-5",
+								type = "Mi-24P",
+								x = 145927.82948953,
+								y = -121933.6018822,
+								heading = 1.5707963267949,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 20,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-24P-6#00001",
+							template = {
+								name = "Static Mi-24P-6",
+								type = "Mi-24P",
+								x = 145960.39274641,
+								y = -121920.9872872,
+								heading = 1.553343034275,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 20,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-7#00001",
+							template = {
+								name = "Static Tank 1-7",
+								type = "Tank",
+								x = 145963.36617683,
+								y = -122687.13134802,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-8#00001",
+							template = {
+								name = "Static Tank 1-8",
+								type = "Tank",
+								x = 145911.1362536,
+								y = -122730.38425319,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-9#00001",
+							template = {
+								name = "Static Tank 1-9",
+								type = "Tank",
+								x = 145848.29712721,
+								y = -122777.71762112,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-19#00001",
+							template = {
+								name = "Static FARP Tent-19",
+								type = "FARP Tent",
+								x = 145531.02360096,
+								y = -122672.95543604,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-20#00001",
+							template = {
+								name = "Static FARP Tent-20",
+								type = "FARP Tent",
+								x = 145515.27034648,
+								y = -122686.87081083,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-21#00001",
+							template = {
+								name = "Static FARP Tent-21",
+								type = "FARP Tent",
+								x = 145550.02583269,
+								y = -122661.77146934,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-22#00001",
+							template = {
+								name = "Static FARP Tent-22",
+								type = "FARP Tent",
+								x = 145497.41665807,
+								y = -122699.47341442,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-23#00001",
+							template = {
+								name = "Static FARP Tent-23",
+								type = "FARP Tent",
+								x = 145548.61473513,
+								y = -122698.94830593,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-24#00001",
+							template = {
+								name = "Static FARP Tent-24",
+								type = "FARP Tent",
+								x = 145567.78119475,
+								y = -122690.80912445,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-25#00001",
+							template = {
+								name = "Static FARP Tent-25",
+								type = "FARP Tent",
+								x = 145530.23593824,
+								y = -122711.28835528,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-26#00001",
+							template = {
+								name = "Static FARP Tent-26",
+								type = "FARP Tent",
+								x = 145510.54437014,
+								y = -122724.1535131,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+					},
+				},
 			},
 			reinforcements = {
 				{
@@ -2155,21 +2736,21 @@ MissionDb = {
 				{ name = "DW RED GROUND 10-3" },
 				{ name = "DW RED GROUND 10-4" },
 				{ name = "DW RED GROUND 10-5" },
-				{ name = "RED SAM Rapier DW 3" },
-				{ name = "RED SAM Rapier DW 3-1" },
 				{ name = "DWRED GROUND 10-1" },
 				{ name = "DWRED GROUND 10-2" },
 				{ name = "RED AIR DEFENSE BATTERY C RG 149-1" },
+				{ name = "RED EWR 2-1" },
+				{ name = "RED EWR 2-2" },
+				{ name = "RED EWR 2-3" },
+				{ name = "RED EWR 2-4" },
 				{ name = "RED GROUND 1-1" },
 				{ name = "RED GROUND 1-2" },
 				{ name = "RED GROUND 1-3" },
 				{ name = "RED GROUND 1-4" },
 				{ name = "RED GROUND 1-5" },
 				{ name = "RED GROUND 1-6" },
-				{ name = "RED EWR 2-1" },
-				{ name = "RED EWR 2-2" },
-				{ name = "RED EWR 2-3" },
-				{ name = "RED EWR 2-4" },
+				{ name = "RED SAM Rapier DW 3" },
+				{ name = "RED SAM Rapier DW 3-1" },
 			},
 			shipGroups = {
 				{ name = "Naval-1" },
@@ -2743,6 +3324,45 @@ MissionDb = {
 					},
 				}
 			},
+			{
+				name = "FOB Yes Minister",
+				warehouse = "FOB Yes Minister Airwing Warehouse#00001",
+				airbase = "FOB Yes Minister Farp#00001",
+				squadrons = {
+					{
+						name = "Yes Minister 1",
+						templateGroupName = "RED FOB Yes Minister Yes Minister 1 Mi-26",
+						initialInventory = 99,
+						capabilities = {
+							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
+						},
+						livery = "Russia_VVS_Grey",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Yes Minister Yes Minister 1 Mi-26 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
+							},
+						}
+					},
+					{
+						name = "Yes Minister 2",
+						templateGroupName = "RED FOB Yes Minister Yes Minister 2 Mi-24P",
+						initialInventory = 1,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "Russian Air Force",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Yes Minister Yes Minister 2 Mi-24P LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+				}
+			},
 		},
 		brigades = {
 			{
@@ -2760,6 +3380,28 @@ MissionDb = {
 					{
 						name = "1GW-Anglo-3",
 						templateGroupName = "RED 1st Anglo 1GW-Anglo-3",
+						initialInventory = 1,
+						capabilities = {
+							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
+						},
+					},
+				}
+			},
+			{
+				name = "FOB Yes Minister",
+				warehouse = "FOB Yes Minister Brigade Warehouse#00001",
+				platoons = {
+					{
+						name = "FOB Yes Minister 1",
+						templateGroupName = "RED FOB Yes Minister FOB Yes Minister 1",
+						initialInventory = 3,
+						capabilities = {
+							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
+						},
+					},
+					{
+						name = "FOB Yes Minister 2",
+						templateGroupName = "RED FOB Yes Minister FOB Yes Minister 2",
 						initialInventory = 1,
 						capabilities = {
 							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
