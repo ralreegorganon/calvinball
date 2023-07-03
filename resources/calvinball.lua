@@ -416,7 +416,7 @@ local function loadState()
         if redairwingstates[airwing.name] ~= nil then
             airwing.state = redairwingstates[airwing.name]
         else
-            airwing.state = "active"
+            airwing.state = "unactivated"
         end
     end
 
@@ -424,7 +424,7 @@ local function loadState()
         if blueairwingstates[airwing.name] ~= nil then
             airwing.state = blueairwingstates[airwing.name]
         else
-            airwing.state = "active"
+            airwing.state = "unactivated"
         end
     end
 
@@ -432,7 +432,7 @@ local function loadState()
         if redbrigadestates[brigade.name] ~= nil then
             brigade.state = redbrigadestates[brigade.name]
         else
-            brigade.state = "active"
+            brigade.state = "unactivated"
         end
     end
 
@@ -440,7 +440,7 @@ local function loadState()
         if bluebrigadestates[brigade.name] ~= nil then
             brigade.state = bluebrigadestates[brigade.name]
         else
-            brigade.state = "active"
+            brigade.state = "unactivated"
         end
     end
 
@@ -1200,7 +1200,88 @@ local function spawnGroupsAtThing(thing, staticCountry)
             end
         end
     end
+end
 
+local function activateAirwings(chief, side)
+    for _, airwing in ipairs(chief.airwings) do
+        if airwing.state ~= "dead" and airwing.instance == nil then
+
+            local warehouse = UNIT:FindByName(airwing.warehouse)
+            if warehouse == nil then
+                warehouse = STATIC:FindByName(airwing.warehouse, false)
+            end
+
+            if warehouse ~= nil then
+                airwing.instance = AIRWING:New(airwing.warehouse, airwing.name)
+
+                function airwing.instance:onafterDestroyed(From, Event, To)
+                    airwing.state = "dead"
+                    MESSAGE:New(string.format("Airwing warehouse at %s has been destroyed.", airwing.airbase), 15):ToAll()
+                end
+
+                if side == coalition.side.BLUE then
+                    function airwing.instance:OnAfterFlightOnMission(From, Event, To, Flightgroup, Mission)
+                        local text=string.format("BLUE has launched a new mission: %s.", Mission:GetType())
+                        MESSAGE:New(text, 15):ToAll()
+                    end
+                else
+                    function airwing.instance:OnAfterAirbaseCaptured(From, Event, To, Coalition)
+                        MESSAGE:New("AIRBASE CAPTURED!", 15):ToAll()
+                        if Coalition == coalition.side.BLUE then
+                            SCHEDULER:New(nil, function()
+                                airwing.state = "dead"
+                                STATIC:FindByName(airwing.warehouse):GetCoordinate():Explosion(999)
+                                local text=string.format("Friendly forces have destroyed the enemy airwing at %s.", airwing.airbase)
+                                MESSAGE:New(text, 15):ToAll()
+                            end, {}, 1)
+                        end
+                    end
+
+                    function airwing.instance:OnAfterFlightOnMission(From, Event, To, Flightgroup, Mission)
+                        if Mission:GetType() == AUFTRAG.Type.BOMBCARPET or Mission:GetType() == AUFTRAG.Type.BAI then
+                            if math.random(1, 100) <= 25 then
+                                local escortMission = AUFTRAG:NewESCORT(Flightgroup:GetGroup())
+                                MissionDb.redchief.instance:AddMission(escortMission)
+                            end
+                        end
+
+                        if Mission:GetType() == AUFTRAG.Type.AWACS then
+                            local escortMission = AUFTRAG:NewESCORT(Flightgroup:GetGroup())
+                            MissionDb.redchief.instance:AddMission(escortMission)
+                            MissionDb.samnetwork.instance:SetAwacs(Flightgroup:GetName())
+                        end
+
+                        local text=string.format("RED has launched a new mission: %s.", Mission:GetType())
+                        MESSAGE:New(text, 15):ToAll()
+                    end
+                end
+
+                for _, squadron in ipairs(airwing.squadrons) do
+                    squadron.instance = SQUADRON:New(squadron.templateGroupName, squadron.initialInventory, squadron.name)
+                    squadron.instance:SetSkill(AI.Skill.EXCELLENT)
+                    squadron.instance:SetTakeoffHot()
+
+                    -- Hacks... really we should push takeoff type to definition.
+                    if squadron.instance.aircrafttype == "Mi-26" then
+                        squadron.instance:SetTakeoffCold()
+                    end
+
+
+                    for _, capability in ipairs(squadron.capabilities) do
+                        squadron.instance:AddMissionCapability({capability.mission}, capability.performance)
+                    end
+                    squadron.instance:SetLivery(squadron.livery)
+
+                    airwing.instance:AddSquadron(squadron.instance)
+                    for _, payload in ipairs(squadron.payloads) do
+                        airwing.instance:NewPayload(GROUP:FindByName(payload.templateGroupName), -1, payload.missionTypes)
+                    end
+                end
+
+                chief.instance:AddAirwing(airwing.instance)
+            end
+        end
+    end
 end
 
 local function unlockFarpsForObjective(objective)
@@ -1249,7 +1330,7 @@ local function unlockCarriersForObjective(objective)
 
         ng:SwitchTACAN(carrier.tacan_channel)
         ng:SwitchRadio(carrier.radio)
-        
+
         if carrier.icls_channel ~= nil then
             ng:SwitchICLS(carrier.icls_channel)
         end
@@ -1273,7 +1354,7 @@ local function unlockAirbasesForObjective(objective)
     for _, airbase in ipairs(objective.airbases) do
         spawnGroupsAtThing(airbase, country.id.CJTF_BLUE)
         MissionDb.ctld.instance:AddCTLDZone(airbase.name, CTLD.CargoZoneType.LOAD, SMOKECOLOR.Blue, true, false)
-        
+
         local airbaseZone = ZONE:FindByName(airbase.name)
         MissionDb.bluechief.instance:AddBorderZone(airbaseZone)
 
@@ -1570,6 +1651,8 @@ local function startObjective(objective)
     unlockAirbasesForObjective(objective)
     unlockReinforcementsForObjective(objective)
     unlockQrfsForObjective(objective)
+    activateAirwings(MissionDb.bluechief, coalition.side.BLUE)
+    activateAirwings(MissionDb.redchief, coalition.side.RED)
 
     objective.state = "active"
 
@@ -1823,65 +1906,6 @@ local function initializeBlueChief()
 end
 
 local function initializeRedChief2()
-    for _, airwing in ipairs(MissionDb.redchief.airwings) do
-        if airwing.state == "active" then
-            airwing.instance = AIRWING:New(airwing.warehouse, airwing.name)
-
-            function airwing.instance:OnAfterAirbaseCaptured(From, Event, To, Coalition)
-                MESSAGE:New("AIRBASE CAPTURED!", 15):ToAll()
-                if Coalition == coalition.side.BLUE then
-                    SCHEDULER:New(nil, function()
-                        airwing.state = "dead"
-                        STATIC:FindByName(airwing.warehouse):GetCoordinate():Explosion(999)
-                        local text=string.format("Friendly forces have destroyed the enemy airwing at %s.", airwing.airbase)
-                        MESSAGE:New(text, 15):ToAll()
-                    end, {}, 1)
-                end
-            end
-
-            function airwing.instance:OnAfterFlightOnMission(From, Event, To, Flightgroup, Mission)
-                if Mission:GetType() == AUFTRAG.Type.BOMBCARPET or Mission:GetType() == AUFTRAG.Type.BAI then
-                    if math.random(1, 100) <= 25 then
-                        local escortMission = AUFTRAG:NewESCORT(Flightgroup:GetGroup())
-                        MissionDb.redchief.instance:AddMission(escortMission)
-                    end
-                end
-
-                if Mission:GetType() == AUFTRAG.Type.AWACS then
-                    local escortMission = AUFTRAG:NewESCORT(Flightgroup:GetGroup())
-                    MissionDb.redchief.instance:AddMission(escortMission)
-                    MissionDb.samnetwork.instance:SetAwacs(Flightgroup:GetName())
-                end
-
-                local text=string.format("RED has launched a new mission: %s.", Mission:GetType())
-                MESSAGE:New(text, 15):ToAll()
-            end
-
-            for _, squadron in ipairs(airwing.squadrons) do
-                squadron.instance = SQUADRON:New(squadron.templateGroupName, squadron.initialInventory, squadron.name)
-                squadron.instance:SetSkill(AI.Skill.EXCELLENT)
-                squadron.instance:SetTakeoffHot()
-
-                -- Hacks... really we should push takeoff type to definition.
-                if squadron.instance.aircrafttype == "Mi-26" then
-                    squadron.instance:SetTakeoffCold()
-                end
-
-
-                for _, capability in ipairs(squadron.capabilities) do
-                    squadron.instance:AddMissionCapability({capability.mission}, capability.performance)
-                end
-                squadron.instance:SetLivery(squadron.livery)
-
-                airwing.instance:AddSquadron(squadron.instance)
-                for _, payload in ipairs(squadron.payloads) do
-                    airwing.instance:NewPayload(GROUP:FindByName(payload.templateGroupName), -1, payload.missionTypes)
-                end
-            end
-            MissionDb.redchief.instance:AddAirwing(airwing.instance)
-        end
-    end
-
     for _, brigade in ipairs(MissionDb.redchief.brigades) do
         if brigade.state == "active" then
             brigade.instance = BRIGADE:New(brigade.warehouse, brigade.name)
@@ -1910,33 +1934,6 @@ local function initializeRedChief2()
 end
 
 local function initializeBlueChief2()
-    for _, airwing in ipairs(MissionDb.bluechief.airwings) do
-        if airwing.state == "active" then
-            airwing.instance = AIRWING:New(airwing.warehouse, airwing.name)
-
-            function airwing.instance:OnAfterFlightOnMission(From, Event, To, Flightgroup, Mission)
-                local text=string.format("BLUE has launched a new mission: %s.", Mission:GetType())
-                MESSAGE:New(text, 15):ToAll()
-            end
-
-            for _, squadron in ipairs(airwing.squadrons) do
-                squadron.instance = SQUADRON:New(squadron.templateGroupName, squadron.initialInventory, squadron.name)
-                squadron.instance:SetSkill(AI.Skill.EXCELLENT)
-                squadron.instance:SetTakeoffHot()
-                for _, capability in ipairs(squadron.capabilities) do
-                    squadron.instance:AddMissionCapability({capability.mission}, capability.performance)
-                end
-                squadron.instance:SetLivery(squadron.livery)
-
-                airwing.instance:AddSquadron(squadron.instance)
-                for _, payload in ipairs(squadron.payloads) do
-                    airwing.instance:NewPayload(GROUP:FindByName(payload.templateGroupName), -1, payload.missionTypes)
-                end
-            end
-            MissionDb.bluechief.instance:AddAirwing(airwing.instance)
-        end
-    end
-
     for _, brigade in ipairs(MissionDb.bluechief.brigades) do
         if brigade.state == "active" then
             brigade.instance = BRIGADE:New(brigade.warehouse, brigade.name)
@@ -1992,8 +1989,12 @@ local function initializeObjectives()
             unlockAirbasesForObjective(objective)
             unlockReinforcementsForObjective(objective)
             unlockQrfsForObjective(objective)
+            unlockQrfsForObjective(objective)
         end
     end
+
+    activateAirwings(MissionDb.bluechief, coalition.side.BLUE)
+    activateAirwings(MissionDb.redchief, coalition.side.RED)
 
     SCHEDULER:New(nil, function()
         initializeBlueChief2()
@@ -2438,3 +2439,12 @@ SCHEDULER:New(nil, calculateIndustryPercentage, {}, 60, 60)
 function DebugRandomEnemyReinforcement()
     randomEnemyReinforcement()
 end
+
+
+-- SCHEDULER:New(nil, function()
+--     local c = STATIC:FindByName("Stoney Cross Airwing Warehouse#00001"):GetCoordinate()
+--     c:Explosion(99999)
+--     c:Explosion(99999)
+--     c:Explosion(99999)
+--     c:Explosion(99999)
+-- end, {}, 500)
