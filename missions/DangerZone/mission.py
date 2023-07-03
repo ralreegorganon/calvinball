@@ -300,6 +300,43 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
                 ]
+            },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "farp": "FARP Morden Bog",
+                "farp_zone": "FARP-2",
+                "start_type": dcs.mission.StartType.Cold,
+                "airframes": [
+                    {
+                        "airframe": dcs.helicopters.Mi_24P, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation",
+                        "positions": [{"heading": 182, "x": 134272.27649971, "y": -133813.2056198}, {"heading": 135, "x": 134243.25889365, "y": -133899.86630815}, {"heading": 141, "x": 134260.57265866, "y": -133874.50258982}, {"heading": 162, "x": 134270.70798046, "y": -133842.02716095}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.Mi_8MT, "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN",
+                        "positions": [{"heading": 72, "x": 134126.49333023, "y": -133932.2170176}, {"heading": 116, "x": 134220.57033098, "y": -133917.00187938}, {"heading": 119, "x": 134191.37724306, "y": -133927.48300303}, {"heading": 106, "x": 134160.89380915, "y": -133934.71238913}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.UH_1H, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972",
+                        "positions": [{"heading": 257, "x": 134146.07311127, "y": -133694.78477178}, {"heading": 247, "x": 134199.57900546, "y": -133702.20729606}, {"heading": 255, "x": 134183.60170744, "y": -133696.16863224}, {"heading": 251, "x": 134166.11474345, "y": -133694.53316079}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
+                        "positions": [{"heading": 30, "x": 134036.01828826, "y": -133859.12402073}, {"heading": 63, "x": 134098.7786646, "y": -133924.25678243}, {"heading": 45, "x": 134074.4668232, "y": -133908.44619777}, {"heading": 40, "x": 134051.3309574, "y": -133887.37697365}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.SA342L, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2",
+                        "positions": [{"heading": 225, "x": 134250.31723026, "y": -133739.87734505}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.SA342M, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet",
+                        "positions": [{"heading": 234, "x": 134234.23990799, "y": -133724.5842824}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf",
+                        "positions": [{"heading": 208, "x": 134271.29617518, "y": -133782.22736469}, {"heading": 212, "x": 134262.27718951, "y": -133759.67990053}],
+                        "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
+                    },
+                ]
             }
         ]
 

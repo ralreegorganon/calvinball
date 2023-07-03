@@ -22,6 +22,39 @@
             "x": 111546.40324635,
             "y": -157085.40888838
         },
+        "MASH Tent 1-2": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.4803338512622,
+            "name": "MASH Tent 1-2",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 134163.1041662,
+            "y": -133779.71931947
+        },
+        "MASH Tent 1-3": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.6302848441482,
+            "name": "MASH Tent 1-3",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 134168.03930474,
+            "y": -133833.81129046
+        },
+        "Static Container 20ft-1": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-1",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 134167.55295994,
+            "y": -133825.70554385
+        },
         "Static Container 20ft-2": {
             "canCargo": false,
             "category": "Fortifications",
@@ -54,6 +87,72 @@
             "type": "container_20ft",
             "x": 111546.24113142,
             "y": -157095.13578432
+        },
+        "Static Container 20ft-5": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-5",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 134174.8481319,
+            "y": -133839.97165789
+        },
+        "Static Container 20ft-6": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-6",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 134167.87718981,
+            "y": -133843.5381864
+        },
+        "Static FARP Tent-13": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.4803338512622,
+            "name": "Static FARP Tent-13",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 134141.81060332,
+            "y": -133786.11861872
+        },
+        "Static FARP Tent-14": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.5707963267949,
+            "name": "Static FARP Tent-14",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 134133.8706891,
+            "y": -133831.58274793
+        },
+        "Static FARP Tent-15": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.5707963267949,
+            "name": "Static FARP Tent-15",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 134123.35196155,
+            "y": -133831.68764922
+        },
+        "Static FARP Tent-18": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.5707963267949,
+            "name": "Static FARP Tent-18",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 134113.22131582,
+            "y": -133831.59384695
         },
         "Static FARP Tent-5": {
             "canCargo": false,
@@ -143,6 +242,60 @@
             "x": 111430.33606492,
             "y": -157070.47194771
         },
+        "Static Invisible FARP-5": {
+            "canCargo": false,
+            "category": "Heliports",
+            "heading": 0.0,
+            "name": "Static Invisible FARP-5",
+            "rate": 100,
+            "shape_name": "invisiblefarp",
+            "type": "Invisible FARP",
+            "x": 134151.94962305,
+            "y": -133719.10980194
+        },
+        "Static Invisible FARP-6": {
+            "canCargo": false,
+            "category": "Heliports",
+            "heading": 0.0,
+            "name": "Static Invisible FARP-6",
+            "rate": 100,
+            "shape_name": "invisiblefarp",
+            "type": "Invisible FARP",
+            "x": 134251.77638295,
+            "y": -133812.16713966
+        },
+        "Static Invisible FARP-7": {
+            "canCargo": false,
+            "category": "Heliports",
+            "heading": 0.0,
+            "name": "Static Invisible FARP-7",
+            "rate": 100,
+            "shape_name": "invisiblefarp",
+            "type": "Invisible FARP",
+            "x": 134153.99231949,
+            "y": -133908.71566442
+        },
+        "Static Invisible FARP-8": {
+            "canCargo": false,
+            "category": "Heliports",
+            "heading": 0.0,
+            "name": "Static Invisible FARP-8",
+            "rate": 100,
+            "shape_name": "invisiblefarp",
+            "type": "Invisible FARP",
+            "x": 134051.97212331,
+            "y": -133818.87434979
+        },
+        "Static Watch tower armed-1": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.6302848441482,
+            "name": "Static Watch tower armed-1",
+            "rate": 10,
+            "type": "house2arm",
+            "x": 134164.33761095,
+            "y": -133809.19957992
+        },
         "Static Watch tower armed-3": {
             "canCargo": false,
             "category": "Fortifications",
@@ -163,6 +316,17 @@
             "type": "Windsock",
             "x": 111531.39553305,
             "y": -157070.01490128
+        },
+        "Static Windsock-2": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "Static Windsock-2",
+            "rate": 3,
+            "shape_name": "H-Windsock_RW",
+            "type": "Windsock",
+            "x": 134153.03159144,
+            "y": -133818.41730336
         }
     },
     "neutrals": {},
@@ -175,8 +339,8 @@
             "rate": 100,
             "shape_name": "SkladC",
             "type": ".Ammunition depot",
-            "x": 136526.44914383,
-            "y": -172804.57008887
+            "x": 136514.38099047,
+            "y": -172813.49896681
         },
         "Anglo Brigade Warehouse": {
             "canCargo": false,
@@ -597,6 +761,28 @@
             "type": "FARP Tent",
             "x": 136339.29383933,
             "y": -173456.60772304
+        },
+        "Static FARP Tent-16": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.0594885173533,
+            "name": "Static FARP Tent-16",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 127114.74659466,
+            "y": -132010.77636887
+        },
+        "Static FARP Tent-17": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.0245819323134,
+            "name": "Static FARP Tent-17",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 127093.56699148,
+            "y": -132024.03230612
         },
         "Static FARP Tent-2": {
             "canCargo": false,
