@@ -93,8 +93,12 @@ class Clients:
 
                         fg.set_client()
 
-                        fg.points[0].type = "TakeOffGround"
-                        fg.points[0].action = dcs.point.PointAction.FromGroundArea
+                        if start_type == dcs.mission.StartType.Warm:
+                            fg.points[0].type = "TakeOffGroundHot"
+                            fg.points[0].action = dcs.point.PointAction.FromGroundAreaHot
+                        else:
+                            fg.points[0].type = "TakeOffGround"
+                            fg.points[0].action = dcs.point.PointAction.FromGroundArea
                         fg.units[0].heading = pos["heading"]
 
                         if "loadout" in a:
