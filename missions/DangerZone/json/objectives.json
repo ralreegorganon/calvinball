@@ -193,10 +193,10 @@
                 "Static Fueltank-4",
                 "Static Fueltank-5",
                 "Static Fueltank-6",
+                "Static Oiltank-6",
                 "Static Oiltank-3",
                 "Static Oiltank-4",
-                "Static Oiltank-5",
-                "Static Oiltank-6"
+                "Static Oiltank-5"
             ],
             "strand": "STRAND-1",
             "tasks": [],
@@ -490,7 +490,7 @@
                 }
             ],
             "x": 148472.95314959,
-            "y": -96521.278909026
+            "y": -96521.278909025
         },
         "OBJ-7": {
             "airbases": [],
@@ -536,6 +536,7 @@
                 "Static Bunker 1-4",
                 "Static Coach Platform-1",
                 "Static Coach Platform-2",
+                "Static Coach Platform-3",
                 "Static Flatcar-1",
                 "Static Flatcar-2",
                 "Static Flatcar-3",
@@ -543,13 +544,12 @@
                 "Static Freight Van-2",
                 "Static Loco ES44AH-1",
                 "Static Loco ES44AH-2",
+                "Static Tank Car blue-3",
                 "Static Tank Car blue-4",
                 "Static Well Car-1",
                 "Static Well Car-2",
-                "Static Coach Platform-3",
                 "Static Tank Car blue-1",
-                "Static Tank Car blue-2",
-                "Static Tank Car blue-3"
+                "Static Tank Car blue-2"
             ],
             "strand": "STRAND-1",
             "tasks": [],
