@@ -1143,7 +1143,7 @@ local function spawnGroupsAtThing(thing, staticCountry)
                 if skipGroupName[group.name] ~= true then
                     group.state = "active"
                     local g = GROUP:FindByName(group.name)
-                    if not g:IsActive() then
+                    if g and not g:IsActive() then
                         local gUnits = g:GetUnits()
                         for _, gUnit in ipairs(gUnits) do
                             if MissionDb.units[gUnit:Name()] == "dead" then
