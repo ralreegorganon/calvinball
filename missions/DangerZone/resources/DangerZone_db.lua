@@ -5662,6 +5662,10 @@ MissionDb = {
 				{
 					name = "AIRBASE-1",
 					vehicleGroups = {
+						{ name = "FARP MASH 1-6" },
+						{ name = "FARP MASH 1-7" },
+						{ name = "FARP MASH 1-8" },
+						{ name = "FARP MASH 1-9" },
 					},
 					shipGroups = {
 					},
@@ -5673,6 +5677,10 @@ MissionDb = {
 				{
 					name = "AIRBASE-3",
 					vehicleGroups = {
+						{ name = "FARP MASH 1-10" },
+						{ name = "FARP MASH 1-11" },
+						{ name = "FARP MASH 1-12" },
+						{ name = "FARP MASH 1-13" },
 					},
 					shipGroups = {
 					},
@@ -5684,6 +5692,10 @@ MissionDb = {
 				{
 					name = "AIRBASE-4",
 					vehicleGroups = {
+						{ name = "FARP MASH 1" },
+						{ name = "FARP MASH 1-3" },
+						{ name = "FARP MASH 1-4" },
+						{ name = "FARP MASH 1-5" },
 					},
 					shipGroups = {
 					},
