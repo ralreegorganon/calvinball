@@ -193,10 +193,10 @@
                 "Static Fueltank-4",
                 "Static Fueltank-5",
                 "Static Fueltank-6",
-                "Static Oiltank-6",
                 "Static Oiltank-3",
                 "Static Oiltank-4",
-                "Static Oiltank-5"
+                "Static Oiltank-5",
+                "Static Oiltank-6"
             ],
             "strand": "STRAND-1",
             "tasks": [],
@@ -504,18 +504,6 @@
             "farps": [],
             "label": "Hoof Arted",
             "nodes": {
-                "NODE-21": {
-                    "label": "Gaffer Tape",
-                    "radius": 260,
-                    "x": 138826.36737073,
-                    "y": -118505.50471735
-                },
-                "NODE-22": {
-                    "label": "Fartillery",
-                    "radius": 260,
-                    "x": 136845.93223725,
-                    "y": -109091.61945391
-                },
                 "NODE-7": {
                     "label": "Choo Choo",
                     "radius": 260,
@@ -544,12 +532,12 @@
                 "Static Freight Van-2",
                 "Static Loco ES44AH-1",
                 "Static Loco ES44AH-2",
+                "Static Tank Car blue-1",
+                "Static Tank Car blue-2",
                 "Static Tank Car blue-3",
                 "Static Tank Car blue-4",
                 "Static Well Car-1",
-                "Static Well Car-2",
-                "Static Tank Car blue-1",
-                "Static Tank Car blue-2"
+                "Static Well Car-2"
             ],
             "strand": "STRAND-1",
             "tasks": [],
@@ -617,26 +605,92 @@
             "completeSound": "",
             "component": "objective",
             "farps": [],
-            "label": "Foothold",
+            "label": "North Sicily",
             "nodes": {
+                "NODE-21": {
+                    "label": "Down in it",
+                    "radius": 359.9688,
+                    "x": 123546.996345,
+                    "y": -72975.941222888
+                },
+                "NODE-22": {
+                    "label": "Rhotacism Reprogramming",
+                    "radius": 859.8408,
+                    "x": 128410.90792802,
+                    "y": -70147.432555313
+                },
+                "NODE-23": {
+                    "label": "Up Above in",
+                    "radius": 459.9432,
+                    "x": 128251.87162803,
+                    "y": -81833.246731587
+                },
                 "NODE-9": {
-                    "label": "Doing It Wrong",
-                    "radius": 260,
-                    "x": 127678.02350464,
-                    "y": -78574.67410768
+                    "label": "Riverside Stroll",
+                    "radius": 559.9176,
+                    "x": 133044.19311866,
+                    "y": -74918.346664956
                 }
             },
             "qrfs": [],
             "reinforcements": [],
-            "ship_groups": [],
+            "ship_groups": [
+                "RED RG 8-1 FK",
+                "RED RG 8-2 FK",
+                "RED RG 8-3 FK",
+                "RED RG 8-4 FK",
+                "RED RG 8-5 FK",
+                "RED RG 8-6 FK"
+            ],
             "static_groups": [],
             "strand": "STRAND-1",
             "tasks": [],
-            "vehicle_groups": [],
+            "vehicle_groups": [
+                "RED EWR 8-1 FK",
+                "RED EWR 8-2 FK",
+                "RED EWR 8-3 FK",
+                "RED GROUND 8-1 FK",
+                "RED GROUND 8-10 FK",
+                "RED GROUND 8-11 FK",
+                "RED GROUND 8-12 FK",
+                "RED GROUND 8-13 FK",
+                "RED GROUND 8-14 FK",
+                "RED GROUND 8-15 FK",
+                "RED GROUND 8-16 FK",
+                "RED GROUND 8-17 FK",
+                "RED GROUND 8-18 FK",
+                "RED GROUND 8-19 FK",
+                "RED GROUND 8-2 FK",
+                "RED GROUND 8-20 FK",
+                "RED GROUND 8-21 FK",
+                "RED GROUND 8-22 FK",
+                "RED GROUND 8-23 FK",
+                "RED GROUND 8-3 FK",
+                "RED GROUND 8-4 FK",
+                "RED GROUND 8-5 FK",
+                "RED GROUND 8-6 FK",
+                "RED GROUND 8-7 FK",
+                "RED GROUND 8-8 FK",
+                "RED GROUND 8-9 FK",
+                "RED GROUND 9-8 FK",
+                "RED SAM SA-8 8-1 FK",
+                "RED SAM SA-3 8-1 FK",
+                "RED SAM SA-3 8-2 FK",
+                "RED SAM SA-3 8-3 FK",
+                "RED SAM SA-5 8-1 FK",
+                "RED SAM SA-9 8-1 FK",
+                "RED EWR 8-4 FK",
+                "RED GROUND 8-24 FK",
+                "RED GROUND 8-25 FK",
+                "RED GROUND 8-26 FK",
+                "RED GROUND 8-27 FK",
+                "RED GROUND 8-28 FK",
+                "RED GROUND 8-29 FK"
+            ],
             "vertices": [
                 {
-                    "x": 118989.26408205,
-                    "y": -76250.422589601
+                    "x": 117648.44571587,
+                    "y": -73081.809671939
                 },
                 {
                     "x": 130984.04420048,
@@ -651,8 +705,8 @@
                     "y": -98466.131214412
                 }
             ],
-            "x": 130881.46556748,
-            "y": -75287.343675487
+            "x": 130546.26097594,
+            "y": -74495.190446072
         }
     },
     "strands": {

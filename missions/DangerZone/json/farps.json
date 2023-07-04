@@ -38,6 +38,11 @@
         "radius": 137.16,
         "ship_groups": [],
         "static_groups": [
+            "MASH Tent 1-2",
+            "MASH Tent 1-3",
+            "Static Container 20ft-1",
+            "Static Container 20ft-5",
+            "Static Container 20ft-6",
             "Static FARP Tent-13",
             "Static FARP Tent-14",
             "Static FARP Tent-15",
@@ -46,19 +51,14 @@
             "Static Invisible FARP-6",
             "Static Invisible FARP-7",
             "Static Invisible FARP-8",
-            "MASH Tent 1-2",
-            "MASH Tent 1-3",
-            "Static Container 20ft-1",
-            "Static Container 20ft-5",
-            "Static Container 20ft-6",
-            "Static Windsock-2",
-            "Static Watch tower armed-1"
+            "Static Watch tower armed-1",
+            "Static Windsock-2"
         ],
         "vehicle_groups": [
-            "FARP Support 1-6",
             "FARP MASH 1-1",
+            "FARP Support 1-4",
             "FARP Support 1-5",
-            "FARP Support 1-4"
+            "FARP Support 1-6"
         ],
         "x": 134151.8137747,
         "y": -133818.48342646

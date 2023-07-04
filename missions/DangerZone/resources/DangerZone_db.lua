@@ -2360,21 +2360,6 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static Oiltank-6#00001",
-					template = {
-						name = "Static Oiltank-6",
-						type = "oiltank_cargo",
-						x = 126107.87607706,
-						y = -160997.08357874,
-						heading = 3.8222710618676,
-						category = "Cargos",
-						canCargo = true,
-						shape_name = "oiltank_cargo",
-						rate = 100,
-						dead = false
-					}
-				},
-				{
 					name = "Static Oiltank-3#00001",
 					template = {
 						name = "Static Oiltank-3",
@@ -2412,6 +2397,21 @@ MissionDb = {
 						x = 126106.12021611,
 						y = -161008.62209352,
 						heading = 3.8746309394274,
+						category = "Cargos",
+						canCargo = true,
+						shape_name = "oiltank_cargo",
+						rate = 100,
+						dead = false
+					}
+				},
+				{
+					name = "Static Oiltank-6#00001",
+					template = {
+						name = "Static Oiltank-6",
+						type = "oiltank_cargo",
+						x = 126107.87607706,
+						y = -160997.08357874,
+						heading = 3.8222710618676,
 						category = "Cargos",
 						canCargo = true,
 						shape_name = "oiltank_cargo",
@@ -2861,14 +2861,89 @@ MissionDb = {
 				{
 					name = "FARP-2",
 					vehicleGroups = {
-						{ name = "FARP Support 1-6" },
 						{ name = "FARP MASH 1-1" },
-						{ name = "FARP Support 1-5" },
 						{ name = "FARP Support 1-4" },
+						{ name = "FARP Support 1-5" },
+						{ name = "FARP Support 1-6" },
 					},
 					shipGroups = {
 					},
 					staticGroups = {
+						{
+							name = "MASH Tent 1-2#00001",
+							template = {
+								name = "MASH Tent 1-2",
+								type = "FARP Tent",
+								x = 134163.1041662,
+								y = -133779.71931947,
+								heading = 5.4803338512622,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "MASH Tent 1-3#00001",
+							template = {
+								name = "MASH Tent 1-3",
+								type = "FARP Tent",
+								x = 134168.03930474,
+								y = -133833.81129046,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-1#00001",
+							template = {
+								name = "Static Container 20ft-1",
+								type = "container_20ft",
+								x = 134167.55295994,
+								y = -133825.70554385,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-5#00001",
+							template = {
+								name = "Static Container 20ft-5",
+								type = "container_20ft",
+								x = 134174.8481319,
+								y = -133839.97165789,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-6#00001",
+							template = {
+								name = "Static Container 20ft-6",
+								type = "container_20ft",
+								x = 134167.87718981,
+								y = -133843.5381864,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
 						{
 							name = "Static FARP Tent-13#00001",
 							template = {
@@ -2990,77 +3065,17 @@ MissionDb = {
 							}
 						},
 						{
-							name = "MASH Tent 1-2#00001",
+							name = "Static Watch tower armed-1#00001",
 							template = {
-								name = "MASH Tent 1-2",
-								type = "FARP Tent",
-								x = 134163.1041662,
-								y = -133779.71931947,
-								heading = 5.4803338512622,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "PalatkaB",
-								rate = 50,
-								dead = false
-							}
-						},
-						{
-							name = "MASH Tent 1-3#00001",
-							template = {
-								name = "MASH Tent 1-3",
-								type = "FARP Tent",
-								x = 134168.03930474,
-								y = -133833.81129046,
+								name = "Static Watch tower armed-1",
+								type = "house2arm",
+								x = 134164.33761095,
+								y = -133809.19957992,
 								heading = 3.6302848441482,
 								category = "Fortifications",
 								canCargo = false,
-								shape_name = "PalatkaB",
-								rate = 50,
-								dead = false
-							}
-						},
-						{
-							name = "Static Container 20ft-1#00001",
-							template = {
-								name = "Static Container 20ft-1",
-								type = "container_20ft",
-								x = 134167.55295994,
-								y = -133825.70554385,
-								heading = 5.0265482457437,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "container_20ft",
-								rate = 1,
-								dead = false
-							}
-						},
-						{
-							name = "Static Container 20ft-5#00001",
-							template = {
-								name = "Static Container 20ft-5",
-								type = "container_20ft",
-								x = 134174.8481319,
-								y = -133839.97165789,
-								heading = 5.0265482457437,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "container_20ft",
-								rate = 1,
-								dead = false
-							}
-						},
-						{
-							name = "Static Container 20ft-6#00001",
-							template = {
-								name = "Static Container 20ft-6",
-								type = "container_20ft",
-								x = 134167.87718981,
-								y = -133843.5381864,
-								heading = 5.0265482457437,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "container_20ft",
-								rate = 1,
+								shape_name = "",
+								rate = 10,
 								dead = false
 							}
 						},
@@ -3076,21 +3091,6 @@ MissionDb = {
 								canCargo = false,
 								shape_name = "H-Windsock_RW",
 								rate = 3,
-								dead = false
-							}
-						},
-						{
-							name = "Static Watch tower armed-1#00001",
-							template = {
-								name = "Static Watch tower armed-1",
-								type = "house2arm",
-								x = 134164.33761095,
-								y = -133809.19957992,
-								heading = 3.6302848441482,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "",
-								rate = 10,
 								dead = false
 							}
 						},
@@ -5251,8 +5251,6 @@ MissionDb = {
 				"CAP-4",
 			},
 			nodes = {
-				{ name = "NODE-21" },
-				{ name = "NODE-22" },
 				{ name = "NODE-7" },
 			},
 			tasks = {
@@ -5514,6 +5512,36 @@ MissionDb = {
 					}
 				},
 				{
+					name = "Static Tank Car blue-1#00001",
+					template = {
+						name = "Static Tank Car blue-1",
+						type = "Coach a tank blue",
+						x = 135454.78048396,
+						y = -125048.89231174,
+						heading = 1.4835298641952,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Tank Car blue-2#00001",
+					template = {
+						name = "Static Tank Car blue-2",
+						type = "Coach a tank blue",
+						x = 135453.37383789,
+						y = -125060.00481569,
+						heading = 1.4311699866353,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
 					name = "Static Tank Car blue-3#00001",
 					template = {
 						name = "Static Tank Car blue-3",
@@ -5573,36 +5601,6 @@ MissionDb = {
 						dead = false
 					}
 				},
-				{
-					name = "Static Tank Car blue-1#00001",
-					template = {
-						name = "Static Tank Car blue-1",
-						type = "Coach a tank blue",
-						x = 135454.78048396,
-						y = -125048.89231174,
-						heading = 1.4835298641952,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
-					name = "Static Tank Car blue-2#00001",
-					template = {
-						name = "Static Tank Car blue-2",
-						type = "Coach a tank blue",
-						x = 135453.37383789,
-						y = -125060.00481569,
-						heading = 1.4311699866353,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
 			}
 		},
 		{
@@ -5614,6 +5612,9 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
+				{ name = "NODE-21" },
+				{ name = "NODE-22" },
+				{ name = "NODE-23" },
 				{ name = "NODE-9" },
 			},
 			tasks = {
@@ -5662,8 +5663,54 @@ MissionDb = {
 			reinforcements = {
 			},
 			vehicleGroups = {
+				{ name = "RED EWR 8-1 FK" },
+				{ name = "RED EWR 8-2 FK" },
+				{ name = "RED EWR 8-3 FK" },
+				{ name = "RED GROUND 8-1 FK" },
+				{ name = "RED GROUND 8-10 FK" },
+				{ name = "RED GROUND 8-11 FK" },
+				{ name = "RED GROUND 8-12 FK" },
+				{ name = "RED GROUND 8-13 FK" },
+				{ name = "RED GROUND 8-14 FK" },
+				{ name = "RED GROUND 8-15 FK" },
+				{ name = "RED GROUND 8-16 FK" },
+				{ name = "RED GROUND 8-17 FK" },
+				{ name = "RED GROUND 8-18 FK" },
+				{ name = "RED GROUND 8-19 FK" },
+				{ name = "RED GROUND 8-2 FK" },
+				{ name = "RED GROUND 8-20 FK" },
+				{ name = "RED GROUND 8-21 FK" },
+				{ name = "RED GROUND 8-22 FK" },
+				{ name = "RED GROUND 8-23 FK" },
+				{ name = "RED GROUND 8-3 FK" },
+				{ name = "RED GROUND 8-4 FK" },
+				{ name = "RED GROUND 8-5 FK" },
+				{ name = "RED GROUND 8-6 FK" },
+				{ name = "RED GROUND 8-7 FK" },
+				{ name = "RED GROUND 8-8 FK" },
+				{ name = "RED GROUND 8-9 FK" },
+				{ name = "RED GROUND 9-8 FK" },
+				{ name = "RED SAM SA-8 8-1 FK" },
+				{ name = "RED SAM SA-3 8-1 FK" },
+				{ name = "RED SAM SA-3 8-2 FK" },
+				{ name = "RED SAM SA-3 8-3 FK" },
+				{ name = "RED SAM SA-5 8-1 FK" },
+				{ name = "RED SAM SA-9 8-1 FK" },
+				{ name = "RED EWR 8-4 FK" },
+				{ name = "RED GROUND 8-24 FK" },
+				{ name = "RED GROUND 8-25 FK" },
+				{ name = "RED GROUND 8-26 FK" },
+				{ name = "RED GROUND 8-27 FK" },
+				{ name = "RED GROUND 8-28 FK" },
+				{ name = "RED GROUND 8-29 FK" },
 			},
 			shipGroups = {
+				{ name = "RED RG 8-1 FK" },
+				{ name = "RED RG 8-2 FK" },
+				{ name = "RED RG 8-3 FK" },
+				{ name = "RED RG 8-4 FK" },
+				{ name = "RED RG 8-5 FK" },
+				{ name = "RED RG 8-6 FK" },
 			},
 			staticGroups = {
 			}
