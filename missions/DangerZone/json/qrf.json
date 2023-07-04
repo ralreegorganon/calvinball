@@ -196,12 +196,12 @@
             "Static Military staff-4",
             "Static Military staff-5",
             "Static Military staff-6",
-            "Static Small warehouse 3-3",
-            "Static Small warehouse 3-4",
             "Static Tank 1-4",
             "Static Tank 1-5",
             "Static Tank 1-6",
+            "Static Small warehouse 3-3",
             "Static Tank 1-7",
+            "Static Small warehouse 3-4",
             "Static Tank 1-8",
             "Static Tank 1-9"
         ],
@@ -319,7 +319,7 @@
                 "y": -87090.291783165
             }
         ],
-        "x": 141223.30897804,
+        "x": 141223.30897803,
         "y": -85435.722236162
     },
     "QRF-15": {
@@ -599,6 +599,43 @@
         ],
         "x": 157117.21183467,
         "y": -120110.11908347
+    },
+    "QRF-19": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [
+            "RED QRF 1",
+            "RED QRF 2",
+            "RED QRF 3",
+            "RED QRF 4",
+            "RED QRF 5",
+            "RED QRF 6",
+            "RED QRF 7",
+            "RED QRF 8"
+        ],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": 153821.27230296,
+                "y": -84656.58593413
+            },
+            {
+                "x": 153640.47796436,
+                "y": -84791.712498616
+            },
+            {
+                "x": 153838.78870946,
+                "y": -85091.993753031
+            },
+            {
+                "x": 154000.81546966,
+                "y": -84975.634766945
+            }
+        ],
+        "x": 153825.33861161,
+        "y": -84878.981738181
     },
     "QRF-2": {
         "component": "qrf",

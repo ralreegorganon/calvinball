@@ -2360,6 +2360,21 @@ MissionDb = {
 					}
 				},
 				{
+					name = "Static Oiltank-6#00001",
+					template = {
+						name = "Static Oiltank-6",
+						type = "oiltank_cargo",
+						x = 126107.87607706,
+						y = -160997.08357874,
+						heading = 3.8222710618676,
+						category = "Cargos",
+						canCargo = true,
+						shape_name = "oiltank_cargo",
+						rate = 100,
+						dead = false
+					}
+				},
+				{
 					name = "Static Oiltank-3#00001",
 					template = {
 						name = "Static Oiltank-3",
@@ -2397,21 +2412,6 @@ MissionDb = {
 						x = 126106.12021611,
 						y = -161008.62209352,
 						heading = 3.8746309394274,
-						category = "Cargos",
-						canCargo = true,
-						shape_name = "oiltank_cargo",
-						rate = 100,
-						dead = false
-					}
-				},
-				{
-					name = "Static Oiltank-6#00001",
-					template = {
-						name = "Static Oiltank-6",
-						type = "oiltank_cargo",
-						x = 126107.87607706,
-						y = -160997.08357874,
-						heading = 3.8222710618676,
 						category = "Cargos",
 						canCargo = true,
 						shape_name = "oiltank_cargo",
@@ -3603,36 +3603,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Small warehouse 3-3#00001",
-							template = {
-								name = "Static Small warehouse 3-3",
-								type = "Small werehouse 3",
-								x = 145514.5411652,
-								y = -122277.80265483,
-								heading = 3.9444441095072,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "s3",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Small warehouse 3-4#00001",
-							template = {
-								name = "Static Small warehouse 3-4",
-								type = "Small werehouse 3",
-								x = 145493.37454114,
-								y = -122300.11342074,
-								heading = 3.9618974020271,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "s3",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
 							name = "Static Tank 1-4#00001",
 							template = {
 								name = "Static Tank 1-4",
@@ -3678,6 +3648,21 @@ MissionDb = {
 							}
 						},
 						{
+							name = "Static Small warehouse 3-3#00001",
+							template = {
+								name = "Static Small warehouse 3-3",
+								type = "Small werehouse 3",
+								x = 145514.5411652,
+								y = -122277.80265483,
+								heading = 3.9444441095072,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "s3",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
 							name = "Static Tank 1-7#00001",
 							template = {
 								name = "Static Tank 1-7",
@@ -3688,6 +3673,21 @@ MissionDb = {
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Small warehouse 3-4#00001",
+							template = {
+								name = "Static Small warehouse 3-4",
+								type = "Small werehouse 3",
+								x = 145493.37454114,
+								y = -122300.11342074,
+								heading = 3.9618974020271,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "s3",
 								rate = 100,
 								dead = false
 							}
@@ -5175,6 +5175,8 @@ MissionDb = {
 				"CAP-4",
 			},
 			nodes = {
+				{ name = "NODE-24" },
+				{ name = "NODE-25" },
 				{ name = "NODE-8" },
 			},
 			tasks = {
@@ -5186,12 +5188,47 @@ MissionDb = {
 			carriers = {
 			},
 			qrfs = {
+				{
+					name = "QRF-19",
+					spawnGroups = {
+						{ name = "RED QRF 1" },
+						{ name = "RED QRF 2" },
+						{ name = "RED QRF 3" },
+						{ name = "RED QRF 4" },
+						{ name = "RED QRF 5" },
+						{ name = "RED QRF 6" },
+						{ name = "RED QRF 7" },
+						{ name = "RED QRF 8" },
+					},
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					},
+				},
 			},
 			reinforcements = {
 			},
 			vehicleGroups = {
+				{ name = "RED SAM SA-2 RG 234-3" },
+				{ name = "RED SAM SA-2 RG 234-4" },
+				{ name = "RED SAM SA-2 RG 234-5" },
+				{ name = "RED SAM SA-2 RG 234-6" },
+				{ name = "RED SAM SA-8 RG 240-5" },
+				{ name = "RED SAM SA-8 RG 240-6" },
+				{ name = "RED SAM SA-8 RG 240-7" },
+				{ name = "RED SAM SA-6 238-5" },
+				{ name = "RED SAM SA-6 238-6" },
+				{ name = "RED SAM SA-6 238-7" },
+				{ name = "RED AIR DEFENSE BATTERY C RG 246-3" },
+				{ name = "RED AIR DEFENSE BATTERY C RG 246-4" },
+				{ name = "RED AIR DEFENSE BATTERY C RG 246-5" },
+				{ name = "RED AIR DEFENSE BATTERY A 242-3" },
+				{ name = "RED AIR DEFENSE BATTERY A 242-4" },
 			},
 			shipGroups = {
+				{ name = "RED RG 8-2 FK-1" },
 			},
 			staticGroups = {
 				{
@@ -5512,36 +5549,6 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static Tank Car blue-1#00001",
-					template = {
-						name = "Static Tank Car blue-1",
-						type = "Coach a tank blue",
-						x = 135454.78048396,
-						y = -125048.89231174,
-						heading = 1.4835298641952,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
-					name = "Static Tank Car blue-2#00001",
-					template = {
-						name = "Static Tank Car blue-2",
-						type = "Coach a tank blue",
-						x = 135453.37383789,
-						y = -125060.00481569,
-						heading = 1.4311699866353,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
 					name = "Static Tank Car blue-3#00001",
 					template = {
 						name = "Static Tank Car blue-3",
@@ -5594,6 +5601,36 @@ MissionDb = {
 						x = 135459.18797498,
 						y = -125009.5062218,
 						heading = 1.4835298641952,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Tank Car blue-1#00001",
+					template = {
+						name = "Static Tank Car blue-1",
+						type = "Coach a tank blue",
+						x = 135454.78048396,
+						y = -125048.89231174,
+						heading = 1.4835298641952,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Tank Car blue-2#00001",
+					template = {
+						name = "Static Tank Car blue-2",
+						type = "Coach a tank blue",
+						x = 135453.37383789,
+						y = -125060.00481569,
+						heading = 1.4311699866353,
 						category = "",
 						canCargo = false,
 						shape_name = "",
@@ -5666,6 +5703,7 @@ MissionDb = {
 				{ name = "RED EWR 8-1 FK" },
 				{ name = "RED EWR 8-2 FK" },
 				{ name = "RED EWR 8-3 FK" },
+				{ name = "RED EWR 8-4 FK" },
 				{ name = "RED GROUND 8-1 FK" },
 				{ name = "RED GROUND 8-10 FK" },
 				{ name = "RED GROUND 8-11 FK" },
@@ -5682,6 +5720,12 @@ MissionDb = {
 				{ name = "RED GROUND 8-21 FK" },
 				{ name = "RED GROUND 8-22 FK" },
 				{ name = "RED GROUND 8-23 FK" },
+				{ name = "RED GROUND 8-24 FK" },
+				{ name = "RED GROUND 8-25 FK" },
+				{ name = "RED GROUND 8-26 FK" },
+				{ name = "RED GROUND 8-27 FK" },
+				{ name = "RED GROUND 8-28 FK" },
+				{ name = "RED GROUND 8-29 FK" },
 				{ name = "RED GROUND 8-3 FK" },
 				{ name = "RED GROUND 8-4 FK" },
 				{ name = "RED GROUND 8-5 FK" },
@@ -5690,19 +5734,12 @@ MissionDb = {
 				{ name = "RED GROUND 8-8 FK" },
 				{ name = "RED GROUND 8-9 FK" },
 				{ name = "RED GROUND 9-8 FK" },
-				{ name = "RED SAM SA-8 8-1 FK" },
+				{ name = "RED SA-8 8-1 FK" },
 				{ name = "RED SAM SA-3 8-1 FK" },
 				{ name = "RED SAM SA-3 8-2 FK" },
 				{ name = "RED SAM SA-3 8-3 FK" },
 				{ name = "RED SAM SA-5 8-1 FK" },
 				{ name = "RED SAM SA-9 8-1 FK" },
-				{ name = "RED EWR 8-4 FK" },
-				{ name = "RED GROUND 8-24 FK" },
-				{ name = "RED GROUND 8-25 FK" },
-				{ name = "RED GROUND 8-26 FK" },
-				{ name = "RED GROUND 8-27 FK" },
-				{ name = "RED GROUND 8-28 FK" },
-				{ name = "RED GROUND 8-29 FK" },
 			},
 			shipGroups = {
 				{ name = "RED RG 8-1 FK" },

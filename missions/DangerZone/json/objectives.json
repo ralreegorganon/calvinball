@@ -193,10 +193,10 @@
                 "Static Fueltank-4",
                 "Static Fueltank-5",
                 "Static Fueltank-6",
+                "Static Oiltank-6",
                 "Static Oiltank-3",
                 "Static Oiltank-4",
-                "Static Oiltank-5",
-                "Static Oiltank-6"
+                "Static Oiltank-5"
             ],
             "strand": "STRAND-1",
             "tasks": [],
@@ -451,18 +451,34 @@
             "completeSound": "",
             "component": "objective",
             "farps": [],
-            "label": "Foothold",
+            "label": "Mighty Wings",
             "nodes": {
+                "NODE-24": {
+                    "label": "Lymington",
+                    "radius": 2133.6,
+                    "x": 139627.23134917,
+                    "y": -90737.745249899
+                },
+                "NODE-25": {
+                    "label": "Needs Oar Point",
+                    "radius": 2133.6,
+                    "x": 140843.72570597,
+                    "y": -85128.967512625
+                },
                 "NODE-8": {
-                    "label": "Doing It Wrong",
-                    "radius": 260,
-                    "x": 144521.67373185,
-                    "y": -96082.215184201
+                    "label": "Stoney Cross",
+                    "radius": 2072.64,
+                    "x": 155986.39204274,
+                    "y": -101152.97990547
                 }
             },
-            "qrfs": [],
+            "qrfs": [
+                "QRF-19"
+            ],
             "reinforcements": [],
-            "ship_groups": [],
+            "ship_groups": [
+                "RED RG 8-2 FK-1"
+            ],
             "static_groups": [
                 "Lymington Airwing Warehouse",
                 "Needs Oar Point Airwing Warehouse",
@@ -470,7 +486,23 @@
             ],
             "strand": "STRAND-1",
             "tasks": [],
-            "vehicle_groups": [],
+            "vehicle_groups": [
+                "RED SAM SA-2 RG 234-3",
+                "RED SAM SA-2 RG 234-4",
+                "RED SAM SA-2 RG 234-5",
+                "RED SAM SA-2 RG 234-6",
+                "RED SAM SA-8 RG 240-5",
+                "RED SAM SA-8 RG 240-6",
+                "RED SAM SA-8 RG 240-7",
+                "RED SAM SA-6 238-5",
+                "RED SAM SA-6 238-6",
+                "RED SAM SA-6 238-7",
+                "RED AIR DEFENSE BATTERY C RG 246-3",
+                "RED AIR DEFENSE BATTERY C RG 246-4",
+                "RED AIR DEFENSE BATTERY C RG 246-5",
+                "RED AIR DEFENSE BATTERY A 242-3",
+                "RED AIR DEFENSE BATTERY A 242-4"
+            ],
             "vertices": [
                 {
                     "x": 129600.59791581,
@@ -490,7 +522,7 @@
                 }
             ],
             "x": 148472.95314959,
-            "y": -96521.278909025
+            "y": -96521.278909026
         },
         "OBJ-7": {
             "airbases": [],
@@ -532,12 +564,12 @@
                 "Static Freight Van-2",
                 "Static Loco ES44AH-1",
                 "Static Loco ES44AH-2",
-                "Static Tank Car blue-1",
-                "Static Tank Car blue-2",
                 "Static Tank Car blue-3",
                 "Static Tank Car blue-4",
                 "Static Well Car-1",
-                "Static Well Car-2"
+                "Static Well Car-2",
+                "Static Tank Car blue-1",
+                "Static Tank Car blue-2"
             ],
             "strand": "STRAND-1",
             "tasks": [],
@@ -649,6 +681,7 @@
                 "RED EWR 8-1 FK",
                 "RED EWR 8-2 FK",
                 "RED EWR 8-3 FK",
+                "RED EWR 8-4 FK",
                 "RED GROUND 8-1 FK",
                 "RED GROUND 8-10 FK",
                 "RED GROUND 8-11 FK",
@@ -665,6 +698,12 @@
                 "RED GROUND 8-21 FK",
                 "RED GROUND 8-22 FK",
                 "RED GROUND 8-23 FK",
+                "RED GROUND 8-24 FK",
+                "RED GROUND 8-25 FK",
+                "RED GROUND 8-26 FK",
+                "RED GROUND 8-27 FK",
+                "RED GROUND 8-28 FK",
+                "RED GROUND 8-29 FK",
                 "RED GROUND 8-3 FK",
                 "RED GROUND 8-4 FK",
                 "RED GROUND 8-5 FK",
@@ -673,19 +712,12 @@
                 "RED GROUND 8-8 FK",
                 "RED GROUND 8-9 FK",
                 "RED GROUND 9-8 FK",
-                "RED SAM SA-8 8-1 FK",
+                "RED SA-8 8-1 FK",
                 "RED SAM SA-3 8-1 FK",
                 "RED SAM SA-3 8-2 FK",
                 "RED SAM SA-3 8-3 FK",
                 "RED SAM SA-5 8-1 FK",
-                "RED SAM SA-9 8-1 FK",
-                "RED EWR 8-4 FK",
-                "RED GROUND 8-24 FK",
-                "RED GROUND 8-25 FK",
-                "RED GROUND 8-26 FK",
-                "RED GROUND 8-27 FK",
-                "RED GROUND 8-28 FK",
-                "RED GROUND 8-29 FK"
+                "RED SAM SA-9 8-1 FK"
             ],
             "vertices": [
                 {

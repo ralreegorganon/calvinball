@@ -1214,6 +1214,11 @@ local function activateBrigades(chief, side)
             if warehouse ~= nil then
                 brigade.instance = BRIGADE:New(brigade.warehouse, brigade.name)
 
+                function brigade.instance:onafterDestroyed(From, Event, To)
+                    brigade.state = "dead"
+                    MESSAGE:New(string.format("Brigade warehouse at %s has been destroyed.", brigade.name), 15):ToAll()
+                end
+
                 if side == coalition.side.BLUE then
                     function brigade.instance:OnAfterArmyOnMission(From, Event, To, ArmyGroup, Mission)
                         local text=string.format("BLUE has launched a new mission: %s.", Mission:GetType())
