@@ -170,79 +170,99 @@
             "FOB Yes Minister Airwing Warehouse",
             "FOB Yes Minister Brigade Warehouse",
             "FOB Yes Minister Farp",
-            "Static Container 40ft-10",
-            "Static Container 40ft-6",
-            "Static Container 40ft-7",
-            "Static Container 40ft-8",
-            "Static Container 40ft-9",
-            "Static Excavator-4",
-            "Static Excavator-5",
-            "Static Excavator-6",
-            "Static FARP Tent-19",
-            "Static FARP Tent-20",
-            "Static FARP Tent-21",
-            "Static FARP Tent-22",
-            "Static FARP Tent-23",
-            "Static FARP Tent-24",
-            "Static FARP Tent-25",
-            "Static FARP Tent-26",
-            "Static Mi-24P-3",
-            "Static Mi-24P-4",
-            "Static Mi-24P-5",
-            "Static Mi-24P-6",
-            "Static Mi-26-4",
-            "Static Mi-26-5",
-            "Static Mi-26-6",
-            "Static Military staff-4",
-            "Static Military staff-5",
-            "Static Military staff-6",
+            "Static Mi-24P-7",
+            "Static Mi-26-7",
+            "Static Mi-24P-8",
+            "Static Mi-24P-9",
+            "Static Mi-26-8",
+            "Static Mi-24P-10",
+            "Static Mi-26-9",
+            "Static Tank 1-10",
+            "Static Military staff-7",
+            "Static Small warehouse 3-3",
             "Static Tank 1-4",
             "Static Tank 1-5",
             "Static Tank 1-6",
-            "Static Small warehouse 3-3",
             "Static Tank 1-7",
-            "Static Small warehouse 3-4",
             "Static Tank 1-8",
-            "Static Tank 1-9"
+            "Static Tank 1-9",
+            "Static Tank 1-11",
+            "Static Military staff-4",
+            "Static Military staff-5",
+            "Static Military staff-6",
+            "Static Small warehouse 3-4",
+            "Static Small warehouse 3-5",
+            "Static Excavator-4",
+            "Static Excavator-5",
+            "Static FARP Tent-27",
+            "Static FARP Tent-28",
+            "Static FARP Tent-29",
+            "Static FARP Tent-30",
+            "Static FARP Tent-31",
+            "Static FARP Tent-32",
+            "Static FARP Tent-33",
+            "Static FARP Tent-34",
+            "Static FARP Tent-35",
+            "Static FARP Tent-36",
+            "Static FARP Tent-37",
+            "Static FARP Tent-38",
+            "Static FARP Tent-39",
+            "Static FARP Tent-40",
+            "Static FARP Tent-41",
+            "Static FARP Tent-42",
+            "Static Container 40ft-11",
+            "Static Container 40ft-12",
+            "Static Container 40ft-13",
+            "Static Container 40ft-14",
+            "Static Container 40ft-15",
+            "Static Container 40ft-16",
+            "Static Container 40ft-17",
+            "Static Container 40ft-18",
+            "Static Container 40ft-19",
+            "Static Container 40ft-20"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
             "RED AIR DEFENSE BATTERY A 242-2",
             "RED AIR DEFENSE BATTERY C RG 246-2",
-            "RED RG 152-10",
             "RED RG 152-11",
-            "RED RG 152-12",
-            "RED RG 152-13",
             "RED RG 152-14",
-            "RED RG 152-8",
-            "RED RG 152-9",
             "RED SAM SA-2 RG 234-2",
             "RED SAM SA-3 236-2",
             "RED SAM SA-6 238-3",
             "RED SAM SA-6 238-4",
             "RED SAM SA-8 RG 240-3",
-            "RED SAM SA-8 RG 240-4"
+            "RED SAM SA-8 RG 240-4",
+            "RED RG 152-15",
+            "RED RG 152-16",
+            "RED RG 152-17",
+            "RED RG 152-18",
+            "RED RG 152-19",
+            "RED RG 152-20",
+            "RED RG 152-8",
+            "RED RG 152-13",
+            "RED RG 152-12"
         ],
         "vertices": [
             {
-                "x": 148047.2445946,
-                "y": -119555.06575017
+                "x": 151411.34210188,
+                "y": -137481.40286806
             },
             {
-                "x": 143429.02966509,
-                "y": -119018.67251473
+                "x": 146793.12717237,
+                "y": -136945.00963262
             },
             {
-                "x": 142951.50885793,
-                "y": -125278.77405516
+                "x": 146315.60636521,
+                "y": -143205.11117305
             },
             {
-                "x": 147641.67897757,
-                "y": -125638.55000576
+                "x": 151005.77648485,
+                "y": -143564.88712365
             }
         ],
-        "x": 145517.3655238,
-        "y": -122372.76558145
+        "x": 148881.46303108,
+        "y": -140299.10269934
     },
     "QRF-13": {
         "component": "qrf",
@@ -398,54 +418,54 @@
         "label": "Industry Target",
         "ship_groups": [],
         "static_groups": [
-            "INDUSTRYTARGET-45",
-            "INDUSTRYTARGET-46",
-            "INDUSTRYTARGET-47",
-            "INDUSTRYTARGET-48",
-            "INDUSTRYTARGET-49",
-            "INDUSTRYTARGET-50",
-            "INDUSTRYTARGET-51",
-            "INDUSTRYTARGET-52",
-            "INDUSTRYTARGET-53",
-            "INDUSTRYTARGET-54",
-            "INDUSTRYTARGET-55",
-            "INDUSTRYTARGET-56",
-            "INDUSTRYTARGET-57",
-            "INDUSTRYTARGET-58",
-            "INDUSTRYTARGET-59",
-            "INDUSTRYTARGET-60",
-            "INDUSTRYTARGET-61",
-            "INDUSTRYTARGET-62",
-            "INDUSTRYTARGET-63",
-            "INDUSTRYTARGET-64",
-            "INDUSTRYTARGET-65",
-            "INDUSTRYTARGET-66"
+            "INDUSTRYTARGET-173",
+            "INDUSTRYTARGET-174",
+            "INDUSTRYTARGET-175",
+            "INDUSTRYTARGET-176",
+            "INDUSTRYTARGET-177",
+            "INDUSTRYTARGET-178",
+            "INDUSTRYTARGET-179",
+            "INDUSTRYTARGET-180",
+            "INDUSTRYTARGET-181",
+            "INDUSTRYTARGET-182",
+            "INDUSTRYTARGET-183",
+            "INDUSTRYTARGET-184",
+            "INDUSTRYTARGET-185",
+            "INDUSTRYTARGET-186",
+            "INDUSTRYTARGET-187",
+            "INDUSTRYTARGET-188",
+            "INDUSTRYTARGET-189",
+            "INDUSTRYTARGET-190",
+            "INDUSTRYTARGET-191",
+            "INDUSTRYTARGET-192",
+            "INDUSTRYTARGET-193",
+            "INDUSTRYTARGET-194"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
-            "RED RG 1-4",
-            "RED RG 1-5"
+            "RED RG 1-10",
+            "RED RG 1-11"
         ],
         "vertices": [
             {
-                "x": 150970.07051428,
-                "y": -133977.94234445
+                "x": 145203.47845088,
+                "y": -154634.46698239
             },
             {
-                "x": 150307.59324294,
-                "y": -134001.60224699
+                "x": 144467.28619606,
+                "y": -154498.71521909
             },
             {
-                "x": 149982.55557182,
-                "y": -135072.8120086
+                "x": 144376.78502053,
+                "y": -155278.41765445
             },
             {
-                "x": 150750.5591962,
-                "y": -134969.02937339
+                "x": 145045.1013937,
+                "y": -155478.56448496
             }
         ],
-        "x": 150502.69463131,
-        "y": -134505.34649336
+        "x": 144773.16276529,
+        "y": -154972.54108522
     },
     "QRF-17": {
         "component": "qrf",

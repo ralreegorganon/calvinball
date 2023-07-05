@@ -193,10 +193,10 @@
                 "Static Fueltank-4",
                 "Static Fueltank-5",
                 "Static Fueltank-6",
-                "Static Oiltank-6",
                 "Static Oiltank-3",
                 "Static Oiltank-4",
-                "Static Oiltank-5"
+                "Static Oiltank-5",
+                "Static Oiltank-6"
             ],
             "strand": "STRAND-1",
             "tasks": [],
@@ -487,21 +487,21 @@
             "strand": "STRAND-1",
             "tasks": [],
             "vehicle_groups": [
+                "RED AIR DEFENSE BATTERY A 242-3",
+                "RED AIR DEFENSE BATTERY A 242-4",
+                "RED AIR DEFENSE BATTERY C RG 246-3",
+                "RED AIR DEFENSE BATTERY C RG 246-4",
+                "RED AIR DEFENSE BATTERY C RG 246-5",
                 "RED SAM SA-2 RG 234-3",
                 "RED SAM SA-2 RG 234-4",
                 "RED SAM SA-2 RG 234-5",
                 "RED SAM SA-2 RG 234-6",
-                "RED SAM SA-8 RG 240-5",
-                "RED SAM SA-8 RG 240-6",
-                "RED SAM SA-8 RG 240-7",
                 "RED SAM SA-6 238-5",
                 "RED SAM SA-6 238-6",
                 "RED SAM SA-6 238-7",
-                "RED AIR DEFENSE BATTERY C RG 246-3",
-                "RED AIR DEFENSE BATTERY C RG 246-4",
-                "RED AIR DEFENSE BATTERY C RG 246-5",
-                "RED AIR DEFENSE BATTERY A 242-3",
-                "RED AIR DEFENSE BATTERY A 242-4"
+                "RED SAM SA-8 RG 240-5",
+                "RED SAM SA-8 RG 240-6",
+                "RED SAM SA-8 RG 240-7"
             ],
             "vertices": [
                 {
@@ -576,12 +576,12 @@
                 "Static Freight Van-2",
                 "Static Loco ES44AH-1",
                 "Static Loco ES44AH-2",
+                "Static Tank Car blue-1",
+                "Static Tank Car blue-2",
                 "Static Tank Car blue-3",
                 "Static Tank Car blue-4",
                 "Static Well Car-1",
-                "Static Well Car-2",
-                "Static Tank Car blue-1",
-                "Static Tank Car blue-2"
+                "Static Well Car-2"
             ],
             "strand": "STRAND-1",
             "tasks": [],
