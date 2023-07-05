@@ -347,7 +347,6 @@ class DangerZoneClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.FA_18C_hornet, "count": 4, "parking": [12, 17, 15, 0], "fuel": 1, "loadout": "Empty", "livery": "VX-31 CoNA" },
                     { "airframe": dcs.planes.JF_17, "count": 4, "parking": [27, 23, 26, 32], "fuel": 1, "loadout": "Empty", "livery": "PAF Black Panthers 07-101" },
                     { "airframe": dcs.planes.M_2000C, "count": 2, "parking": [28, 25], "fuel": 1, "loadout": "Empty", "livery": "2003 Tigermeet" },
-                    { "airframe": dcs.planes.MiG_21Bis, "count": 2, "parking": [33, 29], "fuel": 1, "loadout": "Empty", "livery": "HuAF 31st AB (Turul Sqn)" },
                     { "airframe": dcs.planes.Mirage_F1EE, "count": 2, "parking": [30, 18], "fuel": 1, "loadout": "Empty", "livery": "USA AGGRESSOR Colour (CE)" },
                     { "airframe": dcs.planes.Su_25T, "count": 4, "parking": [41, 31, 42, 34], "fuel": 1, "loadout": "Empty", "livery": "Algerian AF Desert KU-03" },
                 ]
@@ -381,6 +380,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.P_51D_30_NA, "count": 2, "parking": [41, 37], "fuel": 1, "loadout": "Empty", "livery": "Ukraine Modern" },
                     { "airframe": dcs.planes.F_15C, "count": 2, "parking": [40, 38], "fuel": 1, "loadout": "Empty", "livery": "12th Fighter SQN (AK)", "start_type": dcs.mission.StartType.Cold },
                     { "airframe": dcs.planes.Su_25, "count": 2, "parking": [39, 43], "fuel": 1, "loadout": "Empty", "livery": "petal camo scheme #1 (native). 299th brigade", "start_type": dcs.mission.StartType.Cold },
+                    { "airframe": dcs.planes.MiG_21Bis, "count": 2, "parking": [45, 44], "fuel": 1, "loadout": "Empty", "livery": "HuAF 31st AB (Turul Sqn)" },
                 ]
             },
         ]
@@ -570,10 +570,10 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.CAP": 50,
                             "AUFTRAG.Type.INTERCEPT": 50,
                             "AUFTRAG.Type.ESCORT": 50,
-                            "AUFTRAG.Type.BAI": 50,
-                            "AUFTRAG.Type.CAS": 50,
-                            "AUFTRAG.Type.BOMBCARPET": 50,
-                            "AUFTRAG.Type.CASENHANCED": 50
+                            "AUFTRAG.Type.BAI": 40,
+                            "AUFTRAG.Type.CAS": 40,
+                            "AUFTRAG.Type.BOMBCARPET": 40,
+                            "AUFTRAG.Type.CASENHANCED": 40
                         }
                     },
                     "Lymington 2": {
@@ -614,10 +614,10 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.CAP": 50,
                             "AUFTRAG.Type.INTERCEPT": 50,
                             "AUFTRAG.Type.ESCORT": 50,
-                            "AUFTRAG.Type.BAI": 50,
-                            "AUFTRAG.Type.CAS": 50,
-                            "AUFTRAG.Type.BOMBCARPET": 50,
-                            "AUFTRAG.Type.CASENHANCED": 50
+                            "AUFTRAG.Type.BAI": 40,
+                            "AUFTRAG.Type.CAS": 40,
+                            "AUFTRAG.Type.BOMBCARPET": 40,
+                            "AUFTRAG.Type.CASENHANCED": 40
                         }
                     },
                     "Needs Oar Point 2": {
