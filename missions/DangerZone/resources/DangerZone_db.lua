@@ -6219,28 +6219,26 @@ MissionDb = {
 					},
 					{
 						name = "Lymington 2",
-						templateGroupName = "RED Lymington Lymington 2 Su-25TM",
+						templateGroupName = "RED Lymington Lymington 2 MiG-21Bis",
 						initialInventory = 1,
 						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
 							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
-							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
 						},
-						livery = "Flight Research Institute  VVS",
+						livery = "Draken International",
 						payloads = {
 							{
-								templateGroupName = "RED Lymington Lymington 2 Su-25TM LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.SEAD }
+								templateGroupName = "RED Lymington Lymington 2 MiG-21Bis LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
 							},
 							{
-								templateGroupName = "RED Lymington Lymington 2 Su-25TM LOADOUT 1",
-								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
-							},
-							{
-								templateGroupName = "RED Lymington Lymington 2 Su-25TM LOADOUT 2",
-								missionTypes = { AUFTRAG.Type.BOMBCARPET }
+								templateGroupName = "RED Lymington Lymington 2 MiG-21Bis LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
 							},
 						}
 					},
@@ -6278,26 +6276,28 @@ MissionDb = {
 					},
 					{
 						name = "Needs Oar Point 2",
-						templateGroupName = "RED Needs Oar Point Needs Oar Point 2 MiG-21Bis",
+						templateGroupName = "RED Needs Oar Point Needs Oar Point 2 Su-25TM",
 						initialInventory = 1,
 						capabilities = {
-							{ mission = AUFTRAG.Type.CAP, performance = 50 },
-							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
-							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
 							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
 						},
-						livery = "Draken International",
+						livery = "Flight Research Institute  VVS",
 						payloads = {
 							{
-								templateGroupName = "RED Needs Oar Point Needs Oar Point 2 MiG-21Bis LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+								templateGroupName = "RED Needs Oar Point Needs Oar Point 2 Su-25TM LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.SEAD }
 							},
 							{
-								templateGroupName = "RED Needs Oar Point Needs Oar Point 2 MiG-21Bis LOADOUT 1",
-								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
+								templateGroupName = "RED Needs Oar Point Needs Oar Point 2 Su-25TM LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Needs Oar Point Needs Oar Point 2 Su-25TM LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.BOMBCARPET }
 							},
 						}
 					},
@@ -6468,7 +6468,7 @@ MissionDb = {
 					},
 					{
 						name = "GGD-02",
-						templateGroupName = "BLUE 1st CAW - Teddy GGD-02 CH-53E",
+						templateGroupName = "BLUE 1st CAW - Teddy GGD-02 CH-47D",
 						initialInventory = 99,
 						capabilities = {
 							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
@@ -6476,7 +6476,7 @@ MissionDb = {
 						livery = "standard",
 						payloads = {
 							{
-								templateGroupName = "BLUE 1st CAW - Teddy GGD-02 CH-53E LOADOUT 0",
+								templateGroupName = "BLUE 1st CAW - Teddy GGD-02 CH-47D LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}

@@ -432,6 +432,7 @@ class DangerZoneClients(calvinball.clients.Clients):
         if not edit:
             airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
             airport_set[1]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
+            airport_set[9]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "parking": [45, 44, 46, 47], "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
 
             radios[pydcs_extensions.A_4E_C] = ["uhf"]
 
@@ -576,21 +577,22 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                         }
                     },
                     "Lymington 2": {
-                        "airframe": dcs.planes.Su_25TM,
+                        "airframe": dcs.planes.MiG_21Bis,
                         "groupSize": 2,
                         "initialInventory": 1,
-                        "livery": "Flight Research Institute  VVS",
+                        "livery": "Draken International",
                         "loadouts": {
-                            "Kh-58*2,Kh-25MPU*4,R-73*2,ECM": "{ AUFTRAG.Type.SEAD }",
-                            "APU-8 Vikhr-M*2,R-60M*2,R-73*2,SPPU-22*2,Mercury LLTV Pod": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
-                            "FAB-500*6,R-60M*2,Fuel*2": "{ AUFTRAG.Type.BOMBCARPET }"
+                            "Patrol, short range": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "Few big targets, GROM + BOMBS": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
                         },
                         "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
                             "AUFTRAG.Type.BAI": 50,
                             "AUFTRAG.Type.CAS": 50,
                             "AUFTRAG.Type.BOMBCARPET": 50,
-                            "AUFTRAG.Type.CASENHANCED": 50,
-                            "AUFTRAG.Type.SEAD": 50
+                            "AUFTRAG.Type.CASENHANCED": 50
                         }
                     }
                 }
@@ -619,24 +621,23 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                         }
                     },
                     "Needs Oar Point 2": {
-                        "airframe": dcs.planes.MiG_21Bis,
+                        "airframe": dcs.planes.Su_25TM,
                         "groupSize": 2,
                         "initialInventory": 1,
-                        "livery": "Draken International",
+                        "livery": "Flight Research Institute  VVS",
                         "loadouts": {
-                            "Patrol, short range": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
-                            "Few big targets, GROM + BOMBS": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "Kh-58*2,Kh-25MPU*4,R-73*2,ECM": "{ AUFTRAG.Type.SEAD }",
+                            "APU-8 Vikhr-M*2,R-60M*2,R-73*2,SPPU-22*2,Mercury LLTV Pod": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
+                            "FAB-500*6,R-60M*2,Fuel*2": "{ AUFTRAG.Type.BOMBCARPET }"
                         },
                         "capabilities": {
-                            "AUFTRAG.Type.CAP": 50,
-                            "AUFTRAG.Type.INTERCEPT": 50,
-                            "AUFTRAG.Type.ESCORT": 50,
                             "AUFTRAG.Type.BAI": 50,
                             "AUFTRAG.Type.CAS": 50,
                             "AUFTRAG.Type.BOMBCARPET": 50,
-                            "AUFTRAG.Type.CASENHANCED": 50
+                            "AUFTRAG.Type.CASENHANCED": 50,
+                            "AUFTRAG.Type.SEAD": 50
                         }
-                    },
+                    }
                 }
             },
             "1st Goon Wing - Anglo": {
@@ -741,7 +742,7 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                         }
                     },
                     "GGD-02": {
-                        "airframe": dcs.helicopters.CH_53E,
+                        "airframe": dcs.helicopters.CH_47D,
                         "groupSize": 1,
                         "initialInventory": 99,
                         "livery": "standard",
@@ -806,11 +807,11 @@ class DangerZoneRedBrigades(calvinball.redbrigade.RedBrigades):
                     },
                     "1GW-Anglo-3": {
                         "units": [
-                            dcs.vehicles.Artillery.Grad_URAL,
-                            dcs.vehicles.Artillery.Grad_URAL,
-                            dcs.vehicles.Artillery.Grad_URAL,
-                            dcs.vehicles.Artillery.Grad_URAL,
-                            dcs.vehicles.Artillery.Grad_URAL,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
                             dcs.vehicles.Unarmed.Ural_375,
                             dcs.vehicles.Unarmed.Ural_375
                         ],
