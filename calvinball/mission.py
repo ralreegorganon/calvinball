@@ -122,8 +122,10 @@ class Mission:
             load_trigger.actions.append(dcs.action.DoScriptFile(self.m.map_resource.add_resource_file(self.__common_resource("Hercules_Cargo.lua"))))
             load_trigger.actions.append(dcs.action.DoScript(dcs.translation.String(f"trigger.action.setUserFlag(\"SSB\",100)")))
 
+            # hacks and workarounds
             if self.m.terrain.name == "Syria":
                 load_trigger.actions.append(dcs.action.DoScriptFile(self.m.map_resource.add_resource_file(self.__common_resource("larnaca-hotfix.lua"))))
+            load_trigger.actions.append(dcs.action.DoScriptFile(self.m.map_resource.add_resource_file(self.__common_resource("kill-ai-helo-hotfix.lua"))))
 
             local_db_script_path = self.__mission_resource(f"{self.miz_name}_db.lua")
             local_config_path = self.__mission_resource(f"config.lua")
