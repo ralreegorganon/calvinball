@@ -453,13 +453,13 @@
             "farps": [],
             "label": "Mighty Wings",
             "nodes": {
-                "NODE-24": {
+                "NODE-26": {
                     "label": "Lymington",
                     "radius": 2133.6,
                     "x": 139627.23134917,
                     "y": -90737.745249899
                 },
-                "NODE-25": {
+                "NODE-27": {
                     "label": "Needs Oar Point",
                     "radius": 2133.6,
                     "x": 140843.72570597,
@@ -536,6 +536,18 @@
             "farps": [],
             "label": "Hoof Arted",
             "nodes": {
+                "NODE-21": {
+                    "label": "Gaffer Tape",
+                    "radius": 260,
+                    "x": 138826.36737073,
+                    "y": -118505.50471735
+                },
+                "NODE-22": {
+                    "label": "Fartillery",
+                    "radius": 260,
+                    "x": 136845.93223725,
+                    "y": -109091.61945391
+                },
                 "NODE-7": {
                     "label": "Choo Choo",
                     "radius": 260,
@@ -639,19 +651,19 @@
             "farps": [],
             "label": "North Sicily",
             "nodes": {
-                "NODE-21": {
+                "NODE-23": {
                     "label": "Down in it",
                     "radius": 359.9688,
                     "x": 123546.996345,
                     "y": -72975.941222888
                 },
-                "NODE-22": {
+                "NODE-24": {
                     "label": "Rhotacism Reprogramming",
                     "radius": 859.8408,
                     "x": 128410.90792802,
                     "y": -70147.432555313
                 },
-                "NODE-23": {
+                "NODE-25": {
                     "label": "Up Above in",
                     "radius": 459.9432,
                     "x": 128251.87162803,

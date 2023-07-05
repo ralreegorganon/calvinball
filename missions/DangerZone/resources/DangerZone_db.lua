@@ -5175,8 +5175,8 @@ MissionDb = {
 				"CAP-4",
 			},
 			nodes = {
-				{ name = "NODE-24" },
-				{ name = "NODE-25" },
+				{ name = "NODE-26" },
+				{ name = "NODE-27" },
 				{ name = "NODE-8" },
 			},
 			tasks = {
@@ -5288,6 +5288,8 @@ MissionDb = {
 				"CAP-4",
 			},
 			nodes = {
+				{ name = "NODE-21" },
+				{ name = "NODE-22" },
 				{ name = "NODE-7" },
 			},
 			tasks = {
@@ -5649,9 +5651,9 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-21" },
-				{ name = "NODE-22" },
 				{ name = "NODE-23" },
+				{ name = "NODE-24" },
+				{ name = "NODE-25" },
 				{ name = "NODE-9" },
 			},
 			tasks = {
