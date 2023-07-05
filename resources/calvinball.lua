@@ -878,7 +878,7 @@ end
 
 local function friendlyReinforceZone(targetZoneName)
     local zone = ZONE:FindByName(targetZoneName)
-    local label  = zone:GetProperty("label")
+    local label = zone:GetProperty("label")
     local targetCoord = zone:GetCoordinate():GetClosestPointToRoad()
 
     local closestReinforcement = nil
@@ -887,7 +887,7 @@ local function friendlyReinforceZone(targetZoneName)
     -- TODO: consider a max response distance, set as a property on the reinforcement zone
     for _, objective in ipairs(MissionDb.objectives) do
         for _, reinforcement in ipairs(objective.reinforcements) do
-            if reinforcement.state == "active" then
+            if reinforcement.state == "active" and #reinforcement.spawnGroups > 0  then
                 local reinforcementZone = ZONE:FindByName(reinforcement.name)
                 local reinforcementCoordinate = reinforcementZone:GetCoordinate()
                 local distance = reinforcementCoordinate:DistanceFromPointVec2(targetCoord)
@@ -952,6 +952,10 @@ local function friendlyReinforceZone(targetZoneName)
 end
 
 local function randomEnemyReinforcement()
+    if not MissionDb.enableConvoys then
+        return
+    end
+
     local potentials = {}
     for _, objective in ipairs(MissionDb.objectives) do
         if objective.state == "active" then
@@ -970,6 +974,10 @@ local function randomEnemyReinforcement()
 end
 
 local function industryAwareRandomEnemyReinforcement()
+    if not MissionDb.enableConvoys then
+        return
+    end
+
     if MissionDb.industry.enabled and MissionDb.industry.percentage < 100 then
         local delaySeconds = (100 - MissionDb.industry.percentage)/100 * MissionDb.settings.redQrfMission.industryDelay
         MESSAGE:New(string.format("Enemy reinforcement convoy delayed by %s due to industry capacity of %.f%%.", UTILS.SecondsToClock(delaySeconds, true), MissionDb.industry.percentage), 30):ToAll()
@@ -982,6 +990,10 @@ local function industryAwareRandomEnemyReinforcement()
 end
 
 local function randomFriendlyReinforcement()
+    if not MissionDb.enableConvoys then
+        return
+    end
+
     local potentials = {}
     for _, objective in ipairs(MissionDb.objectives) do
         if objective.state == "active" then

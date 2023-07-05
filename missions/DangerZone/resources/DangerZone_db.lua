@@ -6388,6 +6388,7 @@ MissionDb = {
 	},
 	devmode = true,
 	lateActivateStatics = false,
+	enableConvoys = true,
 	missionName = "DangerZone",
 	settings = {
 		blueCasevacChance = 10,

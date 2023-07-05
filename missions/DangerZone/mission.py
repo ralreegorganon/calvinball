@@ -218,7 +218,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.planes.F_14B, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True }  },
-                    { "airframe": dcs.planes.FA_18C_hornet, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "Santa" },
+                    { "airframe": dcs.planes.FA_18C_hornet, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "VX-31 CoNA" },
                 ]
             },
             {
@@ -227,7 +227,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.planes.F_14B, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True } },
-                    { "airframe": dcs.planes.FA_18C_hornet, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "Santa" },
+                    { "airframe": dcs.planes.FA_18C_hornet, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "VX-31 CoNA" },
                 ]
             },
             {
@@ -332,7 +332,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
                 ]
-            }
+            },
         ]
 
         comms_plan = {
@@ -373,6 +373,9 @@ class DangerZoneClients(calvinball.clients.Clients):
             dcs.planes.Su_25T: ["vhf_am"],
             dcs.planes.F_14B: ["uhf", "vhf_am"],
             dcs.planes.FA_18C_hornet: ["vhf_am", "uhf"],
+            dcs.planes.F_15ESE: ["uhf", "vhf_am"],
+            dcs.planes.F_16C_50: ["uhf", "vhf_am"],
+            dcs.planes.JF_17: ["uhf"],
         }
 
         if not edit:
@@ -607,7 +610,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                         "initialInventory": 1,
                         "livery": "Russian Air Force",
                         "loadouts": {
-                            "2xB8V20 (S-8KOM)+8xATGM 9M114": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                            "GoonsSuck": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
                         },
                         "capabilities": {
                             "AUFTRAG.Type.BAI": 50,
@@ -639,7 +642,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                         "initialInventory": 1,
                         "livery": "Russian Air Force",
                         "loadouts": {
-                            "2xB8V20 (S-8KOM)+8xATGM 9M114": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                            "GoonsSuck": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
                         },
                         "capabilities": {
                             "AUFTRAG.Type.BAI": 50,

@@ -6217,6 +6217,7 @@ MissionDb = {
 	},
 	devmode = true,
 	lateActivateStatics = false,
+	enableConvoys = true,
 	missionName = "CyprusInvasion",
 	settings = {
 		blueCasevacChance = 10,
