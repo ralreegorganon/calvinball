@@ -47,11 +47,11 @@ def playable_aircraft():
 
 def parking_slot_names(airport: dcs.terrain.Airport):
     table = PrettyTable()
-    table.field_names = ["Name", "ID"]
+    table.field_names = ["Name", "ID", "Helo"]
     table.sortby = "Name"
 
     for p in airport.parking_slots:
-        table.add_row([p.slot_name, p.crossroad_idx])
+        table.add_row([p.slot_name, p.crossroad_idx, p.helicopter,])
 
     print(table)
 
@@ -112,8 +112,8 @@ def radios():
 #airport_slots()
 #playable_aircraft()
 
-airport_slots()
-
 #parking_slot_names(dcs.terrain.Caucasus().airports["Batumi"])
 
 #radios()
+
+parking_slot_names(dcs.terrain.Normandy().airports["Needs Oar Point"])

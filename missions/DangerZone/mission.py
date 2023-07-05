@@ -333,6 +333,56 @@ class DangerZoneClients(calvinball.clients.Clients):
                     },
                 ]
             },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "airport": m.terrain.airports["Stoney Cross"],
+                "start_type": dcs.mission.StartType.Warm,
+                "airframes": [
+                    { "airframe": dcs.planes.A_10C_2, "count": 4, "parking": [21, 37, 39, 20], "fuel": 0.6, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
+                    { "airframe": dcs.planes.AJS37, "count": 2, "parking": [40, 19], "fuel": 1, "loadout": "Empty", "livery": "SF-37 Akktu Stakki - F21" },
+                    { "airframe": dcs.planes.AV8BNA, "count": 2, "parking": [36, 38], "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
+                    { "airframe": dcs.planes.F_14B, "count": 4, "parking": [1, 7, 2, 9], "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True } },
+                    { "airframe": dcs.planes.F_15ESE, "count": 4, "parking": [8, 24, 11, 10], "fuel": 1, "loadout": "Empty", "livery": "USAF 494th Panthers FS 91-603 75th D-Day Anniversary", "properties": { dcs.planes.F_15ESE.Properties.NetCrewControlPriority.id: dcs.planes.F_15ESE.Properties.NetCrewControlPriority.Values.Equally_Responsible } },
+                    { "airframe": dcs.planes.F_16C_50, "count": 4, "parking": [22, 14, 13, 16], "fuel": 1, "loadout": "Empty", "livery": "18th AGRS Arctic Splinter" },
+                    { "airframe": dcs.planes.FA_18C_hornet, "count": 4, "parking": [12, 17, 15, 0], "fuel": 1, "loadout": "Empty", "livery": "VX-31 CoNA" },
+                    { "airframe": dcs.planes.JF_17, "count": 4, "parking": [27, 23, 26, 32], "fuel": 1, "loadout": "Empty", "livery": "PAF Black Panthers 07-101" },
+                    { "airframe": dcs.planes.M_2000C, "count": 2, "parking": [28, 25], "fuel": 1, "loadout": "Empty", "livery": "2003 Tigermeet" },
+                    { "airframe": dcs.planes.MiG_21Bis, "count": 2, "parking": [33, 29], "fuel": 1, "loadout": "Empty", "livery": "HuAF 31st AB (Turul Sqn)" },
+                    { "airframe": dcs.planes.Mirage_F1EE, "count": 2, "parking": [30, 18], "fuel": 1, "loadout": "Empty", "livery": "USA AGGRESSOR Colour (CE)" },
+                    { "airframe": dcs.planes.Su_25T, "count": 4, "parking": [41, 31, 42, 34], "fuel": 1, "loadout": "Empty", "livery": "Algerian AF Desert KU-03" },
+                ]
+            },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "airport": m.terrain.airports["Lymington"],
+                "start_type": dcs.mission.StartType.Warm,
+                "airframes": [
+                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 4, "parking": [55, 56, 50, 48], "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
+                    { "airframe": dcs.helicopters.Ka_50_3, "count": 4, "parking": [49, 52, 51, 53], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
+                    { "airframe": dcs.helicopters.Mi_24P, "count": 4, "parking": [4, 5, 6, 7], "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation" },
+                    { "airframe": dcs.helicopters.Mi_8MT, "count": 4, "parking": [8, 9, 12, 10], "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
+                    { "airframe": dcs.helicopters.SA342L, "count": 4, "parking": [11, 13, 14, 15], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2" },
+                    { "airframe": dcs.helicopters.SA342M, "count": 4, "parking": [16, 17, 19, 18], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet" },
+                    { "airframe": dcs.helicopters.UH_1H, "count": 4, "parking": [20, 23, 21, 22], "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972" },
+                ]
+            },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "airport": m.terrain.airports["Needs Oar Point"],
+                "start_type": dcs.mission.StartType.Warm,
+                "airframes": [
+                    { "airframe": dcs.planes.A_10A, "count": 2, "parking": [26, 24], "fuel": 1, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)", "start_type": dcs.mission.StartType.Cold },
+                    { "airframe": dcs.planes.C_101CC, "count": 2, "parking": [25, 27], "fuel": 1, "loadout": "Empty", "livery": "usaf agressor fictional" },
+                    { "airframe": dcs.planes.F_5E_3, "count": 2, "parking": [28, 29], "fuel": 1, "loadout": "Empty", "livery": "BR FAB 4846" },
+                    { "airframe": dcs.planes.F_86F_Sabre, "count": 2, "parking": [30, 32], "fuel": 1, "loadout": "Empty", "livery": "Royal Saudi Air Force" },
+                    { "airframe": dcs.planes.L_39ZA, "count": 2, "parking": [31, 33], "fuel": 1, "loadout": "Empty", "livery": "algerian af tiger nl-36" },
+                    { "airframe": dcs.planes.MB_339A, "count": 2, "parking": [34, 35], "fuel": 1, "loadout": "Empty", "livery": "MB339AN 'NIGERIA'" },
+                    { "airframe": dcs.planes.MiG_19P, "count": 2, "parking": [42, 36], "fuel": 1, "loadout": "Empty", "livery": "DDR - Fictional" },
+                    { "airframe": dcs.planes.P_51D_30_NA, "count": 2, "parking": [41, 37], "fuel": 1, "loadout": "Empty", "livery": "Ukraine Modern" },
+                    { "airframe": dcs.planes.F_15C, "count": 2, "parking": [40, 38], "fuel": 1, "loadout": "Empty", "livery": "12th Fighter SQN (AK)", "start_type": dcs.mission.StartType.Cold },
+                    { "airframe": dcs.planes.Su_25, "count": 2, "parking": [39, 43], "fuel": 1, "loadout": "Empty", "livery": "petal camo scheme #1 (native). 299th brigade", "start_type": dcs.mission.StartType.Cold },
+                ]
+            },
         ]
 
         comms_plan = {
@@ -376,6 +426,7 @@ class DangerZoneClients(calvinball.clients.Clients):
             dcs.planes.F_15ESE: ["uhf", "vhf_am"],
             dcs.planes.F_16C_50: ["uhf", "vhf_am"],
             dcs.planes.JF_17: ["uhf"],
+            dcs.planes.F_15C: ["uhf"],
         }
 
         if not edit:
