@@ -1014,10 +1014,12 @@ end
 local function standardAirwingReinforcement()
     local didIt = false
     for _, airwing in ipairs(MissionDb.redchief.airwings) do
-        if airwing.state == "active" then
+        if airwing.state ~= "dead" and airwing.instance ~= nil then
             for _, squadron in ipairs(airwing.squadrons) do
-                local airwing = squadron.instance:GetAirwing()
-                airwing:AddAssetToSquadron(squadron.instance, 1)
+                if squadron.instance ~= nil then
+                    local airwing = squadron.instance:GetAirwing()
+                    airwing:AddAssetToSquadron(squadron.instance, 1)
+                end
             end
             didIt = true
         end
@@ -1030,10 +1032,12 @@ end
 local function standardBrigadeReinforcement()
     local didIt = false
     for _, brigade in ipairs(MissionDb.redchief.brigades) do
-        if brigade.state == "active" then
+        if brigade.state ~= "dead" and brigade.instance ~= nil then
             for _, platoon in ipairs(brigade.platoons) do
-                local brigade = platoon.instance:GetBrigade()
-                brigade:AddAssetToPlatoon(platoon.instance, 1)
+                if platoon.instance ~= nil then
+                    local brigade = platoon.instance:GetBrigade()
+                    brigade:AddAssetToPlatoon(platoon.instance, 1)
+                end
             end
             didIt = true
         end
