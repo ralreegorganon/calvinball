@@ -12,14 +12,6 @@ MESSAGE:New("CALVINBALL BEGIN!", 5):ToAll()
 
 local defaultDrive = lfs.writedir() .. string.format("Missions\\%s\\missionstate", MissionDb.missionName)
 
-local function split(s, sep)
-    local fields = {}
-    local sep = sep or " "
-    local pattern = string.format("([^%s]+)", sep)
-    string.gsub(s, pattern, function(c) fields[#fields + 1] = c end)
-    return fields
-end
-
 local function loadState()
     local states = {}
     local objectivevehiclegroupstates = {}
@@ -1661,7 +1653,7 @@ local function startObjective(objective)
 
                 local sceneryTargetZoneNames = taskZone:GetProperty("sceneryTargetZoneNames")
                 if sceneryTargetZoneNames ~= "" then
-                    local zones = split(sceneryTargetZoneNames, ",")
+                    local zones = UTILS.Split(sceneryTargetZoneNames, ",")
                     for _, zoneName in ipairs(zones) do
                         local set = SET_SCENERY:NewFromZone(zoneName)
                         table.insert(possibleSets, set)
