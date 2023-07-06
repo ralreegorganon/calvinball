@@ -812,6 +812,10 @@ local function calculateIndustryPercentage()
 end
 
 local function enemyReinforceZone(targetZoneName)
+    if not MissionDb.enableConvoys then
+        return
+    end
+
     local zone = ZONE:FindByName(targetZoneName)
     local label  = zone:GetProperty("label")
     local targetCoord = zone:GetCoordinate():GetClosestPointToRoad()
@@ -877,6 +881,10 @@ local function enemyReinforceZone(targetZoneName)
 end
 
 local function friendlyReinforceZone(targetZoneName)
+    if not MissionDb.enableConvoys then
+        return
+    end
+
     local zone = ZONE:FindByName(targetZoneName)
     local label = zone:GetProperty("label")
     local targetCoord = zone:GetCoordinate():GetClosestPointToRoad()
