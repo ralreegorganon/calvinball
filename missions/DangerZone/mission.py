@@ -484,11 +484,11 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                     }
                 }
             },
-            "1st Goon Wing - Funtington": {
-                "airbase": "Funtington",
-                "warehouse": "Funtington Airwing Warehouse#00001",
+            "1st Goon Wing - Conches": {
+                "airbase": "Conches",
+                "warehouse": "Conches Airwing Warehouse#00001",
                 "squadrons": {
-                    "1GW-Funtington-1": {
+                    "1GW-Conches-1": {
                         "airframe": dcs.planes.JF_17,
                         "groupSize": 2,
                         "initialInventory": 2,

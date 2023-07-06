@@ -412,11 +412,11 @@
             "x": 150131.9745073,
             "y": -140676.22465436
         },
-        "Funtington Airwing Warehouse": {
+        "Conches Airwing Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
             "heading": 6.2308254296198,
-            "name": "Funtington Airwing Warehouse",
+            "name": "Conches Airwing Warehouse",
             "rate": 100,
             "shape_name": "sklad",
             "type": "Warehouse",

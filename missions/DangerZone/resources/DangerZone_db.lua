@@ -221,9 +221,9 @@ MissionDb = {
 					},
 					staticGroups = {
 						{
-							name = "Funtington Airwing Warehouse#00001",
+							name = "Conches Airwing Warehouse#00001",
 							template = {
-								name = "Funtington Airwing Warehouse",
+								name = "Conches Airwing Warehouse",
 								type = "Warehouse",
 								x = -56913.781104768,
 								y = 95359.246478193,
@@ -6339,13 +6339,13 @@ MissionDb = {
 				}
 			},
 			{
-				name = "1st Goon Wing - Funtington",
-				warehouse = "Funtington Airwing Warehouse#00001",
-				airbase = "Funtington",
+				name = "1st Goon Wing - Conches",
+				warehouse = "Conches Airwing Warehouse#00001",
+				airbase = "Conches",
 				squadrons = {
 					{
-						name = "1GW-Funtington-1",
-						templateGroupName = "RED 1st Goon Wing - Funtington 1GW-Funtington-1 JF-17",
+						name = "1GW-Conches-1",
+						templateGroupName = "RED 1st Goon Wing - Conches 1GW-Conches-1 JF-17",
 						initialInventory = 2,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
@@ -6355,7 +6355,7 @@ MissionDb = {
 						livery = "PLAAF 125th AB (Fictional)",
 						payloads = {
 							{
-								templateGroupName = "RED 1st Goon Wing - Funtington 1GW-Funtington-1 JF-17 LOADOUT 0",
+								templateGroupName = "RED 1st Goon Wing - Conches 1GW-Conches-1 JF-17 LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT }
 							},
 						}
