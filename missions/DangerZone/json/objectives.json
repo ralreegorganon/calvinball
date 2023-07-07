@@ -23,6 +23,7 @@
             "farps": [],
             "label": "Strategic Targets",
             "nodes": {},
+            "qrfKillOnComplete": [],
             "qrfs": [
                 "QRF-1",
                 "QRF-2"
@@ -67,24 +68,31 @@
             "label": "Foothold Portland",
             "nodes": {
                 "NODE-1": {
+                    "blueCaptureThreshold": "0",
                     "label": "Tip Of The Spear",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 112854.73574422,
                     "y": -156653.01525301
                 },
                 "NODE-2": {
+                    "blueCaptureThreshold": "0",
                     "label": "Edge Of The Knife",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 115821.46733605,
                     "y": -155146.6551613
                 },
                 "NODE-4": {
+                    "blueCaptureThreshold": "0",
                     "label": "Crack Of My Ass",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 117308.86961076,
                     "y": -157180.03242674
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [
                 "QRF-3",
                 "QRF-7",
@@ -151,36 +159,47 @@
             "label": "Storming Weymouth",
             "nodes": {
                 "NODE-10": {
+                    "blueCaptureThreshold": "0",
                     "label": "Ssssmokin",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 122396.70659477,
                     "y": -159447.04151461
                 },
                 "NODE-11": {
+                    "blueCaptureThreshold": "0",
                     "label": "Terminus",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 122695.40660874,
                     "y": -157088.55136512
                 },
                 "NODE-12": {
+                    "blueCaptureThreshold": "0",
                     "label": "Penitence",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 125907.59038669,
                     "y": -154861.49097115
                 },
                 "NODE-13": {
+                    "blueCaptureThreshold": "0",
                     "label": "A Bridge Over A Road... With A View",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 127834.65481573,
                     "y": -157726.65383508
                 },
                 "NODE-5": {
+                    "blueCaptureThreshold": "0",
                     "label": "Chesil Watching",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 120193.64981147,
                     "y": -159686.42726666
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [
                 "QRF-15"
             ],
@@ -250,36 +269,47 @@
             "label": "Locomotion",
             "nodes": {
                 "NODE-14": {
+                    "blueCaptureThreshold": "0",
                     "label": "Supply",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 132051.57344167,
                     "y": -148469.00759395
                 },
                 "NODE-15": {
+                    "blueCaptureThreshold": "0",
                     "label": "Demand",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 129849.55777049,
                     "y": -142683.09136021
                 },
                 "NODE-16": {
+                    "blueCaptureThreshold": "0",
                     "label": "Split Decision",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 129845.68631651,
                     "y": -134496.32554629
                 },
                 "NODE-17": {
+                    "blueCaptureThreshold": "0",
                     "label": "Lulworth Camp",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 124230.09447294,
                     "y": -141323.44549486
                 },
                 "NODE-6": {
+                    "blueCaptureThreshold": "0",
                     "label": "Departing Dorchester",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 133730.04953958,
                     "y": -156407.09273011
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [
                 "QRF-5",
                 "QRF-16"
@@ -349,30 +379,39 @@
             "label": "Fish Lips",
             "nodes": {
                 "NODE-18": {
+                    "blueCaptureThreshold": "0",
                     "label": "Pain Train",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 122358.13765759,
                     "y": -123141.90262039
                 },
                 "NODE-19": {
+                    "blueCaptureThreshold": "0",
                     "label": "Excuse Me",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 128553.87413397,
                     "y": -127499.13133044
                 },
                 "NODE-20": {
+                    "blueCaptureThreshold": "0",
                     "label": "Royal Pain",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 127028.0248943,
                     "y": -131929.73926684
                 },
                 "NODE-3": {
+                    "blueCaptureThreshold": "0",
                     "label": "Serenity Now",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 124660.73751297,
                     "y": -128757.90642034
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [
                 "QRF-4",
                 "QRF-12",
@@ -454,24 +493,59 @@
             "label": "Mighty Wings",
             "nodes": {
                 "NODE-26": {
-                    "label": "Lymington",
-                    "radius": 2133.6,
-                    "x": 139627.23134917,
-                    "y": -90737.745249899
+                    "blueCaptureThreshold": "0",
+                    "label": "Lymington - North",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 139952.52076634,
+                    "y": -91041.360097823
                 },
                 "NODE-27": {
-                    "label": "Needs Oar Point",
-                    "radius": 2133.6,
-                    "x": 140843.72570597,
-                    "y": -85128.967512625
+                    "blueCaptureThreshold": "0",
+                    "label": "Needs Oar Point - North",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 141965.47070231,
+                    "y": -84913.268489338
+                },
+                "NODE-28": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Lymington - South",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 139149.87885382,
+                    "y": -90546.865066135
+                },
+                "NODE-29": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Needs Oar Point - South",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 140496.27720269,
+                    "y": -85576.205707021
+                },
+                "NODE-30": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Stoney Cross - West",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 155709.20290981,
+                    "y": -101665.5522806
                 },
                 "NODE-8": {
-                    "label": "Stoney Cross",
-                    "radius": 2072.64,
-                    "x": 155986.39204274,
-                    "y": -101152.97990547
+                    "blueCaptureThreshold": "0",
+                    "label": "Stoney Cross - East",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 156347.26404738,
+                    "y": -100560.81361942
                 }
             },
+            "qrfKillOnComplete": [
+                "QRF-13",
+                "QRF-14",
+                "QRF-6"
+            ],
             "qrfs": [
                 "QRF-19"
             ],
@@ -537,24 +611,31 @@
             "label": "Hoof Arted",
             "nodes": {
                 "NODE-21": {
+                    "blueCaptureThreshold": "0",
                     "label": "Gaffer Tape",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 138826.36737073,
                     "y": -118505.50471735
                 },
                 "NODE-22": {
+                    "blueCaptureThreshold": "0",
                     "label": "Fartillery",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 136845.93223725,
                     "y": -109091.61945391
                 },
                 "NODE-7": {
+                    "blueCaptureThreshold": "0",
                     "label": "Choo Choo",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 135402.2002449,
                     "y": -125139.97856583
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [
@@ -652,30 +733,39 @@
             "label": "North Sicily",
             "nodes": {
                 "NODE-23": {
+                    "blueCaptureThreshold": "0",
                     "label": "Down in it",
                     "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
                     "x": 123546.996345,
                     "y": -72975.941222888
                 },
                 "NODE-24": {
+                    "blueCaptureThreshold": "0",
                     "label": "Rhotacism Reprogramming",
                     "radius": 859.8408,
+                    "redSurrenderThreshold": "1",
                     "x": 128410.90792802,
                     "y": -70147.432555313
                 },
                 "NODE-25": {
+                    "blueCaptureThreshold": "0",
                     "label": "Up Above in",
                     "radius": 459.9432,
+                    "redSurrenderThreshold": "1",
                     "x": 128251.87162803,
                     "y": -81833.246731587
                 },
                 "NODE-9": {
+                    "blueCaptureThreshold": "0",
                     "label": "Riverside Stroll",
                     "radius": 559.9176,
+                    "redSurrenderThreshold": "1",
                     "x": 133044.19311866,
                     "y": -74918.346664956
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [

@@ -65,6 +65,9 @@ def get_objective_zones(m: dcs.Mission):
         borderZones = None
         capZones = None
         carriers = None
+        qrfKillOnComplete = ""
+        redSurrenderThreshold = "1"
+        blueCaptureThreshold = "0"
         for v in z.properties.values():
             if(v["key"] == "label"):
                 label = v["value"]
@@ -78,6 +81,12 @@ def get_objective_zones(m: dcs.Mission):
                 capZones = v.get("value", "")
             if(v["key"] == "carriers"):
                 carriers = v.get("value", "")
+            if(v["key"] == "redSurrenderThreshold"):
+                redSurrenderThreshold = v.get("value", "1")
+            if(v["key"] == "blueCaptureThreshold"):
+                blueCaptureThreshold = v.get("value", "")
+            if(v["key"] == "qrfKillOnComplete"):
+                qrfKillOnComplete = v.get("value", "")
         
         if(component == None):
             continue
@@ -92,11 +101,13 @@ def get_objective_zones(m: dcs.Mission):
                 "borderZones": [x.strip() for x in borderZones.split(',') if x],
                 "capZones": [x.strip() for x in capZones.split(',') if x],
                 "carriers": [x.strip() for x in carriers.split(',') if x],
+                "qrfKillOnComplete": [x.strip() for x in qrfKillOnComplete.split(',') if x],
                 "nodes": {},
                 "tasks": [],
                 "farps": [],
                 "airbases": [],
                 "qrfs": [],
+                "qrfKillOnComplete": [],
                 "reinforcements": [],
                 "vehicle_groups": [],
                 "ship_groups": [],
@@ -105,7 +116,7 @@ def get_objective_zones(m: dcs.Mission):
             }
         
         if(component == "node"):
-            objective_nodes[z.name] = {"label": label, "x": z.position.x, "y": z.position.y, "radius": z.radius }
+            objective_nodes[z.name] = {"label": label, "x": z.position.x, "y": z.position.y, "radius": z.radius, "redSurrenderThreshold": redSurrenderThreshold, "blueCaptureThreshold": blueCaptureThreshold }
 
     for objective_zone in objective_zones.values():
         objective_poly = Polygon([(v["x"], v["y"]) for v in objective_zone["vertices"]])

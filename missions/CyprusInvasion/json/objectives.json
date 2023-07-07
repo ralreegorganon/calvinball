@@ -13,36 +13,47 @@
             "label": "Limassol Front",
             "nodes": {
                 "NODE-1": {
+                    "blueCaptureThreshold": "0",
                     "label": "Zakaki Junction",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -28487,
                     "y": -267631
                 },
                 "NODE-2": {
+                    "blueCaptureThreshold": "0",
                     "label": "Farmland Crossroads",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -29286.836943485,
                     "y": -269338.98121727
                 },
                 "NODE-3": {
+                    "blueCaptureThreshold": "0",
                     "label": "Technical Appreciation Club",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -27622.793742685,
                     "y": -271175.08669849
                 },
                 "NODE-4": {
+                    "blueCaptureThreshold": "0",
                     "label": "Anti-Ship Missile Battery",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -30276.829638883,
                     "y": -266747.95576508
                 },
                 "NODE-5": {
+                    "blueCaptureThreshold": "0",
                     "label": "Farmer's Village",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -30325.254196548,
                     "y": -271374.093535
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [
                 "QRF-1",
                 "QRF-2",
@@ -110,30 +121,39 @@
             "label": "Botched Ambush",
             "nodes": {
                 "NODE-32": {
+                    "blueCaptureThreshold": "0",
                     "label": "Doing It Wrong",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -24681.959335382,
                     "y": -301082.45430022
                 },
                 "NODE-33": {
+                    "blueCaptureThreshold": "0",
                     "label": "Camping Corners",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -24634.67248011,
                     "y": -302733.1223883
                 },
                 "NODE-34": {
+                    "blueCaptureThreshold": "0",
                     "label": "Speed Trap",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -24683.386310211,
                     "y": -298156.01932235
                 },
                 "NODE-35": {
+                    "blueCaptureThreshold": "0",
                     "label": "Arty Party",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -23124.654344855,
                     "y": -303101.07623256
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [],
@@ -199,42 +219,55 @@
             "label": "Taking Paphos",
             "nodes": {
                 "NODE-29": {
+                    "blueCaptureThreshold": "0",
                     "label": "Control Tower",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -18016.519236387,
                     "y": -314402.92634107
                 },
                 "NODE-36": {
+                    "blueCaptureThreshold": "0",
                     "label": "Terminal",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -19418.852275041,
                     "y": -313806.36525456
                 },
                 "NODE-37": {
+                    "blueCaptureThreshold": "0",
                     "label": "Hangars",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -18715.494912845,
                     "y": -312984.08668739
                 },
                 "NODE-38": {
+                    "blueCaptureThreshold": "0",
                     "label": "Administration",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -19250.73524055,
                     "y": -311988.62461306
                 },
                 "NODE-39": {
+                    "blueCaptureThreshold": "0",
                     "label": "E606 Interchange",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -15699.71156732,
                     "y": -312237.25161279
                 },
                 "NODE-40": {
+                    "blueCaptureThreshold": "0",
                     "label": "B6 Interchange",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -18286.843629412,
                     "y": -310035.07359456
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [
@@ -309,48 +342,63 @@
             "label": "Crossing Dhiarizos",
             "nodes": {
                 "NODE-41": {
+                    "blueCaptureThreshold": "0",
                     "label": "Hennimore!",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -15435.102297925,
                     "y": -308258.47366838
                 },
                 "NODE-53": {
+                    "blueCaptureThreshold": "0",
                     "label": "Bridge Alpha",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -17727.94169296,
                     "y": -303576.39608061
                 },
                 "NODE-55": {
+                    "blueCaptureThreshold": "0",
                     "label": "Bridge Bravo",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -13912.149688981,
                     "y": -299538.22441781
                 },
                 "NODE-56": {
+                    "blueCaptureThreshold": "0",
                     "label": "Bridge Charlie",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -12366.839545433,
                     "y": -295259.3973369
                 },
                 "NODE-57": {
+                    "blueCaptureThreshold": "0",
                     "label": "Angel Summoner",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -12008.051381779,
                     "y": -301549.08939051
                 },
                 "NODE-58": {
+                    "blueCaptureThreshold": "0",
                     "label": "Numberwang",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -14291.241349741,
                     "y": -303410.32593246
                 },
                 "NODE-59": {
+                    "blueCaptureThreshold": "0",
                     "label": "BMX Bandit",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -10638.478139753,
                     "y": -295817.49278573
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [
                 "REINFORCEMENT-4"
@@ -414,42 +462,55 @@
             "label": "Taking Larnaca",
             "nodes": {
                 "NODE-47": {
+                    "blueCaptureThreshold": "0",
                     "label": "Aces High",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -7966.025921787,
                     "y": -210020.52402391
                 },
                 "NODE-48": {
+                    "blueCaptureThreshold": "0",
                     "label": "Fuel Dump",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -8242.9328268311,
                     "y": -210804.7989369
                 },
                 "NODE-49": {
+                    "blueCaptureThreshold": "0",
                     "label": "Handle With Care",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -6872.6866856289,
                     "y": -208704.2338253
                 },
                 "NODE-50": {
+                    "blueCaptureThreshold": "0",
                     "label": "Heavy Metal",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -8289.3904795139,
                     "y": -209319.57225088
                 },
                 "NODE-51": {
+                    "blueCaptureThreshold": "0",
                     "label": "Nowhere To Hide",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -6346.3213100465,
                     "y": -208518.39867553
                 },
                 "NODE-52": {
+                    "blueCaptureThreshold": "0",
                     "label": "Tanc a lelek Intensifies",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -8588.8683210253,
                     "y": -207756.83230913
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [],
@@ -506,36 +567,47 @@
             "label": "Hind Heaven",
             "nodes": {
                 "NODE-43": {
+                    "blueCaptureThreshold": "0",
                     "label": "Kofinou Holdout",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -12072.894273752,
                     "y": -230400.22715021
                 },
                 "NODE-44": {
+                    "blueCaptureThreshold": "0",
                     "label": "Hasty Defense",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -14114.763718484,
                     "y": -226500.15769442
                 },
                 "NODE-45": {
+                    "blueCaptureThreshold": "0",
                     "label": "Strength In Numbers",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -15703.745530503,
                     "y": -222655.73087187
                 },
                 "NODE-46": {
+                    "blueCaptureThreshold": "0",
                     "label": "Tunguska Event",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -12696.770851109,
                     "y": -218229.12141477
                 },
                 "NODE-54": {
+                    "blueCaptureThreshold": "0",
                     "label": "Shen Yun's Revenge",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -10452.590913097,
                     "y": -227531.8795551
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [
                 "REINFORCEMENT-5"
@@ -615,42 +687,55 @@
             "label": "Road to Glory",
             "nodes": {
                 "NODE-60": {
+                    "blueCaptureThreshold": "0",
                     "label": "Tank Staging Ground",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -8221.7026687788,
                     "y": -251148.93566512
                 },
                 "NODE-61": {
+                    "blueCaptureThreshold": "0",
                     "label": "Hermit Ridge",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -5282.5245235627,
                     "y": -259749.71489599
                 },
                 "NODE-62": {
+                    "blueCaptureThreshold": "0",
                     "label": "Backwater Special Forces Camp",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -7691.9082701045,
                     "y": -258787.50893651
                 },
                 "NODE-63": {
+                    "blueCaptureThreshold": "0",
                     "label": "Calamity Canyon",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -8728.6933426001,
                     "y": -262472.33778849
                 },
                 "NODE-64": {
+                    "blueCaptureThreshold": "0",
                     "label": "Switchback Station",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -10712.529339727,
                     "y": -257477.51407034
                 },
                 "NODE-65": {
+                    "blueCaptureThreshold": "0",
                     "label": "Conjunctivitis Junction",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -13178.251231058,
                     "y": -263907.39388994
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [],
@@ -707,54 +792,71 @@
             "label": "Larnaca's Remedy",
             "nodes": {
                 "NODE-66": {
+                    "blueCaptureThreshold": "0",
                     "label": "Cognitive Email Analysis",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -169.90676534415,
                     "y": -210158.14245913
                 },
                 "NODE-67": {
+                    "blueCaptureThreshold": "0",
                     "label": "Containerization Advocacy",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -2132.1761051988,
                     "y": -207017.41574678
                 },
                 "NODE-68": {
+                    "blueCaptureThreshold": "0",
                     "label": "Embedded Multi-Cloud Capabilities",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 4923.0803828667,
                     "y": -208867.90734582
                 },
                 "NODE-69": {
+                    "blueCaptureThreshold": "0",
                     "label": "Predictive Service Management",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -3520.9120578475,
                     "y": -213726.11108725
                 },
                 "NODE-70": {
+                    "blueCaptureThreshold": "0",
                     "label": "DevOps",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -2023.8010092739,
                     "y": -210323.33951754
                 },
                 "NODE-71": {
+                    "blueCaptureThreshold": "0",
                     "label": "Knowledged Centered Service",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 2385.9533624737,
                     "y": -207818.95030381
                 },
                 "NODE-72": {
+                    "blueCaptureThreshold": "0",
                     "label": "Workflow Orchestration",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 1417.5968250275,
                     "y": -212925.87530433
                 },
                 "NODE-73": {
+                    "blueCaptureThreshold": "0",
                     "label": "Asset Depreciation",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 3594.5810131874,
                     "y": -202456.13015949
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [
                 "REINFORCEMENT-6"
@@ -871,42 +973,55 @@
             "label": "Noisy Neighbors",
             "nodes": {
                 "NODE-74": {
+                    "blueCaptureThreshold": "0",
                     "label": "Occupied Amphitheatre",
                     "radius": 121.92,
+                    "redSurrenderThreshold": "1",
                     "x": -13552.360756484,
                     "y": -320972.92987089
                 },
                 "NODE-75": {
+                    "blueCaptureThreshold": "0",
                     "label": "Hospital",
                     "radius": 91.44,
+                    "redSurrenderThreshold": "1",
                     "x": -10591.971910182,
                     "y": -317276.74107688
                 },
                 "NODE-76": {
+                    "blueCaptureThreshold": "0",
                     "label": "A Bit Moorish",
                     "radius": 152.4,
+                    "redSurrenderThreshold": "1",
                     "x": -11309.183310305,
                     "y": -321097.0986335
                 },
                 "NODE-77": {
+                    "blueCaptureThreshold": "0",
                     "label": "Day At The Races",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -15699.014799048,
                     "y": -318046.83671539
                 },
                 "NODE-83": {
+                    "blueCaptureThreshold": "0",
                     "label": "Funny Warcrime Jokes",
                     "radius": 121.92,
+                    "redSurrenderThreshold": "1",
                     "x": -11157.782242784,
                     "y": -319865.51350186
                 },
                 "NODE-84": {
+                    "blueCaptureThreshold": "0",
                     "label": "Imposter Syndrome",
                     "radius": 91.44,
+                    "redSurrenderThreshold": "1",
                     "x": -12138.716785533,
                     "y": -318356.31824116
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [
@@ -1032,36 +1147,47 @@
             "label": "Gilded Exit",
             "nodes": {
                 "NODE-78": {
+                    "blueCaptureThreshold": "0",
                     "label": "Terminus",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 3536.7218139331,
                     "y": -196939.26350691
                 },
                 "NODE-79": {
+                    "blueCaptureThreshold": "0",
                     "label": "Expat Apartments",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 5853.3494307704,
                     "y": -198604.31709731
                 },
                 "NODE-80": {
+                    "blueCaptureThreshold": "0",
                     "label": "Leaving Xylofagou",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 2327.5149370263,
                     "y": -185230.04234406
                 },
                 "NODE-81": {
+                    "blueCaptureThreshold": "0",
                     "label": "Company Town",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 4862.8592358656,
                     "y": -194101.87115204
                 },
                 "NODE-82": {
+                    "blueCaptureThreshold": "0",
                     "label": "Executive Retreat",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 3976.0434588119,
                     "y": -199151.99607564
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [
                 "REINFORCEMENT-7"
@@ -1190,30 +1316,39 @@
             "label": "Foothill Throwdown",
             "nodes": {
                 "NODE-28": {
+                    "blueCaptureThreshold": "0",
                     "label": "Flaksylvania",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -10374.951696024,
                     "y": -309884.90210287
                 },
                 "NODE-86": {
+                    "blueCaptureThreshold": "0",
                     "label": "Whats Aksilou With You?",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -9426.6623499913,
                     "y": -306311.70799531
                 },
                 "NODE-87": {
+                    "blueCaptureThreshold": "0",
                     "label": "Uragans Ahoy",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -7465.2174306218,
                     "y": -304502.49462192
                 },
                 "NODE-88": {
+                    "blueCaptureThreshold": "0",
                     "label": "Border Checkpoint",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -8498.5220715027,
                     "y": -315648.62985922
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [],
@@ -1284,30 +1419,39 @@
             "label": "Battle for Limassol",
             "nodes": {
                 "NODE-27": {
+                    "blueCaptureThreshold": "0",
                     "label": "Scud Party",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -25141.780354996,
                     "y": -267609.1692686
                 },
                 "NODE-7": {
+                    "blueCaptureThreshold": "0",
                     "label": "Precious Cargo",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -28666.177451891,
                     "y": -265431.77712835
                 },
                 "NODE-8": {
+                    "blueCaptureThreshold": "0",
                     "label": "Yachtsman's Resort",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -27312.776356723,
                     "y": -263557.86879801
                 },
                 "NODE-9": {
+                    "blueCaptureThreshold": "0",
                     "label": "High-Traffic Bridge",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -23317.081795703,
                     "y": -264537.58259795
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [],
@@ -1417,36 +1561,47 @@
             "label": "Western Exposure",
             "nodes": {
                 "NODE-89": {
+                    "blueCaptureThreshold": "0",
                     "label": "Border Checkpoint",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -8261.4060462775,
                     "y": -319290.80991904
                 },
                 "NODE-90": {
+                    "blueCaptureThreshold": "0",
                     "label": "Wagner Group",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -7079.9319133998,
                     "y": -316756.69550293
                 },
                 "NODE-91": {
+                    "blueCaptureThreshold": "0",
                     "label": "Eastern Flank",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -4698.6054401411,
                     "y": -311984.19859908
                 },
                 "NODE-92": {
+                    "blueCaptureThreshold": "0",
                     "label": "Cumtown",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -4356.1099944811,
                     "y": -318332.86807588
                 },
                 "NODE-93": {
+                    "blueCaptureThreshold": "0",
                     "label": "Mountain SAM Site",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -2237.5505020668,
                     "y": -315754.89553997
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [],
@@ -1524,36 +1679,47 @@
             "label": "Eastern Peninsula",
             "nodes": {
                 "NODE-94": {
+                    "blueCaptureThreshold": "0",
                     "label": "Kalahari",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 3347.0721290986,
                     "y": -179020.30162045
                 },
                 "NODE-95": {
+                    "blueCaptureThreshold": "0",
                     "label": "Chula Vista",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 3572.2512898172,
                     "y": -175652.08403226
                 },
                 "NODE-96": {
+                    "blueCaptureThreshold": "0",
                     "label": "Refuelling Station",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 1726.0996073411,
                     "y": -168725.82678045
                 },
                 "NODE-97": {
+                    "blueCaptureThreshold": "0",
                     "label": "Last Stand",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -289.78136082833,
                     "y": -166213.76207461
                 },
                 "NODE-98": {
+                    "blueCaptureThreshold": "0",
                     "label": "Noah's Ark",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 5370.2667215965,
                     "y": -168304.05210855
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [
@@ -1626,36 +1792,47 @@
             "label": "Run for the Hills!",
             "nodes": {
                 "NODE-100": {
+                    "blueCaptureThreshold": "0",
                     "label": "Thinning Air",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 2700.4886139654,
                     "y": -301591.56743867
                 },
                 "NODE-101": {
+                    "blueCaptureThreshold": "0",
                     "label": "Spiderwebs",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 4248.4317801662,
                     "y": -306384.01525534
                 },
                 "NODE-102": {
+                    "blueCaptureThreshold": "0",
                     "label": "Badwater",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 8774.6686358626,
                     "y": -312416.27699773
                 },
                 "NODE-103": {
+                    "blueCaptureThreshold": "0",
                     "label": "Nocturnal Emissions",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 1321.4546328204,
                     "y": -299006.99936536
                 },
                 "NODE-99": {
+                    "blueCaptureThreshold": "0",
                     "label": "Pigpen to Rubberduck",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 2056.7072220771,
                     "y": -306544.81579926
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [
                 "REINFORCEMENT-8"
@@ -1711,36 +1888,47 @@
             "label": "Eastern Buffer Zone",
             "nodes": {
                 "NODE-104": {
+                    "blueCaptureThreshold": "0",
                     "label": "Kapparis Beach",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 10195.177301571,
                     "y": -171256.39344057
                 },
                 "NODE-105": {
+                    "blueCaptureThreshold": "0",
                     "label": "Deryneia Crosspoint",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 12952.7361626,
                     "y": -176885.44179199
                 },
                 "NODE-106": {
+                    "blueCaptureThreshold": "0",
                     "label": "Operations",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 13292.794454976,
                     "y": -185956.98262655
                 },
                 "NODE-107": {
+                    "blueCaptureThreshold": "0",
                     "label": "Buffer Harbour",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 12039.34461916,
                     "y": -173088.88159739
                 },
                 "NODE-108": {
+                    "blueCaptureThreshold": "0",
                     "label": "East Crossing",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": 12320.01412388,
                     "y": -181309.10479552
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [
@@ -1751,12 +1939,11 @@
             "strand": "STRAND-2",
             "tasks": [],
             "vehicle_groups": [
-                "SNAPRED GROUND 1",
-                "SNAP RED GROUND 105",
                 "RED SAM SA-13 GROUND 106",
+                "SNAP RED GROUND 104",
+                "SNAP RED GROUND 105",
                 "SNAP RED GROUND 106-2",
                 "SNAP RED GROUND 107",
-                "SNAP RED GROUND 104",
                 "SNAP RED GROUND BORDER 1",
                 "SNAP RED GROUND BORDER 2",
                 "SNAP RED GROUND BORDER 3",
@@ -1767,7 +1954,8 @@
                 "SNAP RED GROUND BORDER 3-5",
                 "SNAP RED GROUND BORDER 3-6",
                 "SNAP RED GROUND BORDER 3-7",
-                "SNAP RED GROUND BORDER 3-8"
+                "SNAP RED GROUND BORDER 3-8",
+                "SNAPRED GROUND 1"
             ],
             "vertices": [
                 {
@@ -1801,18 +1989,23 @@
             "label": "Western Beachhead",
             "nodes": {
                 "NODE-12": {
+                    "blueCaptureThreshold": "0",
                     "label": "Coastal Flatlands",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -28803.645979279,
                     "y": -276616.01373282
                 },
                 "NODE-17": {
+                    "blueCaptureThreshold": "0",
                     "label": "Southern Junction",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -30395.543354366,
                     "y": -274267.50898774
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [],
@@ -1862,30 +2055,39 @@
             "label": "Coastal Push",
             "nodes": {
                 "NODE-13": {
+                    "blueCaptureThreshold": "0",
                     "label": "River Crossing",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -27846.382032978,
                     "y": -275215.17917489
                 },
                 "NODE-14": {
+                    "blueCaptureThreshold": "0",
                     "label": "Strategic Bridge",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -24615.472025986,
                     "y": -274882.46903495
                 },
                 "NODE-15": {
+                    "blueCaptureThreshold": "0",
                     "label": "Kolossi Outskirts",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -26209.225533316,
                     "y": -273502.27815848
                 },
                 "NODE-16": {
+                    "blueCaptureThreshold": "0",
                     "label": "Occupied Ruins",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -26950.094661855,
                     "y": -277595.48853329
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [
                 "REINFORCEMENT-2"
@@ -1943,30 +2145,39 @@
             "label": "Germasogeia Reservoir",
             "nodes": {
                 "NODE-18": {
+                    "blueCaptureThreshold": "0",
                     "label": "Akrounta Village",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -17055.287913858,
                     "y": -259115.4302576
                 },
                 "NODE-19": {
+                    "blueCaptureThreshold": "0",
                     "label": "The Crossroads",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -18440.37412085,
                     "y": -254844.49605009
                 },
                 "NODE-20": {
+                    "blueCaptureThreshold": "0",
                     "label": "Mathikoloni Village",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -15549.244216202,
                     "y": -262159.74111894
                 },
                 "NODE-6": {
+                    "blueCaptureThreshold": "0",
                     "label": "Lower Reservoir",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -19448.611725078,
                     "y": -259079.6460996
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [
                 "REINFORCEMENT-3"
@@ -2021,30 +2232,39 @@
             "label": "Forest Fighting",
             "nodes": {
                 "NODE-21": {
+                    "blueCaptureThreshold": "0",
                     "label": "Ruins Stronghold",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -25852.007094265,
                     "y": -279821.51369954
                 },
                 "NODE-22": {
+                    "blueCaptureThreshold": "0",
                     "label": "Flak Town",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -25689.469873625,
                     "y": -284550.5728334
                 },
                 "NODE-23": {
+                    "blueCaptureThreshold": "0",
                     "label": "Reinforcement Convoy",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -23552.612931207,
                     "y": -283452.48696688
                 },
                 "NODE-24": {
+                    "blueCaptureThreshold": "0",
                     "label": "Entrenched City",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -25277.003042793,
                     "y": -282298.70471041
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [],
@@ -2096,30 +2316,39 @@
             "label": "Hearts and Minds",
             "nodes": {
                 "NODE-10": {
+                    "blueCaptureThreshold": "0",
                     "label": "Around the Roundabout",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -23115.335708706,
                     "y": -259181.39188287
                 },
                 "NODE-11": {
+                    "blueCaptureThreshold": "0",
                     "label": "Industrial Park",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -23503.870339474,
                     "y": -260952.6548422
                 },
                 "NODE-25": {
+                    "blueCaptureThreshold": "0",
                     "label": "Olive Oil Factory",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -25209.467846848,
                     "y": -263239.20870785
                 },
                 "NODE-85": {
+                    "blueCaptureThreshold": "0",
                     "label": "It means \"Cube\"",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -21981.613669659,
                     "y": -259993.85526568
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [],
@@ -2196,6 +2425,7 @@
             "farps": [],
             "label": "Strategic Targets",
             "nodes": {},
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [],
@@ -2246,30 +2476,39 @@
             "label": "Eastbound Highway",
             "nodes": {
                 "NODE-26": {
+                    "blueCaptureThreshold": "0",
                     "label": "Highway Overpass",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -16752.90068319,
                     "y": -235126.15395188
                 },
                 "NODE-30": {
+                    "blueCaptureThreshold": "0",
                     "label": "Catch Of The Day",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -23288.799412211,
                     "y": -238092.66303925
                 },
                 "NODE-31": {
+                    "blueCaptureThreshold": "0",
                     "label": "Mountain Village",
                     "radius": 260,
+                    "redSurrenderThreshold": "1",
                     "x": -17182.964014925,
                     "y": -239495.19814236
                 },
                 "NODE-42": {
+                    "blueCaptureThreshold": "0",
                     "label": "Turned Tides",
                     "radius": 259.9944,
+                    "redSurrenderThreshold": "1",
                     "x": -22203.838820225,
                     "y": -235955.24873164
                 }
             },
+            "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
             "ship_groups": [

@@ -9,11 +9,11 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-1" },
-				{ name = "NODE-2" },
-				{ name = "NODE-3" },
-				{ name = "NODE-4" },
-				{ name = "NODE-5" },
+				{ name = "NODE-1", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-2", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-3", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-4", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-5", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -412,10 +412,10 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-32" },
-				{ name = "NODE-33" },
-				{ name = "NODE-34" },
-				{ name = "NODE-35" },
+				{ name = "NODE-32", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-33", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-34", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-35", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -497,12 +497,12 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-29" },
-				{ name = "NODE-36" },
-				{ name = "NODE-37" },
-				{ name = "NODE-38" },
-				{ name = "NODE-39" },
-				{ name = "NODE-40" },
+				{ name = "NODE-29", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-36", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-37", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-38", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-39", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-40", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -758,13 +758,13 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-41" },
-				{ name = "NODE-53" },
-				{ name = "NODE-55" },
-				{ name = "NODE-56" },
-				{ name = "NODE-57" },
-				{ name = "NODE-58" },
-				{ name = "NODE-59" },
+				{ name = "NODE-41", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-53", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-55", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-56", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-57", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-58", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-59", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -885,12 +885,12 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-47" },
-				{ name = "NODE-48" },
-				{ name = "NODE-49" },
-				{ name = "NODE-50" },
-				{ name = "NODE-51" },
-				{ name = "NODE-52" },
+				{ name = "NODE-47", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-48", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-49", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-50", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-51", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-52", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -947,11 +947,11 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-43" },
-				{ name = "NODE-44" },
-				{ name = "NODE-45" },
-				{ name = "NODE-46" },
-				{ name = "NODE-54" },
+				{ name = "NODE-43", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-44", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-45", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-46", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-54", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -1291,12 +1291,12 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-60" },
-				{ name = "NODE-61" },
-				{ name = "NODE-62" },
-				{ name = "NODE-63" },
-				{ name = "NODE-64" },
-				{ name = "NODE-65" },
+				{ name = "NODE-60", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-61", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-62", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-63", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-64", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-65", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -1340,14 +1340,14 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-66" },
-				{ name = "NODE-67" },
-				{ name = "NODE-68" },
-				{ name = "NODE-69" },
-				{ name = "NODE-70" },
-				{ name = "NODE-71" },
-				{ name = "NODE-72" },
-				{ name = "NODE-73" },
+				{ name = "NODE-66", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-67", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-68", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-69", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-70", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-71", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-72", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-73", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 				{
@@ -1887,12 +1887,12 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-74" },
-				{ name = "NODE-75" },
-				{ name = "NODE-76" },
-				{ name = "NODE-77" },
-				{ name = "NODE-83" },
-				{ name = "NODE-84" },
+				{ name = "NODE-74", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-75", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-76", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-77", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-83", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-84", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -2087,11 +2087,11 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-78" },
-				{ name = "NODE-79" },
-				{ name = "NODE-80" },
-				{ name = "NODE-81" },
-				{ name = "NODE-82" },
+				{ name = "NODE-78", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-79", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-80", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-81", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-82", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -2828,10 +2828,10 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-28" },
-				{ name = "NODE-86" },
-				{ name = "NODE-87" },
-				{ name = "NODE-88" },
+				{ name = "NODE-28", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-86", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-87", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-88", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -2904,10 +2904,10 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-27" },
-				{ name = "NODE-7" },
-				{ name = "NODE-8" },
-				{ name = "NODE-9" },
+				{ name = "NODE-27", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-7", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-8", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-9", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -3229,11 +3229,11 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-89" },
-				{ name = "NODE-90" },
-				{ name = "NODE-91" },
-				{ name = "NODE-92" },
-				{ name = "NODE-93" },
+				{ name = "NODE-89", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-90", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-91", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-92", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-93", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -3300,11 +3300,11 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-94" },
-				{ name = "NODE-95" },
-				{ name = "NODE-96" },
-				{ name = "NODE-97" },
-				{ name = "NODE-98" },
+				{ name = "NODE-94", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-95", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-96", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-97", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-98", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -3363,11 +3363,11 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-100" },
-				{ name = "NODE-101" },
-				{ name = "NODE-102" },
-				{ name = "NODE-103" },
-				{ name = "NODE-99" },
+				{ name = "NODE-100", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-101", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-102", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-103", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-99", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -3683,11 +3683,11 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-104" },
-				{ name = "NODE-105" },
-				{ name = "NODE-106" },
-				{ name = "NODE-107" },
-				{ name = "NODE-108" },
+				{ name = "NODE-104", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-105", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-106", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-107", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-108", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -3702,12 +3702,11 @@ MissionDb = {
 			reinforcements = {
 			},
 			vehicleGroups = {
-				{ name = "SNAPRED GROUND 1" },
-				{ name = "SNAP RED GROUND 105" },
 				{ name = "RED SAM SA-13 GROUND 106" },
+				{ name = "SNAP RED GROUND 104" },
+				{ name = "SNAP RED GROUND 105" },
 				{ name = "SNAP RED GROUND 106-2" },
 				{ name = "SNAP RED GROUND 107" },
-				{ name = "SNAP RED GROUND 104" },
 				{ name = "SNAP RED GROUND BORDER 1" },
 				{ name = "SNAP RED GROUND BORDER 2" },
 				{ name = "SNAP RED GROUND BORDER 3" },
@@ -3719,6 +3718,7 @@ MissionDb = {
 				{ name = "SNAP RED GROUND BORDER 3-6" },
 				{ name = "SNAP RED GROUND BORDER 3-7" },
 				{ name = "SNAP RED GROUND BORDER 3-8" },
+				{ name = "SNAPRED GROUND 1" },
 			},
 			shipGroups = {
 				{ name = "SNAPNaval-1" },
@@ -3736,8 +3736,8 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-12" },
-				{ name = "NODE-17" },
+				{ name = "NODE-12", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-17", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -3774,10 +3774,10 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-13" },
-				{ name = "NODE-14" },
-				{ name = "NODE-15" },
-				{ name = "NODE-16" },
+				{ name = "NODE-13", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-14", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-15", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-16", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -4093,10 +4093,10 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-18" },
-				{ name = "NODE-19" },
-				{ name = "NODE-20" },
-				{ name = "NODE-6" },
+				{ name = "NODE-18", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-19", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-20", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-6", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -4480,10 +4480,10 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-21" },
-				{ name = "NODE-22" },
-				{ name = "NODE-23" },
-				{ name = "NODE-24" },
+				{ name = "NODE-21", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-22", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-23", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-24", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -4524,10 +4524,10 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-10" },
-				{ name = "NODE-11" },
-				{ name = "NODE-25" },
-				{ name = "NODE-85" },
+				{ name = "NODE-10", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-11", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-25", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-85", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -5099,10 +5099,10 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-26" },
-				{ name = "NODE-30" },
-				{ name = "NODE-31" },
-				{ name = "NODE-42" },
+				{ name = "NODE-26", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-30", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-31", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-42", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},

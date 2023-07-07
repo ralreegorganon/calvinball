@@ -262,6 +262,7 @@ class Mission:
                     {"key": "borderZones", "value": ",".join(objective["borderZones"])},
                     {"key": "capZones", "value": ",".join(objective["capZones"])},
                     {"key": "carriers", "value": ",".join(objective["carriers"])},
+                    {"key": "qrfKillOnComplete", "value": ",".join(objective["qrfKillOnComplete"])},
                 ]
 
                 props = {k+1: v for k, v in enumerate(props_a)}
@@ -270,7 +271,14 @@ class Mission:
                 oz = self.m.triggers.add_triggerzone_quad(p, [dcs.mapping.Point(v["x"], v["y"], self.m.terrain) for v in objective["vertices"]], name=objective_name, properties=props)
                 objective_zones[oz.name] = oz
                 for node_name, node in objective["nodes"].items():
-                    self.m.triggers.add_triggerzone(dcs.mapping.Point(node["x"], node["y"], self.m.terrain), node["radius"], name=node_name, properties={1: {"key": "label", "value": node["label"]}, 2: {"key": "component", "value": "node"}})
+                    props_a = [
+                        {"key": "label", "value": node["label"]},
+                        {"key": "component", "value": "node"},
+                        {"key": "redSurrenderThreshold", "value": node["redSurrenderThreshold"]},
+                        {"key": "blueCaptureThreshold", "value": node["blueCaptureThreshold"]},
+                    ]
+                    props = {k+1: v for k, v in enumerate(props_a)}
+                    self.m.triggers.add_triggerzone(dcs.mapping.Point(node["x"], node["y"], self.m.terrain), node["radius"], name=node_name, properties=props)
                 objective_centers[objective_name] = p
 
                 if len(objective["tasks"]) > 0:

@@ -257,9 +257,9 @@ MissionDb = {
 				"CAP-4",
 			},
 			nodes = {
-				{ name = "NODE-1" },
-				{ name = "NODE-2" },
-				{ name = "NODE-4" },
+				{ name = "NODE-1", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-2", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-4", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -1392,11 +1392,11 @@ MissionDb = {
 				"CAP-4",
 			},
 			nodes = {
-				{ name = "NODE-10" },
-				{ name = "NODE-11" },
-				{ name = "NODE-12" },
-				{ name = "NODE-13" },
-				{ name = "NODE-5" },
+				{ name = "NODE-10", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-11", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-12", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-13", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-5", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -2431,11 +2431,11 @@ MissionDb = {
 				"CAP-4",
 			},
 			nodes = {
-				{ name = "NODE-14" },
-				{ name = "NODE-15" },
-				{ name = "NODE-16" },
-				{ name = "NODE-17" },
-				{ name = "NODE-6" },
+				{ name = "NODE-14", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-15", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-16", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-17", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-6", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -2850,10 +2850,10 @@ MissionDb = {
 				"CAP-4",
 			},
 			nodes = {
-				{ name = "NODE-18" },
-				{ name = "NODE-19" },
-				{ name = "NODE-20" },
-				{ name = "NODE-3" },
+				{ name = "NODE-18", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-19", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-20", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-3", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -3151,13 +3151,9 @@ MissionDb = {
 						{ name = "RED AIR DEFENSE BATTERY A 242-2" },
 						{ name = "RED AIR DEFENSE BATTERY C RG 246-2" },
 						{ name = "RED RG 152-11" },
+						{ name = "RED RG 152-12" },
+						{ name = "RED RG 152-13" },
 						{ name = "RED RG 152-14" },
-						{ name = "RED SAM SA-2 RG 234-2" },
-						{ name = "RED SAM SA-3 236-2" },
-						{ name = "RED SAM SA-6 238-3" },
-						{ name = "RED SAM SA-6 238-4" },
-						{ name = "RED SAM SA-8 RG 240-3" },
-						{ name = "RED SAM SA-8 RG 240-4" },
 						{ name = "RED RG 152-15" },
 						{ name = "RED RG 152-16" },
 						{ name = "RED RG 152-17" },
@@ -3165,8 +3161,12 @@ MissionDb = {
 						{ name = "RED RG 152-19" },
 						{ name = "RED RG 152-20" },
 						{ name = "RED RG 152-8" },
-						{ name = "RED RG 152-13" },
-						{ name = "RED RG 152-12" },
+						{ name = "RED SAM SA-2 RG 234-2" },
+						{ name = "RED SAM SA-3 236-2" },
+						{ name = "RED SAM SA-6 238-3" },
+						{ name = "RED SAM SA-6 238-4" },
+						{ name = "RED SAM SA-8 RG 240-3" },
+						{ name = "RED SAM SA-8 RG 240-4" },
 					},
 					shipGroups = {
 					},
@@ -3217,332 +3217,152 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Mi-24P-7#00001",
+							name = "Static Container 40ft-11#00001",
 							template = {
-								name = "Static Mi-24P-7",
-								type = "Mi-24P",
-								x = 150157.4067739,
-								y = -140326.36351007,
-								heading = 1.5707963267949,
-								category = "Helicopters",
+								name = "Static Container 40ft-11",
+								type = "container_40ft",
+								x = 149862.12392066,
+								y = -140737.55061705,
+								heading = 1.7453292519943,
+								category = "Fortifications",
 								canCargo = false,
-								shape_name = "",
-								rate = 20,
+								shape_name = "container_40ft",
+								rate = 1,
 								dead = false
 							}
 						},
 						{
-							name = "Static Mi-26-7#00001",
+							name = "Static Container 40ft-12#00001",
 							template = {
-								name = "Static Mi-26-7",
-								type = "Mi-26",
-								x = 150183.00863928,
-								y = -140193.59104544,
-								heading = 6.0737457969403,
-								category = "Helicopters",
+								name = "Static Container 40ft-12",
+								type = "container_40ft",
+								x = 149886.13583665,
+								y = -140776.38161783,
+								heading = 1.5009831567151,
+								category = "Fortifications",
 								canCargo = false,
-								shape_name = "",
-								rate = 30,
+								shape_name = "container_40ft",
+								rate = 1,
 								dead = false
 							}
 						},
 						{
-							name = "Static Mi-24P-8#00001",
+							name = "Static Container 40ft-13#00001",
 							template = {
-								name = "Static Mi-24P-8",
-								type = "Mi-24P",
-								x = 150102.63068983,
-								y = -140338.86674665,
+								name = "Static Container 40ft-13",
+								type = "container_40ft",
+								x = 149874.46656991,
+								y = -140747.7085624,
 								heading = 1.553343034275,
-								category = "Helicopters",
+								category = "Fortifications",
 								canCargo = false,
-								shape_name = "",
-								rate = 20,
+								shape_name = "container_40ft",
+								rate = 1,
 								dead = false
 							}
 						},
 						{
-							name = "Static Mi-24P-9#00001",
+							name = "Static Container 40ft-14#00001",
 							template = {
-								name = "Static Mi-24P-9",
-								type = "Mi-24P",
-								x = 150184.79481593,
-								y = -140370.42253421,
+								name = "Static Container 40ft-14",
+								type = "container_40ft",
+								x = 149877.25490688,
+								y = -140762.33412896,
+								heading = 1.6057029118348,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_40ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 40ft-15#00001",
+							template = {
+								name = "Static Container 40ft-15",
+								type = "container_40ft",
+								x = 149888.21182794,
+								y = -140755.290394,
+								heading = 1.7278759594744,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_40ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 40ft-16#00001",
+							template = {
+								name = "Static Container 40ft-16",
+								type = "container_40ft",
+								x = 149743.22431852,
+								y = -140703.11314743,
+								heading = 1.7453292519943,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_40ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 40ft-17#00001",
+							template = {
+								name = "Static Container 40ft-17",
+								type = "container_40ft",
+								x = 149747.06074468,
+								y = -140696.53641687,
+								heading = 1.5009831567151,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_40ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 40ft-18#00001",
+							template = {
+								name = "Static Container 40ft-18",
+								type = "container_40ft",
+								x = 149747.06074468,
+								y = -140683.56564271,
 								heading = 1.553343034275,
-								category = "Helicopters",
-								canCargo = false,
-								shape_name = "",
-								rate = 20,
-								dead = false
-							}
-						},
-						{
-							name = "Static Mi-26-8#00001",
-							template = {
-								name = "Static Mi-26-8",
-								type = "Mi-26",
-								x = 150243.1432533,
-								y = -140203.71271314,
-								heading = 6.0737457969403,
-								category = "Helicopters",
-								canCargo = false,
-								shape_name = "",
-								rate = 30,
-								dead = false
-							}
-						},
-						{
-							name = "Static Mi-24P-10#00001",
-							template = {
-								name = "Static Mi-24P-10",
-								type = "Mi-24P",
-								x = 150131.2095163,
-								y = -140376.97184861,
-								heading = 1.5707963267949,
-								category = "Helicopters",
-								canCargo = false,
-								shape_name = "",
-								rate = 20,
-								dead = false
-							}
-						},
-						{
-							name = "Static Mi-26-9#00001",
-							template = {
-								name = "Static Mi-26-9",
-								type = "Mi-26",
-								x = 150200.87040582,
-								y = -140241.8178151,
-								heading = 6.0737457969403,
-								category = "Helicopters",
-								canCargo = false,
-								shape_name = "",
-								rate = 30,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-10#00001",
-							template = {
-								name = "Static Tank 1-10",
-								type = "Tank",
-								x = 150293.05697899,
-								y = -140820.37112045,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Military staff-7#00001",
-							template = {
-								name = "Static Military staff-7",
-								type = "Military staff",
-								x = 149967.92594441,
-								y = -140308.01240892,
-								heading = 1.9896753472735,
 								category = "Fortifications",
 								canCargo = false,
-								shape_name = "aviashtab",
-								rate = 100,
+								shape_name = "container_40ft",
+								rate = 1,
 								dead = false
 							}
 						},
 						{
-							name = "Static Small warehouse 3-3#00001",
+							name = "Static Container 40ft-19#00001",
 							template = {
-								name = "Static Small warehouse 3-3",
-								type = "Small werehouse 3",
-								x = 149896.7925746,
-								y = -140421.02516527,
-								heading = 3.9444441095072,
+								name = "Static Container 40ft-19",
+								type = "container_40ft",
+								x = 149751.9932926,
+								y = -140690.32506023,
+								heading = 1.6057029118348,
 								category = "Fortifications",
 								canCargo = false,
-								shape_name = "s3",
-								rate = 100,
+								shape_name = "container_40ft",
+								rate = 1,
 								dead = false
 							}
 						},
 						{
-							name = "Static Tank 1-4#00001",
+							name = "Static Container 40ft-20#00001",
 							template = {
-								name = "Static Tank 1-4",
-								type = "Tank",
-								x = 150319.65045827,
-								y = -140851.84911633,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-5#00001",
-							template = {
-								name = "Static Tank 1-5",
-								type = "Tank",
-								x = 150351.67117822,
-								y = -140877.89987154,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-6#00001",
-							template = {
-								name = "Static Tank 1-6",
-								type = "Tank",
-								x = 150386.4055185,
-								y = -140902.32245455,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-7#00001",
-							template = {
-								name = "Static Tank 1-7",
-								type = "Tank",
-								x = 150263.20715531,
-								y = -140852.93456447,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-8#00001",
-							template = {
-								name = "Static Tank 1-8",
-								type = "Tank",
-								x = 150290.88608273,
-								y = -140883.86983628,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-9#00001",
-							template = {
-								name = "Static Tank 1-9",
-								type = "Tank",
-								x = 150332.13311181,
-								y = -140914.26238403,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-11#00001",
-							template = {
-								name = "Static Tank 1-11",
-								type = "Tank",
-								x = 150362.52565956,
-								y = -140938.68496704,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Military staff-4#00001",
-							template = {
-								name = "Static Military staff-4",
-								type = "Military staff",
-								x = 149944.5227578,
-								y = -140332.03146885,
-								heading = 1.9896753472735,
+								name = "Static Container 40ft-20",
+								type = "container_40ft",
+								x = 149749.61836212,
+								y = -140673.15248599,
+								heading = 1.7278759594744,
 								category = "Fortifications",
 								canCargo = false,
-								shape_name = "aviashtab",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Military staff-5#00001",
-							template = {
-								name = "Static Military staff-5",
-								type = "Military staff",
-								x = 149979.93547437,
-								y = -140340.03782216,
-								heading = 1.9896753472735,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "aviashtab",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Military staff-6#00001",
-							template = {
-								name = "Static Military staff-6",
-								type = "Military staff",
-								x = 149957.45609777,
-								y = -140356.66640212,
-								heading = 1.9896753472735,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "aviashtab",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Small warehouse 3-4#00001",
-							template = {
-								name = "Static Small warehouse 3-4",
-								type = "Small werehouse 3",
-								x = 149885.0909813,
-								y = -140448.43152853,
-								heading = 3.9444441095072,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "s3",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Small warehouse 3-5#00001",
-							template = {
-								name = "Static Small warehouse 3-5",
-								type = "Small werehouse 3",
-								x = 149869.69414801,
-								y = -140472.45058846,
-								heading = 3.9444441095072,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "s3",
-								rate = 100,
+								shape_name = "container_40ft",
+								rate = 1,
 								dead = false
 							}
 						},
@@ -3817,152 +3637,332 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Container 40ft-11#00001",
+							name = "Static Mi-24P-10#00001",
 							template = {
-								name = "Static Container 40ft-11",
-								type = "container_40ft",
-								x = 149862.12392066,
-								y = -140737.55061705,
-								heading = 1.7453292519943,
-								category = "Fortifications",
+								name = "Static Mi-24P-10",
+								type = "Mi-24P",
+								x = 150131.2095163,
+								y = -140376.97184861,
+								heading = 1.5707963267949,
+								category = "Helicopters",
 								canCargo = false,
-								shape_name = "container_40ft",
-								rate = 1,
+								shape_name = "",
+								rate = 20,
 								dead = false
 							}
 						},
 						{
-							name = "Static Container 40ft-12#00001",
+							name = "Static Mi-24P-7#00001",
 							template = {
-								name = "Static Container 40ft-12",
-								type = "container_40ft",
-								x = 149886.13583665,
-								y = -140776.38161783,
-								heading = 1.5009831567151,
-								category = "Fortifications",
+								name = "Static Mi-24P-7",
+								type = "Mi-24P",
+								x = 150157.4067739,
+								y = -140326.36351007,
+								heading = 1.5707963267949,
+								category = "Helicopters",
 								canCargo = false,
-								shape_name = "container_40ft",
-								rate = 1,
+								shape_name = "",
+								rate = 20,
 								dead = false
 							}
 						},
 						{
-							name = "Static Container 40ft-13#00001",
+							name = "Static Mi-24P-8#00001",
 							template = {
-								name = "Static Container 40ft-13",
-								type = "container_40ft",
-								x = 149874.46656991,
-								y = -140747.7085624,
+								name = "Static Mi-24P-8",
+								type = "Mi-24P",
+								x = 150102.63068983,
+								y = -140338.86674665,
 								heading = 1.553343034275,
-								category = "Fortifications",
+								category = "Helicopters",
 								canCargo = false,
-								shape_name = "container_40ft",
-								rate = 1,
+								shape_name = "",
+								rate = 20,
 								dead = false
 							}
 						},
 						{
-							name = "Static Container 40ft-14#00001",
+							name = "Static Mi-24P-9#00001",
 							template = {
-								name = "Static Container 40ft-14",
-								type = "container_40ft",
-								x = 149877.25490688,
-								y = -140762.33412896,
-								heading = 1.6057029118348,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "container_40ft",
-								rate = 1,
-								dead = false
-							}
-						},
-						{
-							name = "Static Container 40ft-15#00001",
-							template = {
-								name = "Static Container 40ft-15",
-								type = "container_40ft",
-								x = 149888.21182794,
-								y = -140755.290394,
-								heading = 1.7278759594744,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "container_40ft",
-								rate = 1,
-								dead = false
-							}
-						},
-						{
-							name = "Static Container 40ft-16#00001",
-							template = {
-								name = "Static Container 40ft-16",
-								type = "container_40ft",
-								x = 149743.22431852,
-								y = -140703.11314743,
-								heading = 1.7453292519943,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "container_40ft",
-								rate = 1,
-								dead = false
-							}
-						},
-						{
-							name = "Static Container 40ft-17#00001",
-							template = {
-								name = "Static Container 40ft-17",
-								type = "container_40ft",
-								x = 149747.06074468,
-								y = -140696.53641687,
-								heading = 1.5009831567151,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "container_40ft",
-								rate = 1,
-								dead = false
-							}
-						},
-						{
-							name = "Static Container 40ft-18#00001",
-							template = {
-								name = "Static Container 40ft-18",
-								type = "container_40ft",
-								x = 149747.06074468,
-								y = -140683.56564271,
+								name = "Static Mi-24P-9",
+								type = "Mi-24P",
+								x = 150184.79481593,
+								y = -140370.42253421,
 								heading = 1.553343034275,
-								category = "Fortifications",
+								category = "Helicopters",
 								canCargo = false,
-								shape_name = "container_40ft",
-								rate = 1,
+								shape_name = "",
+								rate = 20,
 								dead = false
 							}
 						},
 						{
-							name = "Static Container 40ft-19#00001",
+							name = "Static Mi-26-7#00001",
 							template = {
-								name = "Static Container 40ft-19",
-								type = "container_40ft",
-								x = 149751.9932926,
-								y = -140690.32506023,
-								heading = 1.6057029118348,
-								category = "Fortifications",
+								name = "Static Mi-26-7",
+								type = "Mi-26",
+								x = 150183.00863928,
+								y = -140193.59104544,
+								heading = 6.0737457969403,
+								category = "Helicopters",
 								canCargo = false,
-								shape_name = "container_40ft",
-								rate = 1,
+								shape_name = "",
+								rate = 30,
 								dead = false
 							}
 						},
 						{
-							name = "Static Container 40ft-20#00001",
+							name = "Static Mi-26-8#00001",
 							template = {
-								name = "Static Container 40ft-20",
-								type = "container_40ft",
-								x = 149749.61836212,
-								y = -140673.15248599,
-								heading = 1.7278759594744,
+								name = "Static Mi-26-8",
+								type = "Mi-26",
+								x = 150243.1432533,
+								y = -140203.71271314,
+								heading = 6.0737457969403,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 30,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-26-9#00001",
+							template = {
+								name = "Static Mi-26-9",
+								type = "Mi-26",
+								x = 150200.87040582,
+								y = -140241.8178151,
+								heading = 6.0737457969403,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 30,
+								dead = false
+							}
+						},
+						{
+							name = "Static Military staff-4#00001",
+							template = {
+								name = "Static Military staff-4",
+								type = "Military staff",
+								x = 149944.5227578,
+								y = -140332.03146885,
+								heading = 1.9896753472735,
 								category = "Fortifications",
 								canCargo = false,
-								shape_name = "container_40ft",
-								rate = 1,
+								shape_name = "aviashtab",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Military staff-5#00001",
+							template = {
+								name = "Static Military staff-5",
+								type = "Military staff",
+								x = 149979.93547437,
+								y = -140340.03782216,
+								heading = 1.9896753472735,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "aviashtab",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Military staff-6#00001",
+							template = {
+								name = "Static Military staff-6",
+								type = "Military staff",
+								x = 149957.45609777,
+								y = -140356.66640212,
+								heading = 1.9896753472735,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "aviashtab",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Military staff-7#00001",
+							template = {
+								name = "Static Military staff-7",
+								type = "Military staff",
+								x = 149967.92594441,
+								y = -140308.01240892,
+								heading = 1.9896753472735,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "aviashtab",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Small warehouse 3-3#00001",
+							template = {
+								name = "Static Small warehouse 3-3",
+								type = "Small werehouse 3",
+								x = 149896.7925746,
+								y = -140421.02516527,
+								heading = 3.9444441095072,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "s3",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Small warehouse 3-4#00001",
+							template = {
+								name = "Static Small warehouse 3-4",
+								type = "Small werehouse 3",
+								x = 149885.0909813,
+								y = -140448.43152853,
+								heading = 3.9444441095072,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "s3",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Small warehouse 3-5#00001",
+							template = {
+								name = "Static Small warehouse 3-5",
+								type = "Small werehouse 3",
+								x = 149869.69414801,
+								y = -140472.45058846,
+								heading = 3.9444441095072,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "s3",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-10#00001",
+							template = {
+								name = "Static Tank 1-10",
+								type = "Tank",
+								x = 150293.05697899,
+								y = -140820.37112045,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-11#00001",
+							template = {
+								name = "Static Tank 1-11",
+								type = "Tank",
+								x = 150362.52565956,
+								y = -140938.68496704,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-4#00001",
+							template = {
+								name = "Static Tank 1-4",
+								type = "Tank",
+								x = 150319.65045827,
+								y = -140851.84911633,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-5#00001",
+							template = {
+								name = "Static Tank 1-5",
+								type = "Tank",
+								x = 150351.67117822,
+								y = -140877.89987154,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-6#00001",
+							template = {
+								name = "Static Tank 1-6",
+								type = "Tank",
+								x = 150386.4055185,
+								y = -140902.32245455,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-7#00001",
+							template = {
+								name = "Static Tank 1-7",
+								type = "Tank",
+								x = 150263.20715531,
+								y = -140852.93456447,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-8#00001",
+							template = {
+								name = "Static Tank 1-8",
+								type = "Tank",
+								x = 150290.88608273,
+								y = -140883.86983628,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-9#00001",
+							template = {
+								name = "Static Tank 1-9",
+								type = "Tank",
+								x = 150332.13311181,
+								y = -140914.26238403,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
 								dead = false
 							}
 						},
@@ -5419,9 +5419,12 @@ MissionDb = {
 				"CAP-4",
 			},
 			nodes = {
-				{ name = "NODE-26" },
-				{ name = "NODE-27" },
-				{ name = "NODE-8" },
+				{ name = "NODE-26", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-27", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-28", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-29", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-30", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-8", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -5532,9 +5535,9 @@ MissionDb = {
 				"CAP-4",
 			},
 			nodes = {
-				{ name = "NODE-21" },
-				{ name = "NODE-22" },
-				{ name = "NODE-7" },
+				{ name = "NODE-21", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-22", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-7", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -5895,10 +5898,10 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-23" },
-				{ name = "NODE-24" },
-				{ name = "NODE-25" },
-				{ name = "NODE-9" },
+				{ name = "NODE-23", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-24", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-25", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-9", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},

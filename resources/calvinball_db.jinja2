@@ -16,8 +16,8 @@ MissionDb = {
 {%				endfor %}
 			},
 			nodes = {
-{% 				for node_name in objective["nodes"].keys() %}
-				{ name = "{{node_name}}" },
+{% 				for node_name, node in objective["nodes"].items() %}
+				{ name = "{{node_name}}", redSurrenderThreshold = {{node["redSurrenderThreshold"]}}, blueCaptureThreshold = {{node["blueCaptureThreshold"]}} },
 {% 				endfor %}
 			},
 			tasks = {

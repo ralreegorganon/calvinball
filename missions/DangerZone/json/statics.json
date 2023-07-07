@@ -366,6 +366,17 @@
             "x": 136246.57713557,
             "y": -172820.38632655
         },
+        "Conches Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 6.2308254296198,
+            "name": "Conches Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "sklad",
+            "type": "Warehouse",
+            "x": -56913.781104768,
+            "y": 95359.246478193
+        },
         "Evreux Airwing Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
@@ -411,17 +422,6 @@
             "type": "FARP",
             "x": 150131.9745073,
             "y": -140676.22465436
-        },
-        "Conches Airwing Warehouse": {
-            "canCargo": false,
-            "category": "Warehouses",
-            "heading": 6.2308254296198,
-            "name": "Conches Airwing Warehouse",
-            "rate": 100,
-            "shape_name": "sklad",
-            "type": "Warehouse",
-            "x": -56913.781104768,
-            "y": 95359.246478193
         },
         "INDUSTRYTARGET-1": {
             "canCargo": false,

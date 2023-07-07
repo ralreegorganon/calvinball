@@ -585,7 +585,7 @@ local function checkObjectiveCapture(objective)
     end
 
     if isCaptured and tasksComplete then
-        completeObjective(objective, objective.strand)
+        completeObjective(objective, true)
     end
 end
 
@@ -651,6 +651,20 @@ local function buildStrandObjectiveStateMap()
         end
     end
     return strandObjectiveStateMap
+end
+
+local function showNodeSurrenderUpdate(objective, node)
+    local objectiveZone = ZONE:FindByName(objective.name)
+    local objectiveLabelText = objectiveZone:GetProperty("label")
+    local nodeZone = ZONE:FindByName(node.name)
+    local nodeLabelText = nodeZone:GetProperty("label")
+
+    local r = {}
+    table.insert(r, "OBJECTIVE UPDATE")
+    table.insert(r, "")
+    table.insert(r, string.format("Enemy units at %s have surrendered in objective %s", nodeLabelText, objectiveLabelText))
+    local m = table.concat(r, "\n")
+    MESSAGE:New(m, 30):ToAll()
 end
 
 local function showNodeCapturedUpdate(objective, node, captureOrLost)
@@ -1201,7 +1215,6 @@ local function spawnGroupsAtThing(thing, staticCountry)
     if MissionDb.lateActivateStatics then
         for _, static in ipairs(thing.staticGroups) do
             if static.state ~= "dead" then
-                static.state = "active"
                 local ss = SPAWNSTATIC:NewFromTemplate(static.template, staticCountry)
                 local s = ss:Spawn()
                 -- For some reason, certain statics refuse to spawn.
@@ -1213,6 +1226,7 @@ local function spawnGroupsAtThing(thing, staticCountry)
                         end
                     end
                 end
+                static.state = "active"
             end
         end
     end
@@ -1290,12 +1304,17 @@ local function activateAirwings(chief, side)
                     function airwing.instance:OnAfterAirbaseCaptured(From, Event, To, Coalition)
                         MESSAGE:New("AIRBASE CAPTURED!", 15):ToAll()
                         if Coalition == coalition.side.BLUE then
-                            SCHEDULER:New(nil, function()
-                                airwing.state = "dead"
-                                STATIC:FindByName(airwing.warehouse):GetCoordinate():Explosion(999)
-                                local text=string.format("Friendly forces have destroyed the enemy airwing at %s.", airwing.airbase)
-                                MESSAGE:New(text, 15):ToAll()
-                            end, {}, 1)
+                            -- SCHEDULER:New(nil, function()
+                                if airwing.state ~= "dead" then
+                                    airwing.state = "dead"
+                                    local wh = STATIC:FindByName(airwing.warehouse)
+                                    if wh then
+                                        wh:GetCoordinate():Explosion(999)
+                                        local text=string.format("Friendly forces have destroyed the enemy airwing at %s.", airwing.airbase)
+                                        MESSAGE:New(text, 15):ToAll()
+                                    end
+                                end
+                            -- end, {}, 1)
                         end
                     end
 
@@ -1546,6 +1565,26 @@ local function startObjective(objective)
         end
         function node.opsZone:OnAfterGuarded(From, Event, To)
             nodeGuarded(objective)
+        end
+        function node.opsZone:OnAfterEvaluated(From, Event, To)
+            local surrender = false
+            if node.redSurrenderThreshold ~= "" and node.opsZone.Nred > 0 and node.opsZone.Nred <= node.redSurrenderThreshold then
+                if node.blueCaptureThreshold ~= "" then
+                    if node.opsZone.Nblu >= node.blueCaptureThreshold then
+                        surrender = true
+                    end
+                else
+                    surrender = true
+                end
+            end
+            if surrender then
+                node.opsZone:GetScannedUnitSet():ForEachUnit(function(unit)
+                    if unit:GetCoalition() == coalition.side.RED then
+                        unit:Destroy()
+                    end
+                end)
+                showNodeSurrenderUpdate(objective, node)
+            end
         end
         node.opsZone:Start()
         local nodeLabelText = nodeZone:GetProperty("label")
@@ -1873,8 +1912,40 @@ completeObjective = function(objective, killLinkedUnits)
     if killLinkedUnits then
         for _, category in ipairs({objective.vehicleGroups, objective.shipGroups}) do
             for _, group in ipairs(category) do
-                local group = GROUP:FindByName(group.name)
-                group:Destroy(true)
+                local g = GROUP:FindByName(group.name)
+                if g then
+                    g:Destroy(true)
+                end
+            end
+        end
+
+        local objectiveZone = ZONE:FindByName(objective.name)
+        local qrfsNamesToKill = objectiveZone:GetProperty("qrfKillOnComplete")
+        if qrfsNamesToKill ~= "" then
+            local qrfsToKill = UTILS.Split(qrfsNamesToKill, ",")
+            for _, qrfName in ipairs(qrfsToKill) do
+                for _, obj in ipairs(MissionDb.objectives) do
+                    for _, qrf in ipairs(obj.qrfs) do
+                        if qrfName == qrf.name then
+                            qrf.state = "dead"
+                            for _, category in ipairs({qrf.vehicleGroups, qrf.shipGroups}) do
+                                for _, group in ipairs(category) do
+                                    local g = GROUP:FindByName(group.name)
+                                    if g then
+                                        g:Destroy(true)
+                                    end
+                                end
+                            end
+
+                            for _, group in ipairs(qrf.staticGroups) do
+                                local g = STATIC:FindByName(group.name, false)
+                                if g then
+                                    g:Destroy(true)
+                                end
+                            end
+                        end
+                    end
+                end
             end
         end
     end
