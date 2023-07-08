@@ -79,6 +79,17 @@
             "x": 134168.03930474,
             "y": -133833.81129046
         },
+        "Needs Oar Point Goon Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 4.5378560551853,
+            "name": "Needs Oar Point Goon Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 140506.54212207,
+            "y": -85026.110469956
+        },
         "Static Container 20ft-1": {
             "canCargo": false,
             "category": "Fortifications",

@@ -23,3 +23,14 @@ MissionDb.invokeOnActivate["OBJ-8"] = function()
     ng:AddWaypoint(COORDINATE:New(128614, 0, -57619), 30, nil, 0, true)
     ng:AddWaypoint(COORDINATE:New(128546, 0, -57709), 30, nil, 0, true)
 end
+
+MissionDb.invokeOnActivate["OBJ-9"] = function()
+    local g = GROUP:FindByName("RED RG Naval 1")
+    if not g then
+        return
+    end
+    local ng = NAVYGROUP:New(g)
+    ng:ClearWaypoints()
+    ng:SetPatrolAdInfinitum(true)
+    ng:AddWaypoint(COORDINATE:New(139631, 0, -34776), 30, nil, 0, true)
+end

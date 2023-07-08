@@ -6053,6 +6053,21 @@ MissionDb = {
 					shipGroups = {
 					},
 					staticGroups = {
+						{
+							name = "Needs Oar Point Goon Airwing Warehouse#00001",
+							template = {
+								name = "Needs Oar Point Goon Airwing Warehouse",
+								type = ".Ammunition depot",
+								x = 140506.54212207,
+								y = -85026.110469956,
+								heading = 4.5378560551853,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
 					},
 					clients = {
 							"Needs Oar Point A-10A Cold 1",
@@ -10586,6 +10601,29 @@ MissionDb = {
 							{
 								templateGroupName = "BLUE 1st Lymington Goonwing LG-01 CH-47D LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "1st Needs Oar Point Goonwing",
+				warehouse = "Needs Oar Point Goon Airwing Warehouse#00001",
+				airbase = "Needs Oar Point",
+				squadrons = {
+					{
+						name = "NOPG-01",
+						templateGroupName = "BLUE 1st Needs Oar Point Goonwing NOPG-01 FA-18C_hornet",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+						},
+						livery = "Canada 150 Demo Jet",
+						payloads = {
+							{
+								templateGroupName = "BLUE 1st Needs Oar Point Goonwing NOPG-01 FA-18C_hornet LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP }
 							},
 						}
 					},

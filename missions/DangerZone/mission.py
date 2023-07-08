@@ -991,6 +991,24 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                     }
                 }
             },
+            "1st Needs Oar Point Goonwing": {
+                "airbase": "Needs Oar Point",
+                "warehouse": "Needs Oar Point Goon Airwing Warehouse#00001",
+                "squadrons": {
+                    "NOPG-01": {
+                        "airframe": dcs.planes.FA_18C_hornet,
+                        "groupSize": 2,
+                        "initialInventory": 99,
+                        "livery": "Canada 150 Demo Jet",
+                        "loadouts": {
+                            "AIM-9X*2, AIM-120C-5*6, FUEL*3": "{ AUFTRAG.Type.CAP }",
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                        }
+                    }
+                }
+            },
         }
         return blue_airwings
 

@@ -4,7 +4,9 @@
         "label": "Needs Oar Point",
         "radius": 2300.0208,
         "ship_groups": [],
-        "static_groups": [],
+        "static_groups": [
+            "Needs Oar Point Goon Airwing Warehouse"
+        ],
         "vehicle_groups": [
             "FARP MASH 1-6",
             "FARP MASH 1-7",
