@@ -772,6 +772,137 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                     },
                 }
             },
+            "Funtington": {
+                "airbase": "Funtington",
+                "warehouse": "Funtington Airwing Warehouse#00001",
+                "squadrons": {
+                    "Funtington 1": {
+                        "airframe": dcs.planes.Mirage_F1EE,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "USA Company Skin (M-EE)",
+                        "loadouts": {
+                            "2*R550 Magic I, 2*R530IR, 1*Fuel Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "2*AIM-9JULI, 8*SAMP 400 LD": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 40,
+                            "AUFTRAG.Type.CAS": 40,
+                            "AUFTRAG.Type.BOMBCARPET": 40,
+                            "AUFTRAG.Type.CASENHANCED": 40
+                        }
+                    },
+                    "Funtington 2": {
+                        "airframe": dcs.planes.Su_25TM,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Flight Research Institute  VVS",
+                        "loadouts": {
+                            "Kh-58*2,Kh-25MPU*4,R-73*2,ECM": "{ AUFTRAG.Type.SEAD }",
+                            "APU-8 Vikhr-M*2,R-60M*2,R-73*2,SPPU-22*2,Mercury LLTV Pod": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
+                            "FAB-500*6,R-60M*2,Fuel*2": "{ AUFTRAG.Type.BOMBCARPET }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50,
+                            "AUFTRAG.Type.SEAD": 50
+                        }
+                    }
+                }
+            },
+            "Tangmere": {
+                "airbase": "Tangmere",
+                "warehouse": "Tangmere Airwing Warehouse#00001",
+                "squadrons": {
+                    "Tangmere 1": {
+                        "airframe": dcs.planes.JF_17,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "PLAAF 125th AB (Fictional)",
+                        "loadouts": {
+                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Tangmere 2": {
+                        "airframe": dcs.planes.F_16C_50,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "18th AGRS BDU Splinter",
+                        "loadouts": {
+                            "AIM-120C*4, AIM-9X*2, FUEL*2, ECM": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "AIM-120C*2, AIM-9X*2, AGM-65D*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
+                            "AIM-120C*2, AIM-9X*2, CBU-105*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BOMBCARPET}",
+                            "AIM-120C*4, AGM-88C*4, ECM, TGP, HTS": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    }
+                }
+            },
+            "Ford": {
+                "airbase": "Ford",
+                "warehouse": "Ford Airwing Warehouse#00001",
+                "squadrons": {
+                    "Ford 1": {
+                        "airframe": dcs.planes.Su_27,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Lypetsk AFB (Shark)",
+                        "loadouts": {
+                            "R-73*4,R-27ER*4,R-27ET*2": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "FAB-500*6,R-73*2,ECM": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Ford 2": {
+                        "airframe": dcs.planes.MiG_29A,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Strizhi (W)",
+                        "loadouts": {
+                            "R-73*2,R-60M*2,R-27R*2,Fuel-1500": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                        }
+                    }
+                }
+            },
         }
         return red_airwings
 

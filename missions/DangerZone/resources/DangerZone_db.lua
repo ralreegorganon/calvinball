@@ -8009,6 +8009,21 @@ MissionDb = {
 							}
 						},
 						{
+							name = "FOB Murray Farp#00001",
+							template = {
+								name = "FOB Murray Farp",
+								type = "FARP",
+								x = 193286.02733463,
+								y = -51913.783924123,
+								heading = 1.6580627893946,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "FARPS",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
 							name = "Static Container 40ft-10#00001",
 							template = {
 								name = "Static Container 40ft-10",
@@ -8533,21 +8548,6 @@ MissionDb = {
 								dead = false
 							}
 						},
-						{
-							name = "FOB Murray Farp#00001",
-							template = {
-								name = "FOB Murray Farp",
-								type = "FARP",
-								x = 193286.02733463,
-								y = -51913.783924123,
-								heading = 1.6580627893946,
-								category = "Heliports",
-								canCargo = false,
-								shape_name = "FARPS",
-								rate = 50,
-								dead = false
-							}
-						},
 					},
 				},
 				{
@@ -8602,6 +8602,21 @@ MissionDb = {
 								canCargo = false,
 								shape_name = "SkladC",
 								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "FOB Smith Farp#00001",
+							template = {
+								name = "FOB Smith Farp",
+								type = "FARP",
+								x = 198232.92286732,
+								y = -39743.702324561,
+								heading = 4.1713369122664,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "FARPS",
+								rate = 50,
 								dead = false
 							}
 						},
@@ -8695,21 +8710,6 @@ MissionDb = {
 								dead = false
 							}
 						},
-						{
-							name = "FOB Smith Farp#00001",
-							template = {
-								name = "FOB Smith Farp",
-								type = "FARP",
-								x = 198232.92286732,
-								y = -39743.702324561,
-								heading = 4.1713369122664,
-								category = "Heliports",
-								canCargo = false,
-								shape_name = "FARPS",
-								rate = 50,
-								dead = false
-							}
-						},
 					},
 				},
 			},
@@ -8775,8 +8775,12 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+				"CAP-1",
 			},
 			nodes = {
+				{ name = "NODE-31", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-32", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-33", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -8792,10 +8796,139 @@ MissionDb = {
 					spawnGroups = {
 					},
 					vehicleGroups = {
+						{ name = "RED GROUND 8-11 RG-3" },
+						{ name = "RED GROUND 9-8 RG-3" },
+						{ name = "RED GROUND 8-29 RG-3" },
+						{ name = "RED GROUND RG 1-8 -1" },
+						{ name = "RED GROUND 8-28 RG-3" },
+						{ name = "RED GROUND RG 1-8 -2" },
+						{ name = "RED SAM SA-6 238-14" },
+						{ name = "RED SAM SA-15 RG 686-24" },
+						{ name = "RED AIR DEFENSE BATTERY A 242-9" },
 					},
 					shipGroups = {
 					},
 					staticGroups = {
+						{
+							name = "Ford Airwing Warehouse#00001",
+							template = {
+								name = "Ford Airwing Warehouse",
+								type = ".Ammunition depot",
+								x = 146993.09186606,
+								y = -26064.803971639,
+								heading = 0.8203047484373,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-56#00001",
+							template = {
+								name = "Static FARP Tent-56",
+								type = "FARP Tent",
+								x = 147581.08882972,
+								y = -26061.509422878,
+								heading = 1.239183768916,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-57#00001",
+							template = {
+								name = "Static FARP Tent-57",
+								type = "FARP Tent",
+								x = 147475.95286411,
+								y = -26157.935415832,
+								heading = 1.239183768916,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-58#00001",
+							template = {
+								name = "Static FARP Tent-58",
+								type = "FARP Tent",
+								x = 147466.82602906,
+								y = -26189.130120694,
+								heading = 1.239183768916,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-59#00001",
+							template = {
+								name = "Static FARP Tent-59",
+								type = "FARP Tent",
+								x = 147384.30422798,
+								y = -26195.310771704,
+								heading = 1.239183768916,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-60#00001",
+							template = {
+								name = "Static FARP Tent-60",
+								type = "FARP Tent",
+								x = 147606.4662061,
+								y = -25999.886442086,
+								heading = 1.239183768916,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-61#00001",
+							template = {
+								name = "Static FARP Tent-61",
+								type = "FARP Tent",
+								x = 147608.47033466,
+								y = -25942.969191131,
+								heading = 1.239183768916,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-62#00001",
+							template = {
+								name = "Static FARP Tent-62",
+								type = "FARP Tent",
+								x = 147582.62131606,
+								y = -26205.308471687,
+								heading = 2.4260076602721,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
 					},
 				},
 				{
@@ -8803,10 +8936,124 @@ MissionDb = {
 					spawnGroups = {
 					},
 					vehicleGroups = {
+						{ name = "RED GROUND 8-29 RG-2" },
+						{ name = "RED GROUND 8-11 RG-2" },
+						{ name = "RED GROUND 9-8 RG-2" },
+						{ name = "RED GROUND 8-28 RG-2" },
+						{ name = "RED GROUND RG 1-8 " },
+						{ name = "RED GROUND RG 1-8 -3" },
+						{ name = "RED SAM SA-6 238-13" },
+						{ name = "RED SAM SA-15 RG 686-23" },
+						{ name = "RED AIR DEFENSE BATTERY A 242-8" },
 					},
 					shipGroups = {
 					},
 					staticGroups = {
+						{
+							name = "Tangmere Airwing Warehouse#00001",
+							template = {
+								name = "Tangmere Airwing Warehouse",
+								type = ".Ammunition depot",
+								x = 150625.65110126,
+								y = -34648.265552527,
+								heading = 5.7246799465414,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-50#00001",
+							template = {
+								name = "Static FARP Tent-50",
+								type = "FARP Tent",
+								x = 150574.33293242,
+								y = -34130.108911674,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-51#00001",
+							template = {
+								name = "Static FARP Tent-51",
+								type = "FARP Tent",
+								x = 150505.70277316,
+								y = -34260.30006181,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-52#00001",
+							template = {
+								name = "Static FARP Tent-52",
+								type = "FARP Tent",
+								x = 150586.36563404,
+								y = -34321.266177593,
+								heading = 0.8901179185171,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-53#00001",
+							template = {
+								name = "Static FARP Tent-53",
+								type = "FARP Tent",
+								x = 150681.67736809,
+								y = -34272.013695143,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-54#00001",
+							template = {
+								name = "Static FARP Tent-54",
+								type = "FARP Tent",
+								x = 150565.66058504,
+								y = -34145.205220074,
+								heading = 2.9146998508305,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-55#00001",
+							template = {
+								name = "Static FARP Tent-55",
+								type = "FARP Tent",
+								x = 150516.39529193,
+								y = -34298.755611765,
+								heading = 1.239183768916,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
 					},
 				},
 				{
@@ -8814,10 +9061,153 @@ MissionDb = {
 					spawnGroups = {
 					},
 					vehicleGroups = {
+						{ name = "RED GROUND 8-11 RG-1" },
+						{ name = "RED GROUND 9-8 RG-1" },
+						{ name = "RED GROUND 8-28 RG-1" },
+						{ name = "RED GROUND 8-29 RG-1" },
+						{ name = "RED GROUND RG 1-8 -4" },
+						{ name = "RED SAM SA-15 RG 686-22" },
+						{ name = "RED SAM SA-6 238-12" },
+						{ name = "RED AIR DEFENSE BATTERY A 242-7" },
 					},
 					shipGroups = {
 					},
 					staticGroups = {
+						{
+							name = "Funtington Airwing Warehouse#00001",
+							template = {
+								name = "Funtington Airwing Warehouse",
+								type = ".Ammunition depot",
+								x = 152277.92284334,
+								y = -45340.329539674,
+								heading = 4.1713369122664,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-26#00001",
+							template = {
+								name = "Static FARP Tent-26",
+								type = "FARP Tent",
+								x = 152674.92613587,
+								y = -45438.259462612,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-43#00001",
+							template = {
+								name = "Static FARP Tent-43",
+								type = "FARP Tent",
+								x = 152612.69569758,
+								y = -45436.464353815,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-46#00001",
+							template = {
+								name = "Static FARP Tent-46",
+								type = "FARP Tent",
+								x = 152692.07939771,
+								y = -45430.879570891,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-47#00001",
+							template = {
+								name = "Static FARP Tent-47",
+								type = "FARP Tent",
+								x = 152622.46906769,
+								y = -45303.227389778,
+								heading = 2.9146998508305,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-48#00001",
+							template = {
+								name = "Static FARP Tent-48",
+								type = "FARP Tent",
+								x = 152632.84080741,
+								y = -45458.803485509,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-49#00001",
+							template = {
+								name = "Static FARP Tent-49",
+								type = "FARP Tent",
+								x = 152652.38754764,
+								y = -45447.434463129,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-44#00001",
+							template = {
+								name = "Static FARP Tent-44",
+								type = "FARP Tent",
+								x = 152616.08645864,
+								y = -45323.37249961,
+								heading = 2.9146998508305,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-45#00001",
+							template = {
+								name = "Static FARP Tent-45",
+								type = "FARP Tent",
+								x = 152609.70384958,
+								y = -45343.717065975,
+								heading = 2.9146998508305,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
 					},
 				},
 				{
@@ -8825,10 +9215,326 @@ MissionDb = {
 					spawnGroups = {
 					},
 					vehicleGroups = {
+						{ name = "RED RG 1-14" },
 					},
 					shipGroups = {
 					},
 					staticGroups = {
+						{
+							name = "INDUSTRYTARGET-286#00001",
+							template = {
+								name = "INDUSTRYTARGET-286",
+								type = "Warehouse",
+								x = 188937.14969483,
+								y = -28785.531085376,
+								heading = 5.9690260418206,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "sklad",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-287#00001",
+							template = {
+								name = "INDUSTRYTARGET-287",
+								type = "Boiler-house A",
+								x = 188786.40404354,
+								y = -29169.553353473,
+								heading = 1.9547687622336,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "kotelnaya_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-288#00001",
+							template = {
+								name = "INDUSTRYTARGET-288",
+								type = "Tank",
+								x = 188919.10980103,
+								y = -28870.083711051,
+								heading = 0.0,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-289#00001",
+							template = {
+								name = "INDUSTRYTARGET-289",
+								type = "Chemical tank A",
+								x = 188623.10142969,
+								y = -29276.852297438,
+								heading = 0.0,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "him_bak_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-290#00001",
+							template = {
+								name = "INDUSTRYTARGET-290",
+								type = "Workshop A",
+								x = 188888.18176653,
+								y = -28968.219125587,
+								heading = 1.3089969389957,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "tec_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-291#00001",
+							template = {
+								name = "INDUSTRYTARGET-291",
+								type = "Tech hangar A",
+								x = 188797.59995593,
+								y = -29214.723068962,
+								heading = 1.9722220547536,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "ceh_ang_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-292#00001",
+							template = {
+								name = "INDUSTRYTARGET-292",
+								type = "Comms tower M",
+								x = 188815.48322681,
+								y = -28726.769571411,
+								heading = 5.5850536063819,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "tele_bash_m",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-293#00001",
+							template = {
+								name = "INDUSTRYTARGET-293",
+								type = "Chemical tank A",
+								x = 188875.43116806,
+								y = -29060.853282865,
+								heading = 0.0,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "him_bak_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-294#00001",
+							template = {
+								name = "INDUSTRYTARGET-294",
+								type = "Tank",
+								x = 188887.46633173,
+								y = -28863.005566602,
+								heading = 0.0,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-295#00001",
+							template = {
+								name = "INDUSTRYTARGET-295",
+								type = "Tank",
+								x = 188857.07194674,
+								y = -28853.012892085,
+								heading = 0.0,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-296#00001",
+							template = {
+								name = "INDUSTRYTARGET-296",
+								type = "Chemical tank A",
+								x = 188839.4195299,
+								y = -29052.37995624,
+								heading = 0.0,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "him_bak_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-297#00001",
+							template = {
+								name = "INDUSTRYTARGET-297",
+								type = "Chemical tank A",
+								x = 188803.93747466,
+								y = -29042.847463787,
+								heading = 0.0,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "him_bak_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-298#00001",
+							template = {
+								name = "INDUSTRYTARGET-298",
+								type = "Warehouse",
+								x = 188844.71535904,
+								y = -29120.166569239,
+								heading = 5.9690260418206,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "sklad",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-299#00001",
+							template = {
+								name = "INDUSTRYTARGET-299",
+								type = "Boiler-house A",
+								x = 188789.4925711,
+								y = -29127.086099595,
+								heading = 1.1519173063163,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "kotelnaya_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-300#00001",
+							template = {
+								name = "INDUSTRYTARGET-300",
+								type = "Warehouse",
+								x = 188801.84668132,
+								y = -28968.026930523,
+								heading = 5.9690260418206,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "sklad",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-301#00001",
+							template = {
+								name = "INDUSTRYTARGET-301",
+								type = "Repair workshop",
+								x = 188731.34117705,
+								y = -29409.568369572,
+								heading = 1.221730476396,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "tech",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-302#00001",
+							template = {
+								name = "INDUSTRYTARGET-302",
+								type = "Repair workshop",
+								x = 188672.59799758,
+								y = -29303.504295531,
+								heading = 1.221730476396,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "tech",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-303#00001",
+							template = {
+								name = "INDUSTRYTARGET-303",
+								type = "Repair workshop",
+								x = 188615.48657309,
+								y = -29196.896303161,
+								heading = 1.221730476396,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "tech",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-304#00001",
+							template = {
+								name = "INDUSTRYTARGET-304",
+								type = "Chemical tank A",
+								x = 188613.85481811,
+								y = -29257.271237615,
+								heading = 0.0,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "him_bak_a",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-305#00001",
+							template = {
+								name = "INDUSTRYTARGET-305",
+								type = "Tank",
+								x = 188693.81081239,
+								y = -29389.987309749,
+								heading = 0.0,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "INDUSTRYTARGET-306#00001",
+							template = {
+								name = "INDUSTRYTARGET-306",
+								type = "Tank",
+								x = 188671.51016092,
+								y = -29372.581923239,
+								heading = 0.0,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
 					},
 				},
 				{
@@ -8857,8 +9563,18 @@ MissionDb = {
 			reinforcements = {
 			},
 			vehicleGroups = {
+				{ name = "RED SAM SA-8 RG 240-13" },
+				{ name = "RED SAM SA-3 236-7" },
+				{ name = "RED SAM SA-3 236-8" },
+				{ name = "RED SAM SA-8 RG 240-10" },
+				{ name = "RED SAM SA-8 RG 240-11" },
+				{ name = "RED SAM SA-8 RG 240-12" },
+				{ name = "RED SAM SA-2 RG 234-10" },
+				{ name = "RED SAM SA-2 RG 234-11" },
+				{ name = "RED SAM SA-2 RG 234-12" },
 			},
 			shipGroups = {
+				{ name = "RED RG Naval 1" },
 			},
 			staticGroups = {
 			}
@@ -9490,6 +10206,191 @@ MissionDb = {
 							{
 								templateGroupName = "RED FOB Smith Smith 2 Ka-50_3 LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "Funtington",
+				warehouse = "Funtington Airwing Warehouse#00001",
+				airbase = "Funtington",
+				squadrons = {
+					{
+						name = "Funtington 1",
+						templateGroupName = "RED Funtington Funtington 1 Mirage-F1EE",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 40 },
+							{ mission = AUFTRAG.Type.CAS, performance = 40 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 40 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 40 },
+						},
+						livery = "USA Company Skin (M-EE)",
+						payloads = {
+							{
+								templateGroupName = "RED Funtington Funtington 1 Mirage-F1EE LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Funtington Funtington 1 Mirage-F1EE LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+					{
+						name = "Funtington 2",
+						templateGroupName = "RED Funtington Funtington 2 Su-25TM",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+						},
+						livery = "Flight Research Institute  VVS",
+						payloads = {
+							{
+								templateGroupName = "RED Funtington Funtington 2 Su-25TM LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+							{
+								templateGroupName = "RED Funtington Funtington 2 Su-25TM LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Funtington Funtington 2 Su-25TM LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.BOMBCARPET }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "Tangmere",
+				warehouse = "Tangmere Airwing Warehouse#00001",
+				airbase = "Tangmere",
+				squadrons = {
+					{
+						name = "Tangmere 1",
+						templateGroupName = "RED Tangmere Tangmere 1 JF-17",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "PLAAF 125th AB (Fictional)",
+						payloads = {
+							{
+								templateGroupName = "RED Tangmere Tangmere 1 JF-17 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Tangmere Tangmere 1 JF-17 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Tangmere Tangmere 1 JF-17 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "Tangmere 2",
+						templateGroupName = "RED Tangmere Tangmere 2 F-16C_50",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "18th AGRS BDU Splinter",
+						payloads = {
+							{
+								templateGroupName = "RED Tangmere Tangmere 2 F-16C_50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Tangmere Tangmere 2 F-16C_50 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Tangmere Tangmere 2 F-16C_50 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.BOMBCARPET}
+							},
+							{
+								templateGroupName = "RED Tangmere Tangmere 2 F-16C_50 LOADOUT 3",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "Ford",
+				warehouse = "Ford Airwing Warehouse#00001",
+				airbase = "Ford",
+				squadrons = {
+					{
+						name = "Ford 1",
+						templateGroupName = "RED Ford Ford 1 Su-27",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "Lypetsk AFB (Shark)",
+						payloads = {
+							{
+								templateGroupName = "RED Ford Ford 1 Su-27 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Ford Ford 1 Su-27 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+					{
+						name = "Ford 2",
+						templateGroupName = "RED Ford Ford 2 MiG-29A",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+						},
+						livery = "Strizhi (W)",
+						payloads = {
+							{
+								templateGroupName = "RED Ford Ford 2 MiG-29A LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
 							},
 						}
 					},

@@ -947,7 +947,7 @@
                 },
                 "NODE-25": {
                     "blueCaptureThreshold": "0",
-                    "label": "Up Above It",
+                    "label": "Up Above in",
                     "radius": 459.9432,
                     "redSurrenderThreshold": "1",
                     "x": 128251.87162803,
@@ -1048,14 +1048,45 @@
         "OBJ-9": {
             "airbases": [],
             "borderZones": [],
-            "capZones": [],
+            "capZones": [
+                "CAP-1"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
-            "label": "Temp",
-            "nodes": {},
-            "qrfKillOnComplete": [],
+            "label": "Triple Threat",
+            "nodes": {
+                "NODE-31": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Funtington Marshaling",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 152841.87274115,
+                    "y": -45412.395380192
+                },
+                "NODE-32": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Tangmere Marshalling",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 150618.53154938,
+                    "y": -34305.043264555
+                },
+                "NODE-33": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Ford Marshaling",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 147550.64573612,
+                    "y": -26077.863703314
+                }
+            },
+            "qrfKillOnComplete": [
+                "QRF-25",
+                "QRF-26",
+                "QRF-27"
+            ],
             "qrfs": [
                 "QRF-27",
                 "QRF-26",
@@ -1065,31 +1096,43 @@
                 "QRF-23"
             ],
             "reinforcements": [],
-            "ship_groups": [],
+            "ship_groups": [
+                "RED RG Naval 1"
+            ],
             "static_groups": [],
             "strand": "STRAND-1",
             "tasks": [],
-            "vehicle_groups": [],
+            "vehicle_groups": [
+                "RED SAM SA-8 RG 240-13",
+                "RED SAM SA-3 236-7",
+                "RED SAM SA-3 236-8",
+                "RED SAM SA-8 RG 240-10",
+                "RED SAM SA-8 RG 240-11",
+                "RED SAM SA-8 RG 240-12",
+                "RED SAM SA-2 RG 234-10",
+                "RED SAM SA-2 RG 234-11",
+                "RED SAM SA-2 RG 234-12"
+            ],
             "vertices": [
                 {
-                    "x": 137264.22069635,
-                    "y": -52227.921214241
+                    "x": 133466.27062082,
+                    "y": -48475.489137795
                 },
                 {
-                    "x": 147104.21581183,
-                    "y": -5695.5201314004
+                    "x": 145915.41969535,
+                    "y": -5434.6496196669
                 },
                 {
-                    "x": 188421.43806049,
-                    "y": -7257.1892887887
+                    "x": 180888.14416516,
+                    "y": -16662.912799656
                 },
                 {
                     "x": 171076.44887035,
                     "y": -61851.418565606
                 }
             ],
-            "x": 160966.58085975,
-            "y": -31758.012300009
+            "x": 157836.57083792,
+            "y": -33106.117530681
         }
     },
     "strands": {

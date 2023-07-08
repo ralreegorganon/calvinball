@@ -694,6 +694,7 @@
         "static_groups": [
             "FOB Murray Airwing Warehouse",
             "FOB Murray Brigade Warehouse",
+            "FOB Murray Farp",
             "Static Container 40ft-10",
             "Static Container 40ft-21",
             "Static Container 40ft-22",
@@ -728,8 +729,7 @@
             "Static Tank 1-16",
             "Static Tank 1-17",
             "Static Tank 1-18",
-            "Static Tank 1-19",
-            "FOB Murray Farp"
+            "Static Tank 1-19"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
@@ -777,13 +777,13 @@
         "static_groups": [
             "FOB Smith Airwing Warehouse",
             "FOB Smith Brigade Warehouse",
+            "FOB Smith Farp",
             "Static Ka-50 III-1",
             "Static Ka-50 III-2",
             "Static Ka-50 III-3",
             "Static Mi-26-11",
             "Static Mi-26-12",
-            "Static Mi-26-13",
-            "FOB Smith Farp"
+            "Static Mi-26-13"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
@@ -967,9 +967,28 @@
         "component": "qrf",
         "label": "",
         "ship_groups": [],
-        "static_groups": [],
+        "static_groups": [
+            "Funtington Airwing Warehouse",
+            "Static FARP Tent-26",
+            "Static FARP Tent-43",
+            "Static FARP Tent-46",
+            "Static FARP Tent-47",
+            "Static FARP Tent-48",
+            "Static FARP Tent-49",
+            "Static FARP Tent-44",
+            "Static FARP Tent-45"
+        ],
         "vehicleQrfTemplates": [],
-        "vehicle_groups": [],
+        "vehicle_groups": [
+            "RED GROUND 8-11 RG-1",
+            "RED GROUND 9-8 RG-1",
+            "RED GROUND 8-28 RG-1",
+            "RED GROUND 8-29 RG-1",
+            "RED GROUND RG 1-8 -4",
+            "RED SAM SA-15 RG 686-22",
+            "RED SAM SA-6 238-12",
+            "RED AIR DEFENSE BATTERY A 242-7"
+        ],
         "vertices": [
             {
                 "x": 154239.19749156,
@@ -989,15 +1008,33 @@
             }
         ],
         "x": 152497.17691174,
-        "y": -45645.547939146
+        "y": -45645.547939143
     },
     "QRF-26": {
         "component": "qrf",
         "label": "",
         "ship_groups": [],
-        "static_groups": [],
+        "static_groups": [
+            "Tangmere Airwing Warehouse",
+            "Static FARP Tent-50",
+            "Static FARP Tent-51",
+            "Static FARP Tent-52",
+            "Static FARP Tent-53",
+            "Static FARP Tent-54",
+            "Static FARP Tent-55"
+        ],
         "vehicleQrfTemplates": [],
-        "vehicle_groups": [],
+        "vehicle_groups": [
+            "RED GROUND 8-29 RG-2",
+            "RED GROUND 8-11 RG-2",
+            "RED GROUND 9-8 RG-2",
+            "RED GROUND 8-28 RG-2",
+            "RED GROUND RG 1-8 ",
+            "RED GROUND RG 1-8 -3",
+            "RED SAM SA-6 238-13",
+            "RED SAM SA-15 RG 686-23",
+            "RED AIR DEFENSE BATTERY A 242-8"
+        ],
         "vertices": [
             {
                 "x": 152276.78942141,
@@ -1023,9 +1060,28 @@
         "component": "qrf",
         "label": "",
         "ship_groups": [],
-        "static_groups": [],
+        "static_groups": [
+            "Ford Airwing Warehouse",
+            "Static FARP Tent-56",
+            "Static FARP Tent-57",
+            "Static FARP Tent-58",
+            "Static FARP Tent-59",
+            "Static FARP Tent-60",
+            "Static FARP Tent-61",
+            "Static FARP Tent-62"
+        ],
         "vehicleQrfTemplates": [],
-        "vehicle_groups": [],
+        "vehicle_groups": [
+            "RED GROUND 8-11 RG-3",
+            "RED GROUND 9-8 RG-3",
+            "RED GROUND 8-29 RG-3",
+            "RED GROUND RG 1-8 -1",
+            "RED GROUND 8-28 RG-3",
+            "RED GROUND RG 1-8 -2",
+            "RED SAM SA-6 238-14",
+            "RED SAM SA-15 RG 686-24",
+            "RED AIR DEFENSE BATTERY A 242-9"
+        ],
         "vertices": [
             {
                 "x": 149212.72922744,
@@ -1102,29 +1158,53 @@
         "component": "qrf",
         "label": "Industry Target",
         "ship_groups": [],
-        "static_groups": [],
+        "static_groups": [
+            "INDUSTRYTARGET-286",
+            "INDUSTRYTARGET-287",
+            "INDUSTRYTARGET-288",
+            "INDUSTRYTARGET-289",
+            "INDUSTRYTARGET-290",
+            "INDUSTRYTARGET-291",
+            "INDUSTRYTARGET-292",
+            "INDUSTRYTARGET-293",
+            "INDUSTRYTARGET-294",
+            "INDUSTRYTARGET-295",
+            "INDUSTRYTARGET-296",
+            "INDUSTRYTARGET-297",
+            "INDUSTRYTARGET-298",
+            "INDUSTRYTARGET-299",
+            "INDUSTRYTARGET-300",
+            "INDUSTRYTARGET-301",
+            "INDUSTRYTARGET-302",
+            "INDUSTRYTARGET-303",
+            "INDUSTRYTARGET-304",
+            "INDUSTRYTARGET-305",
+            "INDUSTRYTARGET-306"
+        ],
         "vehicleQrfTemplates": [],
-        "vehicle_groups": [],
+        "vehicle_groups": [
+            "RED RG 1-14"
+        ],
         "vertices": [
             {
-                "x": 189231.11218669,
-                "y": -28264.109495459
+                "x": 189101.14541674,
+                "y": -28350.954538975
             },
             {
-                "x": 188551.85329457,
-                "y": -28115.90755536
+                "x": 188625.81315972,
+                "y": -28240.641581212
             },
             {
-                "x": 188313.08350219,
-                "y": -29293.289635035
+                "x": 188372.90052484,
+                "y": -29165.297349124
             },
             {
-                "x": 189076.91152498,
-                "y": -28979.990643043
+                "x": 188749.5789172,
+                "y": -29567.087634308
             }
         ],
-        "x": 188793.24012711,
-        "y": -28663.324332224
+        "x": 188712.35950463,
+        "y": -28830.995275905
     },
     "QRF-3": {
         "component": "qrf",

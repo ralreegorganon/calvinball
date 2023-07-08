@@ -26,7 +26,7 @@
             "canCargo": false,
             "category": "Heliports",
             "heading": 1.0995574287564,
-            "heliport_callsign_id": 1,
+            "heliport_callsign_id": 0,
             "heliport_frequency": 127.5,
             "heliport_modulation": 0,
             "name": "Lymington Goon Farp",
@@ -527,6 +527,28 @@
             "type": "FARP",
             "x": 150131.9745073,
             "y": -140676.22465436
+        },
+        "Ford Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.8203047484373,
+            "name": "Ford Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 146993.09186606,
+            "y": -26064.803971639
+        },
+        "Funtington Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 4.1713369122664,
+            "name": "Funtington Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 152277.92284334,
+            "y": -45340.329539674
         },
         "INDUSTRYTARGET-1": {
             "canCargo": false,
@@ -2805,6 +2827,50 @@
             "x": 190503.65084466,
             "y": -89495.352504591
         },
+        "INDUSTRYTARGET-286": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.9690260418206,
+            "name": "INDUSTRYTARGET-286",
+            "rate": 100,
+            "shape_name": "sklad",
+            "type": "Warehouse",
+            "x": 188937.14969483,
+            "y": -28785.531085376
+        },
+        "INDUSTRYTARGET-287": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.9547687622336,
+            "name": "INDUSTRYTARGET-287",
+            "rate": 100,
+            "shape_name": "kotelnaya_a",
+            "type": "Boiler-house A",
+            "x": 188786.40404354,
+            "y": -29169.553353473
+        },
+        "INDUSTRYTARGET-288": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-288",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 188919.10980103,
+            "y": -28870.083711051
+        },
+        "INDUSTRYTARGET-289": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-289",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 188623.10142969,
+            "y": -29276.852297438
+        },
         "INDUSTRYTARGET-29": {
             "canCargo": false,
             "category": "Fortifications",
@@ -2815,6 +2881,116 @@
             "type": "Boiler-house A",
             "x": 156838.81681729,
             "y": -133081.58703846
+        },
+        "INDUSTRYTARGET-290": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.3089969389957,
+            "name": "INDUSTRYTARGET-290",
+            "rate": 100,
+            "shape_name": "tec_a",
+            "type": "Workshop A",
+            "x": 188888.18176653,
+            "y": -28968.219125587
+        },
+        "INDUSTRYTARGET-291": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.9722220547536,
+            "name": "INDUSTRYTARGET-291",
+            "rate": 100,
+            "shape_name": "ceh_ang_a",
+            "type": "Tech hangar A",
+            "x": 188797.59995593,
+            "y": -29214.723068962
+        },
+        "INDUSTRYTARGET-292": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.5850536063819,
+            "name": "INDUSTRYTARGET-292",
+            "rate": 100,
+            "shape_name": "tele_bash_m",
+            "type": "Comms tower M",
+            "x": 188815.48322681,
+            "y": -28726.769571411
+        },
+        "INDUSTRYTARGET-293": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-293",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 188875.43116806,
+            "y": -29060.853282865
+        },
+        "INDUSTRYTARGET-294": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-294",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 188887.46633173,
+            "y": -28863.005566602
+        },
+        "INDUSTRYTARGET-295": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-295",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 188857.07194674,
+            "y": -28853.012892085
+        },
+        "INDUSTRYTARGET-296": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-296",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 188839.4195299,
+            "y": -29052.37995624
+        },
+        "INDUSTRYTARGET-297": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-297",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 188803.93747466,
+            "y": -29042.847463787
+        },
+        "INDUSTRYTARGET-298": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.9690260418206,
+            "name": "INDUSTRYTARGET-298",
+            "rate": 100,
+            "shape_name": "sklad",
+            "type": "Warehouse",
+            "x": 188844.71535904,
+            "y": -29120.166569239
+        },
+        "INDUSTRYTARGET-299": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.1519173063163,
+            "name": "INDUSTRYTARGET-299",
+            "rate": 100,
+            "shape_name": "kotelnaya_a",
+            "type": "Boiler-house A",
+            "x": 188789.4925711,
+            "y": -29127.086099595
         },
         "INDUSTRYTARGET-3": {
             "canCargo": false,
@@ -2837,6 +3013,83 @@
             "type": "Tank",
             "x": 156680.93526523,
             "y": -132894.02439919
+        },
+        "INDUSTRYTARGET-300": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.9690260418206,
+            "name": "INDUSTRYTARGET-300",
+            "rate": 100,
+            "shape_name": "sklad",
+            "type": "Warehouse",
+            "x": 188801.84668132,
+            "y": -28968.026930523
+        },
+        "INDUSTRYTARGET-301": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.221730476396,
+            "name": "INDUSTRYTARGET-301",
+            "rate": 100,
+            "shape_name": "tech",
+            "type": "Repair workshop",
+            "x": 188731.34117705,
+            "y": -29409.568369572
+        },
+        "INDUSTRYTARGET-302": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.221730476396,
+            "name": "INDUSTRYTARGET-302",
+            "rate": 100,
+            "shape_name": "tech",
+            "type": "Repair workshop",
+            "x": 188672.59799758,
+            "y": -29303.504295531
+        },
+        "INDUSTRYTARGET-303": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.221730476396,
+            "name": "INDUSTRYTARGET-303",
+            "rate": 100,
+            "shape_name": "tech",
+            "type": "Repair workshop",
+            "x": 188615.48657309,
+            "y": -29196.896303161
+        },
+        "INDUSTRYTARGET-304": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-304",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 188613.85481811,
+            "y": -29257.271237615
+        },
+        "INDUSTRYTARGET-305": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-305",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 188693.81081239,
+            "y": -29389.987309749
+        },
+        "INDUSTRYTARGET-306": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-306",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 188671.51016092,
+            "y": -29372.581923239
         },
         "INDUSTRYTARGET-31": {
             "canCargo": false,
@@ -4247,6 +4500,17 @@
             "x": 192861.63798167,
             "y": -52040.72712741
         },
+        "Static FARP Tent-26": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-26",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 152674.92613587,
+            "y": -45438.259462612
+        },
         "Static FARP Tent-27": {
             "canCargo": false,
             "category": "Fortifications",
@@ -4444,6 +4708,226 @@
             "type": "FARP Tent",
             "x": 149947.42901756,
             "y": -140449.44939194
+        },
+        "Static FARP Tent-43": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-43",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 152612.69569758,
+            "y": -45436.464353815
+        },
+        "Static FARP Tent-44": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.9146998508305,
+            "name": "Static FARP Tent-44",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 152616.08645864,
+            "y": -45323.37249961
+        },
+        "Static FARP Tent-45": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.9146998508305,
+            "name": "Static FARP Tent-45",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 152609.70384958,
+            "y": -45343.717065975
+        },
+        "Static FARP Tent-46": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-46",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 152692.07939771,
+            "y": -45430.879570891
+        },
+        "Static FARP Tent-47": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.9146998508305,
+            "name": "Static FARP Tent-47",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 152622.46906769,
+            "y": -45303.227389778
+        },
+        "Static FARP Tent-48": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-48",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 152632.84080741,
+            "y": -45458.803485509
+        },
+        "Static FARP Tent-49": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-49",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 152652.38754764,
+            "y": -45447.434463129
+        },
+        "Static FARP Tent-50": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-50",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 150574.33293242,
+            "y": -34130.108911674
+        },
+        "Static FARP Tent-51": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-51",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 150505.70277316,
+            "y": -34260.30006181
+        },
+        "Static FARP Tent-52": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.8901179185171,
+            "name": "Static FARP Tent-52",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 150586.36563404,
+            "y": -34321.266177593
+        },
+        "Static FARP Tent-53": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-53",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 150681.67736809,
+            "y": -34272.013695143
+        },
+        "Static FARP Tent-54": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.9146998508305,
+            "name": "Static FARP Tent-54",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 150565.66058504,
+            "y": -34145.205220074
+        },
+        "Static FARP Tent-55": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.239183768916,
+            "name": "Static FARP Tent-55",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 150516.39529193,
+            "y": -34298.755611765
+        },
+        "Static FARP Tent-56": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.239183768916,
+            "name": "Static FARP Tent-56",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 147581.08882972,
+            "y": -26061.509422878
+        },
+        "Static FARP Tent-57": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.239183768916,
+            "name": "Static FARP Tent-57",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 147475.95286411,
+            "y": -26157.935415832
+        },
+        "Static FARP Tent-58": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.239183768916,
+            "name": "Static FARP Tent-58",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 147466.82602906,
+            "y": -26189.130120694
+        },
+        "Static FARP Tent-59": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.239183768916,
+            "name": "Static FARP Tent-59",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 147384.30422798,
+            "y": -26195.310771704
+        },
+        "Static FARP Tent-60": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.239183768916,
+            "name": "Static FARP Tent-60",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 147606.4662061,
+            "y": -25999.886442086
+        },
+        "Static FARP Tent-61": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.239183768916,
+            "name": "Static FARP Tent-61",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 147608.47033466,
+            "y": -25942.969191131
+        },
+        "Static FARP Tent-62": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.4260076602721,
+            "name": "Static FARP Tent-62",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 147582.62131606,
+            "y": -26205.308471687
         },
         "Static FARP Tent-9": {
             "canCargo": false,
@@ -5441,6 +5925,17 @@
             "type": ".Ammunition depot",
             "x": 155591.78112467,
             "y": -101442.96449276
+        },
+        "Tangmere Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.7246799465414,
+            "name": "Tangmere Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 150625.65110126,
+            "y": -34648.265552527
         }
     }
 }
