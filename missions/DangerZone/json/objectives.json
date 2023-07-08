@@ -742,13 +742,17 @@
                     "y": -100560.81361942
                 }
             },
-            "qrfKillOnComplete": [],
+            "qrfKillOnComplete": [
+                "QRF-13",
+                "QRF-14",
+                "QRF-6"
+            ],
             "qrfs": [
                 "QRF-19"
             ],
             "reinforcements": [],
             "ship_groups": [
-                "RED RG 8-2 FK-1"
+                "RED RG Neustrashimy"
             ],
             "static_groups": [],
             "strand": "STRAND-1",
@@ -943,7 +947,7 @@
                 },
                 "NODE-25": {
                     "blueCaptureThreshold": "0",
-                    "label": "Up Above in",
+                    "label": "Up Above It",
                     "radius": 459.9432,
                     "redSurrenderThreshold": "1",
                     "x": 128251.87162803,

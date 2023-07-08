@@ -107,7 +107,6 @@ def get_objective_zones(m: dcs.Mission):
                 "farps": [],
                 "airbases": [],
                 "qrfs": [],
-                "qrfKillOnComplete": [],
                 "reinforcements": [],
                 "vehicle_groups": [],
                 "ship_groups": [],

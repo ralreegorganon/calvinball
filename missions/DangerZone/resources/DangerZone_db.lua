@@ -5654,7 +5654,7 @@ MissionDb = {
 				{ name = "RED SAM SA-8 RG 240-7" },
 			},
 			shipGroups = {
-				{ name = "RED RG 8-2 FK-1" },
+				{ name = "RED RG Neustrashimy" },
 			},
 			staticGroups = {
 			}
@@ -9761,5 +9761,6 @@ MissionDb = {
 			repeatAfter = 3600,
 			industryDelay = 1800
 		},
-	}
+	},
+	invokeOnActivate = {}
 }

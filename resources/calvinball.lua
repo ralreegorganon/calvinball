@@ -1230,6 +1230,10 @@ local function spawnGroupsAtThing(thing, staticCountry)
             end
         end
     end
+
+    if MissionDb.invokeOnActivate[thing.name] then
+        MissionDb.invokeOnActivate[thing.name]()
+    end
 end
 
 local function activateBrigades(chief, side)

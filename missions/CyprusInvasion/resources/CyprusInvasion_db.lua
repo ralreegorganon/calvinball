@@ -6276,5 +6276,6 @@ MissionDb = {
 			repeatAfter = 3600,
 			industryDelay = 1800
 		},
-	}
+	},
+	invokeOnActivate = {}
 }
