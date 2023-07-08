@@ -1342,11 +1342,9 @@ local function activateAirwings(chief, side)
                     squadron.instance:SetSkill(AI.Skill.EXCELLENT)
                     squadron.instance:SetTakeoffHot()
 
-                    -- Hacks... really we should push takeoff type to definition.
-                    if squadron.instance.aircrafttype == "Mi-26" then
+                    if squadron.takeoffCold then
                         squadron.instance:SetTakeoffCold()
                     end
-
 
                     for _, capability in ipairs(squadron.capabilities) do
                         squadron.instance:AddMissionCapability({capability.mission}, capability.performance)

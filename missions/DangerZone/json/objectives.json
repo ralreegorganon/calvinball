@@ -55,6 +55,207 @@
             "x": 56597.351448646,
             "y": -185971.09636823
         },
+        "OBJ-10": {
+            "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Temp",
+            "nodes": {},
+            "qrfKillOnComplete": [],
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": 147617.1354243,
+                    "y": -3955.574386908
+                },
+                {
+                    "x": 148252.49041108,
+                    "y": 37319.458099174
+                },
+                {
+                    "x": 191108.6017774,
+                    "y": 35465.743704338
+                },
+                {
+                    "x": 189828.65612382,
+                    "y": -4653.9321267412
+                }
+            ],
+            "x": 169201.72093415,
+            "y": 16043.923822466
+        },
+        "OBJ-11": {
+            "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Temp",
+            "nodes": {},
+            "qrfKillOnComplete": [],
+            "qrfs": [
+                "QRF-30",
+                "QRF-31",
+                "QRF-32"
+            ],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": 192621.89455565,
+                    "y": 31265.317817253
+                },
+                {
+                    "x": 192498.29426346,
+                    "y": 59878.785459048
+                },
+                {
+                    "x": 233717.5666069,
+                    "y": 69760.438909124
+                },
+                {
+                    "x": 232853.78966323,
+                    "y": 38125.134033752
+                }
+            ],
+            "x": 212922.88627231,
+            "y": 49757.419054794
+        },
+        "OBJ-12": {
+            "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Temp",
+            "nodes": {},
+            "qrfKillOnComplete": [],
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": 204479.14487442,
+                    "y": -20823.955074366
+                },
+                {
+                    "x": 206320.30903633,
+                    "y": 31803.494573219
+                },
+                {
+                    "x": 239359.726589,
+                    "y": 35680.706948444
+                },
+                {
+                    "x": 236116.11454277,
+                    "y": -24208.593731307
+                }
+            ],
+            "x": 221568.82376063,
+            "y": 5612.9131789977
+        },
+        "OBJ-13": {
+            "airbases": [],
+            "borderZones": [],
+            "capZones": [
+                "CAP-4"
+            ],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Foothold Portland",
+            "nodes": {},
+            "qrfKillOnComplete": [],
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": 181622.92806275,
+                    "y": 97789.701862182
+                },
+                {
+                    "x": 187614.85329634,
+                    "y": 113727.78240079
+                },
+                {
+                    "x": 193871.12817258,
+                    "y": 112174.72825017
+                },
+                {
+                    "x": 186596.03471277,
+                    "y": 96876.492925694
+                }
+            ],
+            "x": 187426.23606111,
+            "y": 105142.17635971
+        },
+        "OBJ-14": {
+            "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Temp",
+            "nodes": {},
+            "qrfKillOnComplete": [],
+            "qrfs": [],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": 191726.66666667,
+                    "y": 137173.33333333
+                },
+                {
+                    "x": 184213.33333333,
+                    "y": 147463.33333333
+                },
+                {
+                    "x": 236970,
+                    "y": 211163.33333333
+                },
+                {
+                    "x": 245953.33333333,
+                    "y": 199403.33333333
+                }
+            ],
+            "x": 214715.83333333,
+            "y": 173800.83333333
+        },
         "OBJ-2": {
             "airbases": [],
             "borderZones": [],
@@ -541,11 +742,7 @@
                     "y": -100560.81361942
                 }
             },
-            "qrfKillOnComplete": [
-                "QRF-13",
-                "QRF-14",
-                "QRF-6"
-            ],
+            "qrfKillOnComplete": [],
             "qrfs": [
                 "QRF-19"
             ],
@@ -553,11 +750,7 @@
             "ship_groups": [
                 "RED RG 8-2 FK-1"
             ],
-            "static_groups": [
-                "Lymington Airwing Warehouse",
-                "Needs Oar Point Airwing Warehouse",
-                "Stoney Cross Airwing Warehouse"
-            ],
+            "static_groups": [],
             "strand": "STRAND-1",
             "tasks": [],
             "vehicle_groups": [
@@ -766,7 +959,13 @@
                 }
             },
             "qrfKillOnComplete": [],
-            "qrfs": [],
+            "qrfs": [
+                "QRF-22",
+                "QRF-28",
+                "QRF-33",
+                "QRF-20",
+                "QRF-21"
+            ],
             "reinforcements": [],
             "ship_groups": [
                 "RED RG 8-1 FK",
@@ -841,6 +1040,52 @@
             ],
             "x": 130546.26097594,
             "y": -74495.190446072
+        },
+        "OBJ-9": {
+            "airbases": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Temp",
+            "nodes": {},
+            "qrfKillOnComplete": [],
+            "qrfs": [
+                "QRF-27",
+                "QRF-26",
+                "QRF-25",
+                "QRF-29",
+                "QRF-24",
+                "QRF-23"
+            ],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": 137264.22069635,
+                    "y": -52227.921214241
+                },
+                {
+                    "x": 147104.21581183,
+                    "y": -5695.5201314004
+                },
+                {
+                    "x": 188421.43806049,
+                    "y": -7257.1892887887
+                },
+                {
+                    "x": 171076.44887035,
+                    "y": -61851.418565606
+                }
+            ],
+            "x": 160966.58085975,
+            "y": -31758.012300009
         }
     },
     "strands": {
@@ -851,7 +1096,13 @@
             "OBJ-5",
             "OBJ-7",
             "OBJ-6",
-            "OBJ-8"
+            "OBJ-8",
+            "OBJ-9",
+            "OBJ-10",
+            "OBJ-11",
+            "OBJ-12",
+            "OBJ-13",
+            "OBJ-14"
         ],
         "STRAND-3": [
             "OBJ-1"

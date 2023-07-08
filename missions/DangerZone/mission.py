@@ -648,6 +648,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                         "airframe": dcs.helicopters.Mi_26,
                         "groupSize": 1,
                         "initialInventory": 99,
+                        "takeoffCold": "true",
                         "livery": "Russia_VVS_Grey",
                         "loadouts": {
                             "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
@@ -680,6 +681,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                         "airframe": dcs.helicopters.Mi_26,
                         "groupSize": 1,
                         "initialInventory": 99,
+                        "takeoffCold": "true",
                         "livery": "Russia_VVS_Grey",
                         "loadouts": {
                             "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
@@ -695,6 +697,72 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                         "livery": "Russian Air Force",
                         "loadouts": {
                             "GoonsSuck": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                }
+            },
+            "FOB Murray": {
+                "airbase": "FOB Murray Farp#00001",
+                "warehouse": "FOB Murray Airwing Warehouse#00001",
+                "squadrons": {
+                    "Murray 1": {
+                        "airframe": dcs.helicopters.Mi_26,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    },
+                    "Murray 2": {
+                        "airframe": dcs.helicopters.Mi_28N,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "night",
+                        "loadouts": {
+                            "16x9M114, 40xS-8": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                }
+            },
+            "FOB Smith": {
+                "airbase": "FOB Smith Farp#00001",
+                "warehouse": "FOB Smith Airwing Warehouse#00001",
+                "squadrons": {
+                    "Smith 1": {
+                        "airframe": dcs.helicopters.Mi_26,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    },
+                    "Smith 2": {
+                        "airframe": dcs.helicopters.Ka_50_3,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Ka-50_standart_black_RussianAirForce",
+                        "loadouts": {
+                            "12x9A4172, 40xS-13, 4xIgla": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
                         },
                         "capabilities": {
                             "AUFTRAG.Type.BAI": 50,
@@ -773,6 +841,25 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                     }
                 }
             },
+            "1st Lymington Goonwing": {
+                "airbase": "Lymington Goon Farp#00001",
+                "warehouse": "Lymington Goon Airwing Warehouse#00001",
+                "squadrons": {
+                    "LG-01": {
+                        "airframe": dcs.helicopters.CH_47D,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "standard",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    }
+                }
+            },
         }
         return blue_airwings
 
@@ -789,14 +876,6 @@ class DangerZoneRedBrigades(calvinball.redbrigade.RedBrigades):
                         "units": [
                             dcs.vehicles.Infantry.Paratrooper_AKS_74,
                             dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
                             dcs.vehicles.Infantry.Paratrooper_RPG_16,
                             dcs.vehicles.Infantry.Paratrooper_RPG_16,
                         ],
@@ -829,14 +908,6 @@ class DangerZoneRedBrigades(calvinball.redbrigade.RedBrigades):
                         "units": [
                             dcs.vehicles.Infantry.Paratrooper_AKS_74,
                             dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
                             dcs.vehicles.Infantry.Paratrooper_RPG_16,
                             dcs.vehicles.Infantry.Paratrooper_RPG_16,
                         ],
@@ -861,30 +932,71 @@ class DangerZoneRedBrigades(calvinball.redbrigade.RedBrigades):
                         }
                     }
                 }
+            },
+            "FOB Murray": {
+                "warehouse": "FOB Murray Brigade Warehouse#00001",
+                "platoons": {
+                    "FOB Murray 1": {
+                        "units": [
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                        ],
+                        "initialInventory": 3,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    },
+                    "FOB Murray 2": {
+                        "units": [
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Unarmed.Ural_375,
+                            dcs.vehicles.Unarmed.Ural_375
+                        ],
+                        "initialInventory": 1,
+                        "capabilities": {
+                            "AUFTRAG.Type.ARTY": 50
+                        }
+                    }
+                }
+            },
+            "FOB Smith": {
+                "warehouse": "FOB Smith Brigade Warehouse#00001",
+                "platoons": {
+                    "FOB Smith 1": {
+                        "units": [
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                        ],
+                        "initialInventory": 3,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    },
+                    "FOB Smith 2": {
+                        "units": [
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Unarmed.Ural_375,
+                            dcs.vehicles.Unarmed.Ural_375
+                        ],
+                        "initialInventory": 1,
+                        "capabilities": {
+                            "AUFTRAG.Type.ARTY": 50
+                        }
+                    }
+                }
             }
-            # "2nd Goonwalker": {
-            #     "warehouse": "Anglo Brigade Warehouse#00001",
-            #     "platoons": {
-            #         "1GW-Anglo-1": {
-            #             "units": [
-            #                 dcs.vehicles.Armor.T_55,
-            #                 dcs.vehicles.Armor.T_55,
-            #                 dcs.vehicles.Armor.T_55,
-            #                 dcs.vehicles.Armor.T_55,
-            #                 dcs.vehicles.Armor.T_55,
-            #                 dcs.vehicles.Armor.T_55,
-            #                 dcs.vehicles.Armor.T_55,
-            #                 dcs.vehicles.Unarmed.Ural_375,
-            #                 dcs.vehicles.Unarmed.Ural_375,
-            #                 dcs.vehicles.Unarmed.ATZ_5
-            #             ],
-            #             "initialInventory": 1,
-            #             "capabilities": {
-            #                 "AUFTRAG.Type.ONGUARD": 50
-            #             }
-            #         }
-            #     }
-            # },
         }
         return red_brigades
 
@@ -901,14 +1013,23 @@ class DangerZoneBlueBrigades(calvinball.bluebrigade.BlueBrigades):
                         "units": [
                             dcs.vehicles.Infantry.Soldier_M4,
                             dcs.vehicles.Infantry.Soldier_M4,
-                            dcs.vehicles.Infantry.Soldier_M4,
-                            dcs.vehicles.Infantry.Soldier_M4,
-                            dcs.vehicles.Infantry.Soldier_M4,
-                            dcs.vehicles.Infantry.Soldier_M4,
-                            dcs.vehicles.Infantry.Soldier_M4,
-                            dcs.vehicles.Infantry.Soldier_M4,
                             dcs.vehicles.Infantry.Soldier_RPG,
                             dcs.vehicles.Infantry.Soldier_RPG,
+                        ],
+                        "initialInventory": 99,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    }
+                }
+            },
+            "1st Lymington": {
+                "warehouse": "Lymington Goon Brigade Warehouse#00001",
+                "platoons": {
+                    "Lymington-01": {
+                        "units": [
+                            dcs.vehicles.Infantry.Soldier_M4,
+                            dcs.vehicles.Infantry.Soldier_M4,
                             dcs.vehicles.Infantry.Soldier_RPG,
                             dcs.vehicles.Infantry.Soldier_RPG,
                         ],

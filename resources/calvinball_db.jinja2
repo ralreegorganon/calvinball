@@ -51,7 +51,7 @@ MissionDb = {
 								category = "{{static["category"]}}",
 								canCargo = {{static["canCargo"] | string | lower}},
 								shape_name = "{{static["shape_name"]}}",
-								rate = {{static["rate"]}},
+								rate = {{static["rate"] | default(50, true)}},
 								dead = false
 							}
 						},
@@ -89,7 +89,7 @@ MissionDb = {
 								category = "{{static["category"]}}",
 								canCargo = {{static["canCargo"] | string | lower}},
 								shape_name = "{{static["shape_name"]}}",
-								rate = {{static["rate"]}},
+								rate = {{static["rate"] | default(50, true)}},
 								dead = false
 							}
 						},
@@ -133,7 +133,7 @@ MissionDb = {
 								category = "{{static["category"]}}",
 								canCargo = {{static["canCargo"] | string | lower}},
 								shape_name = "{{static["shape_name"]}}",
-								rate = {{static["rate"]}},
+								rate = {{static["rate"] | default(50, true)}},
 								dead = false
 							}
 						},
@@ -252,7 +252,7 @@ MissionDb = {
 								category = "{{static["category"]}}",
 								canCargo = {{static["canCargo"] | string | lower}},
 								shape_name = "{{static["shape_name"]}}",
-								rate = {{static["rate"]}},
+								rate = {{static["rate"] | default(50, true)}},
 								dead = false
 							}
 						},
@@ -285,7 +285,7 @@ MissionDb = {
 						category = "{{static["category"]}}",
 						canCargo = {{static["canCargo"] | string | lower}},
 						shape_name = "{{static["shape_name"]}}",
-						rate = {{static["rate"]}},
+						rate = {{static["rate"] | default(50, true)}},
 						dead = false
 					}
 				},
@@ -337,6 +337,7 @@ MissionDb = {
 						name = "{{squadron_name}}",
 						templateGroupName = "{{squadron["groupName"]}}",
 						initialInventory = {{squadron["initialInventory"]}},
+						takeoffCold = {{squadron["takeoffCold"] | default("false", true)}},
 						capabilities = {
 {% 						for mission, performance in squadron["capabilities"].items() %}
 							{ mission = {{mission}}, performance = {{performance}} },
@@ -393,6 +394,7 @@ MissionDb = {
 						name = "{{squadron_name}}",
 						templateGroupName = "{{squadron["groupName"]}}",
 						initialInventory = {{squadron["initialInventory"]}},
+						takeoffCold = {{squadron["takeoffCold"] | default("false", true)}},
 						capabilities = {
 {% 						for mission, performance in squadron["capabilities"].items() %}
 							{ mission = {{mission}}, performance = {{performance}} },

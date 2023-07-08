@@ -44,7 +44,11 @@
         "label": "Lymington",
         "radius": 2300.0208,
         "ship_groups": [],
-        "static_groups": [],
+        "static_groups": [
+            "Lymington Goon Airwing Warehouse",
+            "Lymington Goon Brigade Warehouse",
+            "Lymington Goon Farp"
+        ],
         "vehicle_groups": [
             "FARP MASH 1",
             "FARP MASH 1-3",

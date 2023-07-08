@@ -370,14 +370,14 @@ def assign_groups_to_zones(objective_zones, task_zones, qrf_zones, farp_zones, a
             for coalition, groups in ship_groups.items():
                 for group_name, group in groups.items():
                     group_point = Point(group[0]["x"], group[0]["y"])
-                    if group_name not in handled_vehicles and geometry.contains(group_point):
+                    if group_name not in handled_ships and geometry.contains(group_point):
                         if (is_blue_only and coalition == "blue") or not is_blue_only:
                             zone["ship_groups"].append(group_name)
                             handled_ships[group_name] = True
             for coalition, groups in static_groups.items():
                 for group_name, group in groups.items():
                     group_point = Point(group["x"], group["y"])
-                    if group_name not in handled_vehicles and geometry.contains(group_point):
+                    if group_name not in handled_statics and geometry.contains(group_point):
                         if (is_blue_only and coalition == "blue") or not is_blue_only:
                             zone["static_groups"].append(group_name)
                             handled_statics[group_name] = True
