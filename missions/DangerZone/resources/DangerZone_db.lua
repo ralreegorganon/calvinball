@@ -10563,7 +10563,7 @@ MissionDb = {
 			{
 				name = "2nd CAW - Teddy",
 				warehouse = "Teddy Unit #1",
-				airbase = "Teddy",
+				airbase = "Teddy Unit #1",
 				squadrons = {
 					{
 						name = "GGD-03",

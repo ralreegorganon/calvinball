@@ -1294,6 +1294,13 @@ local function activateAirwings(chief, side)
             if warehouse ~= nil then
                 airwing.instance = AIRWING:New(airwing.warehouse, airwing.name)
 
+                local airbase = AIRBASE:FindByName(airwing.airbase)
+                if airbase == nil then
+                    MESSAGE:New(string.format("Couldn't find airbase %s", airwing.airbase), 15):ToAll()
+                else
+                    airwing.instance:SetAirbase(airbase)
+                end
+
                 function airwing.instance:onafterDestroyed(From, Event, To)
                     airwing.state = "dead"
                     MESSAGE:New(string.format("Airwing warehouse at %s has been destroyed.", airwing.airbase), 15):ToAll()

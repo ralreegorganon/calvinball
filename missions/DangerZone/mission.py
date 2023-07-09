@@ -955,7 +955,7 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                 }
             },
             "2nd CAW - Teddy": {
-                "airbase": "Teddy",
+                "airbase": "Teddy Unit #1",
                 "warehouse": "Teddy Unit #1",
                 "squadrons": {
                     "GGD-03": {
