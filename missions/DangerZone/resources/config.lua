@@ -10,6 +10,7 @@ MissionDb.invokeOnActivate["OBJ-6"] = function()
     ng:SetPatrolAdInfinitum(true)
     ng:AddWaypoint(COORDINATE:New(123806, 0, -96831), 30, nil, 0, true)
     ng:AddWaypoint(COORDINATE:New(127880, 0, -107679), 30, nil, 0, true)
+    ng:AddWaypoint(g:GetCoordinate(), 30, nil, 0, true)
 end
 
 MissionDb.invokeOnActivate["OBJ-8"] = function()
@@ -22,6 +23,7 @@ MissionDb.invokeOnActivate["OBJ-8"] = function()
     ng:SetPatrolAdInfinitum(true)
     ng:AddWaypoint(COORDINATE:New(128614, 0, -57619), 30, nil, 0, true)
     ng:AddWaypoint(COORDINATE:New(128546, 0, -57709), 30, nil, 0, true)
+    ng:AddWaypoint(g:GetCoordinate(), 30, nil, 0, true)
 end
 
 MissionDb.invokeOnActivate["OBJ-9"] = function()
@@ -33,4 +35,5 @@ MissionDb.invokeOnActivate["OBJ-9"] = function()
     ng:ClearWaypoints()
     ng:SetPatrolAdInfinitum(true)
     ng:AddWaypoint(COORDINATE:New(139631, 0, -34776), 30, nil, 0, true)
+    ng:AddWaypoint(g:GetCoordinate(), 30, nil, 0, true)
 end
