@@ -745,9 +745,9 @@
             "RED SAM SA-2 RG 234-9",
             "RED SAM SA-3 236-3",
             "RED SAM SA-3 236-4",
+            "RED SAM SA-8 RG 240-8",
             "RED SAM SA-6 238-8",
-            "RED SAM SA-6 238-9",
-            "RED SAM SA-8 RG 240-8"
+            "RED SAM SA-6 238-9"
         ],
         "vertices": [
             {
@@ -800,9 +800,9 @@
             "RED SAM SA-2 RG 234-8",
             "RED SAM SA-3 236-5",
             "RED SAM SA-3 236-6",
+            "RED SAM SA-8 RG 240-9",
             "RED SAM SA-6 238-10",
-            "RED SAM SA-6 238-11",
-            "RED SAM SA-8 RG 240-9"
+            "RED SAM SA-6 238-11"
         ],
         "vertices": [
             {
@@ -971,23 +971,23 @@
             "Funtington Airwing Warehouse",
             "Static FARP Tent-26",
             "Static FARP Tent-43",
+            "Static FARP Tent-44",
+            "Static FARP Tent-45",
             "Static FARP Tent-46",
             "Static FARP Tent-47",
             "Static FARP Tent-48",
-            "Static FARP Tent-49",
-            "Static FARP Tent-44",
-            "Static FARP Tent-45"
+            "Static FARP Tent-49"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
+            "RED AIR DEFENSE BATTERY A 242-7",
             "RED GROUND 8-11 RG-1",
-            "RED GROUND 9-8 RG-1",
             "RED GROUND 8-28 RG-1",
             "RED GROUND 8-29 RG-1",
+            "RED GROUND 9-8 RG-1",
             "RED GROUND RG 1-8 -4",
             "RED SAM SA-15 RG 686-22",
-            "RED SAM SA-6 238-12",
-            "RED AIR DEFENSE BATTERY A 242-7"
+            "RED SAM SA-6 238-12"
         ],
         "vertices": [
             {
@@ -1015,25 +1015,25 @@
         "label": "",
         "ship_groups": [],
         "static_groups": [
-            "Tangmere Airwing Warehouse",
             "Static FARP Tent-50",
             "Static FARP Tent-51",
             "Static FARP Tent-52",
             "Static FARP Tent-53",
             "Static FARP Tent-54",
-            "Static FARP Tent-55"
+            "Static FARP Tent-55",
+            "Tangmere Airwing Warehouse"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
-            "RED GROUND 8-29 RG-2",
+            "RED AIR DEFENSE BATTERY A 242-8",
             "RED GROUND 8-11 RG-2",
-            "RED GROUND 9-8 RG-2",
             "RED GROUND 8-28 RG-2",
+            "RED GROUND 8-29 RG-2",
+            "RED GROUND 9-8 RG-2",
             "RED GROUND RG 1-8 ",
             "RED GROUND RG 1-8 -3",
-            "RED SAM SA-6 238-13",
             "RED SAM SA-15 RG 686-23",
-            "RED AIR DEFENSE BATTERY A 242-8"
+            "RED SAM SA-6 238-13"
         ],
         "vertices": [
             {
@@ -1072,15 +1072,15 @@
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
+            "RED AIR DEFENSE BATTERY A 242-9",
             "RED GROUND 8-11 RG-3",
-            "RED GROUND 9-8 RG-3",
-            "RED GROUND 8-29 RG-3",
-            "RED GROUND RG 1-8 -1",
             "RED GROUND 8-28 RG-3",
+            "RED GROUND 8-29 RG-3",
+            "RED GROUND 9-8 RG-3",
+            "RED GROUND RG 1-8 -1",
             "RED GROUND RG 1-8 -2",
-            "RED SAM SA-6 238-14",
             "RED SAM SA-15 RG 686-24",
-            "RED AIR DEFENSE BATTERY A 242-9"
+            "RED SAM SA-6 238-14"
         ],
         "vertices": [
             {

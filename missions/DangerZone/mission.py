@@ -197,6 +197,65 @@ class DangerZoneCarriers(calvinball.carriers.Carriers):
                 "tacan_channel": 55,
                 "radio": 305
             },
+            "Abe": {
+                "ship": dcs.ships.CVN_72,
+                "position": {"x":105300 ,"y":-10200},
+                "waypoints": [
+                    {"x": 151200, "y": 97400, "speed": 25},
+                    {"x": 148700, "y": 97400, "speed": 25},
+                    {"x": 102800, "y": -10200, "speed": 25},
+                ],
+                "tacan_channel": 56,
+                "icls_channel": 3,
+                "radio": 306,
+                "link4": 338
+            },
+            "Saratoga": {
+                "ship": dcs.ships.Forrestal,
+                "position": {"x":111300 ,"y":-13200},
+                "waypoints": [
+                    {"x": 157200, "y": 94400, "speed": 25},
+                    {"x": 154700, "y": 94400, "speed": 25},
+                    {"x": 108800, "y": -13200, "speed": 25},
+                ],
+                "tacan_channel": 57,
+                "icls_channel": 4,
+                "radio": 307,
+                "link4": 339
+            },
+            "Illustrious": {
+                "ship": dcs.ships.Hms_invincible,
+                "position": {"x":96300 ,"y":-14200},
+                "waypoints": [
+                    {"x": 142200, "y": 93400, "speed": 25},
+                    {"x": 139700, "y": 93400, "speed": 25},
+                    {"x": 93800, "y": -14200, "speed": 25},
+                ],
+                "tacan_channel": 58,
+                "radio": 308
+            },
+            "Nassau": {
+                "ship": dcs.ships.LHA_Tarawa,
+                "position": {"x":129400 ,"y":-24200},
+                "waypoints": [
+                    {"x": 131100, "y": -4700, "speed": 25},
+                    {"x": 128600, "y": -4700, "speed": 25},
+                    {"x": 126900, "y": -24200, "speed": 25},
+                ],
+                "tacan_channel": 59,
+                "radio": 309
+            },
+            "Saipan": {
+                "ship": dcs.ships.LHA_Tarawa,
+                "position": {"x":133900 ,"y":-24700},
+                "waypoints": [
+                    {"x": 135700, "y": -4700, "speed": 25},
+                    {"x": 133200, "y": -4700, "speed": 25},
+                    {"x": 131400, "y": -24700, "speed": 25},
+                ],
+                "tacan_channel": 60,
+                "radio": 310
+            },
         }
     
 class DangerZoneClients(calvinball.clients.Clients):
@@ -383,6 +442,53 @@ class DangerZoneClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.MiG_21Bis, "count": 2, "parking": [45, 44], "fuel": 1, "loadout": "Empty", "livery": "HuAF 31st AB (Turul Sqn)" },
                 ]
             },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "carrier": "Abe",
+                "start_type": dcs.mission.StartType.Warm,
+                "airframes": [
+                    { "airframe": dcs.planes.F_14B, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True }  },
+                    { "airframe": dcs.planes.FA_18C_hornet, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "VX-31 CoNA" },
+                ]
+            },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "carrier": "Saratoga",
+                "start_type": dcs.mission.StartType.Warm,
+                "airframes": [
+                    { "airframe": dcs.planes.F_14B, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True } },
+                    { "airframe": dcs.planes.FA_18C_hornet, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "VX-31 CoNA" },
+                ]
+            },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "carrier": "Illustrious",
+                "start_type": dcs.mission.StartType.Warm,
+                "airframes": [
+                    { "airframe": dcs.planes.AV8BNA, "count": 3, "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
+                ]
+            },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "carrier": "Nassau",
+                "start_type": dcs.mission.StartType.Warm,
+                "airframes": [
+                    { "airframe": dcs.helicopters.Mi_24P, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation" },
+                    { "airframe": dcs.helicopters.Mi_8MT, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
+                    { "airframe": dcs.helicopters.SA342L, "count": 1, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2" },
+                    { "airframe": dcs.helicopters.SA342M, "count": 1, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet" },
+                ]
+            },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "carrier": "Saipan",
+                "start_type": dcs.mission.StartType.Warm,
+                "airframes": [
+                    { "airframe": dcs.helicopters.UH_1H, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972" },
+                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
+                    { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
+                ]
+            },
         ]
 
         comms_plan = {
@@ -433,6 +539,8 @@ class DangerZoneClients(calvinball.clients.Clients):
             airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
             airport_set[1]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
             airport_set[9]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "parking": [45, 44, 46, 47], "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
+            airport_set[10]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "parking": [45, 44, 46, 47], "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
+            airport_set[11]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 4, "parking": [45, 44, 46, 47], "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
 
             radios[pydcs_extensions.A_4E_C] = ["uhf"]
 
@@ -913,7 +1021,7 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
     def define(self, m: dcs.Mission):
         blue_airwings = {
             "1st CAW - Teddy": {
-                "airbase": "Teddy",
+                "airbase": "Teddy Unit #1",
                 "warehouse": "Teddy Unit #1",
                 "squadrons": {
                     "GGD-01": {
@@ -957,6 +1065,66 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
             "2nd CAW - Teddy": {
                 "airbase": "Teddy Unit #1",
                 "warehouse": "Teddy Unit #1",
+                "squadrons": {
+                    "GGD-03": {
+                        "airframe": dcs.planes.FA_18C_hornet,
+                        "groupSize": 2,
+                        "initialInventory": 99,
+                        "livery": "Canada 150 Demo Jet",
+                        "loadouts": {
+                            "AIM-9X*2, AIM-120C-5*6, FUEL*3": "{ AUFTRAG.Type.CAP }",
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                        }
+                    }
+                }
+            },
+            "3rd CAW - Abe": {
+                "airbase": "Abe Unit #1",
+                "warehouse": "Abe Unit #1",
+                "squadrons": {
+                    "GGD-01": {
+                        "airframe": dcs.planes.E_2C,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "VAW-125 Tigertails",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.AWACS }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.AWACS": 50
+                        }
+                    },
+                    "GGD-02 JTAC": {
+                        "airframe": dcs.planes.S_3B,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "usaf standard",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.RECON }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.RECON": 50
+                        }
+                    },
+                    "GGD-02": {
+                        "airframe": dcs.helicopters.CH_47D,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "standard",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    }
+                }
+            },
+            "4th CAW - Abe": {
+                "airbase": "Abe Unit #1",
+                "warehouse": "Abe Unit #1",
                 "squadrons": {
                     "GGD-03": {
                         "airframe": dcs.planes.FA_18C_hornet,

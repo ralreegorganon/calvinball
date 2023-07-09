@@ -5646,12 +5646,12 @@ MissionDb = {
 				{ name = "RED SAM SA-2 RG 234-4" },
 				{ name = "RED SAM SA-2 RG 234-5" },
 				{ name = "RED SAM SA-2 RG 234-6" },
+				{ name = "RED SAM SA-8 RG 240-7" },
 				{ name = "RED SAM SA-6 238-5" },
 				{ name = "RED SAM SA-6 238-6" },
 				{ name = "RED SAM SA-6 238-7" },
 				{ name = "RED SAM SA-8 RG 240-5" },
 				{ name = "RED SAM SA-8 RG 240-6" },
-				{ name = "RED SAM SA-8 RG 240-7" },
 			},
 			shipGroups = {
 				{ name = "RED RG Neustrashimy" },
@@ -7986,9 +7986,9 @@ MissionDb = {
 						{ name = "RED SAM SA-2 RG 234-9" },
 						{ name = "RED SAM SA-3 236-3" },
 						{ name = "RED SAM SA-3 236-4" },
+						{ name = "RED SAM SA-8 RG 240-8" },
 						{ name = "RED SAM SA-6 238-8" },
 						{ name = "RED SAM SA-6 238-9" },
-						{ name = "RED SAM SA-8 RG 240-8" },
 					},
 					shipGroups = {
 					},
@@ -8583,9 +8583,9 @@ MissionDb = {
 						{ name = "RED SAM SA-2 RG 234-8" },
 						{ name = "RED SAM SA-3 236-5" },
 						{ name = "RED SAM SA-3 236-6" },
+						{ name = "RED SAM SA-8 RG 240-9" },
 						{ name = "RED SAM SA-6 238-10" },
 						{ name = "RED SAM SA-6 238-11" },
-						{ name = "RED SAM SA-8 RG 240-9" },
 					},
 					shipGroups = {
 					},
@@ -8769,8 +8769,8 @@ MissionDb = {
 				{ name = "RED SAM SA-3 8-1 FK" },
 				{ name = "RED SAM SA-3 8-2 FK" },
 				{ name = "RED SAM SA-3 8-3 FK" },
-				{ name = "RED SAM SA-5 8-1 FK" },
 				{ name = "RED SAM SA-9 8-1 FK" },
+				{ name = "RED SAM SA-5 8-1 FK" },
 			},
 			shipGroups = {
 				{ name = "RED RG 8-1 FK" },
@@ -8804,6 +8804,167 @@ MissionDb = {
 			airbases = {
 			},
 			carriers = {
+				{
+					name = "Abe",
+					clients = {
+							"Abe F-14B Warm 1",
+							"Abe F-14B Warm 2",
+							"Abe F-14B Warm 3",
+							"Abe F-14B Warm 4",
+							"Abe FA-18C_hornet Warm 1",
+							"Abe FA-18C_hornet Warm 2",
+							"Abe FA-18C_hornet Warm 3",
+							"Abe FA-18C_hornet Warm 4",
+					},
+					waypoints = {
+						{ 
+							x = 151200,
+							y = 97400,
+							speed = 25,
+						},
+						{ 
+							x = 148700,
+							y = 97400,
+							speed = 25,
+						},
+						{ 
+							x = 102800,
+							y = -10200,
+							speed = 25,
+						},
+					},
+					tacan_channel = 56,
+					radio = 306,
+					link4 = 338,
+					icls_channel = 3,
+				},
+				{
+					name = "Saratoga",
+					clients = {
+							"Saratoga F-14B Warm 1",
+							"Saratoga F-14B Warm 2",
+							"Saratoga FA-18C_hornet Warm 1",
+							"Saratoga FA-18C_hornet Warm 2",
+					},
+					waypoints = {
+						{ 
+							x = 157200,
+							y = 94400,
+							speed = 25,
+						},
+						{ 
+							x = 154700,
+							y = 94400,
+							speed = 25,
+						},
+						{ 
+							x = 108800,
+							y = -13200,
+							speed = 25,
+						},
+					},
+					tacan_channel = 57,
+					radio = 307,
+					link4 = 339,
+					icls_channel = 4,
+				},
+				{
+					name = "Illustrious",
+					clients = {
+							"Illustrious AV8BNA Warm 1",
+							"Illustrious AV8BNA Warm 2",
+							"Illustrious AV8BNA Warm 3",
+					},
+					waypoints = {
+						{ 
+							x = 142200,
+							y = 93400,
+							speed = 25,
+						},
+						{ 
+							x = 139700,
+							y = 93400,
+							speed = 25,
+						},
+						{ 
+							x = 93800,
+							y = -14200,
+							speed = 25,
+						},
+					},
+					tacan_channel = 58,
+					radio = 308,
+					link4 = nil,
+					icls_channel = nil,
+				},
+				{
+					name = "Nassau",
+					clients = {
+							"Nassau Mi-24P Warm 1",
+							"Nassau Mi-24P Warm 2",
+							"Nassau Mi-24P Warm 3",
+							"Nassau Mi-8MT Warm 1",
+							"Nassau Mi-8MT Warm 2",
+							"Nassau Mi-8MT Warm 3",
+							"Nassau SA342L Warm 1",
+							"Nassau SA342M Warm 1",
+					},
+					waypoints = {
+						{ 
+							x = 131100,
+							y = -4700,
+							speed = 25,
+						},
+						{ 
+							x = 128600,
+							y = -4700,
+							speed = 25,
+						},
+						{ 
+							x = 126900,
+							y = -24200,
+							speed = 25,
+						},
+					},
+					tacan_channel = 59,
+					radio = 309,
+					link4 = nil,
+					icls_channel = nil,
+				},
+				{
+					name = "Saipan",
+					clients = {
+							"Saipan UH-1H Warm 1",
+							"Saipan UH-1H Warm 2",
+							"Saipan UH-1H Warm 3",
+							"Saipan AH-64D_BLK_II Warm 1",
+							"Saipan AH-64D_BLK_II Warm 2",
+							"Saipan AH-64D_BLK_II Warm 3",
+							"Saipan Ka-50_3 Warm 1",
+							"Saipan Ka-50_3 Warm 2",
+					},
+					waypoints = {
+						{ 
+							x = 135700,
+							y = -4700,
+							speed = 25,
+						},
+						{ 
+							x = 133200,
+							y = -4700,
+							speed = 25,
+						},
+						{ 
+							x = 131400,
+							y = -24700,
+							speed = 25,
+						},
+					},
+					tacan_channel = 60,
+					radio = 310,
+					link4 = nil,
+					icls_channel = nil,
+				},
 			},
 			qrfs = {
 				{
@@ -8811,15 +8972,15 @@ MissionDb = {
 					spawnGroups = {
 					},
 					vehicleGroups = {
-						{ name = "RED GROUND 8-11 RG-3" },
-						{ name = "RED GROUND 9-8 RG-3" },
-						{ name = "RED GROUND 8-29 RG-3" },
-						{ name = "RED GROUND RG 1-8 -1" },
-						{ name = "RED GROUND 8-28 RG-3" },
-						{ name = "RED GROUND RG 1-8 -2" },
-						{ name = "RED SAM SA-6 238-14" },
-						{ name = "RED SAM SA-15 RG 686-24" },
 						{ name = "RED AIR DEFENSE BATTERY A 242-9" },
+						{ name = "RED GROUND 8-11 RG-3" },
+						{ name = "RED GROUND 8-28 RG-3" },
+						{ name = "RED GROUND 8-29 RG-3" },
+						{ name = "RED GROUND 9-8 RG-3" },
+						{ name = "RED GROUND RG 1-8 -1" },
+						{ name = "RED GROUND RG 1-8 -2" },
+						{ name = "RED SAM SA-15 RG 686-24" },
+						{ name = "RED SAM SA-6 238-14" },
 					},
 					shipGroups = {
 					},
@@ -8951,34 +9112,19 @@ MissionDb = {
 					spawnGroups = {
 					},
 					vehicleGroups = {
-						{ name = "RED GROUND 8-29 RG-2" },
+						{ name = "RED AIR DEFENSE BATTERY A 242-8" },
 						{ name = "RED GROUND 8-11 RG-2" },
-						{ name = "RED GROUND 9-8 RG-2" },
 						{ name = "RED GROUND 8-28 RG-2" },
+						{ name = "RED GROUND 8-29 RG-2" },
+						{ name = "RED GROUND 9-8 RG-2" },
 						{ name = "RED GROUND RG 1-8 " },
 						{ name = "RED GROUND RG 1-8 -3" },
-						{ name = "RED SAM SA-6 238-13" },
 						{ name = "RED SAM SA-15 RG 686-23" },
-						{ name = "RED AIR DEFENSE BATTERY A 242-8" },
+						{ name = "RED SAM SA-6 238-13" },
 					},
 					shipGroups = {
 					},
 					staticGroups = {
-						{
-							name = "Tangmere Airwing Warehouse#00001",
-							template = {
-								name = "Tangmere Airwing Warehouse",
-								type = ".Ammunition depot",
-								x = 150625.65110126,
-								y = -34648.265552527,
-								heading = 5.7246799465414,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "SkladC",
-								rate = 100,
-								dead = false
-							}
-						},
 						{
 							name = "Static FARP Tent-50#00001",
 							template = {
@@ -9069,6 +9215,21 @@ MissionDb = {
 								dead = false
 							}
 						},
+						{
+							name = "Tangmere Airwing Warehouse#00001",
+							template = {
+								name = "Tangmere Airwing Warehouse",
+								type = ".Ammunition depot",
+								x = 150625.65110126,
+								y = -34648.265552527,
+								heading = 5.7246799465414,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
 					},
 				},
 				{
@@ -9076,14 +9237,14 @@ MissionDb = {
 					spawnGroups = {
 					},
 					vehicleGroups = {
+						{ name = "RED AIR DEFENSE BATTERY A 242-7" },
 						{ name = "RED GROUND 8-11 RG-1" },
-						{ name = "RED GROUND 9-8 RG-1" },
 						{ name = "RED GROUND 8-28 RG-1" },
 						{ name = "RED GROUND 8-29 RG-1" },
+						{ name = "RED GROUND 9-8 RG-1" },
 						{ name = "RED GROUND RG 1-8 -4" },
 						{ name = "RED SAM SA-15 RG 686-22" },
 						{ name = "RED SAM SA-6 238-12" },
-						{ name = "RED AIR DEFENSE BATTERY A 242-7" },
 					},
 					shipGroups = {
 					},
@@ -9126,6 +9287,36 @@ MissionDb = {
 								x = 152612.69569758,
 								y = -45436.464353815,
 								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-44#00001",
+							template = {
+								name = "Static FARP Tent-44",
+								type = "FARP Tent",
+								x = 152616.08645864,
+								y = -45323.37249961,
+								heading = 2.9146998508305,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-45#00001",
+							template = {
+								name = "Static FARP Tent-45",
+								type = "FARP Tent",
+								x = 152609.70384958,
+								y = -45343.717065975,
+								heading = 2.9146998508305,
 								category = "Fortifications",
 								canCargo = false,
 								shape_name = "PalatkaB",
@@ -9186,36 +9377,6 @@ MissionDb = {
 								x = 152652.38754764,
 								y = -45447.434463129,
 								heading = 2.146754979953,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "PalatkaB",
-								rate = 50,
-								dead = false
-							}
-						},
-						{
-							name = "Static FARP Tent-44#00001",
-							template = {
-								name = "Static FARP Tent-44",
-								type = "FARP Tent",
-								x = 152616.08645864,
-								y = -45323.37249961,
-								heading = 2.9146998508305,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "PalatkaB",
-								rate = 50,
-								dead = false
-							}
-						},
-						{
-							name = "Static FARP Tent-45#00001",
-							template = {
-								name = "Static FARP Tent-45",
-								type = "FARP Tent",
-								x = 152609.70384958,
-								y = -45343.717065975,
-								heading = 2.9146998508305,
 								category = "Fortifications",
 								canCargo = false,
 								shape_name = "PalatkaB",
@@ -9578,18 +9739,17 @@ MissionDb = {
 			reinforcements = {
 			},
 			vehicleGroups = {
-				{ name = "RED SAM SA-8 RG 240-13" },
+				{ name = "RED SAM SA-2 RG 234-10" },
+				{ name = "RED SAM SA-2 RG 234-11" },
+				{ name = "RED SAM SA-2 RG 234-12" },
 				{ name = "RED SAM SA-3 236-7" },
 				{ name = "RED SAM SA-3 236-8" },
 				{ name = "RED SAM SA-8 RG 240-10" },
 				{ name = "RED SAM SA-8 RG 240-11" },
 				{ name = "RED SAM SA-8 RG 240-12" },
-				{ name = "RED SAM SA-2 RG 234-10" },
-				{ name = "RED SAM SA-2 RG 234-11" },
-				{ name = "RED SAM SA-2 RG 234-12" },
+				{ name = "RED SAM SA-8 RG 240-13" },
 			},
 			shipGroups = {
-				{ name = "RED RG Naval 1" },
 			},
 			staticGroups = {
 			}
@@ -9707,6 +9867,22 @@ MissionDb = {
 			"Lymington UH-1H Warm 2",
 			"Lymington UH-1H Warm 3",
 			"Lymington UH-1H Warm 4",
+			"Nassau Mi-24P Warm 1",
+			"Nassau Mi-24P Warm 2",
+			"Nassau Mi-24P Warm 3",
+			"Nassau Mi-8MT Warm 1",
+			"Nassau Mi-8MT Warm 2",
+			"Nassau Mi-8MT Warm 3",
+			"Nassau SA342L Warm 1",
+			"Nassau SA342M Warm 1",
+			"Saipan UH-1H Warm 1",
+			"Saipan UH-1H Warm 2",
+			"Saipan UH-1H Warm 3",
+			"Saipan AH-64D_BLK_II Warm 1",
+			"Saipan AH-64D_BLK_II Warm 2",
+			"Saipan AH-64D_BLK_II Warm 3",
+			"Saipan Ka-50_3 Warm 1",
+			"Saipan Ka-50_3 Warm 2",
 		}
 	},
 	csar = {
@@ -9795,6 +9971,22 @@ MissionDb = {
 			"Lymington UH-1H Warm 2",
 			"Lymington UH-1H Warm 3",
 			"Lymington UH-1H Warm 4",
+			"Nassau Mi-24P Warm 1",
+			"Nassau Mi-24P Warm 2",
+			"Nassau Mi-24P Warm 3",
+			"Nassau Mi-8MT Warm 1",
+			"Nassau Mi-8MT Warm 2",
+			"Nassau Mi-8MT Warm 3",
+			"Nassau SA342L Warm 1",
+			"Nassau SA342M Warm 1",
+			"Saipan UH-1H Warm 1",
+			"Saipan UH-1H Warm 2",
+			"Saipan UH-1H Warm 3",
+			"Saipan AH-64D_BLK_II Warm 1",
+			"Saipan AH-64D_BLK_II Warm 2",
+			"Saipan AH-64D_BLK_II Warm 3",
+			"Saipan Ka-50_3 Warm 1",
+			"Saipan Ka-50_3 Warm 2",
 		}
 	},
 	autolase = {},
@@ -10508,7 +10700,7 @@ MissionDb = {
 			{
 				name = "1st CAW - Teddy",
 				warehouse = "Teddy Unit #1",
-				airbase = "Teddy",
+				airbase = "Teddy Unit #1",
 				squadrons = {
 					{
 						name = "GGD-01",
@@ -10577,6 +10769,84 @@ MissionDb = {
 						payloads = {
 							{
 								templateGroupName = "BLUE 2nd CAW - Teddy GGD-03 FA-18C_hornet LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "3rd CAW - Abe",
+				warehouse = "Abe Unit #1",
+				airbase = "Abe Unit #1",
+				squadrons = {
+					{
+						name = "GGD-01",
+						templateGroupName = "BLUE 3rd CAW - Abe GGD-01 E-2C",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
+						},
+						livery = "VAW-125 Tigertails",
+						payloads = {
+							{
+								templateGroupName = "BLUE 3rd CAW - Abe GGD-01 E-2C LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.AWACS }
+							},
+						}
+					},
+					{
+						name = "GGD-02 JTAC",
+						templateGroupName = "BLUE 3rd CAW - Abe GGD-02 JTAC S-3B",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.RECON, performance = 50 },
+						},
+						livery = "usaf standard",
+						payloads = {
+							{
+								templateGroupName = "BLUE 3rd CAW - Abe GGD-02 JTAC S-3B LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.RECON }
+							},
+						}
+					},
+					{
+						name = "GGD-02",
+						templateGroupName = "BLUE 3rd CAW - Abe GGD-02 CH-47D",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
+						},
+						livery = "standard",
+						payloads = {
+							{
+								templateGroupName = "BLUE 3rd CAW - Abe GGD-02 CH-47D LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "4th CAW - Abe",
+				warehouse = "Abe Unit #1",
+				airbase = "Abe Unit #1",
+				squadrons = {
+					{
+						name = "GGD-03",
+						templateGroupName = "BLUE 4th CAW - Abe GGD-03 FA-18C_hornet",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+						},
+						livery = "Canada 150 Demo Jet",
+						payloads = {
+							{
+								templateGroupName = "BLUE 4th CAW - Abe GGD-03 FA-18C_hornet LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.CAP }
 							},
 						}

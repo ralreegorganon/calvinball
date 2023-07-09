@@ -767,12 +767,12 @@
                 "RED SAM SA-2 RG 234-4",
                 "RED SAM SA-2 RG 234-5",
                 "RED SAM SA-2 RG 234-6",
+                "RED SAM SA-8 RG 240-7",
                 "RED SAM SA-6 238-5",
                 "RED SAM SA-6 238-6",
                 "RED SAM SA-6 238-7",
                 "RED SAM SA-8 RG 240-5",
-                "RED SAM SA-8 RG 240-6",
-                "RED SAM SA-8 RG 240-7"
+                "RED SAM SA-8 RG 240-6"
             ],
             "vertices": [
                 {
@@ -1021,8 +1021,8 @@
                 "RED SAM SA-3 8-1 FK",
                 "RED SAM SA-3 8-2 FK",
                 "RED SAM SA-3 8-3 FK",
-                "RED SAM SA-5 8-1 FK",
-                "RED SAM SA-9 8-1 FK"
+                "RED SAM SA-9 8-1 FK",
+                "RED SAM SA-5 8-1 FK"
             ],
             "vertices": [
                 {
@@ -1051,7 +1051,13 @@
             "capZones": [
                 "CAP-1"
             ],
-            "carriers": [],
+            "carriers": [
+                "Abe",
+                "Saratoga",
+                "Illustrious",
+                "Nassau",
+                "Saipan"
+            ],
             "completeSound": "",
             "component": "objective",
             "farps": [],
@@ -1096,43 +1102,41 @@
                 "QRF-23"
             ],
             "reinforcements": [],
-            "ship_groups": [
-                "RED RG Naval 1"
-            ],
+            "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",
             "tasks": [],
             "vehicle_groups": [
-                "RED SAM SA-8 RG 240-13",
+                "RED SAM SA-2 RG 234-10",
+                "RED SAM SA-2 RG 234-11",
+                "RED SAM SA-2 RG 234-12",
                 "RED SAM SA-3 236-7",
                 "RED SAM SA-3 236-8",
                 "RED SAM SA-8 RG 240-10",
                 "RED SAM SA-8 RG 240-11",
                 "RED SAM SA-8 RG 240-12",
-                "RED SAM SA-2 RG 234-10",
-                "RED SAM SA-2 RG 234-11",
-                "RED SAM SA-2 RG 234-12"
+                "RED SAM SA-8 RG 240-13"
             ],
             "vertices": [
                 {
-                    "x": 133466.27062082,
-                    "y": -48475.489137795
+                    "x": 131752.39478029,
+                    "y": -51970.928512544
                 },
                 {
-                    "x": 145915.41969535,
-                    "y": -5434.6496196669
+                    "x": 146179.75993874,
+                    "y": -13131.351185575
                 },
                 {
-                    "x": 180888.14416516,
-                    "y": -16662.912799656
+                    "x": 179780.55368801,
+                    "y": -24148.004873861
                 },
                 {
-                    "x": 171076.44887035,
-                    "y": -61851.418565606
+                    "x": 164332.50978437,
+                    "y": -96915.413537147
                 }
             ],
-            "x": 157836.57083792,
-            "y": -33106.117530681
+            "x": 155511.30454785,
+            "y": -46541.424527282
         }
     },
     "strands": {
