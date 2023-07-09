@@ -1407,7 +1407,7 @@ local function unlockCarriersForObjective(objective)
         local unitName = string.format("%s Unit #1", carrier.name)
 
         -- Hardcoded for now...
-        if carrier.name == "Tarawa" or carrier.name == "Peleliu" then
+        if carrier.name == "Tarawa" or carrier.name == "Peleliu" or carrier.name == "Saipan" or carrier.name == "Nassau" then
             MissionDb.ctld.instance:AddCTLDZone(unitName, CTLD.CargoZoneType.SHIP, SMOKECOLOR.Blue, true, false, 240, 20)
         end
 
