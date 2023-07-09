@@ -254,6 +254,7 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+				"CAP-2",
 			},
 			nodes = {
 			},
@@ -266,35 +267,28 @@ MissionDb = {
 			carriers = {
 			},
 			qrfs = {
-			},
-			reinforcements = {
-			},
-			vehicleGroups = {
-			},
-			shipGroups = {
-			},
-			staticGroups = {
-			}
-		},
-		{
-			name = "OBJ-11",
-			strand = "STRAND-1",
-			completeSound = "",
-			borderZones = {
-			},
-			capZones = {
-			},
-			nodes = {
-			},
-			tasks = {
-			},
-			farps = {
-			},
-			airbases = {
-			},
-			carriers = {
-			},
-			qrfs = {
+				{
+					name = "QRF-23",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					},
+				},
+				{
+					name = "QRF-35",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					},
+				},
 				{
 					name = "QRF-30",
 					spawnGroups = {
@@ -319,6 +313,17 @@ MissionDb = {
 				},
 				{
 					name = "QRF-32",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					},
+				},
+				{
+					name = "QRF-34",
 					spawnGroups = {
 					},
 					vehicleGroups = {
@@ -9713,28 +9718,6 @@ MissionDb = {
 						},
 					},
 				},
-				{
-					name = "QRF-24",
-					spawnGroups = {
-					},
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-					},
-				},
-				{
-					name = "QRF-23",
-					spawnGroups = {
-					},
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-					},
-				},
 			},
 			reinforcements = {
 			},
@@ -9768,7 +9751,6 @@ MissionDb = {
 				"OBJ-8",
 				"OBJ-9",
 				"OBJ-10",
-				"OBJ-11",
 				"OBJ-12",
 				"OBJ-13",
 				"OBJ-14",
