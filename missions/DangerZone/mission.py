@@ -1011,6 +1011,272 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                     }
                 }
             },
+            "West Malling": {
+                "airbase": "West Malling",
+                "warehouse": "West Malling Airwing Warehouse#00001",
+                "squadrons": {
+                    "West Malling 1": {
+                        "airframe": dcs.planes.Su_27,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Lypetsk AFB (Shark)",
+                        "loadouts": {
+                            "R-73*4,R-27ER*4,R-27ET*2": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "FAB-500*6,R-73*2,ECM": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "West Malling 2": {
+                        "airframe": dcs.planes.MiG_29A,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Strizhi (W)",
+                        "loadouts": {
+                            "R-73*2,R-60M*2,R-27R*2,Fuel-1500": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 60,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                        }
+                    },
+                    "West Malling 3": {
+                        "airframe": dcs.planes.JF_17,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "PLAAF 125th AB (Fictional)",
+                        "loadouts": {
+                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "West Malling 4": {
+                        "airframe": dcs.planes.F_16C_50,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "18th AGRS BDU Splinter",
+                        "loadouts": {
+                            "AIM-120C*4, AIM-9X*2, FUEL*2, ECM": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "AIM-120C*2, AIM-9X*2, AGM-65D*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
+                            "AIM-120C*2, AIM-9X*2, CBU-105*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BOMBCARPET}",
+                            "AIM-120C*4, AGM-88C*4, ECM, TGP, HTS": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 40,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "West Malling 5": {
+                        "airframe": dcs.planes.Su_25TM,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Flight Research Institute  VVS",
+                        "loadouts": {
+                            "Kh-58*2,Kh-25MPU*4,R-73*2,ECM": "{ AUFTRAG.Type.SEAD }",
+                            "APU-8 Vikhr-M*2,R-60M*2,R-73*2,SPPU-22*2,Mercury LLTV Pod": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
+                            "FAB-500*6,R-60M*2,Fuel*2": "{ AUFTRAG.Type.BOMBCARPET }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50,
+                            "AUFTRAG.Type.SEAD": 50
+                        }
+                    }
+                }
+            },
+            "Chailey": {
+                "airbase": "Chailey",
+                "warehouse": "Chailey Airwing Warehouse#00001",
+                "squadrons": {
+                    "Chailey 1": {
+                        "airframe": dcs.planes.Su_27,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Lypetsk AFB (Shark)",
+                        "loadouts": {
+                            "R-73*4,R-27ER*4,R-27ET*2": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "FAB-500*6,R-73*2,ECM": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Chailey 2": {
+                        "airframe": dcs.planes.MiG_29A,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Strizhi (W)",
+                        "loadouts": {
+                            "R-73*2,R-60M*2,R-27R*2,Fuel-1500": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 60,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                        }
+                    },
+                    "Chailey 3": {
+                        "airframe": dcs.planes.JF_17,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "PLAAF 125th AB (Fictional)",
+                        "loadouts": {
+                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Chailey 4": {
+                        "airframe": dcs.planes.F_16C_50,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "18th AGRS BDU Splinter",
+                        "loadouts": {
+                            "AIM-120C*4, AIM-9X*2, FUEL*2, ECM": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "AIM-120C*2, AIM-9X*2, AGM-65D*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
+                            "AIM-120C*2, AIM-9X*2, CBU-105*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BOMBCARPET}",
+                            "AIM-120C*4, AGM-88C*4, ECM, TGP, HTS": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 40,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Chailey 5": {
+                        "airframe": dcs.planes.Su_25TM,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Flight Research Institute  VVS",
+                        "loadouts": {
+                            "Kh-58*2,Kh-25MPU*4,R-73*2,ECM": "{ AUFTRAG.Type.SEAD }",
+                            "APU-8 Vikhr-M*2,R-60M*2,R-73*2,SPPU-22*2,Mercury LLTV Pod": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
+                            "FAB-500*6,R-60M*2,Fuel*2": "{ AUFTRAG.Type.BOMBCARPET }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50,
+                            "AUFTRAG.Type.SEAD": 50
+                        }
+                    }
+                }
+            },
+            "FOB Bo'ohw'o'wo'er": {
+                "airbase": "FOB Bo'ohw'o'wo'er Farp#00001",
+                "warehouse": "FOB Bo'ohw'o'wo'er Airwing Warehouse#00001",
+                "squadrons": {
+                    "Bo'ohw'o'wo'er 1": {
+                        "airframe": dcs.helicopters.Mi_26,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    },
+                    "Bo'ohw'o'wo'er 2": {
+                        "airframe": dcs.helicopters.Mi_28N,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "night",
+                        "loadouts": {
+                            "16x9M114, 40xS-8": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                }
+            },
+            "FOB Innit": {
+                "airbase": "FOB Innit Farp#00001",
+                "warehouse": "FOB Innit Airwing Warehouse#00001",
+                "squadrons": {
+                    "Innit 1": {
+                        "airframe": dcs.helicopters.Mi_26,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    },
+                    "Innit 2": {
+                        "airframe": dcs.helicopters.Ka_50_3,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Ka-50_standart_black_RussianAirForce",
+                        "loadouts": {
+                            "12x9A4172, 40xS-13, 4xIgla": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                }
+            },
         }
         return red_airwings
 
@@ -1298,6 +1564,70 @@ class DangerZoneRedBrigades(calvinball.redbrigade.RedBrigades):
                         }
                     },
                     "FOB Smith 2": {
+                        "units": [
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Unarmed.Ural_375,
+                            dcs.vehicles.Unarmed.Ural_375
+                        ],
+                        "initialInventory": 1,
+                        "capabilities": {
+                            "AUFTRAG.Type.ARTY": 50
+                        }
+                    }
+                }
+            },
+            "FOB Bo'ohw'o'wo'er": {
+                "warehouse": "FOB Bo'ohw'o'wo'er Brigade Warehouse#00001",
+                "platoons": {
+                    "FOB Bo'ohw'o'wo'er 1": {
+                        "units": [
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                        ],
+                        "initialInventory": 3,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    },
+                    "FOB Bo'ohw'o'wo'er 2": {
+                        "units": [
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Unarmed.Ural_375,
+                            dcs.vehicles.Unarmed.Ural_375
+                        ],
+                        "initialInventory": 1,
+                        "capabilities": {
+                            "AUFTRAG.Type.ARTY": 50
+                        }
+                    }
+                }
+            },
+            "FOB Innit": {
+                "warehouse": "FOB Innit Brigade Warehouse#00001",
+                "platoons": {
+                    "FOB Innit 1": {
+                        "units": [
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                        ],
+                        "initialInventory": 3,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    },
+                    "FOB Innit 2": {
                         "units": [
                             dcs.vehicles.Artillery.Uragan_BM_27,
                             dcs.vehicles.Artillery.Uragan_BM_27,

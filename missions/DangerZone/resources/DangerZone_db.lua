@@ -13958,6 +13958,378 @@ MissionDb = {
 					},
 				}
 			},
+			{
+				name = "West Malling",
+				warehouse = "West Malling Airwing Warehouse#00001",
+				airbase = "West Malling",
+				squadrons = {
+					{
+						name = "West Malling 1",
+						templateGroupName = "RED West Malling West Malling 1 Su-27",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "Lypetsk AFB (Shark)",
+						payloads = {
+							{
+								templateGroupName = "RED West Malling West Malling 1 Su-27 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED West Malling West Malling 1 Su-27 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+					{
+						name = "West Malling 2",
+						templateGroupName = "RED West Malling West Malling 2 MiG-29A",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 60 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+						},
+						livery = "Strizhi (W)",
+						payloads = {
+							{
+								templateGroupName = "RED West Malling West Malling 2 MiG-29A LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+						}
+					},
+					{
+						name = "West Malling 3",
+						templateGroupName = "RED West Malling West Malling 3 JF-17",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "PLAAF 125th AB (Fictional)",
+						payloads = {
+							{
+								templateGroupName = "RED West Malling West Malling 3 JF-17 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED West Malling West Malling 3 JF-17 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED West Malling West Malling 3 JF-17 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "West Malling 4",
+						templateGroupName = "RED West Malling West Malling 4 F-16C_50",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 40 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "18th AGRS BDU Splinter",
+						payloads = {
+							{
+								templateGroupName = "RED West Malling West Malling 4 F-16C_50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED West Malling West Malling 4 F-16C_50 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED West Malling West Malling 4 F-16C_50 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.BOMBCARPET}
+							},
+							{
+								templateGroupName = "RED West Malling West Malling 4 F-16C_50 LOADOUT 3",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "West Malling 5",
+						templateGroupName = "RED West Malling West Malling 5 Su-25TM",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+						},
+						livery = "Flight Research Institute  VVS",
+						payloads = {
+							{
+								templateGroupName = "RED West Malling West Malling 5 Su-25TM LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+							{
+								templateGroupName = "RED West Malling West Malling 5 Su-25TM LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED West Malling West Malling 5 Su-25TM LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.BOMBCARPET }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "Chailey",
+				warehouse = "Chailey Airwing Warehouse#00001",
+				airbase = "Chailey",
+				squadrons = {
+					{
+						name = "Chailey 1",
+						templateGroupName = "RED Chailey Chailey 1 Su-27",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "Lypetsk AFB (Shark)",
+						payloads = {
+							{
+								templateGroupName = "RED Chailey Chailey 1 Su-27 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Chailey Chailey 1 Su-27 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+					{
+						name = "Chailey 2",
+						templateGroupName = "RED Chailey Chailey 2 MiG-29A",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 60 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+						},
+						livery = "Strizhi (W)",
+						payloads = {
+							{
+								templateGroupName = "RED Chailey Chailey 2 MiG-29A LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+						}
+					},
+					{
+						name = "Chailey 3",
+						templateGroupName = "RED Chailey Chailey 3 JF-17",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "PLAAF 125th AB (Fictional)",
+						payloads = {
+							{
+								templateGroupName = "RED Chailey Chailey 3 JF-17 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Chailey Chailey 3 JF-17 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Chailey Chailey 3 JF-17 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "Chailey 4",
+						templateGroupName = "RED Chailey Chailey 4 F-16C_50",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 40 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "18th AGRS BDU Splinter",
+						payloads = {
+							{
+								templateGroupName = "RED Chailey Chailey 4 F-16C_50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Chailey Chailey 4 F-16C_50 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Chailey Chailey 4 F-16C_50 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.BOMBCARPET}
+							},
+							{
+								templateGroupName = "RED Chailey Chailey 4 F-16C_50 LOADOUT 3",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "Chailey 5",
+						templateGroupName = "RED Chailey Chailey 5 Su-25TM",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+						},
+						livery = "Flight Research Institute  VVS",
+						payloads = {
+							{
+								templateGroupName = "RED Chailey Chailey 5 Su-25TM LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+							{
+								templateGroupName = "RED Chailey Chailey 5 Su-25TM LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Chailey Chailey 5 Su-25TM LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.BOMBCARPET }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "FOB Bo'ohw'o'wo'er",
+				warehouse = "FOB Bo'ohw'o'wo'er Airwing Warehouse#00001",
+				airbase = "FOB Bo'ohw'o'wo'er Farp#00001",
+				squadrons = {
+					{
+						name = "Bo'ohw'o'wo'er 1",
+						templateGroupName = "RED FOB Bo'ohw'o'wo'er Bo'ohw'o'wo'er 1 Mi-26",
+						initialInventory = 99,
+						takeoffCold = true,
+						capabilities = {
+							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
+						},
+						livery = "Russia_VVS_Grey",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Bo'ohw'o'wo'er Bo'ohw'o'wo'er 1 Mi-26 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
+							},
+						}
+					},
+					{
+						name = "Bo'ohw'o'wo'er 2",
+						templateGroupName = "RED FOB Bo'ohw'o'wo'er Bo'ohw'o'wo'er 2 Mi-28N",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "night",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Bo'ohw'o'wo'er Bo'ohw'o'wo'er 2 Mi-28N LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "FOB Innit",
+				warehouse = "FOB Innit Airwing Warehouse#00001",
+				airbase = "FOB Innit Farp#00001",
+				squadrons = {
+					{
+						name = "Innit 1",
+						templateGroupName = "RED FOB Innit Innit 1 Mi-26",
+						initialInventory = 99,
+						takeoffCold = true,
+						capabilities = {
+							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
+						},
+						livery = "Russia_VVS_Grey",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Innit Innit 1 Mi-26 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
+							},
+						}
+					},
+					{
+						name = "Innit 2",
+						templateGroupName = "RED FOB Innit Innit 2 Ka-50_3",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "Ka-50_standart_black_RussianAirForce",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Innit Innit 2 Ka-50_3 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+				}
+			},
 		},
 		brigades = {
 			{
@@ -14041,6 +14413,50 @@ MissionDb = {
 					{
 						name = "FOB Smith 2",
 						templateGroupName = "RED FOB Smith FOB Smith 2",
+						initialInventory = 1,
+						capabilities = {
+							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
+						},
+					},
+				}
+			},
+			{
+				name = "FOB Bo'ohw'o'wo'er",
+				warehouse = "FOB Bo'ohw'o'wo'er Brigade Warehouse#00001",
+				platoons = {
+					{
+						name = "FOB Bo'ohw'o'wo'er 1",
+						templateGroupName = "RED FOB Bo'ohw'o'wo'er FOB Bo'ohw'o'wo'er 1",
+						initialInventory = 3,
+						capabilities = {
+							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
+						},
+					},
+					{
+						name = "FOB Bo'ohw'o'wo'er 2",
+						templateGroupName = "RED FOB Bo'ohw'o'wo'er FOB Bo'ohw'o'wo'er 2",
+						initialInventory = 1,
+						capabilities = {
+							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
+						},
+					},
+				}
+			},
+			{
+				name = "FOB Innit",
+				warehouse = "FOB Innit Brigade Warehouse#00001",
+				platoons = {
+					{
+						name = "FOB Innit 1",
+						templateGroupName = "RED FOB Innit FOB Innit 1",
+						initialInventory = 3,
+						capabilities = {
+							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
+						},
+					},
+					{
+						name = "FOB Innit 2",
+						templateGroupName = "RED FOB Innit FOB Innit 2",
 						initialInventory = 1,
 						capabilities = {
 							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
