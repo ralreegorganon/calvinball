@@ -412,6 +412,17 @@
             "x": 136246.57713557,
             "y": -172820.38632655
         },
+        "Chailey Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 1.0646508437165,
+            "name": "Chailey Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 163621.18393305,
+            "y": 12139.042791058
+        },
         "Conches Airwing Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
@@ -433,6 +444,76 @@
             "type": "Warehouse",
             "x": -45937.516753441,
             "y": 113150.41067526
+        },
+        "FOB Bo'ohw'o'wo'er Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 3.4208453339089,
+            "name": "FOB Bo'ohw'o'wo'er Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 179549.16193795,
+            "y": 62761.876995582
+        },
+        "FOB Bo'ohw'o'wo'er Brigade Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 2.6354471705114,
+            "name": "FOB Bo'ohw'o'wo'er Brigade Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 179116.36856101,
+            "y": 62616.995037824
+        },
+        "FOB Bo'ohw'o'wo'er Farp": {
+            "canCargo": false,
+            "category": "Heliports",
+            "heading": 5.846852994181,
+            "heliport_callsign_id": 0,
+            "heliport_frequency": 127.5,
+            "heliport_modulation": 0,
+            "name": "FOB Bo'ohw'o'wo'er Farp",
+            "shape_name": "FARPS",
+            "type": "FARP",
+            "x": 179222.92120449,
+            "y": 62418.742543591
+        },
+        "FOB Innit Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 2.5307274153918,
+            "name": "FOB Innit Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 217301.81339224,
+            "y": 40967.117965781
+        },
+        "FOB Innit Brigade Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 1.6755160819146,
+            "name": "FOB Innit Brigade Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 217016.76565945,
+            "y": 40122.944595266
+        },
+        "FOB Innit Farp": {
+            "canCargo": false,
+            "category": "Heliports",
+            "heading": 1.553343034275,
+            "heliport_callsign_id": 0,
+            "heliport_frequency": 127.5,
+            "heliport_modulation": 0,
+            "name": "FOB Innit Farp",
+            "shape_name": "FARPS",
+            "type": "FARP",
+            "x": 217148.60006232,
+            "y": 40434.068331647
         },
         "FOB Murray Airwing Warehouse": {
             "canCargo": false,
@@ -2714,8 +2795,8 @@
             "rate": 100,
             "shape_name": "bak",
             "type": "Tank",
-            "x": 190680.25576648,
-            "y": -89501.893427621
+            "x": 190684.00830971,
+            "y": -89499.402809521
         },
         "INDUSTRYTARGET-276": {
             "canCargo": false,
@@ -2758,8 +2839,8 @@
             "rate": 100,
             "shape_name": "him_bak_a",
             "type": "Chemical tank A",
-            "x": 190576.41861337,
-            "y": -89509.25196603
+            "x": 190575.81021252,
+            "y": -89508.218950774
         },
         "INDUSTRYTARGET-28": {
             "canCargo": false,
@@ -3102,6 +3183,39 @@
             "x": 188671.51016092,
             "y": -29372.581923239
         },
+        "INDUSTRYTARGET-307": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-307",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 155096.27378854,
+            "y": 53611.755509537
+        },
+        "INDUSTRYTARGET-308": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-308",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155125.14498244,
+            "y": 53610.259834699
+        },
+        "INDUSTRYTARGET-309": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.5830872929516,
+            "name": "INDUSTRYTARGET-309",
+            "rate": 100,
+            "shape_name": "kombinat",
+            "type": "Tech combine",
+            "x": 154810.14369461,
+            "y": 53723.965350802
+        },
         "INDUSTRYTARGET-31": {
             "canCargo": false,
             "category": "Warehouses",
@@ -3112,6 +3226,116 @@
             "type": "Warehouse",
             "x": 157061.00346696,
             "y": -132984.82300413
+        },
+        "INDUSTRYTARGET-310": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.2340214425527,
+            "name": "INDUSTRYTARGET-310",
+            "rate": 100,
+            "shape_name": "kotelnaya_a",
+            "type": "Boiler-house A",
+            "x": 154886.4587804,
+            "y": 53789.868481815
+        },
+        "INDUSTRYTARGET-311": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.4977871437821,
+            "name": "INDUSTRYTARGET-311",
+            "rate": 100,
+            "shape_name": "tele_bash_m",
+            "type": "Comms tower M",
+            "x": 154916.09687179,
+            "y": 53320.342462634
+        },
+        "INDUSTRYTARGET-312": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-312",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155072.08670676,
+            "y": 53592.693243427
+        },
+        "INDUSTRYTARGET-313": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.6025068989018,
+            "name": "INDUSTRYTARGET-313",
+            "rate": 100,
+            "shape_name": "sklad",
+            "type": "Warehouse",
+            "x": 154929.11118488,
+            "y": 53865.732834729
+        },
+        "INDUSTRYTARGET-314": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-314",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155072.41135099,
+            "y": 53633.602769086
+        },
+        "INDUSTRYTARGET-315": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.9373154697137,
+            "name": "INDUSTRYTARGET-315",
+            "rate": 100,
+            "shape_name": "tec_a",
+            "type": "Workshop A",
+            "x": 155113.2748383,
+            "y": 53726.900787001
+        },
+        "INDUSTRYTARGET-316": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-316",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155102.91786695,
+            "y": 53581.938187546
+        },
+        "INDUSTRYTARGET-317": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-317",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155102.20086322,
+            "y": 53639.298485576
+        },
+        "INDUSTRYTARGET-318": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.0995574287564,
+            "name": "INDUSTRYTARGET-318",
+            "rate": 100,
+            "shape_name": "tech",
+            "type": "Repair workshop",
+            "x": 154746.21181987,
+            "y": 53606.289682602
+        },
+        "INDUSTRYTARGET-319": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 2.4783675378319,
+            "name": "INDUSTRYTARGET-319",
+            "rate": 100,
+            "shape_name": "sklad",
+            "type": "Warehouse",
+            "x": 154939.33234686,
+            "y": 53739.800739644
         },
         "INDUSTRYTARGET-32": {
             "canCargo": false,
@@ -3124,6 +3348,116 @@
             "x": 156724.48614207,
             "y": -133160.66868649
         },
+        "INDUSTRYTARGET-320": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.2340214425527,
+            "name": "INDUSTRYTARGET-320",
+            "rate": 100,
+            "shape_name": "kotelnaya_a",
+            "type": "Boiler-house A",
+            "x": 154863.87317177,
+            "y": 53807.748755318
+        },
+        "INDUSTRYTARGET-321": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.2340214425527,
+            "name": "INDUSTRYTARGET-321",
+            "rate": 100,
+            "shape_name": "kotelnaya_a",
+            "type": "Boiler-house A",
+            "x": 154837.71150843,
+            "y": 53825.25260201
+        },
+        "INDUSTRYTARGET-322": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-322",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155003.2419638,
+            "y": 53598.385883838
+        },
+        "INDUSTRYTARGET-323": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-323",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 154950.18368812,
+            "y": 53580.819292566
+        },
+        "INDUSTRYTARGET-324": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-324",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 154981.01484831,
+            "y": 53570.064236685
+        },
+        "INDUSTRYTARGET-325": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-325",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 154980.29784458,
+            "y": 53627.424534715
+        },
+        "INDUSTRYTARGET-326": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-326",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 154952.70459075,
+            "y": 53616.058972443
+        },
+        "INDUSTRYTARGET-327": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-327",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 154974.3707699,
+            "y": 53599.881558676
+        },
+        "INDUSTRYTARGET-328": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-328",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155115.40514203,
+            "y": 53398.572010039
+        },
+        "INDUSTRYTARGET-329": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-329",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155062.34686635,
+            "y": 53381.005418767
+        },
         "INDUSTRYTARGET-33": {
             "canCargo": false,
             "category": "Fortifications",
@@ -3134,6 +3468,116 @@
             "type": "Chemical tank A",
             "x": 156576.51545456,
             "y": -133065.9009428
+        },
+        "INDUSTRYTARGET-330": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-330",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155093.17802654,
+            "y": 53370.250362886
+        },
+        "INDUSTRYTARGET-331": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-331",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155092.46102281,
+            "y": 53427.610660916
+        },
+        "INDUSTRYTARGET-332": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-332",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155064.86776898,
+            "y": 53416.245098644
+        },
+        "INDUSTRYTARGET-333": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-333",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 155086.53394813,
+            "y": 53400.067684877
+        },
+        "INDUSTRYTARGET-334": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-334",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155256.53761795,
+            "y": 53786.314917559
+        },
+        "INDUSTRYTARGET-335": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-335",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155203.47934227,
+            "y": 53768.748326287
+        },
+        "INDUSTRYTARGET-336": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-336",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155234.31050246,
+            "y": 53757.993270406
+        },
+        "INDUSTRYTARGET-337": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-337",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155233.59349873,
+            "y": 53815.353568436
+        },
+        "INDUSTRYTARGET-338": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-338",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155206.0002449,
+            "y": 53803.988006164
+        },
+        "INDUSTRYTARGET-339": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-339",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 155227.66642405,
+            "y": 53787.810592397
         },
         "INDUSTRYTARGET-34": {
             "canCargo": false,
@@ -3146,6 +3590,116 @@
             "x": 156524.42090539,
             "y": -133021.01095894
         },
+        "INDUSTRYTARGET-340": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-340",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155314.47621332,
+            "y": 53659.295689233
+        },
+        "INDUSTRYTARGET-341": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-341",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155261.41793764,
+            "y": 53641.729097961
+        },
+        "INDUSTRYTARGET-342": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-342",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155292.24909783,
+            "y": 53630.97404208
+        },
+        "INDUSTRYTARGET-343": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-343",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155291.5320941,
+            "y": 53688.33434011
+        },
+        "INDUSTRYTARGET-344": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-344",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155263.93884027,
+            "y": 53676.968777838
+        },
+        "INDUSTRYTARGET-345": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-345",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 155285.60501942,
+            "y": 53660.791364071
+        },
+        "INDUSTRYTARGET-346": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-346",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155377.61442623,
+            "y": 53526.334040869
+        },
+        "INDUSTRYTARGET-347": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-347",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155324.55615055,
+            "y": 53508.767449597
+        },
+        "INDUSTRYTARGET-348": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-348",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155355.38731074,
+            "y": 53498.012393716
+        },
+        "INDUSTRYTARGET-349": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-349",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155354.67030701,
+            "y": 53555.372691746
+        },
         "INDUSTRYTARGET-35": {
             "canCargo": false,
             "category": "Fortifications",
@@ -3156,6 +3710,116 @@
             "type": "Boiler-house A",
             "x": 156733.12373634,
             "y": -133112.85457491
+        },
+        "INDUSTRYTARGET-350": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-350",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 155327.07705318,
+            "y": 53544.007129474
+        },
+        "INDUSTRYTARGET-351": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-351",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 155348.74323233,
+            "y": 53527.829715707
+        },
+        "INDUSTRYTARGET-352": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 4.7647488579445,
+            "name": "INDUSTRYTARGET-352",
+            "rate": 100,
+            "shape_name": "tele_bash_m",
+            "type": "Comms tower M",
+            "x": 186483.44247826,
+            "y": 77237.86902527
+        },
+        "INDUSTRYTARGET-353": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.4434609527921,
+            "name": "INDUSTRYTARGET-353",
+            "rate": 100,
+            "shape_name": "ceh_ang_a",
+            "type": "Tech hangar A",
+            "x": 186728.27262315,
+            "y": 77320.120974496
+        },
+        "INDUSTRYTARGET-354": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.7524578917878,
+            "name": "INDUSTRYTARGET-354",
+            "rate": 100,
+            "shape_name": "tech",
+            "type": "Repair workshop",
+            "x": 186832.24728919,
+            "y": 77130.533736906
+        },
+        "INDUSTRYTARGET-355": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.7524578917878,
+            "name": "INDUSTRYTARGET-355",
+            "rate": 100,
+            "shape_name": "tech",
+            "type": "Repair workshop",
+            "x": 186793.6152515,
+            "y": 77188.175189963
+        },
+        "INDUSTRYTARGET-356": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.7524578917878,
+            "name": "INDUSTRYTARGET-356",
+            "rate": 100,
+            "shape_name": "tech",
+            "type": "Repair workshop",
+            "x": 186752.53038602,
+            "y": 77248.882677756
+        },
+        "INDUSTRYTARGET-357": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.7524578917878,
+            "name": "INDUSTRYTARGET-357",
+            "rate": 100,
+            "shape_name": "tech",
+            "type": "Repair workshop",
+            "x": 186978.9634655,
+            "y": 77221.748618635
+        },
+        "INDUSTRYTARGET-358": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.7524578917878,
+            "name": "INDUSTRYTARGET-358",
+            "rate": 100,
+            "shape_name": "tech",
+            "type": "Repair workshop",
+            "x": 186671.52933428,
+            "y": 77385.806224517
+        },
+        "INDUSTRYTARGET-359": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.4434609527921,
+            "name": "INDUSTRYTARGET-359",
+            "rate": 100,
+            "shape_name": "ceh_ang_a",
+            "type": "Tech hangar A",
+            "x": 186680.04021768,
+            "y": 77266.653856812
         },
         "INDUSTRYTARGET-36": {
             "canCargo": false,
@@ -3168,6 +3832,116 @@
             "x": 156786.85318213,
             "y": -133009.71935457
         },
+        "INDUSTRYTARGET-360": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.7524578917878,
+            "name": "INDUSTRYTARGET-360",
+            "rate": 100,
+            "shape_name": "tech",
+            "type": "Repair workshop",
+            "x": 186623.30099497,
+            "y": 77455.028076231
+        },
+        "INDUSTRYTARGET-361": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.7524578917878,
+            "name": "INDUSTRYTARGET-361",
+            "rate": 100,
+            "shape_name": "tech",
+            "type": "Repair workshop",
+            "x": 186567.69655671,
+            "y": 77534.462988035
+        },
+        "INDUSTRYTARGET-362": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.7524578917878,
+            "name": "INDUSTRYTARGET-362",
+            "rate": 100,
+            "shape_name": "tech",
+            "type": "Repair workshop",
+            "x": 186488.82903713,
+            "y": 77482.262903135
+        },
+        "INDUSTRYTARGET-363": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.7524578917878,
+            "name": "INDUSTRYTARGET-363",
+            "rate": 100,
+            "shape_name": "tech",
+            "type": "Repair workshop",
+            "x": 186589.25746134,
+            "y": 77312.045234986
+        },
+        "INDUSTRYTARGET-364": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.7524578917878,
+            "name": "INDUSTRYTARGET-364",
+            "rate": 100,
+            "shape_name": "tech",
+            "type": "Repair workshop",
+            "x": 186536.85994916,
+            "y": 77396.096810053
+        },
+        "INDUSTRYTARGET-365": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.9373154697137,
+            "name": "INDUSTRYTARGET-365",
+            "rate": 100,
+            "shape_name": "tec_a",
+            "type": "Workshop A",
+            "x": 186437.51046162,
+            "y": 77337.587368857
+        },
+        "INDUSTRYTARGET-366": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-366",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213604.38147272,
+            "y": 59374.092525115
+        },
+        "INDUSTRYTARGET-367": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-367",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213512.77102823,
+            "y": 59447.285658598
+        },
+        "INDUSTRYTARGET-368": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-368",
+            "rate": 100,
+            "shape_name": "tele_bash_m",
+            "type": "Comms tower M",
+            "x": 213707.96131545,
+            "y": 59355.366225865
+        },
+        "INDUSTRYTARGET-369": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-369",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213524.79470091,
+            "y": 59340.151107725
+        },
         "INDUSTRYTARGET-37": {
             "canCargo": false,
             "category": "Warehouses",
@@ -3178,6 +3952,116 @@
             "type": "Tank",
             "x": 156627.16155357,
             "y": -132897.82658082
+        },
+        "INDUSTRYTARGET-370": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-370",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213481.64506905,
+            "y": 59398.731588265
+        },
+        "INDUSTRYTARGET-371": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-371",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213391.70737738,
+            "y": 59427.348126523
+        },
+        "INDUSTRYTARGET-372": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-372",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213564.49297218,
+            "y": 59480.19962293
+        },
+        "INDUSTRYTARGET-373": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-373",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213402.48855894,
+            "y": 59383.45567474
+        },
+        "INDUSTRYTARGET-374": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-374",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213527.5487265,
+            "y": 59519.159009282
+        },
+        "INDUSTRYTARGET-375": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-375",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213672.2643075,
+            "y": 59316.158036811
+        },
+        "INDUSTRYTARGET-376": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-376",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213656.46399251,
+            "y": 59254.712367398
+        },
+        "INDUSTRYTARGET-377": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-377",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213616.08540975,
+            "y": 59453.094100075
+        },
+        "INDUSTRYTARGET-378": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-378",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213362.10997618,
+            "y": 59339.565910873
+        },
+        "INDUSTRYTARGET-379": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-379",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213377.91029117,
+            "y": 59142.939768752
         },
         "INDUSTRYTARGET-38": {
             "canCargo": false,
@@ -3190,6 +4074,116 @@
             "x": 156908.34058001,
             "y": -133121.1291532
         },
+        "INDUSTRYTARGET-380": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-380",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213496.12005519,
+            "y": 59117.191107283
+        },
+        "INDUSTRYTARGET-381": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-381",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213587.95826975,
+            "y": 59139.744422063
+        },
+        "INDUSTRYTARGET-382": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-382",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213708.5465123,
+            "y": 59240.082446109
+        },
+        "INDUSTRYTARGET-383": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-383",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213561.91539801,
+            "y": 59199.270986044
+        },
+        "INDUSTRYTARGET-384": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-384",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213410.68131486,
+            "y": 59121.872682096
+        },
+        "INDUSTRYTARGET-385": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-385",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213417.70367708,
+            "y": 59215.504178344
+        },
+        "INDUSTRYTARGET-386": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-386",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213609.64824439,
+            "y": 59302.113312374
+        },
+        "INDUSTRYTARGET-387": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-387",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213371.4731258,
+            "y": 59277.535044609
+        },
+        "INDUSTRYTARGET-388": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-388",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213465.10462205,
+            "y": 59258.808745359
+        },
+        "INDUSTRYTARGET-389": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-389",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213575.91210266,
+            "y": 59420.417116286
+        },
         "INDUSTRYTARGET-39": {
             "canCargo": false,
             "category": "Fortifications",
@@ -3200,6 +4194,116 @@
             "type": "Chemical tank A",
             "x": 156469.00117224,
             "y": -133091.94821738
+        },
+        "INDUSTRYTARGET-390": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-390",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213507.23879537,
+            "y": 59300.942918671
+        },
+        "INDUSTRYTARGET-391": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-391",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213450.47470076,
+            "y": 59352.440241608
+        },
+        "INDUSTRYTARGET-392": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-392",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213413.02210227,
+            "y": 59323.18039903
+        },
+        "INDUSTRYTARGET-393": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-393",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213469.78136053,
+            "y": 59441.911950135
+        },
+        "INDUSTRYTARGET-394": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-394",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213467.76621985,
+            "y": 59484.229904277
+        },
+        "INDUSTRYTARGET-395": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-395",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213621.93737827,
+            "y": 59247.69000518
+        },
+        "INDUSTRYTARGET-396": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-396",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213636.56729956,
+            "y": 59173.370005032
+        },
+        "INDUSTRYTARGET-397": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-397",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213467.44540946,
+            "y": 59150.547327822
+        },
+        "INDUSTRYTARGET-398": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-398",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213643.58966178,
+            "y": 59401.596777138
+        },
+        "INDUSTRYTARGET-399": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-399",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213636.56729956,
+            "y": 59344.247485686
         },
         "INDUSTRYTARGET-4": {
             "canCargo": false,
@@ -3223,6 +4327,116 @@
             "x": 156734.9213764,
             "y": -132963.84184933
         },
+        "INDUSTRYTARGET-400": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-400",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213707.3761186,
+            "y": 59298.016934413
+        },
+        "INDUSTRYTARGET-401": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-401",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213432.33359837,
+            "y": 59062.182603237
+        },
+        "INDUSTRYTARGET-402": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-402",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 213543.52100016,
+            "y": 59096.709217479
+        },
+        "INDUSTRYTARGET-403": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-403",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213663.48635473,
+            "y": 59202.044650758
+        },
+        "INDUSTRYTARGET-404": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-404",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213503.72761426,
+            "y": 59172.784808181
+        },
+        "INDUSTRYTARGET-405": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-405",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213338.56237776,
+            "y": 59102.75482114
+        },
+        "INDUSTRYTARGET-406": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-406",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213329.92414934,
+            "y": 59261.149532765
+        },
+        "INDUSTRYTARGET-407": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-407",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213517.62014572,
+            "y": 59248.290358566
+        },
+        "INDUSTRYTARGET-408": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-408",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213373.81391321,
+            "y": 59182.733154657
+        },
+        "INDUSTRYTARGET-409": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-409",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213436.42997633,
+            "y": 59410.959926763
+        },
         "INDUSTRYTARGET-41": {
             "canCargo": false,
             "category": "Warehouses",
@@ -3233,6 +4447,116 @@
             "type": "Tank",
             "x": 156661.38118827,
             "y": -132941.82325399
+        },
+        "INDUSTRYTARGET-410": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-410",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 213556.3953309,
+            "y": 59286.898194234
+        },
+        "INDUSTRYTARGET-411": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.0646508437165,
+            "name": "INDUSTRYTARGET-411",
+            "rate": 100,
+            "shape_name": "kombinat",
+            "type": "Tech combine",
+            "x": 163157.52454421,
+            "y": 83057.918444297
+        },
+        "INDUSTRYTARGET-412": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-412",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163394.61363089,
+            "y": 82750.838516888
+        },
+        "INDUSTRYTARGET-413": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.4977871437821,
+            "name": "INDUSTRYTARGET-413",
+            "rate": 100,
+            "shape_name": "tele_bash_m",
+            "type": "Comms tower M",
+            "x": 163358.02351886,
+            "y": 83376.67335989
+        },
+        "INDUSTRYTARGET-414": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-414",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 163388.5506221,
+            "y": 82782.890253344
+        },
+        "INDUSTRYTARGET-415": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-415",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163417.94777484,
+            "y": 82780.739242168
+        },
+        "INDUSTRYTARGET-416": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.6179938779915,
+            "name": "INDUSTRYTARGET-416",
+            "rate": 100,
+            "shape_name": "tec_a",
+            "type": "Workshop A",
+            "x": 163090.79566919,
+            "y": 83223.840192691
+        },
+        "INDUSTRYTARGET-417": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-417",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163362.02148426,
+            "y": 82768.191676974
+        },
+        "INDUSTRYTARGET-418": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-418",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163363.45549171,
+            "y": 82803.324859517
+        },
+        "INDUSTRYTARGET-419": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-419",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163398.58867425,
+            "y": 82809.419391182
         },
         "INDUSTRYTARGET-42": {
             "canCargo": false,
@@ -3245,6 +4569,116 @@
             "x": 156703.74835503,
             "y": -132847.31188199
         },
+        "INDUSTRYTARGET-420": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-420",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163014.30692564,
+            "y": 83124.406135393
+        },
+        "INDUSTRYTARGET-421": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-421",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 162977.73973565,
+            "y": 83083.178421185
+        },
+        "INDUSTRYTARGET-422": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-422",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 163004.26887349,
+            "y": 83097.876997555
+        },
+        "INDUSTRYTARGET-423": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-423",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 162979.1737431,
+            "y": 83118.311603728
+        },
+        "INDUSTRYTARGET-424": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-424",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163033.66602623,
+            "y": 83095.725986379
+        },
+        "INDUSTRYTARGET-425": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-425",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163010.33188228,
+            "y": 83065.825261099
+        },
+        "INDUSTRYTARGET-426": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-426",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 162983.11976212,
+            "y": 83266.697568943
+        },
+        "INDUSTRYTARGET-427": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-427",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 162946.55257213,
+            "y": 83225.469854735
+        },
+        "INDUSTRYTARGET-428": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-428",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 162973.08170997,
+            "y": 83240.168431105
+        },
+        "INDUSTRYTARGET-429": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-429",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 162947.98657958,
+            "y": 83260.603037278
+        },
         "INDUSTRYTARGET-43": {
             "canCargo": false,
             "category": "Fortifications",
@@ -3255,6 +4689,116 @@
             "type": "Workshop A",
             "x": 156951.66534581,
             "y": -133006.97403991
+        },
+        "INDUSTRYTARGET-430": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-430",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163002.47886271,
+            "y": 83238.017419929
+        },
+        "INDUSTRYTARGET-431": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-431",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 162979.14471876,
+            "y": 83208.116694649
+        },
+        "INDUSTRYTARGET-432": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-432",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163106.89381733,
+            "y": 82956.775131484
+        },
+        "INDUSTRYTARGET-433": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-433",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163070.32662734,
+            "y": 82915.547417276
+        },
+        "INDUSTRYTARGET-434": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-434",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 163096.85576518,
+            "y": 82930.245993646
+        },
+        "INDUSTRYTARGET-435": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-435",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163071.76063479,
+            "y": 82950.680599819
+        },
+        "INDUSTRYTARGET-436": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-436",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163126.25291792,
+            "y": 82928.09498247
+        },
+        "INDUSTRYTARGET-437": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-437",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163102.91877397,
+            "y": 82898.19425719
+        },
+        "INDUSTRYTARGET-438": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-438",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163446.83814616,
+            "y": 83540.963212021
+        },
+        "INDUSTRYTARGET-439": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-439",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163410.27095617,
+            "y": 83499.735497813
         },
         "INDUSTRYTARGET-44": {
             "canCargo": false,
@@ -3267,6 +4811,116 @@
             "x": 156519.98732674,
             "y": -133137.9465959
         },
+        "INDUSTRYTARGET-440": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-440",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 163436.80009401,
+            "y": 83514.434074183
+        },
+        "INDUSTRYTARGET-441": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-441",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163411.70496362,
+            "y": 83534.868680356
+        },
+        "INDUSTRYTARGET-442": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-442",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163466.19724675,
+            "y": 83512.283063007
+        },
+        "INDUSTRYTARGET-443": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-443",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163442.8631028,
+            "y": 83482.382337727
+        },
+        "INDUSTRYTARGET-444": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-444",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163415.65098264,
+            "y": 83683.254645571
+        },
+        "INDUSTRYTARGET-445": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-445",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163379.08379265,
+            "y": 83642.026931363
+        },
+        "INDUSTRYTARGET-446": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-446",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 163405.61293049,
+            "y": 83656.725507733
+        },
+        "INDUSTRYTARGET-447": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-447",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163380.5178001,
+            "y": 83677.160113906
+        },
+        "INDUSTRYTARGET-448": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-448",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163435.01008323,
+            "y": 83654.574496557
+        },
+        "INDUSTRYTARGET-449": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-449",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163411.67593928,
+            "y": 83624.673771277
+        },
         "INDUSTRYTARGET-45": {
             "canCargo": false,
             "category": "Fortifications",
@@ -3277,6 +4931,116 @@
             "type": "Comms tower M",
             "x": 143065.22907948,
             "y": -61601.502811721
+        },
+        "INDUSTRYTARGET-450": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-450",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163539.42503786,
+            "y": 83373.332208113
+        },
+        "INDUSTRYTARGET-451": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-451",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163502.85784787,
+            "y": 83332.104493905
+        },
+        "INDUSTRYTARGET-452": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-452",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 163529.38698571,
+            "y": 83346.803070275
+        },
+        "INDUSTRYTARGET-453": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-453",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163504.29185532,
+            "y": 83367.237676448
+        },
+        "INDUSTRYTARGET-454": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-454",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163558.78413845,
+            "y": 83344.652059099
+        },
+        "INDUSTRYTARGET-455": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.0646508437165,
+            "name": "INDUSTRYTARGET-455",
+            "rate": 100,
+            "shape_name": "kombinat",
+            "type": "Tech combine",
+            "x": 163590.05576474,
+            "y": 83474.475520926
+        },
+        "INDUSTRYTARGET-456": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.6179938779915,
+            "name": "INDUSTRYTARGET-456",
+            "rate": 100,
+            "shape_name": "tec_a",
+            "type": "Workshop A",
+            "x": 163523.32688971,
+            "y": 83640.397269319
+        },
+        "INDUSTRYTARGET-457": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-457",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163453.38753691,
+            "y": 83045.349627905
+        },
+        "INDUSTRYTARGET-458": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-458",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163416.82034692,
+            "y": 83004.121913697
+        },
+        "INDUSTRYTARGET-459": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-459",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 163443.34948476,
+            "y": 83018.820490067
         },
         "INDUSTRYTARGET-46": {
             "canCargo": false,
@@ -3289,6 +5053,116 @@
             "x": 143094.98611223,
             "y": -61709.560565727
         },
+        "INDUSTRYTARGET-460": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-460",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163418.25435437,
+            "y": 83039.25509624
+        },
+        "INDUSTRYTARGET-461": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-461",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163472.7466375,
+            "y": 83016.669478891
+        },
+        "INDUSTRYTARGET-462": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-462",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163449.41249355,
+            "y": 82986.768753611
+        },
+        "INDUSTRYTARGET-463": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-463",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163422.20037339,
+            "y": 83187.641061455
+        },
+        "INDUSTRYTARGET-464": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-464",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163385.6331834,
+            "y": 83146.413347247
+        },
+        "INDUSTRYTARGET-465": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-465",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 163412.16232124,
+            "y": 83161.111923617
+        },
+        "INDUSTRYTARGET-466": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-466",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163387.06719085,
+            "y": 83181.54652979
+        },
+        "INDUSTRYTARGET-467": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-467",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163441.55947398,
+            "y": 83158.960912441
+        },
+        "INDUSTRYTARGET-468": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-468",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163418.22533003,
+            "y": 83129.060187161
+        },
+        "INDUSTRYTARGET-469": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-469",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163545.97442861,
+            "y": 82877.718623997
+        },
         "INDUSTRYTARGET-47": {
             "canCargo": false,
             "category": "Fortifications",
@@ -3299,6 +5173,116 @@
             "type": "Chemical tank A",
             "x": 143198.8170876,
             "y": -61822.114868942
+        },
+        "INDUSTRYTARGET-470": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-470",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163509.40723862,
+            "y": 82836.490909789
+        },
+        "INDUSTRYTARGET-471": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-471",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 163535.93637646,
+            "y": 82851.189486159
+        },
+        "INDUSTRYTARGET-472": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-472",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163510.84124607,
+            "y": 82871.624092332
+        },
+        "INDUSTRYTARGET-473": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-473",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163565.3335292,
+            "y": 82849.038474983
+        },
+        "INDUSTRYTARGET-474": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.0646508437165,
+            "name": "INDUSTRYTARGET-474",
+            "rate": 100,
+            "shape_name": "kombinat",
+            "type": "Tech combine",
+            "x": 163596.60515549,
+            "y": 82978.86193681
+        },
+        "INDUSTRYTARGET-475": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.6179938779915,
+            "name": "INDUSTRYTARGET-475",
+            "rate": 100,
+            "shape_name": "tec_a",
+            "type": "Workshop A",
+            "x": 163529.87628046,
+            "y": 83144.783685203
+        },
+        "INDUSTRYTARGET-476": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-476",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163538.95410957,
+            "y": 82817.928022096
+        },
+        "INDUSTRYTARGET-477": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-477",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163534.46221796,
+            "y": 83312.036099949
+        },
+        "INDUSTRYTARGET-478": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-478",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163280.67503878,
+            "y": 82787.018500397
+        },
+        "INDUSTRYTARGET-479": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-479",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163248.08289215,
+            "y": 82804.371660483
         },
         "INDUSTRYTARGET-48": {
             "canCargo": false,
@@ -3311,6 +5295,116 @@
             "x": 143223.00416938,
             "y": -61803.052602832
         },
+        "INDUSTRYTARGET-480": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-480",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 163274.61202999,
+            "y": 82819.070236853
+        },
+        "INDUSTRYTARGET-481": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-481",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163249.5168996,
+            "y": 82839.504843026
+        },
+        "INDUSTRYTARGET-482": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-482",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163304.00918273,
+            "y": 82816.919225677
+        },
+        "INDUSTRYTARGET-483": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-483",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163284.65008214,
+            "y": 82845.599374691
+        },
+        "INDUSTRYTARGET-484": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-484",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163265.45523342,
+            "y": 83205.162626515
+        },
+        "INDUSTRYTARGET-485": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-485",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163232.86308679,
+            "y": 83222.515786601
+        },
+        "INDUSTRYTARGET-486": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-486",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 163259.39222463,
+            "y": 83237.214362971
+        },
+        "INDUSTRYTARGET-487": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-487",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163234.29709424,
+            "y": 83257.648969144
+        },
+        "INDUSTRYTARGET-488": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-488",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163288.78937737,
+            "y": 83235.063351795
+        },
+        "INDUSTRYTARGET-489": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-489",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163269.43027678,
+            "y": 83263.743500809
+        },
         "INDUSTRYTARGET-49": {
             "canCargo": false,
             "category": "Warehouses",
@@ -3321,6 +5415,72 @@
             "type": "Warehouse",
             "x": 143155.62597426,
             "y": -61543.445509049
+        },
+        "INDUSTRYTARGET-490": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-490",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163236.61770748,
+            "y": 83519.171242298
+        },
+        "INDUSTRYTARGET-491": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-491",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163204.02556085,
+            "y": 83536.524402384
+        },
+        "INDUSTRYTARGET-492": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-492",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 163230.55469869,
+            "y": 83551.222978754
+        },
+        "INDUSTRYTARGET-493": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-493",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163205.4595683,
+            "y": 83571.657584927
+        },
+        "INDUSTRYTARGET-494": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-494",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163259.95185143,
+            "y": 83549.071967578
+        },
+        "INDUSTRYTARGET-495": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-495",
+            "rate": 100,
+            "shape_name": "him_bak_a",
+            "type": "Chemical tank A",
+            "x": 163240.59275084,
+            "y": 83577.752116592
         },
         "INDUSTRYTARGET-5": {
             "canCargo": false,
@@ -4203,6 +6363,39 @@
             "x": 192798.65430974,
             "y": -51624.793671231
         },
+        "Static Container 40ft-25": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.6057029118348,
+            "name": "Static Container 40ft-25",
+            "rate": 1,
+            "shape_name": "container_40ft",
+            "type": "container_40ft",
+            "x": 178993.79453234,
+            "y": 62261.774232558
+        },
+        "Static Container 40ft-26": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.6057029118348,
+            "name": "Static Container 40ft-26",
+            "rate": 1,
+            "shape_name": "container_40ft",
+            "type": "container_40ft",
+            "x": 178977.44696233,
+            "y": 62249.513555048
+        },
+        "Static Container 40ft-27": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.6057029118348,
+            "name": "Static Container 40ft-27",
+            "rate": 1,
+            "shape_name": "container_40ft",
+            "type": "container_40ft",
+            "x": 178980.07425037,
+            "y": 62276.954118999
+        },
         "Static Container 40ft-3": {
             "canCargo": false,
             "category": "Fortifications",
@@ -4356,6 +6549,17 @@
             "type": "345 Excavator",
             "x": 192779.92666706,
             "y": -51653.34911334
+        },
+        "Static Excavator-8": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.5061454830784,
+            "name": "Static Excavator-8",
+            "rate": 3,
+            "shape_name": "cat_345l",
+            "type": "345 Excavator",
+            "x": 179013.35323218,
+            "y": 62237.252877538
         },
         "Static FARP Tent-1": {
             "canCargo": false,
@@ -4940,6 +7144,28 @@
             "x": 147582.62131606,
             "y": -26205.308471687
         },
+        "Static FARP Tent-63": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-63",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 179014.41550662,
+            "y": 62177.05535172
+        },
+        "Static FARP Tent-64": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.146754979953,
+            "name": "Static FARP Tent-64",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 179005.15820467,
+            "y": 62146.374008123
+        },
         "Static FARP Tent-9": {
             "canCargo": false,
             "category": "Fortifications",
@@ -5129,6 +7355,45 @@
             "x": 198582.59535017,
             "y": -39656.112633645
         },
+        "Static Ka-50 III-4": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 0.7679448708775,
+            "livery_id": "default",
+            "name": "Static Ka-50 III-4",
+            "rate": "50",
+            "type": "Ka-50_3",
+            "x": 216925.7790236,
+            "y": 40359.560434183
+        },
+        "Static Ka-50 III-5": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 0.7679448708775,
+            "livery_id": "default",
+            "name": "Static Ka-50 III-5",
+            "rate": "50",
+            "type": "Ka-50_3",
+            "x": 216894.16824634,
+            "y": 40392.788131003
+        },
+        "Static Ka-50 III-6": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 0.7679448708775,
+            "livery_id": "default",
+            "name": "Static Ka-50 III-6",
+            "rate": "50",
+            "type": "Ka-50_3",
+            "x": 216879.4542784,
+            "y": 40338.176673091
+        },
         "Static Loco ES44AH-1": {
             "canCargo": false,
             "heading": 1.5184364492351,
@@ -5289,6 +7554,84 @@
             "type": "Mi-26",
             "x": 198642.55618752,
             "y": -39556.734372213
+        },
+        "Static Mi-26-14": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 5.235987755983,
+            "livery_id": "7th Separate Brigade of AA (Kalinov)",
+            "name": "Static Mi-26-14",
+            "rate": "30",
+            "type": "Mi-26",
+            "x": 216929.4170926,
+            "y": 40547.527332252
+        },
+        "Static Mi-26-15": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 5.235987755983,
+            "livery_id": "7th Separate Brigade of AA (Kalinov)",
+            "name": "Static Mi-26-15",
+            "rate": "30",
+            "type": "Mi-26",
+            "x": 216909.60982807,
+            "y": 40481.233630568
+        },
+        "Static Mi-26-16": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 5.235987755983,
+            "livery_id": "7th Separate Brigade of AA (Kalinov)",
+            "name": "Static Mi-26-16",
+            "rate": "30",
+            "type": "Mi-26",
+            "x": 216874.92690365,
+            "y": 40557.754348427
+        },
+        "Static Mi-26-17": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 6.0737457969403,
+            "livery_id": "7th Separate Brigade of AA (Kalinov)",
+            "name": "Static Mi-26-17",
+            "rate": "30",
+            "type": "Mi-26",
+            "x": 179230.53537009,
+            "y": 62178.513954803
+        },
+        "Static Mi-26-18": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 6.0737457969403,
+            "livery_id": "7th Separate Brigade of AA (Kalinov)",
+            "name": "Static Mi-26-18",
+            "rate": "30",
+            "type": "Mi-26",
+            "x": 179215.77491869,
+            "y": 62122.424239508
+        },
+        "Static Mi-26-19": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 6.0737457969403,
+            "livery_id": "7th Separate Brigade of AA (Kalinov)",
+            "name": "Static Mi-26-19",
+            "rate": "30",
+            "type": "Mi-26",
+            "x": 179198.06237702,
+            "y": 62068.105778381
         },
         "Static Mi-26-2": {
             "canCargo": false,
@@ -5458,6 +7801,45 @@
             "type": "Mi-28N",
             "x": 192889.00519046,
             "y": -51867.012018167
+        },
+        "Static Mi-28N-6": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 0.7679448708775,
+            "livery_id": "AAF SC-11",
+            "name": "Static Mi-28N-6",
+            "rate": "50",
+            "type": "Mi-28N",
+            "x": 179138.43015339,
+            "y": 62046.260310319
+        },
+        "Static Mi-28N-7": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 0.7679448708775,
+            "livery_id": "AAF SC-11",
+            "name": "Static Mi-28N-7",
+            "rate": "50",
+            "type": "Mi-28N",
+            "x": 179156.14269506,
+            "y": 62107.073370059
+        },
+        "Static Mi-28N-8": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 0.7679448708775,
+            "livery_id": "AAF SC-11",
+            "name": "Static Mi-28N-8",
+            "rate": "50",
+            "type": "Mi-28N",
+            "x": 179176.80732702,
+            "y": 62168.476847855
         },
         "Static Military staff-1": {
             "canCargo": false,
@@ -5795,6 +8177,28 @@
             "x": 136520.06938404,
             "y": -173167.77489501
         },
+        "Static Tank 1-20": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0645788929948,
+            "name": "Static Tank 1-20",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 179081.79772727,
+            "y": 62550.96955245
+        },
+        "Static Tank 1-21": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0645788929948,
+            "name": "Static Tank 1-21",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 179062.96780068,
+            "y": 62506.614614267
+        },
         "Static Tank 1-3": {
             "canCargo": false,
             "category": "Warehouses",
@@ -5947,6 +8351,17 @@
             "type": ".Ammunition depot",
             "x": 150625.65110126,
             "y": -34648.265552527
+        },
+        "West Malling Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 1.7802358370342,
+            "name": "West Malling Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 200744.13762519,
+            "y": 41657.118180519
         }
     }
 }

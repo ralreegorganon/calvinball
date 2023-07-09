@@ -59,14 +59,48 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [
-                "CAP-2"
+                "CAP-2",
+                "CAP-5"
             ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
             "label": "Temp",
-            "nodes": {},
+            "nodes": {
+                "NODE-34": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Chailey - South",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 163439.54134675,
+                    "y": 12098.761992649
+                },
+                "NODE-35": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Chailey - North",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 164467.14954854,
+                    "y": 11701.179631628
+                },
+                "NODE-36": {
+                    "blueCaptureThreshold": "0",
+                    "label": "West Malling - East",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 200951.36412304,
+                    "y": 42740.437388288
+                },
+                "NODE-37": {
+                    "blueCaptureThreshold": "0",
+                    "label": "West Malling - West",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 200324.73443146,
+                    "y": 41361.467782999
+                }
+            },
             "qrfKillOnComplete": [],
             "qrfs": [
                 "QRF-23",
@@ -78,10 +112,88 @@
             ],
             "reinforcements": [],
             "ship_groups": [],
-            "static_groups": [],
+            "static_groups": [
+                "Chailey Airwing Warehouse",
+                "West Malling Airwing Warehouse"
+            ],
             "strand": "STRAND-1",
             "tasks": [],
-            "vehicle_groups": [],
+            "vehicle_groups": [
+                "RED SAM SA-3 RG 674-9",
+                "RED SAM SA-15 RG 686-25",
+                "RED SAM SA-15 RG 686-26",
+                "RED SAM SA-15 RG 686-27",
+                "RED SAM SA-3 RG 674-10",
+                "RED SAM SA-3 RG 674-11",
+                "RED SAM SA-15 RG 686-28",
+                "RED SAM SA-6 238-15",
+                "RED AIR DEFENSE BATTERY A RG 694-1",
+                "RED AIR DEFENSE BATTERY A RG 694-2",
+                "RED SAM SA-15 RG 686-29",
+                "RED SAM SA-6 238-16",
+                "RED AIR DEFENSE BATTERY A RG 694-3",
+                "RED SAM SA-15 RG 686-30",
+                "RED SAM SA-6 238-17",
+                "RED SAM SA-2 RG 234-13",
+                "RED SAM SA-2 RG 234-14",
+                "RED SAM SA-2 RG 234-15",
+                "RED SAM SA-2 RG 234-16",
+                "RED SAM SA-2 RG 234-17",
+                "RED SAM SA-2 RG 234-18",
+                "RED SAM SA-2 RG 234-19",
+                "RED SAM SA-2 RG 234-20",
+                "RED SAM SA-15 RG 686-31",
+                "RED AIR DEFENSE BATTERY A RG 694-4",
+                "RED SAM SA-15 RG 686-32",
+                "RED AIR DEFENSE BATTERY A RG 694-5",
+                "RED SAM SA-15 RG 686-33",
+                "RED AIR DEFENSE BATTERY A RG 694-6",
+                "RED SAM SA-15 RG 686-34",
+                "RED AIR DEFENSE BATTERY A RG 694-7",
+                "RED SAM SA-15 RG 686-35",
+                "RED AIR DEFENSE BATTERY A RG 694-8",
+                "RED SAM SA-15 RG 686-36",
+                "RED AIR DEFENSE BATTERY A RG 694-9",
+                "RED SAM SA-15 RG 686-37",
+                "RED AIR DEFENSE BATTERY A RG 694-10",
+                "RED SAM SA-15 RG 686-38",
+                "RED AIR DEFENSE BATTERY A RG 694-11",
+                "RED SAM SA-3 RG 674-12",
+                "RED SAM SA-15 RG 686-39",
+                "RED SAM SA-15 RG 686-40",
+                "RED SAM SA-3 RG 674-13",
+                "RED SAM SA-3 RG 674-14",
+                "RED SAM SA-15 RG 686-41",
+                "RED SAM SA-15 RG 686-42",
+                "RED SAM SA-6 238-18",
+                "RED SAM SA-15 RG 686-43",
+                "RED SAM SA-6 238-19",
+                "RED SAM SA-8 RG 240-14",
+                "RED SAM SA-8 RG 240-15",
+                "RED SAM SA-8 RG 240-16",
+                "RED SAM SA-8 RG 240-17",
+                "RED SAM SA-8 RG 240-18",
+                "RED SAM SA-8 RG 240-19",
+                "RED SAM SA-8 RG 240-20",
+                "RED SAM SA-8 RG 240-21",
+                "RED AIR DEFENSE BATTERY A 242-10",
+                "RED AIR DEFENSE BATTERY A 242-11",
+                "RED EWR 2-11",
+                "RED AIR DEFENSE BATTERY A RG 690-2",
+                "RED AIR DEFENSE BATTERY A RG 690-3",
+                "RED GROUND 8-28 RG-4",
+                "RED GROUND 8-29 RG-4",
+                "RED GROUND 9-8 RG-4",
+                "RED GROUND 8-11 RG-4",
+                "RED GROUND RG 1-8 -5",
+                "RED AIR DEFENSE BATTERY A RG 690-4",
+                "RED AIR DEFENSE BATTERY A RG 690-5",
+                "RED GROUND 8-11 RG-5",
+                "RED GROUND RG 1-8 -6",
+                "RED GROUND 8-29 RG-5",
+                "RED GROUND 9-8 RG-5",
+                "RED GROUND 8-28 RG-5"
+            ],
             "vertices": [
                 {
                     "x": 141396.22291131,
@@ -101,7 +213,7 @@
                 }
             ],
             "x": 172589.93082963,
-            "y": 17654.925374666
+            "y": 17654.925374665
         },
         "OBJ-12": {
             "airbases": [],
@@ -733,12 +845,12 @@
                 "RED SAM SA-2 RG 234-4",
                 "RED SAM SA-2 RG 234-5",
                 "RED SAM SA-2 RG 234-6",
-                "RED SAM SA-8 RG 240-7",
                 "RED SAM SA-6 238-5",
                 "RED SAM SA-6 238-6",
                 "RED SAM SA-6 238-7",
                 "RED SAM SA-8 RG 240-5",
-                "RED SAM SA-8 RG 240-6"
+                "RED SAM SA-8 RG 240-6",
+                "RED SAM SA-8 RG 240-7"
             ],
             "vertices": [
                 {
@@ -987,8 +1099,8 @@
                 "RED SAM SA-3 8-1 FK",
                 "RED SAM SA-3 8-2 FK",
                 "RED SAM SA-3 8-3 FK",
-                "RED SAM SA-9 8-1 FK",
-                "RED SAM SA-5 8-1 FK"
+                "RED SAM SA-5 8-1 FK",
+                "RED SAM SA-9 8-1 FK"
             ],
             "vertices": [
                 {
