@@ -915,29 +915,29 @@
             "FOB Innit Airwing Warehouse",
             "FOB Innit Brigade Warehouse",
             "FOB Innit Farp",
-            "Static Mi-26-14",
             "Static Ka-50 III-4",
-            "Static Mi-26-15",
             "Static Ka-50 III-5",
             "Static Ka-50 III-6",
+            "Static Mi-26-14",
+            "Static Mi-26-15",
             "Static Mi-26-16"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
+            "RED AIR DEFENSE BATTERY A 242-12",
             "RED SAM SA-15 RG 686-44",
             "RED SAM SA-15 RG 686-45",
             "RED SAM SA-15 RG 686-46",
-            "RED SAM SA-8 RG 240-22",
             "RED SAM SA-15 RG 686-47",
-            "RED SAM SA-3 236-9",
-            "RED SAM SA-3 236-10",
-            "RED SAM SA-6 238-20",
             "RED SAM SA-15 RG 686-48",
             "RED SAM SA-15 RG 686-49",
             "RED SAM SA-2 RG 234-21",
             "RED SAM SA-2 RG 234-22",
+            "RED SAM SA-3 236-10",
+            "RED SAM SA-3 236-9",
+            "RED SAM SA-6 238-20",
             "RED SAM SA-6 238-21",
-            "RED AIR DEFENSE BATTERY A 242-12"
+            "RED SAM SA-8 RG 240-22"
         ],
         "vertices": [
             {
@@ -959,6 +959,52 @@
         ],
         "x": 217196.09564464,
         "y": 40702.478254937
+    },
+    "QRF-24": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [
+            "Chailey Airwing Warehouse"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [
+            "RED AIR DEFENSE BATTERY A RG 690-2",
+            "RED AIR DEFENSE BATTERY A RG 690-3",
+            "RED GROUND 8-11 RG-4",
+            "RED GROUND 8-28 RG-4",
+            "RED GROUND 8-29 RG-4",
+            "RED GROUND 9-8 RG-4",
+            "RED GROUND RG 1-8 -5",
+            "RED SAM SA-15 RG 686-25",
+            "RED SAM SA-15 RG 686-26",
+            "RED SAM SA-15 RG 686-27",
+            "RED SAM SA-15 RG 686-42",
+            "RED SAM SA-3 RG 674-10",
+            "RED SAM SA-3 RG 674-11",
+            "RED SAM SA-3 RG 674-9",
+            "RED SAM SA-6 238-18"
+        ],
+        "vertices": [
+            {
+                "x": 165235.36863286,
+                "y": 13827.575751274
+            },
+            {
+                "x": 163222.74486186,
+                "y": 13742.191712504
+            },
+            {
+                "x": 162887.3075667,
+                "y": 10753.750355571
+            },
+            {
+                "x": 165143.88573418,
+                "y": 10589.081137944
+            }
+        ],
+        "x": 164122.3266989,
+        "y": 12228.149739323
     },
     "QRF-25": {
         "component": "qrf",
@@ -1288,42 +1334,42 @@
         "label": "FOB Bo'ohw'o'wo'er",
         "ship_groups": [],
         "static_groups": [
-            "FOB Bo'ohw'o'wo'er Farp",
             "FOB Bo'ohw'o'wo'er Airwing Warehouse",
             "FOB Bo'ohw'o'wo'er Brigade Warehouse",
-            "Static Mi-26-17",
-            "Static Mi-28N-6",
-            "Static Mi-26-18",
-            "Static Mi-26-19",
-            "Static Mi-28N-7",
-            "Static Mi-28N-8",
-            "Static FARP Tent-63",
-            "Static Excavator-8",
-            "Static Tank 1-20",
+            "FOB Bo'ohw'o'wo'er Farp",
             "Static Container 40ft-25",
             "Static Container 40ft-26",
             "Static Container 40ft-27",
+            "Static Excavator-8",
+            "Static FARP Tent-63",
             "Static FARP Tent-64",
+            "Static Mi-26-17",
+            "Static Mi-26-18",
+            "Static Mi-26-19",
+            "Static Mi-28N-6",
+            "Static Mi-28N-7",
+            "Static Mi-28N-8",
+            "Static Tank 1-20",
             "Static Tank 1-21"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
+            "RED AIR DEFENSE BATTERY A 242-13",
+            "RED RG 152-10",
             "RED SAM SA-15 RG 686-50",
-            "RED SAM SA-2 RG 234-23",
             "RED SAM SA-15 RG 686-51",
-            "RED SAM SA-3 236-11",
-            "RED SAM SA-6 238-22",
             "RED SAM SA-15 RG 686-52",
-            "RED SAM SA-3 236-12",
             "RED SAM SA-15 RG 686-53",
-            "RED SAM SA-8 RG 240-23",
-            "RED SAM SA-6 238-23",
-            "RED SAM SA-2 RG 234-24",
             "RED SAM SA-15 RG 686-54",
             "RED SAM SA-15 RG 686-55",
-            "RED RG 152-10",
             "RED SAM SA-15 RG 686-56",
-            "RED AIR DEFENSE BATTERY A 242-13"
+            "RED SAM SA-2 RG 234-23",
+            "RED SAM SA-2 RG 234-24",
+            "RED SAM SA-3 236-11",
+            "RED SAM SA-3 236-12",
+            "RED SAM SA-6 238-22",
+            "RED SAM SA-6 238-23",
+            "RED SAM SA-8 RG 240-23"
         ],
         "vertices": [
             {
@@ -1693,6 +1739,52 @@
         ],
         "x": 213501.9123268,
         "y": 59282.293268789
+    },
+    "QRF-36": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [
+            "West Malling Airwing Warehouse"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [
+            "RED AIR DEFENSE BATTERY A RG 690-4",
+            "RED AIR DEFENSE BATTERY A RG 690-5",
+            "RED GROUND 8-11 RG-5",
+            "RED GROUND 8-28 RG-5",
+            "RED GROUND 8-29 RG-5",
+            "RED GROUND 9-8 RG-5",
+            "RED GROUND RG 1-8 -6",
+            "RED SAM SA-15 RG 686-39",
+            "RED SAM SA-15 RG 686-40",
+            "RED SAM SA-15 RG 686-41",
+            "RED SAM SA-15 RG 686-43",
+            "RED SAM SA-3 RG 674-12",
+            "RED SAM SA-3 RG 674-13",
+            "RED SAM SA-3 RG 674-14",
+            "RED SAM SA-6 238-19"
+        ],
+        "vertices": [
+            {
+                "x": 202725.07058425,
+                "y": 44419.890275021
+            },
+            {
+                "x": 199004.54433859,
+                "y": 44414.730044444
+            },
+            {
+                "x": 199035.50572205,
+                "y": 39636.356530594
+            },
+            {
+                "x": 202601.22505042,
+                "y": 39037.769783719
+            }
+        ],
+        "x": 200841.58642383,
+        "y": 41877.186658444
     },
     "QRF-4": {
         "component": "qrf",

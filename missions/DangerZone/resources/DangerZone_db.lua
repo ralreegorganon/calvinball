@@ -273,24 +273,106 @@ MissionDb = {
 			},
 			qrfs = {
 				{
+					name = "QRF-24",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+						{ name = "RED AIR DEFENSE BATTERY A RG 690-2" },
+						{ name = "RED AIR DEFENSE BATTERY A RG 690-3" },
+						{ name = "RED GROUND 8-11 RG-4" },
+						{ name = "RED GROUND 8-28 RG-4" },
+						{ name = "RED GROUND 8-29 RG-4" },
+						{ name = "RED GROUND 9-8 RG-4" },
+						{ name = "RED GROUND RG 1-8 -5" },
+						{ name = "RED SAM SA-15 RG 686-25" },
+						{ name = "RED SAM SA-15 RG 686-26" },
+						{ name = "RED SAM SA-15 RG 686-27" },
+						{ name = "RED SAM SA-15 RG 686-42" },
+						{ name = "RED SAM SA-3 RG 674-10" },
+						{ name = "RED SAM SA-3 RG 674-11" },
+						{ name = "RED SAM SA-3 RG 674-9" },
+						{ name = "RED SAM SA-6 238-18" },
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "Chailey Airwing Warehouse#00001",
+							template = {
+								name = "Chailey Airwing Warehouse",
+								type = ".Ammunition depot",
+								x = 163621.18393305,
+								y = 12139.042791058,
+								heading = 1.0646508437165,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+					},
+				},
+				{
+					name = "QRF-36",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+						{ name = "RED AIR DEFENSE BATTERY A RG 690-4" },
+						{ name = "RED AIR DEFENSE BATTERY A RG 690-5" },
+						{ name = "RED GROUND 8-11 RG-5" },
+						{ name = "RED GROUND 8-28 RG-5" },
+						{ name = "RED GROUND 8-29 RG-5" },
+						{ name = "RED GROUND 9-8 RG-5" },
+						{ name = "RED GROUND RG 1-8 -6" },
+						{ name = "RED SAM SA-15 RG 686-39" },
+						{ name = "RED SAM SA-15 RG 686-40" },
+						{ name = "RED SAM SA-15 RG 686-41" },
+						{ name = "RED SAM SA-15 RG 686-43" },
+						{ name = "RED SAM SA-3 RG 674-12" },
+						{ name = "RED SAM SA-3 RG 674-13" },
+						{ name = "RED SAM SA-3 RG 674-14" },
+						{ name = "RED SAM SA-6 238-19" },
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "West Malling Airwing Warehouse#00001",
+							template = {
+								name = "West Malling Airwing Warehouse",
+								type = ".Ammunition depot",
+								x = 200744.13762519,
+								y = 41657.118180519,
+								heading = 1.7802358370342,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+					},
+				},
+				{
 					name = "QRF-23",
 					spawnGroups = {
 					},
 					vehicleGroups = {
+						{ name = "RED AIR DEFENSE BATTERY A 242-12" },
 						{ name = "RED SAM SA-15 RG 686-44" },
 						{ name = "RED SAM SA-15 RG 686-45" },
 						{ name = "RED SAM SA-15 RG 686-46" },
-						{ name = "RED SAM SA-8 RG 240-22" },
 						{ name = "RED SAM SA-15 RG 686-47" },
-						{ name = "RED SAM SA-3 236-9" },
-						{ name = "RED SAM SA-3 236-10" },
-						{ name = "RED SAM SA-6 238-20" },
 						{ name = "RED SAM SA-15 RG 686-48" },
 						{ name = "RED SAM SA-15 RG 686-49" },
 						{ name = "RED SAM SA-2 RG 234-21" },
 						{ name = "RED SAM SA-2 RG 234-22" },
+						{ name = "RED SAM SA-3 236-10" },
+						{ name = "RED SAM SA-3 236-9" },
+						{ name = "RED SAM SA-6 238-20" },
 						{ name = "RED SAM SA-6 238-21" },
-						{ name = "RED AIR DEFENSE BATTERY A 242-12" },
+						{ name = "RED SAM SA-8 RG 240-22" },
 					},
 					shipGroups = {
 					},
@@ -341,21 +423,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Mi-26-14#00001",
-							template = {
-								name = "Static Mi-26-14",
-								type = "Mi-26",
-								x = 216929.4170926,
-								y = 40547.527332252,
-								heading = 5.235987755983,
-								category = "Helicopters",
-								canCargo = false,
-								shape_name = "",
-								rate = 30,
-								dead = false
-							}
-						},
-						{
 							name = "Static Ka-50 III-4#00001",
 							template = {
 								name = "Static Ka-50 III-4",
@@ -367,21 +434,6 @@ MissionDb = {
 								canCargo = false,
 								shape_name = "",
 								rate = 50,
-								dead = false
-							}
-						},
-						{
-							name = "Static Mi-26-15#00001",
-							template = {
-								name = "Static Mi-26-15",
-								type = "Mi-26",
-								x = 216909.60982807,
-								y = 40481.233630568,
-								heading = 5.235987755983,
-								category = "Helicopters",
-								canCargo = false,
-								shape_name = "",
-								rate = 30,
 								dead = false
 							}
 						},
@@ -412,6 +464,36 @@ MissionDb = {
 								canCargo = false,
 								shape_name = "",
 								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-26-14#00001",
+							template = {
+								name = "Static Mi-26-14",
+								type = "Mi-26",
+								x = 216929.4170926,
+								y = 40547.527332252,
+								heading = 5.235987755983,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 30,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-26-15#00001",
+							template = {
+								name = "Static Mi-26-15",
+								type = "Mi-26",
+								x = 216909.60982807,
+								y = 40481.233630568,
+								heading = 5.235987755983,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 30,
 								dead = false
 							}
 						},
@@ -1346,41 +1428,26 @@ MissionDb = {
 					spawnGroups = {
 					},
 					vehicleGroups = {
+						{ name = "RED AIR DEFENSE BATTERY A 242-13" },
+						{ name = "RED RG 152-10" },
 						{ name = "RED SAM SA-15 RG 686-50" },
-						{ name = "RED SAM SA-2 RG 234-23" },
 						{ name = "RED SAM SA-15 RG 686-51" },
-						{ name = "RED SAM SA-3 236-11" },
-						{ name = "RED SAM SA-6 238-22" },
 						{ name = "RED SAM SA-15 RG 686-52" },
-						{ name = "RED SAM SA-3 236-12" },
 						{ name = "RED SAM SA-15 RG 686-53" },
-						{ name = "RED SAM SA-8 RG 240-23" },
-						{ name = "RED SAM SA-6 238-23" },
-						{ name = "RED SAM SA-2 RG 234-24" },
 						{ name = "RED SAM SA-15 RG 686-54" },
 						{ name = "RED SAM SA-15 RG 686-55" },
-						{ name = "RED RG 152-10" },
 						{ name = "RED SAM SA-15 RG 686-56" },
-						{ name = "RED AIR DEFENSE BATTERY A 242-13" },
+						{ name = "RED SAM SA-2 RG 234-23" },
+						{ name = "RED SAM SA-2 RG 234-24" },
+						{ name = "RED SAM SA-3 236-11" },
+						{ name = "RED SAM SA-3 236-12" },
+						{ name = "RED SAM SA-6 238-22" },
+						{ name = "RED SAM SA-6 238-23" },
+						{ name = "RED SAM SA-8 RG 240-23" },
 					},
 					shipGroups = {
 					},
 					staticGroups = {
-						{
-							name = "FOB Bo'ohw'o'wo'er Farp#00001",
-							template = {
-								name = "FOB Bo'ohw'o'wo'er Farp",
-								type = "FARP",
-								x = 179222.92120449,
-								y = 62418.742543591,
-								heading = 5.846852994181,
-								category = "Heliports",
-								canCargo = false,
-								shape_name = "FARPS",
-								rate = 50,
-								dead = false
-							}
-						},
 						{
 							name = "FOB Bo'ohw'o'wo'er Airwing Warehouse#00001",
 							template = {
@@ -1412,137 +1479,17 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Mi-26-17#00001",
+							name = "FOB Bo'ohw'o'wo'er Farp#00001",
 							template = {
-								name = "Static Mi-26-17",
-								type = "Mi-26",
-								x = 179230.53537009,
-								y = 62178.513954803,
-								heading = 6.0737457969403,
-								category = "Helicopters",
+								name = "FOB Bo'ohw'o'wo'er Farp",
+								type = "FARP",
+								x = 179222.92120449,
+								y = 62418.742543591,
+								heading = 5.846852994181,
+								category = "Heliports",
 								canCargo = false,
-								shape_name = "",
-								rate = 30,
-								dead = false
-							}
-						},
-						{
-							name = "Static Mi-28N-6#00001",
-							template = {
-								name = "Static Mi-28N-6",
-								type = "Mi-28N",
-								x = 179138.43015339,
-								y = 62046.260310319,
-								heading = 0.7679448708775,
-								category = "Helicopters",
-								canCargo = false,
-								shape_name = "",
+								shape_name = "FARPS",
 								rate = 50,
-								dead = false
-							}
-						},
-						{
-							name = "Static Mi-26-18#00001",
-							template = {
-								name = "Static Mi-26-18",
-								type = "Mi-26",
-								x = 179215.77491869,
-								y = 62122.424239508,
-								heading = 6.0737457969403,
-								category = "Helicopters",
-								canCargo = false,
-								shape_name = "",
-								rate = 30,
-								dead = false
-							}
-						},
-						{
-							name = "Static Mi-26-19#00001",
-							template = {
-								name = "Static Mi-26-19",
-								type = "Mi-26",
-								x = 179198.06237702,
-								y = 62068.105778381,
-								heading = 6.0737457969403,
-								category = "Helicopters",
-								canCargo = false,
-								shape_name = "",
-								rate = 30,
-								dead = false
-							}
-						},
-						{
-							name = "Static Mi-28N-7#00001",
-							template = {
-								name = "Static Mi-28N-7",
-								type = "Mi-28N",
-								x = 179156.14269506,
-								y = 62107.073370059,
-								heading = 0.7679448708775,
-								category = "Helicopters",
-								canCargo = false,
-								shape_name = "",
-								rate = 50,
-								dead = false
-							}
-						},
-						{
-							name = "Static Mi-28N-8#00001",
-							template = {
-								name = "Static Mi-28N-8",
-								type = "Mi-28N",
-								x = 179176.80732702,
-								y = 62168.476847855,
-								heading = 0.7679448708775,
-								category = "Helicopters",
-								canCargo = false,
-								shape_name = "",
-								rate = 50,
-								dead = false
-							}
-						},
-						{
-							name = "Static FARP Tent-63#00001",
-							template = {
-								name = "Static FARP Tent-63",
-								type = "FARP Tent",
-								x = 179014.41550662,
-								y = 62177.05535172,
-								heading = 2.146754979953,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "PalatkaB",
-								rate = 50,
-								dead = false
-							}
-						},
-						{
-							name = "Static Excavator-8#00001",
-							template = {
-								name = "Static Excavator-8",
-								type = "345 Excavator",
-								x = 179013.35323218,
-								y = 62237.252877538,
-								heading = 0.5061454830784,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "cat_345l",
-								rate = 3,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-20#00001",
-							template = {
-								name = "Static Tank 1-20",
-								type = "Tank",
-								x = 179081.79772727,
-								y = 62550.96955245,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
 								dead = false
 							}
 						},
@@ -1592,6 +1539,36 @@ MissionDb = {
 							}
 						},
 						{
+							name = "Static Excavator-8#00001",
+							template = {
+								name = "Static Excavator-8",
+								type = "345 Excavator",
+								x = 179013.35323218,
+								y = 62237.252877538,
+								heading = 0.5061454830784,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "cat_345l",
+								rate = 3,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-63#00001",
+							template = {
+								name = "Static FARP Tent-63",
+								type = "FARP Tent",
+								x = 179014.41550662,
+								y = 62177.05535172,
+								heading = 2.146754979953,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
 							name = "Static FARP Tent-64#00001",
 							template = {
 								name = "Static FARP Tent-64",
@@ -1603,6 +1580,111 @@ MissionDb = {
 								canCargo = false,
 								shape_name = "PalatkaB",
 								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-26-17#00001",
+							template = {
+								name = "Static Mi-26-17",
+								type = "Mi-26",
+								x = 179230.53537009,
+								y = 62178.513954803,
+								heading = 6.0737457969403,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 30,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-26-18#00001",
+							template = {
+								name = "Static Mi-26-18",
+								type = "Mi-26",
+								x = 179215.77491869,
+								y = 62122.424239508,
+								heading = 6.0737457969403,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 30,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-26-19#00001",
+							template = {
+								name = "Static Mi-26-19",
+								type = "Mi-26",
+								x = 179198.06237702,
+								y = 62068.105778381,
+								heading = 6.0737457969403,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 30,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-28N-6#00001",
+							template = {
+								name = "Static Mi-28N-6",
+								type = "Mi-28N",
+								x = 179138.43015339,
+								y = 62046.260310319,
+								heading = 0.7679448708775,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-28N-7#00001",
+							template = {
+								name = "Static Mi-28N-7",
+								type = "Mi-28N",
+								x = 179156.14269506,
+								y = 62107.073370059,
+								heading = 0.7679448708775,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Mi-28N-8#00001",
+							template = {
+								name = "Static Mi-28N-8",
+								type = "Mi-28N",
+								x = 179176.80732702,
+								y = 62168.476847855,
+								heading = 0.7679448708775,
+								category = "Helicopters",
+								canCargo = false,
+								shape_name = "",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-20#00001",
+							template = {
+								name = "Static Tank 1-20",
+								type = "Tank",
+								x = 179081.79772727,
+								y = 62550.96955245,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
 								dead = false
 							}
 						},
@@ -3606,21 +3688,31 @@ MissionDb = {
 			reinforcements = {
 			},
 			vehicleGroups = {
-				{ name = "RED SAM SA-3 RG 674-9" },
-				{ name = "RED SAM SA-15 RG 686-25" },
-				{ name = "RED SAM SA-15 RG 686-26" },
-				{ name = "RED SAM SA-15 RG 686-27" },
-				{ name = "RED SAM SA-3 RG 674-10" },
-				{ name = "RED SAM SA-3 RG 674-11" },
-				{ name = "RED SAM SA-15 RG 686-28" },
-				{ name = "RED SAM SA-6 238-15" },
+				{ name = "RED AIR DEFENSE BATTERY A 242-10" },
+				{ name = "RED AIR DEFENSE BATTERY A 242-11" },
 				{ name = "RED AIR DEFENSE BATTERY A RG 694-1" },
+				{ name = "RED AIR DEFENSE BATTERY A RG 694-10" },
+				{ name = "RED AIR DEFENSE BATTERY A RG 694-11" },
 				{ name = "RED AIR DEFENSE BATTERY A RG 694-2" },
-				{ name = "RED SAM SA-15 RG 686-29" },
-				{ name = "RED SAM SA-6 238-16" },
 				{ name = "RED AIR DEFENSE BATTERY A RG 694-3" },
+				{ name = "RED AIR DEFENSE BATTERY A RG 694-4" },
+				{ name = "RED AIR DEFENSE BATTERY A RG 694-5" },
+				{ name = "RED AIR DEFENSE BATTERY A RG 694-6" },
+				{ name = "RED AIR DEFENSE BATTERY A RG 694-7" },
+				{ name = "RED AIR DEFENSE BATTERY A RG 694-8" },
+				{ name = "RED AIR DEFENSE BATTERY A RG 694-9" },
+				{ name = "RED EWR 2-11" },
+				{ name = "RED SAM SA-15 RG 686-28" },
+				{ name = "RED SAM SA-15 RG 686-29" },
 				{ name = "RED SAM SA-15 RG 686-30" },
-				{ name = "RED SAM SA-6 238-17" },
+				{ name = "RED SAM SA-15 RG 686-31" },
+				{ name = "RED SAM SA-15 RG 686-32" },
+				{ name = "RED SAM SA-15 RG 686-33" },
+				{ name = "RED SAM SA-15 RG 686-34" },
+				{ name = "RED SAM SA-15 RG 686-35" },
+				{ name = "RED SAM SA-15 RG 686-36" },
+				{ name = "RED SAM SA-15 RG 686-37" },
+				{ name = "RED SAM SA-15 RG 686-38" },
 				{ name = "RED SAM SA-2 RG 234-13" },
 				{ name = "RED SAM SA-2 RG 234-14" },
 				{ name = "RED SAM SA-2 RG 234-15" },
@@ -3629,32 +3721,9 @@ MissionDb = {
 				{ name = "RED SAM SA-2 RG 234-18" },
 				{ name = "RED SAM SA-2 RG 234-19" },
 				{ name = "RED SAM SA-2 RG 234-20" },
-				{ name = "RED SAM SA-15 RG 686-31" },
-				{ name = "RED AIR DEFENSE BATTERY A RG 694-4" },
-				{ name = "RED SAM SA-15 RG 686-32" },
-				{ name = "RED AIR DEFENSE BATTERY A RG 694-5" },
-				{ name = "RED SAM SA-15 RG 686-33" },
-				{ name = "RED AIR DEFENSE BATTERY A RG 694-6" },
-				{ name = "RED SAM SA-15 RG 686-34" },
-				{ name = "RED AIR DEFENSE BATTERY A RG 694-7" },
-				{ name = "RED SAM SA-15 RG 686-35" },
-				{ name = "RED AIR DEFENSE BATTERY A RG 694-8" },
-				{ name = "RED SAM SA-15 RG 686-36" },
-				{ name = "RED AIR DEFENSE BATTERY A RG 694-9" },
-				{ name = "RED SAM SA-15 RG 686-37" },
-				{ name = "RED AIR DEFENSE BATTERY A RG 694-10" },
-				{ name = "RED SAM SA-15 RG 686-38" },
-				{ name = "RED AIR DEFENSE BATTERY A RG 694-11" },
-				{ name = "RED SAM SA-3 RG 674-12" },
-				{ name = "RED SAM SA-15 RG 686-39" },
-				{ name = "RED SAM SA-15 RG 686-40" },
-				{ name = "RED SAM SA-3 RG 674-13" },
-				{ name = "RED SAM SA-3 RG 674-14" },
-				{ name = "RED SAM SA-15 RG 686-41" },
-				{ name = "RED SAM SA-15 RG 686-42" },
-				{ name = "RED SAM SA-6 238-18" },
-				{ name = "RED SAM SA-15 RG 686-43" },
-				{ name = "RED SAM SA-6 238-19" },
+				{ name = "RED SAM SA-6 238-15" },
+				{ name = "RED SAM SA-6 238-16" },
+				{ name = "RED SAM SA-6 238-17" },
 				{ name = "RED SAM SA-8 RG 240-14" },
 				{ name = "RED SAM SA-8 RG 240-15" },
 				{ name = "RED SAM SA-8 RG 240-16" },
@@ -3663,57 +3732,10 @@ MissionDb = {
 				{ name = "RED SAM SA-8 RG 240-19" },
 				{ name = "RED SAM SA-8 RG 240-20" },
 				{ name = "RED SAM SA-8 RG 240-21" },
-				{ name = "RED AIR DEFENSE BATTERY A 242-10" },
-				{ name = "RED AIR DEFENSE BATTERY A 242-11" },
-				{ name = "RED EWR 2-11" },
-				{ name = "RED AIR DEFENSE BATTERY A RG 690-2" },
-				{ name = "RED AIR DEFENSE BATTERY A RG 690-3" },
-				{ name = "RED GROUND 8-28 RG-4" },
-				{ name = "RED GROUND 8-29 RG-4" },
-				{ name = "RED GROUND 9-8 RG-4" },
-				{ name = "RED GROUND 8-11 RG-4" },
-				{ name = "RED GROUND RG 1-8 -5" },
-				{ name = "RED AIR DEFENSE BATTERY A RG 690-4" },
-				{ name = "RED AIR DEFENSE BATTERY A RG 690-5" },
-				{ name = "RED GROUND 8-11 RG-5" },
-				{ name = "RED GROUND RG 1-8 -6" },
-				{ name = "RED GROUND 8-29 RG-5" },
-				{ name = "RED GROUND 9-8 RG-5" },
-				{ name = "RED GROUND 8-28 RG-5" },
 			},
 			shipGroups = {
 			},
 			staticGroups = {
-				{
-					name = "Chailey Airwing Warehouse#00001",
-					template = {
-						name = "Chailey Airwing Warehouse",
-						type = ".Ammunition depot",
-						x = 163621.18393305,
-						y = 12139.042791058,
-						heading = 1.0646508437165,
-						category = "Warehouses",
-						canCargo = false,
-						shape_name = "SkladC",
-						rate = 100,
-						dead = false
-					}
-				},
-				{
-					name = "West Malling Airwing Warehouse#00001",
-					template = {
-						name = "West Malling Airwing Warehouse",
-						type = ".Ammunition depot",
-						x = 200744.13762519,
-						y = 41657.118180519,
-						heading = 1.7802358370342,
-						category = "Warehouses",
-						canCargo = false,
-						shape_name = "SkladC",
-						rate = 100,
-						dead = false
-					}
-				},
 			}
 		},
 		{
