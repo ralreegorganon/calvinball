@@ -402,10 +402,9 @@ class DangerZoneClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.AV8BNA, "count": 2, "parking": [36, 38], "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
                     { "airframe": dcs.planes.F_14B, "count": 4, "parking": [1, 7, 2, 9], "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True } },
                     { "airframe": dcs.planes.F_15ESE, "count": 4, "parking": [8, 24, 11, 10], "fuel": 1, "loadout": "Empty", "livery": "USAF 494th Panthers FS 91-603 75th D-Day Anniversary", "properties": { dcs.planes.F_15ESE.Properties.NetCrewControlPriority.id: dcs.planes.F_15ESE.Properties.NetCrewControlPriority.Values.Equally_Responsible } },
-                    { "airframe": dcs.planes.F_16C_50, "count": 4, "parking": [22, 14, 13, 16], "fuel": 1, "loadout": "Empty", "livery": "18th AGRS Arctic Splinter" },
+                    { "airframe": dcs.planes.F_16C_50, "count": 6, "parking": [22, 14, 13, 16, 28, 25], "fuel": 1, "loadout": "Empty", "livery": "18th AGRS Arctic Splinter" },
                     { "airframe": dcs.planes.FA_18C_hornet, "count": 4, "parking": [12, 17, 15, 0], "fuel": 1, "loadout": "Empty", "livery": "VX-31 CoNA" },
                     { "airframe": dcs.planes.JF_17, "count": 4, "parking": [27, 23, 26, 32], "fuel": 1, "loadout": "Empty", "livery": "PAF Black Panthers 07-101" },
-                    { "airframe": dcs.planes.M_2000C, "count": 2, "parking": [28, 25], "fuel": 1, "loadout": "Empty", "livery": "2003 Tigermeet" },
                     { "airframe": dcs.planes.Mirage_F1EE, "count": 2, "parking": [30, 18], "fuel": 1, "loadout": "Empty", "livery": "USA AGGRESSOR Colour (CE)" },
                     { "airframe": dcs.planes.Su_25T, "count": 4, "parking": [41, 31, 42, 34], "fuel": 1, "loadout": "Empty", "livery": "Algerian AF Desert KU-03" },
                 ]
@@ -440,6 +439,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.F_15C, "count": 2, "parking": [40, 38], "fuel": 1, "loadout": "Empty", "livery": "12th Fighter SQN (AK)", "start_type": dcs.mission.StartType.Cold },
                     { "airframe": dcs.planes.Su_25, "count": 2, "parking": [39, 43], "fuel": 1, "loadout": "Empty", "livery": "petal camo scheme #1 (native). 299th brigade", "start_type": dcs.mission.StartType.Cold },
                     { "airframe": dcs.planes.MiG_21Bis, "count": 2, "parking": [45, 44], "fuel": 1, "loadout": "Empty", "livery": "HuAF 31st AB (Turul Sqn)" },
+                    { "airframe": dcs.planes.M_2000C, "count": 2, "parking": [46, 47], "fuel": 1, "loadout": "Empty", "livery": "2003 Tigermeet" },
                 ]
             },
             {

@@ -9478,6 +9478,8 @@ MissionDb = {
 							"Needs Oar Point Su-25 Cold 2",
 							"Needs Oar Point MiG-21Bis Warm 1",
 							"Needs Oar Point MiG-21Bis Warm 2",
+							"Needs Oar Point M-2000C Warm 1",
+							"Needs Oar Point M-2000C Warm 2",
 					}
 				},
 				{
@@ -9513,6 +9515,8 @@ MissionDb = {
 							"Stoney Cross F-16C_50 Warm 2",
 							"Stoney Cross F-16C_50 Warm 3",
 							"Stoney Cross F-16C_50 Warm 4",
+							"Stoney Cross F-16C_50 Warm 5",
+							"Stoney Cross F-16C_50 Warm 6",
 							"Stoney Cross FA-18C_hornet Warm 1",
 							"Stoney Cross FA-18C_hornet Warm 2",
 							"Stoney Cross FA-18C_hornet Warm 3",
@@ -9521,8 +9525,6 @@ MissionDb = {
 							"Stoney Cross JF-17 Warm 2",
 							"Stoney Cross JF-17 Warm 3",
 							"Stoney Cross JF-17 Warm 4",
-							"Stoney Cross M-2000C Warm 1",
-							"Stoney Cross M-2000C Warm 2",
 							"Stoney Cross Mirage-F1EE Warm 1",
 							"Stoney Cross Mirage-F1EE Warm 2",
 							"Stoney Cross Su-25T Warm 1",
