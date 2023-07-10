@@ -564,20 +564,20 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                 "airbase": "Evreux",
                 "warehouse": "Evreux Airwing Warehouse#00001",
                 "squadrons": {
-                    "1GW-Evreux-1": {
-                        "airframe": dcs.planes.JF_17,
-                        "groupSize": 2,
-                        "initialInventory": 2,
-                        "livery": "PLAAF 125th AB (Fictional)",
-                        "loadouts": {
-                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT }"
-                        },
-                        "capabilities": {
-                            "AUFTRAG.Type.CAP": 50,
-                            "AUFTRAG.Type.INTERCEPT": 50,
-                            "AUFTRAG.Type.ESCORT": 50,
-                        }
-                    },
+                    # "1GW-Evreux-1": {
+                    #     "airframe": dcs.planes.JF_17,
+                    #     "groupSize": 2,
+                    #     "initialInventory": 2,
+                    #     "livery": "PLAAF 125th AB (Fictional)",
+                    #     "loadouts": {
+                    #         "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT }"
+                    #     },
+                    #     "capabilities": {
+                    #         "AUFTRAG.Type.CAP": 50,
+                    #         "AUFTRAG.Type.INTERCEPT": 50,
+                    #         "AUFTRAG.Type.ESCORT": 50,
+                    #     }
+                    # },
                     "1GW-Evreux-2": {
                         "airframe": dcs.planes.A_50,
                         "groupSize": 1,
@@ -592,26 +592,26 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                     }
                 }
             },
-            "1st Goon Wing - Conches": {
-                "airbase": "Conches",
-                "warehouse": "Conches Airwing Warehouse#00001",
-                "squadrons": {
-                    "1GW-Conches-1": {
-                        "airframe": dcs.planes.JF_17,
-                        "groupSize": 2,
-                        "initialInventory": 2,
-                        "livery": "PLAAF 125th AB (Fictional)",
-                        "loadouts": {
-                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT }"
-                        },
-                        "capabilities": {
-                            "AUFTRAG.Type.CAP": 50,
-                            "AUFTRAG.Type.INTERCEPT": 50,
-                            "AUFTRAG.Type.ESCORT": 50
-                        }
-                    },
-                }
-            },
+            # "1st Goon Wing - Conches": {
+            #     "airbase": "Conches",
+            #     "warehouse": "Conches Airwing Warehouse#00001",
+            #     "squadrons": {
+            #         "1GW-Conches-1": {
+            #             "airframe": dcs.planes.JF_17,
+            #             "groupSize": 2,
+            #             "initialInventory": 2,
+            #             "livery": "PLAAF 125th AB (Fictional)",
+            #             "loadouts": {
+            #                 "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT }"
+            #             },
+            #             "capabilities": {
+            #                 "AUFTRAG.Type.CAP": 50,
+            #                 "AUFTRAG.Type.INTERCEPT": 50,
+            #                 "AUFTRAG.Type.ESCORT": 50
+            #             }
+            #         },
+            #     }
+            # },
             "Stoney Cross": {
                 "airbase": "Stoney Cross",
                 "warehouse": "Stoney Cross Airwing Warehouse#00001",

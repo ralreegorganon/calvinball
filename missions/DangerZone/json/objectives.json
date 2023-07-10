@@ -59,8 +59,7 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [
-                "CAP-2",
-                "CAP-5"
+                "CAP-2"
             ],
             "carriers": [],
             "completeSound": "",
@@ -83,7 +82,80 @@
                     "redSurrenderThreshold": "1",
                     "x": 164467.14954854,
                     "y": 11701.179631628
+                }
+            },
+            "qrfKillOnComplete": [
+                "QRF-24"
+            ],
+            "qrfs": [
+                "QRF-24",
+                "QRF-31",
+                "QRF-32",
+                "QRF-34"
+            ],
+            "reinforcements": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED AIR DEFENSE BATTERY A 242-10",
+                "RED AIR DEFENSE BATTERY A 242-11",
+                "RED AIR DEFENSE BATTERY A RG 694-1",
+                "RED AIR DEFENSE BATTERY A RG 694-2",
+                "RED AIR DEFENSE BATTERY A RG 694-3",
+                "RED AIR DEFENSE BATTERY A RG 694-4",
+                "RED AIR DEFENSE BATTERY A RG 694-5",
+                "RED AIR DEFENSE BATTERY A RG 694-6",
+                "RED AIR DEFENSE BATTERY A RG 694-7",
+                "RED SAM SA-15 RG 686-32",
+                "RED SAM SA-15 RG 686-34",
+                "RED SAM SA-2 RG 234-13",
+                "RED SAM SA-2 RG 234-14",
+                "RED SAM SA-2 RG 234-15",
+                "RED SAM SA-2 RG 234-20",
+                "RED SAM SA-6 238-15",
+                "RED SAM SA-6 238-16",
+                "RED SAM SA-6 238-17",
+                "RED SAM SA-8 RG 240-14",
+                "RED SAM SA-8 RG 240-15",
+                "RED SAM SA-8 RG 240-16",
+                "RED SAM SA-8 RG 240-18",
+                "RED SAM SA-8 RG 240-19"
+            ],
+            "vertices": [
+                {
+                    "x": 141396.22291131,
+                    "y": -10657.829025556
                 },
+                {
+                    "x": 139295.74999066,
+                    "y": 47451.829920033
+                },
+                {
+                    "x": 176381.86467438,
+                    "y": 57929.445984071
+                },
+                {
+                    "x": 179920.9454856,
+                    "y": -23794.37360615
+                }
+            ],
+            "x": 159248.69576549,
+            "y": 17732.2683181
+        },
+        "OBJ-11": {
+            "airbases": [],
+            "borderZones": [],
+            "capZones": [
+                "CAP-5"
+            ],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Battle of Britain Pt. 3: Britain Harder",
+            "nodes": {
                 "NODE-36": {
                     "blueCaptureThreshold": "0",
                     "label": "West Malling - East",
@@ -102,18 +174,13 @@
                 }
             },
             "qrfKillOnComplete": [
-                "QRF-24",
                 "QRF-36"
             ],
             "qrfs": [
-                "QRF-24",
-                "QRF-36",
                 "QRF-23",
                 "QRF-35",
                 "QRF-30",
-                "QRF-31",
-                "QRF-32",
-                "QRF-34"
+                "QRF-36"
             ],
             "reinforcements": [],
             "ship_groups": [],
@@ -121,64 +188,41 @@
             "strand": "STRAND-1",
             "tasks": [],
             "vehicle_groups": [
-                "RED AIR DEFENSE BATTERY A 242-10",
-                "RED AIR DEFENSE BATTERY A 242-11",
-                "RED AIR DEFENSE BATTERY A RG 694-1",
                 "RED AIR DEFENSE BATTERY A RG 694-10",
                 "RED AIR DEFENSE BATTERY A RG 694-11",
-                "RED AIR DEFENSE BATTERY A RG 694-2",
-                "RED AIR DEFENSE BATTERY A RG 694-3",
-                "RED AIR DEFENSE BATTERY A RG 694-4",
-                "RED AIR DEFENSE BATTERY A RG 694-5",
-                "RED AIR DEFENSE BATTERY A RG 694-6",
-                "RED AIR DEFENSE BATTERY A RG 694-7",
                 "RED AIR DEFENSE BATTERY A RG 694-8",
                 "RED AIR DEFENSE BATTERY A RG 694-9",
                 "RED EWR 2-11",
-                "RED SAM SA-15 RG 686-32",
-                "RED SAM SA-15 RG 686-34",
                 "RED SAM SA-15 RG 686-36",
                 "RED SAM SA-15 RG 686-37",
-                "RED SAM SA-2 RG 234-13",
-                "RED SAM SA-2 RG 234-14",
-                "RED SAM SA-2 RG 234-15",
                 "RED SAM SA-2 RG 234-16",
                 "RED SAM SA-2 RG 234-17",
                 "RED SAM SA-2 RG 234-18",
                 "RED SAM SA-2 RG 234-19",
-                "RED SAM SA-2 RG 234-20",
-                "RED SAM SA-6 238-15",
-                "RED SAM SA-6 238-16",
-                "RED SAM SA-6 238-17",
-                "RED SAM SA-8 RG 240-14",
-                "RED SAM SA-8 RG 240-15",
-                "RED SAM SA-8 RG 240-16",
                 "RED SAM SA-8 RG 240-17",
-                "RED SAM SA-8 RG 240-18",
-                "RED SAM SA-8 RG 240-19",
                 "RED SAM SA-8 RG 240-20",
                 "RED SAM SA-8 RG 240-21"
             ],
             "vertices": [
                 {
-                    "x": 141396.22291131,
-                    "y": -10657.829025556
+                    "x": 180322.06753349,
+                    "y": -23909.776197307
                 },
                 {
-                    "x": 146831.91218803,
-                    "y": 51534.927504183
+                    "x": 176951.27304895,
+                    "y": 57929.445984071
                 },
                 {
-                    "x": 211461.19498124,
-                    "y": 56072.159570678
+                    "x": 207521.05025915,
+                    "y": 63310.166317674
                 },
                 {
-                    "x": 190670.39323794,
-                    "y": -26329.556550643
+                    "x": 203196.16278045,
+                    "y": -25823.432183573
                 }
             ],
-            "x": 172589.93082963,
-            "y": 17654.925374666
+            "x": 191997.63840551,
+            "y": 17876.600980216
         },
         "OBJ-12": {
             "airbases": [],
@@ -1191,6 +1235,7 @@
             "OBJ-8",
             "OBJ-9",
             "OBJ-10",
+            "OBJ-11",
             "OBJ-12",
             "OBJ-13",
             "OBJ-14"
