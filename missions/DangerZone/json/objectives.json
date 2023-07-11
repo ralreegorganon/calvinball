@@ -231,7 +231,9 @@
             "carriers": [],
             "completeSound": "",
             "component": "objective",
-            "farps": [],
+            "farps": [
+                "FARP-3"
+            ],
             "label": "Perfidious",
             "nodes": {
                 "NODE-38": {
@@ -267,66 +269,66 @@
             "strand": "STRAND-1",
             "tasks": [],
             "vehicle_groups": [
+                "DW RED GROUND 1-17",
+                "DW RED GROUND 1-18",
+                "DW RED GROUND 1-20",
+                "DW RED GROUND 1-21",
+                "DW RED GROUND 1-8",
                 "FREE SAM DW",
                 "FREE SAM DW-1",
                 "FREE SAM DW-2",
                 "FREE SAM DW-3",
                 "FREE SAM DW-4",
                 "FREE SAM DW-5",
-                "RED SAM SA-15 DW",
-                "RED SAM SA-15 DW-1",
-                "RED SAM SA-15 DW-2",
-                "RED SAM SA-15 DW-3",
-                "RED SAM SA-15 DW-4",
-                "RED SAM SA-15 DW-5",
+                "FREE SAM DW-6",
+                "FREE SAM DW-7",
+                "FREE SAM DW-8",
+                "RED AIR DEFENSE BATTERY A DW",
+                "RED EWR 2-10",
+                "RED EWR 2-12",
+                "RED EWR 2-13",
+                "RED EWR 2-14",
+                "RED GROUND 8-11 DW",
                 "RED SAM GROUND DW",
                 "RED SAM GROUND DW-1",
                 "RED SAM GROUND DW-2",
                 "RED SAM GROUND DW-3",
                 "RED SAM GROUND DW-4",
                 "RED SAM GROUND DW-5",
-                "RED GROUND 8-11 DW",
-                "RED SAM SA-13 DW",
-                "RED AIR DEFENSE BATTERY A DW",
-                "FREE SAM DW-6",
-                "RED SAM SA-15 DW-6",
                 "RED SAM GROUND DW-6",
-                "RED SAM Rapier 2",
+                "RED SAM GROUND DW-7",
                 "RED SAM Rapier",
-                "FREE SAM DW-8",
-                "RED EWR 2-10",
-                "RED EWR 2-12",
-                "RED EWR 2-13",
-                "RED EWR 2-14",
-                "DW RED GROUND 1-8",
-                "DW RED GROUND 1-17",
-                "DW RED GROUND 1-18",
-                "DW RED GROUND 1-20",
-                "DW RED GROUND 1-21",
-                "FREE SAM DW-7",
-                "RED SAM SA-15 DW-7",
-                "RED SAM GROUND DW-7"
+                "RED SAM Rapier 2",
+                "RED SAM SA-13 DW",
+                "RED SAM SA-15 DW",
+                "RED SAM SA-15 DW-1",
+                "RED SAM SA-15 DW-2",
+                "RED SAM SA-15 DW-3",
+                "RED SAM SA-15 DW-4",
+                "RED SAM SA-15 DW-5",
+                "RED SAM SA-15 DW-6",
+                "RED SAM SA-15 DW-7"
             ],
             "vertices": [
                 {
-                    "x": 204479.14487442,
-                    "y": -20823.955074366
+                    "x": 205161.99597192,
+                    "y": -17367.923472746
                 },
                 {
-                    "x": 206041.71363368,
-                    "y": 15614.948012773
+                    "x": 206343.50883739,
+                    "y": 14617.04610794
                 },
                 {
-                    "x": 236179.34760824,
-                    "y": 34942.343713855
+                    "x": 228698.88827888,
+                    "y": 22780.746617649
                 },
                 {
-                    "x": 236116.11454277,
-                    "y": -24208.593731307
+                    "x": 227466.8126888,
+                    "y": -19619.647827022
                 }
             ],
-            "x": 220704.08016478,
-            "y": 1381.1857302388
+            "x": 216917.80144425,
+            "y": 102.55535645531
         },
         "OBJ-13": {
             "airbases": [],

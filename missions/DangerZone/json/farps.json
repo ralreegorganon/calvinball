@@ -62,5 +62,37 @@
         ],
         "x": 134151.8137747,
         "y": -133818.48342646
+    },
+    "FARP-3": {
+        "clearScenery": "all",
+        "component": "farp",
+        "label": "FARP Timmy",
+        "radius": 137.16,
+        "ship_groups": [],
+        "static_groups": [
+            "Static FARP Tent-65",
+            "Static FARP Tent-66",
+            "Static Invisible FARP-9",
+            "Static Invisible FARP-10",
+            "Static Invisible FARP-11",
+            "Static Invisible FARP-12",
+            "Static Watch tower armed-2",
+            "Static Windsock-3",
+            "MASH Tent 1-4",
+            "Static Container 20ft-7",
+            "Static FARP Tent-67",
+            "Static Container 20ft-8",
+            "Static Container 20ft-9",
+            "Static FARP Tent-68",
+            "MASH Tent 1-5"
+        ],
+        "vehicle_groups": [
+            "FARP MASH 1-14",
+            "FARP Support 1-7",
+            "FARP Support 1-8",
+            "FARP Support 1-9"
+        ],
+        "x": 225224.03426089,
+        "y": 26946.10597494
     }
 }
