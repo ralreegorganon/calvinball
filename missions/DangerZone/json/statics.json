@@ -5482,6 +5482,50 @@
             "x": 163240.59275084,
             "y": 83577.752116592
         },
+        "INDUSTRYTARGET-496": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-496",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221683.24580289,
+            "y": 29790.114793482
+        },
+        "INDUSTRYTARGET-497": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-497",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221701.06637597,
+            "y": 29808.54986908
+        },
+        "INDUSTRYTARGET-498": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-498",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221719.70628574,
+            "y": 29826.780110505
+        },
+        "INDUSTRYTARGET-499": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-499",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221659.68987296,
+            "y": 29813.670723413
+        },
         "INDUSTRYTARGET-5": {
             "canCargo": false,
             "category": "Warehouses",
@@ -5504,6 +5548,116 @@
             "x": 143033.67339361,
             "y": -61424.727326526
         },
+        "INDUSTRYTARGET-500": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-500",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221676.48627517,
+            "y": 29830.876793971
+        },
+        "INDUSTRYTARGET-501": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-501",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221693.48751156,
+            "y": 29849.721537916
+        },
+        "INDUSTRYTARGET-502": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-502",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221669.31707911,
+            "y": 29873.482302021
+        },
+        "INDUSTRYTARGET-503": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-503",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221651.49650603,
+            "y": 29856.276231462
+        },
+        "INDUSTRYTARGET-504": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-504",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221633.2662646,
+            "y": 29837.021819171
+        },
+        "INDUSTRYTARGET-505": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-505",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221219.75210021,
+            "y": 30075.617759267
+        },
+        "INDUSTRYTARGET-506": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-506",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221206.50755568,
+            "y": 30097.187446067
+        },
+        "INDUSTRYTARGET-507": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-507",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221191.87548745,
+            "y": 30118.757132866
+        },
+        "INDUSTRYTARGET-508": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-508",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221163.74659764,
+            "y": 30098.701108298
+        },
+        "INDUSTRYTARGET-509": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-509",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221177.11728069,
+            "y": 30078.392806692
+        },
         "INDUSTRYTARGET-51": {
             "canCargo": false,
             "category": "Fortifications",
@@ -5514,6 +5668,116 @@
             "type": "Tech combine",
             "x": 143280.81859007,
             "y": -61976.506088867
+        },
+        "INDUSTRYTARGET-510": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-510",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221135.3654308,
+            "y": 30080.032607443
+        },
+        "INDUSTRYTARGET-511": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-511",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221197.24195644,
+            "y": 29668.298093297
+        },
+        "INDUSTRYTARGET-512": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-512",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 225912.28008925,
+            "y": -30769.881523797
+        },
+        "INDUSTRYTARGET-513": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-513",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 225901.77839133,
+            "y": -30738.026373451
+        },
+        "INDUSTRYTARGET-514": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-514",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 225893.0269764,
+            "y": -30703.720826924
+        },
+        "INDUSTRYTARGET-515": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-515",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 225887.77612745,
+            "y": -30776.182542547
+        },
+        "INDUSTRYTARGET-516": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-516",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 225877.62448613,
+            "y": -30744.327392201
+        },
+        "INDUSTRYTARGET-517": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-517",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 225869.22312779,
+            "y": -30709.321732479
+        },
+        "INDUSTRYTARGET-518": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-518",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 225845.06922259,
+            "y": -30716.322864424
+        },
+        "INDUSTRYTARGET-519": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-519",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 225854.52075071,
+            "y": -30750.278354353
         },
         "INDUSTRYTARGET-52": {
             "canCargo": false,
@@ -5526,6 +5790,39 @@
             "x": 143325.99606853,
             "y": -61833.993148524
         },
+        "INDUSTRYTARGET-520": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-520",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 225862.92210904,
+            "y": -30783.183674491
+        },
+        "INDUSTRYTARGET-521": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-521",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 225959.72468233,
+            "y": -30758.925750656
+        },
+        "INDUSTRYTARGET-522": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-522",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 225923.01963042,
+            "y": -30681.543831514
+        },
         "INDUSTRYTARGET-53": {
             "canCargo": false,
             "category": "Fortifications",
@@ -5536,6 +5833,28 @@
             "type": "Boiler-house A",
             "x": 143188.79926583,
             "y": -61563.804175978
+        },
+        "INDUSTRYTARGET-535": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-535",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221184.76133822,
+            "y": 29690.837717244
+        },
+        "INDUSTRYTARGET-536": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "INDUSTRYTARGET-536",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 221171.72188635,
+            "y": 29712.073396003
         },
         "INDUSTRYTARGET-54": {
             "canCargo": false,
