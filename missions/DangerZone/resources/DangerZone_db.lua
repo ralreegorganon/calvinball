@@ -3762,11 +3762,435 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
-				{ name = "NODE-38", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-39", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-40", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
+				{
+					name = "TASK-1",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+						{ name = "DW RED GROUND 1-21" },
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "TASK1LONDON#00001",
+							template = {
+								name = "TASK1LONDON",
+								type = "Cow",
+								x = 225620.06735337,
+								y = 7355.8513079528,
+								heading = 0.0,
+								category = "Animal",
+								canCargo = false,
+								shape_name = "Cow",
+								rate = 2,
+								dead = false
+							}
+						},
+					}
+				},
+				{
+					name = "TASK-2",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "TASK2LONDON#00001",
+							template = {
+								name = "TASK2LONDON",
+								type = "Cow",
+								x = 224616.26532975,
+								y = 4054.4868835968,
+								heading = 0.0,
+								category = "Animal",
+								canCargo = false,
+								shape_name = "Cow",
+								rate = 2,
+								dead = false
+							}
+						},
+					}
+				},
+				{
+					name = "TASK-3",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "TASK3LONDON#00001",
+							template = {
+								name = "TASK3LONDON",
+								type = "Cow",
+								x = 227555.81364032,
+								y = 15145.926904439,
+								heading = 0.0,
+								category = "Animal",
+								canCargo = false,
+								shape_name = "Cow",
+								rate = 2,
+								dead = false
+							}
+						},
+					}
+				},
+				{
+					name = "TASK-4",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "TASK4LONDON#00001",
+							template = {
+								name = "TASK4LONDON",
+								type = "Cow",
+								x = 225003.54703797,
+								y = 7631.7729048306,
+								heading = 0.0,
+								category = "Animal",
+								canCargo = false,
+								shape_name = "Cow",
+								rate = 2,
+								dead = false
+							}
+						},
+					}
+				},
+				{
+					name = "TASK-5",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "TASK5LONDON#00001",
+							template = {
+								name = "TASK5LONDON",
+								type = "Cow",
+								x = 225546.19906586,
+								y = 3771.0998123975,
+								heading = 0.0,
+								category = "Animal",
+								canCargo = false,
+								shape_name = "Cow",
+								rate = 2,
+								dead = false
+							}
+						},
+					}
+				},
+				{
+					name = "TASK-6",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "TASK6LONDON#00001",
+							template = {
+								name = "TASK6LONDON",
+								type = "Cow",
+								x = 210092.59206758,
+								y = -442.02571562863,
+								heading = 0.0,
+								category = "Animal",
+								canCargo = false,
+								shape_name = "Cow",
+								rate = 2,
+								dead = false
+							}
+						},
+					}
+				},
+				{
+					name = "TASK-7",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "TASK7LONDON#00001",
+							template = {
+								name = "TASK7LONDON",
+								type = "Cow",
+								x = 225030.30024232,
+								y = 8355.2040510253,
+								heading = 0.0,
+								category = "Animal",
+								canCargo = false,
+								shape_name = "Cow",
+								rate = 2,
+								dead = false
+							}
+						},
+					}
+				},
+				{
+					name = "TASK-8",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "TASK8LONDON#00001",
+							template = {
+								name = "TASK8LONDON",
+								type = "Cow",
+								x = 225330.42569613,
+								y = 7440.2133556848,
+								heading = 0.0,
+								category = "Animal",
+								canCargo = false,
+								shape_name = "Cow",
+								rate = 2,
+								dead = false
+							}
+						},
+					}
+				},
+				{
+					name = "TASK-9",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "TASK9LONDON#00001",
+							template = {
+								name = "TASK9LONDON",
+								type = "Cow",
+								x = 222823.49705492,
+								y = 6401.6828937198,
+								heading = 0.0,
+								category = "Animal",
+								canCargo = false,
+								shape_name = "Cow",
+								rate = 2,
+								dead = false
+							}
+						},
+					}
+				},
+				{
+					name = "TASK-10",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "TASK10LONDON#00001",
+							template = {
+								name = "TASK10LONDON",
+								type = "Cow",
+								x = 220789.12339084,
+								y = 10054.242620174,
+								heading = 0.0,
+								category = "Animal",
+								canCargo = false,
+								shape_name = "Cow",
+								rate = 2,
+								dead = false
+							}
+						},
+						{
+							name = "BETTERBOOM1#00001",
+							template = {
+								name = "BETTERBOOM1",
+								type = "Tank",
+								x = 220806.80357552,
+								y = 10042.028778971,
+								heading = 0.0,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "BETTERBOOM1-1#00001",
+							template = {
+								name = "BETTERBOOM1-1",
+								type = "Tank",
+								x = 220798.32734829,
+								y = 10073.757359291,
+								heading = 0.0,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "BETTERBOOM1-2#00001",
+							template = {
+								name = "BETTERBOOM1-2",
+								type = "Tank",
+								x = 220782.63487355,
+								y = 10034.812531462,
+								heading = 0.0,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "BETTERBOOM1-3#00001",
+							template = {
+								name = "BETTERBOOM1-3",
+								type = "Tank",
+								x = 220774.61682076,
+								y = 10069.404702063,
+								heading = 0.0,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+					}
+				},
+				{
+					name = "TASK-11",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "TASK11LONDON#00001",
+							template = {
+								name = "TASK11LONDON",
+								type = "Cow",
+								x = 223854.21367337,
+								y = 2718.8523251825,
+								heading = 0.0,
+								category = "Animal",
+								canCargo = false,
+								shape_name = "Cow",
+								rate = 2,
+								dead = false
+							}
+						},
+					}
+				},
+				{
+					name = "TASK-12",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "TASK12LONDON#00001",
+							template = {
+								name = "TASK12LONDON",
+								type = "Cow",
+								x = 224606.11793917,
+								y = 2788.5663223818,
+								heading = 0.0,
+								category = "Animal",
+								canCargo = false,
+								shape_name = "Cow",
+								rate = 2,
+								dead = false
+							}
+						},
+					}
+				},
+				{
+					name = "TASK-13",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "TASK13LONDON#00001",
+							template = {
+								name = "TASK13LONDON",
+								type = "Cow",
+								x = 213240.20281244,
+								y = 807.93503901944,
+								heading = 4.9043751981041,
+								category = "Animal",
+								canCargo = false,
+								shape_name = "Cow",
+								rate = 2,
+								dead = false
+							}
+						},
+					}
+				},
+				{
+					name = "TASK-14",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "TASK14LONDON#00001",
+							template = {
+								name = "TASK14LONDON",
+								type = "Container brown",
+								x = 210918.83380684,
+								y = 4675.1417456404,
+								heading = 2.4958208303519,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "konteiner_brown",
+								rate = 100,
+								dead = false
+							}
+						},
+					}
+				},
 			},
 			farps = {
 				{
@@ -3781,32 +4205,17 @@ MissionDb = {
 					},
 					staticGroups = {
 						{
-							name = "Static FARP Tent-65#00001",
+							name = "Static Windsock-3#00001",
 							template = {
-								name = "Static FARP Tent-65",
-								type = "FARP Tent",
-								x = 225205.00093437,
-								y = 26932.398341702,
-								heading = 1.5707963267949,
+								name = "Static Windsock-3",
+								type = "Windsock",
+								x = 225222.37907536,
+								y = 26948.142695278,
+								heading = 0.0,
 								category = "Fortifications",
 								canCargo = false,
-								shape_name = "PalatkaB",
-								rate = 50,
-								dead = false
-							}
-						},
-						{
-							name = "Static FARP Tent-66#00001",
-							template = {
-								name = "Static FARP Tent-66",
-								type = "FARP Tent",
-								x = 225184.35156109,
-								y = 26932.387242682,
-								heading = 1.5707963267949,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "PalatkaB",
-								rate = 50,
+								shape_name = "H-Windsock_RW",
+								rate = 3,
 								dead = false
 							}
 						},
@@ -3815,8 +4224,8 @@ MissionDb = {
 							template = {
 								name = "Static Invisible FARP-9",
 								type = "Invisible FARP",
-								x = 225223.07986832,
-								y = 27044.871287692,
+								x = 225221.29710697,
+								y = 27047.450196698,
 								heading = 0.0,
 								category = "Heliports",
 								canCargo = false,
@@ -3830,13 +4239,28 @@ MissionDb = {
 							template = {
 								name = "Static Invisible FARP-10",
 								type = "Invisible FARP",
-								x = 225322.90662822,
-								y = 26951.813949972,
+								x = 225321.12386687,
+								y = 26954.392858978,
 								heading = 0.0,
 								category = "Heliports",
 								canCargo = false,
 								shape_name = "invisiblefarp",
 								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-7#00001",
+							template = {
+								name = "Static Container 20ft-7",
+								type = "container_20ft",
+								x = 225244.19561582,
+								y = 26926.588340748,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
 								dead = false
 							}
 						},
@@ -3845,13 +4269,28 @@ MissionDb = {
 							template = {
 								name = "Static Invisible FARP-11",
 								type = "Invisible FARP",
-								x = 225225.12256476,
-								y = 26855.265425212,
+								x = 225223.33980341,
+								y = 26857.844334218,
 								heading = 0.0,
 								category = "Heliports",
 								canCargo = false,
 								shape_name = "invisiblefarp",
 								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-8#00001",
+							template = {
+								name = "Static Container 20ft-8",
+								type = "container_20ft",
+								x = 225237.22467373,
+								y = 26923.021812238,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
 								dead = false
 							}
 						},
@@ -3860,8 +4299,8 @@ MissionDb = {
 							template = {
 								name = "Static Invisible FARP-12",
 								type = "Invisible FARP",
-								x = 225123.10236858,
-								y = 26945.106739842,
+								x = 225121.31960723,
+								y = 26947.685648848,
 								heading = 0.0,
 								category = "Heliports",
 								canCargo = false,
@@ -3871,42 +4310,12 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Watch tower armed-2#00001",
-							template = {
-								name = "Static Watch tower armed-2",
-								type = "house2arm",
-								x = 225235.46785622,
-								y = 26954.781509712,
-								heading = 3.6302848441482,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "",
-								rate = 10,
-								dead = false
-							}
-						},
-						{
-							name = "Static Windsock-3#00001",
-							template = {
-								name = "Static Windsock-3",
-								type = "Windsock",
-								x = 225224.16183671,
-								y = 26945.563786272,
-								heading = 0.0,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "H-Windsock_RW",
-								rate = 3,
-								dead = false
-							}
-						},
-						{
 							name = "MASH Tent 1-4#00001",
 							template = {
 								name = "MASH Tent 1-4",
 								type = "FARP Tent",
-								x = 225239.16955001,
-								y = 26930.169799172,
+								x = 225237.38678866,
+								y = 26932.748708178,
 								heading = 3.6302848441482,
 								category = "Fortifications",
 								canCargo = false,
@@ -3916,12 +4325,57 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Container 20ft-7#00001",
+							name = "Static FARP Tent-65#00001",
 							template = {
-								name = "Static Container 20ft-7",
+								name = "Static FARP Tent-65",
+								type = "FARP Tent",
+								x = 225211.15808724,
+								y = 26980.441379918,
+								heading = 5.4803338512622,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Watch tower armed-2#00001",
+							template = {
+								name = "Static Watch tower armed-2",
+								type = "house2arm",
+								x = 225233.68509487,
+								y = 26957.360418718,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "",
+								rate = 10,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-66#00001",
+							template = {
+								name = "Static FARP Tent-66",
+								type = "FARP Tent",
+								x = 225203.21817302,
+								y = 26934.977250708,
+								heading = 1.5707963267949,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-9#00001",
+							template = {
+								name = "Static Container 20ft-9",
 								type = "container_20ft",
-								x = 225238.68320521,
-								y = 26938.275545782,
+								x = 225236.90044386,
+								y = 26940.854454788,
 								heading = 5.0265482457437,
 								category = "Fortifications",
 								canCargo = false,
@@ -3935,8 +4389,8 @@ MissionDb = {
 							template = {
 								name = "Static FARP Tent-67",
 								type = "FARP Tent",
-								x = 225194.48220682,
-								y = 26932.293440412,
+								x = 225192.69944547,
+								y = 26934.872349418,
 								heading = 1.5707963267949,
 								category = "Fortifications",
 								canCargo = false,
@@ -3946,43 +4400,13 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Container 20ft-8#00001",
-							template = {
-								name = "Static Container 20ft-8",
-								type = "container_20ft",
-								x = 225239.00743508,
-								y = 26920.442903232,
-								heading = 5.0265482457437,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "container_20ft",
-								rate = 1,
-								dead = false
-							}
-						},
-						{
-							name = "Static Container 20ft-9#00001",
-							template = {
-								name = "Static Container 20ft-9",
-								type = "container_20ft",
-								x = 225245.97837717,
-								y = 26924.009431742,
-								heading = 5.0265482457437,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "container_20ft",
-								rate = 1,
-								dead = false
-							}
-						},
-						{
 							name = "Static FARP Tent-68#00001",
 							template = {
 								name = "Static FARP Tent-68",
 								type = "FARP Tent",
-								x = 225212.94084859,
-								y = 26977.862470912,
-								heading = 5.4803338512622,
+								x = 225182.56879974,
+								y = 26934.966151688,
+								heading = 1.5707963267949,
 								category = "Fortifications",
 								canCargo = false,
 								shape_name = "PalatkaB",
@@ -3995,8 +4419,8 @@ MissionDb = {
 							template = {
 								name = "MASH Tent 1-5",
 								type = "FARP Tent",
-								x = 225234.23441147,
-								y = 26984.261770162,
+								x = 225232.45165012,
+								y = 26986.840679168,
 								heading = 5.4803338512622,
 								category = "Fortifications",
 								canCargo = false,
@@ -4041,37 +4465,41 @@ MissionDb = {
 			vehicleGroups = {
 				{ name = "DW RED GROUND 1-17" },
 				{ name = "DW RED GROUND 1-18" },
-				{ name = "DW RED GROUND 1-20" },
-				{ name = "DW RED GROUND 1-21" },
 				{ name = "DW RED GROUND 1-8" },
 				{ name = "FREE SAM DW" },
 				{ name = "FREE SAM DW-1" },
 				{ name = "FREE SAM DW-2" },
-				{ name = "FREE SAM DW-3" },
 				{ name = "FREE SAM DW-4" },
-				{ name = "FREE SAM DW-5" },
 				{ name = "FREE SAM DW-6" },
 				{ name = "FREE SAM DW-7" },
-				{ name = "FREE SAM DW-8" },
-				{ name = "RED AIR DEFENSE BATTERY A DW" },
-				{ name = "RED EWR 2-10" },
-				{ name = "RED EWR 2-12" },
+				{ name = "RED AIR DEFENSE BATTERY B DW" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-1" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-10" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-11" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-12" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-13" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-14" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-15" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-16" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-17" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-18" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-19" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-2" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-3" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-4" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-5" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-6" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-7" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-8" },
+				{ name = "RED AIR DEFENSE BATTERY B DW-9" },
 				{ name = "RED EWR 2-13" },
 				{ name = "RED EWR 2-14" },
-				{ name = "RED GROUND 8-11 DW" },
 				{ name = "RED SAM GROUND DW" },
 				{ name = "RED SAM GROUND DW-1" },
 				{ name = "RED SAM GROUND DW-2" },
 				{ name = "RED SAM GROUND DW-3" },
-				{ name = "RED SAM GROUND DW-4" },
-				{ name = "RED SAM GROUND DW-5" },
 				{ name = "RED SAM GROUND DW-6" },
 				{ name = "RED SAM GROUND DW-7" },
-				{ name = "RED SAM Rapier" },
-				{ name = "RED SAM Rapier 2" },
-				{ name = "RED SAM SA-13 DW" },
-				{ name = "RED SAM SA-15 DW" },
-				{ name = "RED SAM SA-15 DW-1" },
 				{ name = "RED SAM SA-15 DW-2" },
 				{ name = "RED SAM SA-15 DW-3" },
 				{ name = "RED SAM SA-15 DW-4" },
@@ -4082,6 +4510,66 @@ MissionDb = {
 			shipGroups = {
 			},
 			staticGroups = {
+				{
+					name = "BETTERBOOM1-4#00001",
+					template = {
+						name = "BETTERBOOM1-4",
+						type = "Tank",
+						x = 222842.43816386,
+						y = 6362.9938409277,
+						heading = 0.0,
+						category = "Warehouses",
+						canCargo = false,
+						shape_name = "bak",
+						rate = 100,
+						dead = false
+					}
+				},
+				{
+					name = "BETTERBOOM1-5#00001",
+					template = {
+						name = "BETTERBOOM1-5",
+						type = "Tank",
+						x = 222837.44675273,
+						y = 6435.7373074933,
+						heading = 0.0,
+						category = "Warehouses",
+						canCargo = false,
+						shape_name = "bak",
+						rate = 100,
+						dead = false
+					}
+				},
+				{
+					name = "BETTERBOOM1-6#00001",
+					template = {
+						name = "BETTERBOOM1-6",
+						type = "Tank",
+						x = 222809.73874641,
+						y = 6439.5055963527,
+						heading = 0.0,
+						category = "Warehouses",
+						canCargo = false,
+						shape_name = "bak",
+						rate = 100,
+						dead = false
+					}
+				},
+				{
+					name = "Static Mi-8MTV2-1#00001",
+					template = {
+						name = "Static Mi-8MTV2-1",
+						type = "Mi-8MT",
+						x = 225573.30643774,
+						y = 7364.8514852012,
+						heading = 5.3407075111026,
+						category = "Helicopters",
+						canCargo = false,
+						shape_name = "",
+						rate = 30,
+						dead = false
+					}
+				},
 			}
 		},
 		{

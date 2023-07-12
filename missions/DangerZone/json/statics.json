@@ -87,8 +87,8 @@
             "rate": 50,
             "shape_name": "PalatkaB",
             "type": "FARP Tent",
-            "x": 225239.16955001,
-            "y": 26930.169799172
+            "x": 225237.38678866,
+            "y": 26932.748708178
         },
         "MASH Tent 1-5": {
             "canCargo": false,
@@ -98,8 +98,8 @@
             "rate": 50,
             "shape_name": "PalatkaB",
             "type": "FARP Tent",
-            "x": 225234.23441147,
-            "y": 26984.261770162
+            "x": 225232.45165012,
+            "y": 26986.840679168
         },
         "Needs Oar Point Goon Airwing Warehouse": {
             "canCargo": false,
@@ -186,8 +186,8 @@
             "rate": 1,
             "shape_name": "container_20ft",
             "type": "container_20ft",
-            "x": 225238.68320521,
-            "y": 26938.275545782
+            "x": 225244.19561582,
+            "y": 26926.588340748
         },
         "Static Container 20ft-8": {
             "canCargo": false,
@@ -197,8 +197,8 @@
             "rate": 1,
             "shape_name": "container_20ft",
             "type": "container_20ft",
-            "x": 225239.00743508,
-            "y": 26920.442903232
+            "x": 225237.22467373,
+            "y": 26923.021812238
         },
         "Static Container 20ft-9": {
             "canCargo": false,
@@ -208,8 +208,8 @@
             "rate": 1,
             "shape_name": "container_20ft",
             "type": "container_20ft",
-            "x": 225245.97837717,
-            "y": 26924.009431742
+            "x": 225236.90044386,
+            "y": 26940.854454788
         },
         "Static FARP Tent-13": {
             "canCargo": false,
@@ -280,13 +280,13 @@
         "Static FARP Tent-65": {
             "canCargo": false,
             "category": "Fortifications",
-            "heading": 1.5707963267949,
+            "heading": 5.4803338512622,
             "name": "Static FARP Tent-65",
             "rate": 50,
             "shape_name": "PalatkaB",
             "type": "FARP Tent",
-            "x": 225205.00093437,
-            "y": 26932.398341702
+            "x": 225211.15808724,
+            "y": 26980.441379918
         },
         "Static FARP Tent-66": {
             "canCargo": false,
@@ -296,8 +296,8 @@
             "rate": 50,
             "shape_name": "PalatkaB",
             "type": "FARP Tent",
-            "x": 225184.35156109,
-            "y": 26932.387242682
+            "x": 225203.21817302,
+            "y": 26934.977250708
         },
         "Static FARP Tent-67": {
             "canCargo": false,
@@ -307,19 +307,19 @@
             "rate": 50,
             "shape_name": "PalatkaB",
             "type": "FARP Tent",
-            "x": 225194.48220682,
-            "y": 26932.293440412
+            "x": 225192.69944547,
+            "y": 26934.872349418
         },
         "Static FARP Tent-68": {
             "canCargo": false,
             "category": "Fortifications",
-            "heading": 5.4803338512622,
+            "heading": 1.5707963267949,
             "name": "Static FARP Tent-68",
             "rate": 50,
             "shape_name": "PalatkaB",
             "type": "FARP Tent",
-            "x": 225212.94084859,
-            "y": 26977.862470912
+            "x": 225182.56879974,
+            "y": 26934.966151688
         },
         "Static FARP Tent-7": {
             "canCargo": false,
@@ -362,8 +362,8 @@
             "rate": 100,
             "shape_name": "invisiblefarp",
             "type": "Invisible FARP",
-            "x": 225322.90662822,
-            "y": 26951.813949972
+            "x": 225321.12386687,
+            "y": 26954.392858978
         },
         "Static Invisible FARP-11": {
             "canCargo": false,
@@ -373,8 +373,8 @@
             "rate": 100,
             "shape_name": "invisiblefarp",
             "type": "Invisible FARP",
-            "x": 225225.12256476,
-            "y": 26855.265425212
+            "x": 225223.33980341,
+            "y": 26857.844334218
         },
         "Static Invisible FARP-12": {
             "canCargo": false,
@@ -384,8 +384,8 @@
             "rate": 100,
             "shape_name": "invisiblefarp",
             "type": "Invisible FARP",
-            "x": 225123.10236858,
-            "y": 26945.106739842
+            "x": 225121.31960723,
+            "y": 26947.685648848
         },
         "Static Invisible FARP-2": {
             "canCargo": false,
@@ -472,8 +472,8 @@
             "rate": 100,
             "shape_name": "invisiblefarp",
             "type": "Invisible FARP",
-            "x": 225223.07986832,
-            "y": 27044.871287692
+            "x": 225221.29710697,
+            "y": 27047.450196698
         },
         "Static Watch tower armed-1": {
             "canCargo": false,
@@ -492,8 +492,8 @@
             "name": "Static Watch tower armed-2",
             "rate": 10,
             "type": "house2arm",
-            "x": 225235.46785622,
-            "y": 26954.781509712
+            "x": 225233.68509487,
+            "y": 26957.360418718
         },
         "Static Watch tower armed-3": {
             "canCargo": false,
@@ -535,8 +535,8 @@
             "rate": 3,
             "shape_name": "H-Windsock_RW",
             "type": "Windsock",
-            "x": 225224.16183671,
-            "y": 26945.563786272
+            "x": 225222.37907536,
+            "y": 26948.142695278
         }
     },
     "neutrals": {},
@@ -575,6 +575,83 @@
             "type": "FARP",
             "x": 136246.57713557,
             "y": -172820.38632655
+        },
+        "BETTERBOOM1": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "BETTERBOOM1",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 220806.80357552,
+            "y": 10042.028778971
+        },
+        "BETTERBOOM1-1": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "BETTERBOOM1-1",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 220798.32734829,
+            "y": 10073.757359291
+        },
+        "BETTERBOOM1-2": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "BETTERBOOM1-2",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 220782.63487355,
+            "y": 10034.812531462
+        },
+        "BETTERBOOM1-3": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "BETTERBOOM1-3",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 220774.61682076,
+            "y": 10069.404702063
+        },
+        "BETTERBOOM1-4": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "BETTERBOOM1-4",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 222842.43816386,
+            "y": 6362.9938409277
+        },
+        "BETTERBOOM1-5": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "BETTERBOOM1-5",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 222837.44675273,
+            "y": 6435.7373074933
+        },
+        "BETTERBOOM1-6": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.0,
+            "name": "BETTERBOOM1-6",
+            "rate": 100,
+            "shape_name": "bak",
+            "type": "Tank",
+            "x": 222809.73874641,
+            "y": 6439.5055963527
         },
         "Chailey Airwing Warehouse": {
             "canCargo": false,
@@ -8324,6 +8401,17 @@
             "x": 179176.80732702,
             "y": 62168.476847855
         },
+        "Static Mi-8MTV2-1": {
+            "canCargo": false,
+            "category": "Helicopters",
+            "heading": 5.3407075111026,
+            "livery_id": "Russia_VVS_Standard",
+            "name": "Static Mi-8MTV2-1",
+            "rate": "30",
+            "type": "Mi-8MT",
+            "x": 225573.30643774,
+            "y": 7364.8514852012
+        },
         "Static Military staff-1": {
             "canCargo": false,
             "category": "Fortifications",
@@ -8823,6 +8911,173 @@
             "type": ".Ammunition depot",
             "x": 155591.78112467,
             "y": -101442.96449276
+        },
+        "TASK10LONDON": {
+            "canCargo": false,
+            "category": "Animal",
+            "heading": 0.0,
+            "livery_id": "default",
+            "name": "TASK10LONDON",
+            "rate": 2,
+            "shape_name": "Cow",
+            "type": "Cow",
+            "x": 220789.12339084,
+            "y": 10054.242620174
+        },
+        "TASK11LONDON": {
+            "canCargo": false,
+            "category": "Animal",
+            "heading": 0.0,
+            "livery_id": "default",
+            "name": "TASK11LONDON",
+            "rate": 2,
+            "shape_name": "Cow",
+            "type": "Cow",
+            "x": 223854.21367337,
+            "y": 2718.8523251825
+        },
+        "TASK12LONDON": {
+            "canCargo": false,
+            "category": "Animal",
+            "heading": 0.0,
+            "livery_id": "default",
+            "name": "TASK12LONDON",
+            "rate": 2,
+            "shape_name": "Cow",
+            "type": "Cow",
+            "x": 224606.11793917,
+            "y": 2788.5663223818
+        },
+        "TASK13LONDON": {
+            "canCargo": false,
+            "category": "Animal",
+            "heading": 4.9043751981041,
+            "livery_id": "default",
+            "name": "TASK13LONDON",
+            "rate": 2,
+            "shape_name": "Cow",
+            "type": "Cow",
+            "x": 213240.20281244,
+            "y": 807.93503901944
+        },
+        "TASK14LONDON": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.4958208303519,
+            "name": "TASK14LONDON",
+            "rate": 100,
+            "shape_name": "konteiner_brown",
+            "type": "Container brown",
+            "x": 210918.83380684,
+            "y": 4675.1417456404
+        },
+        "TASK1LONDON": {
+            "canCargo": false,
+            "category": "Animal",
+            "heading": 0.0,
+            "livery_id": "default",
+            "name": "TASK1LONDON",
+            "rate": 2,
+            "shape_name": "Cow",
+            "type": "Cow",
+            "x": 225620.06735337,
+            "y": 7355.8513079528
+        },
+        "TASK2LONDON": {
+            "canCargo": false,
+            "category": "Animal",
+            "heading": 0.0,
+            "livery_id": "default",
+            "name": "TASK2LONDON",
+            "rate": 2,
+            "shape_name": "Cow",
+            "type": "Cow",
+            "x": 224616.26532975,
+            "y": 4054.4868835968
+        },
+        "TASK3LONDON": {
+            "canCargo": false,
+            "category": "Animal",
+            "heading": 0.0,
+            "livery_id": "default",
+            "name": "TASK3LONDON",
+            "rate": 2,
+            "shape_name": "Cow",
+            "type": "Cow",
+            "x": 227555.81364032,
+            "y": 15145.926904439
+        },
+        "TASK4LONDON": {
+            "canCargo": false,
+            "category": "Animal",
+            "heading": 0.0,
+            "livery_id": "default",
+            "name": "TASK4LONDON",
+            "rate": 2,
+            "shape_name": "Cow",
+            "type": "Cow",
+            "x": 225003.54703797,
+            "y": 7631.7729048306
+        },
+        "TASK5LONDON": {
+            "canCargo": false,
+            "category": "Animal",
+            "heading": 0.0,
+            "livery_id": "default",
+            "name": "TASK5LONDON",
+            "rate": 2,
+            "shape_name": "Cow",
+            "type": "Cow",
+            "x": 225546.19906586,
+            "y": 3771.0998123975
+        },
+        "TASK6LONDON": {
+            "canCargo": false,
+            "category": "Animal",
+            "heading": 0.0,
+            "livery_id": "default",
+            "name": "TASK6LONDON",
+            "rate": 2,
+            "shape_name": "Cow",
+            "type": "Cow",
+            "x": 210092.59206758,
+            "y": -442.02571562863
+        },
+        "TASK7LONDON": {
+            "canCargo": false,
+            "category": "Animal",
+            "heading": 0.0,
+            "livery_id": "default",
+            "name": "TASK7LONDON",
+            "rate": 2,
+            "shape_name": "Cow",
+            "type": "Cow",
+            "x": 225030.30024232,
+            "y": 8355.2040510253
+        },
+        "TASK8LONDON": {
+            "canCargo": false,
+            "category": "Animal",
+            "heading": 0.0,
+            "livery_id": "default",
+            "name": "TASK8LONDON",
+            "rate": 2,
+            "shape_name": "Cow",
+            "type": "Cow",
+            "x": 225330.42569613,
+            "y": 7440.2133556848
+        },
+        "TASK9LONDON": {
+            "canCargo": false,
+            "category": "Animal",
+            "heading": 0.0,
+            "livery_id": "default",
+            "name": "TASK9LONDON",
+            "rate": 2,
+            "shape_name": "Cow",
+            "type": "Cow",
+            "x": 222823.49705492,
+            "y": 6401.6828937198
         },
         "Tangmere Airwing Warehouse": {
             "canCargo": false,
