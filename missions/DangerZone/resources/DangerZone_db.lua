@@ -11,7 +11,6 @@ MissionDb = {
 				"BORDER-4",
 			},
 			capZones = {
-				"CAP-3",
 			},
 			nodes = {
 			},
@@ -239,6 +238,18 @@ MissionDb = {
 				},
 			},
 			reinforcements = {
+				{
+					name = "REINFORCEMENT-3",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+					},
+					shipGroups = {
+						{ name = "BLUE Naval Escort RG 1" },
+					},
+					staticGroups = {
+					},
+				},
 			},
 			vehicleGroups = {
 			},

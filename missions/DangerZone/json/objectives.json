@@ -8,9 +8,7 @@
                 "BORDER-3",
                 "BORDER-4"
             ],
-            "capZones": [
-                "CAP-3"
-            ],
+            "capZones": [],
             "carriers": [
                 "Teddy",
                 "Forrestal",
@@ -28,7 +26,9 @@
                 "QRF-1",
                 "QRF-2"
             ],
-            "reinforcements": [],
+            "reinforcements": [
+                "REINFORCEMENT-3"
+            ],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-3",

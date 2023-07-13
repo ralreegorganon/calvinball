@@ -1337,11 +1337,11 @@ local function activateAirwings(chief, side)
                             end
                         end
 
-                        if Mission:GetType() == AUFTRAG.Type.AWACS then
-                            local escortMission = AUFTRAG:NewESCORT(Flightgroup:GetGroup())
-                            MissionDb.redchief.instance:AddMission(escortMission)
-                            MissionDb.samnetwork.instance:SetAwacs(Flightgroup:GetName())
-                        end
+                        -- if Mission:GetType() == AUFTRAG.Type.AWACS then
+                        --     local escortMission = AUFTRAG:NewESCORT(Flightgroup:GetGroup())
+                        --     MissionDb.redchief.instance:AddMission(escortMission)
+                        --     MissionDb.samnetwork.instance:SetAwacs(Flightgroup:GetName())
+                        -- end
 
                         local text=string.format("RED has launched a new mission: %s.", Mission:GetType())
                         MESSAGE:New(text, 15):ToAll()
