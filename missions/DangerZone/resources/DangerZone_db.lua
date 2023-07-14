@@ -14529,6 +14529,7 @@ MissionDb = {
 	playerRecce = {},
 	strandtasks = {},
 	samnetwork = {},
+	markerops = {},
 	redchief = {
 	    airwings = {
 			{
@@ -15685,6 +15686,44 @@ MissionDb = {
 				}
 			},
 			{
+				name = "GOON OPS - Teddy",
+				warehouse = "Teddy Unit #1",
+				airbase = "Teddy Unit #1",
+				squadrons = {
+					{
+						name = "GOON OPS TEDDY",
+						templateGroupName = "BLUE GOON OPS - Teddy GOON OPS TEDDY FA-18C_hornet",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BOMBING, performance = 50 },
+							{ mission = AUFTRAG.Type.STRIKE, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+						},
+						livery = "NSAWC blue",
+						payloads = {
+							{
+								templateGroupName = "BLUE GOON OPS - Teddy GOON OPS TEDDY FA-18C_hornet LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BOMBING }
+							},
+							{
+								templateGroupName = "BLUE GOON OPS - Teddy GOON OPS TEDDY FA-18C_hornet LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.STRIKE }
+							},
+							{
+								templateGroupName = "BLUE GOON OPS - Teddy GOON OPS TEDDY FA-18C_hornet LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+							{
+								templateGroupName = "BLUE GOON OPS - Teddy GOON OPS TEDDY FA-18C_hornet LOADOUT 3",
+								missionTypes = { AUFTRAG.Type.CAS }
+							},
+						}
+					},
+				}
+			},
+			{
 				name = "3rd CAW - Abe",
 				warehouse = "Abe Unit #1",
 				airbase = "Abe Unit #1",
@@ -15757,6 +15796,44 @@ MissionDb = {
 							{
 								templateGroupName = "BLUE 4th CAW - Abe GGD-03 FA-18C_hornet LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.CAP }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "GOON OPS - Abe",
+				warehouse = "Abe Unit #1",
+				airbase = "Abe Unit #1",
+				squadrons = {
+					{
+						name = "GOON OPS ABE",
+						templateGroupName = "BLUE GOON OPS - Abe GOON OPS ABE FA-18C_hornet",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BOMBING, performance = 50 },
+							{ mission = AUFTRAG.Type.STRIKE, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+						},
+						livery = "NSAWC blue",
+						payloads = {
+							{
+								templateGroupName = "BLUE GOON OPS - Abe GOON OPS ABE FA-18C_hornet LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BOMBING }
+							},
+							{
+								templateGroupName = "BLUE GOON OPS - Abe GOON OPS ABE FA-18C_hornet LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.STRIKE }
+							},
+							{
+								templateGroupName = "BLUE GOON OPS - Abe GOON OPS ABE FA-18C_hornet LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+							{
+								templateGroupName = "BLUE GOON OPS - Abe GOON OPS ABE FA-18C_hornet LOADOUT 3",
+								missionTypes = { AUFTRAG.Type.CAS }
 							},
 						}
 					},
@@ -15880,5 +15957,6 @@ MissionDb = {
 			industryDelay = 1800
 		},
 	},
-	invokeOnActivate = {}
+	invokeOnActivate = {},
+	counters = {}
 }

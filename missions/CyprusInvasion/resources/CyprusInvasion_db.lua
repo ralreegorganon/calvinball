@@ -5598,6 +5598,7 @@ MissionDb = {
 	playerRecce = {},
 	strandtasks = {},
 	samnetwork = {},
+	markerops = {},
 	redchief = {
 	    airwings = {
 			{
@@ -6277,5 +6278,6 @@ MissionDb = {
 			industryDelay = 1800
 		},
 	},
-	invokeOnActivate = {}
+	invokeOnActivate = {},
+	counters = {}
 }

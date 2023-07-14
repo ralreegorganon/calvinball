@@ -35,6 +35,7 @@ local function loadState()
     local blueairwingstates = {}
     local redbrigadestates = {}
     local bluebrigadestates = {}
+    local counters = {}
 
     if io then
         if UTILS.CheckFileExists(defaultDrive,"progress.csv") then
@@ -278,6 +279,17 @@ local function loadState()
                 bluebrigadestates[name] = state
             end
         end
+
+        if UTILS.CheckFileExists(defaultDrive,"counters.csv") then
+            local _, loadeddata = UTILS.LoadFromFile(defaultDrive, "counters.csv")
+            for _, _entry in pairs (loadeddata) do
+                local dataset = UTILS.Split(_entry,",")
+                -- name,state
+                local name = dataset[1]
+                local state = dataset[2]
+                counters[name] = state
+            end
+        end
     end
 
     for _, objective in ipairs(MissionDb.objectives) do
@@ -436,6 +448,14 @@ local function loadState()
         end
     end
 
+    for name, state in pairs(counters) do
+        MissionDb.counters[name] = tonumber(state)
+    end
+
+    if MissionDb.counters.opstokens == nil then
+        MissionDb.counters.opstokens = 0
+    end
+
     -- todo, some sort of culling of the unit states from groups who are dead, since if they're dead we won't be spawning them again
 end
 
@@ -468,6 +488,7 @@ local function saveState()
     local blueairwingdata = ""
     local redbrigadedata = ""
     local bluebrigadedata = ""
+    local countersdata = ""
     for _, objective in ipairs(MissionDb.objectives) do
         objectivedata = string.format("%s%s,%s\n",objectivedata, objective.name, objective.state)
         for _, group in ipairs(objective.vehicleGroups) do
@@ -534,6 +555,9 @@ local function saveState()
     for _, brigade in pairs(MissionDb.bluechief.brigades) do
         bluebrigadedata = string.format("%s%s,%s\n",bluebrigadedata, brigade.name, brigade.state)
     end
+    for name, state in pairs(MissionDb.counters) do
+        countersdata = string.format("%s%s,%s\n",countersdata, name, state)
+    end
 
     UTILS.SaveToFile(defaultDrive,"progress.csv", objectivedata)
     UTILS.SaveToFile(defaultDrive,"objectivevehiclegroups.csv", objectivevehiclegroupdata)
@@ -557,6 +581,7 @@ local function saveState()
     UTILS.SaveToFile(defaultDrive,"blueairwings.csv", blueairwingdata)
     UTILS.SaveToFile(defaultDrive,"redbrigades.csv", redbrigadedata)
     UTILS.SaveToFile(defaultDrive,"bluebrigades.csv", bluebrigadedata)
+    UTILS.SaveToFile(defaultDrive,"counters.csv", countersdata)
 end
 
 -- stupid forward declaration shit
@@ -2148,10 +2173,13 @@ local function reportOverallMissionStatus()
     end
 
     if(MissionDb.industry.enabled) then
-        table.insert(r, "")
         table.insert(r, string.format("Enemy industry is at %.f%% capacity, with %i active industry targets", MissionDb.industry.percentage, MissionDb.industry.alive))
         table.insert(r, "")
     end
+
+    table.insert(r, string.format("%i operation tokens available", MissionDb.counters.opstokens))
+    table.insert(r, string.format("  - GOON BOMB, GOON SEAD, GOON STRIKE, GOON CAS"))
+    table.insert(r, "")
 
     local m = table.concat(r, "\n")
     MESSAGE:New(m, 30):ToAll()
@@ -2268,6 +2296,10 @@ local function pruneCtldForInactiveObjectives()
     end)
 end
 
+local function addOpsToken()
+    MissionDb.counters.opstokens = MissionDb.counters.opstokens + 1
+end
+
 local function initializeStrandMenus()
     local menuMissionStatus = MENU_MISSION:New("Mission Status")
     MENU_MISSION_COMMAND:New("Overall Status", menuMissionStatus, reportOverallMissionStatus)
@@ -2302,6 +2334,7 @@ local function initializeStrandMenus()
         end
 
         MENU_MISSION_COMMAND:New("CTLD Cleanup", menuDebug, pruneCtldForInactiveObjectives)
+        MENU_MISSION_COMMAND:New("Add ops token", menuDebug, addOpsToken)
     end
 
     local menuRequest = MENU_MISSION:New("Request")
@@ -2458,6 +2491,10 @@ local function initializeCsar()
 
             randomFriendlyReinforcement()
         end
+
+        MissionDb.counters.opstokens = MissionDb.counters.opstokens + pilotssaved
+        MESSAGE:New(string.format("%i operation tokens available.", MissionDb.counters.opstokens), 5):ToAll()
+
     end
 
     MissionDb.csar.instance:Start()
@@ -2501,6 +2538,59 @@ local function initializeMantis()
     MissionDb.samnetwork.instance:Start()
 end
 
+local function initializeMarkerOps()
+    MissionDb.markerops.bomb = MARKEROPS_BASE:New("GOON BOMB", {}, false)
+    function MissionDb.markerops.bomb:OnAfterMarkChanged(From, Event, To, Text, Keywords, Coord, idx)
+        if MissionDb.counters.opstokens > 0 then
+            MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
+            local target = Coord:FindClosestUnit(250)
+            if target ~= nil then
+                local mission = AUFTRAG:NewBOMBING(target)
+                MissionDb.bluechief.instance:AddMission(mission)
+                MESSAGE:New(string.format("GOON OPERATION: Bomb @ %s. %i tokens remaining.", target:GetCoordinate():ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
+            end
+        end
+        UTILS.RemoveMark(idx, 0)
+    end
+
+    MissionDb.markerops.strike = MARKEROPS_BASE:New("GOON STRIKE", {}, false)
+    function MissionDb.markerops.strike:OnAfterMarkChanged(From, Event, To, Text, Keywords, Coord, idx)
+        if MissionDb.counters.opstokens > 0 then
+            MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
+            local mission = AUFTRAG:NewSTRIKE(Coord)
+            MissionDb.bluechief.instance:AddMission(mission)
+            MESSAGE:New(string.format("GOON OPERATION: Strike @ %s. %i tokens remaining.", Coord:ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
+        end
+        UTILS.RemoveMark(idx, 0)
+    end
+
+    MissionDb.markerops.sead = MARKEROPS_BASE:New("GOON SEAD", {}, false)
+    function MissionDb.markerops.sead:OnAfterMarkChanged(From, Event, To, Text, Keywords, Coord, idx)
+        if MissionDb.counters.opstokens > 0 then
+            MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
+            local zone =  ZONE_RADIUS:New( string.format("BLUESEAD-%d", math.random(1,100000)), Coord:GetVec2(), 15000)
+            local targSet = SET_GROUP:New():FilterCoalitions("red"):FilterPrefixes({"RED SAM", "RED EWR"}):FilterZones({zone}):FilterOnce()
+            local target = TARGET:New(targSet)
+            local mission = AUFTRAG:NewSEAD(target)
+            MissionDb.bluechief.instance:AddMission(mission)
+            MESSAGE:New(string.format("GOON OPERATION: SEAD @ %s. %i tokens remaining.", target:GetCoordinate():ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
+        end
+        UTILS.RemoveMark(idx, 0)
+    end
+
+    MissionDb.markerops.cas = MARKEROPS_BASE:New("GOON CAS", {}, false)
+    function MissionDb.markerops.cas:OnAfterMarkChanged(From, Event, To, Text, Keywords, Coord, idx)
+        if MissionDb.counters.opstokens > 0 then
+            MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
+            local zone =  ZONE_RADIUS:New( string.format("BLUECAS-%d", math.random(1,100000)), Coord:GetVec2(), 15000)
+            local mission = AUFTRAG:NewCAS(zone)
+            MissionDb.bluechief.instance:AddMission(mission)
+            MESSAGE:New(string.format("GOON OPERATION: CAS @ %s. %i tokens remaining.", Coord:ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
+        end
+        UTILS.RemoveMark(idx, 0)
+    end
+end
+
 initializeCtld()
 
 initializeCsar()
@@ -2514,6 +2604,8 @@ initializeCsarIntelTaskController()
 initializeAutolase()
 
 initializeMantis()
+
+initializeMarkerOps()
 
 -- initializePlayerRecce()
 

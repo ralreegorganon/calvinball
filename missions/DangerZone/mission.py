@@ -1420,6 +1420,30 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                     }
                 }
             },
+            "GOON OPS - Teddy": {
+                "airbase": "Teddy Unit #1",
+                "warehouse": "Teddy Unit #1",
+                "squadrons": {
+                    "GOON OPS TEDDY": {
+                        "airframe": dcs.planes.FA_18C_hornet,
+                        "groupSize": 2,
+                        "initialInventory": 99,
+                        "livery": "NSAWC blue",
+                        "loadouts": {
+                            "AIM-9M*2, MK-84*2, FUEL*2": "{ AUFTRAG.Type.BOMBING }",
+                            "AIM-9X*2, AIM-120C-5*1, GBU-38*4, GBU-12*4, ATFLIR, FUEL": "{ AUFTRAG.Type.STRIKE }",
+                            "AIM-9X*2, AIM-120C-5*2, AGM-88C*2, FUEL": "{ AUFTRAG.Type.SEAD }",
+                            "AIM-9X*2, AIM-120C-5*1, AGM-65D*4, ATFLIR, FUEL": "{ AUFTRAG.Type.CAS }",
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BOMBING": 50,
+                            "AUFTRAG.Type.STRIKE": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                        }
+                    },
+                }
+            },
             "3rd CAW - Abe": {
                 "airbase": "Abe Unit #1",
                 "warehouse": "Abe Unit #1",
@@ -1478,6 +1502,30 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                             "AUFTRAG.Type.CAP": 50,
                         }
                     }
+                }
+            },
+            "GOON OPS - Abe": {
+                "airbase": "Abe Unit #1",
+                "warehouse": "Abe Unit #1",
+                "squadrons": {
+                    "GOON OPS ABE": {
+                        "airframe": dcs.planes.FA_18C_hornet,
+                        "groupSize": 2,
+                        "initialInventory": 99,
+                        "livery": "NSAWC blue",
+                        "loadouts": {
+                            "AIM-9M*2, MK-84*2, FUEL*2": "{ AUFTRAG.Type.BOMBING }",
+                            "AIM-9X*2, AIM-120C-5*1, GBU-38*4, GBU-12*4, ATFLIR, FUEL": "{ AUFTRAG.Type.STRIKE }",
+                            "AIM-9X*2, AIM-120C-5*2, AGM-88C*2, FUEL": "{ AUFTRAG.Type.SEAD }",
+                            "AIM-9X*2, AIM-120C-5*1, AGM-65D*4, ATFLIR, FUEL": "{ AUFTRAG.Type.CAS }",
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BOMBING": 50,
+                            "AUFTRAG.Type.STRIKE": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                        }
+                    },
                 }
             },
             "1st Lymington Goonwing": {
