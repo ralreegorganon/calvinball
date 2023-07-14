@@ -2343,8 +2343,8 @@ local function initializeCtld()
     MissionDb.ctld.instance:AddTroopsCargo("Infantry - AT (8)", { "CTLD Infantry AT" }, CTLD_CARGO.Enum.TROOPS, 8, 80)
     MissionDb.ctld.instance:AddTroopsCargo("JTAC (1)", { "CTLD BLUE RECCE JTAC" }, CTLD_CARGO.Enum.TROOPS, 1, 80)
     MissionDb.ctld.instance:AddTroopsCargo("MORTAR (5)", { "CTLD MORTAR" }, CTLD_CARGO.Enum.TROOPS, 5, 122)
-    MissionDb.ctld.instance:AddTroopsCargo("SK Special AT (2)", { "CTLD AT SK Special 2" }, CTLD_CARGO.Enum.TROOPS, 2, 80)
-    MissionDb.ctld.instance:AddTroopsCargo("SK Special AA (2)", { "CTLD AA SK Special 2" }, CTLD_CARGO.Enum.TROOPS, 2, 80)
+    MissionDb.ctld.instance:AddTroopsCargo("SK Special - AT (2)", { "CTLD AT SK Special 2" }, CTLD_CARGO.Enum.TROOPS, 2, 80)
+    MissionDb.ctld.instance:AddTroopsCargo("SK Special - AA (2)", { "CTLD AA SK Special 2" }, CTLD_CARGO.Enum.TROOPS, 2, 80)
 
     MissionDb.ctld.instance:AddCratesCargo("HMMWV - JTAC", { "CTLD BLUE RECCE JTAC HMMWV" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Vehicles")
     MissionDb.ctld.instance:AddCratesCargo("HMMWV - MG", { "CTLD HMMWV MG" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Vehicles")
@@ -2357,6 +2357,7 @@ local function initializeCtld()
     MissionDb.ctld.instance:AddCratesCargo("MLRS", { "CTLD MLRS" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Artillery")
     MissionDb.ctld.instance:AddCratesCargo("M-109", { "CTLD M-109" }, CTLD_CARGO.Enum.VEHICLE, 1, 1350, nil, "Artillery")
     MissionDb.ctld.instance:AddCratesCargo("HAWK", { "CTLD HAWK" }, CTLD_CARGO.Enum.VEHICLE, 3, 1350, nil, "Air Defense")
+    MissionDb.ctld.instance:AddCratesCargo("NASAM", { "CTLD NASAM" }, CTLD_CARGO.Enum.VEHICLE, 2, 1350, nil, "Air Defense")
 
     CTLD_HERCULES:New(coalition.side.BLUE, "Jaelifter Fixed Wing", MissionDb.ctld.instance)
 

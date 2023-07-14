@@ -59,6 +59,14 @@ class Ctld:
             dcs.vehicles.AirDefence.Hawk_ln,
         ], dcs.mapping.Point(180657, -39472, m.terrain), formation=dcs.unitgroup.VehicleGroup.Formation.Scattered).late_activation = True
 
+        m.vehicle_group_platoon(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD NASAM", [
+            dcs.vehicles.AirDefence.NASAMS_Command_Post,
+            dcs.vehicles.AirDefence.NASAMS_Radar_MPQ64F1,
+            dcs.vehicles.AirDefence.NASAMS_LN_C,
+            dcs.vehicles.AirDefence.NASAMS_LN_C,
+            dcs.vehicles.AirDefence.NASAMS_LN_C,
+        ], dcs.mapping.Point(180657, -39472, m.terrain), formation=dcs.unitgroup.VehicleGroup.Formation.Scattered).late_activation = True
+
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD BLUE RECCE JTAC", dcs.vehicles.Infantry.Soldier_M4, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD BLUE RECCE JTAC HMMWV", dcs.vehicles.Unarmed.Hummer, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD HMMWV MG", dcs.vehicles.Armor.M1043_HMMWV_Armament, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
