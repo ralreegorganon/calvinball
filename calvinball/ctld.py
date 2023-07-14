@@ -32,8 +32,13 @@ class Ctld:
             dcs.vehicles.Infantry.Soldier_M4
         ], dcs.mapping.Point(180657, -39472, m.terrain)).late_activation = True
 
-        m.vehicle_group_platoon(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD Inf SK Special 2", [
+        m.vehicle_group_platoon(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD AT SK Special 2", [
             dcs.vehicles.Infantry.Soldier_RPG,
+            dcs.vehicles.Infantry.Soldier_RPG
+        ], dcs.mapping.Point(180657, -39472, m.terrain)).late_activation = True
+
+        m.vehicle_group_platoon(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD AA SK Special 2", [
+            dcs.vehicles.AirDefence.Soldier_stinger,
             dcs.vehicles.AirDefence.Soldier_stinger
         ], dcs.mapping.Point(180657, -39472, m.terrain)).late_activation = True
 

@@ -70,21 +70,21 @@
         "radius": 137.16,
         "ship_groups": [],
         "static_groups": [
-            "Static Windsock-3",
-            "Static Invisible FARP-9",
-            "Static Invisible FARP-10",
-            "Static Container 20ft-7",
-            "Static Invisible FARP-11",
-            "Static Container 20ft-8",
-            "Static Invisible FARP-12",
             "MASH Tent 1-4",
-            "Static FARP Tent-65",
-            "Static Watch tower armed-2",
-            "Static FARP Tent-66",
+            "MASH Tent 1-5",
+            "Static Container 20ft-7",
+            "Static Container 20ft-8",
             "Static Container 20ft-9",
+            "Static FARP Tent-65",
+            "Static FARP Tent-66",
             "Static FARP Tent-67",
             "Static FARP Tent-68",
-            "MASH Tent 1-5"
+            "Static Invisible FARP-10",
+            "Static Invisible FARP-11",
+            "Static Invisible FARP-12",
+            "Static Invisible FARP-9",
+            "Static Watch tower armed-2",
+            "Static Windsock-3"
         ],
         "vehicle_groups": [
             "FARP MASH 1-14",
@@ -94,5 +94,37 @@
         ],
         "x": 225220.7942526,
         "y": 26946.717049047
+    },
+    "FARP-4": {
+        "clearScenery": "all",
+        "component": "farp",
+        "label": "FARP Bewl Water",
+        "radius": 137.16,
+        "ship_groups": [],
+        "static_groups": [
+            "MASH Tent 1-6",
+            "MASH Tent 1-7",
+            "Static Container 20ft-10",
+            "Static Container 20ft-11",
+            "Static Container 20ft-12",
+            "Static FARP Tent-69",
+            "Static FARP Tent-70",
+            "Static FARP Tent-71",
+            "Static Invisible FARP-13",
+            "Static Invisible FARP-14",
+            "Static Invisible FARP-15",
+            "Static Invisible FARP-16",
+            "Static Watch tower armed-4",
+            "Static Windsock-4",
+            "Static FARP Tent-72"
+        ],
+        "vehicle_groups": [
+            "FARP MASH 1-15",
+            "FARP Support 1-10",
+            "FARP Support 1-11",
+            "FARP Support 1-12"
+        ],
+        "x": 177862.23657392,
+        "y": 42603.952621407
     }
 }
