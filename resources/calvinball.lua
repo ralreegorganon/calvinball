@@ -2543,12 +2543,9 @@ local function initializeMarkerOps()
     function MissionDb.markerops.bomb:OnAfterMarkChanged(From, Event, To, Text, Keywords, Coord, idx)
         if MissionDb.counters.opstokens > 0 then
             MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
-            local target = Coord:FindClosestUnit(250)
-            if target ~= nil then
-                local mission = AUFTRAG:NewBOMBING(target)
-                MissionDb.bluechief.instance:AddMission(mission)
-                MESSAGE:New(string.format("GOON OPERATION: Bomb @ %s. %i tokens remaining.", target:GetCoordinate():ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
-            end
+            local mission = AUFTRAG:NewBOMBING(Coord)
+            MissionDb.bluechief.instance:AddMission(mission)
+            MESSAGE:New(string.format("GOON OPERATION: Bomb @ %s. %i tokens remaining.", target:GetCoordinate():ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
         end
         UTILS.RemoveMark(idx, 0)
     end
