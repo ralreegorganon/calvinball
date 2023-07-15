@@ -2177,7 +2177,7 @@ local function reportOverallMissionStatus()
         table.insert(r, "")
     end
 
-    table.insert(r, string.format("%i operation tokens available", MissionDb.counters.opstokens))
+    table.insert(r, string.format("%i operation token(s) available", MissionDb.counters.opstokens))
     table.insert(r, string.format("  - GOON BOMB, GOON SEAD, GOON STRIKE, GOON CAS"))
     table.insert(r, "")
 
@@ -2545,7 +2545,9 @@ local function initializeMarkerOps()
             MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
             local mission = AUFTRAG:NewBOMBING(Coord)
             MissionDb.bluechief.instance:AddMission(mission)
-            MESSAGE:New(string.format("GOON OPERATION: Bomb @ %s. %i tokens remaining.", target:GetCoordinate():ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
+            MESSAGE:New(string.format("GOON OPERATION: Bomb @ %s. %i tokens remaining.", Coord:ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
+        else
+            MESSAGE:New(string.format("GOON OPERATION: Aborted. No ops tokens available."), 15):ToAll()
         end
         UTILS.RemoveMark(idx, 0)
     end
@@ -2557,6 +2559,8 @@ local function initializeMarkerOps()
             local mission = AUFTRAG:NewSTRIKE(Coord)
             MissionDb.bluechief.instance:AddMission(mission)
             MESSAGE:New(string.format("GOON OPERATION: Strike @ %s. %i tokens remaining.", Coord:ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
+        else
+            MESSAGE:New(string.format("GOON OPERATION: Aborted. No ops tokens available."), 15):ToAll()
         end
         UTILS.RemoveMark(idx, 0)
     end
@@ -2571,6 +2575,8 @@ local function initializeMarkerOps()
             local mission = AUFTRAG:NewSEAD(target)
             MissionDb.bluechief.instance:AddMission(mission)
             MESSAGE:New(string.format("GOON OPERATION: SEAD @ %s. %i tokens remaining.", target:GetCoordinate():ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
+        else
+            MESSAGE:New(string.format("GOON OPERATION: Aborted. No ops tokens available."), 15):ToAll()
         end
         UTILS.RemoveMark(idx, 0)
     end
@@ -2583,6 +2589,8 @@ local function initializeMarkerOps()
             local mission = AUFTRAG:NewCAS(zone)
             MissionDb.bluechief.instance:AddMission(mission)
             MESSAGE:New(string.format("GOON OPERATION: CAS @ %s. %i tokens remaining.", Coord:ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
+        else
+            MESSAGE:New(string.format("GOON OPERATION: Aborted. No ops tokens available."), 15):ToAll()
         end
         UTILS.RemoveMark(idx, 0)
     end
