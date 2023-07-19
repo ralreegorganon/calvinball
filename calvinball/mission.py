@@ -31,6 +31,7 @@ class Mission:
         self.qrfs_json_path = os.path.join(self.json_root, "qrf.json")
         self.reinforcements_json_path = os.path.join(self.json_root, "reinforcement.json")
         self.farps_json_path = os.path.join(self.json_root, "farps.json")
+        self.roadbases_json_path = os.path.join(self.json_root, "roadbases.json")
         self.vehicle_groups_path = os.path.join(self.json_root, "vehicle-groups.json")
         self.ship_groups_path = os.path.join(self.json_root, "ship-groups.json")
         self.unclassified_zones_path = os.path.join(self.json_root, "unclassified.json")
@@ -52,18 +53,19 @@ class Mission:
         self.reinforcement.build(self.m)
         self.__tasks()
         self.__farps()
+        self.__roadbases()
         self.__airbases()
         self.__qrfs()
         self.__reinforcements()
         self.__objectives()
         self.__unclassified()
         carriers = self.carriers.build(self.m, edit)
-        ctld_groups, csar_groups, farp_groups, airbase_groups, carrier_groups = self.clients.build(self.m, edit)
+        ctld_groups, csar_groups, farp_groups, roadbase_groups, airbase_groups, carrier_groups = self.clients.build(self.m, edit)
         red_airwings = self.red_airwings.build(self.m)
         blue_airwings = self.blue_airwings.build(self.m)
         red_brigades = self.red_brigades.build(self.m)
         blue_brigades = self.blue_brigades.build(self.m)
-        self.__write_db(ctld_groups, csar_groups, farp_groups, airbase_groups, red_airwings, blue_airwings, carriers, carrier_groups, red_brigades, blue_brigades, edit, True)
+        self.__write_db(ctld_groups, csar_groups, farp_groups, roadbase_groups, airbase_groups, red_airwings, blue_airwings, carriers, carrier_groups, red_brigades, blue_brigades, edit, True)
         self.__save_mission(package, edit)
 
         print("Make sure to manually add a late activated `Downed Pilot`")
@@ -153,7 +155,7 @@ class Mission:
         self.m.save(self.miz_export_path)
 
 
-    def __write_db(self, ctld_groups, csar_groups, farp_groups, airbase_groups, red_airwings, blue_airwings, carriers, carrier_groups, red_brigades, blue_brigades, configure_for_editor, devmode):
+    def __write_db(self, ctld_groups, csar_groups, farp_groups, roadbase_groups, airbase_groups, red_airwings, blue_airwings, carriers, carrier_groups, red_brigades, blue_brigades, configure_for_editor, devmode):
         with open(self.objectives_json_path) as json_file:
             obj = json.load(json_file)
         with open(self.tasks_json_path) as json_file:
@@ -168,10 +170,12 @@ class Mission:
             reinforcements = json.load(json_file)
         with open(self.farps_json_path) as json_file:
             farps = json.load(json_file)
+        with open(self.roadbases_json_path) as json_file:
+            roadbases = json.load(json_file)
         with open(self.__mission_resource(f"{self.miz_name}_db.lua"), "w") as lua_file:
             with open(self.__common_resource("calvinball_db.jinja2")) as jinja_file:
                 template = Template(jinja_file.read(), trim_blocks=True, lstrip_blocks=True)
-                lua_file.write(template.render(obj=obj, ctld_groups=ctld_groups, csar_groups=csar_groups, airbases=airbases, tasks=tasks, statics=statics, qrfs=qrfs, reinforcements=reinforcements, farps=farps, farp_groups=farp_groups, airbase_groups=airbase_groups, red_airwings=red_airwings, blue_airwings=blue_airwings, carriers=carriers, carrier_groups=carrier_groups, red_brigades=red_brigades, blue_brigades=blue_brigades, late_activate_statics=not configure_for_editor, devmode=devmode, missionName=self.miz_name))
+                lua_file.write(template.render(obj=obj, ctld_groups=ctld_groups, csar_groups=csar_groups, airbases=airbases, tasks=tasks, statics=statics, qrfs=qrfs, reinforcements=reinforcements, farps=farps, farp_groups=farp_groups, roadbases=roadbases, roadbase_groups=roadbase_groups, airbase_groups=airbase_groups, red_airwings=red_airwings, blue_airwings=blue_airwings, carriers=carriers, carrier_groups=carrier_groups, red_brigades=red_brigades, blue_brigades=blue_brigades, late_activate_statics=not configure_for_editor, devmode=devmode, missionName=self.miz_name))
 
     def __build_vehicle_groups(self):
         with open(self.vehicle_groups_path) as json_file:
@@ -296,6 +300,14 @@ class Mission:
                         for zone in self.m.triggers.zones():
                             if zone.name == farp_name:
                                 fg.add_waypoint(zone.position, 420)
+
+                if len(objective["roadbases"]) > 0:
+                    fg = self.m.flight_group_inflight(self.m.country(dcs.countries.CombinedJointTaskForcesBlue.name), f"OBJROADBASELINK-{oz.name}", dcs.planes.F_16C_50, dcs.mapping.Point(p.x+50, p.y+50, self.m.terrain), 420, group_size=1)
+                    fg.late_activation = True
+                    for roadbase_name in objective["roadbases"]:
+                        for zone in self.m.triggers.zones():
+                            if zone.name == roadbase_name:
+                                fg.add_waypoint(zone.position, 420)
                 
                 if len(objective["airbases"]) > 0:
                     fg = self.m.flight_group_inflight(self.m.country(dcs.countries.CombinedJointTaskForcesBlue.name), f"OBJAIRBASELINK-{oz.name}", dcs.planes.F_16C_50, dcs.mapping.Point(p.x+50, p.y+50, self.m.terrain), 420, group_size=1)
@@ -357,13 +369,6 @@ class Mission:
                 props = {k+1: v for k, v in enumerate(props_a)}
 
                 self.m.triggers.add_triggerzone_quad(p, [dcs.mapping.Point(v["x"], v["y"], self.m.terrain) for v in task["vertices"]], name=task_name, properties=props)
-
-    def __farps(self):
-        with open(self.farps_json_path) as json_file:
-            obj = json.load(json_file)
-            for objective_name, objective in obj["objectives"].items():
-                p = dcs.mapping.Point(objective["x"], objective["y"], self.m.terrain)
-                self.m.triggers.add_triggerzone_quad(p, [dcs.mapping.Point(v["x"], v["y"], self.m.terrain) for v in objective["vertices"]], name=objective_name, properties={1: {"key": "label", "value": objective["label"]}, 2: {"key": "component", "value": "farp"}})
 
     def __airbases(self):
         with open(self.airbases_json_path) as json_file:
@@ -430,6 +435,36 @@ class Mission:
 
                 removeType = None
                 match farp["clearScenery"]:
+                    case "all":
+                        removeType = dcs.action.RemoveSceneObjectsMask.ALL
+                    case "trees":
+                        removeType = dcs.action.RemoveSceneObjectsMask.TREES_ONLY
+                    case "objects":
+                        removeType = dcs.action.RemoveSceneObjectsMask.OBJECTS_ONLY
+
+                if removeType is not None:
+                    load_trigger = dcs.triggers.TriggerStart()
+                    load_trigger.actions.append(dcs.action.RemoveSceneObjects(removeType, z.id))
+                    self.m.triggerrules.triggers.append(load_trigger)
+
+    def __roadbases(self):
+        with open(self.roadbases_json_path) as json_file:
+            roadbases = json.load(json_file)
+            for roadbase_name, roadbase in roadbases.items():
+                p = dcs.mapping.Point(roadbase["x"], roadbase["y"], self.m.terrain)
+
+                props_a = [
+                    {"key": "label", "value": roadbase["label"]},
+                    {"key": "component", "value": "roadbase"},
+                    {"key": "clearScenery", "value": roadbase["clearScenery"]},
+                ]
+
+                props = {k+1: v for k, v in enumerate(props_a)}
+
+                z = self.m.triggers.add_triggerzone_quad(p, [dcs.mapping.Point(v["x"], v["y"], self.m.terrain) for v in roadbase["vertices"]], name=roadbase_name, properties=props)
+
+                removeType = None
+                match roadbase["clearScenery"]:
                     case "all":
                         removeType = dcs.action.RemoveSceneObjectsMask.ALL
                     case "trees":

@@ -562,7 +562,31 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
                 ]
-            }
+            },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "roadbase": "ROADBASE Send It",
+                "roadbase_zone": "ROADBASE-1",
+                "start_type": dcs.mission.StartType.Warm,
+                "airframes": [
+                    { 
+                        "airframe": dcs.planes.A_10C_2, "fuel": 0.6, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)",
+                        "positions": [{"heading": 211, "x": 127490.33400494, "y": -168766.15351086}, {"heading": 211, "x": 127509.4216532, "y": -168754.48007308}]
+                    },
+                    { 
+                        "airframe": dcs.planes.AJS37, "fuel": 1, "loadout": "Empty", "livery": "SF-37 Akktu Stakki - F21",
+                        "positions": [{"heading": 211, "x": 127528.14796083, "y": -168742.03988248}]
+                    },
+                    { 
+                        "airframe": dcs.planes.F_16C_50, "fuel": 1, "loadout": "Empty", "livery": "18th AGRS Arctic Splinter",
+                        "positions": [{"heading": 218, "x": 127382.21199551, "y": -168832.95995519}, {"heading": 213, "x": 127401.20573, "y": -168821.52346574}, {"heading": 211, "x": 127419.18913415, "y": -168810.16552627}, {"heading": 211, "x": 127437.96128409, "y": -168798.64983765}, {"heading": 211, "x": 127456.41793572, "y": -168787.29189819}, {"heading": 211, "x": 127473.92809239, "y": -168776.56495537}]
+                    },
+                    { 
+                        "airframe": dcs.planes.MiG_21Bis, "fuel": 1, "loadout": "Empty", "livery": "HuAF 31st AB (Turul Sqn)",
+                        "positions": [{"heading": 211, "x": 127545.3005247, "y": -168731.35467876}]
+                    },
+                ]
+            },
         ]
 
         comms_plan = {

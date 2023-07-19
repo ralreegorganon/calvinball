@@ -29,6 +29,7 @@
             "reinforcements": [
                 "REINFORCEMENT-3"
             ],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-3",
@@ -94,6 +95,7 @@
                 "QRF-34"
             ],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",
@@ -185,6 +187,7 @@
                 "QRF-36"
             ],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",
@@ -258,6 +261,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [
                 "BETTERBOOM1-4",
@@ -363,6 +367,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",
@@ -402,6 +407,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",
@@ -478,6 +484,7 @@
                 "QRF-14"
             ],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [
                 "RED RG 1"
             ],
@@ -578,6 +585,9 @@
             ],
             "reinforcements": [
                 "REINFORCEMENT-1"
+            ],
+            "roadbases": [
+                "ROADBASE-1"
             ],
             "ship_groups": [],
             "static_groups": [
@@ -688,6 +698,7 @@
                 "QRF-16"
             ],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",
@@ -794,6 +805,7 @@
             "reinforcements": [
                 "REINFORCEMENT-2"
             ],
+            "roadbases": [],
             "ship_groups": [
                 "Naval-1",
                 "Naval-2"
@@ -923,6 +935,7 @@
                 "QRF-19"
             ],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [
                 "RED RG Neustrashimy"
             ],
@@ -1007,6 +1020,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [
                 "Naval-3",
                 "Naval-4"
@@ -1143,6 +1157,7 @@
                 "QRF-21"
             ],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [
                 "RED RG 8-1 FK",
                 "RED RG 8-2 FK",
@@ -1272,6 +1287,7 @@
                 "QRF-29"
             ],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",

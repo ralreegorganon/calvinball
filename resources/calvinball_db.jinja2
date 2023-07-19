@@ -104,6 +104,50 @@ MissionDb = {
 				},
 {% 				endfor %}
 			},
+			roadbases = {
+{% 				for roadbase_name in objective["roadbases"] %}
+{% 				set roadbase = roadbases[roadbase_name] %}
+				{
+					name = "{{roadbase_name}}",
+					vehicleGroups = {
+{%  					for group_name in roadbase["vehicle_groups"] %}
+						{ name = "{{group_name}}" },
+{% 						endfor %}
+					},
+					shipGroups = {
+{%  					for group_name in roadbase["ship_groups"] %}
+						{ name = "{{group_name}}" },
+{% 						endfor %}
+					},
+					staticGroups = {
+{%  					for group_name in roadbase["static_groups"] %}
+{%						set static = statics["blue"][group_name] %}
+						{
+							name = "{{group_name}}#00001",
+							template = {
+								name = "{{static["name"]}}",
+								type = "{{static["type"]}}",
+								x = {{static["x"]}},
+								y = {{static["y"]}},
+								heading = {{static["heading"]}},
+								category = "{{static["category"]}}",
+								canCargo = {{static["canCargo"] | string | lower}},
+								shape_name = "{{static["shape_name"]}}",
+								rate = {{static["rate"] | default(50, true)}},
+								dead = false
+							}
+						},
+{% 						endfor %}
+					},
+					clients = {
+{% 						set clients = roadbase_groups[roadbase_name] %}
+{%  					for client_name in clients %}
+							"{{client_name}}",
+{% 						endfor %}
+					}
+				},
+{% 				endfor %}
+			},
 			airbases = {
 {% 				for airbase_name in objective["airbases"] %}
 {% 				set airbase = airbases[airbase_name] %}

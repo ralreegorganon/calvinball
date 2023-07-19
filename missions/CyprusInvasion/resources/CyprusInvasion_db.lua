@@ -19,6 +19,8 @@ MissionDb = {
 			},
 			farps = {
 			},
+			roadbases = {
+			},
 			airbases = {
 				{
 					name = "AIRBASE-1",
@@ -421,6 +423,8 @@ MissionDb = {
 			},
 			farps = {
 			},
+			roadbases = {
+			},
 			airbases = {
 			},
 			carriers = {
@@ -507,6 +511,8 @@ MissionDb = {
 			tasks = {
 			},
 			farps = {
+			},
+			roadbases = {
 			},
 			airbases = {
 			},
@@ -770,6 +776,8 @@ MissionDb = {
 			},
 			farps = {
 			},
+			roadbases = {
+			},
 			airbases = {
 				{
 					name = "AIRBASE-2",
@@ -895,6 +903,8 @@ MissionDb = {
 			tasks = {
 			},
 			farps = {
+			},
+			roadbases = {
 			},
 			airbases = {
 			},
@@ -1217,6 +1227,8 @@ MissionDb = {
 					}
 				},
 			},
+			roadbases = {
+			},
 			airbases = {
 			},
 			carriers = {
@@ -1302,6 +1314,8 @@ MissionDb = {
 			},
 			farps = {
 			},
+			roadbases = {
+			},
 			airbases = {
 			},
 			carriers = {
@@ -1378,6 +1392,8 @@ MissionDb = {
 				},
 			},
 			farps = {
+			},
+			roadbases = {
 			},
 			airbases = {
 				{
@@ -1898,6 +1914,8 @@ MissionDb = {
 			},
 			farps = {
 			},
+			roadbases = {
+			},
 			airbases = {
 			},
 			carriers = {
@@ -2356,6 +2374,8 @@ MissionDb = {
 							"FARP Xylofagou Ka-50_3 Cold 2",
 					}
 				},
+			},
+			roadbases = {
 			},
 			airbases = {
 			},
@@ -2837,6 +2857,8 @@ MissionDb = {
 			},
 			farps = {
 			},
+			roadbases = {
+			},
 			airbases = {
 			},
 			carriers = {
@@ -2912,6 +2934,8 @@ MissionDb = {
 			tasks = {
 			},
 			farps = {
+			},
+			roadbases = {
 			},
 			airbases = {
 			},
@@ -3239,6 +3263,8 @@ MissionDb = {
 			},
 			farps = {
 			},
+			roadbases = {
+			},
 			airbases = {
 			},
 			carriers = {
@@ -3309,6 +3335,8 @@ MissionDb = {
 			tasks = {
 			},
 			farps = {
+			},
+			roadbases = {
 			},
 			airbases = {
 			},
@@ -3633,6 +3661,8 @@ MissionDb = {
 					}
 				},
 			},
+			roadbases = {
+			},
 			airbases = {
 			},
 			carriers = {
@@ -3693,6 +3723,8 @@ MissionDb = {
 			},
 			farps = {
 			},
+			roadbases = {
+			},
 			airbases = {
 			},
 			carriers = {
@@ -3742,6 +3774,8 @@ MissionDb = {
 			tasks = {
 			},
 			farps = {
+			},
+			roadbases = {
 			},
 			airbases = {
 			},
@@ -4042,6 +4076,8 @@ MissionDb = {
 							"FARP Pissouri Ka-50_3 Cold 2",
 					}
 				},
+			},
+			roadbases = {
 			},
 			airbases = {
 			},
@@ -4362,6 +4398,8 @@ MissionDb = {
 					}
 				},
 			},
+			roadbases = {
+			},
 			airbases = {
 			},
 			carriers = {
@@ -4489,6 +4527,8 @@ MissionDb = {
 			},
 			farps = {
 			},
+			roadbases = {
+			},
 			airbases = {
 			},
 			carriers = {
@@ -4532,6 +4572,8 @@ MissionDb = {
 			tasks = {
 			},
 			farps = {
+			},
+			roadbases = {
 			},
 			airbases = {
 			},
@@ -5075,6 +5117,8 @@ MissionDb = {
 			},
 			farps = {
 			},
+			roadbases = {
+			},
 			airbases = {
 			},
 			carriers = {
@@ -5107,6 +5151,8 @@ MissionDb = {
 			tasks = {
 			},
 			farps = {
+			},
+			roadbases = {
 			},
 			airbases = {
 			},

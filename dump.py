@@ -105,6 +105,7 @@ def get_objective_zones(m: dcs.Mission):
                 "nodes": {},
                 "tasks": [],
                 "farps": [],
+                "roadbases": [],
                 "airbases": [],
                 "qrfs": [],
                 "reinforcements": [],
@@ -228,6 +229,37 @@ def get_farp_zones(m: dcs.Mission):
             }
     return zones
 
+def get_roadbase_zones(m: dcs.Mission):
+    zones = {}
+    for z in m.triggers.zones():
+        label = None
+        component = None
+        clearScenery = None
+        for v in z.properties.values():
+            if(v["key"] == "label"):
+                label = v["value"]
+            if(v["key"] == "component"):
+                component = v["value"]
+            if(v["key"] == "clearScenery"):
+                clearScenery =  v.get("value", "")
+        
+        if(component == None):
+            continue
+
+        if(component == "roadbase" and isinstance(z, dcs.triggers.TriggerZoneQuadPoint)):
+            zones[z.name] = {
+                "label": label,
+                "x": z.position.x,
+                "y": z.position.y,
+                "vertices": [{"x": v.x, "y": v.y } for v in z.verticies],
+                "clearScenery": clearScenery,
+                "vehicle_groups": [],
+                "ship_groups": [],
+                "static_groups": [],
+                "component": "roadbase"
+            }
+    return zones
+
 def get_airbase_zones(m: dcs.Mission):
     zones = {}
     for z in m.triggers.zones():
@@ -342,14 +374,14 @@ def get_reinforcement_zones(m: dcs.Mission):
 
     return zones
 
-def assign_groups_to_zones(objective_zones, task_zones, qrf_zones, farp_zones, airbase_zones, reinforcement_zones, vehicle_groups, ship_groups, static_groups):
+def assign_groups_to_zones(objective_zones, task_zones, qrf_zones, farp_zones, roadbase_zones, airbase_zones, reinforcement_zones, vehicle_groups, ship_groups, static_groups):
     # We only want to track these in a single zone, in order of preference.
     # Generally the issue is a objective zone overlapping one of the others)
     handled_vehicles = {}
     handled_ships = {}
     handled_statics = {}
 
-    zone_sequence = [airbase_zones, farp_zones, task_zones, qrf_zones, objective_zones, reinforcement_zones]
+    zone_sequence = [airbase_zones, farp_zones, roadbase_zones, task_zones, qrf_zones, objective_zones, reinforcement_zones]
     for zone_set in zone_sequence:
         for zone in zone_set.values():
             if "vertices" in zone:
@@ -357,7 +389,7 @@ def assign_groups_to_zones(objective_zones, task_zones, qrf_zones, farp_zones, a
             else: 
                 geometry = Point(zone["x"], zone["y"]).buffer(zone["radius"])
 
-            is_blue_only = zone["component"] == "farp" or zone["component"] == "airbase" or zone["component"] == "reinforcement"
+            is_blue_only = zone["component"] == "farp" or zone["component"] == "airbase" or zone["component"] == "reinforcement" or zone["component"] == "roadbase"
 
             for coalition, groups in vehicle_groups.items():
                 for group_name, group in groups.items():
@@ -428,6 +460,17 @@ def get_objective_farp_links(m: dcs.Mission):
                         objective_farp_links[pg.name]["points"].append(Point(p.position.x, p.position.y))
     return objective_farp_links
 
+def get_objective_roadbase_links(m: dcs.Mission):
+    objective_roadbase_links = {}
+    for c1 in m.coalition.values():
+        for c2 in c1.countries.values():
+            for pg in c2.plane_group:
+                if(pg.name.startswith("OBJROADBASELINK")):
+                    objective_roadbase_links[pg.name] = { "x": pg.position.x, "y": pg.position.y, "points": []}
+                    for p in pg.points:
+                        objective_roadbase_links[pg.name]["points"].append(Point(p.position.x, p.position.y))
+    return objective_roadbase_links
+
 def get_objective_airbase_links(m: dcs.Mission):
     objective_airbase_links = {}
     for c1 in m.coalition.values():
@@ -495,6 +538,17 @@ def assign_farp_zones_to_objectives(objective_zones, farp_zones, objective_farp_
                             if farp_zone_circle.contains(link_point):
                                 objective_zone["farps"].append(farp_name)
 
+def assign_roadbase_zones_to_objectives(objective_zones, roadbase_zones, objective_roadbase_links):
+     for name, link in objective_roadbase_links.items():
+        for objective_name, objective_zone in objective_zones.items():
+                objective_zone_poly = Polygon([(v["x"], v["y"]) for v in objective_zone["vertices"]])
+                if objective_zone_poly.contains(Point(link["x"], link["y"])):
+                    for link_point in link["points"]:
+                        for roadbase_name, roadbase_zone in roadbase_zones.items():
+                            roadbase_zone_poly = Polygon([(v["x"], v["y"]) for v in roadbase_zone["vertices"]])
+                            if roadbase_zone_poly.contains(link_point):
+                                objective_zone["roadbases"].append(roadbase_name)
+
 def assign_airbase_zones_to_objectives(objective_zones, airbase_zones, objective_airbase_links):
      for name, link in objective_airbase_links.items():
         for objective_name, objective_zone in objective_zones.items():
@@ -528,7 +582,7 @@ def assign_reinforcement_zones_to_objectives(objective_zones, reinforcement_zone
                             if reinforcement_zone_poly.contains(link_point):
                                 objective_zone["reinforcements"].append(reinforcement_name)
 
-def debug_aircraft(m: dcs.Mission, farp_zones):
+def debug_aircraft_farp(m: dcs.Mission, farp_zones):
     farp = {}
     for farp_name, farp_zone in farp_zones.items():
         farp[farp_name] = {}
@@ -544,6 +598,23 @@ def debug_aircraft(m: dcs.Mission, farp_zones):
                                 farp[farp_name][u.type].append({"x": u.position.x, "y": u.position.y, "heading": round(u.heading)})
             
     print(json.dumps(farp,sort_keys=True))
+
+def debug_aircraft_roadbase(m: dcs.Mission, roadbase_zones):
+    roadbase = {}
+    for roadbase_name, roadbase_zone in roadbase_zones.items():
+        roadbase[roadbase_name] = {}
+        roadbase_zone_poly = Polygon([(v["x"], v["y"]) for v in roadbase_zone["vertices"]])
+        for c1 in m.coalition.values():
+            for c2 in c1.countries.values():
+                for pg in c2.plane_group:
+                    if roadbase_zone_poly.contains(Point(pg.position.x, pg.position.y)):
+                        for u in pg.units:
+                            if u.type not in roadbase[roadbase_name]:
+                                roadbase[roadbase_name][u.type] = [{"x": u.position.x, "y": u.position.y, "heading": round(u.heading)}]
+                            else:
+                                roadbase[roadbase_name][u.type].append({"x": u.position.x, "y": u.position.y, "heading": round(u.heading)})
+            
+    print(json.dumps(roadbase,sort_keys=True))
 
 def report_units_in_obj(m: dcs.Mission, objective_zones):
     summary = {}
@@ -590,23 +661,27 @@ def dumpit(miz_export_path):
     qrf_zones = get_qrf_zones(m)
     reinforcement_zones = get_reinforcement_zones(m)
     farp_zones = get_farp_zones(m)
+    roadbase_zones = get_roadbase_zones(m)
     airbase_zones = get_airbase_zones(m)
     strands = get_strands(m)
     objective_task_links = get_objective_task_links(m)
     objective_farp_links = get_objective_farp_links(m)
+    objective_roadbase_links = get_objective_roadbase_links(m)
     objective_airbase_links = get_objective_airbase_links(m)
     objective_qrf_links = get_objective_qrf_links(m)
     objective_reinforcement_links = get_objective_reinforcement_links(m)
     assign_task_zones_to_objectives(objective_zones, task_zones, objective_task_links)
     assign_farp_zones_to_objectives(objective_zones, farp_zones, objective_farp_links)
+    assign_roadbase_zones_to_objectives(objective_zones, roadbase_zones, objective_roadbase_links)
     assign_airbase_zones_to_objectives(objective_zones, airbase_zones, objective_airbase_links)
     assign_qrf_zones_to_objectives(objective_zones, qrf_zones, objective_qrf_links)
     assign_reinforcement_zones_to_objectives(objective_zones, reinforcement_zones, objective_reinforcement_links)
-    assign_groups_to_zones(objective_zones, task_zones, qrf_zones, farp_zones, airbase_zones, reinforcement_zones, vehicle_groups, ship_groups, static_groups)
+    assign_groups_to_zones(objective_zones, task_zones, qrf_zones, farp_zones, roadbase_zones, airbase_zones, reinforcement_zones, vehicle_groups, ship_groups, static_groups)
     merged = assign_objective_zones_to_strands(objective_zones, strands)
     unclassified_zones = get_unclassified_zones(m)
 
-    debug_aircraft(m, farp_zones)
+    debug_aircraft_farp(m, farp_zones)
+    debug_aircraft_roadbase(m, roadbase_zones)
     report_units_in_obj(m, objective_zones)
 
     obj_filter = ["OBJ-6"]
@@ -640,6 +715,9 @@ def dumpit(miz_export_path):
 
     with open("temp/temp-farps.json", "w") as outfile:
         json.dump(farp_zones, outfile, sort_keys=True)
+
+    with open("temp/temp-roadbases.json", "w") as outfile:
+        json.dump(roadbase_zones, outfile, sort_keys=True)
 
 # from missions.CyprusInvasion.mission import CyprusInvasion
 # m = CyprusInvasion()

@@ -1,0 +1,62 @@
+{
+    "ROADBASE-1": {
+        "clearScenery": "all",
+        "component": "roadbase",
+        "label": "ROADBASE Send It",
+        "ship_groups": [],
+        "static_groups": [
+            "Static Container 20ft-13",
+            "Static Container 20ft-14",
+            "Static Container 20ft-15",
+            "MASH Tent 1-8",
+            "Static Invisible FARP-17",
+            "Static Invisible FARP-18",
+            "Static Container 20ft-16",
+            "MASH Tent 1-9",
+            "Static Container 20ft-17",
+            "Static Container 20ft-18",
+            "Static Invisible FARP-19",
+            "Static Container 20ft-19",
+            "MASH Tent 1-10",
+            "Static Container 20ft-20",
+            "Static Container 20ft-21",
+            "Static Invisible FARP-20",
+            "Static Container 20ft-22",
+            "MASH Tent 1-11",
+            "Static Container 20ft-23",
+            "Static Container 20ft-24",
+            "Static Big smoke-1",
+            "Static Big smoke-2"
+        ],
+        "vehicle_groups": [
+            "FARP MASH 1-16",
+            "FARP Support 1-13",
+            "FARP Support 1-14",
+            "FARP MASH 1-17",
+            "FARP Support 1-15",
+            "FARP MASH 1-18",
+            "FARP Support 1-16",
+            "FARP MASH 1-19"
+        ],
+        "vertices": [
+            {
+                "x": 127945.61525281,
+                "y": -170236.57628166
+            },
+            {
+                "x": 126980.81641969,
+                "y": -168781.98898184
+            },
+            {
+                "x": 127527.60613036,
+                "y": -168477.98234734
+            },
+            {
+                "x": 128226.39915829,
+                "y": -170006.4601486
+            }
+        ],
+        "x": 127670.10924029,
+        "y": -169375.75193986
+    }
+}

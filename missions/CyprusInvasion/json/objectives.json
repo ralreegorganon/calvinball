@@ -70,6 +70,7 @@
             "reinforcements": [
                 "REINFORCEMENT-1"
             ],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-2",
@@ -156,6 +157,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [
                 "Static Road outpost-4",
@@ -270,6 +272,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [
                 "Naval-2"
             ],
@@ -403,6 +406,7 @@
             "reinforcements": [
                 "REINFORCEMENT-4"
             ],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",
@@ -513,6 +517,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [
                 "Larnaca Airwing Warehouse"
@@ -612,6 +617,7 @@
             "reinforcements": [
                 "REINFORCEMENT-5"
             ],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-2",
@@ -738,6 +744,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-2",
@@ -861,6 +868,7 @@
             "reinforcements": [
                 "REINFORCEMENT-6"
             ],
+            "roadbases": [],
             "ship_groups": [
                 "Naval-3",
                 "Naval-4"
@@ -1024,6 +1032,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [
                 "DWNaval-1",
                 "DWNaval-5"
@@ -1192,6 +1201,7 @@
             "reinforcements": [
                 "REINFORCEMENT-7"
             ],
+            "roadbases": [],
             "ship_groups": [
                 "Naval-10",
                 "Naval-11",
@@ -1351,6 +1361,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [
                 "Static FARP Ammo Storage-1"
@@ -1454,6 +1465,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [
                 "HATEFULIMAM1",
@@ -1604,6 +1616,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",
@@ -1722,6 +1735,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [
                 "Naval-18"
             ],
@@ -1837,6 +1851,7 @@
             "reinforcements": [
                 "REINFORCEMENT-8"
             ],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",
@@ -1931,6 +1946,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [
                 "SNAPNaval-1",
                 "SNAPNaval-2"
@@ -2008,6 +2024,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",
@@ -2092,6 +2109,7 @@
             "reinforcements": [
                 "REINFORCEMENT-2"
             ],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",
@@ -2182,6 +2200,7 @@
             "reinforcements": [
                 "REINFORCEMENT-3"
             ],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [
                 "OHDAM",
@@ -2267,6 +2286,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",
@@ -2351,6 +2371,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [
                 "GAMERHOUSE1",
@@ -2428,6 +2449,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-3",
@@ -2511,6 +2533,7 @@
             "qrfKillOnComplete": [],
             "qrfs": [],
             "reinforcements": [],
+            "roadbases": [],
             "ship_groups": [
                 "Naval-1"
             ],

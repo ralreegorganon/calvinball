@@ -57,6 +57,28 @@
             "x": 111546.40324635,
             "y": -157085.40888838
         },
+        "MASH Tent 1-10": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.6302848441482,
+            "name": "MASH Tent 1-10",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 127432.91044214,
+            "y": -168849.86943938
+        },
+        "MASH Tent 1-11": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.6302848441482,
+            "name": "MASH Tent 1-11",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 127309.4328571,
+            "y": -169024.41871259
+        },
         "MASH Tent 1-2": {
             "canCargo": false,
             "category": "Fortifications",
@@ -123,6 +145,28 @@
             "x": 177871.83379195,
             "y": 42643.176499325
         },
+        "MASH Tent 1-8": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.6302848441482,
+            "name": "MASH Tent 1-8",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 127482.89688502,
+            "y": -168806.6035575
+        },
+        "MASH Tent 1-9": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 3.6302848441482,
+            "name": "MASH Tent 1-9",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": 127552.7907194,
+            "y": -168770.149055
+        },
         "Needs Oar Point Goon Airwing Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
@@ -133,6 +177,28 @@
             "type": ".Ammunition depot",
             "x": 140506.54212207,
             "y": -85026.110469956
+        },
+        "Static Big smoke-1": {
+            "canCargo": false,
+            "category": "Effects",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 0.0877298168986,
+            "name": "Static Big smoke-1",
+            "type": "big_smoke",
+            "x": 127184.64768307,
+            "y": -169081.54825432
+        },
+        "Static Big smoke-2": {
+            "canCargo": false,
+            "category": "Effects",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 0.0877298168986,
+            "name": "Static Big smoke-2",
+            "type": "big_smoke",
+            "x": 127865.981874,
+            "y": -170103.21338777
         },
         "Static Container 20ft-1": {
             "canCargo": false,
@@ -178,6 +244,83 @@
             "x": 177876.28258569,
             "y": 42597.190274945
         },
+        "Static Container 20ft-13": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-13",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 127482.73477009,
+            "y": -168816.33045344
+        },
+        "Static Container 20ft-14": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-14",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 127490.39802307,
+            "y": -168813.16327062
+        },
+        "Static Container 20ft-15": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-15",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 127482.41054022,
+            "y": -168798.49781089
+        },
+        "Static Container 20ft-16": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-16",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 127552.3043746,
+            "y": -168762.04330839
+        },
+        "Static Container 20ft-17": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-17",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 127552.62860447,
+            "y": -168779.87595094
+        },
+        "Static Container 20ft-18": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-18",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 127560.29185745,
+            "y": -168776.70876812
+        },
+        "Static Container 20ft-19": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-19",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 127432.42409734,
+            "y": -168841.76369277
+        },
         "Static Container 20ft-2": {
             "canCargo": false,
             "category": "Fortifications",
@@ -188,6 +331,61 @@
             "type": "container_20ft",
             "x": 111545.91690155,
             "y": -157077.30314177
+        },
+        "Static Container 20ft-20": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-20",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 127432.74832721,
+            "y": -168859.59633532
+        },
+        "Static Container 20ft-21": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-21",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 127440.41158018,
+            "y": -168856.4291525
+        },
+        "Static Container 20ft-22": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-22",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 127308.9465123,
+            "y": -169016.31296598
+        },
+        "Static Container 20ft-23": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-23",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 127309.27074217,
+            "y": -169034.14560853
+        },
+        "Static Container 20ft-24": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 5.0265482457437,
+            "name": "Static Container 20ft-24",
+            "rate": 1,
+            "shape_name": "container_20ft",
+            "type": "container_20ft",
+            "x": 127316.93399515,
+            "y": -169030.9784257
         },
         "Static Container 20ft-3": {
             "canCargo": false,
@@ -530,6 +728,39 @@
             "x": 177860.6792488,
             "y": 42703.786016855
         },
+        "Static Invisible FARP-17": {
+            "canCargo": false,
+            "category": "Heliports",
+            "heading": 0.0,
+            "name": "Static Invisible FARP-17",
+            "rate": 100,
+            "shape_name": "invisiblefarp",
+            "type": "Invisible FARP",
+            "x": 127472.59761826,
+            "y": -168792.81995084
+        },
+        "Static Invisible FARP-18": {
+            "canCargo": false,
+            "category": "Heliports",
+            "heading": 0.0,
+            "name": "Static Invisible FARP-18",
+            "rate": 100,
+            "shape_name": "invisiblefarp",
+            "type": "Invisible FARP",
+            "x": 127542.49145264,
+            "y": -168756.36544834
+        },
+        "Static Invisible FARP-19": {
+            "canCargo": false,
+            "category": "Heliports",
+            "heading": 0.0,
+            "name": "Static Invisible FARP-19",
+            "rate": 100,
+            "shape_name": "invisiblefarp",
+            "type": "Invisible FARP",
+            "x": 127422.61117538,
+            "y": -168836.08583272
+        },
         "Static Invisible FARP-2": {
             "canCargo": false,
             "category": "Heliports",
@@ -540,6 +771,17 @@
             "type": "Invisible FARP",
             "x": 111630.14032456,
             "y": -157063.76473758
+        },
+        "Static Invisible FARP-20": {
+            "canCargo": false,
+            "category": "Heliports",
+            "heading": 0.0,
+            "name": "Static Invisible FARP-20",
+            "rate": 100,
+            "shape_name": "invisiblefarp",
+            "type": "Invisible FARP",
+            "x": 127299.13359034,
+            "y": -169010.63510593
         },
         "Static Invisible FARP-3": {
             "canCargo": false,

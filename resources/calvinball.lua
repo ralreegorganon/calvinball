@@ -772,6 +772,18 @@ local function showFarpUnlockedUpdate(farp, strandName)
     MESSAGE:New(m, 30):ToAll()
 end
 
+local function showRoadbaseUnlockedUpdate(roadbase, strandName)
+    local zone = ZONE:FindByName(roadbase.name)
+    local labelText = zone:GetProperty("label")
+
+    local r = {}
+    table.insert(r, "ROADBASE UPDATE")
+    table.insert(r, "")
+    table.insert(r, string.format("%s is now unlocked in %s", labelText, strandName))
+    local m = table.concat(r, "\n")
+    MESSAGE:New(m, 30):ToAll()
+end
+
 local function showCarrierUnlockedUpdate(carrier, strandName)
     local labelText = carrier.name
 
@@ -1427,6 +1439,23 @@ local function unlockFarpsForObjective(objective)
     end
 end
 
+local function unlockRoadbasesForObjective(objective)
+    for _, roadbase in ipairs(objective.roadbases) do
+        spawnGroupsAtThing(roadbase, country.id.CJTF_BLUE)
+        
+        local roadbaseZone = ZONE:FindByName(roadbase.name)
+        local roadbaseLabelText = roadbaseZone:GetProperty("label")
+        roadbase.labelMarkId = roadbaseZone:GetCoordinate(0):Translate(roadbaseZone:GetRadius() + 50, 0, false, true):TextToAll(roadbaseLabelText, -1, {0,0,1}, 1, {1,1,1}, 0.0, 20, true)
+
+        for _, client in ipairs(roadbase.clients) do
+            local roadbaseSlot = USERFLAG:New(client)
+            roadbaseSlot:Set(0)
+        end
+
+        showRoadbaseUnlockedUpdate(roadbase, objective.strand)
+    end
+end
+
 local function unlockCarriersForObjective(objective)
     for _, carrier in ipairs(objective.carriers) do
         local unitName = string.format("%s Unit #1", carrier.name)
@@ -1785,6 +1814,7 @@ local function startObjective(objective)
     end
 
     unlockFarpsForObjective(objective)
+    unlockRoadbasesForObjective(objective)
     unlockCarriersForObjective(objective)
     unlockAirbasesForObjective(objective)
     unlockReinforcementsForObjective(objective)
@@ -2026,6 +2056,17 @@ local function lockAllFarpSlots()
     end
 end
 
+local function lockAllRoadbaseSlots()
+    for _, objective in ipairs(MissionDb.objectives) do
+        for _, roadbase in ipairs(objective.roadbases) do
+            for _, client in ipairs(roadbase.clients) do
+                local roadbaseSlot = USERFLAG:New(client)
+                roadbaseSlot:Set(100)
+            end
+        end
+    end
+end
+
 local function lockAllCarrierSlots()
     for _, objective in ipairs(MissionDb.objectives) do
         for _, carrier in ipairs(objective.carriers) do
@@ -2082,6 +2123,7 @@ local function initializeObjectives()
     saveState()
 
     lockAllFarpSlots()
+    lockAllRoadbaseSlots()
     lockAllCarrierSlots()
     lockAllAirbaseSlots()
     initializeRedChief()
@@ -2102,6 +2144,7 @@ local function initializeObjectives()
         elseif objective.state == "finished" then
             finishedCount = finishedCount + 1
             unlockFarpsForObjective(objective)
+            unlockRoadbasesForObjective(objective)
             unlockCarriersForObjective(objective)
             unlockAirbasesForObjective(objective)
             unlockReinforcementsForObjective(objective)
