@@ -1387,18 +1387,6 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                         "capabilities": {
                             "AUFTRAG.Type.RECON": 50
                         }
-                    },
-                    "GGD-02": {
-                        "airframe": dcs.helicopters.CH_47D,
-                        "groupSize": 1,
-                        "initialInventory": 99,
-                        "livery": "standard",
-                        "loadouts": {
-                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
-                        },
-                        "capabilities": {
-                            "AUFTRAG.Type.OPSTRANSPORT": 50
-                        }
                     }
                 }
             },
@@ -1561,6 +1549,42 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                         },
                         "capabilities": {
                             "AUFTRAG.Type.CAP": 50,
+                        }
+                    }
+                }
+            },
+            "5th CAW - Forrestal": {
+                "airbase": "Forrestal Unit #1",
+                "warehouse": "Forrestal Unit #1",
+                "squadrons": {
+                    "5S-01": {
+                        "airframe": dcs.helicopters.CH_47D,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "standard",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    }
+                }
+            },
+            "6th CAW - Saratoga": {
+                "airbase": "Saratoga Unit #1",
+                "warehouse": "Saratoga Unit #1",
+                "squadrons": {
+                    "6S-01": {
+                        "airframe": dcs.helicopters.CH_47D,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "standard",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
                         }
                     }
                 }
@@ -1775,10 +1799,27 @@ class DangerZoneBlueBrigades(calvinball.bluebrigade.BlueBrigades):
 
     def define(self, m: dcs.Mission):
         blue_brigades = {
-            "1st Teddy": {
-                "warehouse": "Teddy Unit #1",
+            "1st Forrestal": {
+                "warehouse": "Forrestal Unit #1",
                 "platoons": {
-                    "Teddy-01": {
+                    "Forrestal-01": {
+                        "units": [
+                            dcs.vehicles.Infantry.Soldier_M4,
+                            dcs.vehicles.Infantry.Soldier_M4,
+                            dcs.vehicles.Infantry.Soldier_RPG,
+                            dcs.vehicles.Infantry.Soldier_RPG,
+                        ],
+                        "initialInventory": 99,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    }
+                }
+            },
+            "1st Saratoga": {
+                "warehouse": "Saratoga Unit #1",
+                "platoons": {
+                    "Saratoga-01": {
                         "units": [
                             dcs.vehicles.Infantry.Soldier_M4,
                             dcs.vehicles.Infantry.Soldier_M4,

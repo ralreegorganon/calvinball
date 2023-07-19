@@ -15644,22 +15644,6 @@ MissionDb = {
 							},
 						}
 					},
-					{
-						name = "GGD-02",
-						templateGroupName = "BLUE 1st CAW - Teddy GGD-02 CH-47D",
-						initialInventory = 99,
-						takeoffCold = false,
-						capabilities = {
-							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
-						},
-						livery = "standard",
-						payloads = {
-							{
-								templateGroupName = "BLUE 1st CAW - Teddy GGD-02 CH-47D LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
-							},
-						}
-					},
 				}
 			},
 			{
@@ -15885,15 +15869,75 @@ MissionDb = {
 					},
 				}
 			},
+			{
+				name = "5th CAW - Forrestal",
+				warehouse = "Forrestal Unit #1",
+				airbase = "Forrestal Unit #1",
+				squadrons = {
+					{
+						name = "5S-01",
+						templateGroupName = "BLUE 5th CAW - Forrestal 5S-01 CH-47D",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
+						},
+						livery = "standard",
+						payloads = {
+							{
+								templateGroupName = "BLUE 5th CAW - Forrestal 5S-01 CH-47D LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "6th CAW - Saratoga",
+				warehouse = "Saratoga Unit #1",
+				airbase = "Saratoga Unit #1",
+				squadrons = {
+					{
+						name = "6S-01",
+						templateGroupName = "BLUE 6th CAW - Saratoga 6S-01 CH-47D",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
+						},
+						livery = "standard",
+						payloads = {
+							{
+								templateGroupName = "BLUE 6th CAW - Saratoga 6S-01 CH-47D LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
+							},
+						}
+					},
+				}
+			},
 		},
 		brigades = {
 			{
-				name = "1st Teddy",
-				warehouse = "Teddy Unit #1",
+				name = "1st Forrestal",
+				warehouse = "Forrestal Unit #1",
 				platoons = {
 					{
-						name = "Teddy-01",
-						templateGroupName = "BLUE 1st Teddy Teddy-01",
+						name = "Forrestal-01",
+						templateGroupName = "BLUE 1st Forrestal Forrestal-01",
+						initialInventory = 99,
+						capabilities = {
+							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
+						},
+					},
+				}
+			},
+			{
+				name = "1st Saratoga",
+				warehouse = "Saratoga Unit #1",
+				platoons = {
+					{
+						name = "Saratoga-01",
+						templateGroupName = "BLUE 1st Saratoga Saratoga-01",
 						initialInventory = 99,
 						capabilities = {
 							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
