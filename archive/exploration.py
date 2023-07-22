@@ -116,4 +116,7 @@ def radios():
 
 #radios()
 
-parking_slot_names(dcs.terrain.Normandy().airports["Needs Oar Point"])
+#parking_slot_names(dcs.terrain.Normandy().airports["Needs Oar Point"])
+
+
+print(dcs.mapping.Point.from_latlng(dcs.mapping.LatLng(50.66526, -2.63873), dcs.terrain.Normandy()))

@@ -10,6 +10,52 @@ class Clients:
     def define(self, m: dcs.mission, edit: bool):
         return []
 
+    def __doittoit(self, m: dcs.Mission, edit: bool, fg: dcs.unitgroup.FlyingGroup, group_name, a, ctld_groups, csar_groups):
+        fg.set_client()
+
+        if "loadout" in a:
+            if a["loadout"] == "Empty":
+                fg.reset_loadout()
+            else:
+                fg.load_loadout(a["loadout"])
+
+        setFreq = False
+
+        if "radio_override" in a:
+            fg.set_frequency(a["radio_override"]["frequency"], a["radio_override"]["radio"])
+            setFreq = True
+
+        for u in fg.units:
+            u.fuel = a.get("fuel", 1) * a["airframe"].fuel_max
+            if "livery" in a:
+                u.livery_id = a["livery"]
+
+            if "racks" in a:
+                u.hardpoint_racks = a["racks"]
+
+            if "radios" in a:
+                for radio, channels in a["radios"].items():
+                    for channel, frequency in channels.items():
+                        if not setFreq:
+                            fg.set_frequency(frequency, radio)
+                            setFreq = True
+                        if channel <= u.num_radio_channels(radio):
+                            u.set_radio_channel_preset(radio, channel, frequency)
+
+            if "properties" in a:
+                for key, value in a["properties"].items():
+                        u.set_property(key, value)
+
+        if a["airframe"].helicopter:
+            ctld_groups.append(group_name)
+
+        if a["airframe"].helicopter or a["airframe"] == pydcs_extensions.Bronco_OV_10A:
+            csar_groups.append(group_name)
+
+        if "waypoints" in a:
+            for w in a["waypoints"]:
+                fg.add_waypoint(dcs.mapping.Point(w["x"], w["y"], m.terrain), 0)
+
 
     def build(self, m: dcs.Mission, edit: bool):
         airport_set = self.define(m, edit)
@@ -24,6 +70,7 @@ class Clients:
         for p in airport_set:
             for a in p["airframes"]:
                 start_type = a.get("start_type", p["start_type"])
+
                 if "airport" in p:
                     airport_name = p["airport"].name
 
@@ -39,46 +86,7 @@ class Clients:
                             p["country"], group_name, a["airframe"], p["airport"], group_size=1, start_type=start_type, parking_slots=parking
                         )
 
-                        fg.set_client()
-
-                        if "loadout" in a:
-                            if a["loadout"] == "Empty":
-                                fg.reset_loadout()
-                            else:
-                                fg.load_loadout(a["loadout"])
-
-                        setFreq = False
-
-                        if "radio_override" in a:
-                            fg.set_frequency(a["radio_override"]["frequency"], a["radio_override"]["radio"])
-                            setFreq = True
-
-                        for u in fg.units:
-                            u.fuel = a.get("fuel", 1) * a["airframe"].fuel_max
-                            if "livery" in a:
-                                u.livery_id = a["livery"]
-
-                            if "racks" in a:
-                                u.hardpoint_racks = a["racks"]
-
-                            if "radios" in a:
-                                for radio, channels in a["radios"].items():
-                                    for channel, frequency in channels.items():
-                                        if not setFreq:
-                                            fg.set_frequency(frequency, radio)
-                                            setFreq = True
-                                        if channel <= u.num_radio_channels(radio):
-                                            u.set_radio_channel_preset(radio, channel, frequency)
-
-                            if "properties" in a:
-                                for key, value in a["properties"].items():
-                                        u.set_property(key, value)
-
-                        if a["airframe"].helicopter:
-                            ctld_groups.append(group_name)
-
-                        if a["airframe"].helicopter or a["airframe"] == pydcs_extensions.Bronco_OV_10A:
-                            csar_groups.append(group_name)
+                        self.__doittoit(m, edit, fg, group_name, a, ctld_groups, csar_groups)
 
                 if "farp" in p:
                     if p["farp_zone"] not in farp_groups:
@@ -92,8 +100,6 @@ class Clients:
 
                         fg = m.flight_group(p["country"], group_name, a["airframe"], None,  position=dcs.mapping.Point(pos["x"], pos["y"], m.terrain),  group_size=1, start_type=start_type)
 
-                        fg.set_client()
-
                         if start_type == dcs.mission.StartType.Warm:
                             fg.points[0].type = "TakeOffGroundHot"
                             fg.points[0].action = dcs.point.PointAction.FromGroundAreaHot
@@ -102,44 +108,7 @@ class Clients:
                             fg.points[0].action = dcs.point.PointAction.FromGroundArea
                         fg.units[0].heading = pos["heading"]
 
-                        if "loadout" in a:
-                            if a["loadout"] == "Empty":
-                                fg.reset_loadout()
-                            else:
-                                fg.load_loadout(a["loadout"])
-
-                        setFreq = False
-
-                        if "radio_override" in a:
-                            fg.set_frequency(a["radio_override"]["frequency"], a["radio_override"]["radio"])
-                            setFreq = True
-
-                        for u in fg.units:
-                            u.fuel = a.get("fuel", 1) * a["airframe"].fuel_max
-                            if "livery" in a:
-                                u.livery_id = a["livery"]
-
-                            if "racks" in a:
-                                u.hardpoint_racks = a["racks"]
-
-                            if "radios" in a:
-                                for radio, channels in a["radios"].items():
-                                    for channel, frequency in channels.items():
-                                        if not setFreq:
-                                            fg.set_frequency(frequency, radio)
-                                            setFreq = True
-                                        if channel <= u.num_radio_channels(radio):
-                                            u.set_radio_channel_preset(radio, channel, frequency)
-
-                            if "properties" in a:
-                                for key, value in a["properties"].items():
-                                        u.set_property(key, value)
-
-                        if a["airframe"].helicopter:
-                            ctld_groups.append(group_name)
-
-                        if a["airframe"].helicopter or a["airframe"] == pydcs_extensions.Bronco_OV_10A:
-                            csar_groups.append(group_name)
+                        self.__doittoit(m, edit, fg, group_name, a, ctld_groups, csar_groups)
 
                 if "roadbase" in p:
                     if p["roadbase_zone"] not in roadbase_groups:
@@ -153,8 +122,6 @@ class Clients:
 
                         fg = m.flight_group(p["country"], group_name, a["airframe"], None,  position=dcs.mapping.Point(pos["x"], pos["y"], m.terrain),  group_size=1, start_type=start_type)
 
-                        fg.set_client()
-
                         if start_type == dcs.mission.StartType.Warm:
                             fg.points[0].type = "TakeOffGroundHot"
                             fg.points[0].action = dcs.point.PointAction.FromGroundAreaHot
@@ -163,44 +130,7 @@ class Clients:
                             fg.points[0].action = dcs.point.PointAction.FromGroundArea
                         fg.units[0].heading = pos["heading"]
 
-                        if "loadout" in a:
-                            if a["loadout"] == "Empty":
-                                fg.reset_loadout()
-                            else:
-                                fg.load_loadout(a["loadout"])
-
-                        setFreq = False
-
-                        if "radio_override" in a:
-                            fg.set_frequency(a["radio_override"]["frequency"], a["radio_override"]["radio"])
-                            setFreq = True
-
-                        for u in fg.units:
-                            u.fuel = a.get("fuel", 1) * a["airframe"].fuel_max
-                            if "livery" in a:
-                                u.livery_id = a["livery"]
-
-                            if "racks" in a:
-                                u.hardpoint_racks = a["racks"]
-
-                            if "radios" in a:
-                                for radio, channels in a["radios"].items():
-                                    for channel, frequency in channels.items():
-                                        if not setFreq:
-                                            fg.set_frequency(frequency, radio)
-                                            setFreq = True
-                                        if channel <= u.num_radio_channels(radio):
-                                            u.set_radio_channel_preset(radio, channel, frequency)
-
-                            if "properties" in a:
-                                for key, value in a["properties"].items():
-                                        u.set_property(key, value)
-
-                        if a["airframe"].helicopter:
-                            ctld_groups.append(group_name)
-
-                        if a["airframe"].helicopter or a["airframe"] == pydcs_extensions.Bronco_OV_10A:
-                            csar_groups.append(group_name)
+                        self.__doittoit(m, edit, fg, group_name, a, ctld_groups, csar_groups)
 
 
                 if "carrier" in p:
@@ -219,46 +149,7 @@ class Clients:
                             p["country"], group_name, a["airframe"], sg, group_size=1, start_type=start_type
                         )
 
-                        fg.set_client()
-
-                        if "loadout" in a:
-                            if a["loadout"] == "Empty":
-                                fg.reset_loadout()
-                            else:
-                                fg.load_loadout(a["loadout"])
-
-                        setFreq = False
-
-                        if "radio_override" in a:
-                            fg.set_frequency(a["radio_override"]["frequency"], a["radio_override"]["radio"])
-                            setFreq = True
-
-                        for u in fg.units:
-                            u.fuel = a.get("fuel", 1) * a["airframe"].fuel_max
-                            if "livery" in a:
-                                u.livery_id = a["livery"]
-
-                            if "racks" in a:
-                                u.hardpoint_racks = a["racks"]
-
-                            if "radios" in a:
-                                for radio, channels in a["radios"].items():
-                                    for channel, frequency in channels.items():
-                                        if not setFreq:
-                                            fg.set_frequency(frequency, radio)
-                                            setFreq = True
-                                        if channel <= u.num_radio_channels(radio):
-                                            u.set_radio_channel_preset(radio, channel, frequency)
-
-                            if "properties" in a:
-                                for key, value in a["properties"].items():
-                                        u.set_property(key, value)
-
-                        if a["airframe"].helicopter:
-                            ctld_groups.append(group_name)
-
-                        if a["airframe"].helicopter or a["airframe"] == pydcs_extensions.Bronco_OV_10A:
-                            csar_groups.append(group_name)
+                        self.__doittoit(m, edit, fg, group_name, a, ctld_groups, csar_groups) 
 
         return ctld_groups, csar_groups, farp_groups, roadbase_groups, airbase_groups, carrier_groups
 
