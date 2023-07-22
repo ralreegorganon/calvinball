@@ -6688,7 +6688,7 @@ MissionDb = {
 							"ROADBASE Send It F-16C_50 Warm 4",
 							"ROADBASE Send It F-16C_50 Warm 5",
 							"ROADBASE Send It F-16C_50 Warm 6",
-							"ROADBASE Send It MiG-21Bis Warm 1",
+							"ROADBASE Send It F-15ESE Warm 1",
 					}
 				},
 			},

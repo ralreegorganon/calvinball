@@ -582,7 +582,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "positions": [{"heading": 218, "x": 127382.21199551, "y": -168832.95995519}, {"heading": 213, "x": 127401.20573, "y": -168821.52346574}, {"heading": 211, "x": 127419.18913415, "y": -168810.16552627}, {"heading": 211, "x": 127437.96128409, "y": -168798.64983765}, {"heading": 211, "x": 127456.41793572, "y": -168787.29189819}, {"heading": 211, "x": 127473.92809239, "y": -168776.56495537}]
                     },
                     { 
-                        "airframe": dcs.planes.MiG_21Bis, "fuel": 1, "loadout": "Empty", "livery": "HuAF 31st AB (Turul Sqn)",
+                        "airframe": dcs.planes.F_15ESE, "fuel": 1, "loadout": "Empty", "livery": "USAF 494th Panthers FS 91-603 75th D-Day Anniversary", "properties": { dcs.planes.F_15ESE.Properties.NetCrewControlPriority.id: dcs.planes.F_15ESE.Properties.NetCrewControlPriority.Values.Equally_Responsible },
                         "positions": [{"heading": 211, "x": 127545.3005247, "y": -168731.35467876}]
                     },
                 ]
