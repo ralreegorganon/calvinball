@@ -5,38 +5,38 @@
         "label": "ROADBASE Send It",
         "ship_groups": [],
         "static_groups": [
+            "MASH Tent 1-10",
+            "MASH Tent 1-11",
+            "MASH Tent 1-8",
+            "MASH Tent 1-9",
+            "Static Big smoke-1",
+            "Static Big smoke-2",
             "Static Container 20ft-13",
             "Static Container 20ft-14",
             "Static Container 20ft-15",
-            "MASH Tent 1-8",
-            "Static Invisible FARP-17",
-            "Static Invisible FARP-18",
             "Static Container 20ft-16",
-            "MASH Tent 1-9",
             "Static Container 20ft-17",
             "Static Container 20ft-18",
-            "Static Invisible FARP-19",
             "Static Container 20ft-19",
-            "MASH Tent 1-10",
             "Static Container 20ft-20",
             "Static Container 20ft-21",
-            "Static Invisible FARP-20",
             "Static Container 20ft-22",
-            "MASH Tent 1-11",
             "Static Container 20ft-23",
             "Static Container 20ft-24",
-            "Static Big smoke-1",
-            "Static Big smoke-2"
+            "Static Invisible FARP-17",
+            "Static Invisible FARP-18",
+            "Static Invisible FARP-19",
+            "Static Invisible FARP-20"
         ],
         "vehicle_groups": [
             "FARP MASH 1-16",
+            "FARP MASH 1-17",
+            "FARP MASH 1-18",
+            "FARP MASH 1-19",
             "FARP Support 1-13",
             "FARP Support 1-14",
-            "FARP MASH 1-17",
             "FARP Support 1-15",
-            "FARP MASH 1-18",
-            "FARP Support 1-16",
-            "FARP MASH 1-19"
+            "FARP Support 1-16"
         ],
         "vertices": [
             {
@@ -58,5 +58,56 @@
         ],
         "x": 127670.10924029,
         "y": -169375.75193986
+    },
+    "ROADBASE-2": {
+        "clearScenery": "all",
+        "component": "roadbase",
+        "label": "ROADBASE Watch This",
+        "ship_groups": [],
+        "static_groups": [
+            "MASH Tent 1-12",
+            "Static Invisible FARP-21",
+            "Static Container 20ft-25",
+            "Static Container 20ft-26",
+            "Static Container 20ft-27",
+            "MASH Tent 1-13",
+            "Static Container 20ft-28",
+            "Static Invisible FARP-22",
+            "Static Container 20ft-29",
+            "Static Container 20ft-30",
+            "MASH Tent 1-14",
+            "Static Container 20ft-31",
+            "Static Invisible FARP-23",
+            "Static Container 20ft-32",
+            "Static Container 20ft-33"
+        ],
+        "vehicle_groups": [
+            "FARP MASH 1-20",
+            "FARP Support 1-17",
+            "FARP Support 1-18",
+            "FARP MASH 1-21",
+            "FARP Support 1-19",
+            "FARP MASH 1-22"
+        ],
+        "vertices": [
+            {
+                "x": 174310.41296944,
+                "y": 73551.570521629
+            },
+            {
+                "x": 172691.68370338,
+                "y": 75185.329043217
+            },
+            {
+                "x": 172931.09247393,
+                "y": 75421.74396605
+            },
+            {
+                "x": 174398.30022524,
+                "y": 73672.513970085
+            }
+        ],
+        "x": 173582.872343,
+        "y": 74457.789375245
     }
 }

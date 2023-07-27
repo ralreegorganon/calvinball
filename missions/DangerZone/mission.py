@@ -588,6 +588,26 @@ class DangerZoneClients(calvinball.clients.Clients):
                     },
                 ]
             },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "roadbase": "ROADBASE Watch This",
+                "roadbase_zone": "ROADBASE-2",
+                "start_type": dcs.mission.StartType.Warm,
+                "airframes": [
+                    { 
+                        "airframe": dcs.planes.A_10C_2, "fuel": 0.6, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)",
+                        "positions": [{"heading": 204, "x": 172966.33826149, "y": 75162.49934103}, {"heading": 204, "x": 172984.84658479, "y": 75169.461995988}]
+                    },
+                    { 
+                        "airframe": dcs.planes.F_16C_50, "fuel": 1, "loadout": "Empty", "livery": "18th AGRS Arctic Splinter",
+                        "positions": [{"heading": 224, "x": 172906.31841306, "y": 75119.930197431}, {"heading": 224, "x": 172919.80304861, "y": 75132.709753998}, {"heading": 212, "x": 172933.99276314, "y": 75144.167287472}, {"heading": 204, "x": 172948.97569153, "y": 75154.743472217}]
+                    },
+                    { 
+                        "airframe": dcs.planes.F_15ESE, "fuel": 1, "loadout": "Empty", "livery": "USAF 494th Panthers FS 91-603 75th D-Day Anniversary", "properties": { dcs.planes.F_15ESE.Properties.NetCrewControlPriority.id: dcs.planes.F_15ESE.Properties.NetCrewControlPriority.Values.Equally_Responsible },
+                        "positions": [{"heading": 198, "x": 173007.16297902, "y": 75177.49832118}, {"heading": 205, "x": 173027.18632185, "y": 75186.670304026}]
+                    },
+                ]
+            },
         ]
 
         comms_plan = {

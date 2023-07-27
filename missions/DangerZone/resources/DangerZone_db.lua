@@ -4732,6 +4732,256 @@ MissionDb = {
 				},
 			},
 			roadbases = {
+				{
+					name = "ROADBASE-2",
+					vehicleGroups = {
+						{ name = "FARP MASH 1-20" },
+						{ name = "FARP Support 1-17" },
+						{ name = "FARP Support 1-18" },
+						{ name = "FARP MASH 1-21" },
+						{ name = "FARP Support 1-19" },
+						{ name = "FARP MASH 1-22" },
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "MASH Tent 1-12#00001",
+							template = {
+								name = "MASH Tent 1-12",
+								type = "FARP Tent",
+								x = 173031.62418923,
+								y = 75162.250246138,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Invisible FARP-21#00001",
+							template = {
+								name = "Static Invisible FARP-21",
+								type = "Invisible FARP",
+								x = 173024.97893773,
+								y = 75172.861212256,
+								heading = 0.0,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "invisiblefarp",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-25#00001",
+							template = {
+								name = "Static Container 20ft-25",
+								type = "container_20ft",
+								x = 173038.59098517,
+								y = 75155.283450201,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-26#00001",
+							template = {
+								name = "Static Container 20ft-26",
+								type = "container_20ft",
+								x = 173032.69600399,
+								y = 75172.646849304,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-27#00001",
+							template = {
+								name = "Static Container 20ft-27",
+								type = "container_20ft",
+								x = 173030.33801152,
+								y = 75150.674646736,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "MASH Tent 1-13#00001",
+							template = {
+								name = "MASH Tent 1-13",
+								type = "FARP Tent",
+								x = 172989.39468771,
+								y = 75133.204066157,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-28#00001",
+							template = {
+								name = "Static Container 20ft-28",
+								type = "container_20ft",
+								x = 172990.46650247,
+								y = 75143.600669323,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Invisible FARP-22#00001",
+							template = {
+								name = "Static Invisible FARP-22",
+								type = "Invisible FARP",
+								x = 172982.7494362,
+								y = 75143.815032275,
+								heading = 0.0,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "invisiblefarp",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-29#00001",
+							template = {
+								name = "Static Container 20ft-29",
+								type = "container_20ft",
+								x = 172996.36148365,
+								y = 75126.237270221,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-30#00001",
+							template = {
+								name = "Static Container 20ft-30",
+								type = "container_20ft",
+								x = 172988.10851,
+								y = 75121.628466755,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "MASH Tent 1-14#00001",
+							template = {
+								name = "MASH Tent 1-14",
+								type = "FARP Tent",
+								x = 172946.47493749,
+								y = 75111.661661307,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-31#00001",
+							template = {
+								name = "Static Container 20ft-31",
+								type = "container_20ft",
+								x = 172947.54675225,
+								y = 75122.058264473,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Invisible FARP-23#00001",
+							template = {
+								name = "Static Invisible FARP-23",
+								type = "Invisible FARP",
+								x = 172939.82968598,
+								y = 75122.272627425,
+								heading = 0.0,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "invisiblefarp",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-32#00001",
+							template = {
+								name = "Static Container 20ft-32",
+								type = "container_20ft",
+								x = 172953.44173342,
+								y = 75104.694865371,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-33#00001",
+							template = {
+								name = "Static Container 20ft-33",
+								type = "container_20ft",
+								x = 172945.18875977,
+								y = 75100.086061905,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+					},
+					clients = {
+							"ROADBASE Watch This A-10C_2 Warm 1",
+							"ROADBASE Watch This A-10C_2 Warm 2",
+							"ROADBASE Watch This F-16C_50 Warm 1",
+							"ROADBASE Watch This F-16C_50 Warm 2",
+							"ROADBASE Watch This F-16C_50 Warm 3",
+							"ROADBASE Watch This F-16C_50 Warm 4",
+							"ROADBASE Watch This F-15ESE Warm 1",
+							"ROADBASE Watch This F-15ESE Warm 2",
+					}
+				},
 			},
 			airbases = {
 			},
@@ -4873,6 +5123,17 @@ MissionDb = {
 			carriers = {
 			},
 			qrfs = {
+				{
+					name = "QRF-38",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					},
+				},
 			},
 			reinforcements = {
 			},
@@ -6336,17 +6597,107 @@ MissionDb = {
 					name = "ROADBASE-1",
 					vehicleGroups = {
 						{ name = "FARP MASH 1-16" },
+						{ name = "FARP MASH 1-17" },
+						{ name = "FARP MASH 1-18" },
+						{ name = "FARP MASH 1-19" },
 						{ name = "FARP Support 1-13" },
 						{ name = "FARP Support 1-14" },
-						{ name = "FARP MASH 1-17" },
 						{ name = "FARP Support 1-15" },
-						{ name = "FARP MASH 1-18" },
 						{ name = "FARP Support 1-16" },
-						{ name = "FARP MASH 1-19" },
 					},
 					shipGroups = {
 					},
 					staticGroups = {
+						{
+							name = "MASH Tent 1-10#00001",
+							template = {
+								name = "MASH Tent 1-10",
+								type = "FARP Tent",
+								x = 127432.91044214,
+								y = -168849.86943938,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "MASH Tent 1-11#00001",
+							template = {
+								name = "MASH Tent 1-11",
+								type = "FARP Tent",
+								x = 127309.4328571,
+								y = -169024.41871259,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "MASH Tent 1-8#00001",
+							template = {
+								name = "MASH Tent 1-8",
+								type = "FARP Tent",
+								x = 127482.89688502,
+								y = -168806.6035575,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "MASH Tent 1-9#00001",
+							template = {
+								name = "MASH Tent 1-9",
+								type = "FARP Tent",
+								x = 127552.7907194,
+								y = -168770.149055,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Big smoke-1#00001",
+							template = {
+								name = "Static Big smoke-1",
+								type = "big_smoke",
+								x = 127184.64768307,
+								y = -169081.54825432,
+								heading = 0.0877298168986,
+								category = "Effects",
+								canCargo = false,
+								shape_name = "",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Big smoke-2#00001",
+							template = {
+								name = "Static Big smoke-2",
+								type = "big_smoke",
+								x = 127865.981874,
+								y = -170103.21338777,
+								heading = 0.0877298168986,
+								category = "Effects",
+								canCargo = false,
+								shape_name = "",
+								rate = 50,
+								dead = false
+							}
+						},
 						{
 							name = "Static Container 20ft-13#00001",
 							template = {
@@ -6393,51 +6744,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "MASH Tent 1-8#00001",
-							template = {
-								name = "MASH Tent 1-8",
-								type = "FARP Tent",
-								x = 127482.89688502,
-								y = -168806.6035575,
-								heading = 3.6302848441482,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "PalatkaB",
-								rate = 50,
-								dead = false
-							}
-						},
-						{
-							name = "Static Invisible FARP-17#00001",
-							template = {
-								name = "Static Invisible FARP-17",
-								type = "Invisible FARP",
-								x = 127472.59761826,
-								y = -168792.81995084,
-								heading = 0.0,
-								category = "Heliports",
-								canCargo = false,
-								shape_name = "invisiblefarp",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Invisible FARP-18#00001",
-							template = {
-								name = "Static Invisible FARP-18",
-								type = "Invisible FARP",
-								x = 127542.49145264,
-								y = -168756.36544834,
-								heading = 0.0,
-								category = "Heliports",
-								canCargo = false,
-								shape_name = "invisiblefarp",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
 							name = "Static Container 20ft-16#00001",
 							template = {
 								name = "Static Container 20ft-16",
@@ -6449,21 +6755,6 @@ MissionDb = {
 								canCargo = false,
 								shape_name = "container_20ft",
 								rate = 1,
-								dead = false
-							}
-						},
-						{
-							name = "MASH Tent 1-9#00001",
-							template = {
-								name = "MASH Tent 1-9",
-								type = "FARP Tent",
-								x = 127552.7907194,
-								y = -168770.149055,
-								heading = 3.6302848441482,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "PalatkaB",
-								rate = 50,
 								dead = false
 							}
 						},
@@ -6498,21 +6789,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Invisible FARP-19#00001",
-							template = {
-								name = "Static Invisible FARP-19",
-								type = "Invisible FARP",
-								x = 127422.61117538,
-								y = -168836.08583272,
-								heading = 0.0,
-								category = "Heliports",
-								canCargo = false,
-								shape_name = "invisiblefarp",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
 							name = "Static Container 20ft-19#00001",
 							template = {
 								name = "Static Container 20ft-19",
@@ -6524,21 +6800,6 @@ MissionDb = {
 								canCargo = false,
 								shape_name = "container_20ft",
 								rate = 1,
-								dead = false
-							}
-						},
-						{
-							name = "MASH Tent 1-10#00001",
-							template = {
-								name = "MASH Tent 1-10",
-								type = "FARP Tent",
-								x = 127432.91044214,
-								y = -168849.86943938,
-								heading = 3.6302848441482,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "PalatkaB",
-								rate = 50,
 								dead = false
 							}
 						},
@@ -6573,21 +6834,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Invisible FARP-20#00001",
-							template = {
-								name = "Static Invisible FARP-20",
-								type = "Invisible FARP",
-								x = 127299.13359034,
-								y = -169010.63510593,
-								heading = 0.0,
-								category = "Heliports",
-								canCargo = false,
-								shape_name = "invisiblefarp",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
 							name = "Static Container 20ft-22#00001",
 							template = {
 								name = "Static Container 20ft-22",
@@ -6599,21 +6845,6 @@ MissionDb = {
 								canCargo = false,
 								shape_name = "container_20ft",
 								rate = 1,
-								dead = false
-							}
-						},
-						{
-							name = "MASH Tent 1-11#00001",
-							template = {
-								name = "MASH Tent 1-11",
-								type = "FARP Tent",
-								x = 127309.4328571,
-								y = -169024.41871259,
-								heading = 3.6302848441482,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "PalatkaB",
-								rate = 50,
 								dead = false
 							}
 						},
@@ -6648,32 +6879,62 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Big smoke-1#00001",
+							name = "Static Invisible FARP-17#00001",
 							template = {
-								name = "Static Big smoke-1",
-								type = "big_smoke",
-								x = 127184.64768307,
-								y = -169081.54825432,
-								heading = 0.0877298168986,
-								category = "Effects",
+								name = "Static Invisible FARP-17",
+								type = "Invisible FARP",
+								x = 127472.59761826,
+								y = -168792.81995084,
+								heading = 0.0,
+								category = "Heliports",
 								canCargo = false,
-								shape_name = "",
-								rate = 50,
+								shape_name = "invisiblefarp",
+								rate = 100,
 								dead = false
 							}
 						},
 						{
-							name = "Static Big smoke-2#00001",
+							name = "Static Invisible FARP-18#00001",
 							template = {
-								name = "Static Big smoke-2",
-								type = "big_smoke",
-								x = 127865.981874,
-								y = -170103.21338777,
-								heading = 0.0877298168986,
-								category = "Effects",
+								name = "Static Invisible FARP-18",
+								type = "Invisible FARP",
+								x = 127542.49145264,
+								y = -168756.36544834,
+								heading = 0.0,
+								category = "Heliports",
 								canCargo = false,
-								shape_name = "",
-								rate = 50,
+								shape_name = "invisiblefarp",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Invisible FARP-19#00001",
+							template = {
+								name = "Static Invisible FARP-19",
+								type = "Invisible FARP",
+								x = 127422.61117538,
+								y = -168836.08583272,
+								heading = 0.0,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "invisiblefarp",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Invisible FARP-20#00001",
+							template = {
+								name = "Static Invisible FARP-20",
+								type = "Invisible FARP",
+								x = 127299.13359034,
+								y = -169010.63510593,
+								heading = 0.0,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "invisiblefarp",
+								rate = 100,
 								dead = false
 							}
 						},
