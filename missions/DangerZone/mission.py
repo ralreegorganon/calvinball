@@ -608,6 +608,43 @@ class DangerZoneClients(calvinball.clients.Clients):
                     },
                 ]
             },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "farp": "FARP Bluebird",
+                "farp_zone": "FARP-5",
+                "start_type": dcs.mission.StartType.Warm,
+                "airframes": [
+                    {
+                        "airframe": dcs.helicopters.Mi_24P, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation",
+                        "positions": [{"heading": 182, "x": 182952.41382148, "y": 98497.198602195}, {"heading": 141, "x": 182940.70998043, "y": 98435.901632175}, {"heading": 135, "x": 182923.39621542, "y": 98410.537913845}, {"heading": 162, "x": 182950.84530223, "y": 98468.377061045}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.Mi_8MT, "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN",
+                        "positions": [{"heading": 72, "x": 182806.630652, "y": 98378.187204395}, {"heading": 116, "x": 182900.70765275, "y": 98393.402342615}, {"heading": 119, "x": 182871.51456483, "y": 98382.921218965}, {"heading": 106, "x": 182841.03113092, "y": 98375.691832865}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.UH_1H, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972",
+                        "positions": [{"heading": 257, "x": 182826.21043304, "y": 98615.619450215}, {"heading": 251, "x": 182846.25206522, "y": 98615.871061205}, {"heading": 247, "x": 182879.71632723, "y": 98608.196925935}, {"heading": 255, "x": 182863.73902921, "y": 98614.235589755}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
+                        "positions": [{"heading": 30, "x": 182716.15561003, "y": 98451.280201265}, {"heading": 45, "x": 182754.60414497, "y": 98401.958024225}, {"heading": 40, "x": 182731.46827917, "y": 98423.027248345}, {"heading": 63, "x": 182778.91598637, "y": 98386.147439565}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.SA342L, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2",
+                        "positions": [{"heading": 225, "x": 182930.45455203, "y": 98570.526876945}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.SA342M, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet",
+                        "positions": [{"heading": 234, "x": 182914.37722976, "y": 98585.819939595}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf",
+                        "positions": [{"heading": 212, "x": 182942.41451128, "y": 98550.724321465}, {"heading": 208, "x": 182951.43349695, "y": 98528.176857305}],
+                        "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
+                    },
+                ]
+            },
         ]
 
         comms_plan = {
@@ -1396,6 +1433,74 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                     },
                 }
             },
+            "Kuz": {
+                "airbase": "RED RG Kuznetsov Unit #1",
+                "warehouse": "RED RG Kuznetsov Unit #1",
+                "squadrons": {
+                    "Kuz 1": {
+                        "airframe": dcs.planes.Su_33,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "279th kiap 1st squad navy",
+                        "loadouts": {
+                            "R-73*4,R-27ET*2,R-27ER*6": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "S-25*4,FAB-250*4,R-73*2,ECM": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
+                            "RBK-500AO*6,R-73*2,R-27R*2,ECM": "{ AUFTRAG.Type.BOMBCARPET }",
+
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Kuz 2": {
+                        "airframe": dcs.helicopters.Mi_26,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    },
+                    "Kuz 3": {
+                        "airframe": dcs.helicopters.Mi_28N,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "night",
+                        "loadouts": {
+                            "16x9M114, 40xS-8": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Kuz 4": {
+                        "airframe": dcs.helicopters.Ka_50_3,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Ka-50_standart_black_RussianAirForce",
+                        "loadouts": {
+                            "12x9A4172, 40xS-13, 4xIgla": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                }
+            },
         }
         return red_airwings
 
@@ -1831,6 +1936,23 @@ class DangerZoneRedBrigades(calvinball.redbrigade.RedBrigades):
                         "initialInventory": 1,
                         "capabilities": {
                             "AUFTRAG.Type.ARTY": 50
+                        }
+                    }
+                }
+            },
+            "1st Kuz": {
+                "warehouse": "RED RG Kuznetsov Unit #1",
+                "platoons": {
+                    "Kuz-01": {
+                        "units": [
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                        ],
+                        "initialInventory": 3,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
                         }
                     }
                 }

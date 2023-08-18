@@ -144,7 +144,7 @@
                 }
             ],
             "x": 159413.13325046,
-            "y": 17758.292758202
+            "y": 17758.292758201
         },
         "OBJ-11": {
             "airbases": [],
@@ -358,14 +358,65 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [
-                "CAP-4"
+                "CAP-3"
             ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
-            "farps": [],
-            "label": "Foothold Portland",
-            "nodes": {},
+            "farps": [
+                "FARP-5"
+            ],
+            "label": "Strait Ahead",
+            "nodes": {
+                "NODE-38": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Not Manhattan",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 185045.31525883,
+                    "y": 103085.75673851
+                },
+                "NODE-41": {
+                    "blueCaptureThreshold": "0",
+                    "label": "End Of The Line",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 186321.28995532,
+                    "y": 107067.99044697
+                },
+                "NODE-42": {
+                    "blueCaptureThreshold": "0",
+                    "label": "The Means Of Production",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 188387.28924479,
+                    "y": 103818.56340576
+                },
+                "NODE-43": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Import/Export",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 187740.00461025,
+                    "y": 105698.02386495
+                },
+                "NODE-44": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Chain Home",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 189437.27888435,
+                    "y": 107955.52453935
+                },
+                "NODE-45": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Electrifying",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 189793.85206747,
+                    "y": 109791.6397754
+                }
+            },
             "qrfKillOnComplete": [],
             "qrfs": [
                 "QRF-38"
@@ -379,24 +430,24 @@
             "vehicle_groups": [],
             "vertices": [
                 {
-                    "x": 181622.92806275,
-                    "y": 97789.701862182
+                    "x": 183872.78178199,
+                    "y": 101043.97309281
                 },
                 {
-                    "x": 187614.85329634,
-                    "y": 113727.78240079
+                    "x": 187544.901907,
+                    "y": 112064.67330254
                 },
                 {
-                    "x": 193871.12817258,
-                    "y": 112174.72825017
+                    "x": 193726.95214038,
+                    "y": 110718.43886777
                 },
                 {
-                    "x": 186596.03471277,
-                    "y": 96876.492925694
+                    "x": 188793.71148136,
+                    "y": 99434.868671033
                 }
             ],
-            "x": 187426.23606111,
-            "y": 105142.17635971
+            "x": 188484.58682768,
+            "y": 105815.48848354
         },
         "OBJ-14": {
             "airbases": [],

@@ -2763,6 +2763,21 @@ MissionDb = {
 							}
 						},
 						{
+							name = "Static FARP Tent-72#00001",
+							template = {
+								name = "Static FARP Tent-72",
+								type = "FARP Tent",
+								x = 177821.95094157,
+								y = 42591.301971845,
+								heading = 1.5707963267949,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
 							name = "Static Invisible FARP-13#00001",
 							template = {
 								name = "Static Invisible FARP-13",
@@ -2849,21 +2864,6 @@ MissionDb = {
 								canCargo = false,
 								shape_name = "H-Windsock_RW",
 								rate = 3,
-								dead = false
-							}
-						},
-						{
-							name = "Static FARP Tent-72#00001",
-							template = {
-								name = "Static FARP Tent-72",
-								type = "FARP Tent",
-								x = 177821.95094157,
-								y = 42591.301971845,
-								heading = 1.5707963267949,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "PalatkaB",
-								rate = 50,
 								dead = false
 							}
 						},
@@ -5108,13 +5108,279 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
-				"CAP-4",
+				"CAP-3",
 			},
 			nodes = {
+				{ name = "NODE-38", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-41", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-42", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-43", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-44", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-45", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
 			farps = {
+				{
+					name = "FARP-5",
+					vehicleGroups = {
+						{ name = "FARP Support 1-20" },
+						{ name = "FARP Support 1-21" },
+						{ name = "FARP MASH 1-23" },
+						{ name = "FARP Support 1-22" },
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "Static Invisible FARP-24#00001",
+							template = {
+								name = "Static Invisible FARP-24",
+								type = "Invisible FARP",
+								x = 182830.30418347,
+								y = 98593.873329061,
+								heading = 0.0,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "invisiblefarp",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Watch tower armed-5#00001",
+							template = {
+								name = "Static Watch tower armed-5",
+								type = "house2arm",
+								x = 182842.69217137,
+								y = 98503.783551081,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "",
+								rate = 10,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-34#00001",
+							template = {
+								name = "Static Container 20ft-34",
+								type = "container_20ft",
+								x = 182853.20269232,
+								y = 98473.011473111,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-73#00001",
+							template = {
+								name = "Static FARP Tent-73",
+								type = "FARP Tent",
+								x = 182812.22524952,
+								y = 98481.400383071,
+								heading = 1.5707963267949,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-74#00001",
+							template = {
+								name = "Static FARP Tent-74",
+								type = "FARP Tent",
+								x = 182791.57587624,
+								y = 98481.389284051,
+								heading = 1.5707963267949,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "MASH Tent 1-15#00001",
+							template = {
+								name = "MASH Tent 1-15",
+								type = "FARP Tent",
+								x = 182846.39386516,
+								y = 98479.171840541,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "MASH Tent 1-16#00001",
+							template = {
+								name = "MASH Tent 1-16",
+								type = "FARP Tent",
+								x = 182841.45872662,
+								y = 98533.263811531,
+								heading = 5.4803338512622,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Invisible FARP-25#00001",
+							template = {
+								name = "Static Invisible FARP-25",
+								type = "Invisible FARP",
+								x = 182730.32668373,
+								y = 98494.108781211,
+								heading = 0.0,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "invisiblefarp",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Windsock-5#00001",
+							template = {
+								name = "Static Windsock-5",
+								type = "Windsock",
+								x = 182831.38615186,
+								y = 98494.565827641,
+								heading = 0.0,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "H-Windsock_RW",
+								rate = 3,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-35#00001",
+							template = {
+								name = "Static Container 20ft-35",
+								type = "container_20ft",
+								x = 182846.23175023,
+								y = 98469.444944601,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-36#00001",
+							template = {
+								name = "Static Container 20ft-36",
+								type = "container_20ft",
+								x = 182845.90752036,
+								y = 98487.277587151,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Invisible FARP-26#00001",
+							template = {
+								name = "Static Invisible FARP-26",
+								type = "Invisible FARP",
+								x = 182832.34687991,
+								y = 98404.267466581,
+								heading = 0.0,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "invisiblefarp",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-75#00001",
+							template = {
+								name = "Static FARP Tent-75",
+								type = "FARP Tent",
+								x = 182820.16516374,
+								y = 98526.864512281,
+								heading = 5.4803338512622,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static FARP Tent-76#00001",
+							template = {
+								name = "Static FARP Tent-76",
+								type = "FARP Tent",
+								x = 182801.70652197,
+								y = 98481.295481781,
+								heading = 1.5707963267949,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Invisible FARP-27#00001",
+							template = {
+								name = "Static Invisible FARP-27",
+								type = "Invisible FARP",
+								x = 182930.13094337,
+								y = 98500.815991341,
+								heading = 0.0,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "invisiblefarp",
+								rate = 100,
+								dead = false
+							}
+						},
+					},
+					clients = {
+							"FARP Bluebird Mi-24P Warm 1",
+							"FARP Bluebird Mi-24P Warm 2",
+							"FARP Bluebird Mi-24P Warm 3",
+							"FARP Bluebird Mi-24P Warm 4",
+							"FARP Bluebird Mi-8MT Warm 1",
+							"FARP Bluebird Mi-8MT Warm 2",
+							"FARP Bluebird Mi-8MT Warm 3",
+							"FARP Bluebird Mi-8MT Warm 4",
+							"FARP Bluebird UH-1H Warm 1",
+							"FARP Bluebird UH-1H Warm 2",
+							"FARP Bluebird UH-1H Warm 3",
+							"FARP Bluebird UH-1H Warm 4",
+							"FARP Bluebird AH-64D_BLK_II Warm 1",
+							"FARP Bluebird AH-64D_BLK_II Warm 2",
+							"FARP Bluebird AH-64D_BLK_II Warm 3",
+							"FARP Bluebird AH-64D_BLK_II Warm 4",
+							"FARP Bluebird SA342L Warm 1",
+							"FARP Bluebird SA342M Warm 1",
+							"FARP Bluebird Ka-50_3 Warm 1",
+							"FARP Bluebird Ka-50_3 Warm 2",
+					}
+				},
 			},
 			roadbases = {
 			},
@@ -5130,6 +5396,7 @@ MissionDb = {
 					vehicleGroups = {
 					},
 					shipGroups = {
+						{ name = "RED RG Kuznetsov" },
 					},
 					staticGroups = {
 					},
@@ -15028,6 +15295,26 @@ MissionDb = {
 			"FARP Bewl Water SA342M Warm 1",
 			"FARP Bewl Water Ka-50_3 Warm 1",
 			"FARP Bewl Water Ka-50_3 Warm 2",
+			"FARP Bluebird Mi-24P Warm 1",
+			"FARP Bluebird Mi-24P Warm 2",
+			"FARP Bluebird Mi-24P Warm 3",
+			"FARP Bluebird Mi-24P Warm 4",
+			"FARP Bluebird Mi-8MT Warm 1",
+			"FARP Bluebird Mi-8MT Warm 2",
+			"FARP Bluebird Mi-8MT Warm 3",
+			"FARP Bluebird Mi-8MT Warm 4",
+			"FARP Bluebird UH-1H Warm 1",
+			"FARP Bluebird UH-1H Warm 2",
+			"FARP Bluebird UH-1H Warm 3",
+			"FARP Bluebird UH-1H Warm 4",
+			"FARP Bluebird AH-64D_BLK_II Warm 1",
+			"FARP Bluebird AH-64D_BLK_II Warm 2",
+			"FARP Bluebird AH-64D_BLK_II Warm 3",
+			"FARP Bluebird AH-64D_BLK_II Warm 4",
+			"FARP Bluebird SA342L Warm 1",
+			"FARP Bluebird SA342M Warm 1",
+			"FARP Bluebird Ka-50_3 Warm 1",
+			"FARP Bluebird Ka-50_3 Warm 2",
 		}
 	},
 	csar = {
@@ -15172,6 +15459,26 @@ MissionDb = {
 			"FARP Bewl Water SA342M Warm 1",
 			"FARP Bewl Water Ka-50_3 Warm 1",
 			"FARP Bewl Water Ka-50_3 Warm 2",
+			"FARP Bluebird Mi-24P Warm 1",
+			"FARP Bluebird Mi-24P Warm 2",
+			"FARP Bluebird Mi-24P Warm 3",
+			"FARP Bluebird Mi-24P Warm 4",
+			"FARP Bluebird Mi-8MT Warm 1",
+			"FARP Bluebird Mi-8MT Warm 2",
+			"FARP Bluebird Mi-8MT Warm 3",
+			"FARP Bluebird Mi-8MT Warm 4",
+			"FARP Bluebird UH-1H Warm 1",
+			"FARP Bluebird UH-1H Warm 2",
+			"FARP Bluebird UH-1H Warm 3",
+			"FARP Bluebird UH-1H Warm 4",
+			"FARP Bluebird AH-64D_BLK_II Warm 1",
+			"FARP Bluebird AH-64D_BLK_II Warm 2",
+			"FARP Bluebird AH-64D_BLK_II Warm 3",
+			"FARP Bluebird AH-64D_BLK_II Warm 4",
+			"FARP Bluebird SA342L Warm 1",
+			"FARP Bluebird SA342M Warm 1",
+			"FARP Bluebird Ka-50_3 Warm 1",
+			"FARP Bluebird Ka-50_3 Warm 2",
 		}
 	},
 	autolase = {},
@@ -16118,6 +16425,95 @@ MissionDb = {
 					},
 				}
 			},
+			{
+				name = "Kuz",
+				warehouse = "RED RG Kuznetsov Unit #1",
+				airbase = "RED RG Kuznetsov Unit #1",
+				squadrons = {
+					{
+						name = "Kuz 1",
+						templateGroupName = "RED Kuz Kuz 1 Su-33",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "279th kiap 1st squad navy",
+						payloads = {
+							{
+								templateGroupName = "RED Kuz Kuz 1 Su-33 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Kuz Kuz 1 Su-33 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Kuz Kuz 1 Su-33 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.BOMBCARPET }
+							},
+						}
+					},
+					{
+						name = "Kuz 2",
+						templateGroupName = "RED Kuz Kuz 2 Mi-26",
+						initialInventory = 99,
+						takeoffCold = true,
+						capabilities = {
+							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
+						},
+						livery = "Russia_VVS_Grey",
+						payloads = {
+							{
+								templateGroupName = "RED Kuz Kuz 2 Mi-26 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
+							},
+						}
+					},
+					{
+						name = "Kuz 3",
+						templateGroupName = "RED Kuz Kuz 3 Mi-28N",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "night",
+						payloads = {
+							{
+								templateGroupName = "RED Kuz Kuz 3 Mi-28N LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+					{
+						name = "Kuz 4",
+						templateGroupName = "RED Kuz Kuz 4 Ka-50_3",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "Ka-50_standart_black_RussianAirForce",
+						payloads = {
+							{
+								templateGroupName = "RED Kuz Kuz 4 Ka-50_3 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+				}
+			},
 		},
 		brigades = {
 			{
@@ -16248,6 +16644,20 @@ MissionDb = {
 						initialInventory = 1,
 						capabilities = {
 							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
+						},
+					},
+				}
+			},
+			{
+				name = "1st Kuz",
+				warehouse = "RED RG Kuznetsov Unit #1",
+				platoons = {
+					{
+						name = "Kuz-01",
+						templateGroupName = "RED 1st Kuz Kuz-01",
+						initialInventory = 3,
+						capabilities = {
+							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
 						},
 					},
 				}

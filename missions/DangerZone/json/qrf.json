@@ -1822,7 +1822,9 @@
     "QRF-38": {
         "component": "qrf",
         "label": "",
-        "ship_groups": [],
+        "ship_groups": [
+            "RED RG Kuznetsov"
+        ],
         "static_groups": [],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [],

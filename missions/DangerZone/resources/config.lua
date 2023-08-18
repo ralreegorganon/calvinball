@@ -39,3 +39,15 @@ MissionDb.invokeOnActivate["REINFORCEMENT-3"] = function()
     ng:AddWaypoint(g:GetCoordinate(), 25, nil, 0, true)
     ng:SwitchROE(ENUMS.ROE.WeaponFree)
 end
+
+MissionDb.invokeOnActivate["OBJ-13"] = function()
+    local g = GROUP:FindByName("RED RG Kuznetsov")
+    if not g then
+        return
+    end
+    local ng = NAVYGROUP:New(g)
+    ng:ClearWaypoints()
+    ng:SetPatrolAdInfinitum(true)
+    ng:AddWaypoint(COORDINATE:New(233695, 0, 183523), 25, nil, 0, true)
+    ng:AddWaypoint(g:GetCoordinate(), 25, nil, 0, true)
+end

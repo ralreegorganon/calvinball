@@ -1838,7 +1838,8 @@ local function startObjective(objective)
         if nextObjectiveZone:Get2DDistance(objectiveZone:GetCoordinate(0)) > 37040 then
             SCHEDULER:New(nil, function()
                 spawnGroupsAtThing(nextObjective, country.id.CJTF_RED)
-            end, {}, 270)
+            end, {}, 10)
+            --end, {}, 270)
         end
     end
 

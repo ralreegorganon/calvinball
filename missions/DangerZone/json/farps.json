@@ -110,13 +110,13 @@
             "Static FARP Tent-69",
             "Static FARP Tent-70",
             "Static FARP Tent-71",
+            "Static FARP Tent-72",
             "Static Invisible FARP-13",
             "Static Invisible FARP-14",
             "Static Invisible FARP-15",
             "Static Invisible FARP-16",
             "Static Watch tower armed-4",
-            "Static Windsock-4",
-            "Static FARP Tent-72"
+            "Static Windsock-4"
         ],
         "vehicle_groups": [
             "FARP MASH 1-15",
@@ -126,5 +126,37 @@
         ],
         "x": 177862.23657392,
         "y": 42603.952621407
+    },
+    "FARP-5": {
+        "clearScenery": "all",
+        "component": "farp",
+        "label": "FARP Bluebird",
+        "radius": 137.16,
+        "ship_groups": [],
+        "static_groups": [
+            "Static Invisible FARP-24",
+            "Static Watch tower armed-5",
+            "Static Container 20ft-34",
+            "Static FARP Tent-73",
+            "Static FARP Tent-74",
+            "MASH Tent 1-15",
+            "MASH Tent 1-16",
+            "Static Invisible FARP-25",
+            "Static Windsock-5",
+            "Static Container 20ft-35",
+            "Static Container 20ft-36",
+            "Static Invisible FARP-26",
+            "Static FARP Tent-75",
+            "Static FARP Tent-76",
+            "Static Invisible FARP-27"
+        ],
+        "vehicle_groups": [
+            "FARP Support 1-20",
+            "FARP Support 1-21",
+            "FARP MASH 1-23",
+            "FARP Support 1-22"
+        ],
+        "x": 182831.0465453,
+        "y": 98494.640257035
     }
 }
