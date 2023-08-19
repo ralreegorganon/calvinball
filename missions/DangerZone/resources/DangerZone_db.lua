@@ -16462,7 +16462,7 @@ MissionDb = {
 					},
 					{
 						name = "Kuz 2",
-						templateGroupName = "RED Kuz Kuz 2 Mi-26",
+						templateGroupName = "RED Kuz Kuz 2 Ka-27",
 						initialInventory = 99,
 						takeoffCold = true,
 						capabilities = {
@@ -16471,7 +16471,7 @@ MissionDb = {
 						livery = "Russia_VVS_Grey",
 						payloads = {
 							{
-								templateGroupName = "RED Kuz Kuz 2 Mi-26 LOADOUT 0",
+								templateGroupName = "RED Kuz Kuz 2 Ka-27 LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}

@@ -1459,7 +1459,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                         }
                     },
                     "Kuz 2": {
-                        "airframe": dcs.helicopters.Mi_26,
+                        "airframe": dcs.helicopters.Ka_27,
                         "groupSize": 1,
                         "initialInventory": 99,
                         "takeoffCold": "true",

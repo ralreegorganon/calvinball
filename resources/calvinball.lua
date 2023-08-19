@@ -1832,16 +1832,17 @@ local function startObjective(objective)
         showObjectiveStartedUpdate(objective)
     end, {}, 5)
 
-    local nextObjective = determineNextObjectiveFrom(objective)
-    if nextObjective ~= nil then
-        local nextObjectiveZone = ZONE:FindByName(nextObjective.name)
-        if nextObjectiveZone:Get2DDistance(objectiveZone:GetCoordinate(0)) > 37040 then
-            SCHEDULER:New(nil, function()
-                spawnGroupsAtThing(nextObjective, country.id.CJTF_RED)
-            end, {}, 10)
-            --end, {}, 270)
-        end
-    end
+    -- Not sure that I actually want this "prespwaning" going on anymore.
+    -- 
+    -- local nextObjective = determineNextObjectiveFrom(objective)
+    -- if nextObjective ~= nil then
+    --     local nextObjectiveZone = ZONE:FindByName(nextObjective.name)
+    --     if nextObjectiveZone:Get2DDistance(objectiveZone:GetCoordinate(0)) > 37040 then
+    --         SCHEDULER:New(nil, function()
+    --             spawnGroupsAtThing(nextObjective, country.id.CJTF_RED)
+    --         end, {}, 270)
+    --     end
+    -- end
 
     updateBorderZones()
     updateCapZones()

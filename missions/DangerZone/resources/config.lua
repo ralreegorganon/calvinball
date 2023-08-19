@@ -48,6 +48,6 @@ MissionDb.invokeOnActivate["OBJ-13"] = function()
     local ng = NAVYGROUP:New(g)
     ng:ClearWaypoints()
     ng:SetPatrolAdInfinitum(true)
-    ng:AddWaypoint(COORDINATE:New(233695, 0, 183523), 25, nil, 0, true)
+    ng:AddWaypoint(COORDINATE:New(220160, 0, 140163), 25, nil, 0, true)
     ng:AddWaypoint(g:GetCoordinate(), 25, nil, 0, true)
 end
