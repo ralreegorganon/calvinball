@@ -1444,7 +1444,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                         "livery": "279th kiap 1st squad navy",
                         "loadouts": {
                             "R-73*4,R-27ET*2,R-27ER*6": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
-                            "S-25*4,FAB-250*4,R-73*2,ECM": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
+                            "S-25*4,FAB-250*4,R-73*2,ECM": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS }",
                             "RBK-500AO*6,R-73*2,R-27R*2,ECM": "{ AUFTRAG.Type.BOMBCARPET }",
 
                         },
@@ -1454,8 +1454,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.ESCORT": 50,
                             "AUFTRAG.Type.BAI": 50,
                             "AUFTRAG.Type.CAS": 50,
-                            "AUFTRAG.Type.BOMBCARPET": 50,
-                            "AUFTRAG.Type.CASENHANCED": 50
+                            "AUFTRAG.Type.BOMBCARPET": 50
                         }
                     },
                     "Kuz 2": {
@@ -1470,35 +1469,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                         "capabilities": {
                             "AUFTRAG.Type.OPSTRANSPORT": 50
                         }
-                    },
-                    "Kuz 3": {
-                        "airframe": dcs.helicopters.Mi_28N,
-                        "groupSize": 2,
-                        "initialInventory": 1,
-                        "livery": "night",
-                        "loadouts": {
-                            "16x9M114, 40xS-8": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
-                        },
-                        "capabilities": {
-                            "AUFTRAG.Type.BAI": 50,
-                            "AUFTRAG.Type.CAS": 50,
-                            "AUFTRAG.Type.CASENHANCED": 50
-                        }
-                    },
-                    "Kuz 4": {
-                        "airframe": dcs.helicopters.Ka_50_3,
-                        "groupSize": 2,
-                        "initialInventory": 1,
-                        "livery": "Ka-50_standart_black_RussianAirForce",
-                        "loadouts": {
-                            "12x9A4172, 40xS-13, 4xIgla": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
-                        },
-                        "capabilities": {
-                            "AUFTRAG.Type.BAI": 50,
-                            "AUFTRAG.Type.CAS": 50,
-                            "AUFTRAG.Type.CASENHANCED": 50
-                        }
-                    },
+                    }
                 }
             },
         }

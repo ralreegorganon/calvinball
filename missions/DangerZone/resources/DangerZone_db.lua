@@ -16442,7 +16442,6 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
 							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
-							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
 						livery = "279th kiap 1st squad navy",
 						payloads = {
@@ -16452,7 +16451,7 @@ MissionDb = {
 							},
 							{
 								templateGroupName = "RED Kuz Kuz 1 Su-33 LOADOUT 1",
-								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS }
 							},
 							{
 								templateGroupName = "RED Kuz Kuz 1 Su-33 LOADOUT 2",
@@ -16473,42 +16472,6 @@ MissionDb = {
 							{
 								templateGroupName = "RED Kuz Kuz 2 Ka-27 LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
-							},
-						}
-					},
-					{
-						name = "Kuz 3",
-						templateGroupName = "RED Kuz Kuz 3 Mi-28N",
-						initialInventory = 1,
-						takeoffCold = false,
-						capabilities = {
-							{ mission = AUFTRAG.Type.BAI, performance = 50 },
-							{ mission = AUFTRAG.Type.CAS, performance = 50 },
-							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
-						},
-						livery = "night",
-						payloads = {
-							{
-								templateGroupName = "RED Kuz Kuz 3 Mi-28N LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
-							},
-						}
-					},
-					{
-						name = "Kuz 4",
-						templateGroupName = "RED Kuz Kuz 4 Ka-50_3",
-						initialInventory = 1,
-						takeoffCold = false,
-						capabilities = {
-							{ mission = AUFTRAG.Type.BAI, performance = 50 },
-							{ mission = AUFTRAG.Type.CAS, performance = 50 },
-							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
-						},
-						livery = "Ka-50_standart_black_RussianAirForce",
-						payloads = {
-							{
-								templateGroupName = "RED Kuz Kuz 4 Ka-50_3 LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
 							},
 						}
 					},
