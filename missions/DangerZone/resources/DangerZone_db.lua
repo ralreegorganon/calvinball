@@ -16511,30 +16511,18 @@ MissionDb = {
 					{
 						name = "Kuz 1",
 						templateGroupName = "RED Kuz Kuz 1 Su-33",
-						initialInventory = 1,
+						initialInventory = 2,
 						takeoffCold = false,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
 							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
-							{ mission = AUFTRAG.Type.BAI, performance = 50 },
-							{ mission = AUFTRAG.Type.CAS, performance = 50 },
-							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
-							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
 						livery = "279th kiap 1st squad navy",
 						payloads = {
 							{
 								templateGroupName = "RED Kuz Kuz 1 Su-33 LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
-							},
-							{
-								templateGroupName = "RED Kuz Kuz 1 Su-33 LOADOUT 1",
-								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
-							},
-							{
-								templateGroupName = "RED Kuz Kuz 1 Su-33 LOADOUT 2",
-								missionTypes = { AUFTRAG.Type.BOMBCARPET }
 							},
 						}
 					},

@@ -1440,23 +1440,16 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                     "Kuz 1": {
                         "airframe": dcs.planes.Su_33,
                         "groupSize": 2,
-                        "initialInventory": 1,
+                        "initialInventory": 2,
                         "livery": "279th kiap 1st squad navy",
                         "loadouts": {
-                            "R-73*4,R-27ET*2,R-27ER*6": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
-                            "S-25*4,FAB-250*4,R-73*2,ECM": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
-                            "RBK-500AO*6,R-73*2,R-27R*2,ECM": "{ AUFTRAG.Type.BOMBCARPET }",
+                            "R-73*4,R-27ET*2,R-27ER*6": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }"
 
                         },
                         "capabilities": {
                             "AUFTRAG.Type.CAP": 50,
                             "AUFTRAG.Type.INTERCEPT": 50,
-                            "AUFTRAG.Type.ESCORT": 50,
-                            "AUFTRAG.Type.BAI": 50,
-                            "AUFTRAG.Type.CAS": 50,
-                            "AUFTRAG.Type.BOMBCARPET": 50,
-                            "AUFTRAG.Type.CASENHANCED": 50,
-
+                            "AUFTRAG.Type.ESCORT": 50
                         }
                     },
                     "Kuz 2": {
