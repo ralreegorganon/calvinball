@@ -13,9 +13,7 @@
             "TASK1LONDON"
         ],
         "targetUnitTypes": [],
-        "vehicle_groups": [
-            "DW RED GROUND 1-21"
-        ],
+        "vehicle_groups": [],
         "vertices": [
             {
                 "x": 225588.88698738,
@@ -48,11 +46,11 @@
         "ship_groups": [],
         "staticTargetNameContains": "TASK10LONDON",
         "static_groups": [
-            "TASK10LONDON",
             "BETTERBOOM1",
             "BETTERBOOM1-1",
             "BETTERBOOM1-2",
-            "BETTERBOOM1-3"
+            "BETTERBOOM1-3",
+            "TASK10LONDON"
         ],
         "targetUnitTypes": [],
         "vehicle_groups": [],
@@ -124,10 +122,13 @@
         "ship_groups": [],
         "staticTargetNameContains": "TASK12LONDON",
         "static_groups": [
-            "TASK12LONDON"
+            "TASK12LONDON",
+            "Static UH-1H-1"
         ],
         "targetUnitTypes": [],
-        "vehicle_groups": [],
+        "vehicle_groups": [
+            "DW RED GROUND 1-23"
+        ],
         "vertices": [
             {
                 "x": 224627.33297473,
@@ -299,7 +300,7 @@
         "component": "task",
         "description": "Destroy this shipping warehouse to prevent the export of precious brown coal.",
         "groupTargetNameContains": "",
-        "label": "Big Ben's Blunder",
+        "label": "A Machine For Pigs",
         "sceneryTargetZoneNames": [],
         "ship_groups": [],
         "staticTargetNameContains": "TASK4LONDON",
@@ -448,7 +449,8 @@
         "ship_groups": [],
         "staticTargetNameContains": "TASK8LONDON",
         "static_groups": [
-            "TASK8LONDON"
+            "TASK8LONDON",
+            "Static IFV BMP-1-2"
         ],
         "targetUnitTypes": [],
         "vehicle_groups": [],
