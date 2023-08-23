@@ -1278,6 +1278,12 @@ local function activateBrigades(chief, side)
         if brigade.state ~= "dead" and brigade.instance == nil then
 
             local warehouse = UNIT:FindByName(brigade.warehouse)
+            if warehouse ~= nil then
+                local isAlive = warehouse:IsAlive()
+                if(isAlive == nil or not isAlive) then
+                    warehouse = nil
+                end
+            end
             if warehouse == nil then
                 warehouse = STATIC:FindByName(brigade.warehouse, false)
             end
@@ -1324,6 +1330,12 @@ local function activateAirwings(chief, side)
         if airwing.state ~= "dead" and airwing.instance == nil then
 
             local warehouse = UNIT:FindByName(airwing.warehouse)
+            if warehouse ~= nil then
+                local isAlive = warehouse:IsAlive()
+                if(isAlive == nil or not isAlive) then
+                    warehouse = nil
+                end
+            end
             if warehouse == nil then
                 warehouse = STATIC:FindByName(airwing.warehouse, false)
             end
