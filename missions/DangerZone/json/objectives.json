@@ -424,10 +424,34 @@
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
-            "static_groups": [],
+            "static_groups": [
+                "Static Oiltank-7",
+                "Static Fueltank-7",
+                "Static Fueltank-8",
+                "Static Oiltank-8"
+            ],
             "strand": "STRAND-1",
             "tasks": [],
-            "vehicle_groups": [],
+            "vehicle_groups": [
+                "RED RG 1919-16",
+                "RED RG 1919-17",
+                "RED RG 1919-18",
+                "RED RG 1919-19",
+                "RED RG 1919-20",
+                "RED RG 1919-21",
+                "RED RG 1919-22",
+                "RED RG 1919-23",
+                "RED SAM SA-2 DW 2-1",
+                "RED SAM SA-15 RG 686-28",
+                "RED SAM SA-8 RG 240-24",
+                "RED GROUND 1-15",
+                "RED GROUND 1-16",
+                "RED SAM SA-2 RG 234-25",
+                "RED AIR DEFENSE BATTERY A RG 694-12",
+                "RED AIR DEFENSE BATTERY C RG 149-2",
+                "RED AIR DEFENSE BATTERY B RG 1-1",
+                "RED RG 1919-24"
+            ],
             "vertices": [
                 {
                     "x": 183872.78178199,

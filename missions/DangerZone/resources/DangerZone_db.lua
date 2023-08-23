@@ -5405,10 +5405,88 @@ MissionDb = {
 			reinforcements = {
 			},
 			vehicleGroups = {
+				{ name = "RED RG 1919-16" },
+				{ name = "RED RG 1919-17" },
+				{ name = "RED RG 1919-18" },
+				{ name = "RED RG 1919-19" },
+				{ name = "RED RG 1919-20" },
+				{ name = "RED RG 1919-21" },
+				{ name = "RED RG 1919-22" },
+				{ name = "RED RG 1919-23" },
+				{ name = "RED SAM SA-2 DW 2-1" },
+				{ name = "RED SAM SA-15 RG 686-28" },
+				{ name = "RED SAM SA-8 RG 240-24" },
+				{ name = "RED GROUND 1-15" },
+				{ name = "RED GROUND 1-16" },
+				{ name = "RED SAM SA-2 RG 234-25" },
+				{ name = "RED AIR DEFENSE BATTERY A RG 694-12" },
+				{ name = "RED AIR DEFENSE BATTERY C RG 149-2" },
+				{ name = "RED AIR DEFENSE BATTERY B RG 1-1" },
+				{ name = "RED RG 1919-24" },
 			},
 			shipGroups = {
 			},
 			staticGroups = {
+				{
+					name = "Static Oiltank-7#00001",
+					template = {
+						name = "Static Oiltank-7",
+						type = "oiltank_cargo",
+						x = 187386.70500848,
+						y = 102659.16763807,
+						heading = 3.8746309394274,
+						category = "Cargos",
+						canCargo = true,
+						shape_name = "oiltank_cargo",
+						rate = 100,
+						dead = false
+					}
+				},
+				{
+					name = "Static Fueltank-7#00001",
+					template = {
+						name = "Static Fueltank-7",
+						type = "fueltank_cargo",
+						x = 187385.64303837,
+						y = 102674.3007122,
+						heading = 3.9269908169872,
+						category = "Cargos",
+						canCargo = true,
+						shape_name = "fueltank_cargo",
+						rate = 100,
+						dead = false
+					}
+				},
+				{
+					name = "Static Fueltank-8#00001",
+					template = {
+						name = "Static Fueltank-8",
+						type = "fueltank_cargo",
+						x = 187385.90853089,
+						y = 102680.67253288,
+						heading = 4.014257279587,
+						category = "Cargos",
+						canCargo = true,
+						shape_name = "fueltank_cargo",
+						rate = 100,
+						dead = false
+					}
+				},
+				{
+					name = "Static Oiltank-8#00001",
+					template = {
+						name = "Static Oiltank-8",
+						type = "oiltank_cargo",
+						x = 187385.64303837,
+						y = 102667.39790646,
+						heading = 3.8222710618676,
+						category = "Cargos",
+						canCargo = true,
+						shape_name = "oiltank_cargo",
+						rate = 100,
+						dead = false
+					}
+				},
 			}
 		},
 		{
@@ -16442,6 +16520,7 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
 							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
 						livery = "279th kiap 1st squad navy",
 						payloads = {
@@ -16451,7 +16530,7 @@ MissionDb = {
 							},
 							{
 								templateGroupName = "RED Kuz Kuz 1 Su-33 LOADOUT 1",
-								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS }
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
 							},
 							{
 								templateGroupName = "RED Kuz Kuz 1 Su-33 LOADOUT 2",

@@ -8611,6 +8611,30 @@
             "x": 126102.10681967,
             "y": -160975.51157285
         },
+        "Static Fueltank-7": {
+            "canCargo": true,
+            "category": "Cargos",
+            "heading": 3.9269908169872,
+            "mass": 2400,
+            "name": "Static Fueltank-7",
+            "rate": 100,
+            "shape_name": "fueltank_cargo",
+            "type": "fueltank_cargo",
+            "x": 187385.64303837,
+            "y": 102674.3007122
+        },
+        "Static Fueltank-8": {
+            "canCargo": true,
+            "category": "Cargos",
+            "heading": 4.014257279587,
+            "mass": 2400,
+            "name": "Static Fueltank-8",
+            "rate": 100,
+            "shape_name": "fueltank_cargo",
+            "type": "fueltank_cargo",
+            "x": 187385.90853089,
+            "y": 102680.67253288
+        },
         "Static Ka-50 III-1": {
             "canCargo": false,
             "category": "Helicopters",
@@ -9295,6 +9319,30 @@
             "type": "oiltank_cargo",
             "x": 126107.87607706,
             "y": -160997.08357874
+        },
+        "Static Oiltank-7": {
+            "canCargo": true,
+            "category": "Cargos",
+            "heading": 3.8746309394274,
+            "mass": 2300,
+            "name": "Static Oiltank-7",
+            "rate": 100,
+            "shape_name": "oiltank_cargo",
+            "type": "oiltank_cargo",
+            "x": 187386.70500848,
+            "y": 102659.16763807
+        },
+        "Static Oiltank-8": {
+            "canCargo": true,
+            "category": "Cargos",
+            "heading": 3.8222710618676,
+            "mass": 2300,
+            "name": "Static Oiltank-8",
+            "rate": 100,
+            "shape_name": "oiltank_cargo",
+            "type": "oiltank_cargo",
+            "x": 187385.64303837,
+            "y": 102667.39790646
         },
         "Static Small warehouse 3-1": {
             "canCargo": false,
