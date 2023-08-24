@@ -8,7 +8,7 @@ class BlueAirwings:
         blue_airwings = self.define(m)
 
         country = m.country(dcs.countries.CombinedJointTaskForcesBlue.name)
-        p = dcs.mapping.Point(0, 0, m.terrain)
+        p = dcs.mapping.Point(m.terrain.bullseye_blue["x"], m.terrain.bullseye_blue["y"], m.terrain)
         for airwing_name, airwing in blue_airwings.items():
             #if "airbase" in airwing:
                 #m.terrain.airports[airwing["airbase"]].set_blue()

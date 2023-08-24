@@ -8,7 +8,7 @@ class BlueBrigades:
         blue_brigades = self.define(m)
 
         country = m.country(dcs.countries.CombinedJointTaskForcesBlue.name)
-        p = dcs.mapping.Point(0, 0, m.terrain)
+        p = dcs.mapping.Point(m.terrain.bullseye_blue["x"], m.terrain.bullseye_blue["y"], m.terrain)
         for brigade_name, brigade in blue_brigades.items():
             for platoon_name, platoon in brigade["platoons"].items():
                 platoon["groupName"] = f"BLUE {brigade_name} {platoon_name}"

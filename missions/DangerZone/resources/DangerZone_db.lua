@@ -5,10 +5,6 @@ MissionDb = {
 			strand = "STRAND-3",
 			completeSound = "",
 			borderZones = {
-				"BORDER-1",
-				"BORDER-2",
-				"BORDER-3",
-				"BORDER-4",
 			},
 			capZones = {
 			},
@@ -5023,8 +5019,18 @@ MissionDb = {
 			reinforcements = {
 			},
 			vehicleGroups = {
+				{ name = "DW RED GROUND 1-17" },
 				{ name = "DW RED GROUND 1-18" },
+				{ name = "DW RED GROUND 1-20" },
 				{ name = "DW RED GROUND 1-21" },
+				{ name = "DW RED GROUND 1-22" },
+				{ name = "DW RED GROUND 1-24" },
+				{ name = "DW RED GROUND 1-25" },
+				{ name = "DW RED GROUND 1-26" },
+				{ name = "DW RED GROUND 1-27" },
+				{ name = "DW RED GROUND 1-28" },
+				{ name = "DW RED GROUND 1-29" },
+				{ name = "DW RED GROUND 1-30" },
 				{ name = "DW RED GROUND 1-8" },
 				{ name = "FREE SAM DW" },
 				{ name = "FREE SAM DW-1" },
@@ -5066,16 +5072,6 @@ MissionDb = {
 				{ name = "RED SAM SA-15 DW-5" },
 				{ name = "RED SAM SA-15 DW-6" },
 				{ name = "RED SAM SA-15 DW-7" },
-				{ name = "DW RED GROUND 1-17" },
-				{ name = "DW RED GROUND 1-20" },
-				{ name = "DW RED GROUND 1-22" },
-				{ name = "DW RED GROUND 1-24" },
-				{ name = "DW RED GROUND 1-25" },
-				{ name = "DW RED GROUND 1-26" },
-				{ name = "DW RED GROUND 1-27" },
-				{ name = "DW RED GROUND 1-28" },
-				{ name = "DW RED GROUND 1-29" },
-				{ name = "DW RED GROUND 1-30" },
 			},
 			shipGroups = {
 			},
@@ -5122,261 +5118,6 @@ MissionDb = {
 						canCargo = false,
 						shape_name = "bak",
 						rate = 100,
-						dead = false
-					}
-				},
-				{
-					name = "Static Mi-8MTV2-1#00001",
-					template = {
-						name = "Static Mi-8MTV2-1",
-						type = "Mi-8MT",
-						x = 225492.86447584,
-						y = 7394.859826078,
-						heading = 4.9741883681838,
-						category = "Helicopters",
-						canCargo = false,
-						shape_name = "",
-						rate = 30,
-						dead = false
-					}
-				},
-				{
-					name = "Static Bus LiAZ-677-1#00001",
-					template = {
-						name = "Static Bus LiAZ-677-1",
-						type = "LiAZ Bus",
-						x = 225713.50849501,
-						y = 6149.9275360216,
-						heading = 0.3665191429188,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Car VAZ-2109-2#00001",
-					template = {
-						name = "Static Car VAZ-2109-2",
-						type = "VAZ Car",
-						x = 225698.65716442,
-						y = 6144.7385169004,
-						heading = 0.0063969658155,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Car VAZ-2109-3#00001",
-					template = {
-						name = "Static Car VAZ-2109-3",
-						type = "VAZ Car",
-						x = 225681.60318664,
-						y = 6141.3759716962,
-						heading = 0.0063969658155,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Bus LAZ-695-1#00001",
-					template = {
-						name = "Static Bus LAZ-695-1",
-						type = "LAZ Bus",
-						x = 225664.12334751,
-						y = 6137.9391125347,
-						heading = 0.0063969658155,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Car VAZ-2109-1#00001",
-					template = {
-						name = "Static Car VAZ-2109-1",
-						type = "VAZ Car",
-						x = 225644.97765627,
-						y = 6132.0343666381,
-						heading = 0.0063969658155,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Firefighter Vehicle AA-7.2/60-1#00001",
-					template = {
-						name = "Static Firefighter Vehicle AA-7.2/60-1",
-						type = "AA8",
-						x = 225623.14798962,
-						y = 6123.8035087217,
-						heading = 0.296705972839,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Bus IKARUS-280-1#00001",
-					template = {
-						name = "Static Bus IKARUS-280-1",
-						type = "IKARUS Bus",
-						x = 225597.02396232,
-						y = 6115.5726508053,
-						heading = 0.4363323129986,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Bus LiAZ-677-8#00001",
-					template = {
-						name = "Static Bus LiAZ-677-8",
-						type = "LiAZ Bus",
-						x = 225575.91002245,
-						y = 6108.9521781334,
-						heading = 0.3490658503989,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Bus LiAZ-677-2#00001",
-					template = {
-						name = "Static Bus LiAZ-677-2",
-						type = "LiAZ Bus",
-						x = 225454.56809027,
-						y = 6554.9420799535,
-						heading = 0.3490658503989,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Firefighter Vehicle AA-7.2/60-2#00001",
-					template = {
-						name = "Static Firefighter Vehicle AA-7.2/60-2",
-						type = "AA8",
-						x = 225470.19939549,
-						y = 6558.0965287201,
-						heading = 0.296705972839,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Firefighter Vehicle AA-7.2/60-3#00001",
-					template = {
-						name = "Static Firefighter Vehicle AA-7.2/60-3",
-						type = "AA8",
-						x = 225564.87048668,
-						y = 6578.5119155189,
-						heading = 0.296705972839,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Car VAZ-2109-4#00001",
-					template = {
-						name = "Static Car VAZ-2109-4",
-						type = "VAZ Car",
-						x = 225577.43061147,
-						y = 6581.0308336808,
-						heading = 0.0063969658155,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Car VAZ-2109-5#00001",
-					template = {
-						name = "Static Car VAZ-2109-5",
-						type = "VAZ Car",
-						x = 225595.73569657,
-						y = 6583.3605717837,
-						heading = 0.0063969658155,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Car VAZ-2109-6#00001",
-					template = {
-						name = "Static Car VAZ-2109-6",
-						type = "VAZ Car",
-						x = 225527.84047185,
-						y = 6568.7165037085,
-						heading = 0.0063969658155,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Car VAZ-2109-7#00001",
-					template = {
-						name = "Static Car VAZ-2109-7",
-						type = "VAZ Car",
-						x = 225505.87436974,
-						y = 6564.3898472317,
-						heading = 0.0063969658155,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Bus IKARUS-280-2#00001",
-					template = {
-						name = "Static Bus IKARUS-280-2",
-						type = "IKARUS Bus",
-						x = 225543.15523825,
-						y = 6574.0674461832,
-						heading = 0.2443460952792,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
 						dead = false
 					}
 				},
@@ -5501,32 +5242,317 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static IFV BTR-82A-1#00001",
+					name = "Static Airshow Crowd-8#00001",
 					template = {
-						name = "Static IFV BTR-82A-1",
-						type = "BTR-82A",
-						x = 225396.29276099,
-						y = 7457.059829356,
-						heading = 0.3839724354387,
-						category = "Armor",
+						name = "Static Airshow Crowd-8",
+						type = "Airshow_Crowd",
+						x = 225710.6895605,
+						y = 5397.6074516347,
+						heading = 5.9864793343406,
+						category = "Fortifications",
 						canCargo = false,
-						shape_name = "",
-						rate = 11,
+						shape_name = "Crowd1",
+						rate = 100,
 						dead = false
 					}
 				},
 				{
-					name = "Static IFV Warrior -1#00001",
+					name = "Static Bus IKARUS-280-1#00001",
 					template = {
-						name = "Static IFV Warrior -1",
-						type = "MCV-80",
-						x = 225384.30178451,
-						y = 7453.0269897349,
-						heading = 0.2617993877992,
-						category = "Armor",
+						name = "Static Bus IKARUS-280-1",
+						type = "IKARUS Bus",
+						x = 225597.02396232,
+						y = 6115.5726508053,
+						heading = 0.4363323129986,
+						category = "Unarmed",
 						canCargo = false,
 						shape_name = "",
-						rate = 15,
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Bus IKARUS-280-2#00001",
+					template = {
+						name = "Static Bus IKARUS-280-2",
+						type = "IKARUS Bus",
+						x = 225543.15523825,
+						y = 6574.0674461832,
+						heading = 0.2443460952792,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Bus LAZ-695-1#00001",
+					template = {
+						name = "Static Bus LAZ-695-1",
+						type = "LAZ Bus",
+						x = 225664.12334751,
+						y = 6137.9391125347,
+						heading = 0.0063969658155,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Bus LAZ-695-2#00001",
+					template = {
+						name = "Static Bus LAZ-695-2",
+						type = "LAZ Bus",
+						x = 225704.65131986,
+						y = 5391.7612547443,
+						heading = 1.0821041362365,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Bus LAZ-695-3#00001",
+					template = {
+						name = "Static Bus LAZ-695-3",
+						type = "LAZ Bus",
+						x = 225705.11774253,
+						y = 5400.5300008207,
+						heading = 5.1661745859032,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Bus LiAZ-677-1#00001",
+					template = {
+						name = "Static Bus LiAZ-677-1",
+						type = "LiAZ Bus",
+						x = 225713.50849501,
+						y = 6149.9275360216,
+						heading = 0.3665191429188,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Bus LiAZ-677-2#00001",
+					template = {
+						name = "Static Bus LiAZ-677-2",
+						type = "LiAZ Bus",
+						x = 225454.56809027,
+						y = 6554.9420799535,
+						heading = 0.3490658503989,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Bus LiAZ-677-8#00001",
+					template = {
+						name = "Static Bus LiAZ-677-8",
+						type = "LiAZ Bus",
+						x = 225575.91002245,
+						y = 6108.9521781334,
+						heading = 0.3490658503989,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Car VAZ-2109-1#00001",
+					template = {
+						name = "Static Car VAZ-2109-1",
+						type = "VAZ Car",
+						x = 225644.97765627,
+						y = 6132.0343666381,
+						heading = 0.0063969658155,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Car VAZ-2109-2#00001",
+					template = {
+						name = "Static Car VAZ-2109-2",
+						type = "VAZ Car",
+						x = 225698.65716442,
+						y = 6144.7385169004,
+						heading = 0.0063969658155,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Car VAZ-2109-3#00001",
+					template = {
+						name = "Static Car VAZ-2109-3",
+						type = "VAZ Car",
+						x = 225681.60318664,
+						y = 6141.3759716962,
+						heading = 0.0063969658155,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Car VAZ-2109-4#00001",
+					template = {
+						name = "Static Car VAZ-2109-4",
+						type = "VAZ Car",
+						x = 225577.43061147,
+						y = 6581.0308336808,
+						heading = 0.0063969658155,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Car VAZ-2109-5#00001",
+					template = {
+						name = "Static Car VAZ-2109-5",
+						type = "VAZ Car",
+						x = 225595.73569657,
+						y = 6583.3605717837,
+						heading = 0.0063969658155,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Car VAZ-2109-6#00001",
+					template = {
+						name = "Static Car VAZ-2109-6",
+						type = "VAZ Car",
+						x = 225527.84047185,
+						y = 6568.7165037085,
+						heading = 0.0063969658155,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Car VAZ-2109-7#00001",
+					template = {
+						name = "Static Car VAZ-2109-7",
+						type = "VAZ Car",
+						x = 225505.87436974,
+						y = 6564.3898472317,
+						heading = 0.0063969658155,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Firefighter Vehicle AA-7.2/60-1#00001",
+					template = {
+						name = "Static Firefighter Vehicle AA-7.2/60-1",
+						type = "AA8",
+						x = 225623.14798962,
+						y = 6123.8035087217,
+						heading = 0.296705972839,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Firefighter Vehicle AA-7.2/60-2#00001",
+					template = {
+						name = "Static Firefighter Vehicle AA-7.2/60-2",
+						type = "AA8",
+						x = 225470.19939549,
+						y = 6558.0965287201,
+						heading = 0.296705972839,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Firefighter Vehicle AA-7.2/60-3#00001",
+					template = {
+						name = "Static Firefighter Vehicle AA-7.2/60-3",
+						type = "AA8",
+						x = 225564.87048668,
+						y = 6578.5119155189,
+						heading = 0.296705972839,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Firefighter Vehicle AA-7.2/60-4#00001",
+					template = {
+						name = "Static Firefighter Vehicle AA-7.2/60-4",
+						type = "AA8",
+						x = 225230.64767193,
+						y = 7421.6927571977,
+						heading = 0.091385225936,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
+						dead = false
+					}
+				},
+				{
+					name = "Static Firefighter Vehicle AA-7.2/60-5#00001",
+					template = {
+						name = "Static Firefighter Vehicle AA-7.2/60-5",
+						type = "AA8",
+						x = 225216.0287396,
+						y = 7418.0178397829,
+						heading = 0.4712388980385,
+						category = "Unarmed",
+						canCargo = false,
+						shape_name = "",
+						rate = 3,
 						dead = false
 					}
 				},
@@ -5621,47 +5647,62 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static Bus LAZ-695-2#00001",
+					name = "Static IFV BTR-82A-1#00001",
 					template = {
-						name = "Static Bus LAZ-695-2",
-						type = "LAZ Bus",
-						x = 225704.65131986,
-						y = 5391.7612547443,
-						heading = 1.0821041362365,
-						category = "Unarmed",
+						name = "Static IFV BTR-82A-1",
+						type = "BTR-82A",
+						x = 225396.29276099,
+						y = 7457.059829356,
+						heading = 0.3839724354387,
+						category = "Armor",
 						canCargo = false,
 						shape_name = "",
-						rate = 3,
+						rate = 11,
 						dead = false
 					}
 				},
 				{
-					name = "Static Bus LAZ-695-3#00001",
+					name = "Static IFV Warrior -1#00001",
 					template = {
-						name = "Static Bus LAZ-695-3",
-						type = "LAZ Bus",
-						x = 225705.11774253,
-						y = 5400.5300008207,
-						heading = 5.1661745859032,
-						category = "Unarmed",
+						name = "Static IFV Warrior -1",
+						type = "MCV-80",
+						x = 225384.30178451,
+						y = 7453.0269897349,
+						heading = 0.2617993877992,
+						category = "Armor",
 						canCargo = false,
 						shape_name = "",
-						rate = 3,
+						rate = 15,
 						dead = false
 					}
 				},
 				{
-					name = "Static Airshow Crowd-8#00001",
+					name = "Static LS Ropucha-1#00001",
 					template = {
-						name = "Static Airshow Crowd-8",
-						type = "Airshow_Crowd",
-						x = 225710.6895605,
-						y = 5397.6074516347,
-						heading = 5.9864793343406,
-						category = "Fortifications",
+						name = "Static LS Ropucha-1",
+						type = "BDK-775",
+						x = 225428.6643911,
+						y = 9373.8882704774,
+						heading = 4.1364303272266,
+						category = "Ships",
 						canCargo = false,
-						shape_name = "Crowd1",
-						rate = 100,
+						shape_name = "",
+						rate = 300,
+						dead = false
+					}
+				},
+				{
+					name = "Static Mi-8MTV2-1#00001",
+					template = {
+						name = "Static Mi-8MTV2-1",
+						type = "Mi-8MT",
+						x = 225492.86447584,
+						y = 7394.859826078,
+						heading = 4.9741883681838,
+						category = "Helicopters",
+						canCargo = false,
+						shape_name = "",
+						rate = 30,
 						dead = false
 					}
 				},
@@ -5752,51 +5793,6 @@ MissionDb = {
 						canCargo = false,
 						shape_name = "",
 						rate = 100,
-						dead = false
-					}
-				},
-				{
-					name = "Static Firefighter Vehicle AA-7.2/60-4#00001",
-					template = {
-						name = "Static Firefighter Vehicle AA-7.2/60-4",
-						type = "AA8",
-						x = 225230.64767193,
-						y = 7421.6927571977,
-						heading = 0.091385225936,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static Firefighter Vehicle AA-7.2/60-5#00001",
-					template = {
-						name = "Static Firefighter Vehicle AA-7.2/60-5",
-						type = "AA8",
-						x = 225216.0287396,
-						y = 7418.0178397829,
-						heading = 0.4712388980385,
-						category = "Unarmed",
-						canCargo = false,
-						shape_name = "",
-						rate = 3,
-						dead = false
-					}
-				},
-				{
-					name = "Static LS Ropucha-1#00001",
-					template = {
-						name = "Static LS Ropucha-1",
-						type = "BDK-775",
-						x = 225428.6643911,
-						y = 9373.8882704774,
-						heading = 4.1364303272266,
-						category = "Ships",
-						canCargo = false,
-						shape_name = "",
-						rate = 300,
 						dead = false
 					}
 				},
@@ -6199,6 +6195,8 @@ MissionDb = {
 			capZones = {
 			},
 			nodes = {
+				{ name = "NODE-47", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-48", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -6215,6 +6213,80 @@ MissionDb = {
 			reinforcements = {
 			},
 			vehicleGroups = {
+				{ name = "RED SAM SA-6 Audinghen" },
+				{ name = "RED SAM SA-3 ds-3" },
+			},
+			shipGroups = {
+			},
+			staticGroups = {
+			}
+		},
+		{
+			name = "OBJ-15",
+			strand = "STRAND-1",
+			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
+			nodes = {
+			},
+			tasks = {
+			},
+			farps = {
+			},
+			roadbases = {
+			},
+			airbases = {
+			},
+			carriers = {
+			},
+			qrfs = {
+			},
+			reinforcements = {
+			},
+			vehicleGroups = {
+				{ name = "RED SAM SA-11 Calais" },
+				{ name = "RED SAM SA-6 Offkerque" },
+				{ name = "RED SAM SA-2 Dunkirk-1" },
+				{ name = "RED SAM SA-3 ds" },
+				{ name = "RED SAM SA-3 ds-1" },
+			},
+			shipGroups = {
+			},
+			staticGroups = {
+			}
+		},
+		{
+			name = "OBJ-16",
+			strand = "STRAND-1",
+			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
+			nodes = {
+			},
+			tasks = {
+			},
+			farps = {
+			},
+			roadbases = {
+			},
+			airbases = {
+			},
+			carriers = {
+			},
+			qrfs = {
+			},
+			reinforcements = {
+			},
+			vehicleGroups = {
+				{ name = "RED SAM SA-10 Dunkirk" },
+				{ name = "RED SAM SA-11 Dunkirk" },
+				{ name = "RED SAM SA-6 Dunkirk" },
+				{ name = "RED SAM SA-2 Dunkirk" },
+				{ name = "RED SAM SA-3 ds-2" },
 			},
 			shipGroups = {
 			},
@@ -15923,6 +15995,8 @@ MissionDb = {
 				"OBJ-12",
 				"OBJ-13",
 				"OBJ-14",
+				"OBJ-15",
+				"OBJ-16",
 				},
 			},
 		{

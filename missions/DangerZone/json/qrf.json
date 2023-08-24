@@ -1933,6 +1933,276 @@
         "x": 120525.35913199,
         "y": -127849.75803917
     },
+    "QRF-40": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [
+            "RED SAM SA-10 Amiens",
+            "RED SAM SA-10 Paris",
+            "RED SAM SA-10 Paris 2",
+            "RED SAM SA-11 Amiens",
+            "RED SAM SA-11 Omer",
+            "RED SAM SA-11 Paris 1",
+            "RED SAM SA-11 Paris 2",
+            "RED SAM SA-11 StValery",
+            "RED SAM SA-2 Dunkirk-2",
+            "RED SAM SA-2 Dunkirk-3",
+            "RED SAM SA-2 Dunkirk-4",
+            "RED SAM SA-2 Dunkirk-6",
+            "RED SAM SA-2 Dunkirk-8",
+            "RED SAM SA-2 Dunkirk-9",
+            "RED SAM SA-3 ds-29",
+            "RED SAM SA-3 ds-30",
+            "RED SAM SA-3 ds-31",
+            "RED SAM SA-3 ds-32",
+            "RED SAM SA-3 ds-33",
+            "RED SAM SA-3 ds-34",
+            "RED SAM SA-3 ds-35",
+            "RED SAM SA-3 ds-4",
+            "RED SAM SA-3 ds-5",
+            "RED SAM SA-3 ds-6",
+            "RED SAM SA-3 ds-7",
+            "RED SAM SA-3 ds-8",
+            "RED SAM SA-5 Amiens",
+            "RED SAM SA-5 Paris",
+            "RED SAM SA-6 Beauvais",
+            "RED SAM SA-6 Cormeilles",
+            "RED SAM SA-6 Crack",
+            "RED SAM SA-6 Creil",
+            "RED SAM SA-6 Dr74",
+            "RED SAM SA-6 ER15",
+            "RED SAM SA-6 HazeBrouk",
+            "RED SAM SA-6 Lens",
+            "RED SAM SA-6 Omer",
+            "RED SAM SA-6 Pierremont",
+            "RED SAM SA-6 Poix",
+            "RED SAM SA-6 Tourcoing",
+            "RED SAM SA-6 Zoteux"
+        ],
+        "vertices": [
+            {
+                "x": 181150,
+                "y": 255590
+            },
+            {
+                "x": -123630,
+                "y": 257876.66666667
+            },
+            {
+                "x": -125426.66666667,
+                "y": 136683.33333333
+            },
+            {
+                "x": 147993.33333333,
+                "y": 125576.66666667
+            }
+        ],
+        "x": 20021.666666667,
+        "y": 193931.66666667
+    },
+    "QRF-41": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [
+            "RED SAM SA-10 Cherbourg",
+            "RED SAM SA-10 Dinan",
+            "RED SAM SA-10 Goulet",
+            "RED SAM SA-10 Rouen",
+            "RED SAM SA-11 Avranches",
+            "RED SAM SA-11 Barville",
+            "RED SAM SA-11 Cherbourg",
+            "RED SAM SA-11 Conches",
+            "RED SAM SA-11 Deauville",
+            "RED SAM SA-11 Dinan",
+            "RED SAM SA-11 Goulet",
+            "RED SAM SA-11 Mosies",
+            "RED SAM SA-11 Rouen",
+            "RED SAM SA-2 Dunkirk-11",
+            "RED SAM SA-2 Dunkirk-12",
+            "RED SAM SA-2 Dunkirk-13",
+            "RED SAM SA-2 Dunkirk-14",
+            "RED SAM SA-2 Dunkirk-15",
+            "RED SAM SA-2 Dunkirk-16",
+            "RED SAM SA-2 Dunkirk-17",
+            "RED SAM SA-2 Dunkirk-18",
+            "RED SAM SA-2 Dunkirk-19",
+            "RED SAM SA-2 Dunkirk-20",
+            "RED SAM SA-2 Dunkirk-7",
+            "RED SAM SA-2 Rouen",
+            "RED SAM SA-3 Dunkirk",
+            "RED SAM SA-3 ds-12",
+            "RED SAM SA-3 ds-13",
+            "RED SAM SA-3 ds-14",
+            "RED SAM SA-3 ds-15",
+            "RED SAM SA-3 ds-16",
+            "RED SAM SA-3 ds-17",
+            "RED SAM SA-3 ds-18",
+            "RED SAM SA-3 ds-19",
+            "RED SAM SA-3 ds-20",
+            "RED SAM SA-3 ds-21",
+            "RED SAM SA-3 ds-22",
+            "RED SAM SA-3 ds-23",
+            "RED SAM SA-3 ds-24",
+            "RED SAM SA-3 ds-25",
+            "RED SAM SA-3 ds-26",
+            "RED SAM SA-3 ds-27",
+            "RED SAM SA-3 ds-36",
+            "RED SAM SA-3 ds-37",
+            "RED SAM SA-3 ds-38",
+            "RED SAM SA-3 ds-39",
+            "RED SAM SA-3 ds-40",
+            "RED SAM SA-3 ds-41",
+            "RED SAM SA-3 ds-42",
+            "RED SAM SA-5 Flers",
+            "RED SAM SA-5 NoMansLand",
+            "RED SAM SA-6 Bernay",
+            "RED SAM SA-6 Briquebec",
+            "RED SAM SA-6 Cantepie",
+            "RED SAM SA-6 Cardonville",
+            "RED SAM SA-6 Corseulles",
+            "RED SAM SA-6 Deuaville",
+            "RED SAM SA-6 Dieppe-1",
+            "RED SAM SA-6 Essay",
+            "RED SAM SA-6 Fontenailles",
+            "RED SAM SA-6 Goulet",
+            "RED SAM SA-6 Lantheuil",
+            "RED SAM SA-6 LeMolay",
+            "RED SAM SA-6 Lonrai",
+            "RED SAM SA-6 Mapertus",
+            "RED SAM SA-6 Montarville",
+            "RED SAM SA-6 Orglandes",
+            "RED SAM SA-6 Querqueville",
+            "RED SAM SA-6 Rethoville",
+            "RED SAM SA-6 StPierre",
+            "RED SAM SA-6 StVaast",
+            "RED SAM SA-6 Tip"
+        ],
+        "vertices": [
+            {
+                "x": 10120.426238996,
+                "y": 130180.57226126
+            },
+            {
+                "x": -120428.50351754,
+                "y": 59400.326960382
+            },
+            {
+                "x": -127550,
+                "y": -227223.33333333
+            },
+            {
+                "x": 28760,
+                "y": -211543.33333333
+            }
+        ],
+        "x": -52274.519319636,
+        "y": -62296.441861255
+    },
+    "QRF-42": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [
+            "RED SAM SA-11 Fecamp",
+            "RED SAM SA-2 Dunkirk-5",
+            "RED SAM SA-3 ds-10",
+            "RED SAM SA-3 ds-11",
+            "RED SAM SA-3 ds-9",
+            "RED SAM SA-6 Dieppe",
+            "RED SAM SA-6 Fecamp",
+            "RED SAM SA-6 Treport"
+        ],
+        "vertices": [
+            {
+                "x": 90336.666666666,
+                "y": 126720
+            },
+            {
+                "x": 13896.666666666,
+                "y": 129823.33333333
+            },
+            {
+                "x": 21246.666666666,
+                "y": 18593.333333333
+            },
+            {
+                "x": 56526.666666666,
+                "y": 40806.666666667
+            }
+        ],
+        "x": 45501.666666666,
+        "y": 78985.833333333
+    },
+    "QRF-43": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [
+            "RED SAM SA-2 Dunkirk-10",
+            "RED SAM SA-3 ds-28",
+            "RED SAM SA-6 StAndre"
+        ],
+        "vertices": [
+            {
+                "x": -53136.097275461,
+                "y": 121504.37454545
+            },
+            {
+                "x": -65130.555019458,
+                "y": 120729.7813839
+            },
+            {
+                "x": -64590.687058378,
+                "y": 110965.21304436
+            },
+            {
+                "x": -52314.559073817,
+                "y": 107045.30219652
+            }
+        ],
+        "x": -58792.974606778,
+        "y": 115061.16779256
+    },
+    "QRF-44": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [
+            "RED SAM SA-6 Evereux"
+        ],
+        "vertices": [
+            {
+                "x": -44835.677992117,
+                "y": 113341.32925441
+            },
+            {
+                "x": -45866.970381277,
+                "y": 112616.20179329
+            },
+            {
+                "x": -45102.806947085,
+                "y": 111514.30709028
+            },
+            {
+                "x": -44328.088769328,
+                "y": 111955.53010648
+            }
+        ],
+        "x": -45033.386022452,
+        "y": 112356.84206112
+    },
     "QRF-5": {
         "component": "qrf",
         "label": "",
