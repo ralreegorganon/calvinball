@@ -41,16 +41,16 @@ MissionDb.invokeOnActivate["REINFORCEMENT-3"] = function()
 end
 
 MissionDb.invokeOnActivate["OBJ-13"] = function()
-    local g = GROUP:FindByName("RED RG Kuznetsov")
-    if not g then
-        return
-    end
-    local ng = NAVYGROUP:New(g)
-    ng:ClearWaypoints()
-    ng:SetPatrolAdInfinitum(true)
-    ng:AddWaypoint(COORDINATE:New(220160, 0, 140163), 25, nil, 0, true)
-    ng:AddWaypoint(g:GetCoordinate(), 25, nil, 0, true)
-    ng:SwitchROE(ENUMS.ROE.ReturnFire)
-    g:OptionAlarmStateGreen()
-    g:OptionROEReturnFire()
+    SCHEDULER:New(nil, function()
+        local g = GROUP:FindByName("RED RG Kuznetsov")
+        if not g then
+            MESSAGE:New("Couldn't find the Kuz to set it up...", 30):ToAll()
+            return
+        end
+        local ng = NAVYGROUP:New(g)
+        ng:ClearWaypoints()
+        ng:SetPatrolAdInfinitum(true)
+        ng:AddWaypoint(COORDINATE:New(220160, 0, 140163), 25, nil, 0, true)
+        ng:AddWaypoint(g:GetCoordinate(), 25, nil, 0, true)
+    end, {}, 60)
 end

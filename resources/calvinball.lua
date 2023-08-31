@@ -1478,6 +1478,8 @@ local function unlockCarriersForObjective(objective)
         end
 
         local ng = NAVYGROUP:New(carrier.name)
+        ng:SetDefaultInvisible(true)
+        ng:SwitchInvisible(true)
         ng:ClearWaypoints()
         ng:SetPatrolAdInfinitum(true)
 
