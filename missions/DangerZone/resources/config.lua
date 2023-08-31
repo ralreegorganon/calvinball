@@ -50,4 +50,7 @@ MissionDb.invokeOnActivate["OBJ-13"] = function()
     ng:SetPatrolAdInfinitum(true)
     ng:AddWaypoint(COORDINATE:New(220160, 0, 140163), 25, nil, 0, true)
     ng:AddWaypoint(g:GetCoordinate(), 25, nil, 0, true)
+    ng:SwitchROE(ENUMS.ROE.ReturnFire)
+    g:OptionAlarmStateGreen()
+    g:OptionROEReturnFire()
 end

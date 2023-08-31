@@ -1831,10 +1831,6 @@ local function startObjective(objective)
     unlockAirbasesForObjective(objective)
     unlockReinforcementsForObjective(objective)
     unlockQrfsForObjective(objective)
-    activateAirwings(MissionDb.bluechief, coalition.side.BLUE)
-    activateAirwings(MissionDb.redchief, coalition.side.RED)
-    activateBrigades(MissionDb.bluechief, coalition.side.BLUE)
-    activateBrigades(MissionDb.redchief, coalition.side.RED)
 
     objective.state = "active"
 
@@ -1843,6 +1839,14 @@ local function startObjective(objective)
     SCHEDULER:New(nil, function()
         showObjectiveStartedUpdate(objective)
     end, {}, 5)
+
+    SCHEDULER:New(nil, function()
+        activateAirwings(MissionDb.bluechief, coalition.side.BLUE)
+        activateAirwings(MissionDb.redchief, coalition.side.RED)
+        activateBrigades(MissionDb.bluechief, coalition.side.BLUE)
+        activateBrigades(MissionDb.redchief, coalition.side.RED)
+        saveState()
+    end, {}, 15)
 
     -- Not sure that I actually want this "prespwaning" going on anymore.
     -- 
@@ -2166,10 +2170,13 @@ local function initializeObjectives()
         end
     end
 
-    activateAirwings(MissionDb.bluechief, coalition.side.BLUE)
-    activateAirwings(MissionDb.redchief, coalition.side.RED)
-    activateBrigades(MissionDb.bluechief, coalition.side.BLUE)
-    activateBrigades(MissionDb.redchief, coalition.side.RED)
+    SCHEDULER:New(nil, function()
+        activateAirwings(MissionDb.bluechief, coalition.side.BLUE)
+        activateAirwings(MissionDb.redchief, coalition.side.RED)
+        activateBrigades(MissionDb.bluechief, coalition.side.BLUE)
+        activateBrigades(MissionDb.redchief, coalition.side.RED)
+        saveState()
+    end, {}, 15)
 
     MissionDb.bluechief.instance:__Start(75)
     MissionDb.redchief.instance:__Start(75)

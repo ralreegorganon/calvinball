@@ -1444,7 +1444,6 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                         "livery": "279th kiap 1st squad navy",
                         "loadouts": {
                             "R-73*4,R-27ET*2,R-27ER*6": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }"
-
                         },
                         "capabilities": {
                             "AUFTRAG.Type.CAP": 50,
