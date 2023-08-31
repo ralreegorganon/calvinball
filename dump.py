@@ -726,3 +726,7 @@ def dumpit(miz_export_path):
 from missions.DangerZone.mission import DangerZone
 m = DangerZone()
 dumpit(m.miz_export_path)
+
+# from missions.GeorgianOffensive.mission import GeorgianOffensive
+# m = GeorgianOffensive()
+# dumpit(m.miz_export_path)

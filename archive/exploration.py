@@ -104,7 +104,7 @@ def radios():
     #     w.writerow(field_names)
     #     w.writerows(csv_rows)
 
-#parking_slot_names(dcs.terrain.Syria().airports["Akrotiri"])
+parking_slot_names(dcs.terrain.Caucasus().airports["Tbilisi-Lochini"])
 #parking_slot_names(dcs.terrain.Syria().airports["Paphos"])
 #parking_slot_names(dcs.terrain.Syria().airports["Larnaca"])
 #livery_ids(dcs.helicopters.AH_64D_BLK_II)
@@ -119,4 +119,4 @@ def radios():
 #parking_slot_names(dcs.terrain.Normandy().airports["Needs Oar Point"])
 
 
-print(dcs.mapping.Point.from_latlng(dcs.mapping.LatLng(50.66526, -2.63873), dcs.terrain.Normandy()))
+#print(dcs.mapping.Point.from_latlng(dcs.mapping.LatLng(50.66526, -2.63873), dcs.terrain.Normandy()))

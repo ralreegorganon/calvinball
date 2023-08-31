@@ -6213,8 +6213,8 @@ MissionDb = {
 			reinforcements = {
 			},
 			vehicleGroups = {
-				{ name = "RED SAM SA-6 Audinghen" },
 				{ name = "RED SAM SA-3 ds-3" },
+				{ name = "RED SAM SA-6 Audinghen" },
 			},
 			shipGroups = {
 			},
@@ -6247,10 +6247,10 @@ MissionDb = {
 			},
 			vehicleGroups = {
 				{ name = "RED SAM SA-11 Calais" },
-				{ name = "RED SAM SA-6 Offkerque" },
 				{ name = "RED SAM SA-2 Dunkirk-1" },
 				{ name = "RED SAM SA-3 ds" },
 				{ name = "RED SAM SA-3 ds-1" },
+				{ name = "RED SAM SA-6 Offkerque" },
 			},
 			shipGroups = {
 			},
@@ -6284,9 +6284,9 @@ MissionDb = {
 			vehicleGroups = {
 				{ name = "RED SAM SA-10 Dunkirk" },
 				{ name = "RED SAM SA-11 Dunkirk" },
-				{ name = "RED SAM SA-6 Dunkirk" },
 				{ name = "RED SAM SA-2 Dunkirk" },
 				{ name = "RED SAM SA-3 ds-2" },
+				{ name = "RED SAM SA-6 Dunkirk" },
 			},
 			shipGroups = {
 			},

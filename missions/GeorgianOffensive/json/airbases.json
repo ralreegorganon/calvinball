@@ -1,0 +1,17 @@
+{
+    "AIRBASE-1": {
+        "component": "airbase",
+        "label": "Tbilisi-Lochini",
+        "radius": 2300.0208,
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicle_groups": [
+            "FARP MASH 1-1",
+            "FARP MASH 1-4",
+            "FARP MASH 1-2",
+            "FARP MASH 1-3"
+        ],
+        "x": -315674.84271371,
+        "y": 896634.65605994
+    }
+}

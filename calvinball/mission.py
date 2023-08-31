@@ -335,7 +335,7 @@ class Mission:
 
             si = 0
             for strand_name, sequence in obj["strands"].items():
-                fg = self.m.flight_group_inflight(self.m.country(dcs.countries.CombinedJointTaskForcesBlue.name), strand_name, dcs.planes.F_16C_50, dcs.mapping.Point(self.m.terrain.bullseye_blue["x"], self.m.terrain.bullseye_blue["y"], self.m.terrain), 420, group_size=1)
+                fg = self.m.flight_group_inflight(self.m.country(dcs.countries.CombinedJointTaskForcesBlue.name), strand_name, dcs.planes.F_16C_50, dcs.mapping.Point(self.m.coalition["blue"].bullseye["x"], self.m.coalition["blue"].bullseye["y"], self.m.terrain), 420, group_size=1)
                 fg.late_activation = True
                 for obj in sequence:
                     fg.add_waypoint(objective_centers[obj], 420)

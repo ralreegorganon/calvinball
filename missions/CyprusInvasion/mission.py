@@ -18,6 +18,8 @@ class CyprusInvasion(calvinball.mission.Mission):
 
         super().__init__(t, miz_name, ctld, clients, red_airwings, blue_airwings, carriers, qrf, reinforcement, red_brigades, blue_brigades)
 
+        self.m.coalition["blue"].set_bullseye({"x": -32691, "y": -270357})
+
 class CyprusInvasionCtld(calvinball.ctld.Ctld):
     def __init__(self) -> None:
         super().__init__()
@@ -52,8 +54,6 @@ class CyprusInvasionClients(calvinball.clients.Clients):
         m.groundControl.blue_tactical_commander = 1
         m.groundControl.blue_jtac = 2
         m.groundControl.red_game_masters = 1
-
-        m.coalition["blue"].set_bullseye({"x": -32691, "y": -270357})
 
         airport_set = [
             {

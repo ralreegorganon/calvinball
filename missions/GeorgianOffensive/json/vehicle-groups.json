@@ -1,0 +1,38 @@
+{
+    "blue": {
+        "FARP MASH 1-1": [
+            {
+                "heading": 99.00000000000078,
+                "type": "NASAMS_Command_Post",
+                "x": -315935.19942968,
+                "y": 897960.26240971
+            }
+        ],
+        "FARP MASH 1-2": [
+            {
+                "heading": 99.00000000000078,
+                "type": "NASAMS_Command_Post",
+                "x": -314540.50636724,
+                "y": 895579.29107571
+            }
+        ],
+        "FARP MASH 1-3": [
+            {
+                "heading": 99.00000000000078,
+                "type": "NASAMS_Command_Post",
+                "x": -315313.88756697,
+                "y": 896869.70802132
+            }
+        ],
+        "FARP MASH 1-4": [
+            {
+                "heading": 99.00000000000078,
+                "type": "NASAMS_Command_Post",
+                "x": -315585.48776685,
+                "y": 896288.00812563
+            }
+        ]
+    },
+    "neutrals": {},
+    "red": {}
+}
