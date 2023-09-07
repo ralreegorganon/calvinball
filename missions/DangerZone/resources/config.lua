@@ -54,3 +54,44 @@ MissionDb.invokeOnActivate["OBJ-13"] = function()
         ng:AddWaypoint(g:GetCoordinate(), 25, nil, 0, true)
     end, {}, 60)
 end
+
+MissionDb.invokeOnActivate["OBJ-14"] = function()
+    SCHEDULER:New(nil, function()
+        local g = GROUP:FindByName("RED RG Neustrashimy FR 1")
+        if not g then
+            return
+        end
+        local ng = NAVYGROUP:New(g)
+        ng:ClearWaypoints()
+        ng:SetPatrolAdInfinitum(true)
+        ng:AddWaypoint(COORDINATE:New(181993, 0, 138421), 25, nil, 0, true)
+        ng:AddWaypoint(g:GetCoordinate(), 25, nil, 0, true)
+        ng:SetDefaultROE(ENUMS.ROE.WeaponFree)
+    end, {}, 60)
+
+    SCHEDULER:New(nil, function()
+        local g = GROUP:FindByName("RED RG Grisha FR 1")
+        if not g then
+            return
+        end
+        local ng = NAVYGROUP:New(g)
+        ng:ClearWaypoints()
+        ng:SetPatrolAdInfinitum(true)
+        ng:AddWaypoint(COORDINATE:New(184302, 0, 164083), 25, nil, 0, true)
+        ng:AddWaypoint(g:GetCoordinate(), 25, nil, 0, true)
+        ng:SetDefaultROE(ENUMS.ROE.WeaponFree)
+    end, {}, 60)
+
+    SCHEDULER:New(nil, function()
+        local g = GROUP:FindByName("RED RG Moskva FR 1")
+        if not g then
+            return
+        end
+        local ng = NAVYGROUP:New(g)
+        ng:ClearWaypoints()
+        ng:SetPatrolAdInfinitum(true)
+        ng:AddWaypoint(COORDINATE:New(198587, 0, 138472), 25, nil, 0, true)
+        ng:AddWaypoint(g:GetCoordinate(), 25, nil, 0, true)
+        ng:SetDefaultROE(ENUMS.ROE.WeaponFree)
+    end, {}, 60)
+end

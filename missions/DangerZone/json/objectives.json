@@ -474,7 +474,29 @@
                     "y": 109791.6397754
                 }
             },
-            "qrfKillOnComplete": [],
+            "qrfKillOnComplete": [
+                "QRF-3",
+                "QRF-4",
+                "QRF-5",
+                "QRF-6",
+                "QRF-7",
+                "QRF-8",
+                "QRF-9",
+                "QRF-10",
+                "QRF-12",
+                "QRF-13",
+                "QRF-14",
+                "QRF-19",
+                "QRF-20",
+                "QRF-21",
+                "QRF-23",
+                "QRF-24",
+                "QRF-25",
+                "QRF-26",
+                "QRF-27",
+                "QRF-31",
+                "QRF-36"
+            ],
             "qrfs": [
                 "QRF-38"
             ],
@@ -533,16 +555,19 @@
         "OBJ-14": {
             "airbases": [],
             "borderZones": [],
-            "capZones": [],
+            "capZones": [
+                "CAP-3",
+                "CAP-6"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
-            "label": "Temp",
+            "label": "Fortitude South",
             "nodes": {
                 "NODE-47": {
                     "blueCaptureThreshold": "0",
-                    "label": "Temp",
+                    "label": "Quicksilver",
                     "radius": 260,
                     "redSurrenderThreshold": "1",
                     "x": 158619.84223123,
@@ -550,7 +575,7 @@
                 },
                 "NODE-48": {
                     "blueCaptureThreshold": "0",
-                    "label": "Temp",
+                    "label": "Bodyguard",
                     "radius": 260,
                     "redSurrenderThreshold": "1",
                     "x": 162454.80690808,
@@ -558,7 +583,14 @@
                 }
             },
             "qrfKillOnComplete": [],
-            "qrfs": [],
+            "qrfs": [
+                "QRF-42",
+                "QRF-45",
+                "QRF-46",
+                "QRF-47",
+                "QRF-48",
+                "QRF-49"
+            ],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
@@ -566,75 +598,160 @@
             "strand": "STRAND-1",
             "tasks": [],
             "vehicle_groups": [
+                "RED AIR DEFENSE BATTERY B RG 147-1",
+                "RED AIR DEFENSE BATTERY C RG 149-3",
+                "RED GROUND 1-17",
+                "RED RG 1919-1",
+                "RED SAM SA-15 RG 686-29",
+                "RED SAM SA-15 RG 686-30",
                 "RED SAM SA-3 ds-3",
-                "RED SAM SA-6 Audinghen"
+                "RED SAM SA-6 Audinghen",
+                "RED EWR 2-10"
             ],
             "vertices": [
                 {
-                    "x": 155273.2281912,
-                    "y": 127305.10008312
+                    "x": 156546.63582227,
+                    "y": 128150.66144361
                 },
                 {
-                    "x": 163240.28758951,
-                    "y": 136705.64507696
+                    "x": 161675.99946587,
+                    "y": 134843.99105347
                 },
                 {
-                    "x": 170484.43052381,
-                    "y": 136276.89400571
+                    "x": 165419.02692709,
+                    "y": 133556.64923877
                 },
                 {
-                    "x": 163265.4788888,
-                    "y": 124633.87390716
+                    "x": 159393.40179444,
+                    "y": 127444.48011857
                 }
             ],
-            "x": 163065.85629833,
-            "y": 131230.37826824
+            "x": 160758.76600242,
+            "y": 130998.94546361
         },
         "OBJ-15": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
+            "borderZones": [
+                "BORDERZONE-1",
+                "BORDERZONE-2",
+                "BORDERZONE-3",
+                "BORDERZONE-4"
+            ],
+            "capZones": [
+                "CAP-3",
+                "CAP-6"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
-            "farps": [],
-            "label": "Temp",
-            "nodes": {},
+            "farps": [
+                "FARP-6"
+            ],
+            "label": "Reverse Dynamo",
+            "nodes": {
+                "NODE-49": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Our Lady",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 170670.78022461,
+                    "y": 146592.24772742
+                },
+                "NODE-50": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Avant Port",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 172230.00142993,
+                    "y": 144511.83275016
+                },
+                "NODE-51": {
+                    "blueCaptureThreshold": "0",
+                    "label": "A Moat Of Alligators",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 183564.33901327,
+                    "y": 177806.88540867
+                },
+                "NODE-52": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Heavy Metal",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 182296.74634903,
+                    "y": 175406.43897148
+                },
+                "NODE-53": {
+                    "blueCaptureThreshold": "0",
+                    "label": "No Goal",
+                    "radius": 260,
+                    "redSurrenderThreshold": "1",
+                    "x": 182838.57665614,
+                    "y": 182355.62829413
+                }
+            },
             "qrfKillOnComplete": [],
-            "qrfs": [],
-            "reinforcements": [],
-            "roadbases": [],
-            "ship_groups": [],
+            "qrfs": [
+                "QRF-50"
+            ],
+            "reinforcements": [
+                "REINFORCEMENT-4"
+            ],
+            "roadbases": [
+                "ROADBASE-3"
+            ],
+            "ship_groups": [
+                "RED RG 1-24"
+            ],
             "static_groups": [],
             "strand": "STRAND-1",
             "tasks": [],
             "vehicle_groups": [
+                "RED AIR DEFENSE BATTERY A RG 694-13",
+                "RED AIR DEFENSE BATTERY A RG 694-14",
+                "RED AIR DEFENSE BATTERY C RG 1-1",
+                "RED GROUND 1-18",
+                "RED GROUND 1-19",
+                "RED GROUND 1-20",
+                "RED RG 151-7",
+                "RED SAM SA-10 Dunkirk",
                 "RED SAM SA-11 Calais",
+                "RED SAM SA-11 Dunkirk",
+                "RED SAM SA-15 RG 686-31",
+                "RED SAM SA-15 RG 686-33",
+                "RED SAM SA-15 RG 686-35",
+                "RED SAM SA-15 RG 686-38",
+                "RED SAM SA-15 RG 686-45",
+                "RED SAM SA-15 RG 686-46",
+                "RED SAM SA-15 RG 686-47",
+                "RED SAM SA-2 Dunkirk",
                 "RED SAM SA-2 Dunkirk-1",
                 "RED SAM SA-3 ds",
                 "RED SAM SA-3 ds-1",
+                "RED SAM SA-3 ds-2",
+                "RED SAM SA-6 Dunkirk",
                 "RED SAM SA-6 Offkerque"
             ],
             "vertices": [
                 {
-                    "x": 162304.1337312,
-                    "y": 138905.60664399
+                    "x": 161685.2021072,
+                    "y": 138322.63988267
                 },
                 {
-                    "x": 169787.27959759,
-                    "y": 163547.98465623
+                    "x": 173528.4866104,
+                    "y": 191322.47244873
                 },
                 {
-                    "x": 178408.06882276,
-                    "y": 153043.94294253
+                    "x": 189047.27320081,
+                    "y": 188645.25487904
                 },
                 {
-                    "x": 172277.96849487,
-                    "y": 139403.64715891
+                    "x": 173437.73347244,
+                    "y": 142134.27167681
                 }
             ],
-            "x": 170694.36266161,
-            "y": 148725.29535041
+            "x": 174424.67384771,
+            "y": 165106.15972181
         },
         "OBJ-16": {
             "airbases": [],
@@ -655,32 +772,56 @@
             "strand": "STRAND-1",
             "tasks": [],
             "vehicle_groups": [
-                "RED SAM SA-10 Dunkirk",
-                "RED SAM SA-11 Dunkirk",
-                "RED SAM SA-2 Dunkirk",
-                "RED SAM SA-3 ds-2",
-                "RED SAM SA-6 Dunkirk"
+                "RED SAM SA-11 Fecamp",
+                "RED SAM SA-11 Omer",
+                "RED SAM SA-11 StValery",
+                "RED SAM SA-2 Dunkirk-2",
+                "RED SAM SA-2 Dunkirk-3",
+                "RED SAM SA-2 Dunkirk-4",
+                "RED SAM SA-2 Dunkirk-5",
+                "RED SAM SA-2 Dunkirk-6",
+                "RED SAM SA-3 ds-10",
+                "RED SAM SA-3 ds-11",
+                "RED SAM SA-3 ds-4",
+                "RED SAM SA-3 ds-5",
+                "RED SAM SA-3 ds-6",
+                "RED SAM SA-3 ds-7",
+                "RED SAM SA-3 ds-8",
+                "RED SAM SA-3 ds-9",
+                "RED SAM SA-6 Crack",
+                "RED SAM SA-6 Dieppe",
+                "RED SAM SA-6 Dr74",
+                "RED SAM SA-6 ER15",
+                "RED SAM SA-6 Fecamp",
+                "RED SAM SA-6 HazeBrouk",
+                "RED SAM SA-6 Lens",
+                "RED SAM SA-6 Omer",
+                "RED SAM SA-6 Pierremont",
+                "RED SAM SA-6 Poix",
+                "RED SAM SA-6 Tourcoing",
+                "RED SAM SA-6 Treport",
+                "RED SAM SA-6 Zoteux"
             ],
             "vertices": [
                 {
-                    "x": 170983.61453242,
-                    "y": 168728.45503589
+                    "x": 21035.688091196,
+                    "y": 17776.666666667
                 },
                 {
-                    "x": 176748.79715661,
-                    "y": 197439.44757295
+                    "x": 32305.688091196,
+                    "y": 257223.33333333
                 },
                 {
-                    "x": 190497.29880376,
-                    "y": 190739.79057116
+                    "x": 181448.36055952,
+                    "y": 254522.96619809
                 },
                 {
-                    "x": 181997.86907469,
-                    "y": 166736.77142889
+                    "x": 148076.87996684,
+                    "y": 125763.30903997
                 }
             ],
-            "x": 180056.89489187,
-            "y": 180911.11615222
+            "x": 95716.654177187,
+            "y": 163821.56880951
         },
         "OBJ-2": {
             "airbases": [],
@@ -1290,10 +1431,10 @@
                 "Static Loco ES44AH-2",
                 "Static Tank Car blue-1",
                 "Static Tank Car blue-2",
-                "Static Tank Car blue-3",
-                "Static Tank Car blue-4",
                 "Static Well Car-1",
-                "Static Well Car-2"
+                "Static Tank Car blue-3",
+                "Static Well Car-2",
+                "Static Tank Car blue-4"
             ],
             "strand": "STRAND-1",
             "tasks": [],

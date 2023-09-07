@@ -66,28 +66,28 @@
         "ship_groups": [],
         "static_groups": [
             "MASH Tent 1-12",
-            "Static Invisible FARP-21",
+            "MASH Tent 1-13",
+            "MASH Tent 1-14",
             "Static Container 20ft-25",
             "Static Container 20ft-26",
             "Static Container 20ft-27",
-            "MASH Tent 1-13",
             "Static Container 20ft-28",
-            "Static Invisible FARP-22",
             "Static Container 20ft-29",
             "Static Container 20ft-30",
-            "MASH Tent 1-14",
             "Static Container 20ft-31",
-            "Static Invisible FARP-23",
             "Static Container 20ft-32",
-            "Static Container 20ft-33"
+            "Static Container 20ft-33",
+            "Static Invisible FARP-21",
+            "Static Invisible FARP-22",
+            "Static Invisible FARP-23"
         ],
         "vehicle_groups": [
             "FARP MASH 1-20",
+            "FARP MASH 1-21",
+            "FARP MASH 1-22",
             "FARP Support 1-17",
             "FARP Support 1-18",
-            "FARP MASH 1-21",
-            "FARP Support 1-19",
-            "FARP MASH 1-22"
+            "FARP Support 1-19"
         ],
         "vertices": [
             {
@@ -109,5 +109,54 @@
         ],
         "x": 173582.872343,
         "y": 74457.789375245
+    },
+    "ROADBASE-3": {
+        "clearScenery": "all",
+        "component": "roadbase",
+        "label": "ROADBASE Hold My Beer",
+        "ship_groups": [],
+        "static_groups": [
+            "MASH Tent 1-19",
+            "MASH Tent 1-20",
+            "MASH Tent 1-21",
+            "MASH Tent 1-22",
+            "Static Container 20ft-40",
+            "Static Container 20ft-41",
+            "Static Container 20ft-42",
+            "Static Container 20ft-43",
+            "Static Container 20ft-44",
+            "Static Container 20ft-45",
+            "Static Container 20ft-46",
+            "Static Container 20ft-47",
+            "Static Container 20ft-48",
+            "Static Container 20ft-49",
+            "Static Container 20ft-50",
+            "Static Container 20ft-51",
+            "Static Invisible FARP-32",
+            "Static Invisible FARP-33",
+            "Static Invisible FARP-34",
+            "Static Invisible FARP-35"
+        ],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": 160685.90511406,
+                "y": 146083.66397426
+            },
+            {
+                "x": 158367.72974417,
+                "y": 144627.88197635
+            },
+            {
+                "x": 158201.33603963,
+                "y": 144867.07292662
+            },
+            {
+                "x": 160529.35610337,
+                "y": 146393.302349
+            }
+        ],
+        "x": 159446.08175031,
+        "y": 145492.98030656
     }
 }

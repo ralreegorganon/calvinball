@@ -88,5 +88,37 @@
         ],
         "x": 66966.592759129,
         "y": -201689.50992065
+    },
+    "REINFORCEMENT-4": {
+        "component": "reinforcement",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [
+            "Guines Goon Airwing Warehouse",
+            "Guines Goon Brigade Warehouse",
+            "Guines Goon Farp"
+        ],
+        "vehicleReinforcementTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": 160461.87571313,
+                "y": 146494.03095998
+            },
+            {
+                "x": 160338.61139551,
+                "y": 146789.58517609
+            },
+            {
+                "x": 160745.52371674,
+                "y": 146954.17105473
+            },
+            {
+                "x": 160844.27524392,
+                "y": 146663.51939671
+            }
+        ],
+        "x": 160597.57151732,
+        "y": 146725.32664687
     }
 }

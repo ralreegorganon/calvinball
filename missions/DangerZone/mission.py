@@ -645,6 +645,67 @@ class DangerZoneClients(calvinball.clients.Clients):
                     },
                 ]
             },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "roadbase": "ROADBASE Hold My Beer",
+                "roadbase_zone": "ROADBASE-3",
+                "start_type": dcs.mission.StartType.Warm,
+                "airframes": [
+                    { 
+                        "airframe": dcs.planes.A_10C_2, "fuel": 0.6, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)",
+                        "positions": [{"heading": 111, "x": 160587.59171745, "y": 146183.1854019}, {"heading": 118, "x": 160575.10929448, "y": 146208.83370479}]
+                    },
+                    { 
+                        "airframe": dcs.planes.AV8BNA, "fuel": 1, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)",
+                        "positions": [{"heading": 126, "x": 160620.67236022, "y": 146108.81733247}, {"heading": 126, "x": 160631.19011748, "y": 146090.81396419}, {"heading": 126, "x": 160642.4659113, "y": 146073.28436876}]
+                    },
+                    { 
+                        "airframe": dcs.planes.F_16C_50, "fuel": 1, "loadout": "Empty", "livery": "18th AGRS Arctic Splinter",
+                        "positions": [{"heading": 294, "x": 160530.45132613, "y": 146284.61167889}, {"heading": 289, "x": 160516.13887338, "y": 146315.91591161}, {"heading": 305, "x": 160549.19157798, "y": 146248.87445442}, {"heading": 292, "x": 160507.31884031, "y": 146335.59517102}, {"heading": 298, "x": 160539.31299561, "y": 146266.45252012}, {"heading": 296, "x": 160498.6407579, "y": 146355.57113429}]
+                    },
+                    { 
+                        "airframe": dcs.planes.F_15ESE, "fuel": 1, "loadout": "Empty", "livery": "USAF 494th Panthers FS 91-603 75th D-Day Anniversary", "properties": { dcs.planes.F_15ESE.Properties.NetCrewControlPriority.id: dcs.planes.F_15ESE.Properties.NetCrewControlPriority.Values.Equally_Responsible },
+                        "positions": [{"heading": 111, "x": 160597.03326698, "y": 146157.62413366}, {"heading": 112, "x": 160608.08678838, "y": 146133.44455559}]
+                    },
+                ]
+            },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "farp": "FARP Guines",
+                "farp_zone": "FARP-6",
+                "start_type": dcs.mission.StartType.Warm,
+                "airframes": [
+                    {
+                        "airframe": dcs.helicopters.Mi_24P, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation",
+                        "positions": [{"heading": 135, "x": 160297.63757879, "y": 146319.14918679}, {"heading": 162, "x": 160325.0866656, "y": 146376.98833399}, {"heading": 182, "x": 160326.65518485, "y": 146405.80987514}, {"heading": 141, "x": 160314.9513438, "y": 146344.51290512}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.Mi_8MT, "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN",
+                        "positions": [{"heading": 119, "x": 160245.7559282, "y": 146291.53249191}, {"heading": 106, "x": 160215.27249429, "y": 146284.30310581}, {"heading": 72, "x": 160180.87201537, "y": 146286.79847734}, {"heading": 116, "x": 160274.94901612, "y": 146302.01361556}], "SA342L": [{"heading": 225, "x": 160304.6959154, "y": 146479.13814989}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.UH_1H, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972",
+                        "positions": [{"heading": 247, "x": 160253.9576906, "y": 146516.80819888}, {"heading": 255, "x": 160236.43630341, "y": 146522.5334687}, {"heading": 257, "x": 160200.45179641, "y": 146524.23072316}, {"heading": 251, "x": 160219.74055521, "y": 146524.73027767}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
+                        "positions": [{"heading": 40, "x": 160105.70964254, "y": 146331.63852129}, {"heading": 30, "x": 160090.3969734, "y": 146359.89147421}, {"heading": 63, "x": 160153.15734974, "y": 146294.75871251}, {"heading": 45, "x": 160128.84550834, "y": 146310.56929717}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.SA342L, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2",
+                        "positions": [{"heading": 225, "x": 160304.6959154, "y": 146479.13814989}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.SA342M, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet",
+                        "positions": [{"heading": 234, "x": 160288.61859313, "y": 146494.43121254}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf",
+                        "positions": [{"heading": 212, "x": 160316.65587465, "y": 146459.33559441}, {"heading": 208, "x": 160325.67486032, "y": 146436.78813025}],
+                        "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
+                    },
+                ]
+            },
         ]
 
         comms_plan = {
@@ -1466,6 +1527,153 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                     }
                 }
             },
+            "Amiens-Glisy Alpha": {
+                "airbase": "Amiens-Glisy",
+                "warehouse": "Amiens-Glisy Airwing Warehouse-1#00001",
+                "squadrons": {
+                    "Amiens-Glisy Alpha 1": {
+                        "airframe": dcs.planes.JF_17,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "PLAAF 125th AB (Fictional)",
+                        "loadouts": {
+                            "PL-5Ex2, 2*SD-10x2, 1100L Tankx2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Amiens-Glisy Alpha 2": {
+                        "airframe": dcs.planes.F_16C_50,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "18th AGRS BDU Splinter",
+                        "loadouts": {
+                            "AIM-120C*4, AIM-9X*2, FUEL*2, ECM": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "AIM-120C*2, AIM-9X*2, AGM-65D*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
+                            "AIM-120C*2, AIM-9X*2, CBU-105*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BOMBCARPET}",
+                            "AIM-120C*4, AGM-88C*4, ECM, TGP, HTS": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    }
+                }
+            },
+            "Amiens-Glisy Beta": {
+                "airbase": "Amiens-Glisy",
+                "warehouse": "Amiens-Glisy Airwing Warehouse-2#00001",
+                "squadrons": {
+                    "Amiens-Glisy Beta 1": {
+                        "airframe": dcs.planes.JF_17,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "PLAAF 125th AB (Fictional)",
+                        "loadouts": {
+                            "PL-5Ex2, 2*SD-10x2, 1100L Tankx2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Amiens-Glisy Beta 2": {
+                        "airframe": dcs.planes.F_16C_50,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "18th AGRS BDU Splinter",
+                        "loadouts": {
+                            "AIM-120C*4, AIM-9X*2, FUEL*2, ECM": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "AIM-120C*2, AIM-9X*2, AGM-65D*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
+                            "AIM-120C*2, AIM-9X*2, CBU-105*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BOMBCARPET}",
+                            "AIM-120C*4, AGM-88C*4, ECM, TGP, HTS": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    }
+                }
+            },
+            "Amiens-Glisy Gamma": {
+                "airbase": "Amiens-Glisy",
+                "warehouse": "Amiens-Glisy Airwing Warehouse-3#00001",
+                "squadrons": {
+                    "Amiens-Glisy Gamma 1": {
+                        "airframe": dcs.planes.JF_17,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "PLAAF 125th AB (Fictional)",
+                        "loadouts": {
+                            "PL-5Ex2, 2*SD-10x2, 1100L Tankx2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Amiens-Glisy Gamma 2": {
+                        "airframe": dcs.planes.F_16C_50,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "18th AGRS BDU Splinter",
+                        "loadouts": {
+                            "AIM-120C*4, AIM-9X*2, FUEL*2, ECM": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "AIM-120C*2, AIM-9X*2, AGM-65D*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
+                            "AIM-120C*2, AIM-9X*2, CBU-105*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BOMBCARPET}",
+                            "AIM-120C*4, AGM-88C*4, ECM, TGP, HTS": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    }
+                }
+            },
         }
         return red_airwings
 
@@ -1694,6 +1902,25 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                         "airframe": dcs.helicopters.CH_47D,
                         "groupSize": 1,
                         "initialInventory": 99,
+                        "livery": "standard",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    }
+                }
+            },
+            "1st Guines Goonwing": {
+                "airbase": "Guines Goon Farp#00001",
+                "warehouse": "Guines Goon Airwing Warehouse#00001",
+                "squadrons": {
+                    "LG-01": {
+                        "airframe": dcs.helicopters.CH_47D,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
                         "livery": "standard",
                         "loadouts": {
                             "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
@@ -1969,6 +2196,23 @@ class DangerZoneBlueBrigades(calvinball.bluebrigade.BlueBrigades):
                 "warehouse": "Lymington Goon Brigade Warehouse#00001",
                 "platoons": {
                     "Lymington-01": {
+                        "units": [
+                            dcs.vehicles.Infantry.Soldier_M4,
+                            dcs.vehicles.Infantry.Soldier_M4,
+                            dcs.vehicles.Infantry.Soldier_RPG,
+                            dcs.vehicles.Infantry.Soldier_RPG,
+                        ],
+                        "initialInventory": 99,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    }
+                }
+            },
+            "1st Guines": {
+                "warehouse": "Guines Goon Brigade Warehouse#00001",
+                "platoons": {
+                    "Guines-01": {
                         "units": [
                             dcs.vehicles.Infantry.Soldier_M4,
                             dcs.vehicles.Infantry.Soldier_M4,

@@ -134,29 +134,56 @@
         "radius": 137.16,
         "ship_groups": [],
         "static_groups": [
-            "Static Invisible FARP-24",
-            "Static Watch tower armed-5",
-            "Static Container 20ft-34",
-            "Static FARP Tent-73",
-            "Static FARP Tent-74",
             "MASH Tent 1-15",
             "MASH Tent 1-16",
-            "Static Invisible FARP-25",
-            "Static Windsock-5",
+            "Static Container 20ft-34",
             "Static Container 20ft-35",
             "Static Container 20ft-36",
-            "Static Invisible FARP-26",
+            "Static FARP Tent-73",
+            "Static FARP Tent-74",
             "Static FARP Tent-75",
             "Static FARP Tent-76",
-            "Static Invisible FARP-27"
+            "Static Invisible FARP-24",
+            "Static Invisible FARP-25",
+            "Static Invisible FARP-26",
+            "Static Invisible FARP-27",
+            "Static Watch tower armed-5",
+            "Static Windsock-5"
         ],
         "vehicle_groups": [
+            "FARP MASH 1-23",
             "FARP Support 1-20",
             "FARP Support 1-21",
-            "FARP MASH 1-23",
             "FARP Support 1-22"
         ],
         "x": 182831.0465453,
         "y": 98494.640257035
+    },
+    "FARP-6": {
+        "clearScenery": "all",
+        "component": "farp",
+        "label": "FARP Guines",
+        "radius": 137.16,
+        "ship_groups": [],
+        "static_groups": [
+            "MASH Tent 1-17",
+            "MASH Tent 1-18",
+            "Static Container 20ft-37",
+            "Static Container 20ft-38",
+            "Static Container 20ft-39",
+            "Static FARP Tent-77",
+            "Static FARP Tent-78",
+            "Static FARP Tent-79",
+            "Static FARP Tent-80",
+            "Static Invisible FARP-28",
+            "Static Invisible FARP-29",
+            "Static Invisible FARP-30",
+            "Static Invisible FARP-31",
+            "Static Watch tower armed-6",
+            "Static Windsock-6"
+        ],
+        "vehicle_groups": [],
+        "x": 160205.5599261,
+        "y": 146403.2206729
     }
 }

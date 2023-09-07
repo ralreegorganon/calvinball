@@ -2029,6 +2029,13 @@ completeObjective = function(objective, killLinkedUnits)
                                     g:Destroy(true)
                                 end
                             end
+
+                            if qrf.labelMarkId then
+                                UTILS.RemoveMark(qrf.labelMarkId, 0)
+                            end
+                            if qrf.circleMarkId then
+                                UTILS.RemoveMark(qrf.circleMarkId, 0)
+                            end
                         end
                     end
                 end
