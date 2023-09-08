@@ -6230,7 +6230,7 @@ MissionDb = {
 				"RED AWACS ZONE",
 			},
 			blueAwacsZones = {
-				"BLUE AWACS ZONE",
+				"BLUE AWACS ZONE-2",
 			},
 			nodes = {
 				{ name = "NODE-47", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -8956,7 +8956,7 @@ MissionDb = {
 				"RED AWACS ZONE",
 			},
 			blueAwacsZones = {
-				"BLUE AWACS ZONE",
+				"BLUE AWACS ZONE-2",
 			},
 			nodes = {
 				{ name = "NODE-49", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -10855,7 +10855,7 @@ MissionDb = {
 				"RED AWACS ZONE",
 			},
 			blueAwacsZones = {
-				"BLUE AWACS ZONE",
+				"BLUE AWACS ZONE-2",
 			},
 			nodes = {
 			},
