@@ -1454,7 +1454,7 @@ end
 local function unlockRoadbasesForObjective(objective)
     for _, roadbase in ipairs(objective.roadbases) do
         spawnGroupsAtThing(roadbase, country.id.CJTF_BLUE)
-        
+
         local roadbaseZone = ZONE:FindByName(roadbase.name)
         local roadbaseLabelText = roadbaseZone:GetProperty("label")
         roadbase.labelMarkId = roadbaseZone:GetCoordinate(0):Translate(roadbaseZone:GetRadius() + 50, 0, false, true):TextToAll(roadbaseLabelText, -1, {0,0,1}, 1, {1,1,1}, 0.0, 20, true)
@@ -1564,12 +1564,6 @@ local function updateBorderZones()
     end
 end
 
--- TODO: parameterize these
-local function updateAwacsZones()
-    updateRedAwacsZones()    
-    updateBlueAwacsZones()    
-end
-
 local function updateRedAwacsZones()
     local intendedAwacsZones = {}
     for _, objective in ipairs(MissionDb.objectives) do
@@ -1664,6 +1658,11 @@ local function updateBlueAwacsZones()
     end
 end
 
+-- TODO: parameterize these
+local function updateAwacsZones()
+    updateRedAwacsZones()
+    updateBlueAwacsZones()
+end
 
 local function updateCapZones()
     local intendedCapZones = {}
@@ -1952,7 +1951,7 @@ local function startObjective(objective)
     end, {}, 15)
 
     -- Not sure that I actually want this "prespwaning" going on anymore.
-    -- 
+    --
     -- local nextObjective = determineNextObjectiveFrom(objective)
     -- if nextObjective ~= nil then
     --     local nextObjectiveZone = ZONE:FindByName(nextObjective.name)
