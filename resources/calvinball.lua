@@ -2434,7 +2434,7 @@ local function requestCAP(menuArgs)
             if #objective.nodes > 0 then
                 local objectiveZone = ZONE:FindByName(objective.name)
                 local capZone =  ZONE_RADIUS:New( string.format("BLUECAP-%d", math.random(1,100000)), objectiveZone:GetVec2(), objectiveZone:GetRadius())
-                local capMission = AUFTRAG:NewCAP(capZone, 10000, 350)
+                local capMission = AUFTRAG:NewCAP(capZone, 30000, 350)
                 MissionDb.bluechief.instance:AddMission(capMission)
 
                 local objectiveZone = ZONE:FindByName(objective.name)
