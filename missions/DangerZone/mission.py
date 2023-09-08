@@ -1759,7 +1759,7 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                 "airbase": "Abe Unit #1",
                 "warehouse": "Abe Unit #1",
                 "squadrons": {
-                    "GGD-01": {
+                    "GGD-04": {
                         "airframe": dcs.planes.E_2C,
                         "groupSize": 1,
                         "initialInventory": 99,
@@ -1771,7 +1771,7 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                             "AUFTRAG.Type.AWACS": 50
                         }
                     },
-                    "GGD-02 JTAC": {
+                    "GGD-05 JTAC": {
                         "airframe": dcs.planes.S_3B,
                         "groupSize": 1,
                         "initialInventory": 99,
@@ -1783,7 +1783,7 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                             "AUFTRAG.Type.RECON": 50
                         }
                     },
-                    "GGD-02": {
+                    "GGD-06": {
                         "airframe": dcs.helicopters.CH_47D,
                         "groupSize": 1,
                         "initialInventory": 99,
@@ -1801,7 +1801,7 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                 "airbase": "Abe Unit #1",
                 "warehouse": "Abe Unit #1",
                 "squadrons": {
-                    "GGD-03": {
+                    "GGD-07": {
                         "airframe": dcs.planes.FA_18C_hornet,
                         "groupSize": 2,
                         "initialInventory": 99,

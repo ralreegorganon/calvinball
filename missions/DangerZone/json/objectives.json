@@ -2,9 +2,7 @@
     "objectives": {
         "OBJ-1": {
             "airbases": [],
-            "blueAwacsZones": [
-                "BLUE AWACS ZONE"
-            ],
+            "blueAwacsZones": [],
             "borderZones": [],
             "capZones": [],
             "carriers": [
@@ -24,9 +22,7 @@
                 "QRF-1",
                 "QRF-2"
             ],
-            "redAwacsZones": [
-                "RED AWACS ZONE"
-            ],
+            "redAwacsZones": [],
             "reinforcements": [
                 "REINFORCEMENT-3"
             ],
