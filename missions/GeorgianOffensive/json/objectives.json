@@ -4,6 +4,7 @@
             "airbases": [
                 "AIRBASE-1"
             ],
+            "blueAwacsZones": [],
             "borderZones": [],
             "capZones": [],
             "carriers": [],
@@ -23,6 +24,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],

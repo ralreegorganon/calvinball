@@ -8,6 +8,10 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+			},
 			nodes = {
 				{ name = "NODE-1", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},

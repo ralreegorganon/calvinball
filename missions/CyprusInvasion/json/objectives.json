@@ -6,6 +6,10 @@
             ],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -115,6 +119,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -214,6 +222,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -338,6 +350,10 @@
             ],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -459,6 +475,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -563,6 +583,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -686,6 +710,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -792,6 +820,10 @@
             ],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -974,6 +1006,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1147,6 +1183,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1319,6 +1359,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1423,6 +1467,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1566,6 +1614,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1685,6 +1737,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1797,6 +1853,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1896,6 +1956,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1998,6 +2062,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -2063,6 +2131,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -2154,6 +2226,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -2244,6 +2320,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -2329,6 +2409,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -2440,6 +2524,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -2491,6 +2579,10 @@
             "airbases": [],
             "borderZones": [],
             "capZones": [],
+            "redAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",

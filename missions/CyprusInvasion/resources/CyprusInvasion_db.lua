@@ -8,6 +8,11 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-1", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-2", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -413,6 +418,11 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-32", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-33", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -499,6 +509,11 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-29", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -763,6 +778,11 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-41", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-53", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -892,6 +912,11 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-47", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-48", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -955,6 +980,11 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-43", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -1302,6 +1332,11 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-60", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-61", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -1352,6 +1387,11 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-66", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -1902,6 +1942,11 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-74", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-75", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -2103,6 +2148,11 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-78", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -2847,6 +2897,11 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-28", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-86", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -2924,6 +2979,11 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-27", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -3252,6 +3312,11 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-89", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-90", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -3325,6 +3390,11 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-94", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-95", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -3389,6 +3459,11 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-100", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -3712,6 +3787,11 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-104", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-105", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -3767,6 +3847,11 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-12", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-17", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -3806,6 +3891,11 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-13", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -4127,6 +4217,11 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-18", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -4517,6 +4612,11 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-21", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-22", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -4562,6 +4662,11 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-10", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -4759,6 +4864,11 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 			},
@@ -5141,6 +5251,11 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-26", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },

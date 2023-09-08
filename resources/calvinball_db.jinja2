@@ -15,6 +15,16 @@ MissionDb = {
 				"{{cap_zone}}",
 {%				endfor %}
 			},
+			redAwacsZones = {
+{% 				for redAwacs_zone in objective["redAwacsZones"] %}
+				"{{redAwacs_zone}}",
+{%				endfor %}
+			},
+			blueAwacsZones = {
+{% 				for blueAwacs_zone in objective["blueAwacsZones"] %}
+				"{{blueAwacs_zone}}",
+{%				endfor %}
+			},
 			nodes = {
 {% 				for node_name, node in objective["nodes"].items() %}
 				{ name = "{{node_name}}", redSurrenderThreshold = {{node["redSurrenderThreshold"]}}, blueCaptureThreshold = {{node["blueCaptureThreshold"]}} },

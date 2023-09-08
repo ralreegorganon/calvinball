@@ -265,6 +265,8 @@ class Mission:
                     {"key": "completeSound", "value": objective["completeSound"]},
                     {"key": "borderZones", "value": ",".join(objective["borderZones"])},
                     {"key": "capZones", "value": ",".join(objective["capZones"])},
+                    {"key": "redAwacsZones", "value": ",".join(objective["redAwacsZones"])},
+                    {"key": "blueAwacsZones", "value": ",".join(objective["blueAwacsZones"])},
                     {"key": "carriers", "value": ",".join(objective["carriers"])},
                     {"key": "qrfKillOnComplete", "value": ",".join(objective["qrfKillOnComplete"])},
                 ]

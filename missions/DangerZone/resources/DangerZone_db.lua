@@ -8,6 +8,12 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 			},
 			tasks = {
@@ -264,6 +270,12 @@ MissionDb = {
 			},
 			capZones = {
 				"CAP-2",
+			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-34", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -2620,6 +2632,12 @@ MissionDb = {
 			capZones = {
 				"CAP-5",
 			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-36", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-37", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -4033,6 +4051,12 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-39", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -5807,6 +5831,12 @@ MissionDb = {
 			capZones = {
 				"CAP-3",
 			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-38", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-41", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -6195,6 +6225,12 @@ MissionDb = {
 			capZones = {
 				"CAP-3",
 				"CAP-6",
+			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-47", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -8889,13 +8925,13 @@ MissionDb = {
 			vehicleGroups = {
 				{ name = "RED AIR DEFENSE BATTERY B RG 147-1" },
 				{ name = "RED AIR DEFENSE BATTERY C RG 149-3" },
+				{ name = "RED EWR 2-10" },
 				{ name = "RED GROUND 1-17" },
 				{ name = "RED RG 1919-1" },
 				{ name = "RED SAM SA-15 RG 686-29" },
 				{ name = "RED SAM SA-15 RG 686-30" },
 				{ name = "RED SAM SA-3 ds-3" },
 				{ name = "RED SAM SA-6 Audinghen" },
-				{ name = "RED EWR 2-10" },
 			},
 			shipGroups = {
 			},
@@ -8915,6 +8951,12 @@ MissionDb = {
 			capZones = {
 				"CAP-3",
 				"CAP-6",
+			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-49", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -10809,6 +10851,12 @@ MissionDb = {
 			},
 			capZones = {
 			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 			},
 			tasks = {
@@ -10869,6 +10917,12 @@ MissionDb = {
 			},
 			capZones = {
 				"CAP-4",
+			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-1", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -12006,6 +12060,12 @@ MissionDb = {
 			},
 			capZones = {
 				"CAP-4",
+			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-10", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -13408,6 +13468,12 @@ MissionDb = {
 			capZones = {
 				"CAP-4",
 			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-14", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-15", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -13828,6 +13894,12 @@ MissionDb = {
 			},
 			capZones = {
 				"CAP-4",
+			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-18", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -16400,6 +16472,12 @@ MissionDb = {
 			capZones = {
 				"CAP-4",
 			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
+			},
 			nodes = {
 				{ name = "NODE-26", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 				{ name = "NODE-27", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -16472,6 +16550,12 @@ MissionDb = {
 			},
 			capZones = {
 				"CAP-4",
+			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-21", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -16769,42 +16853,12 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static Well Car-1#00001",
-					template = {
-						name = "Static Well Car-1",
-						type = "Wellcarnsc",
-						x = 135456.84356486,
-						y = -125031.96567071,
-						heading = 1.4660765716752,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
 					name = "Static Tank Car blue-3#00001",
 					template = {
 						name = "Static Tank Car blue-3",
 						type = "Coach a tank blue",
 						x = 135452.06096823,
 						y = -125071.16420784,
-						heading = 1.4835298641952,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
-					name = "Static Well Car-2#00001",
-					template = {
-						name = "Static Well Car-2",
-						type = "Wellcarnsc",
-						x = 135459.18797498,
-						y = -125009.5062218,
 						heading = 1.4835298641952,
 						category = "",
 						canCargo = false,
@@ -16828,6 +16882,36 @@ MissionDb = {
 						dead = false
 					}
 				},
+				{
+					name = "Static Well Car-1#00001",
+					template = {
+						name = "Static Well Car-1",
+						type = "Wellcarnsc",
+						x = 135456.84356486,
+						y = -125031.96567071,
+						heading = 1.4660765716752,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Well Car-2#00001",
+					template = {
+						name = "Static Well Car-2",
+						type = "Wellcarnsc",
+						x = 135459.18797498,
+						y = -125009.5062218,
+						heading = 1.4835298641952,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
 			}
 		},
 		{
@@ -16837,6 +16921,12 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-23", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -19602,6 +19692,12 @@ MissionDb = {
 			},
 			capZones = {
 				"CAP-1",
+			},
+			redAwacsZones = {
+				"RED AWACS ZONE",
+			},
+			blueAwacsZones = {
+				"BLUE AWACS ZONE",
 			},
 			nodes = {
 				{ name = "NODE-31", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },

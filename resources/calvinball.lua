@@ -1564,6 +1564,107 @@ local function updateBorderZones()
     end
 end
 
+-- TODO: parameterize these
+local function updateAwacsZones()
+    updateRedAwacsZones()    
+    updateBlueAwacsZones()    
+end
+
+local function updateRedAwacsZones()
+    local intendedAwacsZones = {}
+    for _, objective in ipairs(MissionDb.objectives) do
+        if objective.state == "active" then
+            for _, awacsZoneName in ipairs(objective.redAwacsZones) do
+                table.insert(intendedAwacsZones, awacsZoneName)
+            end
+        end
+    end
+
+    local commander = MissionDb.redchief.instance:GetCommander()
+
+    for i=#commander.awacsZones,1,-1 do
+        local awacsZone = commander.awacsZones[i]
+        local found = false
+        for _, awacsZoneName in ipairs(intendedAwacsZones) do
+            if awacsZoneName == awacsZone.zone:GetName() then
+                found = true
+                break
+            end
+        end
+        if not found then
+            table.remove(commander.awacsZones, i)
+            MissionDb.redchief.instance:RemoveAwacsZone(awacsZone)
+        end
+    end
+
+    for i=#intendedAwacsZones,1,-1 do
+        local awacsZoneName = intendedAwacsZones[i]
+        local found = false
+        for _, awacsZone in ipairs(commander.awacsZones) do
+            if awacsZoneName == awacsZone.zone:GetName() then
+                found = true
+                break
+            end
+        end
+        if found then
+            table.remove(intendedAwacsZones, i)
+        end
+    end
+
+    for _, awacsZoneName in ipairs(intendedAwacsZones) do
+        local awacsZone = ZONE:FindByName(awacsZoneName)
+        MissionDb.redchief.instance:AddAwacsZone(awacsZone)
+    end
+end
+
+local function updateBlueAwacsZones()
+    local intendedAwacsZones = {}
+    for _, objective in ipairs(MissionDb.objectives) do
+        if objective.state == "active" then
+            for _, awacsZoneName in ipairs(objective.blueAwacsZones) do
+                table.insert(intendedAwacsZones, awacsZoneName)
+            end
+        end
+    end
+
+    local commander = MissionDb.bluechief.instance:GetCommander()
+
+    for i=#commander.awacsZones,1,-1 do
+        local awacsZone = commander.awacsZones[i]
+        local found = false
+        for _, awacsZoneName in ipairs(intendedAwacsZones) do
+            if awacsZoneName == awacsZone.zone:GetName() then
+                found = true
+                break
+            end
+        end
+        if not found then
+            table.remove(commander.awacsZones, i)
+            MissionDb.bluechief.instance:RemoveAwacsZone(awacsZone)
+        end
+    end
+
+    for i=#intendedAwacsZones,1,-1 do
+        local awacsZoneName = intendedAwacsZones[i]
+        local found = false
+        for _, awacsZone in ipairs(commander.awacsZones) do
+            if awacsZoneName == awacsZone.zone:GetName() then
+                found = true
+                break
+            end
+        end
+        if found then
+            table.remove(intendedAwacsZones, i)
+        end
+    end
+
+    for _, awacsZoneName in ipairs(intendedAwacsZones) do
+        local awacsZone = ZONE:FindByName(awacsZoneName)
+        MissionDb.bluechief.instance:AddAwacsZone(awacsZone)
+    end
+end
+
+
 local function updateCapZones()
     local intendedCapZones = {}
     for _, objective in ipairs(MissionDb.objectives) do
@@ -1863,6 +1964,7 @@ local function startObjective(objective)
     -- end
 
     updateBorderZones()
+    updateAwacsZones()
     updateCapZones()
 end
 
@@ -2123,12 +2225,8 @@ local function initializeRedChief()
     MissionDb.redchief.instance:SetStrategy(CHIEF.Strategy.AGGRESSIVE)
     MissionDb.redchief.conflictZones = SET_ZONE:New()
     MissionDb.redchief.borderZones = SET_ZONE:New()
+    MissionDb.redchief.awacsZones = SET_ZONE:New()
     MissionDb.redchief.instance:SetConflictZones(MissionDb.redchief.conflictZones)
-
-    local redAwacsZone = ZONE:FindByName("RED AWACS ZONE")
-    if redAwacsZone then
-        MissionDb.redchief.instance:AddAwacsZone(redAwacsZone)
-    end
 end
 
 local function initializeBlueChief()
@@ -2137,12 +2235,8 @@ local function initializeBlueChief()
     --MissionDb.bluechief.instance:SetTacticalOverviewOn()
     MissionDb.bluechief.instance:SetStrategy(CHIEF.Strategy.DEFENSIVE)
     MissionDb.bluechief.conflictZones = SET_ZONE:New()
+    MissionDb.bluechief.awacsZones = SET_ZONE:New()
     MissionDb.bluechief.instance:SetConflictZones(MissionDb.bluechief.conflictZones)
-
-    local blueAwacsZone = ZONE:FindByName("BLUE AWACS ZONE")
-    if blueAwacsZone then
-        MissionDb.bluechief.instance:AddAwacsZone(blueAwacsZone)
-    end
 end
 
 local function initializeObjectives()

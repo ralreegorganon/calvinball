@@ -64,6 +64,8 @@ def get_objective_zones(m: dcs.Mission):
         completeSound = None
         borderZones = None
         capZones = None
+        redAwacsZones = None
+        blueAwacsZones = None
         carriers = None
         qrfKillOnComplete = ""
         redSurrenderThreshold = "1"
@@ -79,6 +81,10 @@ def get_objective_zones(m: dcs.Mission):
                 borderZones = v.get("value", "")
             if(v["key"] == "capZones"):
                 capZones = v.get("value", "")
+            if(v["key"] == "redAwacsZones"):
+                redAwacsZones = v.get("value", "")
+            if(v["key"] == "blueAwacsZones"):
+                blueAwacsZones = v.get("value", "")
             if(v["key"] == "carriers"):
                 carriers = v.get("value", "")
             if(v["key"] == "redSurrenderThreshold"):
@@ -100,6 +106,8 @@ def get_objective_zones(m: dcs.Mission):
                 "completeSound": completeSound,
                 "borderZones": [x.strip() for x in borderZones.split(',') if x],
                 "capZones": [x.strip() for x in capZones.split(',') if x],
+                "redAwacsZones": [x.strip() for x in redAwacsZones.split(',') if x],
+                "blueAwacsZones": [x.strip() for x in blueAwacsZones.split(',') if x],
                 "carriers": [x.strip() for x in carriers.split(',') if x],
                 "qrfKillOnComplete": [x.strip() for x in qrfKillOnComplete.split(',') if x],
                 "nodes": {},
