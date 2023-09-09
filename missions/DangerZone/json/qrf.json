@@ -1986,6 +1986,27 @@
         "static_groups": [],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
+            "RED 1st Anglo 1GW-Anglo-2",
+            "RED 1st Anglo 1GW-Anglo-3",
+            "RED 1st Kuz Kuz-01",
+            "RED FOB Bo'ohw'o'wo'er FOB Bo'ohw'o'wo'er 1",
+            "RED FOB Bo'ohw'o'wo'er FOB Bo'ohw'o'wo'er 2",
+            "RED FOB Innit FOB Innit 1",
+            "RED FOB Innit FOB Innit 2",
+            "RED FOB Murray FOB Murray 1",
+            "RED FOB Murray FOB Murray 2",
+            "RED FOB Smith FOB Smith 1",
+            "RED FOB Smith FOB Smith 2",
+            "RED FOB Yes Minister FOB Yes Minister 1",
+            "RED FOB Yes Minister FOB Yes Minister 2",
+            "RED QRF 1",
+            "RED QRF 2",
+            "RED QRF 3",
+            "RED QRF 4",
+            "RED QRF 5",
+            "RED QRF 6",
+            "RED QRF 7",
+            "RED QRF 8",
             "RED SAM SA-10 Cherbourg",
             "RED SAM SA-10 Dinan",
             "RED SAM SA-10 Goulet",
@@ -1996,6 +2017,7 @@
             "RED SAM SA-11 Conches",
             "RED SAM SA-11 Deauville",
             "RED SAM SA-11 Dinan",
+            "RED SAM SA-11 Fecamp",
             "RED SAM SA-11 Goulet",
             "RED SAM SA-11 Mosies",
             "RED SAM SA-11 Rouen",
@@ -2012,6 +2034,7 @@
             "RED SAM SA-2 Dunkirk-7",
             "RED SAM SA-2 Rouen",
             "RED SAM SA-3 Dunkirk",
+            "RED SAM SA-3 ds-11",
             "RED SAM SA-3 ds-12",
             "RED SAM SA-3 ds-13",
             "RED SAM SA-3 ds-14",
@@ -2045,6 +2068,7 @@
             "RED SAM SA-6 Deuaville",
             "RED SAM SA-6 Dieppe-1",
             "RED SAM SA-6 Essay",
+            "RED SAM SA-6 Fecamp",
             "RED SAM SA-6 Fontenailles",
             "RED SAM SA-6 Goulet",
             "RED SAM SA-6 Lantheuil",
@@ -2057,12 +2081,43 @@
             "RED SAM SA-6 Rethoville",
             "RED SAM SA-6 StPierre",
             "RED SAM SA-6 StVaast",
-            "RED SAM SA-6 Tip"
+            "RED SAM SA-6 Tip",
+            "RED QRF 1-1",
+            "RED QRF 2-1",
+            "RED QRF 3-1",
+            "RED QRF 4-1",
+            "RED QRF 5-1",
+            "RED QRF 6-1",
+            "RED QRF 7-1",
+            "RED QRF 8-1",
+            "RED 1st Anglo 1GW-Anglo-1",
+            "RED 1st Anglo 1GW-Anglo-4",
+            "RED FOB Yes Minister FOB Yes Minister 1-1",
+            "RED FOB Yes Minister FOB Yes Minister 2-1",
+            "RED FOB Murray FOB Murray 1-1",
+            "RED FOB Murray FOB Murray 2-1",
+            "RED FOB Smith FOB Smith 1-1",
+            "RED FOB Smith FOB Smith 2-1",
+            "RED FOB Bo'ohw'o'wo'er FOB Bo'ohw'o'wo'er 1-1",
+            "RED FOB Bo'ohw'o'wo'er FOB Bo'ohw'o'wo'er 2-1",
+            "RED FOB Innit FOB Innit 1-1",
+            "RED FOB Innit FOB Innit 2-1",
+            "RED 1st Kuz Kuz-1",
+            "BLUE 1st Forrestal Forrestal-01",
+            "BLUE 1st Guines Guines-01",
+            "BLUE 1st Lymington Lymington-01",
+            "BLUE 1st Saratoga Saratoga-01",
+            "BLUE REINFORCEMENT 1",
+            "BLUE REINFORCEMENT 1-1",
+            "BLUE 1st Forrestal Forrestal-1",
+            "BLUE 1st Saratoga Saratoga-1",
+            "BLUE 1st Lymington Lymington-1",
+            "BLUE 1st Guines Guines-1"
         ],
         "vertices": [
             {
-                "x": 10120.426238996,
-                "y": 130180.57226126
+                "x": 35929.811408521,
+                "y": 144379.26428963
             },
             {
                 "x": -120428.50351754,
@@ -2077,8 +2132,8 @@
                 "y": -211543.33333333
             }
         ],
-        "x": -52274.519319636,
-        "y": -62296.441861255
+        "x": -45822.173027255,
+        "y": -58746.768854161
     },
     "QRF-42": {
         "component": "qrf",
@@ -2181,10 +2236,14 @@
         "static_groups": [
             "Amiens-Glisy Airwing Warehouse-1",
             "Amiens-Glisy Airwing Warehouse-2",
-            "Amiens-Glisy Airwing Warehouse-3"
+            "Amiens-Glisy Airwing Warehouse-3",
+            "FOB Amiens-Glisy Farp",
+            "FOB Amiens-Glisy Brigade Warehouse",
+            "FOB Amiens-Glisy Airwing Warehouse"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
+            "RED EWR 2-12",
             "RED SAM SA-10 Amiens",
             "RED SAM SA-11 Amiens",
             "RED SAM SA-15 RG 686-51",
@@ -2192,7 +2251,9 @@
             "RED SAM SA-15 RG 686-54",
             "RED SAM SA-15 RG 686-55",
             "RED SAM SA-5 Amiens",
-            "RED EWR 2-12"
+            "RED SAM SA-19 RG 1",
+            "RED GROUND 8-11 RG-6",
+            "RED GROUND 8-28 RG-6"
         ],
         "vertices": [
             {
@@ -2645,6 +2706,89 @@
         ],
         "x": 166643.82898189,
         "y": 189127.15706713
+    },
+    "QRF-51": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [
+            "RED SAM SA-11 StValery",
+            "RED SAM SA-15 RG 686-58",
+            "RED SAM SA-15 RG 686-59",
+            "RED SAM SA-15 RG 686-60",
+            "RED SAM SA-15 RG 686-61",
+            "RED SAM SA-2 Dunkirk-4",
+            "RED SAM SA-2 Dunkirk-5",
+            "RED SAM SA-3 ds-10",
+            "RED SAM SA-3 ds-8",
+            "RED SAM SA-3 ds-9",
+            "RED SAM SA-6 Crack",
+            "RED SAM SA-6 Dieppe",
+            "RED SAM SA-6 Treport"
+        ],
+        "vertices": [
+            {
+                "x": 136465.05044617,
+                "y": 134753.18579558
+            },
+            {
+                "x": 76978.774311652,
+                "y": 140123.47461327
+            },
+            {
+                "x": 45217.413081601,
+                "y": 97745.833686072
+            },
+            {
+                "x": 57409.172980489,
+                "y": 73751.412608473
+            }
+        ],
+        "x": 79017.602704978,
+        "y": 111593.47667585
+    },
+    "QRF-52": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [
+            "Poix Airwing Warehouse-4",
+            "Poix Airwing Warehouse-1",
+            "Poix Airwing Warehouse-2",
+            "Poix Airwing Warehouse-3"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [
+            "RED SAM SA-2 Dunkirk-6",
+            "RED SAM SA-6 Poix",
+            "RED SAM SA-15 RG 686-68",
+            "RED SAM SA-15 RG 686-69",
+            "RED SAM SA-19 RG 1-1",
+            "RED GROUND 8-29 RG-6",
+            "RED GROUND 9-8 RG-6"
+        ],
+        "vertices": [
+            {
+                "x": 48311.386913586,
+                "y": 165432.38082734
+            },
+            {
+                "x": 42419.623482109,
+                "y": 166736.83029556
+            },
+            {
+                "x": 42535.574545951,
+                "y": 159018.83760857
+            },
+            {
+                "x": 47949.039839079,
+                "y": 159692.80316715
+            }
+        ],
+        "x": 45303.906195181,
+        "y": 162720.21297466
     },
     "QRF-6": {
         "component": "qrf",

@@ -9,10 +9,8 @@ MissionDb = {
 			capZones = {
 			},
 			redAwacsZones = {
-				"RED AWACS ZONE",
 			},
 			blueAwacsZones = {
-				"BLUE AWACS ZONE",
 			},
 			nodes = {
 			},
@@ -6266,6 +6264,7 @@ MissionDb = {
 					spawnGroups = {
 					},
 					vehicleGroups = {
+						{ name = "RED EWR 2-12" },
 						{ name = "RED SAM SA-10 Amiens" },
 						{ name = "RED SAM SA-11 Amiens" },
 						{ name = "RED SAM SA-15 RG 686-51" },
@@ -6273,7 +6272,9 @@ MissionDb = {
 						{ name = "RED SAM SA-15 RG 686-54" },
 						{ name = "RED SAM SA-15 RG 686-55" },
 						{ name = "RED SAM SA-5 Amiens" },
-						{ name = "RED EWR 2-12" },
+						{ name = "RED SAM SA-19 RG 1" },
+						{ name = "RED GROUND 8-11 RG-6" },
+						{ name = "RED GROUND 8-28 RG-6" },
 					},
 					shipGroups = {
 					},
@@ -6316,6 +6317,51 @@ MissionDb = {
 								x = 52927.138358415,
 								y = 191091.25671894,
 								heading = 4.2236967898263,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "FOB Amiens-Glisy Farp#00001",
+							template = {
+								name = "FOB Amiens-Glisy Farp",
+								type = "FARP",
+								x = 50764.770436172,
+								y = 187974.34731869,
+								heading = 2.0071286397935,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "FARPS",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "FOB Amiens-Glisy Brigade Warehouse#00001",
+							template = {
+								name = "FOB Amiens-Glisy Brigade Warehouse",
+								type = ".Ammunition depot",
+								x = 50912.973606574,
+								y = 187832.28808317,
+								heading = 2.4783675378319,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "FOB Amiens-Glisy Airwing Warehouse#00001",
+							template = {
+								name = "FOB Amiens-Glisy Airwing Warehouse",
+								type = ".Ammunition depot",
+								x = 50873.88649646,
+								y = 188189.1703929,
+								heading = 3.5430183815485,
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "SkladC",
@@ -8919,6 +8965,30 @@ MissionDb = {
 						},
 					},
 				},
+				{
+					name = "QRF-51",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+						{ name = "RED SAM SA-11 StValery" },
+						{ name = "RED SAM SA-15 RG 686-58" },
+						{ name = "RED SAM SA-15 RG 686-59" },
+						{ name = "RED SAM SA-15 RG 686-60" },
+						{ name = "RED SAM SA-15 RG 686-61" },
+						{ name = "RED SAM SA-2 Dunkirk-4" },
+						{ name = "RED SAM SA-2 Dunkirk-5" },
+						{ name = "RED SAM SA-3 ds-10" },
+						{ name = "RED SAM SA-3 ds-8" },
+						{ name = "RED SAM SA-3 ds-9" },
+						{ name = "RED SAM SA-6 Crack" },
+						{ name = "RED SAM SA-6 Dieppe" },
+						{ name = "RED SAM SA-6 Treport" },
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					},
+				},
 			},
 			reinforcements = {
 			},
@@ -10829,6 +10899,7 @@ MissionDb = {
 				{ name = "RED SAM SA-15 RG 686-45" },
 				{ name = "RED SAM SA-15 RG 686-46" },
 				{ name = "RED SAM SA-15 RG 686-47" },
+				{ name = "RED SAM SA-15 RG 686-57" },
 				{ name = "RED SAM SA-2 Dunkirk" },
 				{ name = "RED SAM SA-2 Dunkirk-1" },
 				{ name = "RED SAM SA-3 ds" },
@@ -10848,8 +10919,17 @@ MissionDb = {
 			strand = "STRAND-1",
 			completeSound = "",
 			borderZones = {
+				"BORDERZONE-1",
+				"BORDERZONE-2",
+				"BORDERZONE-3",
+				"BORDERZONE-4",
+				"OBJ-15",
+				"OBJ-14",
 			},
 			capZones = {
+				"CAP-6",
+				"CAP-7",
+				"CAP-8",
 			},
 			redAwacsZones = {
 				"RED AWACS ZONE",
@@ -10858,6 +10938,8 @@ MissionDb = {
 				"BLUE AWACS ZONE-2",
 			},
 			nodes = {
+				{ name = "NODE-54", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-55", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -10870,39 +10952,109 @@ MissionDb = {
 			carriers = {
 			},
 			qrfs = {
+				{
+					name = "QRF-52",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+						{ name = "RED SAM SA-2 Dunkirk-6" },
+						{ name = "RED SAM SA-6 Poix" },
+						{ name = "RED SAM SA-15 RG 686-68" },
+						{ name = "RED SAM SA-15 RG 686-69" },
+						{ name = "RED SAM SA-19 RG 1-1" },
+						{ name = "RED GROUND 8-29 RG-6" },
+						{ name = "RED GROUND 9-8 RG-6" },
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "Poix Airwing Warehouse-4#00001",
+							template = {
+								name = "Poix Airwing Warehouse-4",
+								type = ".Ammunition depot",
+								x = 45847.356148148,
+								y = 161636.85750097,
+								heading = 6.16101225954,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Poix Airwing Warehouse-1#00001",
+							template = {
+								name = "Poix Airwing Warehouse-1",
+								type = ".Ammunition depot",
+								x = 44656.508809154,
+								y = 163071.77185843,
+								heading = 6.16101225954,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Poix Airwing Warehouse-2#00001",
+							template = {
+								name = "Poix Airwing Warehouse-2",
+								type = ".Ammunition depot",
+								x = 46227.560923074,
+								y = 163360.49313449,
+								heading = 0.907571211037,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Poix Airwing Warehouse-3#00001",
+							template = {
+								name = "Poix Airwing Warehouse-3",
+								type = ".Ammunition depot",
+								x = 45588.518880968,
+								y = 163189.99984145,
+								heading = 5.4977871437821,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+					},
+				},
 			},
 			reinforcements = {
 			},
 			vehicleGroups = {
-				{ name = "RED SAM SA-11 Fecamp" },
 				{ name = "RED SAM SA-11 Omer" },
-				{ name = "RED SAM SA-11 StValery" },
 				{ name = "RED SAM SA-2 Dunkirk-2" },
 				{ name = "RED SAM SA-2 Dunkirk-3" },
-				{ name = "RED SAM SA-2 Dunkirk-4" },
-				{ name = "RED SAM SA-2 Dunkirk-5" },
-				{ name = "RED SAM SA-2 Dunkirk-6" },
-				{ name = "RED SAM SA-3 ds-10" },
-				{ name = "RED SAM SA-3 ds-11" },
 				{ name = "RED SAM SA-3 ds-4" },
 				{ name = "RED SAM SA-3 ds-5" },
 				{ name = "RED SAM SA-3 ds-6" },
 				{ name = "RED SAM SA-3 ds-7" },
-				{ name = "RED SAM SA-3 ds-8" },
-				{ name = "RED SAM SA-3 ds-9" },
-				{ name = "RED SAM SA-6 Crack" },
-				{ name = "RED SAM SA-6 Dieppe" },
 				{ name = "RED SAM SA-6 Dr74" },
 				{ name = "RED SAM SA-6 ER15" },
-				{ name = "RED SAM SA-6 Fecamp" },
 				{ name = "RED SAM SA-6 HazeBrouk" },
 				{ name = "RED SAM SA-6 Lens" },
 				{ name = "RED SAM SA-6 Omer" },
 				{ name = "RED SAM SA-6 Pierremont" },
-				{ name = "RED SAM SA-6 Poix" },
 				{ name = "RED SAM SA-6 Tourcoing" },
-				{ name = "RED SAM SA-6 Treport" },
 				{ name = "RED SAM SA-6 Zoteux" },
+				{ name = "RED SAM SA-15 RG 686-62" },
+				{ name = "RED SAM SA-15 RG 686-63" },
+				{ name = "RED SAM SA-15 RG 686-64" },
+				{ name = "RED SAM SA-15 RG 686-65" },
+				{ name = "RED SAM SA-15 RG 686-66" },
+				{ name = "RED SAM SA-15 RG 686-67" },
 			},
 			shipGroups = {
 			},
@@ -16853,12 +17005,42 @@ MissionDb = {
 					}
 				},
 				{
+					name = "Static Well Car-1#00001",
+					template = {
+						name = "Static Well Car-1",
+						type = "Wellcarnsc",
+						x = 135456.84356486,
+						y = -125031.96567071,
+						heading = 1.4660765716752,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
 					name = "Static Tank Car blue-3#00001",
 					template = {
 						name = "Static Tank Car blue-3",
 						type = "Coach a tank blue",
 						x = 135452.06096823,
 						y = -125071.16420784,
+						heading = 1.4835298641952,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Well Car-2#00001",
+					template = {
+						name = "Static Well Car-2",
+						type = "Wellcarnsc",
+						x = 135459.18797498,
+						y = -125009.5062218,
 						heading = 1.4835298641952,
 						category = "",
 						canCargo = false,
@@ -16875,36 +17057,6 @@ MissionDb = {
 						x = 135450.60743396,
 						y = -125082.558041,
 						heading = 1.4486232791553,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
-					name = "Static Well Car-1#00001",
-					template = {
-						name = "Static Well Car-1",
-						type = "Wellcarnsc",
-						x = 135456.84356486,
-						y = -125031.96567071,
-						heading = 1.4660765716752,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
-					name = "Static Well Car-2#00001",
-					template = {
-						name = "Static Well Car-2",
-						type = "Wellcarnsc",
-						x = 135459.18797498,
-						y = -125009.5062218,
-						heading = 1.4835298641952,
 						category = "",
 						canCargo = false,
 						shape_name = "",
@@ -22242,6 +22394,339 @@ MissionDb = {
 					},
 				}
 			},
+			{
+				name = "Poix Alpha",
+				warehouse = "Poix Airwing Warehouse-1#00001",
+				airbase = "Poix",
+				squadrons = {
+					{
+						name = "Poix Alpha 1",
+						templateGroupName = "RED Poix Alpha Poix Alpha 1 JF-17",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "PLAAF 125th AB (Fictional)",
+						payloads = {
+							{
+								templateGroupName = "RED Poix Alpha Poix Alpha 1 JF-17 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Poix Alpha Poix Alpha 1 JF-17 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Poix Alpha Poix Alpha 1 JF-17 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "Poix Alpha 2",
+						templateGroupName = "RED Poix Alpha Poix Alpha 2 F-16C_50",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "18th AGRS BDU Splinter",
+						payloads = {
+							{
+								templateGroupName = "RED Poix Alpha Poix Alpha 2 F-16C_50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Poix Alpha Poix Alpha 2 F-16C_50 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Poix Alpha Poix Alpha 2 F-16C_50 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.BOMBCARPET}
+							},
+							{
+								templateGroupName = "RED Poix Alpha Poix Alpha 2 F-16C_50 LOADOUT 3",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "Poix Beta",
+				warehouse = "Poix Airwing Warehouse-2#00001",
+				airbase = "Poix",
+				squadrons = {
+					{
+						name = "Poix Beta 1",
+						templateGroupName = "RED Poix Beta Poix Beta 1 JF-17",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "PLAAF 125th AB (Fictional)",
+						payloads = {
+							{
+								templateGroupName = "RED Poix Beta Poix Beta 1 JF-17 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Poix Beta Poix Beta 1 JF-17 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Poix Beta Poix Beta 1 JF-17 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "Poix Beta 2",
+						templateGroupName = "RED Poix Beta Poix Beta 2 F-16C_50",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "18th AGRS BDU Splinter",
+						payloads = {
+							{
+								templateGroupName = "RED Poix Beta Poix Beta 2 F-16C_50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Poix Beta Poix Beta 2 F-16C_50 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Poix Beta Poix Beta 2 F-16C_50 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.BOMBCARPET}
+							},
+							{
+								templateGroupName = "RED Poix Beta Poix Beta 2 F-16C_50 LOADOUT 3",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "Poix Gamma",
+				warehouse = "Poix Airwing Warehouse-3#00001",
+				airbase = "Poix",
+				squadrons = {
+					{
+						name = "Poix Gamma 1",
+						templateGroupName = "RED Poix Gamma Poix Gamma 1 JF-17",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "PLAAF 125th AB (Fictional)",
+						payloads = {
+							{
+								templateGroupName = "RED Poix Gamma Poix Gamma 1 JF-17 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Poix Gamma Poix Gamma 1 JF-17 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Poix Gamma Poix Gamma 1 JF-17 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "Poix Gamma 2",
+						templateGroupName = "RED Poix Gamma Poix Gamma 2 F-16C_50",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "18th AGRS BDU Splinter",
+						payloads = {
+							{
+								templateGroupName = "RED Poix Gamma Poix Gamma 2 F-16C_50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Poix Gamma Poix Gamma 2 F-16C_50 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Poix Gamma Poix Gamma 2 F-16C_50 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.BOMBCARPET}
+							},
+							{
+								templateGroupName = "RED Poix Gamma Poix Gamma 2 F-16C_50 LOADOUT 3",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "Poix Delta",
+				warehouse = "Poix Airwing Warehouse-4#00001",
+				airbase = "Poix",
+				squadrons = {
+					{
+						name = "Poix Delta 1",
+						templateGroupName = "RED Poix Delta Poix Delta 1 JF-17",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "PLAAF 125th AB (Fictional)",
+						payloads = {
+							{
+								templateGroupName = "RED Poix Delta Poix Delta 1 JF-17 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Poix Delta Poix Delta 1 JF-17 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Poix Delta Poix Delta 1 JF-17 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "Poix Delta 2",
+						templateGroupName = "RED Poix Delta Poix Delta 2 F-16C_50",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "18th AGRS BDU Splinter",
+						payloads = {
+							{
+								templateGroupName = "RED Poix Delta Poix Delta 2 F-16C_50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Poix Delta Poix Delta 2 F-16C_50 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Poix Delta Poix Delta 2 F-16C_50 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.BOMBCARPET}
+							},
+							{
+								templateGroupName = "RED Poix Delta Poix Delta 2 F-16C_50 LOADOUT 3",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "FOB Amiens-Glisy",
+				warehouse = "FOB Amiens-Glisy Airwing Warehouse#00001",
+				airbase = "FOB Amiens-Glisy Farp#00001",
+				squadrons = {
+					{
+						name = "Amiens-Glisy 1",
+						templateGroupName = "RED FOB Amiens-Glisy Amiens-Glisy 1 Mi-26",
+						initialInventory = 99,
+						takeoffCold = true,
+						capabilities = {
+							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
+						},
+						livery = "Russia_VVS_Grey",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Amiens-Glisy Amiens-Glisy 1 Mi-26 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
+							},
+						}
+					},
+					{
+						name = "Amiens-Glisy 2",
+						templateGroupName = "RED FOB Amiens-Glisy Amiens-Glisy 2 AH-64D_BLK_II",
+						initialInventory = 1,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "IAF 113th Hornet Squadron",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Amiens-Glisy Amiens-Glisy 2 AH-64D_BLK_II LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+				}
+			},
 		},
 		brigades = {
 			{
@@ -22390,6 +22875,28 @@ MissionDb = {
 					},
 				}
 			},
+			{
+				name = "FOB Amiens-Glisy",
+				warehouse = "FOB Amiens-Glisy Brigade Warehouse#00001",
+				platoons = {
+					{
+						name = "FOB Amiens-Glisy 1",
+						templateGroupName = "RED FOB Amiens-Glisy FOB Amiens-Glisy 1",
+						initialInventory = 3,
+						capabilities = {
+							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
+						},
+					},
+					{
+						name = "FOB Amiens-Glisy 2",
+						templateGroupName = "RED FOB Amiens-Glisy FOB Amiens-Glisy 2",
+						initialInventory = 1,
+						capabilities = {
+							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
+						},
+					},
+				}
+			},
 		}
 	},
 	bluechief = {
@@ -22500,8 +23007,8 @@ MissionDb = {
 				airbase = "Abe Unit #1",
 				squadrons = {
 					{
-						name = "GGD-01",
-						templateGroupName = "BLUE 3rd CAW - Abe GGD-01 E-2C",
+						name = "GGD-04",
+						templateGroupName = "BLUE 3rd CAW - Abe GGD-04 E-2C",
 						initialInventory = 99,
 						takeoffCold = false,
 						capabilities = {
@@ -22510,14 +23017,14 @@ MissionDb = {
 						livery = "VAW-125 Tigertails",
 						payloads = {
 							{
-								templateGroupName = "BLUE 3rd CAW - Abe GGD-01 E-2C LOADOUT 0",
+								templateGroupName = "BLUE 3rd CAW - Abe GGD-04 E-2C LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.AWACS }
 							},
 						}
 					},
 					{
-						name = "GGD-02 JTAC",
-						templateGroupName = "BLUE 3rd CAW - Abe GGD-02 JTAC S-3B",
+						name = "GGD-05 JTAC",
+						templateGroupName = "BLUE 3rd CAW - Abe GGD-05 JTAC S-3B",
 						initialInventory = 99,
 						takeoffCold = false,
 						capabilities = {
@@ -22526,14 +23033,14 @@ MissionDb = {
 						livery = "usaf standard",
 						payloads = {
 							{
-								templateGroupName = "BLUE 3rd CAW - Abe GGD-02 JTAC S-3B LOADOUT 0",
+								templateGroupName = "BLUE 3rd CAW - Abe GGD-05 JTAC S-3B LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.RECON }
 							},
 						}
 					},
 					{
-						name = "GGD-02",
-						templateGroupName = "BLUE 3rd CAW - Abe GGD-02 CH-47D",
+						name = "GGD-06",
+						templateGroupName = "BLUE 3rd CAW - Abe GGD-06 CH-47D",
 						initialInventory = 99,
 						takeoffCold = false,
 						capabilities = {
@@ -22542,7 +23049,7 @@ MissionDb = {
 						livery = "standard",
 						payloads = {
 							{
-								templateGroupName = "BLUE 3rd CAW - Abe GGD-02 CH-47D LOADOUT 0",
+								templateGroupName = "BLUE 3rd CAW - Abe GGD-06 CH-47D LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}
@@ -22555,8 +23062,8 @@ MissionDb = {
 				airbase = "Abe Unit #1",
 				squadrons = {
 					{
-						name = "GGD-03",
-						templateGroupName = "BLUE 4th CAW - Abe GGD-03 FA-18C_hornet",
+						name = "GGD-07",
+						templateGroupName = "BLUE 4th CAW - Abe GGD-07 FA-18C_hornet",
 						initialInventory = 99,
 						takeoffCold = false,
 						capabilities = {
@@ -22565,7 +23072,7 @@ MissionDb = {
 						livery = "Canada 150 Demo Jet",
 						payloads = {
 							{
-								templateGroupName = "BLUE 4th CAW - Abe GGD-03 FA-18C_hornet LOADOUT 0",
+								templateGroupName = "BLUE 4th CAW - Abe GGD-07 FA-18C_hornet LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.CAP }
 							},
 						}

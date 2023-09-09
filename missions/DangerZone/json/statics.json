@@ -1884,6 +1884,41 @@
             "x": -45937.516753441,
             "y": 113150.41067526
         },
+        "FOB Amiens-Glisy Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 3.5430183815485,
+            "name": "FOB Amiens-Glisy Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 50873.88649646,
+            "y": 188189.1703929
+        },
+        "FOB Amiens-Glisy Brigade Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 2.4783675378319,
+            "name": "FOB Amiens-Glisy Brigade Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 50912.973606574,
+            "y": 187832.28808317
+        },
+        "FOB Amiens-Glisy Farp": {
+            "canCargo": false,
+            "category": "Heliports",
+            "heading": 2.0071286397935,
+            "heliport_callsign_id": 0,
+            "heliport_frequency": 127.5,
+            "heliport_modulation": 0,
+            "name": "FOB Amiens-Glisy Farp",
+            "shape_name": "FARPS",
+            "type": "FARP",
+            "x": 50764.770436172,
+            "y": 187974.34731869
+        },
         "FOB Bo'ohw'o'wo'er Airwing Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
@@ -10605,6 +10640,50 @@
             "type": ".Ammunition depot",
             "x": 140314.3410004,
             "y": -85524.362236823
+        },
+        "Poix Airwing Warehouse-1": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 6.16101225954,
+            "name": "Poix Airwing Warehouse-1",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 44656.508809154,
+            "y": 163071.77185843
+        },
+        "Poix Airwing Warehouse-2": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.907571211037,
+            "name": "Poix Airwing Warehouse-2",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 46227.560923074,
+            "y": 163360.49313449
+        },
+        "Poix Airwing Warehouse-3": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.4977871437821,
+            "name": "Poix Airwing Warehouse-3",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 45588.518880968,
+            "y": 163189.99984145
+        },
+        "Poix Airwing Warehouse-4": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 6.16101225954,
+            "name": "Poix Airwing Warehouse-4",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 45847.356148148,
+            "y": 161636.85750097
         },
         "Static Airshow Crowd-1": {
             "canCargo": false,
