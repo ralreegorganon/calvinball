@@ -331,12 +331,12 @@
                 "Static IFV Warrior -1",
                 "Static LS Ropucha-1",
                 "Static Mi-8MTV2-1",
-                "Static SAM SA-11 Buk Gadfly C2 -1",
                 "Static SAM SA-11 Buk Gadfly Fire Dome TEL-1",
                 "Static SAM SA-11 Buk Gadfly Fire Dome TEL-2",
+                "Static Supply Ship MV Tilde-1",
                 "Static SAM SA-11 Buk Gadfly Fire Dome TEL-3",
-                "Static SAM SA-11 Buk Gadfly Snow Drift SR-1",
-                "Static Supply Ship MV Tilde-1"
+                "Static SAM SA-11 Buk Gadfly C2 -1",
+                "Static SAM SA-11 Buk Gadfly Snow Drift SR-1"
             ],
             "strand": "STRAND-1",
             "tasks": [
@@ -733,9 +733,7 @@
             "redAwacsZones": [
                 "RED AWACS ZONE"
             ],
-            "reinforcements": [
-                "REINFORCEMENT-4"
-            ],
+            "reinforcements": [],
             "roadbases": [
                 "ROADBASE-3"
             ],
@@ -852,6 +850,12 @@
             "tasks": [],
             "vehicle_groups": [
                 "RED SAM SA-11 Omer",
+                "RED SAM SA-15 RG 686-62",
+                "RED SAM SA-15 RG 686-63",
+                "RED SAM SA-15 RG 686-64",
+                "RED SAM SA-15 RG 686-65",
+                "RED SAM SA-15 RG 686-66",
+                "RED SAM SA-15 RG 686-67",
                 "RED SAM SA-2 Dunkirk-2",
                 "RED SAM SA-2 Dunkirk-3",
                 "RED SAM SA-3 ds-4",
@@ -865,13 +869,7 @@
                 "RED SAM SA-6 Omer",
                 "RED SAM SA-6 Pierremont",
                 "RED SAM SA-6 Tourcoing",
-                "RED SAM SA-6 Zoteux",
-                "RED SAM SA-15 RG 686-62",
-                "RED SAM SA-15 RG 686-63",
-                "RED SAM SA-15 RG 686-64",
-                "RED SAM SA-15 RG 686-65",
-                "RED SAM SA-15 RG 686-66",
-                "RED SAM SA-15 RG 686-67"
+                "RED SAM SA-6 Zoteux"
             ],
             "vertices": [
                 {
@@ -1536,12 +1534,12 @@
                 "Static Freight Van-2",
                 "Static Loco ES44AH-1",
                 "Static Loco ES44AH-2",
-                "Static Tank Car blue-1",
                 "Static Tank Car blue-2",
                 "Static Well Car-1",
                 "Static Tank Car blue-3",
                 "Static Well Car-2",
-                "Static Tank Car blue-4"
+                "Static Tank Car blue-4",
+                "Static Tank Car blue-1"
             ],
             "strand": "STRAND-1",
             "tasks": [],

@@ -578,12 +578,12 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Tank 1-21#00001",
+							name = "Static Tank 1-20#00001",
 							template = {
-								name = "Static Tank 1-21",
+								name = "Static Tank 1-20",
 								type = "Tank",
-								x = 179062.96780068,
-								y = 62506.614614267,
+								x = 179081.79772727,
+								y = 62550.96955245,
 								heading = 0.0645788929948,
 								category = "Warehouses",
 								canCargo = false,
@@ -593,12 +593,12 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Tank 1-20#00001",
+							name = "Static Tank 1-21#00001",
 							template = {
-								name = "Static Tank 1-20",
+								name = "Static Tank 1-21",
 								type = "Tank",
-								x = 179081.79772727,
-								y = 62550.96955245,
+								x = 179062.96780068,
+								y = 62506.614614267,
 								heading = 0.0645788929948,
 								category = "Warehouses",
 								canCargo = false,
@@ -5729,21 +5729,6 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static SAM SA-11 Buk Gadfly C2 -1#00001",
-					template = {
-						name = "Static SAM SA-11 Buk Gadfly C2 -1",
-						type = "SA-11 Buk CC 9S470M1",
-						x = 225509.59872828,
-						y = 4536.3974471544,
-						heading = 2.6005405854716,
-						category = "Air Defence",
-						canCargo = false,
-						shape_name = "",
-						rate = 20,
-						dead = false
-					}
-				},
-				{
 					name = "Static SAM SA-11 Buk Gadfly Fire Dome TEL-1#00001",
 					template = {
 						name = "Static SAM SA-11 Buk Gadfly Fire Dome TEL-1",
@@ -5774,6 +5759,21 @@ MissionDb = {
 					}
 				},
 				{
+					name = "Static Supply Ship MV Tilde-1#00001",
+					template = {
+						name = "Static Supply Ship MV Tilde-1",
+						type = "Ship_Tilde_Supply",
+						x = 225191.58217307,
+						y = 7501.0630807767,
+						heading = 5.235987755983,
+						category = "Ships",
+						canCargo = false,
+						shape_name = "",
+						rate = 100,
+						dead = false
+					}
+				},
+				{
 					name = "Static SAM SA-11 Buk Gadfly Fire Dome TEL-3#00001",
 					template = {
 						name = "Static SAM SA-11 Buk Gadfly Fire Dome TEL-3",
@@ -5789,6 +5789,21 @@ MissionDb = {
 					}
 				},
 				{
+					name = "Static SAM SA-11 Buk Gadfly C2 -1#00001",
+					template = {
+						name = "Static SAM SA-11 Buk Gadfly C2 -1",
+						type = "SA-11 Buk CC 9S470M1",
+						x = 225509.59872828,
+						y = 4536.3974471544,
+						heading = 2.6005405854716,
+						category = "Air Defence",
+						canCargo = false,
+						shape_name = "",
+						rate = 20,
+						dead = false
+					}
+				},
+				{
 					name = "Static SAM SA-11 Buk Gadfly Snow Drift SR-1#00001",
 					template = {
 						name = "Static SAM SA-11 Buk Gadfly Snow Drift SR-1",
@@ -5800,21 +5815,6 @@ MissionDb = {
 						canCargo = false,
 						shape_name = "",
 						rate = 20,
-						dead = false
-					}
-				},
-				{
-					name = "Static Supply Ship MV Tilde-1#00001",
-					template = {
-						name = "Static Supply Ship MV Tilde-1",
-						type = "Ship_Tilde_Supply",
-						x = 225191.58217307,
-						y = 7501.0630807767,
-						heading = 5.235987755983,
-						category = "Ships",
-						canCargo = false,
-						shape_name = "",
-						rate = 100,
 						dead = false
 					}
 				},
@@ -6265,16 +6265,16 @@ MissionDb = {
 					},
 					vehicleGroups = {
 						{ name = "RED EWR 2-12" },
+						{ name = "RED GROUND 8-11 RG-6" },
+						{ name = "RED GROUND 8-28 RG-6" },
 						{ name = "RED SAM SA-10 Amiens" },
 						{ name = "RED SAM SA-11 Amiens" },
 						{ name = "RED SAM SA-15 RG 686-51" },
 						{ name = "RED SAM SA-15 RG 686-52" },
 						{ name = "RED SAM SA-15 RG 686-54" },
 						{ name = "RED SAM SA-15 RG 686-55" },
-						{ name = "RED SAM SA-5 Amiens" },
 						{ name = "RED SAM SA-19 RG 1" },
-						{ name = "RED GROUND 8-11 RG-6" },
-						{ name = "RED GROUND 8-28 RG-6" },
+						{ name = "RED SAM SA-5 Amiens" },
 					},
 					shipGroups = {
 					},
@@ -6325,9 +6325,39 @@ MissionDb = {
 							}
 						},
 						{
-							name = "FOB Amiens-Glisy Farp#00001",
+							name = "FOB Amiens-Glisy Airwing Warehouse 1#00001",
 							template = {
-								name = "FOB Amiens-Glisy Farp",
+								name = "FOB Amiens-Glisy Airwing Warehouse 1",
+								type = ".Ammunition depot",
+								x = 50873.88649646,
+								y = 188189.1703929,
+								heading = 3.5430183815485,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "FOB Amiens-Glisy Brigade Warehouse#00001",
+							template = {
+								name = "FOB Amiens-Glisy Brigade Warehouse",
+								type = ".Ammunition depot",
+								x = 50905.378467792,
+								y = 187816.50117373,
+								heading = 1.9896753472735,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "FOB Amiens-Glisy Farp 1#00001",
+							template = {
+								name = "FOB Amiens-Glisy Farp 1",
 								type = "FARP",
 								x = 50764.770436172,
 								y = 187974.34731869,
@@ -6340,27 +6370,27 @@ MissionDb = {
 							}
 						},
 						{
-							name = "FOB Amiens-Glisy Brigade Warehouse#00001",
+							name = "FOB Amiens-Glisy Farp 2#00001",
 							template = {
-								name = "FOB Amiens-Glisy Brigade Warehouse",
-								type = ".Ammunition depot",
-								x = 50912.973606574,
-								y = 187832.28808317,
-								heading = 2.4783675378319,
-								category = "Warehouses",
+								name = "FOB Amiens-Glisy Farp 2",
+								type = "FARP",
+								x = 50816.080235097,
+								y = 188484.40302375,
+								heading = 2.0071286397935,
+								category = "Heliports",
 								canCargo = false,
-								shape_name = "SkladC",
-								rate = 100,
+								shape_name = "FARPS",
+								rate = 50,
 								dead = false
 							}
 						},
 						{
-							name = "FOB Amiens-Glisy Airwing Warehouse#00001",
+							name = "FOB Amiens-Glisy Airwing Warehouse 2#00001",
 							template = {
-								name = "FOB Amiens-Glisy Airwing Warehouse",
+								name = "FOB Amiens-Glisy Airwing Warehouse 2",
 								type = ".Ammunition depot",
-								x = 50873.88649646,
-								y = 188189.1703929,
+								x = 50940.853108178,
+								y = 188643.42727376,
 								heading = 3.5430183815485,
 								category = "Warehouses",
 								canCargo = false,
@@ -10824,62 +10854,6 @@ MissionDb = {
 				},
 			},
 			reinforcements = {
-				{
-					name = "REINFORCEMENT-4",
-					spawnGroups = {
-					},
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "Guines Goon Airwing Warehouse#00001",
-							template = {
-								name = "Guines Goon Airwing Warehouse",
-								type = ".Ammunition depot",
-								x = 160748.33139677,
-								y = 146728.72489446,
-								heading = 4.2236967898263,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "SkladC",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Guines Goon Brigade Warehouse#00001",
-							template = {
-								name = "Guines Goon Brigade Warehouse",
-								type = ".Ammunition depot",
-								x = 160707.92780476,
-								y = 146837.23739874,
-								heading = 4.2586033748662,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "SkladC",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Guines Goon Farp#00001",
-							template = {
-								name = "Guines Goon Farp",
-								type = "FARP",
-								x = 160528.43103774,
-								y = 146701.32941205,
-								heading = 0.4014257279587,
-								category = "Heliports",
-								canCargo = false,
-								shape_name = "FARPS",
-								rate = 50,
-								dead = false
-							}
-						},
-					},
-				},
 			},
 			vehicleGroups = {
 				{ name = "RED AIR DEFENSE BATTERY A RG 694-13" },
@@ -10957,32 +10931,17 @@ MissionDb = {
 					spawnGroups = {
 					},
 					vehicleGroups = {
-						{ name = "RED SAM SA-2 Dunkirk-6" },
-						{ name = "RED SAM SA-6 Poix" },
+						{ name = "RED GROUND 8-29 RG-6" },
+						{ name = "RED GROUND 9-8 RG-6" },
 						{ name = "RED SAM SA-15 RG 686-68" },
 						{ name = "RED SAM SA-15 RG 686-69" },
 						{ name = "RED SAM SA-19 RG 1-1" },
-						{ name = "RED GROUND 8-29 RG-6" },
-						{ name = "RED GROUND 9-8 RG-6" },
+						{ name = "RED SAM SA-2 Dunkirk-6" },
+						{ name = "RED SAM SA-6 Poix" },
 					},
 					shipGroups = {
 					},
 					staticGroups = {
-						{
-							name = "Poix Airwing Warehouse-4#00001",
-							template = {
-								name = "Poix Airwing Warehouse-4",
-								type = ".Ammunition depot",
-								x = 45847.356148148,
-								y = 161636.85750097,
-								heading = 6.16101225954,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "SkladC",
-								rate = 100,
-								dead = false
-							}
-						},
 						{
 							name = "Poix Airwing Warehouse-1#00001",
 							template = {
@@ -11028,6 +10987,21 @@ MissionDb = {
 								dead = false
 							}
 						},
+						{
+							name = "Poix Airwing Warehouse-4#00001",
+							template = {
+								name = "Poix Airwing Warehouse-4",
+								type = ".Ammunition depot",
+								x = 45847.356148148,
+								y = 161636.85750097,
+								heading = 6.16101225954,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
 					},
 				},
 			},
@@ -11035,6 +11009,12 @@ MissionDb = {
 			},
 			vehicleGroups = {
 				{ name = "RED SAM SA-11 Omer" },
+				{ name = "RED SAM SA-15 RG 686-62" },
+				{ name = "RED SAM SA-15 RG 686-63" },
+				{ name = "RED SAM SA-15 RG 686-64" },
+				{ name = "RED SAM SA-15 RG 686-65" },
+				{ name = "RED SAM SA-15 RG 686-66" },
+				{ name = "RED SAM SA-15 RG 686-67" },
 				{ name = "RED SAM SA-2 Dunkirk-2" },
 				{ name = "RED SAM SA-2 Dunkirk-3" },
 				{ name = "RED SAM SA-3 ds-4" },
@@ -11049,12 +11029,6 @@ MissionDb = {
 				{ name = "RED SAM SA-6 Pierremont" },
 				{ name = "RED SAM SA-6 Tourcoing" },
 				{ name = "RED SAM SA-6 Zoteux" },
-				{ name = "RED SAM SA-15 RG 686-62" },
-				{ name = "RED SAM SA-15 RG 686-63" },
-				{ name = "RED SAM SA-15 RG 686-64" },
-				{ name = "RED SAM SA-15 RG 686-65" },
-				{ name = "RED SAM SA-15 RG 686-66" },
-				{ name = "RED SAM SA-15 RG 686-67" },
 			},
 			shipGroups = {
 			},
@@ -11598,21 +11572,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Small warehouse 3-2#00001",
-							template = {
-								name = "Static Small warehouse 3-2",
-								type = "Small werehouse 3",
-								x = 136129.50951197,
-								y = -173047.26271771,
-								heading = 3.1415926535898,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "s3",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
 							name = "Static Tank 1-3#00001",
 							template = {
 								name = "Static Tank 1-3",
@@ -11623,6 +11582,21 @@ MissionDb = {
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Small warehouse 3-2#00001",
+							template = {
+								name = "Static Small warehouse 3-2",
+								type = "Small werehouse 3",
+								x = 136129.50951197,
+								y = -173047.26271771,
+								heading = 3.1415926535898,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "s3",
 								rate = 100,
 								dead = false
 							}
@@ -15008,51 +14982,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Small warehouse 3-4#00001",
-							template = {
-								name = "Static Small warehouse 3-4",
-								type = "Small werehouse 3",
-								x = 149885.0909813,
-								y = -140448.43152853,
-								heading = 3.9444441095072,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "s3",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-10#00001",
-							template = {
-								name = "Static Tank 1-10",
-								type = "Tank",
-								x = 150293.05697899,
-								y = -140820.37112045,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-6#00001",
-							template = {
-								name = "Static Tank 1-6",
-								type = "Tank",
-								x = 150386.4055185,
-								y = -140902.32245455,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
 							name = "Static Small warehouse 3-5#00001",
 							template = {
 								name = "Static Small warehouse 3-5",
@@ -15164,6 +15093,51 @@ MissionDb = {
 								type = "Tank",
 								x = 150332.13311181,
 								y = -140914.26238403,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Small warehouse 3-4#00001",
+							template = {
+								name = "Static Small warehouse 3-4",
+								type = "Small werehouse 3",
+								x = 149885.0909813,
+								y = -140448.43152853,
+								heading = 3.9444441095072,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "s3",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-10#00001",
+							template = {
+								name = "Static Tank 1-10",
+								type = "Tank",
+								x = 150293.05697899,
+								y = -140820.37112045,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-6#00001",
+							template = {
+								name = "Static Tank 1-6",
+								type = "Tank",
+								x = 150386.4055185,
+								y = -140902.32245455,
 								heading = 0.0645788929948,
 								category = "Warehouses",
 								canCargo = false,
@@ -16975,21 +16949,6 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static Tank Car blue-1#00001",
-					template = {
-						name = "Static Tank Car blue-1",
-						type = "Coach a tank blue",
-						x = 135454.78048396,
-						y = -125048.89231174,
-						heading = 1.4835298641952,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
 					name = "Static Tank Car blue-2#00001",
 					template = {
 						name = "Static Tank Car blue-2",
@@ -17057,6 +17016,21 @@ MissionDb = {
 						x = 135450.60743396,
 						y = -125082.558041,
 						heading = 1.4486232791553,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Tank Car blue-1#00001",
+					template = {
+						name = "Static Tank Car blue-1",
+						type = "Coach a tank blue",
+						x = 135454.78048396,
+						y = -125048.89231174,
+						heading = 1.4835298641952,
 						category = "",
 						canCargo = false,
 						shape_name = "",
@@ -19497,36 +19471,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Tank 1-14#00001",
-							template = {
-								name = "Static Tank 1-14",
-								type = "Tank",
-								x = 192935.88899076,
-								y = -52283.94217875,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-18#00001",
-							template = {
-								name = "Static Tank 1-18",
-								type = "Tank",
-								x = 193016.5436357,
-								y = -52334.472799673,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
 							name = "Static Tank 1-15#00001",
 							template = {
 								name = "Static Tank 1-15",
@@ -19608,6 +19552,36 @@ MissionDb = {
 								type = "Tank",
 								x = 193058.32857223,
 								y = -52298.518319401,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-14#00001",
+							template = {
+								name = "Static Tank 1-14",
+								type = "Tank",
+								x = 192935.88899076,
+								y = -52283.94217875,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-18#00001",
+							template = {
+								name = "Static Tank 1-18",
+								type = "Tank",
+								x = 193016.5436357,
+								y = -52334.472799673,
 								heading = 0.0645788929948,
 								category = "Warehouses",
 								canCargo = false,
@@ -22223,7 +22197,7 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
 							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
-							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 70 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
 						livery = "18th AGRS BDU Splinter",
@@ -22296,7 +22270,7 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
 							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
-							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 70 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
 						livery = "18th AGRS BDU Splinter",
@@ -22369,7 +22343,7 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
 							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
-							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 70 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
 						livery = "18th AGRS BDU Splinter",
@@ -22442,7 +22416,7 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
 							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
-							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 70 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
 						livery = "18th AGRS BDU Splinter",
@@ -22515,7 +22489,7 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
 							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
-							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 70 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
 						livery = "18th AGRS BDU Splinter",
@@ -22588,7 +22562,7 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
 							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
-							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 70 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
 						livery = "18th AGRS BDU Splinter",
@@ -22661,7 +22635,7 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
 							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
-							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 70 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
 						livery = "18th AGRS BDU Splinter",
@@ -22687,13 +22661,13 @@ MissionDb = {
 				}
 			},
 			{
-				name = "FOB Amiens-Glisy",
-				warehouse = "FOB Amiens-Glisy Airwing Warehouse#00001",
-				airbase = "FOB Amiens-Glisy Farp#00001",
+				name = "FOB Amiens-Glisy 1",
+				warehouse = "FOB Amiens-Glisy Airwing Warehouse 1#00001",
+				airbase = "FOB Amiens-Glisy Farp 1#00001",
 				squadrons = {
 					{
 						name = "Amiens-Glisy 1",
-						templateGroupName = "RED FOB Amiens-Glisy Amiens-Glisy 1 Mi-26",
+						templateGroupName = "RED FOB Amiens-Glisy 1 Amiens-Glisy 1 Mi-26",
 						initialInventory = 99,
 						takeoffCold = true,
 						capabilities = {
@@ -22702,14 +22676,21 @@ MissionDb = {
 						livery = "Russia_VVS_Grey",
 						payloads = {
 							{
-								templateGroupName = "RED FOB Amiens-Glisy Amiens-Glisy 1 Mi-26 LOADOUT 0",
+								templateGroupName = "RED FOB Amiens-Glisy 1 Amiens-Glisy 1 Mi-26 LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}
 					},
+				}
+			},
+			{
+				name = "FOB Amiens-Glisy 2",
+				warehouse = "FOB Amiens-Glisy Airwing Warehouse 2#00001",
+				airbase = "FOB Amiens-Glisy Farp 2#00001",
+				squadrons = {
 					{
 						name = "Amiens-Glisy 2",
-						templateGroupName = "RED FOB Amiens-Glisy Amiens-Glisy 2 AH-64D_BLK_II",
+						templateGroupName = "RED FOB Amiens-Glisy 2 Amiens-Glisy 2 AH-64D_BLK_II",
 						initialInventory = 1,
 						takeoffCold = false,
 						capabilities = {
@@ -22720,7 +22701,7 @@ MissionDb = {
 						livery = "IAF 113th Hornet Squadron",
 						payloads = {
 							{
-								templateGroupName = "RED FOB Amiens-Glisy Amiens-Glisy 2 AH-64D_BLK_II LOADOUT 0",
+								templateGroupName = "RED FOB Amiens-Glisy 2 Amiens-Glisy 2 AH-64D_BLK_II LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
 							},
 						}
@@ -22885,14 +22866,6 @@ MissionDb = {
 						initialInventory = 3,
 						capabilities = {
 							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
-						},
-					},
-					{
-						name = "FOB Amiens-Glisy 2",
-						templateGroupName = "RED FOB Amiens-Glisy FOB Amiens-Glisy 2",
-						initialInventory = 1,
-						capabilities = {
-							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
 						},
 					},
 				}
@@ -23203,29 +23176,6 @@ MissionDb = {
 						payloads = {
 							{
 								templateGroupName = "BLUE 6th CAW - Saratoga 6S-01 CH-47D LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
-							},
-						}
-					},
-				}
-			},
-			{
-				name = "1st Guines Goonwing",
-				warehouse = "Guines Goon Airwing Warehouse#00001",
-				airbase = "Guines Goon Farp#00001",
-				squadrons = {
-					{
-						name = "LG-01",
-						templateGroupName = "BLUE 1st Guines Goonwing LG-01 CH-47D",
-						initialInventory = 99,
-						takeoffCold = true,
-						capabilities = {
-							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
-						},
-						livery = "standard",
-						payloads = {
-							{
-								templateGroupName = "BLUE 1st Guines Goonwing LG-01 CH-47D LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}

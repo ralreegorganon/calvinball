@@ -1,40 +1,5 @@
 {
     "blue": {
-        "Guines Goon Airwing Warehouse": {
-            "canCargo": false,
-            "category": "Warehouses",
-            "heading": 4.2236967898263,
-            "name": "Guines Goon Airwing Warehouse",
-            "rate": 100,
-            "shape_name": "SkladC",
-            "type": ".Ammunition depot",
-            "x": 160748.33139677,
-            "y": 146728.72489446
-        },
-        "Guines Goon Brigade Warehouse": {
-            "canCargo": false,
-            "category": "Warehouses",
-            "heading": 4.2586033748662,
-            "name": "Guines Goon Brigade Warehouse",
-            "rate": 100,
-            "shape_name": "SkladC",
-            "type": ".Ammunition depot",
-            "x": 160707.92780476,
-            "y": 146837.23739874
-        },
-        "Guines Goon Farp": {
-            "canCargo": false,
-            "category": "Heliports",
-            "heading": 0.4014257279587,
-            "heliport_callsign_id": 0,
-            "heliport_frequency": 127.5,
-            "heliport_modulation": 0,
-            "name": "Guines Goon Farp",
-            "shape_name": "FARPS",
-            "type": "FARP",
-            "x": 160528.43103774,
-            "y": 146701.32941205
-        },
         "Lymington Goon Airwing Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
@@ -1884,40 +1849,64 @@
             "x": -45937.516753441,
             "y": 113150.41067526
         },
-        "FOB Amiens-Glisy Airwing Warehouse": {
+        "FOB Amiens-Glisy Airwing Warehouse 1": {
             "canCargo": false,
             "category": "Warehouses",
             "heading": 3.5430183815485,
-            "name": "FOB Amiens-Glisy Airwing Warehouse",
+            "name": "FOB Amiens-Glisy Airwing Warehouse 1",
             "rate": 100,
             "shape_name": "SkladC",
             "type": ".Ammunition depot",
             "x": 50873.88649646,
             "y": 188189.1703929
         },
+        "FOB Amiens-Glisy Airwing Warehouse 2": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 3.5430183815485,
+            "name": "FOB Amiens-Glisy Airwing Warehouse 2",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": 50940.853108178,
+            "y": 188643.42727376
+        },
         "FOB Amiens-Glisy Brigade Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
-            "heading": 2.4783675378319,
+            "heading": 1.9896753472735,
             "name": "FOB Amiens-Glisy Brigade Warehouse",
             "rate": 100,
             "shape_name": "SkladC",
             "type": ".Ammunition depot",
-            "x": 50912.973606574,
-            "y": 187832.28808317
+            "x": 50905.378467792,
+            "y": 187816.50117373
         },
-        "FOB Amiens-Glisy Farp": {
+        "FOB Amiens-Glisy Farp 1": {
             "canCargo": false,
             "category": "Heliports",
             "heading": 2.0071286397935,
             "heliport_callsign_id": 0,
             "heliport_frequency": 127.5,
             "heliport_modulation": 0,
-            "name": "FOB Amiens-Glisy Farp",
+            "name": "FOB Amiens-Glisy Farp 1",
             "shape_name": "FARPS",
             "type": "FARP",
             "x": 50764.770436172,
             "y": 187974.34731869
+        },
+        "FOB Amiens-Glisy Farp 2": {
+            "canCargo": false,
+            "category": "Heliports",
+            "heading": 2.0071286397935,
+            "heliport_callsign_id": 0,
+            "heliport_frequency": 127.5,
+            "heliport_modulation": 0,
+            "name": "FOB Amiens-Glisy Farp 2",
+            "shape_name": "FARPS",
+            "type": "FARP",
+            "x": 50816.080235097,
+            "y": 188484.40302375
         },
         "FOB Bo'ohw'o'wo'er Airwing Warehouse": {
             "canCargo": false,

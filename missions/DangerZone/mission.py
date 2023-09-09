@@ -1570,7 +1570,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.BAI": 50,
                             "AUFTRAG.Type.CAS": 50,
                             "AUFTRAG.Type.BOMBCARPET": 50,
-                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.SEAD": 70,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
                     }
@@ -1619,7 +1619,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.BAI": 50,
                             "AUFTRAG.Type.CAS": 50,
                             "AUFTRAG.Type.BOMBCARPET": 50,
-                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.SEAD": 70,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
                     }
@@ -1668,7 +1668,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.BAI": 50,
                             "AUFTRAG.Type.CAS": 50,
                             "AUFTRAG.Type.BOMBCARPET": 50,
-                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.SEAD": 70,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
                     }
@@ -1717,7 +1717,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.BAI": 50,
                             "AUFTRAG.Type.CAS": 50,
                             "AUFTRAG.Type.BOMBCARPET": 50,
-                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.SEAD": 70,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
                     }
@@ -1766,7 +1766,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.BAI": 50,
                             "AUFTRAG.Type.CAS": 50,
                             "AUFTRAG.Type.BOMBCARPET": 50,
-                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.SEAD": 70,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
                     }
@@ -1815,7 +1815,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.BAI": 50,
                             "AUFTRAG.Type.CAS": 50,
                             "AUFTRAG.Type.BOMBCARPET": 50,
-                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.SEAD": 70,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
                     }
@@ -1864,15 +1864,15 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.BAI": 50,
                             "AUFTRAG.Type.CAS": 50,
                             "AUFTRAG.Type.BOMBCARPET": 50,
-                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.SEAD": 70,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
                     }
                 }
             },
-            "FOB Amiens-Glisy": {
-                "airbase": "FOB Amiens-Glisy Farp#00001",
-                "warehouse": "FOB Amiens-Glisy Airwing Warehouse#00001",
+            "FOB Amiens-Glisy 1": {
+                "airbase": "FOB Amiens-Glisy Farp 1#00001",
+                "warehouse": "FOB Amiens-Glisy Airwing Warehouse 1#00001",
                 "squadrons": {
                     "Amiens-Glisy 1": {
                         "airframe": dcs.helicopters.Mi_26,
@@ -1886,7 +1886,13 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                         "capabilities": {
                             "AUFTRAG.Type.OPSTRANSPORT": 50
                         }
-                    },
+                    }
+                }
+            },
+            "FOB Amiens-Glisy 2": {
+                "airbase": "FOB Amiens-Glisy Farp 2#00001",
+                "warehouse": "FOB Amiens-Glisy Airwing Warehouse 2#00001",
+                "squadrons": {
                     "Amiens-Glisy 2": {
                         "airframe": dcs.helicopters.AH_64D_BLK_II,
                         "groupSize": 2,
@@ -2140,26 +2146,7 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                         }
                     }
                 }
-            },
-            "1st Guines Goonwing": {
-                "airbase": "Guines Goon Farp#00001",
-                "warehouse": "Guines Goon Airwing Warehouse#00001",
-                "squadrons": {
-                    "LG-01": {
-                        "airframe": dcs.helicopters.CH_47D,
-                        "groupSize": 1,
-                        "initialInventory": 99,
-                        "takeoffCold": "true",
-                        "livery": "standard",
-                        "loadouts": {
-                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
-                        },
-                        "capabilities": {
-                            "AUFTRAG.Type.OPSTRANSPORT": 50
-                        }
-                    }
-                }
-            },
+            }
         }
         return blue_airwings
 
@@ -2391,21 +2378,6 @@ class DangerZoneRedBrigades(calvinball.redbrigade.RedBrigades):
                         "initialInventory": 3,
                         "capabilities": {
                             "AUFTRAG.Type.ONGUARD": 50
-                        }
-                    },
-                    "FOB Amiens-Glisy 2": {
-                        "units": [
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Unarmed.Ural_375,
-                            dcs.vehicles.Unarmed.Ural_375
-                        ],
-                        "initialInventory": 1,
-                        "capabilities": {
-                            "AUFTRAG.Type.ARTY": 50
                         }
                     }
                 }
