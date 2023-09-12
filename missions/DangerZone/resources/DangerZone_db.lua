@@ -4063,32 +4063,6 @@ MissionDb = {
 			},
 			tasks = {
 				{
-					name = "TASK-1",
-					completeSound = "",
-					auftrag = "BOMBING",
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "TASK1LONDON#00001",
-							template = {
-								name = "TASK1LONDON",
-								type = "Cow",
-								x = 225620.06735337,
-								y = 7355.8513079528,
-								heading = 0.0,
-								category = "Animal",
-								canCargo = false,
-								shape_name = "Cow",
-								rate = 2,
-								dead = false
-							}
-						},
-					}
-				},
-				{
 					name = "TASK-2",
 					completeSound = "",
 					auftrag = "BOMBING",
@@ -4109,409 +4083,6 @@ MissionDb = {
 								canCargo = false,
 								shape_name = "Cow",
 								rate = 2,
-								dead = false
-							}
-						},
-					}
-				},
-				{
-					name = "TASK-3",
-					completeSound = "",
-					auftrag = "BOMBING",
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "TASK3LONDON#00001",
-							template = {
-								name = "TASK3LONDON",
-								type = "Cow",
-								x = 227555.81364032,
-								y = 15145.926904439,
-								heading = 0.0,
-								category = "Animal",
-								canCargo = false,
-								shape_name = "Cow",
-								rate = 2,
-								dead = false
-							}
-						},
-					}
-				},
-				{
-					name = "TASK-4",
-					completeSound = "",
-					auftrag = "BOMBING",
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "TASK4LONDON#00001",
-							template = {
-								name = "TASK4LONDON",
-								type = "Cow",
-								x = 225003.54703797,
-								y = 7631.7729048306,
-								heading = 0.0,
-								category = "Animal",
-								canCargo = false,
-								shape_name = "Cow",
-								rate = 2,
-								dead = false
-							}
-						},
-					}
-				},
-				{
-					name = "TASK-5",
-					completeSound = "",
-					auftrag = "BOMBING",
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "TASK5LONDON#00001",
-							template = {
-								name = "TASK5LONDON",
-								type = "Cow",
-								x = 225546.19906586,
-								y = 3771.0998123975,
-								heading = 0.0,
-								category = "Animal",
-								canCargo = false,
-								shape_name = "Cow",
-								rate = 2,
-								dead = false
-							}
-						},
-					}
-				},
-				{
-					name = "TASK-6",
-					completeSound = "",
-					auftrag = "BOMBING",
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "TASK6LONDON#00001",
-							template = {
-								name = "TASK6LONDON",
-								type = "Cow",
-								x = 210092.59206758,
-								y = -442.02571562863,
-								heading = 0.0,
-								category = "Animal",
-								canCargo = false,
-								shape_name = "Cow",
-								rate = 2,
-								dead = false
-							}
-						},
-					}
-				},
-				{
-					name = "TASK-7",
-					completeSound = "",
-					auftrag = "BOMBING",
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "TASK7LONDON#00001",
-							template = {
-								name = "TASK7LONDON",
-								type = "Cow",
-								x = 225030.30024232,
-								y = 8355.2040510253,
-								heading = 0.0,
-								category = "Animal",
-								canCargo = false,
-								shape_name = "Cow",
-								rate = 2,
-								dead = false
-							}
-						},
-					}
-				},
-				{
-					name = "TASK-8",
-					completeSound = "",
-					auftrag = "BOMBING",
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "TASK8LONDON#00001",
-							template = {
-								name = "TASK8LONDON",
-								type = "Cow",
-								x = 225330.42569613,
-								y = 7440.2133556848,
-								heading = 0.0,
-								category = "Animal",
-								canCargo = false,
-								shape_name = "Cow",
-								rate = 2,
-								dead = false
-							}
-						},
-						{
-							name = "Static IFV BMP-1-2#00001",
-							template = {
-								name = "Static IFV BMP-1-2",
-								type = "BMP-1",
-								x = 225359.9972044,
-								y = 7443.6708018139,
-								heading = 0.296705972839,
-								category = "Armor",
-								canCargo = false,
-								shape_name = "",
-								rate = 10,
-								dead = false
-							}
-						},
-					}
-				},
-				{
-					name = "TASK-9",
-					completeSound = "",
-					auftrag = "BOMBING",
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "TASK9LONDON#00001",
-							template = {
-								name = "TASK9LONDON",
-								type = "Cow",
-								x = 222823.49705492,
-								y = 6401.6828937198,
-								heading = 0.0,
-								category = "Animal",
-								canCargo = false,
-								shape_name = "Cow",
-								rate = 2,
-								dead = false
-							}
-						},
-					}
-				},
-				{
-					name = "TASK-10",
-					completeSound = "",
-					auftrag = "BOMBING",
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "BETTERBOOM1#00001",
-							template = {
-								name = "BETTERBOOM1",
-								type = "Tank",
-								x = 220806.80357552,
-								y = 10042.028778971,
-								heading = 0.0,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "BETTERBOOM1-1#00001",
-							template = {
-								name = "BETTERBOOM1-1",
-								type = "Tank",
-								x = 220798.32734829,
-								y = 10073.757359291,
-								heading = 0.0,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "BETTERBOOM1-2#00001",
-							template = {
-								name = "BETTERBOOM1-2",
-								type = "Tank",
-								x = 220782.63487355,
-								y = 10034.812531462,
-								heading = 0.0,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "BETTERBOOM1-3#00001",
-							template = {
-								name = "BETTERBOOM1-3",
-								type = "Tank",
-								x = 220774.61682076,
-								y = 10069.404702063,
-								heading = 0.0,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "TASK10LONDON#00001",
-							template = {
-								name = "TASK10LONDON",
-								type = "Cow",
-								x = 220789.12339084,
-								y = 10054.242620174,
-								heading = 0.0,
-								category = "Animal",
-								canCargo = false,
-								shape_name = "Cow",
-								rate = 2,
-								dead = false
-							}
-						},
-					}
-				},
-				{
-					name = "TASK-11",
-					completeSound = "",
-					auftrag = "BOMBING",
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "TASK11LONDON#00001",
-							template = {
-								name = "TASK11LONDON",
-								type = "Cow",
-								x = 223854.21367337,
-								y = 2718.8523251825,
-								heading = 0.0,
-								category = "Animal",
-								canCargo = false,
-								shape_name = "Cow",
-								rate = 2,
-								dead = false
-							}
-						},
-					}
-				},
-				{
-					name = "TASK-12",
-					completeSound = "",
-					auftrag = "BOMBING",
-					vehicleGroups = {
-						{ name = "DW RED GROUND 1-23" },
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "TASK12LONDON#00001",
-							template = {
-								name = "TASK12LONDON",
-								type = "Cow",
-								x = 224606.11793917,
-								y = 2788.5663223818,
-								heading = 0.0,
-								category = "Animal",
-								canCargo = false,
-								shape_name = "Cow",
-								rate = 2,
-								dead = false
-							}
-						},
-						{
-							name = "Static UH-1H-1#00001",
-							template = {
-								name = "Static UH-1H-1",
-								type = "UH-1H",
-								x = 224646.99575638,
-								y = 2809.6360716926,
-								heading = 1.3089969389957,
-								category = "Helicopters",
-								canCargo = false,
-								shape_name = "",
-								rate = 20,
-								dead = false
-							}
-						},
-					}
-				},
-				{
-					name = "TASK-13",
-					completeSound = "",
-					auftrag = "BOMBING",
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "TASK13LONDON#00001",
-							template = {
-								name = "TASK13LONDON",
-								type = "Cow",
-								x = 213240.20281244,
-								y = 807.93503901944,
-								heading = 4.9043751981041,
-								category = "Animal",
-								canCargo = false,
-								shape_name = "Cow",
-								rate = 2,
-								dead = false
-							}
-						},
-					}
-				},
-				{
-					name = "TASK-14",
-					completeSound = "",
-					auftrag = "BOMBING",
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "TASK14LONDON#00001",
-							template = {
-								name = "TASK14LONDON",
-								type = "Container brown",
-								x = 210918.83380684,
-								y = 4675.1417456404,
-								heading = 2.4958208303519,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "konteiner_brown",
-								rate = 100,
 								dead = false
 							}
 						},
@@ -5046,6 +4617,7 @@ MissionDb = {
 				{ name = "DW RED GROUND 1-20" },
 				{ name = "DW RED GROUND 1-21" },
 				{ name = "DW RED GROUND 1-22" },
+				{ name = "DW RED GROUND 1-23" },
 				{ name = "DW RED GROUND 1-24" },
 				{ name = "DW RED GROUND 1-25" },
 				{ name = "DW RED GROUND 1-26" },
@@ -5055,49 +4627,91 @@ MissionDb = {
 				{ name = "DW RED GROUND 1-30" },
 				{ name = "DW RED GROUND 1-8" },
 				{ name = "FREE SAM DW" },
-				{ name = "FREE SAM DW-1" },
 				{ name = "FREE SAM DW-2" },
-				{ name = "FREE SAM DW-4" },
-				{ name = "FREE SAM DW-6" },
 				{ name = "FREE SAM DW-7" },
-				{ name = "RED AIR DEFENSE BATTERY B DW" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-1" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-10" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-11" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-12" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-13" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-14" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-15" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-16" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-17" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-18" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-19" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-2" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-3" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-4" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-5" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-6" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-7" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-8" },
-				{ name = "RED AIR DEFENSE BATTERY B DW-9" },
 				{ name = "RED EWR 2-13" },
 				{ name = "RED EWR 2-14" },
-				{ name = "RED SAM GROUND DW" },
 				{ name = "RED SAM GROUND DW-1" },
-				{ name = "RED SAM GROUND DW-2" },
 				{ name = "RED SAM GROUND DW-3" },
-				{ name = "RED SAM GROUND DW-6" },
 				{ name = "RED SAM GROUND DW-7" },
 				{ name = "RED SAM SA-15 DW-2" },
-				{ name = "RED SAM SA-15 DW-3" },
 				{ name = "RED SAM SA-15 DW-4" },
-				{ name = "RED SAM SA-15 DW-5" },
-				{ name = "RED SAM SA-15 DW-6" },
 				{ name = "RED SAM SA-15 DW-7" },
+				{ name = "DW RED GROUND 1-31" },
+				{ name = "DW RED GROUND 1-32" },
+				{ name = "DW RED GROUND 1-33" },
+				{ name = "DW RED GROUND 1-34" },
+				{ name = "DW RED GROUND 1-35" },
+				{ name = "RED SAM GROUND DW-2" },
+				{ name = "RED SAM GROUND DW-4" },
+				{ name = "RED SAM GROUND DW-5" },
+				{ name = "RED SAM GROUND DW-6" },
+				{ name = "RED EWR 2-15" },
+				{ name = "RED EWR 2-16" },
 			},
 			shipGroups = {
 			},
 			staticGroups = {
+				{
+					name = "BETTERBOOM1#00001",
+					template = {
+						name = "BETTERBOOM1",
+						type = "Tank",
+						x = 220806.80357552,
+						y = 10042.028778971,
+						heading = 0.0,
+						category = "Warehouses",
+						canCargo = false,
+						shape_name = "bak",
+						rate = 100,
+						dead = false
+					}
+				},
+				{
+					name = "BETTERBOOM1-1#00001",
+					template = {
+						name = "BETTERBOOM1-1",
+						type = "Tank",
+						x = 220798.32734829,
+						y = 10073.757359291,
+						heading = 0.0,
+						category = "Warehouses",
+						canCargo = false,
+						shape_name = "bak",
+						rate = 100,
+						dead = false
+					}
+				},
+				{
+					name = "BETTERBOOM1-2#00001",
+					template = {
+						name = "BETTERBOOM1-2",
+						type = "Tank",
+						x = 220782.63487355,
+						y = 10034.812531462,
+						heading = 0.0,
+						category = "Warehouses",
+						canCargo = false,
+						shape_name = "bak",
+						rate = 100,
+						dead = false
+					}
+				},
+				{
+					name = "BETTERBOOM1-3#00001",
+					template = {
+						name = "BETTERBOOM1-3",
+						type = "Tank",
+						x = 220774.61682076,
+						y = 10069.404702063,
+						heading = 0.0,
+						category = "Warehouses",
+						canCargo = false,
+						shape_name = "bak",
+						rate = 100,
+						dead = false
+					}
+				},
 				{
 					name = "BETTERBOOM1-4#00001",
 					template = {
@@ -5594,6 +5208,21 @@ MissionDb = {
 					}
 				},
 				{
+					name = "Static IFV BMP-1-2#00001",
+					template = {
+						name = "Static IFV BMP-1-2",
+						type = "BMP-1",
+						x = 225359.9972044,
+						y = 7443.6708018139,
+						heading = 0.296705972839,
+						category = "Armor",
+						canCargo = false,
+						shape_name = "",
+						rate = 10,
+						dead = false
+					}
+				},
+				{
 					name = "Static IFV BMP-1-3#00001",
 					template = {
 						name = "Static IFV BMP-1-3",
@@ -5729,51 +5358,6 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static SAM SA-11 Buk Gadfly Fire Dome TEL-1#00001",
-					template = {
-						name = "Static SAM SA-11 Buk Gadfly Fire Dome TEL-1",
-						type = "SA-11 Buk LN 9A310M1",
-						x = 225522.65803257,
-						y = 4528.0260982516,
-						heading = 2.6005405854716,
-						category = "Air Defence",
-						canCargo = false,
-						shape_name = "",
-						rate = 70,
-						dead = false
-					}
-				},
-				{
-					name = "Static SAM SA-11 Buk Gadfly Fire Dome TEL-2#00001",
-					template = {
-						name = "Static SAM SA-11 Buk Gadfly Fire Dome TEL-2",
-						type = "SA-11 Buk LN 9A310M1",
-						x = 225534.37792104,
-						y = 4520.7709292024,
-						heading = 2.5481807079117,
-						category = "Air Defence",
-						canCargo = false,
-						shape_name = "",
-						rate = 70,
-						dead = false
-					}
-				},
-				{
-					name = "Static Supply Ship MV Tilde-1#00001",
-					template = {
-						name = "Static Supply Ship MV Tilde-1",
-						type = "Ship_Tilde_Supply",
-						x = 225191.58217307,
-						y = 7501.0630807767,
-						heading = 5.235987755983,
-						category = "Ships",
-						canCargo = false,
-						shape_name = "",
-						rate = 100,
-						dead = false
-					}
-				},
-				{
 					name = "Static SAM SA-11 Buk Gadfly Fire Dome TEL-3#00001",
 					template = {
 						name = "Static SAM SA-11 Buk Gadfly Fire Dome TEL-3",
@@ -5815,6 +5399,66 @@ MissionDb = {
 						canCargo = false,
 						shape_name = "",
 						rate = 20,
+						dead = false
+					}
+				},
+				{
+					name = "Static UH-1H-1#00001",
+					template = {
+						name = "Static UH-1H-1",
+						type = "UH-1H",
+						x = 224646.99575638,
+						y = 2809.6360716926,
+						heading = 1.3089969389957,
+						category = "Helicopters",
+						canCargo = false,
+						shape_name = "",
+						rate = 20,
+						dead = false
+					}
+				},
+				{
+					name = "Static SAM SA-11 Buk Gadfly Fire Dome TEL-1#00001",
+					template = {
+						name = "Static SAM SA-11 Buk Gadfly Fire Dome TEL-1",
+						type = "SA-11 Buk LN 9A310M1",
+						x = 225522.65803257,
+						y = 4528.0260982516,
+						heading = 2.6005405854716,
+						category = "Air Defence",
+						canCargo = false,
+						shape_name = "",
+						rate = 70,
+						dead = false
+					}
+				},
+				{
+					name = "Static SAM SA-11 Buk Gadfly Fire Dome TEL-2#00001",
+					template = {
+						name = "Static SAM SA-11 Buk Gadfly Fire Dome TEL-2",
+						type = "SA-11 Buk LN 9A310M1",
+						x = 225534.37792104,
+						y = 4520.7709292024,
+						heading = 2.5481807079117,
+						category = "Air Defence",
+						canCargo = false,
+						shape_name = "",
+						rate = 70,
+						dead = false
+					}
+				},
+				{
+					name = "Static Supply Ship MV Tilde-1#00001",
+					template = {
+						name = "Static Supply Ship MV Tilde-1",
+						type = "Ship_Tilde_Supply",
+						x = 225191.58217307,
+						y = 7501.0630807767,
+						heading = 5.235987755983,
+						category = "Ships",
+						canCargo = false,
+						shape_name = "",
+						rate = 100,
 						dead = false
 					}
 				},
@@ -6183,13 +5827,13 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static Oiltank-7#00001",
+					name = "Static Oiltank-8#00001",
 					template = {
-						name = "Static Oiltank-7",
+						name = "Static Oiltank-8",
 						type = "oiltank_cargo",
-						x = 187386.70500848,
-						y = 102659.16763807,
-						heading = 3.8746309394274,
+						x = 187385.64303837,
+						y = 102667.39790646,
+						heading = 3.8222710618676,
 						category = "Cargos",
 						canCargo = true,
 						shape_name = "oiltank_cargo",
@@ -6198,13 +5842,13 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static Oiltank-8#00001",
+					name = "Static Oiltank-7#00001",
 					template = {
-						name = "Static Oiltank-8",
+						name = "Static Oiltank-7",
 						type = "oiltank_cargo",
-						x = 187385.64303837,
-						y = 102667.39790646,
-						heading = 3.8222710618676,
+						x = 187386.70500848,
+						y = 102659.16763807,
+						heading = 3.8746309394274,
 						category = "Cargos",
 						canCargo = true,
 						shape_name = "oiltank_cargo",
@@ -6340,6 +5984,21 @@ MissionDb = {
 							}
 						},
 						{
+							name = "FOB Amiens-Glisy Airwing Warehouse 2#00001",
+							template = {
+								name = "FOB Amiens-Glisy Airwing Warehouse 2",
+								type = ".Ammunition depot",
+								x = 50940.853108178,
+								y = 188643.42727376,
+								heading = 3.5430183815485,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
 							name = "FOB Amiens-Glisy Brigade Warehouse#00001",
 							template = {
 								name = "FOB Amiens-Glisy Brigade Warehouse",
@@ -6381,21 +6040,6 @@ MissionDb = {
 								canCargo = false,
 								shape_name = "FARPS",
 								rate = 50,
-								dead = false
-							}
-						},
-						{
-							name = "FOB Amiens-Glisy Airwing Warehouse 2#00001",
-							template = {
-								name = "FOB Amiens-Glisy Airwing Warehouse 2",
-								type = ".Ammunition depot",
-								x = 50940.853108178,
-								y = 188643.42727376,
-								heading = 3.5430183815485,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "SkladC",
-								rate = 100,
 								dead = false
 							}
 						},
@@ -11557,6 +11201,21 @@ MissionDb = {
 							}
 						},
 						{
+							name = "Static Tank 1-1#00001",
+							template = {
+								name = "Static Tank 1-1",
+								type = "Tank",
+								x = 136518.00255572,
+								y = -173108.87028796,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
 							name = "Static Small warehouse 3-1#00001",
 							template = {
 								name = "Static Small warehouse 3-1",
@@ -11608,21 +11267,6 @@ MissionDb = {
 								type = "Tank",
 								x = 136520.06938404,
 								y = -173167.77489501,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-1#00001",
-							template = {
-								name = "Static Tank 1-1",
-								type = "Tank",
-								x = 136518.00255572,
-								y = -173108.87028796,
 								heading = 0.0645788929948,
 								category = "Warehouses",
 								canCargo = false,
@@ -14982,81 +14626,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Small warehouse 3-5#00001",
-							template = {
-								name = "Static Small warehouse 3-5",
-								type = "Small werehouse 3",
-								x = 149869.69414801,
-								y = -140472.45058846,
-								heading = 3.9444441095072,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "s3",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-11#00001",
-							template = {
-								name = "Static Tank 1-11",
-								type = "Tank",
-								x = 150362.52565956,
-								y = -140938.68496704,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-7#00001",
-							template = {
-								name = "Static Tank 1-7",
-								type = "Tank",
-								x = 150263.20715531,
-								y = -140852.93456447,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-4#00001",
-							template = {
-								name = "Static Tank 1-4",
-								type = "Tank",
-								x = 150319.65045827,
-								y = -140851.84911633,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-8#00001",
-							template = {
-								name = "Static Tank 1-8",
-								type = "Tank",
-								x = 150290.88608273,
-								y = -140883.86983628,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
 							name = "Static Small warehouse 3-3#00001",
 							template = {
 								name = "Static Small warehouse 3-3",
@@ -15138,6 +14707,81 @@ MissionDb = {
 								type = "Tank",
 								x = 150386.4055185,
 								y = -140902.32245455,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Small warehouse 3-5#00001",
+							template = {
+								name = "Static Small warehouse 3-5",
+								type = "Small werehouse 3",
+								x = 149869.69414801,
+								y = -140472.45058846,
+								heading = 3.9444441095072,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "s3",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-11#00001",
+							template = {
+								name = "Static Tank 1-11",
+								type = "Tank",
+								x = 150362.52565956,
+								y = -140938.68496704,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-7#00001",
+							template = {
+								name = "Static Tank 1-7",
+								type = "Tank",
+								x = 150263.20715531,
+								y = -140852.93456447,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-4#00001",
+							template = {
+								name = "Static Tank 1-4",
+								type = "Tank",
+								x = 150319.65045827,
+								y = -140851.84911633,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-8#00001",
+							template = {
+								name = "Static Tank 1-8",
+								type = "Tank",
+								x = 150290.88608273,
+								y = -140883.86983628,
 								heading = 0.0645788929948,
 								category = "Warehouses",
 								canCargo = false,
@@ -16949,51 +16593,6 @@ MissionDb = {
 					}
 				},
 				{
-					name = "Static Tank Car blue-2#00001",
-					template = {
-						name = "Static Tank Car blue-2",
-						type = "Coach a tank blue",
-						x = 135453.37383789,
-						y = -125060.00481569,
-						heading = 1.4311699866353,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
-					name = "Static Well Car-1#00001",
-					template = {
-						name = "Static Well Car-1",
-						type = "Wellcarnsc",
-						x = 135456.84356486,
-						y = -125031.96567071,
-						heading = 1.4660765716752,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
-					name = "Static Tank Car blue-3#00001",
-					template = {
-						name = "Static Tank Car blue-3",
-						type = "Coach a tank blue",
-						x = 135452.06096823,
-						y = -125071.16420784,
-						heading = 1.4835298641952,
-						category = "",
-						canCargo = false,
-						shape_name = "",
-						rate = 4,
-						dead = false
-					}
-				},
-				{
 					name = "Static Well Car-2#00001",
 					template = {
 						name = "Static Well Car-2",
@@ -17030,6 +16629,51 @@ MissionDb = {
 						type = "Coach a tank blue",
 						x = 135454.78048396,
 						y = -125048.89231174,
+						heading = 1.4835298641952,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Tank Car blue-2#00001",
+					template = {
+						name = "Static Tank Car blue-2",
+						type = "Coach a tank blue",
+						x = 135453.37383789,
+						y = -125060.00481569,
+						heading = 1.4311699866353,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Well Car-1#00001",
+					template = {
+						name = "Static Well Car-1",
+						type = "Wellcarnsc",
+						x = 135456.84356486,
+						y = -125031.96567071,
+						heading = 1.4660765716752,
+						category = "",
+						canCargo = false,
+						shape_name = "",
+						rate = 4,
+						dead = false
+					}
+				},
+				{
+					name = "Static Tank Car blue-3#00001",
+					template = {
+						name = "Static Tank Car blue-3",
+						type = "Coach a tank blue",
+						x = 135452.06096823,
+						y = -125071.16420784,
 						heading = 1.4835298641952,
 						category = "",
 						canCargo = false,
@@ -19471,66 +19115,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Tank 1-15#00001",
-							template = {
-								name = "Static Tank 1-15",
-								type = "Tank",
-								x = 193025.28932009,
-								y = -52265.802981495,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-19#00001",
-							template = {
-								name = "Static Tank 1-19",
-								type = "Tank",
-								x = 192965.68910054,
-								y = -52386.299077543,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-12#00001",
-							template = {
-								name = "Static Tank 1-12",
-								type = "Tank",
-								x = 193038.89371803,
-								y = -52195.837506371,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Static Tank 1-16#00001",
-							template = {
-								name = "Static Tank 1-16",
-								type = "Tank",
-								x = 192974.75869916,
-								y = -52311.150974632,
-								heading = 0.0645788929948,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "bak",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
 							name = "Static Tank 1-13#00001",
 							template = {
 								name = "Static Tank 1-13",
@@ -19582,6 +19166,66 @@ MissionDb = {
 								type = "Tank",
 								x = 193016.5436357,
 								y = -52334.472799673,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-15#00001",
+							template = {
+								name = "Static Tank 1-15",
+								type = "Tank",
+								x = 193025.28932009,
+								y = -52265.802981495,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-19#00001",
+							template = {
+								name = "Static Tank 1-19",
+								type = "Tank",
+								x = 192965.68910054,
+								y = -52386.299077543,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-12#00001",
+							template = {
+								name = "Static Tank 1-12",
+								type = "Tank",
+								x = 193038.89371803,
+								y = -52195.837506371,
+								heading = 0.0645788929948,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "bak",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Tank 1-16#00001",
+							template = {
+								name = "Static Tank 1-16",
+								type = "Tank",
+								x = 192974.75869916,
+								y = -52311.150974632,
 								heading = 0.0645788929948,
 								category = "Warehouses",
 								canCargo = false,
