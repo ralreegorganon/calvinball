@@ -9288,10 +9288,10 @@ MissionDb = {
 							"ROADBASE Hold My Beer F-16C_50 Warm 2",
 							"ROADBASE Hold My Beer F-16C_50 Warm 3",
 							"ROADBASE Hold My Beer F-16C_50 Warm 4",
-							"ROADBASE Hold My Beer F-16C_50 Warm 5",
-							"ROADBASE Hold My Beer F-16C_50 Warm 6",
 							"ROADBASE Hold My Beer F-15ESE Warm 1",
 							"ROADBASE Hold My Beer F-15ESE Warm 2",
+							"ROADBASE Hold My Beer FA-18C_hornet Warm 1",
+							"ROADBASE Hold My Beer FA-18C_hornet Warm 2",
 					}
 				},
 			},
@@ -20821,8 +20821,8 @@ MissionDb = {
 				airbase = "Evreux",
 				squadrons = {
 					{
-						name = "1GW-Evreux-2",
-						templateGroupName = "RED 1st Goon Wing - Evreux 1GW-Evreux-2 A-50",
+						name = "RED EWR 1GW-Evreux-2",
+						templateGroupName = "RED 1st Goon Wing - Evreux RED EWR 1GW-Evreux-2 A-50",
 						initialInventory = 1,
 						takeoffCold = false,
 						capabilities = {
@@ -20831,7 +20831,7 @@ MissionDb = {
 						livery = "RF Air Force new",
 						payloads = {
 							{
-								templateGroupName = "RED 1st Goon Wing - Evreux 1GW-Evreux-2 A-50 LOADOUT 0",
+								templateGroupName = "RED 1st Goon Wing - Evreux RED EWR 1GW-Evreux-2 A-50 LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.AWACS }
 							},
 						}
@@ -21864,6 +21864,22 @@ MissionDb = {
 							},
 						}
 					},
+					{
+						name = "RED EWR Amiens-Glisy Alpha 3",
+						templateGroupName = "RED Amiens-Glisy Alpha RED EWR Amiens-Glisy Alpha 3 A-50",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
+						},
+						livery = "RF Air Force new",
+						payloads = {
+							{
+								templateGroupName = "RED Amiens-Glisy Alpha RED EWR Amiens-Glisy Alpha 3 A-50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.AWACS }
+							},
+						}
+					},
 				}
 			},
 			{
@@ -21934,6 +21950,22 @@ MissionDb = {
 							{
 								templateGroupName = "RED Amiens-Glisy Beta Amiens-Glisy Beta 2 F-16C_50 LOADOUT 3",
 								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "RED EWR Amiens-Glisy Beta 3",
+						templateGroupName = "RED Amiens-Glisy Beta RED EWR Amiens-Glisy Beta 3 A-50",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
+						},
+						livery = "RF Air Force new",
+						payloads = {
+							{
+								templateGroupName = "RED Amiens-Glisy Beta RED EWR Amiens-Glisy Beta 3 A-50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.AWACS }
 							},
 						}
 					},
@@ -22010,6 +22042,22 @@ MissionDb = {
 							},
 						}
 					},
+					{
+						name = "RED EWR Amiens-Glisy Gamma 3",
+						templateGroupName = "RED Amiens-Glisy Gamma RED EWR Amiens-Glisy Gamma 3 A-50",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
+						},
+						livery = "RF Air Force new",
+						payloads = {
+							{
+								templateGroupName = "RED Amiens-Glisy Gamma RED EWR Amiens-Glisy Gamma 3 A-50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.AWACS }
+							},
+						}
+					},
 				}
 			},
 			{
@@ -22080,6 +22128,22 @@ MissionDb = {
 							{
 								templateGroupName = "RED Poix Alpha Poix Alpha 2 F-16C_50 LOADOUT 3",
 								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "RED EWR Poix Alpha 3",
+						templateGroupName = "RED Poix Alpha RED EWR Poix Alpha 3 A-50",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
+						},
+						livery = "RF Air Force new",
+						payloads = {
+							{
+								templateGroupName = "RED Poix Alpha RED EWR Poix Alpha 3 A-50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.AWACS }
 							},
 						}
 					},
@@ -22156,6 +22220,22 @@ MissionDb = {
 							},
 						}
 					},
+					{
+						name = "RED EWR Poix Beta 3",
+						templateGroupName = "RED Poix Beta RED EWR Poix Beta 3 A-50",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
+						},
+						livery = "RF Air Force new",
+						payloads = {
+							{
+								templateGroupName = "RED Poix Beta RED EWR Poix Beta 3 A-50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.AWACS }
+							},
+						}
+					},
 				}
 			},
 			{
@@ -22229,6 +22309,22 @@ MissionDb = {
 							},
 						}
 					},
+					{
+						name = "RED EWR Poix Gamma 3",
+						templateGroupName = "RED Poix Gamma RED EWR Poix Gamma 3 A-50",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
+						},
+						livery = "RF Air Force new",
+						payloads = {
+							{
+								templateGroupName = "RED Poix Gamma RED EWR Poix Gamma 3 A-50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.AWACS }
+							},
+						}
+					},
 				}
 			},
 			{
@@ -22299,6 +22395,22 @@ MissionDb = {
 							{
 								templateGroupName = "RED Poix Delta Poix Delta 2 F-16C_50 LOADOUT 3",
 								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "RED EWR Poix Delta 3",
+						templateGroupName = "RED Poix Delta RED EWR Poix Delta 3 A-50",
+						initialInventory = 99,
+						takeoffCold = false,
+						capabilities = {
+							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
+						},
+						livery = "RF Air Force new",
+						payloads = {
+							{
+								templateGroupName = "RED Poix Delta RED EWR Poix Delta 3 A-50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.AWACS }
 							},
 						}
 					},

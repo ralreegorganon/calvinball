@@ -662,11 +662,15 @@ class DangerZoneClients(calvinball.clients.Clients):
                     },
                     { 
                         "airframe": dcs.planes.F_16C_50, "fuel": 1, "loadout": "Empty", "livery": "18th AGRS Arctic Splinter",
-                        "positions": [{"heading": 294, "x": 160530.45132613, "y": 146284.61167889}, {"heading": 289, "x": 160516.13887338, "y": 146315.91591161}, {"heading": 305, "x": 160549.19157798, "y": 146248.87445442}, {"heading": 292, "x": 160507.31884031, "y": 146335.59517102}, {"heading": 298, "x": 160539.31299561, "y": 146266.45252012}, {"heading": 296, "x": 160498.6407579, "y": 146355.57113429}]
+                        "positions": [{"heading": 294, "x": 160530.45132613, "y": 146284.61167889}, {"heading": 289, "x": 160516.13887338, "y": 146315.91591161}, {"heading": 305, "x": 160549.19157798, "y": 146248.87445442}, {"heading": 292, "x": 160507.31884031, "y": 146335.59517102}]
                     },
                     { 
                         "airframe": dcs.planes.F_15ESE, "fuel": 1, "loadout": "Empty", "livery": "USAF 494th Panthers FS 91-603 75th D-Day Anniversary", "properties": { dcs.planes.F_15ESE.Properties.NetCrewControlPriority.id: dcs.planes.F_15ESE.Properties.NetCrewControlPriority.Values.Equally_Responsible },
                         "positions": [{"heading": 111, "x": 160597.03326698, "y": 146157.62413366}, {"heading": 112, "x": 160608.08678838, "y": 146133.44455559}]
+                    },
+                    { 
+                        "airframe": dcs.planes.FA_18C_hornet, "fuel": 1, "loadout": "Empty", "livery": "VX-31 CoNA",
+                        "positions": [{"heading": 298, "x": 160539.31299561, "y": 146266.45252012}, {"heading": 296, "x": 160498.6407579, "y": 146355.57113429}]
                     },
                 ]
             },
@@ -796,7 +800,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                     #         "AUFTRAG.Type.ESCORT": 50,
                     #     }
                     # },
-                    "1GW-Evreux-2": {
+                    "RED EWR 1GW-Evreux-2": {
                         "airframe": dcs.planes.A_50,
                         "groupSize": 1,
                         "initialInventory": 1,
@@ -1574,6 +1578,18 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.SEAD": 70,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
+                    },
+                    "RED EWR Amiens-Glisy Alpha 3": {
+                        "airframe": dcs.planes.A_50,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "RF Air Force new",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.AWACS }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.AWACS": 50
+                        }
                     }
                 }
             },
@@ -1622,6 +1638,18 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.BOMBCARPET": 50,
                             "AUFTRAG.Type.SEAD": 70,
                             "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "RED EWR Amiens-Glisy Beta 3": {
+                        "airframe": dcs.planes.A_50,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "RF Air Force new",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.AWACS }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.AWACS": 50
                         }
                     }
                 }
@@ -1672,6 +1700,18 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.SEAD": 70,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
+                    },
+                    "RED EWR Amiens-Glisy Gamma 3": {
+                        "airframe": dcs.planes.A_50,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "RF Air Force new",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.AWACS }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.AWACS": 50
+                        }
                     }
                 }
             },
@@ -1720,6 +1760,18 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.BOMBCARPET": 50,
                             "AUFTRAG.Type.SEAD": 70,
                             "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "RED EWR Poix Alpha 3": {
+                        "airframe": dcs.planes.A_50,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "RF Air Force new",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.AWACS }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.AWACS": 50
                         }
                     }
                 }
@@ -1770,6 +1822,18 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.SEAD": 70,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
+                    },
+                    "RED EWR Poix Beta 3": {
+                        "airframe": dcs.planes.A_50,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "RF Air Force new",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.AWACS }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.AWACS": 50
+                        }
                     }
                 }
             },
@@ -1819,6 +1883,18 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.SEAD": 70,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
+                    },
+                    "RED EWR Poix Gamma 3": {
+                        "airframe": dcs.planes.A_50,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "RF Air Force new",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.AWACS }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.AWACS": 50
+                        }
                     }
                 }
             },
@@ -1867,6 +1943,18 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.BOMBCARPET": 50,
                             "AUFTRAG.Type.SEAD": 70,
                             "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "RED EWR Poix Delta 3": {
+                        "airframe": dcs.planes.A_50,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "RF Air Force new",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.AWACS }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.AWACS": 50
                         }
                     }
                 }
