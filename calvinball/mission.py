@@ -42,7 +42,7 @@ class Mission:
             self.mission_root_path, f"{self.miz_name}.miz"
         )
 
-    def build(self, edit: bool, package: bool):
+    def build(self, edit: bool, package: bool, devmode: bool):
         self.__configure_settings()
         self.__build_vehicle_groups()
         self.__build_ship_groups()
@@ -65,7 +65,7 @@ class Mission:
         blue_airwings = self.blue_airwings.build(self.m)
         red_brigades = self.red_brigades.build(self.m)
         blue_brigades = self.blue_brigades.build(self.m)
-        self.__write_db(ctld_groups, csar_groups, farp_groups, roadbase_groups, airbase_groups, red_airwings, blue_airwings, carriers, carrier_groups, red_brigades, blue_brigades, edit, True)
+        self.__write_db(ctld_groups, csar_groups, farp_groups, roadbase_groups, airbase_groups, red_airwings, blue_airwings, carriers, carrier_groups, red_brigades, blue_brigades, edit, devmode)
         self.__save_mission(package, edit)
 
         print("Make sure to manually add a late activated `Downed Pilot`")
