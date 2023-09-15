@@ -2767,6 +2767,24 @@ local function initializeMarkerOps()
     end
 end
 
+local function initializeSlotBlocker()
+    local blocker = NET:New()
+    function blocker:OnAfterPlayerJoined(From,Event,To,Client,Name)
+        local client = CLIENT:FindByPlayerName(Name)
+        if client then
+            local group = Client:GetGroup()
+            local flag = USERFLAG:New(group.GroupName)
+            if flag:Get() == 100 then
+                MESSAGE:New("Slot is locked.", 15, "ALERT"):ToClient(client)
+                blocker:BlockPlayer(client, Name, 60, "Slot is locked.")
+                if not blocker:ForceSlot(client, 0) then 
+                    if group and group:IsAlive() then group:Destroy() end
+                end
+            end
+        end
+    end
+end
+
 initializeCtld()
 
 initializeCsar()
@@ -2784,6 +2802,8 @@ initializeMantis()
 initializeMarkerOps()
 
 -- initializePlayerRecce()
+
+initializeSlotBlocker()
 
 SCHEDULER:New(nil, initializeObjectives, {}, 30)
 
