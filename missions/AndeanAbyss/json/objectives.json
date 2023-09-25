@@ -1,0 +1,65 @@
+{
+    "objectives": {
+        "OBJ-1": {
+            "airbases": [
+                "AIRBASE-1",
+                "AIRBASE-2",
+                "AIRBASE-3",
+                "AIRBASE-4"
+            ],
+            "blueAwacsZones": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Testing",
+            "nodes": {
+                "NODE-1": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Test",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -341083.58230734,
+                    "y": 628611.00317163
+                }
+            },
+            "qrfKillOnComplete": [],
+            "qrfs": [],
+            "redAwacsZones": [],
+            "reinforcements": [],
+            "roadbases": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": -344329.17649405,
+                    "y": 638239.96066698
+                },
+                {
+                    "x": -334081.26226284,
+                    "y": 638337.25099196
+                },
+                {
+                    "x": -336027.06876244,
+                    "y": 626921.852861
+                },
+                {
+                    "x": -344004.87541078,
+                    "y": 625365.20766132
+                }
+            ],
+            "x": -339610.59573253,
+            "y": 632216.06804531
+        }
+    },
+    "strands": {
+        "STRAND-1": [
+            "OBJ-1"
+        ]
+    }
+}

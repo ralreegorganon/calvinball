@@ -78,15 +78,33 @@ class Clients:
                         airbase_groups[airport_name] = []
 
                     airframe_name = a["airframe"].id
-                    parking = self.__park(a["parking"], p["airport"])
-                    for i in range(a["count"]):
-                        group_name = f"{airport_name} {airframe_name} {start_type.name} {str(i+1)}"
-                        airbase_groups[airport_name].append(group_name)
-                        fg = m.flight_group_from_airport(
-                            p["country"], group_name, a["airframe"], p["airport"], group_size=1, start_type=start_type, parking_slots=parking
-                        )
+                    if "parking" in a:
+                        parking = self.__park(a["parking"], p["airport"])
+                        for i in range(len(a["parking"])):
+                            group_name = f"{airport_name} {airframe_name} {start_type.name} {str(i+1)}"
+                            airbase_groups[airport_name].append(group_name)
+                            fg = m.flight_group_from_airport(
+                                p["country"], group_name, a["airframe"], p["airport"], group_size=1, start_type=start_type, parking_slots=parking
+                            )
 
-                        self.__doittoit(m, edit, fg, group_name, a, ctld_groups, csar_groups)
+                            self.__doittoit(m, edit, fg, group_name, a, ctld_groups, csar_groups)
+
+                    if "positions" in a:
+                        for i, pos in enumerate(a["positions"]):
+                            group_name = f"{airport_name} {airframe_name} {start_type.name} G {str(i+1)}"
+                            airbase_groups[airport_name].append(group_name)
+
+                            fg = m.flight_group(p["country"], group_name, a["airframe"], None,  position=dcs.mapping.Point(pos["x"], pos["y"], m.terrain),  group_size=1, start_type=start_type)
+
+                            if start_type == dcs.mission.StartType.Warm:
+                                fg.points[0].type = "TakeOffGroundHot"
+                                fg.points[0].action = dcs.point.PointAction.FromGroundAreaHot
+                            else:
+                                fg.points[0].type = "TakeOffGround"
+                                fg.points[0].action = dcs.point.PointAction.FromGroundArea
+                            fg.units[0].heading = pos["heading"]
+
+                            self.__doittoit(m, edit, fg, group_name, a, ctld_groups, csar_groups)
 
                 if "farp" in p:
                     if p["farp_zone"] not in farp_groups:

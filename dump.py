@@ -624,6 +624,23 @@ def debug_aircraft_roadbase(m: dcs.Mission, roadbase_zones):
             
     print(json.dumps(roadbase,sort_keys=True))
 
+def debug_aircraft_airbase(m: dcs.Mission, airbase_zones):
+    airbase = {}
+    for airbase_name, airbase_zone in airbase_zones.items():
+        airbase[airbase_name] = {}
+        airbase_zone_circle = Point(airbase_zone["x"], airbase_zone["y"]).buffer(airbase_zone["radius"])
+        for c1 in m.coalition.values():
+            for c2 in c1.countries.values():
+                for pg in c2.plane_group:
+                    if airbase_zone_circle.contains(Point(pg.position.x, pg.position.y)):
+                        for u in pg.units:
+                            if u.type not in airbase[airbase_name]:
+                                airbase[airbase_name][u.type] = [{"x": u.position.x, "y": u.position.y, "heading": round(u.heading)}]
+                            else:
+                                airbase[airbase_name][u.type].append({"x": u.position.x, "y": u.position.y, "heading": round(u.heading)})
+            
+    print(json.dumps(airbase,sort_keys=True))
+
 def report_units_in_obj(m: dcs.Mission, objective_zones):
     summary = {}
     for objective_zone in objective_zones.values():
@@ -690,6 +707,7 @@ def dumpit(miz_export_path):
 
     debug_aircraft_farp(m, farp_zones)
     debug_aircraft_roadbase(m, roadbase_zones)
+    debug_aircraft_airbase(m, airbase_zones)
     report_units_in_obj(m, objective_zones)
 
     obj_filter = ["OBJ-6"]
@@ -731,10 +749,14 @@ def dumpit(miz_export_path):
 # m = CyprusInvasion()
 # dumpit(m.miz_export_path)
 
-from missions.DangerZone.mission import DangerZone
-m = DangerZone()
-dumpit(m.miz_export_path)
+# from missions.DangerZone.mission import DangerZone
+# m = DangerZone()
+# dumpit(m.miz_export_path)
 
 # from missions.GeorgianOffensive.mission import GeorgianOffensive
 # m = GeorgianOffensive()
 # dumpit(m.miz_export_path)
+
+from missions.AndeanAbyss.mission import AndeanAbyss
+m = AndeanAbyss()
+dumpit(m.miz_export_path)
