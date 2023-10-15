@@ -3,3 +3,4 @@ pyproj
 PrettyTable
 shapely
 jinja2
+geographiclib
