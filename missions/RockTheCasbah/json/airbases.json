@@ -1,0 +1,12 @@
+{
+    "AIRBASE-1": {
+        "component": "airbase",
+        "label": "Al Dhafra AFB",
+        "radius": 2300.0208,
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicle_groups": [],
+        "x": -211125.24787503,
+        "y": -173279.66036909
+    }
+}

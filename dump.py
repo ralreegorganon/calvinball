@@ -757,6 +757,10 @@ def dumpit(miz_export_path):
 # m = GeorgianOffensive()
 # dumpit(m.miz_export_path)
 
-from missions.AndeanAbyss.mission import AndeanAbyss
-m = AndeanAbyss()
+# from missions.AndeanAbyss.mission import AndeanAbyss
+# m = AndeanAbyss()
+# dumpit(m.miz_export_path)
+
+from missions.RockTheCasbah.mission import RockTheCasbah
+m = RockTheCasbah()
 dumpit(m.miz_export_path)
