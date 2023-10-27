@@ -5772,6 +5772,7 @@ MissionDb = {
 						templateGroupName = "RED 1st Goon Wing - Larnaca 1GW-Larnaca-1 C-101CC",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -5799,6 +5800,7 @@ MissionDb = {
 						templateGroupName = "RED 1st Goon Wing - Larnaca 1GW-Larnaca-2 F-86F Sabre",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -5826,6 +5828,7 @@ MissionDb = {
 						templateGroupName = "RED 1st Goon Wing - Larnaca 1GW-Larnaca-3 L-39ZA",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -5853,6 +5856,7 @@ MissionDb = {
 						templateGroupName = "RED 1st Goon Wing - Larnaca 1GW-Larnaca-4 Mi-24P",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -5870,6 +5874,7 @@ MissionDb = {
 						templateGroupName = "RED 1st Goon Wing - Larnaca 1GW-Larnaca-5 Mi-8MT",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -5892,6 +5897,7 @@ MissionDb = {
 						templateGroupName = "RED 1st Goon Wing - Larnaca 1GW-Larnaca-6 MiG-15bis",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
 						},
@@ -5908,6 +5914,7 @@ MissionDb = {
 						templateGroupName = "RED 1st Goon Wing - Larnaca 1GW-Larnaca-7 MiG-19P",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -5931,6 +5938,7 @@ MissionDb = {
 						templateGroupName = "RED 1st Goon Wing - Larnaca 1GW-Larnaca-8 MB-339A",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -5960,6 +5968,7 @@ MissionDb = {
 						templateGroupName = "RED 2nd Goon Wing - Paphos 2GW-Paphos-1 C-101CC",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -5987,6 +5996,7 @@ MissionDb = {
 						templateGroupName = "RED 2nd Goon Wing - Paphos 2GW-Paphos-2 F-86F Sabre",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -6014,6 +6024,7 @@ MissionDb = {
 						templateGroupName = "RED 2nd Goon Wing - Paphos 2GW-Paphos-3 L-39ZA",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -6041,6 +6052,7 @@ MissionDb = {
 						templateGroupName = "RED 2nd Goon Wing - Paphos 2GW-Paphos-4 Mi-24P",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -6058,6 +6070,7 @@ MissionDb = {
 						templateGroupName = "RED 2nd Goon Wing - Paphos 2GW-Paphos-5 Mi-8MT",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -6080,6 +6093,7 @@ MissionDb = {
 						templateGroupName = "RED 2nd Goon Wing - Paphos 2GW-Paphos-6 MiG-15bis",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
 						},
@@ -6096,6 +6110,7 @@ MissionDb = {
 						templateGroupName = "RED 2nd Goon Wing - Paphos 2GW-Paphos-7 MiG-19P",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -6119,6 +6134,7 @@ MissionDb = {
 						templateGroupName = "RED 2nd Goon Wing - Paphos 2GW-Paphos-8 MB-339A",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -6148,6 +6164,7 @@ MissionDb = {
 						templateGroupName = "RED 3rd Goon Wing - Gecitkale 3GW-Gecitkale-1 Tu-22M3",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 100 },
@@ -6172,6 +6189,7 @@ MissionDb = {
 						templateGroupName = "RED 4th Goon Wing - Ercan 4GW-Ercan-1 C-101CC",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -6199,6 +6217,7 @@ MissionDb = {
 						templateGroupName = "RED 4th Goon Wing - Ercan 4GW-Ercan-2 F-86F Sabre",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -6226,6 +6245,7 @@ MissionDb = {
 						templateGroupName = "RED 4th Goon Wing - Ercan 4GW-Ercan-3 L-39ZA",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -6253,6 +6273,7 @@ MissionDb = {
 						templateGroupName = "RED 4th Goon Wing - Ercan 4GW-Ercan-4 Mi-24P",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -6270,6 +6291,7 @@ MissionDb = {
 						templateGroupName = "RED 4th Goon Wing - Ercan 4GW-Ercan-5 Mi-8MT",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -6292,6 +6314,7 @@ MissionDb = {
 						templateGroupName = "RED 4th Goon Wing - Ercan 4GW-Ercan-6 MiG-15bis",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
 						},
@@ -6308,6 +6331,7 @@ MissionDb = {
 						templateGroupName = "RED 4th Goon Wing - Ercan 4GW-Ercan-7 MiG-19P",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -6331,6 +6355,7 @@ MissionDb = {
 						templateGroupName = "RED 4th Goon Wing - Ercan 4GW-Ercan-8 MB-339A",
 						initialInventory = 0,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -6352,7 +6377,13 @@ MissionDb = {
 			},
 		},
 		brigades = {
-		}
+		},
+		strategicZoneResources = {
+			defaultOccupied = nil,
+			defaultEmpty = nil,
+			nodeOccupied = {},
+			nodeEmpty = {},
+		},
 	},
 	bluechief = {
 	    airwings = {
@@ -6366,6 +6397,7 @@ MissionDb = {
 						templateGroupName = "BLUE 1st - Akrotiri GGD-01 E-2C",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
 						},
@@ -6382,6 +6414,7 @@ MissionDb = {
 						templateGroupName = "BLUE 1st - Akrotiri GGD-02 JTAC MQ-9 Reaper",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.RECON, performance = 50 },
 						},
@@ -6397,7 +6430,13 @@ MissionDb = {
 			},
 		},
 		brigades = {
-		}
+		},
+		strategicZoneResources = {
+			defaultOccupied = nil,
+			defaultEmpty = nil,
+			nodeOccupied = {},
+			nodeEmpty = {},
+		},
 	},
 	units = {},
 	industry = {
@@ -6440,5 +6479,5 @@ MissionDb = {
 		},
 	},
 	invokeOnActivate = {},
-	counters = {}
+	counters = {},
 }

@@ -1411,6 +1411,10 @@ local function activateAirwings(chief, side)
                         squadron.instance:SetTakeoffCold()
                     end
 
+                    if squadron.parking then
+                        squadron.instance:SetParkingIDs(squadron.parking)
+                    end
+
                     for _, capability in ipairs(squadron.capabilities) do
                         squadron.instance:AddMissionCapability({capability.mission}, capability.performance)
                     end
@@ -1776,10 +1780,8 @@ local function startObjective(objective)
 
         MissionDb.ctld.instance:AddCTLDZone(node.name, CTLD.CargoZoneType.MOVE, SMOKECOLOR.Blue, true, false)
 
-        -- Temporarily disabled because it seems like they hyper-fixate on it instead of running missions in the general zone.
-        -- ... lets give it a try.
-        MissionDb.redchief.instance:AddStrategicZone(node.opsZone)
-        MissionDb.bluechief.instance:AddStrategicZone(node.opsZone)
+        MissionDb.redchief.instance:AddStrategicZone(node.opsZone, 50, nil, MissionDb.redchief.strategicZoneResources.defaultOccupied, MissionDb.redchief.strategicZoneResources.defaultEmpty)
+        MissionDb.bluechief.instance:AddStrategicZone(node.opsZone, 50, nil, MissionDb.bluechief.strategicZoneResources.defaultOccupied, MissionDb.bluechief.strategicZoneResources.defaultEmpty)
     end
 
     spawnGroupsAtThing(objective, country.id.CJTF_RED)
@@ -2231,6 +2233,14 @@ local function initializeRedChief()
     MissionDb.redchief.borderZones = SET_ZONE:New()
     MissionDb.redchief.awacsZones = SET_ZONE:New()
     MissionDb.redchief.instance:SetConflictZones(MissionDb.redchief.conflictZones)
+
+    if MissionDb.redchief.strategicZoneResources.defaultEmptyFunc then
+        MissionDb.redchief.strategicZoneResources.defaultEmpty = MissionDb.redchief.strategicZoneResources.defaultEmptyFunc(MissionDb.redchief.instance)
+    end
+
+    if MissionDb.redchief.strategicZoneResources.defaultOccupiedFunc then
+        MissionDb.redchief.strategicZoneResources.defaultOccupied = MissionDb.redchief.strategicZoneResources.defaultOccupiedFunc(MissionDb.redchief.instance)
+    end
 end
 
 local function initializeBlueChief()
@@ -2241,6 +2251,14 @@ local function initializeBlueChief()
     MissionDb.bluechief.conflictZones = SET_ZONE:New()
     MissionDb.bluechief.awacsZones = SET_ZONE:New()
     MissionDb.bluechief.instance:SetConflictZones(MissionDb.bluechief.conflictZones)
+
+    if MissionDb.bluechief.strategicZoneResources.defaultEmptyFunc then
+        MissionDb.bluechief.strategicZoneResources.defaultEmpty = MissionDb.bluechief.strategicZoneResources.defaultEmptyFunc(MissionDb.bluechief.instance)
+    end
+
+    if MissionDb.bluechief.strategicZoneResources.defaultOccupiedFunc then
+        MissionDb.bluechief.strategicZoneResources.defaultOccupied = MissionDb.bluechief.strategicZoneResources.defaultOccupiedFunc(MissionDb.bluechief.instance)
+    end
 end
 
 local function initializeObjectives()

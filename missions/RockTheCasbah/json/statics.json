@@ -1,5 +1,103 @@
 {
-    "blue": {},
+    "blue": {
+        "Al Dhafra AFB Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 2.1991148575129,
+            "name": "Al Dhafra AFB Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "sklad",
+            "type": "Warehouse",
+            "x": -210006.93803918,
+            "y": -173573.41296537
+        },
+        "Al Dhafra AFB Brigade Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 5.3756140961425,
+            "name": "Al Dhafra AFB Brigade Warehouse",
+            "rate": 100,
+            "shape_name": "sklad",
+            "type": "Warehouse",
+            "x": -209851.57777041,
+            "y": -173782.40012893
+        }
+    },
     "neutrals": {},
-    "red": {}
+    "red": {
+        "Liwa AFB Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 5.4279739737024,
+            "name": "Liwa AFB Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "sklad",
+            "type": "Warehouse",
+            "x": -276016.53650839,
+            "y": -248995.61148065
+        },
+        "Liwa AFB Brigade Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "effectPreset": "1",
+            "effectTransparency": 1,
+            "heading": 5.4279739737024,
+            "name": "Liwa AFB Brigade Warehouse",
+            "rate": 100,
+            "shape_name": "sklad",
+            "type": "Warehouse",
+            "x": -276676.8413246,
+            "y": -248114.42956157
+        },
+        "Static FARP Fuel Depot-1": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 2.3736477827123,
+            "name": "Static FARP Fuel Depot-1",
+            "rate": 20,
+            "shape_name": "GSM Rus",
+            "type": "FARP Fuel Depot",
+            "x": -206808.84971081,
+            "y": -183057.68274015
+        },
+        "Static FARP Tent-1": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 1.0471975511966,
+            "name": "Static FARP Tent-1",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": -206790.20710833,
+            "y": -182987.43981259
+        },
+        "Static FARP Tent-2": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.5061454830784,
+            "name": "Static FARP Tent-2",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": -206803.90455484,
+            "y": -182975.02348266
+        },
+        "Static FARP Tent-3": {
+            "canCargo": false,
+            "category": "Fortifications",
+            "heading": 0.628318530718,
+            "name": "Static FARP Tent-3",
+            "rate": 50,
+            "shape_name": "PalatkaB",
+            "type": "FARP Tent",
+            "x": -206813.64477528,
+            "y": -182956.40247301
+        }
+    }
 }

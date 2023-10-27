@@ -1,59 +1,318 @@
 {
     "objectives": {
         "OBJ-1": {
-            "airbases": [],
-            "blueAwacsZones": [],
+            "airbases": [
+                "AIRBASE-1"
+            ],
+            "blueAwacsZones": [
+                "BLUE-AWACS-1"
+            ],
             "borderZones": [],
             "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
             "farps": [],
-            "label": "Testing",
+            "label": "Danger Close",
             "nodes": {
                 "NODE-1": {
                     "blueCaptureThreshold": "0",
-                    "label": "Test",
+                    "label": "Desert Way",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
-                    "x": -185366.35037543,
-                    "y": -183422.74442866
+                    "x": -213035.97826936,
+                    "y": -186659.04050694
+                },
+                "NODE-2": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Cadillac",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -213367.49294069,
+                    "y": -179984.88292062
+                },
+                "NODE-3": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Boogie Man",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -206575.54338919,
+                    "y": -184269.87638399
+                },
+                "NODE-4": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Raga Drop",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -205747.52629529,
+                    "y": -178357.26040547
+                }
+            },
+            "qrfKillOnComplete": [],
+            "qrfs": [
+                "QRF-1"
+            ],
+            "redAwacsZones": [],
+            "reinforcements": [],
+            "roadbases": [],
+            "ship_groups": [],
+            "static_groups": [
+                "Static FARP Fuel Depot-1",
+                "Static FARP Tent-1",
+                "Static FARP Tent-2",
+                "Static FARP Tent-3"
+            ],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED AIR DEFENSE BATTERY C 178-1",
+                "RED RG 180-10",
+                "RED RG 180-11",
+                "RED RG 180-12",
+                "RED RG 180-13",
+                "RED RG 180-14",
+                "RED RG 180-15",
+                "RED RG 180-16",
+                "RED RG 180-17",
+                "RED RG 180-18",
+                "RED RG 180-19",
+                "RED RG 180-20",
+                "RED RG 180-21",
+                "RED RG 180-22",
+                "RED RG 180-7",
+                "RED RG 180-8",
+                "RED RG 180-9"
+            ],
+            "vertices": [
+                {
+                    "x": -216284.04812121,
+                    "y": -179064.36498591
+                },
+                {
+                    "x": -203534.29411611,
+                    "y": -175506.14846988
+                },
+                {
+                    "x": -203728.53010198,
+                    "y": -185969.34794006
+                },
+                {
+                    "x": -216411.75811566,
+                    "y": -190826.74663003
+                }
+            ],
+            "x": -209989.65761374,
+            "y": -182841.65200647
+        },
+        "OBJ-2": {
+            "airbases": [],
+            "blueAwacsZones": [],
+            "borderZones": [
+                "BORDERZONE-1"
+            ],
+            "capZones": [
+                "CAP-1"
+            ],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Liwa",
+            "nodes": {
+                "NODE-5": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Executive",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -279428.61266535,
+                    "y": -260314.3327398
+                },
+                "NODE-6": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Liwa AFB West",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -275698.67534556,
+                    "y": -250398.33520212
+                },
+                "NODE-7": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Liwa AFB East",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -275017.78404789,
+                    "y": -246496.79774403
                 }
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [
+                "RED-AWACS-1"
+            ],
+            "reinforcements": [],
+            "roadbases": [],
+            "ship_groups": [],
+            "static_groups": [
+                "Liwa AFB Airwing Warehouse",
+                "Liwa AFB Brigade Warehouse"
+            ],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED RG 180-23",
+                "RED RG 180-24",
+                "RED RG 180-25",
+                "RED RG 180-26",
+                "RED RG 180-27",
+                "RED SAM SA-2 156-1",
+                "RED SAM SA-2 156-2",
+                "RED SAM SA-3 158-1",
+                "RED SAM SA-3 158-2"
+            ],
+            "vertices": [
+                {
+                    "x": -282800.86758242,
+                    "y": -227914.67292279
+                },
+                {
+                    "x": -255501.38681955,
+                    "y": -248564.2801665
+                },
+                {
+                    "x": -264557.46457262,
+                    "y": -275207.52341103
+                },
+                {
+                    "x": -290413.22279514,
+                    "y": -266982.67984786
+                }
+            ],
+            "x": -273318.23544243,
+            "y": -254667.28908704
+        },
+        "OBJ-3": {
+            "airbases": [],
+            "blueAwacsZones": [
+                "BLUE-AWACS-1"
+            ],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Bad Neighbors",
+            "nodes": {
+                "NODE-10": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Shrubbery",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -202910.36266212,
+                    "y": -166859.05640175
+                },
+                "NODE-11": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Round Here",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -203682.98836673,
+                    "y": -172138.28356625
+                },
+                "NODE-12": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Rush Hour",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -206656.39747016,
+                    "y": -172632.42434695
+                },
+                "NODE-8": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Overflow Parking",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -209886.860202,
+                    "y": -164249.45592403
+                },
+                "NODE-9": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Pool Party",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -204779.25563231,
+                    "y": -164239.21055619
+                }
+            },
+            "qrfKillOnComplete": [],
+            "qrfs": [
+                "QRF-2"
+            ],
             "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
             "static_groups": [],
+            "strand": "STRAND-1",
             "tasks": [],
-            "vehicle_groups": [],
+            "vehicle_groups": [
+                "RED RG 180-1",
+                "RED RG 180-2",
+                "RED RG 180-3",
+                "RED RG 180-4",
+                "RED RG 180-5",
+                "RED RG 180-6",
+                "RED RG 180-28",
+                "RED RG 180-29",
+                "RED RG 180-30",
+                "RED RG 180-31",
+                "RED RG 180-32",
+                "RED RG 180-33",
+                "RED RG 180-34",
+                "RED RG 180-35",
+                "RED RG 180-36",
+                "RED RG 180-37",
+                "RED RG 180-38",
+                "RED RG 180-39",
+                "RED RG 180-40",
+                "RED AIR DEFENSE BATTERY C 178-2",
+                "RED RG 180-41",
+                "RED RG 180-42",
+                "RED RG 180-43",
+                "RED RG 180-44",
+                "RED RG 180-45",
+                "RED RG 180-46",
+                "RED RG 180-47"
+            ],
             "vertices": [
                 {
-                    "x": -190159.04530615,
-                    "y": -177067.98125133
+                    "x": -213149.24468539,
+                    "y": -164175.6421228
                 },
                 {
-                    "x": -179911.13107494,
-                    "y": -176970.69092635
+                    "x": -200667.51538063,
+                    "y": -161148.54637241
                 },
                 {
-                    "x": -181856.93757454,
-                    "y": -188386.08905731
+                    "x": -200632.50275648,
+                    "y": -174720.74674376
                 },
                 {
-                    "x": -189834.74422288,
-                    "y": -189942.73425699
+                    "x": -205868.92434241,
+                    "y": -175983.86701289
                 }
             ],
-            "x": -185440.46454463,
-            "y": -183091.873873
+            "x": -205079.54679123,
+            "y": -169007.20056297
         }
     },
     "strands": {
         "STRAND-1": [
-            "OBJ-1"
+            "OBJ-1",
+            "OBJ-3"
+        ],
+        "STRAND-2": [
+            "OBJ-2"
         ]
     }
 }

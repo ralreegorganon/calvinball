@@ -46,7 +46,7 @@ class Clients:
                 for key, value in a["properties"].items():
                         u.set_property(key, value)
 
-        if a["airframe"].helicopter:
+        if a["airframe"].helicopter or a["airframe"] == pydcs_extensions.Hercules:
             ctld_groups.append(group_name)
 
         if a["airframe"].helicopter or a["airframe"] == pydcs_extensions.Bronco_OV_10A:

@@ -4,8 +4,15 @@
         "label": "Al Dhafra AFB",
         "radius": 2300.0208,
         "ship_groups": [],
-        "static_groups": [],
-        "vehicle_groups": [],
+        "static_groups": [
+            "Al Dhafra AFB Airwing Warehouse",
+            "Al Dhafra AFB Brigade Warehouse"
+        ],
+        "vehicle_groups": [
+            "FARP MASH 1-2",
+            "FARP MASH 1-1",
+            "FARP MASH 1-3"
+        ],
         "x": -211125.24787503,
         "y": -173279.66036909
     }

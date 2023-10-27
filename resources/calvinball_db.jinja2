@@ -393,6 +393,7 @@ MissionDb = {
 						templateGroupName = "{{squadron["groupName"]}}",
 						initialInventory = {{squadron["initialInventory"]}},
 						takeoffCold = {{squadron["takeoffCold"] | default("false", true)}},
+						parking = {{squadron["parking"] | default("nil", true)}},
 						capabilities = {
 {% 						for mission, performance in squadron["capabilities"].items() %}
 							{ mission = {{mission}}, performance = {{performance}} },
@@ -434,7 +435,13 @@ MissionDb = {
 				}
 			},
 {% 			endfor %}
-		}
+		},
+		strategicZoneResources = {
+			defaultOccupied = nil,
+			defaultEmpty = nil,
+			nodeOccupied = {},
+			nodeEmpty = {},
+		},
 	},
 	bluechief = {
 	    airwings = {
@@ -450,6 +457,7 @@ MissionDb = {
 						templateGroupName = "{{squadron["groupName"]}}",
 						initialInventory = {{squadron["initialInventory"]}},
 						takeoffCold = {{squadron["takeoffCold"] | default("false", true)}},
+						parking = {{squadron["parking"] | default("nil", true)}},
 						capabilities = {
 {% 						for mission, performance in squadron["capabilities"].items() %}
 							{ mission = {{mission}}, performance = {{performance}} },
@@ -491,7 +499,13 @@ MissionDb = {
 				}
 			},
 {% 			endfor %}
-		}
+		},
+		strategicZoneResources = {
+			defaultOccupied = nil,
+			defaultEmpty = nil,
+			nodeOccupied = {},
+			nodeEmpty = {},
+		},
 	},
 	units = {},
 	industry = {
@@ -534,5 +548,5 @@ MissionDb = {
 		},
 	},
 	invokeOnActivate = {},
-	counters = {}
+	counters = {},
 }

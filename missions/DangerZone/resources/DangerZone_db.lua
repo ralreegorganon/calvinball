@@ -20825,6 +20825,7 @@ MissionDb = {
 						templateGroupName = "RED 1st Goon Wing - Evreux RED EWR 1GW-Evreux-2 A-50",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
 						},
@@ -20848,6 +20849,7 @@ MissionDb = {
 						templateGroupName = "RED Stoney Cross Stoney Cross 1 JF-17",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -20879,6 +20881,7 @@ MissionDb = {
 						templateGroupName = "RED Stoney Cross Stoney Cross 2 F-16C_50",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -20921,6 +20924,7 @@ MissionDb = {
 						templateGroupName = "RED Lymington Lymington 1 F-5E-3",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -20947,6 +20951,7 @@ MissionDb = {
 						templateGroupName = "RED Lymington Lymington 2 MiG-21Bis",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -20980,6 +20985,7 @@ MissionDb = {
 						templateGroupName = "RED Needs Oar Point Needs Oar Point 1 Mirage-F1EE",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21006,6 +21012,7 @@ MissionDb = {
 						templateGroupName = "RED Needs Oar Point Needs Oar Point 2 Su-25TM",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -21041,6 +21048,7 @@ MissionDb = {
 						templateGroupName = "RED 1st Goon Wing - Anglo 1GW-Anglo-1 Mi-26",
 						initialInventory = 99,
 						takeoffCold = true,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
 						},
@@ -21057,6 +21065,7 @@ MissionDb = {
 						templateGroupName = "RED 1st Goon Wing - Anglo 1GW-Anglo-2 Mi-24P",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -21082,6 +21091,7 @@ MissionDb = {
 						templateGroupName = "RED FOB Yes Minister Yes Minister 1 Mi-26",
 						initialInventory = 99,
 						takeoffCold = true,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
 						},
@@ -21098,6 +21108,7 @@ MissionDb = {
 						templateGroupName = "RED FOB Yes Minister Yes Minister 2 Mi-24P",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -21123,6 +21134,7 @@ MissionDb = {
 						templateGroupName = "RED FOB Murray Murray 1 Mi-26",
 						initialInventory = 99,
 						takeoffCold = true,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
 						},
@@ -21139,6 +21151,7 @@ MissionDb = {
 						templateGroupName = "RED FOB Murray Murray 2 Mi-28N",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -21164,6 +21177,7 @@ MissionDb = {
 						templateGroupName = "RED FOB Smith Smith 1 Mi-26",
 						initialInventory = 99,
 						takeoffCold = true,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
 						},
@@ -21180,6 +21194,7 @@ MissionDb = {
 						templateGroupName = "RED FOB Smith Smith 2 Ka-50_3",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -21205,6 +21220,7 @@ MissionDb = {
 						templateGroupName = "RED Funtington Funtington 1 Mirage-F1EE",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21231,6 +21247,7 @@ MissionDb = {
 						templateGroupName = "RED Funtington Funtington 2 Su-25TM",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -21266,6 +21283,7 @@ MissionDb = {
 						templateGroupName = "RED Tangmere Tangmere 1 JF-17",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21297,6 +21315,7 @@ MissionDb = {
 						templateGroupName = "RED Tangmere Tangmere 2 F-16C_50",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21339,6 +21358,7 @@ MissionDb = {
 						templateGroupName = "RED Ford Ford 1 Su-27",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21365,6 +21385,7 @@ MissionDb = {
 						templateGroupName = "RED Ford Ford 2 MiG-29A",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21390,6 +21411,7 @@ MissionDb = {
 						templateGroupName = "RED West Malling West Malling 1 Su-27",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21416,6 +21438,7 @@ MissionDb = {
 						templateGroupName = "RED West Malling West Malling 2 MiG-29A",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 60 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21434,6 +21457,7 @@ MissionDb = {
 						templateGroupName = "RED West Malling West Malling 3 JF-17",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21465,6 +21489,7 @@ MissionDb = {
 						templateGroupName = "RED West Malling West Malling 4 F-16C_50",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 40 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21500,6 +21525,7 @@ MissionDb = {
 						templateGroupName = "RED West Malling West Malling 5 Su-25TM",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -21535,6 +21561,7 @@ MissionDb = {
 						templateGroupName = "RED Chailey Chailey 1 Su-27",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21561,6 +21588,7 @@ MissionDb = {
 						templateGroupName = "RED Chailey Chailey 2 MiG-29A",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 60 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21579,6 +21607,7 @@ MissionDb = {
 						templateGroupName = "RED Chailey Chailey 3 JF-17",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21610,6 +21639,7 @@ MissionDb = {
 						templateGroupName = "RED Chailey Chailey 4 F-16C_50",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 40 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21645,6 +21675,7 @@ MissionDb = {
 						templateGroupName = "RED Chailey Chailey 5 Su-25TM",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -21680,6 +21711,7 @@ MissionDb = {
 						templateGroupName = "RED FOB Bo'ohw'o'wo'er Bo'ohw'o'wo'er 1 Mi-26",
 						initialInventory = 99,
 						takeoffCold = true,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
 						},
@@ -21696,6 +21728,7 @@ MissionDb = {
 						templateGroupName = "RED FOB Bo'ohw'o'wo'er Bo'ohw'o'wo'er 2 Mi-28N",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -21721,6 +21754,7 @@ MissionDb = {
 						templateGroupName = "RED FOB Innit Innit 1 Mi-26",
 						initialInventory = 99,
 						takeoffCold = true,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
 						},
@@ -21737,6 +21771,7 @@ MissionDb = {
 						templateGroupName = "RED FOB Innit Innit 2 Ka-50_3",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -21762,6 +21797,7 @@ MissionDb = {
 						templateGroupName = "RED Kuz Kuz 1 Su-33",
 						initialInventory = 2,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21780,6 +21816,7 @@ MissionDb = {
 						templateGroupName = "RED Kuz Kuz 2 Ka-27",
 						initialInventory = 99,
 						takeoffCold = true,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
 						},
@@ -21803,6 +21840,7 @@ MissionDb = {
 						templateGroupName = "RED Amiens-Glisy Alpha Amiens-Glisy Alpha 1 JF-17",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21834,6 +21872,7 @@ MissionDb = {
 						templateGroupName = "RED Amiens-Glisy Alpha Amiens-Glisy Alpha 2 F-16C_50",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21869,6 +21908,7 @@ MissionDb = {
 						templateGroupName = "RED Amiens-Glisy Alpha RED EWR Amiens-Glisy Alpha 3 A-50",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
 						},
@@ -21892,6 +21932,7 @@ MissionDb = {
 						templateGroupName = "RED Amiens-Glisy Beta Amiens-Glisy Beta 1 JF-17",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21923,6 +21964,7 @@ MissionDb = {
 						templateGroupName = "RED Amiens-Glisy Beta Amiens-Glisy Beta 2 F-16C_50",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -21958,6 +22000,7 @@ MissionDb = {
 						templateGroupName = "RED Amiens-Glisy Beta RED EWR Amiens-Glisy Beta 3 A-50",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
 						},
@@ -21981,6 +22024,7 @@ MissionDb = {
 						templateGroupName = "RED Amiens-Glisy Gamma Amiens-Glisy Gamma 1 JF-17",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -22012,6 +22056,7 @@ MissionDb = {
 						templateGroupName = "RED Amiens-Glisy Gamma Amiens-Glisy Gamma 2 F-16C_50",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -22047,6 +22092,7 @@ MissionDb = {
 						templateGroupName = "RED Amiens-Glisy Gamma RED EWR Amiens-Glisy Gamma 3 A-50",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
 						},
@@ -22070,6 +22116,7 @@ MissionDb = {
 						templateGroupName = "RED Poix Alpha Poix Alpha 1 JF-17",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -22101,6 +22148,7 @@ MissionDb = {
 						templateGroupName = "RED Poix Alpha Poix Alpha 2 F-16C_50",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -22136,6 +22184,7 @@ MissionDb = {
 						templateGroupName = "RED Poix Alpha RED EWR Poix Alpha 3 A-50",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
 						},
@@ -22159,6 +22208,7 @@ MissionDb = {
 						templateGroupName = "RED Poix Beta Poix Beta 1 JF-17",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -22190,6 +22240,7 @@ MissionDb = {
 						templateGroupName = "RED Poix Beta Poix Beta 2 F-16C_50",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -22225,6 +22276,7 @@ MissionDb = {
 						templateGroupName = "RED Poix Beta RED EWR Poix Beta 3 A-50",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
 						},
@@ -22248,6 +22300,7 @@ MissionDb = {
 						templateGroupName = "RED Poix Gamma Poix Gamma 1 JF-17",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -22279,6 +22332,7 @@ MissionDb = {
 						templateGroupName = "RED Poix Gamma Poix Gamma 2 F-16C_50",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -22314,6 +22368,7 @@ MissionDb = {
 						templateGroupName = "RED Poix Gamma RED EWR Poix Gamma 3 A-50",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
 						},
@@ -22337,6 +22392,7 @@ MissionDb = {
 						templateGroupName = "RED Poix Delta Poix Delta 1 JF-17",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -22368,6 +22424,7 @@ MissionDb = {
 						templateGroupName = "RED Poix Delta Poix Delta 2 F-16C_50",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
@@ -22403,6 +22460,7 @@ MissionDb = {
 						templateGroupName = "RED Poix Delta RED EWR Poix Delta 3 A-50",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
 						},
@@ -22426,6 +22484,7 @@ MissionDb = {
 						templateGroupName = "RED FOB Amiens-Glisy 1 Amiens-Glisy 1 Mi-26",
 						initialInventory = 99,
 						takeoffCold = true,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
 						},
@@ -22449,6 +22508,7 @@ MissionDb = {
 						templateGroupName = "RED FOB Amiens-Glisy 2 Amiens-Glisy 2 AH-64D_BLK_II",
 						initialInventory = 1,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BAI, performance = 50 },
 							{ mission = AUFTRAG.Type.CAS, performance = 50 },
@@ -22626,7 +22686,13 @@ MissionDb = {
 					},
 				}
 			},
-		}
+		},
+		strategicZoneResources = {
+			defaultOccupied = nil,
+			defaultEmpty = nil,
+			nodeOccupied = {},
+			nodeEmpty = {},
+		},
 	},
 	bluechief = {
 	    airwings = {
@@ -22640,6 +22706,7 @@ MissionDb = {
 						templateGroupName = "BLUE 1st CAW - Teddy GGD-01 E-2C",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
 						},
@@ -22656,6 +22723,7 @@ MissionDb = {
 						templateGroupName = "BLUE 1st CAW - Teddy GGD-02 JTAC S-3B",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.RECON, performance = 50 },
 						},
@@ -22679,6 +22747,7 @@ MissionDb = {
 						templateGroupName = "BLUE 2nd CAW - Teddy GGD-03 FA-18C_hornet",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 						},
@@ -22702,6 +22771,7 @@ MissionDb = {
 						templateGroupName = "BLUE GOON OPS - Teddy GOON OPS TEDDY FA-18C_hornet",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BOMBING, performance = 50 },
 							{ mission = AUFTRAG.Type.STRIKE, performance = 50 },
@@ -22740,6 +22810,7 @@ MissionDb = {
 						templateGroupName = "BLUE 3rd CAW - Abe GGD-04 E-2C",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
 						},
@@ -22756,6 +22827,7 @@ MissionDb = {
 						templateGroupName = "BLUE 3rd CAW - Abe GGD-05 JTAC S-3B",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.RECON, performance = 50 },
 						},
@@ -22772,6 +22844,7 @@ MissionDb = {
 						templateGroupName = "BLUE 3rd CAW - Abe GGD-06 CH-47D",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
 						},
@@ -22795,6 +22868,7 @@ MissionDb = {
 						templateGroupName = "BLUE 4th CAW - Abe GGD-07 FA-18C_hornet",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 						},
@@ -22818,6 +22892,7 @@ MissionDb = {
 						templateGroupName = "BLUE GOON OPS - Abe GOON OPS ABE FA-18C_hornet",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.BOMBING, performance = 50 },
 							{ mission = AUFTRAG.Type.STRIKE, performance = 50 },
@@ -22856,6 +22931,7 @@ MissionDb = {
 						templateGroupName = "BLUE 1st Lymington Goonwing LG-01 CH-47D",
 						initialInventory = 99,
 						takeoffCold = true,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
 						},
@@ -22879,6 +22955,7 @@ MissionDb = {
 						templateGroupName = "BLUE 1st Needs Oar Point Goonwing NOPG-01 FA-18C_hornet",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 						},
@@ -22902,6 +22979,7 @@ MissionDb = {
 						templateGroupName = "BLUE 5th CAW - Forrestal 5S-01 CH-47D",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
 						},
@@ -22925,6 +23003,7 @@ MissionDb = {
 						templateGroupName = "BLUE 6th CAW - Saratoga 6S-01 CH-47D",
 						initialInventory = 99,
 						takeoffCold = false,
+						parking = nil,
 						capabilities = {
 							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
 						},
@@ -22996,7 +23075,13 @@ MissionDb = {
 					},
 				}
 			},
-		}
+		},
+		strategicZoneResources = {
+			defaultOccupied = nil,
+			defaultEmpty = nil,
+			nodeOccupied = {},
+			nodeEmpty = {},
+		},
 	},
 	units = {},
 	industry = {
@@ -23039,5 +23124,5 @@ MissionDb = {
 		},
 	},
 	invokeOnActivate = {},
-	counters = {}
+	counters = {},
 }

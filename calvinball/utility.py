@@ -137,12 +137,12 @@ def build_copypasta_templates(m: dcs.Mission):
             "qty": 1,
             "templates": [
                 { "id": "loose infantry", "min": 1, "max": 2},
-                { "id": "bmp-1 squad", "min": 0, "max": 3},
-                { "id": "btr-80 squad", "min": 0, "max": 3},
-                { "id": "brdm-2 squad", "min": 0, "max": 2},
-                { "id": "uaz-469 squad", "min": 0, "max": 4},
-                { "id": "ural-375 squad", "min": 0, "max": 4},
-                { "id": "t-55 squad", "min": 0, "max": 1},
+                { "id": "bmp-1 squad", "min": 1, "max": 3},
+                { "id": "btr-80 squad", "min": 1, "max": 3},
+                { "id": "brdm-2 squad", "min": 1, "max": 2},
+                { "id": "uaz-469 squad", "min": 1, "max": 4},
+                { "id": "ural-375 squad", "min": 1, "max": 4},
+                { "id": "t-55 squad", "min": 1, "max": 1},
             ]
         },
         "light defense": {

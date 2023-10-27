@@ -81,13 +81,25 @@ MissionDb = {
 	    airwings = {
 		},
 		brigades = {
-		}
+		},
+		strategicZoneResources = {
+			defaultOccupied = nil,
+			defaultEmpty = nil,
+			nodeOccupied = {},
+			nodeEmpty = {},
+		},
 	},
 	bluechief = {
 	    airwings = {
 		},
 		brigades = {
-		}
+		},
+		strategicZoneResources = {
+			defaultOccupied = nil,
+			defaultEmpty = nil,
+			nodeOccupied = {},
+			nodeEmpty = {},
+		},
 	},
 	units = {},
 	industry = {
@@ -130,5 +142,5 @@ MissionDb = {
 		},
 	},
 	invokeOnActivate = {},
-	counters = {}
+	counters = {},
 }

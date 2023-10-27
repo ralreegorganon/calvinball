@@ -104,7 +104,7 @@ def radios():
     #     w.writerow(field_names)
     #     w.writerows(csv_rows)
 
-parking_slot_names(dcs.terrain.Falklands().airports["Rio Turbio"])
+parking_slot_names(dcs.terrain.PersianGulf().airports["Al Dhafra AFB"])
 #parking_slot_names(dcs.terrain.Syria().airports["Paphos"])
 #parking_slot_names(dcs.terrain.Syria().airports["Larnaca"])
 #livery_ids(dcs.helicopters.AH_64D_BLK_II)
