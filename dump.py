@@ -1,5 +1,5 @@
 import dcs
-import os
+import argparse
 import json
 from shapely.geometry import Point, Polygon
 from pathlib import Path
@@ -745,22 +745,28 @@ def dumpit(miz_export_path):
     with open("temp/temp-roadbases.json", "w") as outfile:
         json.dump(roadbase_zones, outfile, sort_keys=True)
 
-# from missions.CyprusInvasion.mission import CyprusInvasion
-# m = CyprusInvasion()
-# dumpit(m.miz_export_path)
-
-# from missions.DangerZone.mission import DangerZone
-# m = DangerZone()
-# dumpit(m.miz_export_path)
-
-# from missions.GeorgianOffensive.mission import GeorgianOffensive
-# m = GeorgianOffensive()
-# dumpit(m.miz_export_path)
-
-# from missions.AndeanAbyss.mission import AndeanAbyss
-# m = AndeanAbyss()
-# dumpit(m.miz_export_path)
-
+from missions.CyprusInvasion.mission import CyprusInvasion
+from missions.DangerZone.mission import DangerZone
+from missions.GeorgianOffensive.mission import GeorgianOffensive
+from missions.AndeanAbyss.mission import AndeanAbyss
 from missions.RockTheCasbah.mission import RockTheCasbah
-m = RockTheCasbah()
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--mission", action="store", dest="mission", required=True)
+args = parser.parse_args()
+
+m = None
+
+match args.mission:
+    case "CyprusInvasion":
+        m = CyprusInvasion()
+    case "DangerZone":
+        m = DangerZone()
+    case "GeorgianOffensive":
+        m = GeorgianOffensive()
+    case "AndeanAbyss":
+        m = AndeanAbyss()
+    case "RockTheCasbah":
+        m = RockTheCasbah()
+
 dumpit(m.miz_export_path)
