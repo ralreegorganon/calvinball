@@ -1,0 +1,32 @@
+{
+    "REINFORCEMENT-1": {
+        "component": "reinforcement",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleReinforcementTemplates": [
+            "BLUE REINFORCEMENT 1"
+        ],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": 129074.16175194,
+                "y": -94197.672286688
+            },
+            {
+                "x": 128966.32833247,
+                "y": -94173.09261019
+            },
+            {
+                "x": 129058.30389614,
+                "y": -93914.609560573
+            },
+            {
+                "x": 129158.20838771,
+                "y": -93935.224773119
+            }
+        ],
+        "x": 129064.25059206,
+        "y": -94055.149807643
+    }
+}

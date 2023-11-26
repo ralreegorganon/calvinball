@@ -1,0 +1,14 @@
+{
+    "AIRBASE-1": {
+        "component": "airbase",
+        "label": "Lymington",
+        "radius": 2300.0208,
+        "ship_groups": [],
+        "static_groups": [
+            "Lymington Airwing Warehouse"
+        ],
+        "vehicle_groups": [],
+        "x": 139755,
+        "y": -90846
+    }
+}

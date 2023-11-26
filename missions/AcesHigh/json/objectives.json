@@ -1,0 +1,135 @@
+{
+    "objectives": {
+        "OBJ-1": {
+            "airbases": [
+                "AIRBASE-1"
+            ],
+            "blueAwacsZones": [],
+            "borderZones": [],
+            "capZones": [
+                "CAP-1"
+            ],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "West Wight",
+            "nodes": {
+                "NODE-1": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Live To Fly",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": 130744.18774475,
+                    "y": -89983.149482468
+                },
+                "NODE-2": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Fly To Live",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": 134097.45953817,
+                    "y": -80055.194135552
+                },
+                "NODE-3": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Do Or Die",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": 125329.4794246,
+                    "y": -76968.092418048
+                }
+            },
+            "qrfKillOnComplete": [],
+            "qrfs": [
+                "QRF-1",
+                "QRF-2"
+            ],
+            "redAwacsZones": [],
+            "reinforcements": [
+                "REINFORCEMENT-1"
+            ],
+            "roadbases": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED RG Ground 1",
+                "RED RG Ground 2",
+                "RED RG Ground 4",
+                "RED RG Ground 5",
+                "RED RG Ground 6",
+                "RED RG Ground 3"
+            ],
+            "vertices": [
+                {
+                    "x": 134373.76407493,
+                    "y": -92016.279992664
+                },
+                {
+                    "x": 117501.25134117,
+                    "y": -92741.555124438
+                },
+                {
+                    "x": 118395.84286987,
+                    "y": -75953.227116091
+                },
+                {
+                    "x": 140895.01109477,
+                    "y": -76246.391414502
+                }
+            ],
+            "x": 127791.46734518,
+            "y": -84239.363411924
+        },
+        "OBJ-2": {
+            "airbases": [],
+            "blueAwacsZones": [],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "East Wight",
+            "nodes": {},
+            "qrfKillOnComplete": [],
+            "qrfs": [],
+            "redAwacsZones": [],
+            "reinforcements": [],
+            "roadbases": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": 140932.73465395,
+                    "y": -76038.911839028
+                },
+                {
+                    "x": 118478.19252519,
+                    "y": -75383.999352543
+                },
+                {
+                    "x": 118784.54542383,
+                    "y": -58500.142313044
+                },
+                {
+                    "x": 138294.19766005,
+                    "y": -57525.766945968
+                }
+            ],
+            "x": 129122.41756575,
+            "y": -66862.205112646
+        }
+    },
+    "strands": {
+        "STRAND-1": [
+            "OBJ-1",
+            "OBJ-2"
+        ]
+    }
+}

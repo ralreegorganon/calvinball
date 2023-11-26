@@ -750,6 +750,7 @@ from missions.DangerZone.mission import DangerZone
 from missions.GeorgianOffensive.mission import GeorgianOffensive
 from missions.AndeanAbyss.mission import AndeanAbyss
 from missions.RockTheCasbah.mission import RockTheCasbah
+from missions.AcesHigh.mission import AcesHigh
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--mission", action="store", dest="mission", required=True)
@@ -768,5 +769,7 @@ match args.mission:
         m = AndeanAbyss()
     case "RockTheCasbah":
         m = RockTheCasbah()
+    case "AcesHigh":
+        m = AcesHigh()
 
 dumpit(m.miz_export_path)

@@ -1,0 +1,29 @@
+{
+    "blue": {
+        "Lymington Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.6897733615015,
+            "name": "Lymington Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "sklad",
+            "type": "Warehouse",
+            "x": 139783.14802252,
+            "y": -90321.914661723
+        }
+    },
+    "neutrals": {},
+    "red": {
+        "Funtington Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.8119464091411,
+            "name": "Funtington Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "sklad",
+            "type": "Warehouse",
+            "x": 152946.39092364,
+            "y": -46156.327299636
+        }
+    }
+}
