@@ -2491,6 +2491,11 @@ local function randomChiefMissions()
         local chosen = bombingPotentials[math.random(#bombingPotentials)]
 
         local bombingMission = AUFTRAG:NewBOMBCARPET(chosen.coordinate, 25000, 500)
+
+        -- This is really WW2 specific, need to make it conditional.
+        bombingMission:SetFormation(ENUMS.Formation.FixedWing.BomberElement.Close)
+        bombingMission:SetMissionSpeed(225)
+
         MissionDb.redchief.instance:AddMission(bombingMission)
     end
 
@@ -2871,6 +2876,9 @@ local function initializeMarkerOps()
             if MissionDb.counters.opstokens > 0 then
                 MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
                 local mission = AUFTRAG:NewBOMBCARPET(Coord, 25000, 500)
+                -- This is really WW2 specific, need to make it conditional.
+                mission:SetFormation(ENUMS.Formation.FixedWing.BomberElement.Close)
+                mission:SetMissionSpeed(225)
                 MissionDb.bluechief.instance:AddMission(mission)
                 MESSAGE:New(string.format("GOON OPERATION: CARPETBOMB @ %s. %i tokens remaining.", Coord:ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
             else

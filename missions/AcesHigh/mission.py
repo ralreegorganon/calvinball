@@ -216,6 +216,7 @@ class AcesHighRedAirwings(calvinball.redairwing.RedAirwings):
         for p in fg.units:
             p.pylons.clear()
             p.load_pylon(dcs.planes.Ju_88A4.Pylon2._10_x_SC_50___50kg_GP_Bomb_LD)
+            p.fuel = 0.25
 
     def define(self, m: dcs.Mission):
         red_airwings = {
@@ -282,6 +283,7 @@ class AcesHighBlueAirwings(calvinball.blueairwing.BlueAirwings):
         for p in fg.units:
             p.pylons.clear()
             p.load_pylon(dcs.planes.B_17G.Pylon1._12_AN_M64___500lb_GP_Bomb_LD)
+            p.fuel = 0.25
 
     def define(self, m: dcs.Mission):
         blue_airwings = {
