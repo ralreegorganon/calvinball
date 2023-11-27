@@ -21,7 +21,10 @@ class BlueAirwings:
                     loadout_group_name = f"BLUE {airwing_name} {squadron_name} {airframe.id} LOADOUT {i}"
                     fg = m.flight_group_inflight(country, loadout_group_name, airframe, p, 42000)
                     fg.late_activation = True
-                    fg.load_loadout(loadout)
+                    if "loadoutFuncs" in squadron and loadout in squadron["loadoutFuncs"]:
+                        squadron["loadoutFuncs"][loadout](fg)
+                    else:
+                        fg.load_loadout(loadout)
                     squadron["loadoutGroups"][loadout_group_name] = capability
 
         return blue_airwings

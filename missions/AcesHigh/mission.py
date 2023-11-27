@@ -189,6 +189,11 @@ class AcesHighRedAirwings(calvinball.redairwing.RedAirwings):
     def __init__(self) -> None:
         super().__init__()
 
+    def ju88loadout(self, fg: dcs.unitgroup.FlyingGroup):
+        for p in fg.units:
+            p.pylons.clear()
+            p.load_pylon(dcs.planes.Ju_88A4.Pylon2._10_x_SC_50___50kg_GP_Bomb_LD)
+
     def define(self, m: dcs.Mission):
         red_airwings = {
             "Funtington": {
@@ -232,7 +237,10 @@ class AcesHighRedAirwings(calvinball.redairwing.RedAirwings):
                         "initialInventory": 0,
                         "livery": "Ju-88",
                         "loadouts": {
-                            "Empty": "{ AUFTRAG.Type.BOMBCARPET }"
+                            "FuncBomb": "{ AUFTRAG.Type.BOMBCARPET }"
+                        },
+                        "loadoutFuncs": {
+                            "FuncBomb": self.ju88loadout
                         },
                         "capabilities": {
                             "AUFTRAG.Type.BOMBCARPET": 50
@@ -246,6 +254,11 @@ class AcesHighRedAirwings(calvinball.redairwing.RedAirwings):
 class AcesHighBlueAirwings(calvinball.blueairwing.BlueAirwings):
     def __init__(self) -> None:
         super().__init__()
+
+    def b17loadout(self, fg: dcs.unitgroup.FlyingGroup):
+        for p in fg.units:
+            p.pylons.clear()
+            p.load_pylon(dcs.planes.B_17G.Pylon1._12_AN_M64___500lb_GP_Bomb_LD)
 
     def define(self, m: dcs.Mission):
         blue_airwings = {
@@ -277,7 +290,10 @@ class AcesHighBlueAirwings(calvinball.blueairwing.BlueAirwings):
                         "initialInventory": 99,
                         "livery": "91st BG, 323rd BS, 'Out House Mouse",
                         "loadouts": {
-                            "Empty": "{ AUFTRAG.Type.BOMBCARPET }"
+                            "FuncBomb": "{ AUFTRAG.Type.BOMBCARPET }"
+                        },
+                        "loadoutFuncs": {
+                            "FuncBomb": self.b17loadout
                         },
                         "capabilities": {
                             "AUFTRAG.Type.BOMBCARPET": 50
