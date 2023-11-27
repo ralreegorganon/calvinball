@@ -5759,7 +5759,14 @@ MissionDb = {
 	playerRecce = {},
 	strandtasks = {},
 	samnetwork = {},
-	markerops = {},
+	markerops = {
+		hintOptions = {},
+		enableBomb = true,
+		enableStrike = true,
+		enableSead = true,
+		enableCas = true,
+		enableCarpetbomb = true
+	},
 	redchief = {
 	    airwings = {
 			{
@@ -6440,12 +6447,15 @@ MissionDb = {
 	},
 	units = {},
 	industry = {
-		percentage = 100,
-		active = 0
+		redPercentage = 100,
+		redAlive = 0,
+		bluePercentage = 100,
+		blueAlive = 0
 	},
 	devmode = true,
 	lateActivateStatics = false,
 	enableConvoys = true,
+	enableAutolase = true,
 	missionName = "CyprusInvasion",
 	settings = {
 		blueCasevacChance = 10,
@@ -6477,7 +6487,14 @@ MissionDb = {
 			repeatAfter = 3600,
 			industryDelay = 1800
 		},
+		airBombingEscortChance = 25,
+		blueIndustryTokenSupply = {
+			minStart = 1800,
+			maxStart = 1800,
+			repeatAfter = 3600,
+			industryDelay = 3600
+		},
 	},
 	invokeOnActivate = {},
-	counters = {},
+	counters = {}
 }

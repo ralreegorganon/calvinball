@@ -61,5 +61,119 @@
         ],
         "x": 152545.54330812,
         "y": -45995.174505803
+    },
+    "QRF-3": {
+        "component": "qrf",
+        "label": "Industry Target",
+        "ship_groups": [],
+        "static_groups": [
+            "INDUSTRYTARGET-1",
+            "INDUSTRYTARGET-10",
+            "INDUSTRYTARGET-11",
+            "INDUSTRYTARGET-12",
+            "INDUSTRYTARGET-2",
+            "INDUSTRYTARGET-3",
+            "INDUSTRYTARGET-4",
+            "INDUSTRYTARGET-5",
+            "INDUSTRYTARGET-6",
+            "INDUSTRYTARGET-7",
+            "INDUSTRYTARGET-8",
+            "INDUSTRYTARGET-9"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": 122834.4152651,
+                "y": -77106.173356424
+            },
+            {
+                "x": 122612.16702672,
+                "y": -77286.522336747
+            },
+            {
+                "x": 122736.04309402,
+                "y": -77639.022616469
+            },
+            {
+                "x": 122966.48901332,
+                "y": -77623.538108057
+            }
+        ],
+        "x": 122787.27859979,
+        "y": -77413.814104424
+    },
+    "QRF-4": {
+        "component": "qrf",
+        "label": "Industry Target",
+        "ship_groups": [],
+        "static_groups": [
+            "INDUSTRYTARGET-13",
+            "INDUSTRYTARGET-14",
+            "INDUSTRYTARGET-15",
+            "INDUSTRYTARGET-16",
+            "INDUSTRYTARGET-17",
+            "INDUSTRYTARGET-18",
+            "INDUSTRYTARGET-19",
+            "INDUSTRYTARGET-20",
+            "INDUSTRYTARGET-21",
+            "INDUSTRYTARGET-22",
+            "INDUSTRYTARGET-23",
+            "INDUSTRYTARGET-24"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": 129087.42900696,
+                "y": -76183.037767198
+            },
+            {
+                "x": 128841.97794743,
+                "y": -76235.698176334
+            },
+            {
+                "x": 128923.1999344,
+                "y": -76507.479440433
+            },
+            {
+                "x": 129137.85804283,
+                "y": -76424.026080192
+            }
+        ],
+        "x": 128997.6162329,
+        "y": -76337.560366039
+    },
+    "QRF-5": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [
+            "Fecamp-Benouville Airwing Warehouse"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [
+            "RED RG Gound 1-1"
+        ],
+        "vertices": [
+            {
+                "x": 32200.063635284,
+                "y": 47134.669051907
+            },
+            {
+                "x": 30183.399311194,
+                "y": 47659.90959934
+            },
+            {
+                "x": 30282.287192034,
+                "y": 45314.159376701
+            },
+            {
+                "x": 31355.463866114,
+                "y": 45216.892608658
+            }
+        ],
+        "x": 31005.303501154,
+        "y": 46331.407659151
     }
 }

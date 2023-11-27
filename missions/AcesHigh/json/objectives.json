@@ -2,7 +2,8 @@
     "objectives": {
         "OBJ-1": {
             "airbases": [
-                "AIRBASE-1"
+                "AIRBASE-1",
+                "AIRBASE-2"
             ],
             "blueAwacsZones": [],
             "borderZones": [],
@@ -43,11 +44,16 @@
             "qrfKillOnComplete": [],
             "qrfs": [
                 "QRF-1",
-                "QRF-2"
+                "QRF-2",
+                "QRF-3",
+                "QRF-4",
+                "QRF-5"
             ],
             "redAwacsZones": [],
             "reinforcements": [
-                "REINFORCEMENT-1"
+                "REINFORCEMENT-1",
+                "REINFORCEMENT-2",
+                "REINFORCEMENT-3"
             ],
             "roadbases": [],
             "ship_groups": [],
@@ -57,10 +63,10 @@
             "vehicle_groups": [
                 "RED RG Ground 1",
                 "RED RG Ground 2",
+                "RED RG Ground 3",
                 "RED RG Ground 4",
                 "RED RG Ground 5",
-                "RED RG Ground 6",
-                "RED RG Ground 3"
+                "RED RG Ground 6"
             ],
             "vertices": [
                 {

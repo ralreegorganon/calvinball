@@ -1,7 +1,7 @@
 {
     "REINFORCEMENT-1": {
         "component": "reinforcement",
-        "label": "REINFORCEMENT 1",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleReinforcementTemplates": [
@@ -33,7 +33,7 @@
     },
     "REINFORCEMENT-2": {
         "component": "reinforcement",
-        "label": "REINFORCEMENT 2",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleReinforcementTemplates": [
@@ -65,7 +65,7 @@
     },
     "REINFORCEMENT-3": {
         "component": "reinforcement",
-        "label": "REINFORCEMENT 3",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleReinforcementTemplates": [
@@ -97,7 +97,7 @@
     },
     "REINFORCEMENT-4": {
         "component": "reinforcement",
-        "label": "REINFORCEMENT 4",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleReinforcementTemplates": [
@@ -129,7 +129,7 @@
     },
     "REINFORCEMENT-5": {
         "component": "reinforcement",
-        "label": "REINFORCEMENT 5",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleReinforcementTemplates": [
@@ -161,7 +161,7 @@
     },
     "REINFORCEMENT-6": {
         "component": "reinforcement",
-        "label": "REINFORCEMENT 6",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleReinforcementTemplates": [
@@ -193,7 +193,7 @@
     },
     "REINFORCEMENT-7": {
         "component": "reinforcement",
-        "label": "REINFORCEMENT 7",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleReinforcementTemplates": [
@@ -225,7 +225,7 @@
     },
     "REINFORCEMENT-8": {
         "component": "reinforcement",
-        "label": "REINFORCEMENT 8",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleReinforcementTemplates": [

@@ -28,5 +28,140 @@
         ],
         "x": 129064.25059206,
         "y": -94055.149807643
+    },
+    "REINFORCEMENT-2": {
+        "component": "reinforcement",
+        "label": "Industry Defense",
+        "ship_groups": [],
+        "static_groups": [
+            "INDUSTRYTARGET-25",
+            "INDUSTRYTARGET-26",
+            "INDUSTRYTARGET-27",
+            "INDUSTRYTARGET-28",
+            "INDUSTRYTARGET-29",
+            "INDUSTRYTARGET-30",
+            "INDUSTRYTARGET-31",
+            "INDUSTRYTARGET-32",
+            "INDUSTRYTARGET-33",
+            "INDUSTRYTARGET-34",
+            "INDUSTRYTARGET-35",
+            "INDUSTRYTARGET-36",
+            "INDUSTRYTARGET-37",
+            "INDUSTRYTARGET-38",
+            "INDUSTRYTARGET-39",
+            "INDUSTRYTARGET-40",
+            "INDUSTRYTARGET-41",
+            "INDUSTRYTARGET-42",
+            "INDUSTRYTARGET-43",
+            "INDUSTRYTARGET-44"
+        ],
+        "vehicleReinforcementTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": 135151.20923371,
+                "y": -124018.24502969
+            },
+            {
+                "x": 134454.56189081,
+                "y": -123795.5854537
+            },
+            {
+                "x": 134642.81912888,
+                "y": -123225.08001651
+            },
+            {
+                "x": 135331.8215078,
+                "y": -123501.25434038
+            }
+        ],
+        "x": 134895.1029403,
+        "y": -123635.04121007
+    },
+    "REINFORCEMENT-3": {
+        "component": "reinforcement",
+        "label": "Industry Defense",
+        "ship_groups": [],
+        "static_groups": [
+            "INDUSTRYTARGET-45",
+            "INDUSTRYTARGET-46",
+            "INDUSTRYTARGET-47",
+            "INDUSTRYTARGET-50",
+            "INDUSTRYTARGET-48",
+            "INDUSTRYTARGET-49",
+            "INDUSTRYTARGET-51",
+            "INDUSTRYTARGET-52",
+            "INDUSTRYTARGET-53",
+            "INDUSTRYTARGET-54",
+            "INDUSTRYTARGET-55",
+            "INDUSTRYTARGET-56",
+            "INDUSTRYTARGET-57",
+            "INDUSTRYTARGET-58",
+            "INDUSTRYTARGET-59",
+            "INDUSTRYTARGET-60",
+            "INDUSTRYTARGET-61",
+            "INDUSTRYTARGET-62",
+            "INDUSTRYTARGET-63",
+            "INDUSTRYTARGET-64",
+            "INDUSTRYTARGET-65",
+            "INDUSTRYTARGET-66",
+            "INDUSTRYTARGET-67",
+            "INDUSTRYTARGET-68",
+            "INDUSTRYTARGET-69",
+            "INDUSTRYTARGET-70",
+            "INDUSTRYTARGET-71",
+            "INDUSTRYTARGET-72",
+            "INDUSTRYTARGET-73",
+            "INDUSTRYTARGET-74",
+            "INDUSTRYTARGET-75",
+            "INDUSTRYTARGET-76",
+            "INDUSTRYTARGET-77",
+            "INDUSTRYTARGET-78",
+            "INDUSTRYTARGET-79",
+            "INDUSTRYTARGET-80",
+            "INDUSTRYTARGET-81",
+            "INDUSTRYTARGET-82",
+            "INDUSTRYTARGET-83",
+            "INDUSTRYTARGET-84",
+            "INDUSTRYTARGET-85",
+            "INDUSTRYTARGET-86",
+            "INDUSTRYTARGET-87",
+            "INDUSTRYTARGET-88",
+            "INDUSTRYTARGET-89",
+            "INDUSTRYTARGET-90",
+            "INDUSTRYTARGET-91",
+            "INDUSTRYTARGET-92",
+            "INDUSTRYTARGET-93",
+            "INDUSTRYTARGET-94",
+            "INDUSTRYTARGET-95",
+            "INDUSTRYTARGET-96",
+            "INDUSTRYTARGET-97",
+            "INDUSTRYTARGET-98",
+            "INDUSTRYTARGET-99",
+            "INDUSTRYTARGET-100",
+            "INDUSTRYTARGET-101"
+        ],
+        "vehicleReinforcementTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": 155231.01956908,
+                "y": -87593.13961564
+            },
+            {
+                "x": 154649.4212256,
+                "y": -87849.154197459
+            },
+            {
+                "x": 154466.24558309,
+                "y": -86431.637210108
+            },
+            {
+                "x": 155141.97101888,
+                "y": -86627.519399434
+            }
+        ],
+        "x": 154872.16434916,
+        "y": -87125.36260566
     }
 }

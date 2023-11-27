@@ -139,8 +139,8 @@ class Mission:
                 load_trigger.actions.append(dcs.action.DoScriptFile(self.m.map_resource.add_resource_file(local_script_path)))
             else:
                 hot_db_script_path = os.path.join(self.mission_root_path, f"{self.miz_name}_db.lua")
-                hot_config_script_path = os.path.join(self.mission_root_path, "calvinball.lua")
-                hot_script_path = os.path.join(self.mission_root_path, "config.lua")
+                hot_config_script_path = os.path.join(self.mission_root_path, "config.lua")
+                hot_script_path = os.path.join(self.mission_root_path, "calvinball.lua")
                 load_trigger.actions.append(dcs.action.DoScript(dcs.translation.String(f"dofile([[{hot_db_script_path}]])")))
                 load_trigger.actions.append(dcs.action.DoScript(dcs.translation.String(f"dofile([[{hot_config_script_path}]])")))
                 load_trigger.actions.append(dcs.action.DoScript(dcs.translation.String(f"dofile([[{hot_script_path}]])")))

@@ -815,22 +815,24 @@ local function showIndustryPercentageUpdate()
     local r = {}
     table.insert(r, "INDUSTRY UPDATE")
     table.insert(r, "")
-    table.insert(r, string.format("Enemy industry is at %.f%% capacity, with %i active industry targets", MissionDb.industry.percentage, MissionDb.industry.alive))
+    table.insert(r, string.format("Enemy industry is at %.f%% capacity, with %i active industry targets", MissionDb.industry.redPercentage, MissionDb.industry.redAlive))
+    table.insert(r, "")
+    table.insert(r, string.format("Friendly industry is at %.f%% capacity, with %i active industry structures", MissionDb.industry.bluePercentage, MissionDb.industry.blueAlive))
     local m = table.concat(r, "\n")
     MESSAGE:New(m, 30):ToAll()
 end
 
 local function calculateIndustryPercentage()
-    local alive = 0
-    local total = 0
+    local redAlive = 0
+    local redTotal = 0
     for _, objective in ipairs(MissionDb.objectives) do
         for _, qrf in ipairs(objective.qrfs) do
             if qrf.state == "active" and #qrf.staticGroups > 0 then
                 for _, static in ipairs(qrf.staticGroups) do
                     if string.find(static.name, "INDUSTRYTARGET") then
-                        total = total + 1
+                        redTotal = redTotal + 1
                         if static.state ~= "dead" then
-                            alive = alive + 1
+                            redAlive = redAlive + 1
                         end
                     end
                 end
@@ -838,16 +840,42 @@ local function calculateIndustryPercentage()
         end
     end
 
-    local percent = 100
-    if total > 0 then
-        percent = UTILS.Round((alive / total) * 100, 2)
+    local redPercent = 100
+    if redTotal > 0 then
+        redPercent = UTILS.Round((redAlive / redTotal) * 100, 2)
     end
 
-    local changed = MissionDb.industry.percentage ~= percent or MissionDb.industry.alive ~= alive
+    local blueAlive = 0
+    local blueTotal = 0
+    for _, objective in ipairs(MissionDb.objectives) do
+        for _, reinforcement in ipairs(objective.reinforcements) do
+            if reinforcement.state == "active" and #reinforcement.staticGroups > 0 then
+                for _, static in ipairs(reinforcement.staticGroups) do
+                    if string.find(static.name, "INDUSTRYTARGET") then
+                        blueTotal = blueTotal + 1
+                        if static.state ~= "dead" then
+                            blueAlive = blueAlive + 1
+                        end
+                    end
+                end
+            end
+        end
+    end
 
-    MissionDb.industry.percentage = percent
-    MissionDb.industry.alive = alive
-    MissionDb.industry.enabled = not (percent == 100 and alive == 0)
+    local bluePercent = 100
+    if blueTotal > 0 then
+        bluePercent = UTILS.Round((blueAlive / blueTotal) * 100, 2)
+    end
+
+    local changed = MissionDb.industry.redPercentage ~= redPercent or MissionDb.industry.redAlive ~= redAlive or MissionDb.industry.bluePercentage ~= bluePercent or MissionDb.industry.blueAlive ~= blueAlive
+
+    MissionDb.industry.redPercentage = redPercent
+    MissionDb.industry.redAlive = redAlive
+    MissionDb.industry.bluePercentage = bluePercent
+    MissionDb.industry.blueAlive = blueAlive
+    MissionDb.industry.blueEnabled = not (bluePercent == 100 and blueAlive == 0)
+    MissionDb.industry.redEnabled = not (redPercent == 100 and redAlive == 0)
+    MissionDb.industry.enabled = MissionDb.industry.blueEnabled or MissionDb.industry.redEnabled
 
     if changed then
         showIndustryPercentageUpdate()
@@ -1029,9 +1057,9 @@ local function industryAwareRandomEnemyReinforcement()
         return
     end
 
-    if MissionDb.industry.enabled and MissionDb.industry.percentage < 100 then
-        local delaySeconds = (100 - MissionDb.industry.percentage)/100 * MissionDb.settings.redQrfMission.industryDelay
-        MESSAGE:New(string.format("Enemy reinforcement convoy delayed by %s due to industry capacity of %.f%%.", UTILS.SecondsToClock(delaySeconds, true), MissionDb.industry.percentage), 30):ToAll()
+    if MissionDb.industry.redEnabled and MissionDb.industry.redPercentage < 100 then
+        local delaySeconds = (100 - MissionDb.industry.redPercentage)/100 * MissionDb.settings.redQrfMission.industryDelay
+        MESSAGE:New(string.format("Enemy reinforcement convoy delayed by %s due to industry capacity of %.f%%.", UTILS.SecondsToClock(delaySeconds, true), MissionDb.industry.redPercentage), 30):ToAll()
         SCHEDULER:New(nil, function()
             randomEnemyReinforcement()
         end, {}, delaySeconds)
@@ -1109,10 +1137,28 @@ local function blueBrigadeReinforcement()
     end
 end
 
+local function addOpsToken()
+    MissionDb.counters.opstokens = MissionDb.counters.opstokens + 1
+end
+
+local function industryAwareBlueTokenSupply()
+    if MissionDb.industry.blueEnabled and MissionDb.industry.bluePercentage < 100 then
+        local delaySeconds = (100 - MissionDb.industry.bluePercentage)/100 * MissionDb.settings.blueIndustryTokenSupply.industryDelay
+        MESSAGE:New(string.format("Goon ops token resupply delayed by %s due to industry capacity of %.f%%.", UTILS.SecondsToClock(delaySeconds, true), MissionDb.industry.bluePercentage), 30):ToAll()
+        SCHEDULER:New(nil, function()
+            addOpsToken()
+            MESSAGE:New(string.format("Goon ops token supplied"), 30):ToAll()
+        end, {}, delaySeconds)
+    else
+        addOpsToken()
+        MESSAGE:New(string.format("Goon ops token supplied"), 30):ToAll()
+    end
+end
+
 local function industryAwareStandardAirwingReinforcement()
-    if MissionDb.industry.enabled and MissionDb.industry.percentage < 100 then
-        local delaySeconds = (100 - MissionDb.industry.percentage)/100 * MissionDb.settings.redAirwingReinforcement.industryDelay
-        MESSAGE:New(string.format("Enemy airframe delivery delayed by %s due to industry capacity of %.f%%.", UTILS.SecondsToClock(delaySeconds, true), MissionDb.industry.percentage), 30):ToAll()
+    if MissionDb.industry.redEnabled and MissionDb.industry.redPercentage < 100 then
+        local delaySeconds = (100 - MissionDb.industry.redPercentage)/100 * MissionDb.settings.redAirwingReinforcement.industryDelay
+        MESSAGE:New(string.format("Enemy airframe delivery delayed by %s due to industry capacity of %.f%%.", UTILS.SecondsToClock(delaySeconds, true), MissionDb.industry.redPercentage), 30):ToAll()
         SCHEDULER:New(nil, function()
             standardAirwingReinforcement()
         end, {}, delaySeconds)
@@ -1122,9 +1168,9 @@ local function industryAwareStandardAirwingReinforcement()
 end
 
 local function industryAwareStandardBrigadeReinforcement()
-    if MissionDb.industry.enabled and MissionDb.industry.percentage < 100 then
-        local delaySeconds = (100 - MissionDb.industry.percentage)/100 * MissionDb.settings.redBrigadeReinforcement.industryDelay
-        MESSAGE:New(string.format("Enemy ground unit delivery delayed by %s due to industry capacity of %.f%%.", UTILS.SecondsToClock(delaySeconds, true), MissionDb.industry.percentage), 30):ToAll()
+    if MissionDb.industry.redEnabled and MissionDb.industry.redPercentage < 100 then
+        local delaySeconds = (100 - MissionDb.industry.redPercentage)/100 * MissionDb.settings.redBrigadeReinforcement.industryDelay
+        MESSAGE:New(string.format("Enemy ground unit delivery delayed by %s due to industry capacity of %.f%%.", UTILS.SecondsToClock(delaySeconds, true), MissionDb.industry.redPercentage), 30):ToAll()
         SCHEDULER:New(nil, function()
             standardBrigadeReinforcement()
         end, {}, delaySeconds)
@@ -1384,10 +1430,14 @@ local function activateAirwings(chief, side)
 
                     function airwing.instance:OnAfterFlightOnMission(From, Event, To, Flightgroup, Mission)
                         if Mission:GetType() == AUFTRAG.Type.BOMBCARPET or Mission:GetType() == AUFTRAG.Type.BAI then
-                            if math.random(1, 100) <= 25 then
+                            if math.random(1, 100) <= MissionDb.settings.airBombingEscortChance then
                                 local escortMission = AUFTRAG:NewESCORT(Flightgroup:GetGroup())
                                 MissionDb.redchief.instance:AddMission(escortMission)
                             end
+                        end
+
+                        if Mission:GetType() == AUFTRAG.Type.BOMBCARPET then
+                            Mission:SetMissionAltitude(25000)
                         end
 
                         if Mission:GetType() == AUFTRAG.Type.AWACS then
@@ -1537,11 +1587,17 @@ end
 
 local function unlockReinforcementsForObjective(objective)
     for _, reinforcement in ipairs(objective.reinforcements) do
-        reinforcement.state = "active"
-        spawnGroupsAtThing(reinforcement, country.id.CJTF_BLUE)
-        -- for _, spawnGroup in ipairs(reinforcement.spawnGroups) do
-        --     spawnGroup.instance = SPAWN:New(spawnGroup.name)
-        -- end
+        if reinforcement.state ~= "dead" then
+            reinforcement.state = "active"
+            spawnGroupsAtThing(reinforcement, country.id.CJTF_BLUE)
+        
+            local reinforcementZone = ZONE:FindByName(reinforcement.name)
+            local reinforcementLabelText = reinforcementZone:GetProperty("label")
+            if reinforcementLabelText ~= "" then
+                reinforcement.labelMarkId = reinforcementZone:GetCoordinate(0):Translate(reinforcementZone:GetRadius() + 50, 0, false, true):TextToAll(reinforcementLabelText, -1, {0,0,0}, 1, {1,1,1}, 0.0, 20, true)
+                reinforcement.circleMarkId = reinforcementZone:GetCoordinate(0):CircleToAll(reinforcementZone:GetRadius(), -1, {0,0,1}, 1, {0,0,1}, 0.15, 3, true)
+            end
+        end
     end
 end
 
@@ -2362,12 +2418,14 @@ local function reportOverallMissionStatus()
     end
 
     if(MissionDb.industry.enabled) then
-        table.insert(r, string.format("Enemy industry is at %.f%% capacity, with %i active industry targets", MissionDb.industry.percentage, MissionDb.industry.alive))
+        table.insert(r, string.format("Enemy industry is at %.f%% capacity, with %i active industry targets", MissionDb.industry.redPercentage, MissionDb.industry.redAlive))
+        table.insert(r, "")
+        table.insert(r, string.format("Friendly industry is at %.f%% capacity, with %i active industry structures", MissionDb.industry.bluePercentage, MissionDb.industry.blueAlive))
         table.insert(r, "")
     end
 
     table.insert(r, string.format("%i operation token(s) available", MissionDb.counters.opstokens))
-    table.insert(r, string.format("  - GOON BOMB, GOON SEAD, GOON STRIKE, GOON CAS"))
+    table.insert(r, string.format("  - %s", table.concat(MissionDb.markerops.hintOptions, ", ")))
     table.insert(r, "")
 
     local m = table.concat(r, "\n")
@@ -2415,10 +2473,24 @@ local function randomChiefMissions()
         end
     end
 
+    for _, objective in ipairs(MissionDb.objectives) do
+        for _, reinforcement in ipairs(objective.reinforcements) do
+            if reinforcement.state == "active" and #reinforcement.staticGroups > 0 then
+                for _, static in ipairs(reinforcement.staticGroups) do
+                    if string.find(static.name, "INDUSTRYTARGET") then
+                        if static.state ~= "dead" then
+                            table.insert(bombingPotentials, {coordinate = STATIC:FindByName(static.name):GetCoordinate()})
+                        end
+                    end
+                end
+            end
+        end
+    end
+    
     if #bombingPotentials > 0 then
         local chosen = bombingPotentials[math.random(#bombingPotentials)]
 
-        local bombingMission = AUFTRAG:NewBOMBCARPET(chosen.coordinate, 10000, 500)
+        local bombingMission = AUFTRAG:NewBOMBCARPET(chosen.coordinate, 25000, 500)
         MissionDb.redchief.instance:AddMission(bombingMission)
     end
 
@@ -2483,10 +2555,6 @@ local function pruneCtldForInactiveObjectives()
         -- MESSAGE:New(string.format("CTLD cleanup destroying %s.", g.GroupName), 5):ToAll()
         g:Destroy(false)
     end)
-end
-
-local function addOpsToken()
-    MissionDb.counters.opstokens = MissionDb.counters.opstokens + 1
 end
 
 local function initializeStrandMenus()
@@ -2728,60 +2796,88 @@ local function initializeMantis()
 end
 
 local function initializeMarkerOps()
-    MissionDb.markerops.bomb = MARKEROPS_BASE:New("GOON BOMB", {}, false)
-    function MissionDb.markerops.bomb:OnAfterMarkChanged(From, Event, To, Text, Keywords, Coord, idx)
-        if MissionDb.counters.opstokens > 0 then
-            MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
-            local mission = AUFTRAG:NewBOMBING(Coord)
-            MissionDb.bluechief.instance:AddMission(mission)
-            MESSAGE:New(string.format("GOON OPERATION: Bomb @ %s. %i tokens remaining.", Coord:ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
-        else
-            MESSAGE:New(string.format("GOON OPERATION: Aborted. No ops tokens available."), 15):ToAll()
+    if MissionDb.markerops.enableBomb then
+        table.insert(MissionDb.markerops.hintOptions, "GOON BOMB")
+        MissionDb.markerops.bomb = MARKEROPS_BASE:New("GOON BOMB", {}, false)
+        function MissionDb.markerops.bomb:OnAfterMarkChanged(From, Event, To, Text, Keywords, Coord, idx)
+            if MissionDb.counters.opstokens > 0 then
+                MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
+                local mission = AUFTRAG:NewBOMBING(Coord)
+                MissionDb.bluechief.instance:AddMission(mission)
+                MESSAGE:New(string.format("GOON OPERATION: Bomb @ %s. %i tokens remaining.", Coord:ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
+            else
+                MESSAGE:New(string.format("GOON OPERATION: Aborted. No ops tokens available."), 15):ToAll()
+            end
+            UTILS.RemoveMark(idx, 0)
         end
-        UTILS.RemoveMark(idx, 0)
     end
 
-    MissionDb.markerops.strike = MARKEROPS_BASE:New("GOON STRIKE", {}, false)
-    function MissionDb.markerops.strike:OnAfterMarkChanged(From, Event, To, Text, Keywords, Coord, idx)
-        if MissionDb.counters.opstokens > 0 then
-            MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
-            local mission = AUFTRAG:NewSTRIKE(Coord)
-            MissionDb.bluechief.instance:AddMission(mission)
-            MESSAGE:New(string.format("GOON OPERATION: Strike @ %s. %i tokens remaining.", Coord:ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
-        else
-            MESSAGE:New(string.format("GOON OPERATION: Aborted. No ops tokens available."), 15):ToAll()
+    if MissionDb.markerops.enableStrike then
+        table.insert(MissionDb.markerops.hintOptions, "GOON STRIKE")
+        MissionDb.markerops.strike = MARKEROPS_BASE:New("GOON STRIKE", {}, false)
+        function MissionDb.markerops.strike:OnAfterMarkChanged(From, Event, To, Text, Keywords, Coord, idx)
+            if MissionDb.counters.opstokens > 0 then
+                MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
+                local mission = AUFTRAG:NewSTRIKE(Coord)
+                MissionDb.bluechief.instance:AddMission(mission)
+                MESSAGE:New(string.format("GOON OPERATION: Strike @ %s. %i tokens remaining.", Coord:ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
+            else
+                MESSAGE:New(string.format("GOON OPERATION: Aborted. No ops tokens available."), 15):ToAll()
+            end
+            UTILS.RemoveMark(idx, 0)
         end
-        UTILS.RemoveMark(idx, 0)
     end
 
-    MissionDb.markerops.sead = MARKEROPS_BASE:New("GOON SEAD", {}, false)
-    function MissionDb.markerops.sead:OnAfterMarkChanged(From, Event, To, Text, Keywords, Coord, idx)
-        if MissionDb.counters.opstokens > 0 then
-            MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
-            local zone =  ZONE_RADIUS:New( string.format("BLUESEAD-%d", math.random(1,100000)), Coord:GetVec2(), 15000)
-            local targSet = SET_GROUP:New():FilterCoalitions("red"):FilterPrefixes({"RED SAM", "RED EWR"}):FilterZones({zone}):FilterOnce()
-            local target = TARGET:New(targSet)
-            local mission = AUFTRAG:NewSEAD(target)
-            MissionDb.bluechief.instance:AddMission(mission)
-            MESSAGE:New(string.format("GOON OPERATION: SEAD @ %s. %i tokens remaining.", target:GetCoordinate():ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
-        else
-            MESSAGE:New(string.format("GOON OPERATION: Aborted. No ops tokens available."), 15):ToAll()
+    if MissionDb.markerops.enableSead then
+        table.insert(MissionDb.markerops.hintOptions, "GOON SEAD")
+        MissionDb.markerops.sead = MARKEROPS_BASE:New("GOON SEAD", {}, false)
+        function MissionDb.markerops.sead:OnAfterMarkChanged(From, Event, To, Text, Keywords, Coord, idx)
+            if MissionDb.counters.opstokens > 0 then
+                MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
+                local zone =  ZONE_RADIUS:New( string.format("BLUESEAD-%d", math.random(1,100000)), Coord:GetVec2(), 15000)
+                local targSet = SET_GROUP:New():FilterCoalitions("red"):FilterPrefixes({"RED SAM", "RED EWR"}):FilterZones({zone}):FilterOnce()
+                local target = TARGET:New(targSet)
+                local mission = AUFTRAG:NewSEAD(target)
+                MissionDb.bluechief.instance:AddMission(mission)
+                MESSAGE:New(string.format("GOON OPERATION: SEAD @ %s. %i tokens remaining.", target:GetCoordinate():ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
+            else
+                MESSAGE:New(string.format("GOON OPERATION: Aborted. No ops tokens available."), 15):ToAll()
+            end
+            UTILS.RemoveMark(idx, 0)
         end
-        UTILS.RemoveMark(idx, 0)
     end
 
-    MissionDb.markerops.cas = MARKEROPS_BASE:New("GOON CAS", {}, false)
-    function MissionDb.markerops.cas:OnAfterMarkChanged(From, Event, To, Text, Keywords, Coord, idx)
-        if MissionDb.counters.opstokens > 0 then
-            MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
-            local zone =  ZONE_RADIUS:New( string.format("BLUECAS-%d", math.random(1,100000)), Coord:GetVec2(), 15000)
-            local mission = AUFTRAG:NewCAS(zone)
-            MissionDb.bluechief.instance:AddMission(mission)
-            MESSAGE:New(string.format("GOON OPERATION: CAS @ %s. %i tokens remaining.", Coord:ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
-        else
-            MESSAGE:New(string.format("GOON OPERATION: Aborted. No ops tokens available."), 15):ToAll()
+    if MissionDb.markerops.enableCas then
+        table.insert(MissionDb.markerops.hintOptions, "GOON CAS")
+        MissionDb.markerops.cas = MARKEROPS_BASE:New("GOON CAS", {}, false)
+        function MissionDb.markerops.cas:OnAfterMarkChanged(From, Event, To, Text, Keywords, Coord, idx)
+            if MissionDb.counters.opstokens > 0 then
+                MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
+                local zone =  ZONE_RADIUS:New( string.format("BLUECAS-%d", math.random(1,100000)), Coord:GetVec2(), 15000)
+                local mission = AUFTRAG:NewCAS(zone)
+                MissionDb.bluechief.instance:AddMission(mission)
+                MESSAGE:New(string.format("GOON OPERATION: CAS @ %s. %i tokens remaining.", Coord:ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
+            else
+                MESSAGE:New(string.format("GOON OPERATION: Aborted. No ops tokens available."), 15):ToAll()
+            end
+            UTILS.RemoveMark(idx, 0)
         end
-        UTILS.RemoveMark(idx, 0)
+    end
+
+    if MissionDb.markerops.enableCarpetbomb then
+        table.insert(MissionDb.markerops.hintOptions, "GOON CARPETBOMB")
+        MissionDb.markerops.carpetbomb = MARKEROPS_BASE:New("GOON CARPETBOMB", {}, false)
+        function MissionDb.markerops.carpetbomb:OnAfterMarkChanged(From, Event, To, Text, Keywords, Coord, idx)
+            if MissionDb.counters.opstokens > 0 then
+                MissionDb.counters.opstokens = MissionDb.counters.opstokens - 1
+                local mission = AUFTRAG:NewBOMBCARPET(Coord, 25000, 500)
+                MissionDb.bluechief.instance:AddMission(mission)
+                MESSAGE:New(string.format("GOON OPERATION: CARPETBOMB @ %s. %i tokens remaining.", Coord:ToStringMGRS(), MissionDb.counters.opstokens), 15):ToAll()
+            else
+                MESSAGE:New(string.format("GOON OPERATION: Aborted. No ops tokens available."), 15):ToAll()
+            end
+            UTILS.RemoveMark(idx, 0)
+        end
     end
 end
 
@@ -2813,7 +2909,9 @@ intializeStrandTaskController()
 
 initializeCsarIntelTaskController()
 
-initializeAutolase()
+if MissionDb.enableAutolase then
+    initializeAutolase()
+end
 
 initializeMantis()
 
@@ -2840,6 +2938,8 @@ SCHEDULER:New(nil, industryAwareStandardAirwingReinforcement, {}, math.random(Mi
 SCHEDULER:New(nil, industryAwareStandardBrigadeReinforcement, {}, math.random(MissionDb.settings.redBrigadeReinforcement.minStart, MissionDb.settings.redBrigadeReinforcement.maxStart), MissionDb.settings.redBrigadeReinforcement.repeatAfter)
 
 SCHEDULER:New(nil, blueBrigadeReinforcement, {}, math.random(120, 120), 3600)
+
+SCHEDULER:New(nil, industryAwareBlueTokenSupply, {}, math.random(MissionDb.settings.blueIndustryTokenSupply.minStart, MissionDb.settings.blueIndustryTokenSupply.maxStart), MissionDb.settings.blueIndustryTokenSupply.repeatAfter)
 
 SCHEDULER:New(nil, calculateIndustryPercentage, {}, 60, 60)
 

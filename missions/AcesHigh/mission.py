@@ -201,12 +201,41 @@ class AcesHighRedAirwings(calvinball.redairwing.RedAirwings):
                         "initialInventory": 1,
                         "livery": "Bf-109 K4 Jagdgeschwader 53",
                         "loadouts": {
-                            "Empty": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }"
+                            "Empty": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT }"
                         },
                         "capabilities": {
                             "AUFTRAG.Type.CAP": 50,
-                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50
+                        }
+                    }
+                }
+            },
+            "Fecamp-Benouville": {
+                "airbase": "Fecamp-Benouville",
+                "warehouse": "Fecamp-Benouville Airwing Warehouse#00001",
+                "squadrons": {
+                    "Fecamp-Benouville 1": {
+                        "airframe": dcs.planes.Bf_109K_4,
+                        "groupSize": 2,
+                        "initialInventory": 0,
+                        "livery": "Bf-109 K4 Jagdgeschwader 53",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.ESCORT }"
+                        },
+                        "capabilities": {
                             "AUFTRAG.Type.ESCORT": 50
+                        }
+                    },
+                    "Fecamp-Benouville 2": {
+                        "airframe": dcs.planes.Ju_88A4,
+                        "groupSize": 4,
+                        "initialInventory": 0,
+                        "livery": "Ju-88",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.BOMBCARPET }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BOMBCARPET": 50
                         }
                     }
                 }
@@ -236,6 +265,24 @@ class AcesHighBlueAirwings(calvinball.blueairwing.BlueAirwings):
                             "AUFTRAG.Type.CAP": 50
                         }
                     }
+                }
+            },
+            "GOON OPS - Stoney Cross": {
+                "airbase": "Stoney Cross",
+                "warehouse": "Stoney Cross Airwing Warehouse#00001",
+                "squadrons": {
+                    "GOON OPS STONEY CROSS": {
+                        "airframe": dcs.planes.B_17G,
+                        "groupSize": 4,
+                        "initialInventory": 99,
+                        "livery": "91st BG, 323rd BS, 'Out House Mouse",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.BOMBCARPET }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BOMBCARPET": 50
+                        }
+                    },
                 }
             },
         }

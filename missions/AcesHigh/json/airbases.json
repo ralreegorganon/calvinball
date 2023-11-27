@@ -10,5 +10,17 @@
         "vehicle_groups": [],
         "x": 139755,
         "y": -90846
+    },
+    "AIRBASE-2": {
+        "component": "airbase",
+        "label": "Stoney Cross",
+        "radius": 2300.0208,
+        "ship_groups": [],
+        "static_groups": [
+            "Stoney Cross Airwing Warehouse"
+        ],
+        "vehicle_groups": [],
+        "x": 155986.88273607,
+        "y": -101209.30498727
     }
 }

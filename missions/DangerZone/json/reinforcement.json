@@ -1,7 +1,7 @@
 {
     "REINFORCEMENT-1": {
         "component": "reinforcement",
-        "label": "REINFORCEMENT 1",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleReinforcementTemplates": [
@@ -31,7 +31,7 @@
     },
     "REINFORCEMENT-2": {
         "component": "reinforcement",
-        "label": "REINFORCEMENT 2",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleReinforcementTemplates": [
