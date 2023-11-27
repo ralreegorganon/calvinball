@@ -1842,7 +1842,7 @@ MissionDb = {
 					{
 						name = "Funtington 1",
 						templateGroupName = "RED Funtington Funtington 1 Bf-109K-4",
-						initialInventory = 1,
+						initialInventory = 0,
 						takeoffCold = false,
 						parking = nil,
 						capabilities = {

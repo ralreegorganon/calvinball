@@ -1,5 +1,8 @@
 import dcs
+import dcs.cloud_presets
 import pydcs_extensions
+import datetime
+import random
 import calvinball
 
 class AcesHigh(calvinball.mission.Mission):
@@ -20,6 +23,26 @@ class AcesHigh(calvinball.mission.Mission):
 
         self.m.coalition["blue"].set_bullseye({"x": 57597, "y": -72593})
         self.m.coalition["red"].set_bullseye({"x": 57597, "y": -72593})
+
+        max = len(dcs.cloud_presets.CLOUD_PRESETS) - 1
+        preset_name = list(dcs.cloud_presets.CLOUD_PRESETS)[random.randint(0, max)]
+        cloud_preset = dcs.weather.CloudPreset.by_name(preset_name)
+        self.m.weather.clouds_base = random.randrange(cloud_preset.min_base, cloud_preset.max_base)
+        self.m.weather.clouds_preset = cloud_preset
+        wind_dir = random.randrange(0, 359) + 180
+        wind_speed = random.randrange(5, 10)
+        self.m.weather.wind_at_ground.direction = (wind_dir + random.randrange(-90, 90) - 180) % 360
+        self.m.weather.wind_at_ground.speed = wind_speed + random.randrange(-4, -1)
+        self.m.weather.wind_at_2000.direction = (wind_dir + random.randrange(-90, 90) - 180) % 360
+        self.m.weather.wind_at_2000.speed = wind_speed + random.randrange(-2, 2)
+        self.m.weather.wind_at_8000.direction = (wind_dir + random.randrange(-90, 90) - 180) % 360
+        self.m.weather.wind_at_8000.speed = wind_speed + random.randrange(-1, 10)
+
+        self.m.weather.halo.preset = dcs.weather.Halo.Preset.Auto
+        self.m.weather.halo.crystals = None
+
+        self.m.start_time = datetime.datetime(1944, 6, 6)
+        self.m.random_daytime("day")
 
 class AcesHighCtld(calvinball.ctld.Ctld):
     def __init__(self) -> None:
@@ -60,7 +83,7 @@ class AcesHighQrf(calvinball.qrf.Qrf):
             dcs.vehicles.Unarmed.Sd_Kfz_2,
             dcs.vehicles.Unarmed.Sd_Kfz_2
         ], p, formation=dcs.unitgroup.VehicleGroup.Formation.Scattered).late_activation = True
-        
+
 
 class AcesHighReinforcement(calvinball.reinforcement.Reinforcement):
     def __init__(self) -> None:
@@ -88,7 +111,7 @@ class AcesHighCarriers(calvinball.carriers.Carriers):
 
     def define(self, m: dcs.mission):
         return {}
-    
+
 class AcesHighClients(calvinball.clients.Clients):
     def __init__(self) -> None:
         super().__init__()
@@ -203,7 +226,7 @@ class AcesHighRedAirwings(calvinball.redairwing.RedAirwings):
                     "Funtington 1": {
                         "airframe": dcs.planes.Bf_109K_4,
                         "groupSize": 2,
-                        "initialInventory": 1,
+                        "initialInventory": 0,
                         "livery": "Bf-109 K4 Jagdgeschwader 53",
                         "loadouts": {
                             "Empty": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT }"
