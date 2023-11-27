@@ -158,6 +158,7 @@ MissionDb = {
 	missionName = "AndeanAbyss",
 	settings = {
 		blueCasevacChance = 10,
+		nodeCaptureBlueCasevacChance = 50,
 		blueConvoyMission = {
 			minStart = 1800,
 			maxStart = 3600,

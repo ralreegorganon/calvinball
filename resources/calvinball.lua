@@ -1190,7 +1190,7 @@ local function nodeCaptured(objective, node, previousCoalition, newCoalition)
             showNodeCapturedUpdate(objective, node, "lost")
         end
 
-        if math.random(1, 100) <= 50 then
+        if math.random(1, 100) <= MissionDb.settings.nodeCaptureBlueCasevacChance then
             local nodeZone = ZONE:FindByName(node.name)
             local nodeLabel = nodeZone:GetProperty("label")
             MissionDb.csar.instance:SpawnCASEVAC(nodeZone:GetRandomPointVec2(), coalition.side.BLUE, string.format("%s casualty", nodeLabel), true, 'absolute unit', string.format("%s casualty", nodeLabel), true)
