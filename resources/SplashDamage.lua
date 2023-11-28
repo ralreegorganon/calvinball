@@ -361,10 +361,10 @@ splash_damage_options = {
         if (weapon_desc.category ~= 0) and event.initiator then
           if (weapon_desc.category == 1) then
             if (weapon_desc.MissileCategory ~= 1 and weapon_desc.MissileCategory ~= 2) then
-              tracked_weapons[event.weapon.id_] = { wpn = ordnance, init = event.initiator:getName(), pos = ordnance:getPoint(), dir = ordnance:getPosition().x, name = ordnance:getTypeName(), speed = ordnance:getVelocity(), cat = ordnance:getCategory() }
+              tracked_weapons[event.weapon.id_] = { wpn = ordnance, init = event.initiator:getName(), pos = ordnance:getPoint(), dir = ordnance:getPosition().x, name = ordnance:getTypeName(), speed = ordnance:getVelocity(), cat = Object.getCategory(ordnance) }
             end
           else
-            tracked_weapons[event.weapon.id_] = { wpn = ordnance, init = event.initiator:getName(), pos = ordnance:getPoint(), dir = ordnance:getPosition().x, name = ordnance:getTypeName(), speed = ordnance:getVelocity(), cat = ordnance:getCategory() }
+            tracked_weapons[event.weapon.id_] = { wpn = ordnance, init = event.initiator:getName(), pos = ordnance:getPoint(), dir = ordnance:getPosition().x, name = ordnance:getTypeName(), speed = ordnance:getVelocity(), cat = Object.getCategory(ordnance) }
           end
         end
       end
@@ -448,7 +448,7 @@ splash_damage_options = {
     }
    
     local ifFound = function(foundObject, val)
-      if foundObject:getDesc().category == Unit.Category.GROUND_UNIT and foundObject:getCategory() == Object.Category.UNIT then
+      if foundObject:getDesc().category == Unit.Category.GROUND_UNIT and Object.getCategory(foundObject) == Object.Category.UNIT then
         foundUnits[#foundUnits + 1] = foundObject
       end
       if foundObject:getDesc().category == Unit.Category.GROUND_UNIT then --if ground unit
