@@ -638,6 +638,13 @@ def debug_aircraft_airbase(m: dcs.Mission, airbase_zones):
                                 airbase[airbase_name][u.type] = [{"x": u.position.x, "y": u.position.y, "heading": round(u.heading)}]
                             else:
                                 airbase[airbase_name][u.type].append({"x": u.position.x, "y": u.position.y, "heading": round(u.heading)})
+                for pg in c2.helicopter_group:
+                    if airbase_zone_circle.contains(Point(pg.position.x, pg.position.y)):
+                        for u in pg.units:
+                            if u.type not in airbase[airbase_name]:
+                                airbase[airbase_name][u.type] = [{"x": u.position.x, "y": u.position.y, "heading": round(u.heading)}]
+                            else:
+                                airbase[airbase_name][u.type].append({"x": u.position.x, "y": u.position.y, "heading": round(u.heading)})
             
     print(json.dumps(airbase,sort_keys=True))
 

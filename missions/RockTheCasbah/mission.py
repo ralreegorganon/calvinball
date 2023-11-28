@@ -110,7 +110,7 @@ class RockTheCasbahReinforcement(calvinball.reinforcement.Reinforcement):
 class RockTheCasbahCarriers(calvinball.carriers.Carriers):
         def __init__(self) -> None:
             super().__init__()
-    
+
 class RockTheCasbahClients(calvinball.clients.Clients):
     def __init__(self) -> None:
         super().__init__()
@@ -127,13 +127,34 @@ class RockTheCasbahClients(calvinball.clients.Clients):
                 "airport": m.terrain.airports["Al Dhafra AFB"],
                 "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
-                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 4, "parking": [32, 31, 30, 29], "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
-                    { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "parking": [19, 20], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
-                    { "airframe": dcs.helicopters.Mi_24P, "count": 4, "parking": [10, 11, 12, 13], "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation" },
-                    { "airframe": dcs.helicopters.Mi_8MT, "count": 4, "parking": [99, 98, 97, 96], "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
-                    { "airframe": dcs.helicopters.SA342L, "count": 1, "parking": [17], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2" },
-                    { "airframe": dcs.helicopters.SA342M, "count": 1, "parking": [18], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet" },
-                    { "airframe": dcs.helicopters.UH_1H, "count": 4, "parking": [24, 23, 22, 21], "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972" },
+                    {
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
+                        "positions": [{"heading": 30, "x": -211045.51557317, "y": -174022.30478844}, {"heading": 45, "x": -211007.06703823, "y": -174071.62696548}, {"heading": 63, "x": -210982.75519683, "y": -174087.43755014}, {"heading": 40, "x": -211030.20290403, "y": -174050.55774136}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed },
+                        "positions": [{"heading": 208, "x": -210810.23768625, "y": -173945.4081324}, {"heading": 212, "x": -210819.25667192, "y": -173922.86066824}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.Mi_24P, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation",
+                        "positions": [{"heading": 135, "x": -210838.27496778, "y": -174063.04707586}, {"heading": 162, "x": -210810.82588097, "y": -174005.20792866}, {"heading": 182, "x": -210809.25736172, "y": -173976.38638751}, {"heading": 141, "x": -210820.96120277, "y": -174037.68335753}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.Mi_8MT, "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN",
+                        "positions": [{"heading": 116, "x": -210860.96353045, "y": -174080.18264709}, {"heading": 106, "x": -210920.64005228, "y": -174097.89315684}, {"heading": 72, "x": -210955.0405312, "y": -174095.39778531}, {"heading": 119, "x": -210890.15661837, "y": -174090.66377074}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.SA342L, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2",
+                        "positions": [{"heading": 225, "x": -210831.21663117, "y": -173903.05811276}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.SA342M, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet",
+                        "positions": [{"heading": 234, "x": -210847.29395344, "y": -173887.76505011}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.UH_1H, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972",
+                        "positions": [{"heading": 247, "x": -210881.95485597, "y": -173865.38806377}, {"heading": 251, "x": -210915.41911798, "y": -173857.7139285}, {"heading": 257, "x": -210935.46075016, "y": -173857.96553949}, {"heading": 255, "x": -210897.93215399, "y": -173859.34939995}]
+                    },
                     { "airframe": dcs.planes.A_10C_2, "count": 4, "parking": [57, 58, 59, 60], "fuel": 0.6, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
                     { "airframe": dcs.planes.AJS37, "count": 2, "parking": [231, 230], "fuel": 1, "loadout": "Empty", "livery": "SF-37 Akktu Stakki - F21" },
                     { "airframe": dcs.planes.AV8BNA, "count": 4, "parking": [192, 191, 190, 189], "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
