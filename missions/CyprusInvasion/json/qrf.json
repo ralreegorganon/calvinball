@@ -1,7 +1,7 @@
 {
     "QRF-1": {
         "component": "qrf",
-        "label": "QRF 1",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleQrfTemplates": [
@@ -50,7 +50,7 @@
     },
     "QRF-10": {
         "component": "qrf",
-        "label": "QRF 10",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleQrfTemplates": [
@@ -84,7 +84,7 @@
     },
     "QRF-11": {
         "component": "qrf",
-        "label": "QRF 11",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleQrfTemplates": [
@@ -118,7 +118,7 @@
     },
     "QRF-2": {
         "component": "qrf",
-        "label": "QRF 2",
+        "label": "",
         "ship_groups": [],
         "static_groups": [
             "Larnaca Airwing Warehouse"
@@ -148,7 +148,7 @@
     },
     "QRF-3": {
         "component": "qrf",
-        "label": "QRF 3",
+        "label": "",
         "ship_groups": [],
         "static_groups": [
             "Paphos Airwing Warehouse"
@@ -178,7 +178,7 @@
     },
     "QRF-4": {
         "component": "qrf",
-        "label": "QRF 4",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleQrfTemplates": [
@@ -227,7 +227,7 @@
     },
     "QRF-5": {
         "component": "qrf",
-        "label": "QRF 5",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleQrfTemplates": [
@@ -276,7 +276,7 @@
     },
     "QRF-6": {
         "component": "qrf",
-        "label": "QRF 6",
+        "label": "",
         "ship_groups": [],
         "static_groups": [
             "Gecitkale Airwing Warehouse"
@@ -306,7 +306,7 @@
     },
     "QRF-7": {
         "component": "qrf",
-        "label": "QRF 7",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleQrfTemplates": [
@@ -355,7 +355,7 @@
     },
     "QRF-8": {
         "component": "qrf",
-        "label": "QRF 8",
+        "label": "",
         "ship_groups": [],
         "static_groups": [
             "Ercan Airwing Warehouse"
@@ -385,7 +385,7 @@
     },
     "QRF-9": {
         "component": "qrf",
-        "label": "QRF 9",
+        "label": "",
         "ship_groups": [],
         "static_groups": [],
         "vehicleQrfTemplates": [
