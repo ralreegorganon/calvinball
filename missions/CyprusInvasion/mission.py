@@ -59,7 +59,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
             {
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "airport": m.terrain.airports["Akrotiri"],
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.helicopters.Mi_24P, "count": 4, "parking": [42, 43, 44, 45], "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation" },
                     { "airframe": dcs.helicopters.Mi_8MT, "count": 4, "parking": [2, 3, 4, 5], "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
@@ -70,13 +70,13 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "parking": [38, 39], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
                     { "airframe": dcs.planes.AV8BNA, "count": 2, "parking": [32, 37], "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
                     { "airframe": dcs.planes.A_10C_2, "count": 2, "parking": [30, 31], "fuel": 0.6, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
-                    { "airframe": dcs.planes.A_10A, "count": 1, "parking": [23], "fuel": 1, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
+                    { "airframe": dcs.planes.A_10A, "count": 1, "parking": [23], "fuel": 1, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)", "start_type": dcs.mission.StartType.Cold },
                     { "airframe": dcs.planes.P_51D_30_NA, "count": 1, "parking": [46], "fuel": 1, "loadout": "Empty", "livery": "Ukraine Modern" },
                     { "airframe": dcs.planes.AJS37, "count": 1, "parking": [28], "fuel": 1, "loadout": "Empty", "livery": "SF-37 Akktu Stakki - F21" },
                     { "airframe": dcs.planes.C_101CC, "count": 1, "parking": [27], "fuel": 1, "loadout": "Empty", "livery": "usaf agressor fictional" },
                     { "airframe": dcs.planes.L_39ZA, "count": 1, "parking": [26], "fuel": 1, "loadout": "Empty", "livery": "algerian af tiger nl-36" },
                     { "airframe": dcs.planes.F_5E_3, "count": 2, "parking": [18, 19], "fuel": 1, "loadout": "Empty", "livery": "BR FAB 4846" },
-                    { "airframe": dcs.planes.Su_25, "count": 1, "parking": [22], "fuel": 1, "loadout": "Empty", "livery": "petal camo scheme #1 (native). 299th brigade" },
+                    { "airframe": dcs.planes.Su_25, "count": 1, "parking": [22], "fuel": 1, "loadout": "Empty", "livery": "petal camo scheme #1 (native). 299th brigade", "start_type": dcs.mission.StartType.Cold },
                     { "airframe": dcs.planes.Su_25T, "count": 2, "parking": [8, 9], "fuel": 1, "loadout": "Empty", "livery": "Algerian AF Desert KU-03" },
                     { "airframe": dcs.planes.M_2000C, "count": 1, "parking": [14], "fuel": 1, "loadout": "Empty", "livery": "2003 Tigermeet" },
                     { "airframe": dcs.planes.MiG_21Bis, "count": 2, "parking": [29, 7], "fuel": 1, "loadout": "Empty", "livery": "HuAF 31st AB (Turul Sqn)" },
@@ -89,7 +89,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
             {
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "airport": m.terrain.airports["Paphos"],
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.helicopters.Mi_24P, "count": 4, "parking": [41, 42, 43, 44], "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation" },
                     { "airframe": dcs.helicopters.Mi_8MT, "count": 4, "parking": [37, 38, 39, 40], "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
@@ -100,13 +100,13 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "parking": [8, 9], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
                     { "airframe": dcs.planes.AV8BNA, "count": 2, "parking": [6, 7], "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
                     { "airframe": dcs.planes.A_10C_2, "count": 2, "parking": [34, 36], "fuel": 0.6, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
-                    { "airframe": dcs.planes.A_10A, "count": 1, "parking": [17], "fuel": 1, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
+                    { "airframe": dcs.planes.A_10A, "count": 1, "parking": [17], "fuel": 1, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)", "start_type": dcs.mission.StartType.Cold },
                     { "airframe": dcs.planes.P_51D_30_NA, "count": 1, "parking": [32], "fuel": 1, "loadout": "Empty", "livery": "Ukraine Modern" },
                     { "airframe": dcs.planes.AJS37, "count": 1, "parking": [31], "fuel": 1, "loadout": "Empty", "livery": "SF-37 Akktu Stakki - F21" },
                     { "airframe": dcs.planes.C_101CC, "count": 1, "parking": [30], "fuel": 1, "loadout": "Empty", "livery": "usaf agressor fictional" },
                     { "airframe": dcs.planes.L_39ZA, "count": 1, "parking": [29], "fuel": 1, "loadout": "Empty", "livery": "algerian af tiger nl-36" },
                     { "airframe": dcs.planes.F_5E_3, "count": 2, "parking": [18, 19], "fuel": 1, "loadout": "Empty", "livery": "BR FAB 4846" },
-                    { "airframe": dcs.planes.Su_25, "count": 1, "parking": [16], "fuel": 1, "loadout": "Empty", "livery": "petal camo scheme #1 (native). 299th brigade" },
+                    { "airframe": dcs.planes.Su_25, "count": 1, "parking": [16], "fuel": 1, "loadout": "Empty", "livery": "petal camo scheme #1 (native). 299th brigade", "start_type": dcs.mission.StartType.Cold },
                     { "airframe": dcs.planes.Su_25T, "count": 2, "parking": [14, 15], "fuel": 1, "loadout": "Empty", "livery": "Algerian AF Desert KU-03" },
                     { "airframe": dcs.planes.M_2000C, "count": 1, "parking": [33], "fuel": 1, "loadout": "Empty", "livery": "2003 Tigermeet" },
                     { "airframe": dcs.planes.MiG_21Bis, "count": 1, "parking": [24], "fuel": 1, "loadout": "Empty", "livery": "HuAF 31st AB (Turul Sqn)" },
@@ -119,7 +119,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
             {
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "airport": m.terrain.airports["Larnaca"],
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.helicopters.Mi_24P, "count": 4, "parking": [8, 9, 10, 11], "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation" },
                     { "airframe": dcs.helicopters.Mi_8MT, "count": 4, "parking": [12, 13, 14, 15], "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
@@ -130,13 +130,13 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "parking": [4, 5], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
                     { "airframe": dcs.planes.AV8BNA, "count": 2, "parking": [23, 24], "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
                     { "airframe": dcs.planes.A_10C_2, "count": 2, "parking": [25, 22], "fuel": 0.6, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
-                    { "airframe": dcs.planes.A_10A, "count": 1, "parking": [42], "fuel": 1, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
+                    { "airframe": dcs.planes.A_10A, "count": 1, "parking": [42], "fuel": 1, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)", "start_type": dcs.mission.StartType.Cold },
                     { "airframe": dcs.planes.P_51D_30_NA, "count": 1, "parking": [21], "fuel": 1, "loadout": "Empty", "livery": "Ukraine Modern" },
                     { "airframe": dcs.planes.AJS37, "count": 1, "parking": [20], "fuel": 1, "loadout": "Empty", "livery": "SF-37 Akktu Stakki - F21" },
                     { "airframe": dcs.planes.C_101CC, "count": 1, "parking": [43], "fuel": 1, "loadout": "Empty", "livery": "usaf agressor fictional" },
                     { "airframe": dcs.planes.L_39ZA, "count": 1, "parking": [44], "fuel": 1, "loadout": "Empty", "livery": "algerian af tiger nl-36" },
                     { "airframe": dcs.planes.F_5E_3, "count": 2, "parking": [45, 46], "fuel": 1, "loadout": "Empty", "livery": "BR FAB 4846" },
-                    { "airframe": dcs.planes.Su_25, "count": 1, "parking": [41], "fuel": 1, "loadout": "Empty", "livery": "petal camo scheme #1 (native). 299th brigade" },
+                    { "airframe": dcs.planes.Su_25, "count": 1, "parking": [41], "fuel": 1, "loadout": "Empty", "livery": "petal camo scheme #1 (native). 299th brigade", "start_type": dcs.mission.StartType.Cold },
                     { "airframe": dcs.planes.Su_25T, "count": 2, "parking": [33, 40], "fuel": 1, "loadout": "Empty", "livery": "Algerian AF Desert KU-03" },
                     { "airframe": dcs.planes.M_2000C, "count": 1, "parking": [30], "fuel": 1, "loadout": "Empty", "livery": "2003 Tigermeet" },
                     { "airframe": dcs.planes.MiG_21Bis, "count": 2, "parking": [38, 29], "fuel": 1, "loadout": "Empty", "livery": "HuAF 31st AB (Turul Sqn)" },
@@ -150,7 +150,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "farp": "FARP Pissouri",
                 "farp_zone": "FARP-1",
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     {
                         "airframe": dcs.helicopters.Mi_24P, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation",
@@ -187,7 +187,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "farp": "FARP Pyrgos",
                 "farp_zone": "FARP-2",
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     {
                         "airframe": dcs.helicopters.Mi_24P, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation",
@@ -224,7 +224,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "farp": "FARP Stavrovouni",
                 "farp_zone": "FARP-3",
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     {
                         "airframe": dcs.helicopters.Mi_24P, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation",
@@ -261,7 +261,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "farp": "FARP Xylofagou",
                 "farp_zone": "FARP-4",
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     {
                         "airframe": dcs.helicopters.Mi_24P, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation",
@@ -298,7 +298,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "farp": "FARP Pano Akourdaleia",
                 "farp_zone": "FARP-5",
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     {
                         "airframe": dcs.helicopters.Mi_24P, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation",
@@ -334,7 +334,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
             {
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
                 "airport": m.terrain.airports["Ramat David"],
-                "start_type": dcs.mission.StartType.Cold,
+                "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.planes.F_15ESE, "count": 5, "parking": [38, 39, 40, 41, 42], "fuel": 1, "loadout": "Empty", "livery": "USAF 494th Panthers FS 91-603 75th D-Day Anniversary", "properties": { dcs.planes.F_15ESE.Properties.NetCrewControlPriority.id: dcs.planes.F_15ESE.Properties.NetCrewControlPriority.Values.Equally_Responsible } },
                 ]
