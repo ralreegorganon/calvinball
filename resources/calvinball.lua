@@ -2628,9 +2628,9 @@ local function initializeCtld()
     MissionDb.ctld.instance.filepath = defaultDrive
     MissionDb.ctld.instance.eventoninject = true
 
-    MissionDb.ctld.instance:UnitCapabilities("Ka-50", false, true, 0, 2, 15, 200)
-    MissionDb.ctld.instance:UnitCapabilities("Ka-50_3", false, true, 0, 2, 15, 200)
-    MissionDb.ctld.instance:UnitCapabilities("UH-1H", true, true, 1, 8, 15, 1350)
+    MissionDb.ctld.instance:SetUnitCapabilities("Ka-50", false, true, 0, 2, 15, 200)
+    MissionDb.ctld.instance:SetUnitCapabilities("Ka-50_3", false, true, 0, 2, 15, 200)
+    MissionDb.ctld.instance:SetUnitCapabilities("UH-1H", true, true, 1, 8, 15, 1350)
 
     MissionDb.ctld.instance:Start()
     MissionDb.ctld.instance:AddTroopsCargo("Infantry (8)", { "CTLD Inf M4 8" }, CTLD_CARGO.Enum.TROOPS, 8, 80)
