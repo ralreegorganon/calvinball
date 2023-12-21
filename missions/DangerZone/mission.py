@@ -315,7 +315,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.helicopters.UH_1H, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972" },
-                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
+                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False } },
                     { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
                 ]
             },
@@ -338,7 +338,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "positions": [{"heading": 251, "x": 111544.47868506, "y": -156946.13075871}, {"heading": 257, "x": 111524.43705288, "y": -156946.3823697}, {"heading": 247, "x": 111577.94294707, "y": -156953.80489398}, {"heading": 255, "x": 111561.96564905, "y": -156947.76623016}]
                     },
                     {
-                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False },
                         "positions": [{"heading": 40, "x": 111429.69489901, "y": -157138.97457157}, {"heading": 30, "x": 111414.38222987, "y": -157110.72161865}, {"heading": 63, "x": 111477.14260621, "y": -157175.85438035}, {"heading": 45, "x": 111452.83076481, "y": -157160.04379569}]
                     },
                     {
@@ -375,7 +375,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "positions": [{"heading": 257, "x": 134146.07311127, "y": -133694.78477178}, {"heading": 247, "x": 134199.57900546, "y": -133702.20729606}, {"heading": 255, "x": 134183.60170744, "y": -133696.16863224}, {"heading": 251, "x": 134166.11474345, "y": -133694.53316079}]
                     },
                     {
-                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False },
                         "positions": [{"heading": 30, "x": 134036.01828826, "y": -133859.12402073}, {"heading": 63, "x": 134098.7786646, "y": -133924.25678243}, {"heading": 45, "x": 134074.4668232, "y": -133908.44619777}, {"heading": 40, "x": 134051.3309574, "y": -133887.37697365}]
                     },
                     {
@@ -415,7 +415,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "airport": m.terrain.airports["Lymington"],
                 "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
-                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 4, "parking": [55, 56, 50, 48], "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
+                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 4, "parking": [55, 56, 50, 48], "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False } },
                     { "airframe": dcs.helicopters.Ka_50_3, "count": 4, "parking": [49, 52, 51, 53], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
                     { "airframe": dcs.helicopters.Mi_24P, "count": 4, "parking": [4, 5, 6, 7], "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation" },
                     { "airframe": dcs.helicopters.Mi_8MT, "count": 4, "parking": [8, 9, 12, 10], "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
@@ -486,7 +486,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.helicopters.UH_1H, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972" },
-                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
+                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False } },
                     { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
                 ]
             },
@@ -509,7 +509,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "positions": [{"heading": 247, "x": 225270.70925073, "y": 27061.773793572}, {"heading": 255, "x": 225254.73195271, "y": 27067.812457392}, {"heading": 251, "x": 225237.24498872, "y": 27069.447928842}, {"heading": 257, "x": 225217.20335654, "y": 27069.196317852}]
                     },
                     {
-                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False },
                         "positions": [{"heading": 63, "x": 225169.90890987, "y": 26839.724307202}, {"heading": 45, "x": 225145.59706847, "y": 26855.534891862}, {"heading": 40, "x": 225122.46120267, "y": 26876.604115982}, {"heading": 30, "x": 225107.14853353, "y": 26904.857068902}]
                     },
                     {
@@ -546,7 +546,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "positions": [{"heading": 255, "x": 177894.11409454, "y": 42724.148277549}, {"heading": 247, "x": 177910.09139256, "y": 42718.109613729}, {"heading": 251, "x": 177876.62713055, "y": 42725.783748999}, {"heading": 257, "x": 177856.58549837, "y": 42725.532138009}]
                     },
                     {
-                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False },
                         "positions": [{"heading": 45, "x": 177784.9792103, "y": 42511.870712019}, {"heading": 40, "x": 177761.8433445, "y": 42532.939936139}, {"heading": 30, "x": 177746.53067536, "y": 42561.192889059}, {"heading": 63, "x": 177809.2910517, "y": 42496.060127359}]
                     },
                     {
@@ -628,7 +628,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "positions": [{"heading": 257, "x": 182826.21043304, "y": 98615.619450215}, {"heading": 251, "x": 182846.25206522, "y": 98615.871061205}, {"heading": 247, "x": 182879.71632723, "y": 98608.196925935}, {"heading": 255, "x": 182863.73902921, "y": 98614.235589755}]
                     },
                     {
-                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False },
                         "positions": [{"heading": 30, "x": 182716.15561003, "y": 98451.280201265}, {"heading": 45, "x": 182754.60414497, "y": 98401.958024225}, {"heading": 40, "x": 182731.46827917, "y": 98423.027248345}, {"heading": 63, "x": 182778.91598637, "y": 98386.147439565}]
                     },
                     {
@@ -693,7 +693,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "positions": [{"heading": 247, "x": 160253.9576906, "y": 146516.80819888}, {"heading": 255, "x": 160236.43630341, "y": 146522.5334687}, {"heading": 257, "x": 160200.45179641, "y": 146524.23072316}, {"heading": 251, "x": 160219.74055521, "y": 146524.73027767}]
                     },
                     {
-                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False },
                         "positions": [{"heading": 40, "x": 160105.70964254, "y": 146331.63852129}, {"heading": 30, "x": 160090.3969734, "y": 146359.89147421}, {"heading": 63, "x": 160153.15734974, "y": 146294.75871251}, {"heading": 45, "x": 160128.84550834, "y": 146310.56929717}]
                     },
                     {

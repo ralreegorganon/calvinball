@@ -128,7 +128,7 @@ class RockTheCasbahClients(calvinball.clients.Clients):
                 "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     {
-                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False },
                         "positions": [{"heading": 30, "x": -211045.51557317, "y": -174022.30478844}, {"heading": 45, "x": -211007.06703823, "y": -174071.62696548}, {"heading": 63, "x": -210982.75519683, "y": -174087.43755014}, {"heading": 40, "x": -211030.20290403, "y": -174050.55774136}]
                     },
                     {
