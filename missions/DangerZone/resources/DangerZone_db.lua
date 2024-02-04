@@ -16810,10 +16810,10 @@ MissionDb = {
 							"Stoney Cross JF-17 Warm 4",
 							"Stoney Cross Mirage-F1EE Warm 1",
 							"Stoney Cross Mirage-F1EE Warm 2",
-							"Stoney Cross Su-25T Warm 1",
-							"Stoney Cross Su-25T Warm 2",
-							"Stoney Cross Su-25T Warm 3",
-							"Stoney Cross Su-25T Warm 4",
+							"Stoney Cross Su-25T Cold 1",
+							"Stoney Cross Su-25T Cold 2",
+							"Stoney Cross Su-25T Cold 3",
+							"Stoney Cross Su-25T Cold 4",
 					}
 				},
 				{

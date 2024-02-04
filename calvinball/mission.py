@@ -96,7 +96,7 @@ class Mission:
         self.m.forced_options.geffect = dcs.forcedoptions.ForcedOptions.GEffect.Realistic
         self.m.forced_options.accidental_failures = False
         self.m.forced_options.mini_hud = False
-        self.m.forced_options.cockpit_visual_recon_mode = False
+        self.m.forced_options.cockpit_visual_recon_mode = True
         self.m.forced_options.user_marks = True
         self.m.forced_options.civil_traffic = dcs.forcedoptions.ForcedOptions.CivilTraffic.Off
         self.m.forced_options.birds = 0
