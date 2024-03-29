@@ -3,6 +3,7 @@ import json
 import os
 import shutil
 import sys
+import zipfile
 from jinja2 import Template
 from pathlib import Path
 
@@ -82,7 +83,7 @@ class Mission:
         self.m.forced_options.permit_crash = False
         self.m.forced_options.external_views = True
         self.m.forced_options.options_view = dcs.forcedoptions.ForcedOptions.Views.OnlyAllies
-        self.m.forced_options.labels = dcs.forcedoptions.ForcedOptions.Labels.NeutralDot
+        self.m.forced_options.labels = dcs.forcedoptions.ForcedOptions.Labels.Full
         self.m.forced_options.easy_flight = False
         self.m.forced_options.easy_radar = False
         self.m.forced_options.immortal = False
@@ -154,6 +155,8 @@ class Mission:
 
         self.m.save(self.miz_export_path)
 
+        with zipfile.ZipFile(self.miz_export_path, "a") as zf:
+            zf.write(self.__common_resource("Labels.lua"), "Config/View/Labels.lua")
 
     def __write_db(self, ctld_groups, csar_groups, farp_groups, roadbase_groups, airbase_groups, red_airwings, blue_airwings, carriers, carrier_groups, red_brigades, blue_brigades, configure_for_editor, devmode):
         with open(self.objectives_json_path) as json_file:
