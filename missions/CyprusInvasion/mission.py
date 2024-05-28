@@ -64,7 +64,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.helicopters.Mi_24P, "count": 4, "parking": [42, 43, 44, 45], "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation" },
                     { "airframe": dcs.helicopters.Mi_8MT, "count": 4, "parking": [2, 3, 4, 5], "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
                     { "airframe": dcs.helicopters.UH_1H, "count": 4, "parking": [33, 34, 35, 36], "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972" },
-                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 4, "parking": [10, 11, 12, 13], "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False } },
+                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 4, "parking": [10, 11, 12, 13], "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
                     { "airframe": dcs.helicopters.SA342L, "count": 1, "parking": [20], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2" },
                     { "airframe": dcs.helicopters.SA342M, "count": 1, "parking": [21], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet" },
                     { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "parking": [38, 39], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
@@ -94,7 +94,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.helicopters.Mi_24P, "count": 4, "parking": [41, 42, 43, 44], "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation" },
                     { "airframe": dcs.helicopters.Mi_8MT, "count": 4, "parking": [37, 38, 39, 40], "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
                     { "airframe": dcs.helicopters.UH_1H, "count": 4, "parking": [20, 21, 22, 23], "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972" },
-                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 4, "parking": [10, 11, 12, 13], "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False } },
+                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 4, "parking": [10, 11, 12, 13], "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
                     { "airframe": dcs.helicopters.SA342L, "count": 1, "parking": [2], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2" },
                     { "airframe": dcs.helicopters.SA342M, "count": 1, "parking": [4], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet" },
                     { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "parking": [8, 9], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
@@ -124,7 +124,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.helicopters.Mi_24P, "count": 4, "parking": [8, 9, 10, 11], "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation" },
                     { "airframe": dcs.helicopters.Mi_8MT, "count": 4, "parking": [12, 13, 14, 15], "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
                     { "airframe": dcs.helicopters.UH_1H, "count": 4, "parking": [16, 17, 18, 19], "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972" },
-                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 4, "parking": [35, 7, 34, 6], "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False } },
+                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 4, "parking": [35, 7, 34, 6], "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
                     { "airframe": dcs.helicopters.SA342L, "count": 1, "parking": [36], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2" },
                     { "airframe": dcs.helicopters.SA342M, "count": 1, "parking": [37], "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet" },
                     { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "parking": [4, 5], "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
@@ -165,7 +165,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                         "positions": [{"heading": 247, "x": -25691.324009923, "y": -292091.02223221}, {"heading": 255, "x": -25707.30130795, "y": -292084.98356839}, {"heading": 251, "x": -25724.788271932, "y": -292083.34809694}, {"heading": 257, "x": -25744.829904119, "y": -292083.59970793}]
                     },
                     {
-                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False },
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
                         "positions": [{"heading":63,"x":-25792.124350791,"y":-292313.07171858},{"heading":45,"x":-25816.436192186,"y":-292297.26113392},{"heading":40,"x":-25839.572057985,"y":-292276.1919098},{"heading":30,"x":-25854.884727125,"y":-292247.93895688}]
                     },
                     {
@@ -202,7 +202,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                         "positions": [{"heading":251,"x":-23184.40157847,"y":-249729.30143241},{"heading":257,"x":-23204.443210657,"y":-249729.5530434},{"heading":247,"x":-23150.937316461,"y":-249736.97556768},{"heading":255,"x":-23166.914614488,"y":-249730.93690386}]
                     },
                     {
-                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False },
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
                         "positions": [{"heading":45,"x":-23276.049498724,"y":-249943.21446939},{"heading":40,"x":-23299.185364523,"y":-249922.14524527},{"heading":30,"x":-23314.498033663,"y":-249893.89229235},{"heading":63,"x":-23251.737657329,"y":-249959.02505405}]
                     },
                     {
@@ -239,7 +239,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                         "positions": [{"heading":247,"x":-3288.2061009055,"y":-224738.69500772},{"heading":255,"x":-3304.1833989325,"y":-224732.6563439},{"heading":251,"x":-3321.6703629145,"y":-224731.02087245},{"heading":257,"x":-3341.7119951015,"y":-224731.27248344}]
                     },
                     {
-                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False },
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
                         "positions": [{"heading":40,"x":-3436.4541489675,"y":-224923.86468531},{"heading":30,"x":-3451.7668181075,"y":-224895.61173239},{"heading":63,"x":-3389.0064417735,"y":-224960.74449409},{"heading":45,"x":-3413.3182831685,"y":-224944.93390943}]
                     },
                     {
@@ -276,7 +276,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                         "positions": [{"heading":255,"x":-342.02511773255,"y":-185709.54067085},{"heading":257,"x":-379.55371390155,"y":-185708.15681039},{"heading":247,"x":-326.04781970555,"y":-185715.57933467},{"heading":251,"x":-359.51208171455,"y":-185707.9051994}]
                     },
                     {
-                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False },
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
                         "positions": [{"heading":30,"x":-489.60853690755,"y":-185872.49605934},{"heading":45,"x":-451.16000196855,"y":-185921.81823638},{"heading":40,"x":-474.29586776755,"y":-185900.74901226},{"heading":63,"x":-426.84816057355,"y":-185937.62882104}]
                     },
                     {
@@ -313,7 +313,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                         "positions": [{"heading":255,"x":6357.2126358882,"y":-316055.80017074},{"heading":251,"x":6339.7256719062,"y":-316054.16469929},{"heading":257,"x":6319.6840397192,"y":-316054.41631028},{"heading":247,"x":6373.1899339152,"y":-316061.83883456}]
                     },
                     {
-                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit", "properties": { dcs.helicopters.AH_64D_BLK_II.Properties.FCR_RFI_removed.id: False },
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
                         "positions": [{"heading":30,"x":6209.6292167132,"y":-316218.75555923},{"heading":63,"x":6272.3895930472,"y":-316283.88832093},{"heading":45,"x":6248.0777516522,"y":-316268.07773627},{"heading":40,"x":6224.9418858532,"y":-316247.00851215}]
                     },
                     {
