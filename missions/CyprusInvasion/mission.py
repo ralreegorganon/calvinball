@@ -84,6 +84,16 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.Mirage_F1EE, "count": 1, "parking": [17], "fuel": 1, "loadout": "Empty", "livery": "USA AGGRESSOR Colour (CE)" },
                     { "airframe": dcs.planes.F_86F_Sabre, "count": 1, "parking": [6], "fuel": 1, "loadout": "Empty", "livery": "Royal Saudi Air Force" },
                     { "airframe": dcs.planes.MB_339A, "count": 2, "parking": [40, 41], "fuel": 1, "loadout": "Empty", "livery": "MB339AN 'NIGERIA'" },
+                    {
+                        "airframe": dcs.planes.F_4E_45MC, "fuel": 1, "loadout": "Empty", "livery": "RS68-517_SEA_526TFS", "start_type": dcs.mission.StartType.Warm,
+                        "properties": { dcs.planes.F_4E_45MC.Properties.INSAlignmentStored.id: True },
+                        "positions": [{"heading": 39, "x": -36534.195408274, "y": -268106.95968465}, {"heading": 39, "x": -36545.359641738, "y": -268091.51582836}, {"heading": 39, "x": -36574.200578189, "y": -268053.18529346}, {"heading": 39, "x": -36586.481235, "y": -268036.62501383}], "F-5E-3": [{"heading": 0, "x": -36566.1484375, "y": -267705.40625}, {"heading": 0, "x": -36518.046875, "y": -267725.15625}]
+                    },
+                    {
+                        "airframe": dcs.planes.F_4E_45MC, "fuel": 1, "loadout": "Empty", "livery": "RS68-517_SEA_526TFS", "start_type": dcs.mission.StartType.Cold,
+                        "properties": { dcs.planes.F_4E_45MC.Properties.INSAlignmentStored.id: True },
+                        "positions": [{"heading": 292, "x": -36756.908435825, "y": -267545.21156767}, {"heading": 292, "x": -36744.335402859, "y": -267540.39298121}, {"heading": 292, "x": -36731.399972959, "y": -267535.28140004}, {"heading": 292, "x": -36718.568861042, "y": -267530.37845483}]
+                    }
                 ]
             },
             {
@@ -331,17 +341,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     },
                 ]
             },
-            {
-                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
-                "airport": m.terrain.airports["Ramat David"],
-                "start_type": dcs.mission.StartType.Warm,
-                "airframes": [
-                    { "airframe": dcs.planes.F_15ESE, "count": 5, "parking": [38, 39, 40, 41, 42], "fuel": 1, "loadout": "Empty", "livery": "USAF 494th Panthers FS 91-603 75th D-Day Anniversary", "properties": { dcs.planes.F_15ESE.Properties.NetCrewControlPriority.id: dcs.planes.F_15ESE.Properties.NetCrewControlPriority.Values.Equally_Responsible } },
-                ]
-            },
         ]
-
-        m.terrain.airports["Ramat David"].set_blue()
 
         comms_plan = {
             "uhf": { 1: 250, 2: 251, 3: 252, 4: 253, 5: 254 },
@@ -380,6 +380,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
             dcs.planes.Su_25: ["vhf_am"],
             dcs.planes.Su_25T: ["vhf_am"],
             dcs.planes.F_15ESE: ["uhf", "vhf_am"],
+            dcs.planes.F_4E_45MC: ["uhf", "uhf"],
         }
 
         if not edit:
@@ -468,7 +469,7 @@ class CyprusInvasionRedAirwings(calvinball.redairwing.RedAirwings):
                         "initialInventory": 0,
                         "livery": "Russian Air Force",
                         "loadouts": {
-                            # this is a custom one to strip the agtms off 
+                            # this is a custom one to strip the agtms off
                             "GoonsSuck": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS }"
                         },
                         "capabilities": {
@@ -597,7 +598,7 @@ class CyprusInvasionRedAirwings(calvinball.redairwing.RedAirwings):
                         "initialInventory": 0,
                         "livery": "Russian Air Force",
                         "loadouts": {
-                            # this is a custom one to strip the agtms off 
+                            # this is a custom one to strip the agtms off
                             "GoonsSuck": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS }"
                         },
                         "capabilities": {
@@ -745,7 +746,7 @@ class CyprusInvasionRedAirwings(calvinball.redairwing.RedAirwings):
                         "initialInventory": 0,
                         "livery": "Russian Air Force",
                         "loadouts": {
-                            # this is a custom one to strip the agtms off 
+                            # this is a custom one to strip the agtms off
                             "GoonsSuck": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS }"
                         },
                         "capabilities": {
