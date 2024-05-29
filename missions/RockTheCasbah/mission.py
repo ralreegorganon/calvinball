@@ -161,6 +161,8 @@ class RockTheCasbahClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.C_101CC, "count": 2, "parking": [225, 226], "fuel": 1, "loadout": "Empty", "livery": "usaf agressor fictional" },
                     { "airframe": dcs.planes.F_5E_3, "count": 4, "parking": [252, 251, 250, 249], "fuel": 1, "loadout": "Empty", "livery": "BR FAB 4846" },
                     { "airframe": dcs.planes.F_86F_Sabre, "count": 2, "parking": [208, 229], "fuel": 1, "loadout": "Empty", "livery": "Royal Saudi Air Force" },
+                    { "airframe": dcs.planes.F_4E_45MC, "count": 4, "parking": [61, 62, 63, 64], "fuel": 1, "loadout": "Empty", "livery": "RS68-517_SEA_526TFS", "properties": { dcs.planes.F_4E_45MC.Properties.INSAlignmentStored.id: True } },
+                    { "airframe": dcs.planes.F_4E_45MC, "count": 4, "parking": [65, 66, 67, 68], "fuel": 1, "loadout": "Empty", "livery": "RS68-517_SEA_526TFS", "start_type": dcs.mission.StartType.Cold, "properties": { dcs.planes.F_4E_45MC.Properties.INSAlignmentStored.id: True } },
                     { "airframe": dcs.planes.L_39ZA, "count": 2, "parking": [227, 228], "fuel": 1, "loadout": "Empty", "livery": "algerian af tiger nl-36" },
                     { "airframe": dcs.planes.M_2000C, "count": 4, "parking": [235, 234, 233, 232], "fuel": 1, "loadout": "Empty", "livery": "2003 Tigermeet" },
                     { "airframe": dcs.planes.MB_339A, "count": 2, "parking": [223, 224], "fuel": 1, "loadout": "Empty", "livery": "MB339AN 'NIGERIA'" },
@@ -219,6 +221,7 @@ class RockTheCasbahClients(calvinball.clients.Clients):
             dcs.planes.F_16C_50: ["uhf", "vhf_am"],
             dcs.planes.JF_17: ["uhf"],
             dcs.planes.F_15C: ["uhf"],
+            dcs.planes.F_4E_45MC: ["uhf"],
         }
 
         if not edit:
