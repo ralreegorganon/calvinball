@@ -2765,11 +2765,13 @@ end
 
 local function initializeAutolase()
     SCHEDULER:New(nil, function()
+        local players = SET_CLIENT:New():FilterCoalitions("blue"):FilterActive(true):FilterStart()
         local jtacs = SET_GROUP:New():FilterPrefixes("JTAC"):FilterCoalitions("blue"):FilterStart()
-        MissionDb.autolase.instance = AUTOLASE:New(jtacs,coalition.side.BLUE)
+        MissionDb.autolase.instance = AUTOLASE:New(jtacs, coalition.side.BLUE, "AUTOLASE", players)
         MissionDb.autolase.instance:SetSmokeTargets(true, SMOKECOLOR.Orange)
         MissionDb.autolase.instance:SetMaxLasingTargets(1)
         MissionDb.autolase.instance:SetLasingParameters(10000, 14400)
+        MissionDb.autolase.instance:SetLaserCodes({1688, 1113, 1511, 1522, 1533, 1611, 1622, 1633, 1711, 1722})
     end, {}, 60)
 end
 
