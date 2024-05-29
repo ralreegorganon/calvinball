@@ -92,7 +92,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     {
                         "airframe": dcs.planes.F_4E_45MC, "fuel": 1, "loadout": "Empty", "livery": "RS68-517_SEA_526TFS", "start_type": dcs.mission.StartType.Cold,
                         "properties": { dcs.planes.F_4E_45MC.Properties.INSAlignmentStored.id: True },
-                        "positions": [{"heading": 292, "x": -36756.908435825, "y": -267545.21156767}, {"heading": 292, "x": -36744.335402859, "y": -267540.39298121}, {"heading": 292, "x": -36731.399972959, "y": -267535.28140004}, {"heading": 292, "x": -36718.568861042, "y": -267530.37845483}]
+                        "positions": [{"heading": 37, "x": -36476.275478736, "y": -268063.58372997}, {"heading": 35, "x": -36486.329552149, "y": -268048.18843006}, {"heading": 39, "x": -36518.896780268, "y": -268006.31522663}, {"heading": 38, "x": -36530.601598484, "y": -267990.27041964}]
                     }
                 ]
             },
