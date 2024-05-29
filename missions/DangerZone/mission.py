@@ -400,14 +400,14 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "airframes": [
                     { "airframe": dcs.planes.A_10C_2, "count": 4, "parking": [21, 37, 39, 20], "fuel": 0.6, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
                     { "airframe": dcs.planes.AJS37, "count": 2, "parking": [40, 19], "fuel": 1, "loadout": "Empty", "livery": "SF-37 Akktu Stakki - F21" },
-                    { "airframe": dcs.planes.AV8BNA, "count": 2, "parking": [36, 38], "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
                     { "airframe": dcs.planes.F_14B, "count": 4, "parking": [1, 7, 2, 9], "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True } },
-                    { "airframe": dcs.planes.F_15ESE, "count": 4, "parking": [8, 24, 11, 10], "fuel": 1, "loadout": "Empty", "livery": "USAF 494th Panthers FS 91-603 75th D-Day Anniversary", "properties": { dcs.planes.F_15ESE.Properties.NetCrewControlPriority.id: dcs.planes.F_15ESE.Properties.NetCrewControlPriority.Values.Equally_Responsible } },
+                    { "airframe": dcs.planes.F_15ESE, "count": 2, "parking": [8, 24], "fuel": 1, "loadout": "Empty", "livery": "USAF 494th Panthers FS 91-603 75th D-Day Anniversary", "properties": { dcs.planes.F_15ESE.Properties.NetCrewControlPriority.id: dcs.planes.F_15ESE.Properties.NetCrewControlPriority.Values.Equally_Responsible } },
                     { "airframe": dcs.planes.F_16C_50, "count": 6, "parking": [22, 14, 13, 16, 28, 25], "fuel": 1, "loadout": "Empty", "livery": "18th AGRS Arctic Splinter" },
+                    { "airframe": dcs.planes.F_4E_45MC, "count": 4, "parking": [36, 38, 11, 10], "fuel": 1, "loadout": "Empty", "livery": "RS68-517_SEA_526TFS", "properties": { dcs.planes.F_4E_45MC.Properties.INSAlignmentStored.id: True } },
                     { "airframe": dcs.planes.FA_18C_hornet, "count": 4, "parking": [12, 17, 15, 0], "fuel": 1, "loadout": "Empty", "livery": "VX-31 CoNA" },
                     { "airframe": dcs.planes.JF_17, "count": 4, "parking": [27, 23, 26, 32], "fuel": 1, "loadout": "Empty", "livery": "PAF Black Panthers 07-101" },
                     { "airframe": dcs.planes.Mirage_F1EE, "count": 2, "parking": [30, 18], "fuel": 1, "loadout": "Empty", "livery": "USA AGGRESSOR Colour (CE)" },
-                    { "airframe": dcs.planes.Su_25T, "count": 4, "parking": [41, 31, 42, 34], "fuel": 1, "loadout": "Empty", "livery": "Algerian AF Desert KU-03", "start_type": dcs.mission.StartType.Cold },
+                    { "airframe": dcs.planes.Su_25T, "count": 4, "parking": [41, 31, 42, 34], "fuel": 1, "loadout": "Empty", "livery": "Algerian AF Desert KU-03", "start_type": dcs.mission.StartType.Cold }
                 ]
             },
             {
@@ -430,6 +430,7 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.planes.A_10A, "count": 2, "parking": [26, 24], "fuel": 1, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)", "start_type": dcs.mission.StartType.Cold },
+                    { "airframe": dcs.planes.AV8BNA, "count": 2, "parking": [48, 49], "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
                     { "airframe": dcs.planes.C_101CC, "count": 2, "parking": [25, 27], "fuel": 1, "loadout": "Empty", "livery": "usaf agressor fictional" },
                     { "airframe": dcs.planes.F_5E_3, "count": 2, "parking": [28, 29], "fuel": 1, "loadout": "Empty", "livery": "BR FAB 4846" },
                     { "airframe": dcs.planes.F_86F_Sabre, "count": 2, "parking": [30, 32], "fuel": 1, "loadout": "Empty", "livery": "Royal Saudi Air Force" },
@@ -585,7 +586,15 @@ class DangerZoneClients(calvinball.clients.Clients):
                     },
                     { 
                         "airframe": dcs.planes.F_15ESE, "fuel": 1, "loadout": "Empty", "livery": "USAF 494th Panthers FS 91-603 75th D-Day Anniversary", "properties": { dcs.planes.F_15ESE.Properties.NetCrewControlPriority.id: dcs.planes.F_15ESE.Properties.NetCrewControlPriority.Values.Equally_Responsible },
-                        "positions": [{"heading": 211, "x": 127545.3005247, "y": -168731.35467876}, {"heading": 211, "x": 127564, "y": -168716}]
+                        "positions": [{"heading": 211, "x": 127545.3005247, "y": -168731.35467876}]
+                    },
+                    { 
+                        "airframe": dcs.planes.JF_17, "fuel": 1, "loadout": "Empty", "livery": "PAF Black Panthers 07-101",
+                        "positions": [{"heading": 211, "x": 127564, "y": -168716}]
+                    },
+                    { 
+                        "airframe": dcs.planes.F_4E_45MC, "fuel": 1, "loadout": "Empty", "livery": "RS68-517_SEA_526TFS", "properties": { dcs.planes.F_4E_45MC.Properties.INSAlignmentStored.id: True },
+                        "positions": [{"heading": 211, "x": 127582.68608024, "y": -168704.50956739}, {"heading": 216, "x": 127602.8161715, "y": -168688.48005027}]
                     },
                 ]
             },
@@ -606,6 +615,10 @@ class DangerZoneClients(calvinball.clients.Clients):
                     { 
                         "airframe": dcs.planes.F_15ESE, "fuel": 1, "loadout": "Empty", "livery": "USAF 494th Panthers FS 91-603 75th D-Day Anniversary", "properties": { dcs.planes.F_15ESE.Properties.NetCrewControlPriority.id: dcs.planes.F_15ESE.Properties.NetCrewControlPriority.Values.Equally_Responsible },
                         "positions": [{"heading": 198, "x": 173007.16297902, "y": 75177.49832118}, {"heading": 205, "x": 173027.18632185, "y": 75186.670304026}]
+                    },
+                    { 
+                        "airframe": dcs.planes.F_4E_45MC, "fuel": 1, "loadout": "Empty", "livery": "RS68-517_SEA_526TFS", "properties": { dcs.planes.F_4E_45MC.Properties.INSAlignmentStored.id: True },
+                        "positions": [{"heading": 207, "x": 173049.52721236, "y": 75198.511938156}, {"heading": 209, "x": 173071.53094531, "y": 75210.027548688}]
                     },
                 ]
             },
@@ -671,6 +684,10 @@ class DangerZoneClients(calvinball.clients.Clients):
                     { 
                         "airframe": dcs.planes.FA_18C_hornet, "fuel": 1, "loadout": "Empty", "livery": "VX-31 CoNA",
                         "positions": [{"heading": 298, "x": 160539.31299561, "y": 146266.45252012}, {"heading": 296, "x": 160498.6407579, "y": 146355.57113429}]
+                    },
+                    { 
+                        "airframe": dcs.planes.F_4E_45MC, "fuel": 1, "loadout": "Empty", "livery": "RS68-517_SEA_526TFS", "properties": { dcs.planes.F_4E_45MC.Properties.INSAlignmentStored.id: True },
+                        "positions": [{"heading": 129, "x": 160657.68091137, "y": 146055.93580845}, {"heading": 135, "x": 160673.1387231, "y": 146039.08629663}]
                     },
                 ]
             },
@@ -755,6 +772,7 @@ class DangerZoneClients(calvinball.clients.Clients):
             dcs.planes.F_16C_50: ["uhf", "vhf_am"],
             dcs.planes.JF_17: ["uhf"],
             dcs.planes.F_15C: ["uhf"],
+            dcs.planes.F_4E_45MC: ["uhf"],
         }
 
         if not edit:

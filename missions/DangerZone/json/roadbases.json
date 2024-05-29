@@ -26,7 +26,12 @@
             "Static Invisible FARP-17",
             "Static Invisible FARP-18",
             "Static Invisible FARP-19",
-            "Static Invisible FARP-20"
+            "Static Invisible FARP-20",
+            "Static Container 20ft-58",
+            "MASH Tent 1-25",
+            "Static Container 20ft-59",
+            "Static Invisible FARP-38",
+            "Static Container 20ft-60"
         ],
         "vehicle_groups": [
             "FARP MASH 1-16",
@@ -36,7 +41,9 @@
             "FARP Support 1-13",
             "FARP Support 1-14",
             "FARP Support 1-15",
-            "FARP Support 1-16"
+            "FARP Support 1-16",
+            "FARP MASH 1-25",
+            "FARP Support 1-24"
         ],
         "vertices": [
             {
@@ -79,7 +86,12 @@
             "Static Container 20ft-33",
             "Static Invisible FARP-21",
             "Static Invisible FARP-22",
-            "Static Invisible FARP-23"
+            "Static Invisible FARP-23",
+            "Static Invisible FARP-37",
+            "MASH Tent 1-24",
+            "Static Container 20ft-55",
+            "Static Container 20ft-56",
+            "Static Container 20ft-57"
         ],
         "vehicle_groups": [
             "FARP MASH 1-20",
@@ -87,7 +99,9 @@
             "FARP MASH 1-22",
             "FARP Support 1-17",
             "FARP Support 1-18",
-            "FARP Support 1-19"
+            "FARP Support 1-19",
+            "FARP MASH 1-24",
+            "FARP Support 1-23"
         ],
         "vertices": [
             {
@@ -135,13 +149,18 @@
             "Static Invisible FARP-32",
             "Static Invisible FARP-33",
             "Static Invisible FARP-34",
-            "Static Invisible FARP-35"
+            "Static Invisible FARP-35",
+            "Static Container 20ft-52",
+            "Static Container 20ft-53",
+            "MASH Tent 1-23",
+            "Static Invisible FARP-36",
+            "Static Container 20ft-54"
         ],
         "vehicle_groups": [],
         "vertices": [
             {
-                "x": 160685.90511406,
-                "y": 146083.66397426
+                "x": 160714.92140151,
+                "y": 146036.80512551
             },
             {
                 "x": 158367.72974417,
@@ -156,7 +175,7 @@
                 "y": 146393.302349
             }
         ],
-        "x": 159446.08175031,
-        "y": 145492.98030656
+        "x": 159453.33582217,
+        "y": 145481.26559437
     }
 }

@@ -380,7 +380,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
             dcs.planes.Su_25: ["vhf_am"],
             dcs.planes.Su_25T: ["vhf_am"],
             dcs.planes.F_15ESE: ["uhf", "vhf_am"],
-            dcs.planes.F_4E_45MC: ["uhf", "uhf"],
+            dcs.planes.F_4E_45MC: ["uhf"],
         }
 
         if not edit:

@@ -4361,6 +4361,8 @@ MissionDb = {
 						{ name = "FARP Support 1-17" },
 						{ name = "FARP Support 1-18" },
 						{ name = "FARP Support 1-19" },
+						{ name = "FARP MASH 1-24" },
+						{ name = "FARP Support 1-23" },
 					},
 					shipGroups = {
 					},
@@ -4590,6 +4592,81 @@ MissionDb = {
 								dead = false
 							}
 						},
+						{
+							name = "Static Invisible FARP-37#00001",
+							template = {
+								name = "Static Invisible FARP-37",
+								type = "Invisible FARP",
+								x = 173075.93357978,
+								y = 75195.372354972,
+								heading = 0.0,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "invisiblefarp",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "MASH Tent 1-24#00001",
+							template = {
+								name = "MASH Tent 1-24",
+								type = "FARP Tent",
+								x = 173082.57883128,
+								y = 75184.761388854,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-55#00001",
+							template = {
+								name = "Static Container 20ft-55",
+								type = "container_20ft",
+								x = 173089.54562722,
+								y = 75177.794592917,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-56#00001",
+							template = {
+								name = "Static Container 20ft-56",
+								type = "container_20ft",
+								x = 173081.29265357,
+								y = 75173.185789452,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-57#00001",
+							template = {
+								name = "Static Container 20ft-57",
+								type = "container_20ft",
+								x = 173083.65064604,
+								y = 75195.15799202,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
 					},
 					clients = {
 							"ROADBASE Watch This A-10C_2 Warm 1",
@@ -4600,6 +4677,8 @@ MissionDb = {
 							"ROADBASE Watch This F-16C_50 Warm 4",
 							"ROADBASE Watch This F-15ESE Warm 1",
 							"ROADBASE Watch This F-15ESE Warm 2",
+							"ROADBASE Watch This F-4E-45MC Warm 1",
+							"ROADBASE Watch This F-4E-45MC Warm 2",
 					}
 				},
 			},
@@ -9277,6 +9356,81 @@ MissionDb = {
 								dead = false
 							}
 						},
+						{
+							name = "Static Container 20ft-52#00001",
+							template = {
+								name = "Static Container 20ft-52",
+								type = "container_20ft",
+								x = 160687.40676858,
+								y = 146045.24548128,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-53#00001",
+							template = {
+								name = "Static Container 20ft-53",
+								type = "container_20ft",
+								x = 160695.65974223,
+								y = 146049.85428475,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "MASH Tent 1-23#00001",
+							template = {
+								name = "MASH Tent 1-23",
+								type = "FARP Tent",
+								x = 160688.69294629,
+								y = 146056.82108068,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Invisible FARP-36#00001",
+							template = {
+								name = "Static Invisible FARP-36",
+								type = "Invisible FARP",
+								x = 160682.04769479,
+								y = 146067.4320468,
+								heading = 0.0,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "invisiblefarp",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-54#00001",
+							template = {
+								name = "Static Container 20ft-54",
+								type = "container_20ft",
+								x = 160689.76476105,
+								y = 146067.21768385,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
 					},
 					clients = {
 							"ROADBASE Hold My Beer A-10C_2 Warm 1",
@@ -9292,6 +9446,8 @@ MissionDb = {
 							"ROADBASE Hold My Beer F-15ESE Warm 2",
 							"ROADBASE Hold My Beer FA-18C_hornet Warm 1",
 							"ROADBASE Hold My Beer FA-18C_hornet Warm 2",
+							"ROADBASE Hold My Beer F-4E-45MC Warm 1",
+							"ROADBASE Hold My Beer F-4E-45MC Warm 2",
 					}
 				},
 			},
@@ -12120,6 +12276,8 @@ MissionDb = {
 						{ name = "FARP Support 1-14" },
 						{ name = "FARP Support 1-15" },
 						{ name = "FARP Support 1-16" },
+						{ name = "FARP MASH 1-25" },
+						{ name = "FARP Support 1-24" },
 					},
 					shipGroups = {
 					},
@@ -12454,6 +12612,81 @@ MissionDb = {
 								dead = false
 							}
 						},
+						{
+							name = "Static Container 20ft-58#00001",
+							template = {
+								name = "Static Container 20ft-58",
+								type = "container_20ft",
+								x = 127612.3575574,
+								y = -168739.53304215,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "MASH Tent 1-25#00001",
+							template = {
+								name = "MASH Tent 1-25",
+								type = "FARP Tent",
+								x = 127612.51967233,
+								y = -168729.80614621,
+								heading = 3.6302848441482,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "PalatkaB",
+								rate = 50,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-59#00001",
+							template = {
+								name = "Static Container 20ft-59",
+								type = "container_20ft",
+								x = 127620.02081038,
+								y = -168736.36585933,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
+						{
+							name = "Static Invisible FARP-38#00001",
+							template = {
+								name = "Static Invisible FARP-38",
+								type = "Invisible FARP",
+								x = 127602.22040557,
+								y = -168716.02253955,
+								heading = 0.0,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "invisiblefarp",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Static Container 20ft-60#00001",
+							template = {
+								name = "Static Container 20ft-60",
+								type = "container_20ft",
+								x = 127612.03332753,
+								y = -168721.7003996,
+								heading = 5.0265482457437,
+								category = "Fortifications",
+								canCargo = false,
+								shape_name = "container_20ft",
+								rate = 1,
+								dead = false
+							}
+						},
 					},
 					clients = {
 							"ROADBASE Send It A-10C_2 Warm 1",
@@ -12466,7 +12699,9 @@ MissionDb = {
 							"ROADBASE Send It F-16C_50 Warm 5",
 							"ROADBASE Send It F-16C_50 Warm 6",
 							"ROADBASE Send It F-15ESE Warm 1",
-							"ROADBASE Send It F-15ESE Warm 2",
+							"ROADBASE Send It JF-17 Warm 1",
+							"ROADBASE Send It F-4E-45MC Warm 1",
+							"ROADBASE Send It F-4E-45MC Warm 2",
 					}
 				},
 			},
@@ -16741,6 +16976,8 @@ MissionDb = {
 					clients = {
 							"Needs Oar Point A-10A Cold 1",
 							"Needs Oar Point A-10A Cold 2",
+							"Needs Oar Point AV8BNA Warm 1",
+							"Needs Oar Point AV8BNA Warm 2",
 							"Needs Oar Point C-101CC Warm 1",
 							"Needs Oar Point C-101CC Warm 2",
 							"Needs Oar Point F-5E-3 Warm 1",
@@ -16784,22 +17021,22 @@ MissionDb = {
 							"Stoney Cross A-10C_2 Warm 4",
 							"Stoney Cross AJS37 Warm 1",
 							"Stoney Cross AJS37 Warm 2",
-							"Stoney Cross AV8BNA Warm 1",
-							"Stoney Cross AV8BNA Warm 2",
 							"Stoney Cross F-14B Warm 1",
 							"Stoney Cross F-14B Warm 2",
 							"Stoney Cross F-14B Warm 3",
 							"Stoney Cross F-14B Warm 4",
 							"Stoney Cross F-15ESE Warm 1",
 							"Stoney Cross F-15ESE Warm 2",
-							"Stoney Cross F-15ESE Warm 3",
-							"Stoney Cross F-15ESE Warm 4",
 							"Stoney Cross F-16C_50 Warm 1",
 							"Stoney Cross F-16C_50 Warm 2",
 							"Stoney Cross F-16C_50 Warm 3",
 							"Stoney Cross F-16C_50 Warm 4",
 							"Stoney Cross F-16C_50 Warm 5",
 							"Stoney Cross F-16C_50 Warm 6",
+							"Stoney Cross F-4E-45MC Warm 1",
+							"Stoney Cross F-4E-45MC Warm 2",
+							"Stoney Cross F-4E-45MC Warm 3",
+							"Stoney Cross F-4E-45MC Warm 4",
 							"Stoney Cross FA-18C_hornet Warm 1",
 							"Stoney Cross FA-18C_hornet Warm 2",
 							"Stoney Cross FA-18C_hornet Warm 3",
