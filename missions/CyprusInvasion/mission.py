@@ -389,8 +389,21 @@ class CyprusInvasionClients(calvinball.clients.Clients):
             airport_set[2]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 2, "parking": [26, 28], "fuel": 0.75, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
             # airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.ov10a, "count": 2, "parking": [6, 7], "fuel": 1, "loadout": "Empty", "livery": "colombian 2221" })
             # airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.Hercules, "count": 2, "parking": [40, 41], "fuel": 0.6, "loadout": "Empty" })
+            airport_set[0]["airframes"].append(
+                {
+                    "airframe": pydcs_extensions.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                    "positions": [{"heading": 209, "x": -35639.062236162, "y": -270078.11288818}, {"heading": 209, "x": -35618.142073608, "y": -270095.67352911}, {"heading": 209, "x": -35597.098799438, "y": -270193.81797996}, {"heading": 209, "x": -35607.792922377, "y": -270224.86543365}]
+                }
+            )
+            airport_set[0]["airframes"].append(
+                {
+                    "airframe": pydcs_extensions.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Cold,
+                    "positions": [{"heading": 39, "x": -35725.083302998, "y": -270245.21876441}, {"heading": 39, "x": -35745.609119607, "y": -270222.62311755}, {"heading": 39, "x": -35759.235502062, "y": -270142.93465307}, {"heading": 39, "x": -35747.851435707, "y": -270109.47239742}]
+                }
+            )
 
             radios[pydcs_extensions.A_4E_C] = ["uhf"]
+            radios[pydcs_extensions.OH58D] = ["uhf", "vhf_am", "vhf_fm", "vhf_fm"]
 
         for airport in airport_set:
             for airframe in airport["airframes"]:
