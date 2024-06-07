@@ -199,6 +199,10 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                         "positions": [{"heading":208,"x":-25619.60684021,"y":-292171.04230084},{"heading":212,"x":-25628.625825875,"y":-292148.49483668}],
                         "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                        "positions":  [{"heading": 10, "x": -25863.571765621, "y": -292217.32354961}, {"heading": 333, "x": -25861.256932766, "y": -292187.2885479}, {"heading": 324, "x": -25853.4374652, "y": -292161.28881824}, {"heading": 322, "x": -25839.362423582, "y": -292134.31165514}]
+                    },
                 ]
             },
             {
