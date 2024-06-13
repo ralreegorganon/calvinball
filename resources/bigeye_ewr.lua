@@ -17,7 +17,7 @@ changelog
 -- CONSTANTS *************************************************************************************
 
 EWR = {}
-EWR.version = "0.0.7-SNAPSHOT"
+EWR.version = "0.0.7"
 EWR.debug = false
 
 -- _SETTINGS:SetPlayerMenuOff()
@@ -808,4 +808,4 @@ cleanupScheduler = SCHEDULER:New(nil,
         end, {}, 0, 60, 0)
 
 env.info("Big Eye EWR " .. EWR.version .. " Running")
-trigger.action.outText("Big Eye EWR " .. EWR.version .. " Running", 10)
+-- trigger.action.outText("Big Eye EWR " .. EWR.version .. " Running", 10)
