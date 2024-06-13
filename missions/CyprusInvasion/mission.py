@@ -132,6 +132,10 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.Mirage_F1EE, "count": 1, "parking": [27], "fuel": 1, "loadout": "Empty", "livery": "USA AGGRESSOR Colour (CE)" },
                     { "airframe": dcs.planes.F_86F_Sabre, "count": 1, "parking": [28], "fuel": 1, "loadout": "Empty", "livery": "Royal Saudi Air Force" },
                     { "airframe": dcs.planes.MB_339A, "count": 1, "parking": [35], "fuel": 1, "loadout": "Empty", "livery": "MB339AN 'NIGERIA'" },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading": 27, "x": -19232.769043198, "y": -314516.52653311}, {"heading": 27, "x": -19247.70940764, "y": -314483.47663601}, {"heading": 27, "x": -19265.064376437, "y": -314446.50300683}, {"heading": 27, "x": -19303.547133334, "y": -314356.70990741}]
+                    },
                 ]
             },
             {
@@ -162,6 +166,10 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.Mirage_F1EE, "count": 1, "parking": [39], "fuel": 1, "loadout": "Empty", "livery": "USA AGGRESSOR Colour (CE)" },
                     { "airframe": dcs.planes.F_86F_Sabre, "count": 1, "parking": [27], "fuel": 1, "loadout": "Empty", "livery": "Royal Saudi Air Force" },
                     { "airframe": dcs.planes.MB_339A, "count": 2, "parking": [2, 3], "fuel": 1, "loadout": "Empty", "livery": "MB339AN 'NIGERIA'" },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading": 145, "x": -7429.5826057291, "y": -209226.04271175}, {"heading": 152, "x": -7426.0910525832, "y": -209251.50195344}, {"heading": 152, "x": -7422.8904621995, "y": -209276.08830684}, {"heading": 152, "x": -7418.8169835293, "y": -209302.5659182}]
+                    },
                 ]
             },
             {
@@ -201,7 +209,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     },
                     {
                         "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
-                        "positions":  [{"heading": 10, "x": -25863.571765621, "y": -292217.32354961}, {"heading": 333, "x": -25861.256932766, "y": -292187.2885479}, {"heading": 324, "x": -25853.4374652, "y": -292161.28881824}, {"heading": 322, "x": -25839.362423582, "y": -292134.31165514}]
+                        "positions":  [{"heading":10,"x":-25863.571765621,"y":-292217.32354961},{"heading":333,"x":-25861.256932766,"y":-292187.2885479},{"heading":324,"x":-25853.4374652,"y":-292161.28881824},{"heading":322,"x":-25839.362423582,"y":-292134.31165514}]
                     },
                 ]
             },
@@ -240,6 +248,10 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                         "positions": [{"heading":208,"x":-23079.220146748,"y":-249816.99563631},{"heading":212,"x":-23088.239132413,"y":-249794.44817215}],
                         "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                        "positions":  [{"heading":10,"x":-23325.826227501,"y":-249863.94971771},{"heading":333,"x":-23323.511394645997,"y":-249833.914716},{"heading":324,"x":-23315.69192708,"y":-249807.91498634},{"heading":322,"x":-23301.616885461997,"y":-249780.93782324003}]
+                    },
                 ]
             },
             {
@@ -276,6 +288,10 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                         "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf",
                         "positions": [{"heading":212,"x":-3225.5079168575,"y":-224796.16761219},{"heading":208,"x":-3216.4889311925,"y":-224818.71507635}],
                         "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
+                    },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                        "positions":  [{"heading":10,"x":-3462.2712775481996,"y":-224865.47169489},{"heading":333,"x":-3459.956444693198,"y":-224835.43669318},{"heading":324,"x":-3452.1369771272,"y":-224809.43696352},{"heading":322,"x":-3438.0619355091985,"y":-224782.45980042004}]
                     },
                 ]
             },
@@ -314,6 +330,10 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                         "positions": [{"heading":212,"x":-263.34963565755,"y":-185773.05193914},{"heading":208,"x":-254.33064999255,"y":-185795.5994033}],
                         "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                        "positions":  [{"heading":10,"x":-500.6898558011896,"y":-185842.02156209},{"heading":333,"x":-498.37502294618815,"y":-185811.98656038},{"heading":324,"x":-490.55555538019024,"y":-185785.98683072},{"heading":322,"x":-476.48051376218854,"y":-185759.00966762003}]
+                    },
                 ]
             },
             {
@@ -350,6 +370,10 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                         "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf",
                         "positions": [{"heading":212,"x":6435.8881179632,"y":-316119.31143903},{"heading":208,"x":6444.9071036282,"y":-316141.85890319}],
                         "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
+                    },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading": 10, "x": 6200.6908805825, "y": -316188.30761095}, {"heading": 333, "x": 6202.8486679802, "y": -316158.60630207}, {"heading": 324, "x": 6210.9721028891, "y": -316132.52246029}, {"heading": 322, "x": 6222.401140591, "y": -316107.96968422}]
                     },
                 ]
             },
