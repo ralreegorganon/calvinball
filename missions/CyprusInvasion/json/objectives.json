@@ -4,12 +4,11 @@
             "airbases": [
                 "AIRBASE-1"
             ],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -71,6 +70,7 @@
                 "QRF-10",
                 "QRF-11"
             ],
+            "redAwacsZones": [],
             "reinforcements": [
                 "REINFORCEMENT-1"
             ],
@@ -117,12 +117,11 @@
         },
         "OBJ-10": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -164,6 +163,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
@@ -220,12 +220,11 @@
         },
         "OBJ-11": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -283,13 +282,13 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [
                 "Naval-2"
             ],
             "static_groups": [
-                "Paphos Airwing Warehouse",
                 "Static Fueltank-1",
                 "Static Fueltank-2",
                 "Static ISO container small-1",
@@ -348,12 +347,11 @@
             "airbases": [
                 "AIRBASE-2"
             ],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -419,6 +417,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [
                 "REINFORCEMENT-4"
             ],
@@ -473,12 +472,11 @@
         },
         "OBJ-13": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -527,7 +525,7 @@
                 },
                 "NODE-52": {
                     "blueCaptureThreshold": "0",
-                    "label": "Tanc a lelek Intensifies",
+                    "label": "Old Grumblers",
                     "radius": 259.9944,
                     "redSurrenderThreshold": "1",
                     "x": -8588.8683210253,
@@ -536,12 +534,11 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
-            "static_groups": [
-                "Larnaca Airwing Warehouse"
-            ],
+            "static_groups": [],
             "strand": "STRAND-2",
             "tasks": [],
             "vehicle_groups": [
@@ -581,12 +578,11 @@
         },
         "OBJ-14": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -638,6 +634,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [
                 "REINFORCEMENT-5"
             ],
@@ -708,12 +705,11 @@
         },
         "OBJ-15": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -771,6 +767,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
@@ -818,12 +815,11 @@
             "airbases": [
                 "AIRBASE-3"
             ],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -897,6 +893,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [
                 "REINFORCEMENT-6"
             ],
@@ -928,8 +925,7 @@
                 "Static Oiltank-6",
                 "Static Oiltank-7",
                 "Static Oiltank-8",
-                "Static Repair workshop-1",
-                "TASK12REMEDY"
+                "Static Repair workshop-1"
             ],
             "strand": "STRAND-2",
             "tasks": [
@@ -978,8 +974,8 @@
                 "RED SAM SA-2 RG-1",
                 "RED SAM SA-2 RG-2",
                 "RED SAM SA-2 RG-3",
-                "RED SAM SA-6 377-1",
-                "RED SAM SA-8 379-2"
+                "RED SAM SA-8 379-2",
+                "RED SAM SA-6 377-1"
             ],
             "vertices": [
                 {
@@ -1004,12 +1000,11 @@
         },
         "OBJ-17": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1067,6 +1062,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [
@@ -1088,11 +1084,6 @@
                 "DWGround-2",
                 "DWGround-3",
                 "DWRED GROUND 1-1",
-                "DWRED GROUND 1-10",
-                "DWRED GROUND 1-11",
-                "DWRED GROUND 1-12",
-                "DWRED GROUND 1-13",
-                "DWRED GROUND 1-14",
                 "DWRED GROUND 1-160",
                 "DWRED GROUND 1-161",
                 "DWRED GROUND 1-17",
@@ -1107,24 +1098,10 @@
                 "DWRED GROUND 1-26",
                 "DWRED GROUND 1-27",
                 "DWRED GROUND 1-28",
-                "DWRED GROUND 1-29",
                 "DWRED GROUND 1-3",
-                "DWRED GROUND 1-30",
                 "DWRED GROUND 1-31",
                 "DWRED GROUND 1-32",
-                "DWRED GROUND 1-33",
-                "DWRED GROUND 1-34",
-                "DWRED GROUND 1-35",
-                "DWRED GROUND 1-36",
-                "DWRED GROUND 1-37",
-                "DWRED GROUND 1-38",
-                "DWRED GROUND 1-39",
                 "DWRED GROUND 1-4",
-                "DWRED GROUND 1-40",
-                "DWRED GROUND 1-41",
-                "DWRED GROUND 1-42",
-                "DWRED GROUND 1-43",
-                "DWRED GROUND 1-44",
                 "DWRED GROUND 1-45",
                 "DWRED GROUND 1-46",
                 "DWRED GROUND 1-5",
@@ -1135,8 +1112,6 @@
                 "DWRED GROUND 1-68",
                 "DWRED GROUND 1-69",
                 "DWRED GROUND 1-7",
-                "DWRED GROUND 1-70",
-                "DWRED GROUND 1-71",
                 "DWRED GROUND 1-72",
                 "DWRED GROUND 1-73",
                 "DWRED GROUND 1-74",
@@ -1151,7 +1126,6 @@
                 "DWRED GROUND 1-82",
                 "DWRED GROUND 1-83",
                 "DWRED GROUND 1-85",
-                "DWRED GROUND 1-9",
                 "RED EWR 1-1",
                 "RED EWR 1-2",
                 "RED SAM SA-10 DW 1-15",
@@ -1181,12 +1155,11 @@
         },
         "OBJ-18": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1238,6 +1211,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [
                 "REINFORCEMENT-7"
             ],
@@ -1331,8 +1305,8 @@
                 "RED GROUND RG 1-6",
                 "RED GROUND RG 1-7",
                 "RED SAM SA-2 RG-4",
-                "RED SAM SA-2 RG-5",
-                "RED SAM SA-2 RG-6"
+                "RED SAM SA-2 RG-6",
+                "RED SAM SA-2 RG-5"
             ],
             "vertices": [
                 {
@@ -1357,12 +1331,11 @@
         },
         "OBJ-19": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1404,6 +1377,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
@@ -1465,12 +1439,11 @@
         },
         "OBJ-2": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1512,11 +1485,11 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
             "static_groups": [
-                "HATEFULIMAM1",
                 "Static Chemical tank A-1",
                 "Static Chemical tank A-2",
                 "Static FARP Fuel Depot-1",
@@ -1537,46 +1510,25 @@
             "tasks": [],
             "vehicle_groups": [
                 "DWRED GROUND 1-100",
-                "DWRED GROUND 1-179",
-                "DWRED GROUND 1-197",
                 "DWRED GROUND 1-212",
-                "DWRED GROUND 1-48",
-                "DWRED GROUND 1-49",
                 "DWRED GROUND 1-50",
                 "DWRED GROUND 1-51",
                 "DWRED GROUND 1-52",
-                "DWRED GROUND 1-67",
-                "DWRED GROUND 1-86",
-                "DWRED GROUND 1-87",
                 "DWRED GROUND 1-88",
                 "DWRED GROUND 1-90",
                 "DWRED GROUND 1-97",
                 "DWRED GROUND 1-98",
                 "Ground-12",
-                "Ground-13",
                 "Ground-15",
                 "RED GROUND 1-10",
                 "RED GROUND 1-179",
-                "RED GROUND 1-180",
-                "RED GROUND 1-181",
-                "RED GROUND 1-182",
-                "RED GROUND 1-183",
-                "RED GROUND 1-184",
-                "RED GROUND 1-185",
-                "RED GROUND 1-186",
-                "RED GROUND 1-187",
-                "RED GROUND 1-19",
+                "RED GROUND 1-191",
                 "RED GROUND 1-193",
                 "RED GROUND 1-194",
                 "RED GROUND 1-195",
                 "RED GROUND 1-196",
                 "RED GROUND 1-201",
                 "RED GROUND 1-202",
-                "RED GROUND 1-203",
-                "RED GROUND 1-204",
-                "RED GROUND 1-205",
-                "RED GROUND 1-206",
-                "RED GROUND 1-21",
                 "RED GROUND 1-211",
                 "RED GROUND 1-213",
                 "RED GROUND 1-214",
@@ -1612,12 +1564,11 @@
         },
         "OBJ-20": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1667,6 +1618,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
@@ -1735,12 +1687,11 @@
         },
         "OBJ-21": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1790,6 +1741,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [
@@ -1851,12 +1803,11 @@
         },
         "OBJ-22": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -1908,6 +1859,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [
                 "REINFORCEMENT-8"
             ],
@@ -1954,12 +1906,11 @@
         },
         "OBJ-23": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -2009,6 +1960,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [
@@ -2020,22 +1972,22 @@
             "tasks": [],
             "vehicle_groups": [
                 "RED SAM SA-13 GROUND 106",
-                "SNAP RED GROUND 104",
                 "SNAP RED GROUND 105",
-                "SNAP RED GROUND 106-2",
                 "SNAP RED GROUND 107",
-                "SNAP RED GROUND BORDER 1",
                 "SNAP RED GROUND BORDER 2",
-                "SNAP RED GROUND BORDER 3",
                 "SNAP RED GROUND BORDER 3-1",
-                "SNAP RED GROUND BORDER 3-2",
                 "SNAP RED GROUND BORDER 3-3",
-                "SNAP RED GROUND BORDER 3-4",
                 "SNAP RED GROUND BORDER 3-5",
-                "SNAP RED GROUND BORDER 3-6",
                 "SNAP RED GROUND BORDER 3-7",
-                "SNAP RED GROUND BORDER 3-8",
-                "SNAPRED GROUND 1"
+                "SNAPRED GROUND 1",
+                "SNAP RED GROUND 104",
+                "SNAP RED GROUND 106-2",
+                "SNAP RED GROUND BORDER 1",
+                "SNAP RED GROUND BORDER 3",
+                "SNAP RED GROUND BORDER 3-2",
+                "SNAP RED GROUND BORDER 3-4",
+                "SNAP RED GROUND BORDER 3-6",
+                "SNAP RED GROUND BORDER 3-8"
             ],
             "vertices": [
                 {
@@ -2060,12 +2012,11 @@
         },
         "OBJ-3": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -2091,6 +2042,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
@@ -2129,12 +2081,11 @@
         },
         "OBJ-4": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -2178,6 +2129,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [
                 "REINFORCEMENT-2"
             ],
@@ -2224,12 +2176,11 @@
         },
         "OBJ-5": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -2273,13 +2224,13 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [
                 "REINFORCEMENT-3"
             ],
             "roadbases": [],
             "ship_groups": [],
             "static_groups": [
-                "OHDAM",
                 "Static FARP Ammo Storage-B-1",
                 "Static FARP Fuel Depot-B-1",
                 "Static FARP Tent-B-1",
@@ -2318,12 +2269,11 @@
         },
         "OBJ-6": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -2365,6 +2315,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
@@ -2407,12 +2358,11 @@
         },
         "OBJ-7": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -2454,12 +2404,11 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
             "static_groups": [
-                "GAMERHOUSE1",
-                "OLIVEOIL1",
                 "Static Fuel tank-4",
                 "Static Fuel tank-5",
                 "Static Fuel tank-6",
@@ -2483,7 +2432,6 @@
                 "RED GROUND 1-188",
                 "RED GROUND 1-189",
                 "RED GROUND 1-190",
-                "RED GROUND 1-191",
                 "RED GROUND 1-192",
                 "RED GROUND 1-20",
                 "RED GROUND 1-22",
@@ -2495,8 +2443,8 @@
                 "RED GROUND 1-66",
                 "RED GROUND 1-67",
                 "RED SAM SA-13 DW 379-5",
-                "RED SAM SA-6 DW 379-1",
                 "RED SAM SA-8 379-4",
+                "RED SAM SA-6 DW 379-1",
                 "RED SAM SA-9 1-13"
             ],
             "vertices": [
@@ -2522,12 +2470,11 @@
         },
         "OBJ-8": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -2536,6 +2483,7 @@
             "nodes": {},
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
@@ -2577,12 +2525,11 @@
         },
         "OBJ-9": {
             "airbases": [],
-            "borderZones": [],
-            "capZones": [],
-            "redAwacsZones": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],
+            "borderZones": [],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -2624,6 +2571,7 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
+            "redAwacsZones": [],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [
