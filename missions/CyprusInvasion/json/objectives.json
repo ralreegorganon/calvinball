@@ -289,6 +289,7 @@
                 "Naval-2"
             ],
             "static_groups": [
+                "Paphos Airwing Warehouse",
                 "Static Fueltank-1",
                 "Static Fueltank-2",
                 "Static ISO container small-1",
@@ -538,7 +539,9 @@
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
-            "static_groups": [],
+            "static_groups": [
+                "Larnaca Airwing Warehouse"
+            ],
             "strand": "STRAND-2",
             "tasks": [],
             "vehicle_groups": [
@@ -925,7 +928,8 @@
                 "Static Oiltank-6",
                 "Static Oiltank-7",
                 "Static Oiltank-8",
-                "Static Repair workshop-1"
+                "Static Repair workshop-1",
+                "TASK12REMEDY"
             ],
             "strand": "STRAND-2",
             "tasks": [
@@ -1490,6 +1494,7 @@
             "roadbases": [],
             "ship_groups": [],
             "static_groups": [
+                "HATEFULIMAM1",
                 "Static Chemical tank A-1",
                 "Static Chemical tank A-2",
                 "Static FARP Fuel Depot-1",
@@ -2231,6 +2236,7 @@
             "roadbases": [],
             "ship_groups": [],
             "static_groups": [
+                "OHDAM",
                 "Static FARP Ammo Storage-B-1",
                 "Static FARP Fuel Depot-B-1",
                 "Static FARP Tent-B-1",
@@ -2409,6 +2415,8 @@
             "roadbases": [],
             "ship_groups": [],
             "static_groups": [
+                "GAMERHOUSE1",
+                "OLIVEOIL1",
                 "Static Fuel tank-4",
                 "Static Fuel tank-5",
                 "Static Fuel tank-6",
