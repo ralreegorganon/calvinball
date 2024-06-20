@@ -1570,18 +1570,21 @@ end
 
 local function unlockAirbasesForObjective(objective)
     for _, airbase in ipairs(objective.airbases) do
-        spawnGroupsAtThing(airbase, country.id.CJTF_BLUE)
-        MissionDb.ctld.instance:AddCTLDZone(airbase.name, CTLD.CargoZoneType.LOAD, SMOKECOLOR.Blue, true, false)
+        if airbase.unlocked == nil then
+            spawnGroupsAtThing(airbase, country.id.CJTF_BLUE)
+            MissionDb.ctld.instance:AddCTLDZone(airbase.name, CTLD.CargoZoneType.LOAD, SMOKECOLOR.Blue, true, false)
 
-        local airbaseZone = ZONE:FindByName(airbase.name)
-        MissionDb.bluechief.instance:AddBorderZone(airbaseZone)
+            local airbaseZone = ZONE:FindByName(airbase.name)
+            MissionDb.bluechief.instance:AddBorderZone(airbaseZone)
 
-        for _, client in ipairs(airbase.clients) do
-            local airbaseSlot = USERFLAG:New(client)
-            airbaseSlot:Set(0)
+            for _, client in ipairs(airbase.clients) do
+                local airbaseSlot = USERFLAG:New(client)
+                airbaseSlot:Set(0)
+            end
+
+            showAirbaseUnlockedUpdate(airbase, objective.strand)
+            airbase.unlocked = true
         end
-
-        showAirbaseUnlockedUpdate(airbase, objective.strand)
     end
 end
 

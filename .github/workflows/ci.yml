@@ -14,11 +14,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - run: python ./generate.py --no-edit --package --debug --output ./build
+      - run: |
+          python ./archive/kiowhat.py \
+            ./missions/CyprusInvasion/json/objectives.json \
+            ./missions/CyprusInvasion/json/airbases.json \
+            ./missions/CyprusInvasion/json/farps.json \
+            ./build/OH58D-MissionData/CyprusInvasion
       - uses: actions/upload-artifact@v4
         with:
           name: missions
           path: ./build
+      - run: cd ./build && zip -r OH58D-MissionData.zip ./OH58D-MissionData
       - uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: ./build/**/*.miz
+          files: |
+            ./build/**/*.miz
+            ./build/OH58D-MissionData.zip

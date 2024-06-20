@@ -2,6 +2,7 @@ import argparse
 import json
 import os
 import math
+from pathlib import Path
 
 def load_json(file_path):
     with open(file_path) as json_file:
@@ -83,6 +84,8 @@ def process_objective(objective_key, objectives, airbases, farps, objective_curr
     mission_name = f"S{strand_index+1}-O{objective_index+1}"
     output_filename = f"Mission3 - {objective.get('label', 'Unknown')}.json"
     output_filepath = os.path.join(output_folder, output_filename)
+    filename = Path(output_folder)
+    filename.mkdir(parents=True, exist_ok=True)
 
     output_json = json.dumps({
         "missionName": mission_name,
