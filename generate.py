@@ -11,8 +11,10 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--edit", action=argparse.BooleanOptionalAction, default=True, help="Generate for editing in the ME")
 parser.add_argument("--package", action=argparse.BooleanOptionalAction, default=False, help="Package scripts in mission")
 parser.add_argument("--debug", action=argparse.BooleanOptionalAction, default=True, help="Enable debug menu")
+parser.add_argument('--output', type=str, help='Output directory, if not default')
+
 args = parser.parse_args()
 
 missions = [CyprusInvasion(), DangerZone(), GeorgianOffensive(), AndeanAbyss(), RockTheCasbah(), AcesHigh()]
 for m in missions:
-    m.build(args.edit, args.package, args.debug)
+    m.build(args.edit, args.package, args.debug, args.output)

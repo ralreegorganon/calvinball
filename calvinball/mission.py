@@ -36,14 +36,9 @@ class Mission:
         self.vehicle_groups_path = os.path.join(self.json_root, "vehicle-groups.json")
         self.ship_groups_path = os.path.join(self.json_root, "ship-groups.json")
         self.unclassified_zones_path = os.path.join(self.json_root, "unclassified.json")
-        self.mission_root_path = os.path.join(
-            str(Path.home()), "Saved Games", "DCS.openbeta", "Missions", self.miz_name
-        )
-        self.miz_export_path = os.path.join(
-            self.mission_root_path, f"{self.miz_name}.miz"
-        )
 
-    def build(self, edit: bool, package: bool, devmode: bool):
+    def build(self, edit: bool, package: bool, devmode: bool, output: str):
+        self.__configure_output(output)
         self.__configure_settings()
         self.__build_vehicle_groups()
         self.__build_ship_groups()
@@ -70,6 +65,20 @@ class Mission:
         self.__save_mission(package, edit)
 
         print("Make sure to manually add a late activated `Downed Pilot`")
+
+    def __configure_output(self, output):
+        if output:
+            self.mission_root_path = os.path.join(
+                output, self.miz_name
+            )
+        else:
+            self.mission_root_path = os.path.join(
+                str(Path.home()), "Saved Games", "DCS.openbeta", "Missions", self.miz_name
+            )
+
+        self.miz_export_path = os.path.join(
+            self.mission_root_path, f"{self.miz_name}.miz"
+        )
 
     def __configure_settings(self):
         self.m.coalition["blue"].countries.clear()
@@ -117,7 +126,6 @@ class Mission:
 
     def __save_mission(self, package: bool, configure_for_editor: bool) -> str:
         os.makedirs(self.mission_root_path, exist_ok=True)
-
         if not configure_for_editor:
             load_trigger = dcs.triggers.TriggerStart()
             load_trigger.actions.append(dcs.action.DoScriptFile(self.m.map_resource.add_resource_file(self.__common_resource("Moose.lua"))))
