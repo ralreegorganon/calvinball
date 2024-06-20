@@ -421,9 +421,9 @@ class CyprusInvasionClients(calvinball.clients.Clients):
         }
 
         if not edit:
-            airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 2, "parking": [15, 25], "fuel": 0.75, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
-            airport_set[1]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 1, "parking": [25], "fuel": 0.75, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
-            airport_set[2]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 2, "parking": [26, 28], "fuel": 0.75, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
+            airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 2, "parking": [15, 25], "fuel": 0.75, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits", "properties": { pydcs_extensions.A_4E_C.Properties.Night_Vision.id: True } })
+            airport_set[1]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 1, "parking": [25], "fuel": 0.75, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits", "properties": { pydcs_extensions.A_4E_C.Properties.Night_Vision.id: True } })
+            airport_set[2]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 2, "parking": [26, 28], "fuel": 0.75, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits", "properties": { pydcs_extensions.A_4E_C.Properties.Night_Vision.id: True } })
             # airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.ov10a, "count": 2, "parking": [6, 7], "fuel": 1, "loadout": "Empty", "livery": "colombian 2221" })
             # airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.Hercules, "count": 2, "parking": [40, 41], "fuel": 0.6, "loadout": "Empty" })
 
