@@ -123,6 +123,14 @@ def main(args):
 
             objective_current_airbase_or_farp[objective_key] = current_airbase_or_farp
 
+    fixup = None
+    for strand, objs in strands.items():
+        if fixup is None and objective_current_airbase_or_farp[objs[0]] is not None:
+            fixup = objective_current_airbase_or_farp[objs[0]]
+    for strand, objs in strands.items():
+        if objective_current_airbase_or_farp[objs[0]] is None:
+            objective_current_airbase_or_farp[objs[0]] = fixup
+
     if args.objective_key:
         for strand_index, (strand, objective_list) in enumerate(strands.items()):
             if args.objective_key in objective_list:

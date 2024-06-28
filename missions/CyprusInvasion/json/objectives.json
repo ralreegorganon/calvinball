@@ -2016,9 +2016,7 @@
             "y": -179573.53163273
         },
         "OBJ-3": {
-            "airbases": [
-                "AIRBASE-1"
-            ],
+            "airbases": [],
             "blueAwacsZones": [
                 "BLUE AWACS ZONE"
             ],

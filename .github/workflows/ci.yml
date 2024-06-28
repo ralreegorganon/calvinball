@@ -20,6 +20,12 @@ jobs:
             ./missions/CyprusInvasion/json/airbases.json \
             ./missions/CyprusInvasion/json/farps.json \
             ./build/OH58D-MissionData/CyprusInvasion
+      - run: |
+          python ./archive/kiowhat.py \
+            ./missions/RockTheCasbah/json/objectives.json \
+            ./missions/RockTheCasbah/json/airbases.json \
+            ./missions/RockTheCasbah/json/farps.json \
+            ./build/OH58D-MissionData/RockTheCasbah
       - uses: actions/upload-artifact@v4
         with:
           name: missions
