@@ -155,6 +155,10 @@ class RockTheCasbahClients(calvinball.clients.Clients):
                         "airframe": dcs.helicopters.UH_1H, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972",
                         "positions": [{"heading": 247, "x": -210881.95485597, "y": -173865.38806377}, {"heading": 251, "x": -210915.41911798, "y": -173857.7139285}, {"heading": 257, "x": -210935.46075016, "y": -173857.96553949}, {"heading": 255, "x": -210897.93215399, "y": -173859.34939995}]
                     },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional",
+                        "positions": [{"heading":10,"x":-211060.66225402599,"y":-173989.24413134},{"heading":333,"x":-211058.347421171,"y":-173959.20912963},{"heading":324,"x":-211050.527953605,"y":-173933.20939997002},{"heading":322,"x":-211036.452911987,"y":-173906.23223687004}]
+                    },
                     { "airframe": dcs.planes.A_10C_2, "count": 4, "parking": [57, 58, 59, 60], "fuel": 0.6, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
                     { "airframe": dcs.planes.AJS37, "count": 2, "parking": [231, 230], "fuel": 1, "loadout": "Empty", "livery": "SF-37 Akktu Stakki - F21" },
                     { "airframe": dcs.planes.AV8BNA, "count": 4, "parking": [192, 191, 190, 189], "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
@@ -197,6 +201,7 @@ class RockTheCasbahClients(calvinball.clients.Clients):
             dcs.helicopters.SA342L: ["vhf_fm"],
             dcs.helicopters.SA342M: ["vhf_fm"],
             dcs.helicopters.UH_1H: ["uhf"],
+            dcs.helicopters.OH58D: ["uhf", "vhf_am", "vhf_fm", "vhf_fm"],
             dcs.planes.A_10A: ["vhf_am"],
             dcs.planes.A_10C_2: ["vhf_am", "uhf", "vhf_fm"],
             dcs.planes.AJS37: ["uhf"],

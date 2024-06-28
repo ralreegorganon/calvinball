@@ -88,6 +88,10 @@ MissionDb = {
 							"Al Dhafra AFB UH-1H Warm G 2",
 							"Al Dhafra AFB UH-1H Warm G 3",
 							"Al Dhafra AFB UH-1H Warm G 4",
+							"Al Dhafra AFB OH58D Warm G 1",
+							"Al Dhafra AFB OH58D Warm G 2",
+							"Al Dhafra AFB OH58D Warm G 3",
+							"Al Dhafra AFB OH58D Warm G 4",
 							"Al Dhafra AFB A-10C_2 Warm 1",
 							"Al Dhafra AFB A-10C_2 Warm 2",
 							"Al Dhafra AFB A-10C_2 Warm 3",
@@ -453,6 +457,10 @@ MissionDb = {
 			"Al Dhafra AFB UH-1H Warm G 2",
 			"Al Dhafra AFB UH-1H Warm G 3",
 			"Al Dhafra AFB UH-1H Warm G 4",
+			"Al Dhafra AFB OH58D Warm G 1",
+			"Al Dhafra AFB OH58D Warm G 2",
+			"Al Dhafra AFB OH58D Warm G 3",
+			"Al Dhafra AFB OH58D Warm G 4",
 		}
 	},
 	csar = {
@@ -477,6 +485,10 @@ MissionDb = {
 			"Al Dhafra AFB UH-1H Warm G 2",
 			"Al Dhafra AFB UH-1H Warm G 3",
 			"Al Dhafra AFB UH-1H Warm G 4",
+			"Al Dhafra AFB OH58D Warm G 1",
+			"Al Dhafra AFB OH58D Warm G 2",
+			"Al Dhafra AFB OH58D Warm G 3",
+			"Al Dhafra AFB OH58D Warm G 4",
 		}
 	},
 	autolase = {},
