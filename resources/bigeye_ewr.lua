@@ -20,10 +20,10 @@ EWR = {}
 EWR.version = "0.0.7"
 EWR.debug = false
 
--- _SETTINGS:SetPlayerMenuOff()
--- _SETTINGS:SetEraCold()
--- _SETTINGS:SetA2A_BULLS()
--- _SETTINGS:SetA2G_LL_DDM()
+_SETTINGS:SetPlayerMenuOff()
+_SETTINGS:SetEraCold()
+_SETTINGS:SetA2A_BULLS()
+_SETTINGS:SetA2G_LL_DDM()
 
 --[[
 {
@@ -808,4 +808,4 @@ cleanupScheduler = SCHEDULER:New(nil,
         end, {}, 0, 60, 0)
 
 env.info("Big Eye EWR " .. EWR.version .. " Running")
--- trigger.action.outText("Big Eye EWR " .. EWR.version .. " Running", 10)
+trigger.action.outText("Big Eye EWR " .. EWR.version .. " Running", 10)
