@@ -99,9 +99,9 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                         "positions": [{"heading": 209, "x": -35639.062236162, "y": -270078.11288818}, {"heading": 209, "x": -35618.142073608, "y": -270095.67352911}, {"heading": 209, "x": -35597.098799438, "y": -270193.81797996}, {"heading": 209, "x": -35607.792922377, "y": -270224.86543365}]
                     },
                     {
-                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Cold,
-                        "positions": [{"heading": 39, "x": -35725.083302998, "y": -270245.21876441}, {"heading": 39, "x": -35745.609119607, "y": -270222.62311755}, {"heading": 39, "x": -35759.235502062, "y": -270142.93465307}, {"heading": 39, "x": -35747.851435707, "y": -270109.47239742}]
-                    }
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading": 179, "x": -35434.138411381, "y": -270550.99015479}, {"heading": 1, "x": -35561.888929925, "y": -270562.67162244}, {"heading": 90, "x": -35489.066163518, "y": -270674.7640035}, {"heading": 94, "x": -35496.522419464, "y": -270550.74161293}]
+                    },
                 ]
             },
             {
@@ -136,6 +136,10 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                         "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
                         "positions": [{"heading": 27, "x": -19232.769043198, "y": -314516.52653311}, {"heading": 27, "x": -19247.70940764, "y": -314483.47663601}, {"heading": 27, "x": -19265.064376437, "y": -314446.50300683}, {"heading": 27, "x": -19303.547133334, "y": -314356.70990741}]
                     },
+                    {
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading": 297, "x": -18525.839402352, "y": -313275.78004159}, {"heading": 295, "x": -18559.386897265, "y": -313291.34331243}, {"heading": 289, "x": -18595.874121113, "y": -313307.77120942}, {"heading": 293, "x": -18633.744746813, "y": -313323.16155502}]
+                    },
                 ]
             },
             {
@@ -169,6 +173,10 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     {
                         "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
                         "positions": [{"heading": 145, "x": -7429.5826057291, "y": -209226.04271175}, {"heading": 152, "x": -7426.0910525832, "y": -209251.50195344}, {"heading": 152, "x": -7422.8904621995, "y": -209276.08830684}, {"heading": 152, "x": -7418.8169835293, "y": -209302.5659182}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading": 225, "x": -6136.8119549941, "y": -207903.01783496}, {"heading": 222, "x": -6168.8797153824, "y": -207935.4790648}, {"heading": 222, "x": -6198.5866590551, "y": -207844.39088652}, {"heading": 222, "x": -6229.080541633, "y": -207885.90191377}]
                     },
                 ]
             },
@@ -209,7 +217,11 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     },
                     {
                         "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
-                        "positions":  [{"heading":10,"x":-25863.571765621,"y":-292217.32354961},{"heading":333,"x":-25861.256932766,"y":-292187.2885479},{"heading":324,"x":-25853.4374652,"y":-292161.28881824},{"heading":322,"x":-25839.362423582,"y":-292134.31165514}]
+                        "positions": [{"heading":10,"x":-25863.571765621,"y":-292217.32354961},{"heading":333,"x":-25861.256932766,"y":-292187.2885479},{"heading":324,"x":-25853.4374652,"y":-292161.28881824},{"heading":322,"x":-25839.362423582,"y":-292134.31165514}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading": 314, "x": -25824.327728835, "y": -292122.82881144}, {"heading": 305, "x": -25804.185984264, "y": -292107.27380078}, {"heading": 299, "x": -25784.749804378, "y": -292096.26890616}, {"heading": 289, "x": -25763.083701189, "y": -292087.69466107}]
                     },
                 ]
             },
@@ -250,7 +262,11 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     },
                     {
                         "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
-                        "positions":  [{"heading":10,"x":-23325.826227501,"y":-249863.94971771},{"heading":333,"x":-23323.511394645997,"y":-249833.914716},{"heading":324,"x":-23315.69192708,"y":-249807.91498634},{"heading":322,"x":-23301.616885461997,"y":-249780.93782324003}]
+                        "positions": [{"heading":10,"x":-23325.826227501,"y":-249863.94971771},{"heading":333,"x":-23323.511394645997,"y":-249833.914716},{"heading":324,"x":-23315.69192708,"y":-249807.91498634},{"heading":322,"x":-23301.616885461997,"y":-249780.93782324003}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":314,"x":-23286.582190715,"y":-249769.45497954},{"heading":305,"x":-23266.440446144,"y":-249753.89996888002},{"heading":299,"x":-23247.004266257998,"y":-249742.89507426004},{"heading":289,"x":-23225.338163069,"y":-249734.32082917003}]
                     },
                 ]
             },
@@ -291,7 +307,11 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     },
                     {
                         "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
-                        "positions":  [{"heading":10,"x":-3462.2712775481996,"y":-224865.47169489},{"heading":333,"x":-3459.956444693198,"y":-224835.43669318},{"heading":324,"x":-3452.1369771272,"y":-224809.43696352},{"heading":322,"x":-3438.0619355091985,"y":-224782.45980042004}]
+                        "positions": [{"heading":10,"x":-3462.2712775481996,"y":-224865.47169489},{"heading":333,"x":-3459.956444693198,"y":-224835.43669318},{"heading":324,"x":-3452.1369771272,"y":-224809.43696352},{"heading":322,"x":-3438.0619355091985,"y":-224782.45980042004}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":314,"x":-3423.0272407621997,"y":-224770.97695672},{"heading":305,"x":-3402.8854961912,"y":-224755.42194606003},{"heading":299,"x":-3383.4493163051993,"y":-224744.41705144005},{"heading":289,"x":-3361.7832131161995,"y":-224735.84280635003}]
                     },
                 ]
             },
@@ -332,7 +352,11 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     },
                     {
                         "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
-                        "positions":  [{"heading":10,"x":-500.6898558011896,"y":-185842.02156209},{"heading":333,"x":-498.37502294618815,"y":-185811.98656038},{"heading":324,"x":-490.55555538019024,"y":-185785.98683072},{"heading":322,"x":-476.48051376218854,"y":-185759.00966762003}]
+                        "positions": [{"heading":10,"x":-500.6898558011896,"y":-185842.02156209},{"heading":333,"x":-498.37502294618815,"y":-185811.98656038},{"heading":324,"x":-490.55555538019024,"y":-185785.98683072},{"heading":322,"x":-476.48051376218854,"y":-185759.00966762003}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":314,"x":-461.44581901518967,"y":-185747.52682392},{"heading":305,"x":-441.30407444419023,"y":-185731.97181326002},{"heading":299,"x":-421.86789455818933,"y":-185720.96691864004},{"heading":289,"x":-400.2017913691895,"y":-185712.39267355003}]
                     },
                 ]
             },
@@ -375,6 +399,10 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                         "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
                         "positions": [{"heading": 10, "x": 6200.6908805825, "y": -316188.30761095}, {"heading": 333, "x": 6202.8486679802, "y": -316158.60630207}, {"heading": 324, "x": 6210.9721028891, "y": -316132.52246029}, {"heading": 322, "x": 6222.401140591, "y": -316107.96968422}]
                     },
+                    {
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":314,"x":6239.9250725268,"y":-316094.00501271},{"heading":305,"x":6260.0668170978,"y":-316078.45000205},{"heading":299,"x":6279.502996983801,"y":-316067.44510743005},{"heading":289,"x":6301.1691001728,"y":-316058.87086234003}]
+                    },
                 ]
             },
         ]
@@ -400,6 +428,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
             dcs.helicopters.SA342M: ["vhf_fm"],
             dcs.helicopters.UH_1H: ["uhf"],
             dcs.helicopters.OH58D: ["uhf", "vhf_am", "vhf_fm", "vhf_fm"],
+            dcs.helicopters.CH_47Fbl1: ["vhf_fm"],
             dcs.planes.A_10A: ["vhf_am"],
             dcs.planes.A_10C_2: ["vhf_am", "uhf", "vhf_fm"],
             dcs.planes.AJS37: ["uhf"],
