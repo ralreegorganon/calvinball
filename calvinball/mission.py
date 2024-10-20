@@ -129,7 +129,7 @@ class Mission:
         if not configure_for_editor:
             load_trigger = dcs.triggers.TriggerStart()
             load_trigger.actions.append(dcs.action.DoScriptFile(self.m.map_resource.add_resource_file(self.__common_resource("Moose.lua"))))
-            load_trigger.actions.append(dcs.action.DoScriptFile(self.m.map_resource.add_resource_file(self.__common_resource("SplashDamage.lua"))))
+            #load_trigger.actions.append(dcs.action.DoScriptFile(self.m.map_resource.add_resource_file(self.__common_resource("SplashDamage.lua"))))
             load_trigger.actions.append(dcs.action.DoScriptFile(self.m.map_resource.add_resource_file(self.__common_resource("bigeye_ewr.lua"))))
             #load_trigger.actions.append(dcs.action.DoScriptFile(self.m.map_resource.add_resource_file(self.__common_resource("Hercules_Cargo.lua"))))
             load_trigger.actions.append(dcs.action.DoScript(dcs.translation.String(f"trigger.action.setUserFlag(\"SSB\",100)")))
