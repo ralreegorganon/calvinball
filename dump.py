@@ -763,20 +763,4 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--mission", action="store", dest="mission", required=True)
 args = parser.parse_args()
 
-m = None
-
-match args.mission:
-    case "CyprusInvasion":
-        m = CyprusInvasion()
-    case "DangerZone":
-        m = DangerZone()
-    case "GeorgianOffensive":
-        m = GeorgianOffensive()
-    case "AndeanAbyss":
-        m = AndeanAbyss()
-    case "RockTheCasbah":
-        m = RockTheCasbah()
-    case "AcesHigh":
-        m = AcesHigh()
-
-dumpit(m.miz_export_path)
+dumpit(args.mission)
