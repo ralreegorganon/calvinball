@@ -1309,6 +1309,22 @@ local function spawnGroupsAtThing(thing, staticCountry)
                         end
                     end
                 end
+
+                -- TODO: Don't always fully populate the resources...
+                if static.template.type == ENUMS.FARPObjectTypeNamesAndShape[ENUMS.FARPType.INVISIBLE].TypeName then
+                    local warehouse = STORAGE:New(static.name)
+                    warehouse:SetLiquid(STORAGE.Liquid.DIESEL, 100000)
+                    warehouse:SetLiquid(STORAGE.Liquid.GASOLINE, 100000)
+                    warehouse:SetLiquid(STORAGE.Liquid.JETFUEL, 100000)
+                    warehouse:SetLiquid(STORAGE.Liquid.MW50, 100000)
+
+                    for _, nitem in pairs(ENUMS.Storage.weapons) do
+                        for _, item in pairs(nitem) do
+                            warehouse:SetItem(item, 999999)
+                        end
+                    end
+                end
+
                 static.state = "active"
             end
         end
