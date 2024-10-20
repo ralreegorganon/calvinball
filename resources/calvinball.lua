@@ -2745,6 +2745,7 @@ local function initializeCsar()
     MissionDb.csar.instance.immortalcrew = false
     MissionDb.csar.instance.rescuehoverheight  = 30
     MissionDb.csar.instance.rescuehoverdistance  = 30
+    MissionDb.csar.instance.CreateRadioBeacons = false
 
     MissionDb.csar.instance.enableLoadSave = true
     MissionDb.csar.instance.saveinterval = 600
