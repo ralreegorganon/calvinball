@@ -921,17 +921,6 @@
             "x": -19218.903535606,
             "y": -259146.62418509
         },
-        "OLIVEOIL1": {
-            "canCargo": false,
-            "category": "Fortifications",
-            "heading": 1.1519173063163,
-            "name": "OLIVEOIL1",
-            "rate": 100,
-            "shape_name": "kombinat",
-            "type": "Tech combine",
-            "x": -25017.652254677,
-            "y": -263504.70797561
-        },
         "Paphos Airwing Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
@@ -1378,50 +1367,6 @@
             "type": "Fuel tank",
             "x": -22472.658409581,
             "y": -271015.81435853
-        },
-        "Static Fuel tank-4": {
-            "canCargo": false,
-            "category": "Fortifications",
-            "heading": 2.775073510671,
-            "name": "Static Fuel tank-4",
-            "rate": 100,
-            "shape_name": "toplivo-bak",
-            "type": "Fuel tank",
-            "x": -25088.320964668,
-            "y": -263263.378535
-        },
-        "Static Fuel tank-5": {
-            "canCargo": false,
-            "category": "Fortifications",
-            "heading": 2.775073510671,
-            "name": "Static Fuel tank-5",
-            "rate": 100,
-            "shape_name": "toplivo-bak",
-            "type": "Fuel tank",
-            "x": -25104.679843088,
-            "y": -263256.79942086
-        },
-        "Static Fuel tank-6": {
-            "canCargo": false,
-            "category": "Fortifications",
-            "heading": 2.775073510671,
-            "name": "Static Fuel tank-6",
-            "rate": 100,
-            "shape_name": "toplivo-bak",
-            "type": "Fuel tank",
-            "x": -25119.794024237,
-            "y": -263249.68686502
-        },
-        "Static Fuel tank-7": {
-            "canCargo": false,
-            "category": "Fortifications",
-            "heading": 2.775073510671,
-            "name": "Static Fuel tank-7",
-            "rate": 100,
-            "shape_name": "toplivo-bak",
-            "type": "Fuel tank",
-            "x": -25135.797274866,
-            "y": -263243.46337867
         },
         "Static Fueltank-1": {
             "canCargo": true,
@@ -2022,6 +1967,9 @@
             "canCargo": false,
             "category": "Heliports",
             "heading": 2.5830872929516,
+            "heliport_callsign_id": 0,
+            "heliport_frequency": 127.5,
+            "heliport_modulation": 0,
             "name": "Static PAD Single-1",
             "rate": 100,
             "shape_name": "FARP_SINGLE_01",
@@ -2033,6 +1981,9 @@
             "canCargo": false,
             "category": "Heliports",
             "heading": 2.5830872929516,
+            "heliport_callsign_id": 0,
+            "heliport_frequency": 127.5,
+            "heliport_modulation": 0,
             "name": "Static PAD Single-2",
             "rate": 100,
             "shape_name": "FARP_SINGLE_01",
@@ -2044,6 +1995,9 @@
             "canCargo": false,
             "category": "Heliports",
             "heading": 2.5830872929516,
+            "heliport_callsign_id": 0,
+            "heliport_frequency": 127.5,
+            "heliport_modulation": 0,
             "name": "Static PAD Single-3",
             "rate": 100,
             "shape_name": "FARP_SINGLE_01",
@@ -2055,6 +2009,9 @@
             "canCargo": false,
             "category": "Heliports",
             "heading": 2.5830872929516,
+            "heliport_callsign_id": 0,
+            "heliport_frequency": 127.5,
+            "heliport_modulation": 0,
             "name": "Static PAD Single-4",
             "rate": 100,
             "shape_name": "FARP_SINGLE_01",
@@ -2066,6 +2023,9 @@
             "canCargo": false,
             "category": "Heliports",
             "heading": 2.5830872929516,
+            "heliport_callsign_id": 0,
+            "heliport_frequency": 127.5,
+            "heliport_modulation": 0,
             "name": "Static PAD Single-5",
             "rate": 100,
             "shape_name": "FARP_SINGLE_01",
@@ -2194,8 +2154,8 @@
             "rate": 100,
             "shape_name": "ComCenter",
             "type": ".Command Center",
-            "x": -1692.4560957704,
-            "y": -208531.15090086
+            "x": -1739.0847861414,
+            "y": -208869.96598669
         }
     }
 }

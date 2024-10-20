@@ -289,7 +289,6 @@
                 "Naval-2"
             ],
             "static_groups": [
-                "Paphos Airwing Warehouse",
                 "Static Fueltank-1",
                 "Static Fueltank-2",
                 "Static ISO container small-1",
@@ -539,9 +538,7 @@
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
-            "static_groups": [
-                "Larnaca Airwing Warehouse"
-            ],
+            "static_groups": [],
             "strand": "STRAND-2",
             "tasks": [],
             "vehicle_groups": [
@@ -928,8 +925,7 @@
                 "Static Oiltank-6",
                 "Static Oiltank-7",
                 "Static Oiltank-8",
-                "Static Repair workshop-1",
-                "TASK12REMEDY"
+                "Static Repair workshop-1"
             ],
             "strand": "STRAND-2",
             "tasks": [
@@ -1494,7 +1490,6 @@
             "roadbases": [],
             "ship_groups": [],
             "static_groups": [
-                "HATEFULIMAM1",
                 "Static Chemical tank A-1",
                 "Static Chemical tank A-2",
                 "Static FARP Fuel Depot-1",
@@ -2236,7 +2231,6 @@
             "roadbases": [],
             "ship_groups": [],
             "static_groups": [
-                "OHDAM",
                 "Static FARP Ammo Storage-B-1",
                 "Static FARP Fuel Depot-B-1",
                 "Static FARP Tent-B-1",
@@ -2393,7 +2387,7 @@
                 },
                 "NODE-25": {
                     "blueCaptureThreshold": "0",
-                    "label": "Olive Oil Factory",
+                    "label": "Former Olive Oil Factory",
                     "radius": 260,
                     "redSurrenderThreshold": "1",
                     "x": -25209.467846848,
@@ -2415,12 +2409,6 @@
             "roadbases": [],
             "ship_groups": [],
             "static_groups": [
-                "GAMERHOUSE1",
-                "OLIVEOIL1",
-                "Static Fuel tank-4",
-                "Static Fuel tank-5",
-                "Static Fuel tank-6",
-                "Static Fuel tank-7",
                 "Static Road outpost-1",
                 "Static Workshop A-1",
                 "Static Workshop A-2"
@@ -2504,7 +2492,6 @@
                 "TASK-3",
                 "TASK-2",
                 "TASK-11",
-                "TASK-5",
                 "TASK-6",
                 "TASK-7",
                 "TASK-8"

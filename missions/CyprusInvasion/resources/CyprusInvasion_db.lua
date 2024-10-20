@@ -575,21 +575,6 @@ MissionDb = {
 			},
 			staticGroups = {
 				{
-					name = "Paphos Airwing Warehouse#00001",
-					template = {
-						name = "Paphos Airwing Warehouse",
-						type = "Warehouse",
-						x = -19176.891624001,
-						y = -312202.76523807,
-						heading = 3.5430183815485,
-						category = "Warehouses",
-						canCargo = false,
-						shape_name = "sklad",
-						rate = 100,
-						dead = false
-					}
-				},
-				{
 					name = "Static Fueltank-1#00001",
 					template = {
 						name = "Static Fueltank-1",
@@ -976,21 +961,6 @@ MissionDb = {
 			shipGroups = {
 			},
 			staticGroups = {
-				{
-					name = "Larnaca Airwing Warehouse#00001",
-					template = {
-						name = "Larnaca Airwing Warehouse",
-						type = "Warehouse",
-						x = -6347.0058826888,
-						y = -208521.92245875,
-						heading = 2.4085543677522,
-						category = "Warehouses",
-						canCargo = false,
-						shape_name = "sklad",
-						rate = 100,
-						dead = false
-					}
-				},
 			}
 		},
 		{
@@ -1442,8 +1412,8 @@ MissionDb = {
 							template = {
 								name = "TASK12REMEDY",
 								type = ".Command Center",
-								x = -1692.4560957704,
-								y = -208531.15090086,
+								x = -1739.0847861414,
+								y = -208869.96598669,
 								heading = 4.6949356878647,
 								category = "Fortifications",
 								canCargo = false,
@@ -1941,21 +1911,6 @@ MissionDb = {
 						category = "Fortifications",
 						canCargo = false,
 						shape_name = "tech",
-						rate = 100,
-						dead = false
-					}
-				},
-				{
-					name = "TASK12REMEDY#00001",
-					template = {
-						name = "TASK12REMEDY",
-						type = ".Command Center",
-						x = -1692.4560957704,
-						y = -208531.15090086,
-						heading = 4.6949356878647,
-						category = "Fortifications",
-						canCargo = false,
-						shape_name = "ComCenter",
 						rate = 100,
 						dead = false
 					}
@@ -3051,21 +3006,6 @@ MissionDb = {
 			shipGroups = {
 			},
 			staticGroups = {
-				{
-					name = "HATEFULIMAM1#00001",
-					template = {
-						name = "HATEFULIMAM1",
-						type = "Cow",
-						x = -26521.704487266,
-						y = -263437.88086853,
-						heading = 6.1086523819802,
-						category = "Animal",
-						canCargo = false,
-						shape_name = "Cow",
-						rate = 2,
-						dead = false
-					}
-				},
 				{
 					name = "Static Chemical tank A-1#00001",
 					template = {
@@ -4529,21 +4469,6 @@ MissionDb = {
 			},
 			staticGroups = {
 				{
-					name = "OHDAM#00001",
-					template = {
-						name = "OHDAM",
-						type = "Electric power box",
-						x = -19218.903535606,
-						y = -259146.62418509,
-						heading = 3.4732052114687,
-						category = "Fortifications",
-						canCargo = false,
-						shape_name = "tr_budka",
-						rate = 100,
-						dead = false
-					}
-				},
-				{
 					name = "Static FARP Ammo Storage-B-1#00001",
 					template = {
 						name = "Static FARP Ammo Storage-B-1",
@@ -4720,96 +4645,6 @@ MissionDb = {
 			shipGroups = {
 			},
 			staticGroups = {
-				{
-					name = "GAMERHOUSE1#00001",
-					template = {
-						name = "GAMERHOUSE1",
-						type = "Small house 2C",
-						x = -24788.510835532,
-						y = -260206.41457151,
-						heading = 2.6354471705114,
-						category = "Fortifications",
-						canCargo = false,
-						shape_name = "dom2c",
-						rate = 100,
-						dead = false
-					}
-				},
-				{
-					name = "OLIVEOIL1#00001",
-					template = {
-						name = "OLIVEOIL1",
-						type = "Tech combine",
-						x = -25017.652254677,
-						y = -263504.70797561,
-						heading = 1.1519173063163,
-						category = "Fortifications",
-						canCargo = false,
-						shape_name = "kombinat",
-						rate = 100,
-						dead = false
-					}
-				},
-				{
-					name = "Static Fuel tank-4#00001",
-					template = {
-						name = "Static Fuel tank-4",
-						type = "Fuel tank",
-						x = -25088.320964668,
-						y = -263263.378535,
-						heading = 2.775073510671,
-						category = "Fortifications",
-						canCargo = false,
-						shape_name = "toplivo-bak",
-						rate = 100,
-						dead = false
-					}
-				},
-				{
-					name = "Static Fuel tank-5#00001",
-					template = {
-						name = "Static Fuel tank-5",
-						type = "Fuel tank",
-						x = -25104.679843088,
-						y = -263256.79942086,
-						heading = 2.775073510671,
-						category = "Fortifications",
-						canCargo = false,
-						shape_name = "toplivo-bak",
-						rate = 100,
-						dead = false
-					}
-				},
-				{
-					name = "Static Fuel tank-6#00001",
-					template = {
-						name = "Static Fuel tank-6",
-						type = "Fuel tank",
-						x = -25119.794024237,
-						y = -263249.68686502,
-						heading = 2.775073510671,
-						category = "Fortifications",
-						canCargo = false,
-						shape_name = "toplivo-bak",
-						rate = 100,
-						dead = false
-					}
-				},
-				{
-					name = "Static Fuel tank-7#00001",
-					template = {
-						name = "Static Fuel tank-7",
-						type = "Fuel tank",
-						x = -25135.797274866,
-						y = -263243.46337867,
-						heading = 2.775073510671,
-						category = "Fortifications",
-						canCargo = false,
-						shape_name = "toplivo-bak",
-						rate = 100,
-						dead = false
-					}
-				},
 				{
 					name = "Static Road outpost-1#00001",
 					template = {
@@ -5115,32 +4950,6 @@ MissionDb = {
 								canCargo = false,
 								shape_name = "Cow",
 								rate = 2,
-								dead = false
-							}
-						},
-					}
-				},
-				{
-					name = "TASK-5",
-					completeSound = "",
-					auftrag = "BOMBING",
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "OLIVEOIL1#00001",
-							template = {
-								name = "OLIVEOIL1",
-								type = "Tech combine",
-								x = -25017.652254677,
-								y = -263504.70797561,
-								heading = 1.1519173063163,
-								category = "Fortifications",
-								canCargo = false,
-								shape_name = "kombinat",
-								rate = 100,
 								dead = false
 							}
 						},

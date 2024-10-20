@@ -131,24 +131,24 @@
         "vehicle_groups": [],
         "vertices": [
             {
-                "x": -1727.7470271342,
-                "y": -208563.27724382
+                "x": -1768.568106262,
+                "y": -208900.87860093
             },
             {
-                "x": -1726.910110811,
-                "y": -208500.92697774
+                "x": -1767.7311899388,
+                "y": -208838.52833485
             },
             {
-                "x": -1663.7229284084,
-                "y": -208503.43772671
+                "x": -1704.5440075362,
+                "y": -208841.03908382
             },
             {
-                "x": -1667.9075100245,
-                "y": -208565.36953463
+                "x": -1708.7285891523,
+                "y": -208902.97089174
             }
         ],
-        "x": -1696.5718940945,
-        "y": -208533.25287073
+        "x": -1737.3929732223,
+        "y": -208870.85422784
     },
     "TASK-2": {
         "auftrag": "SEAD",
@@ -267,42 +267,6 @@
         ],
         "x": -22677.309603903,
         "y": -268668.49064105
-    },
-    "TASK-5": {
-        "auftrag": "BOMBING",
-        "completeSound": "",
-        "component": "task",
-        "description": "Disrupt enemy olive oil by destroying the olive oil factory.  It is vital to the war effort.",
-        "groupTargetNameContains": "",
-        "label": "Destroy Olive Oil Factory",
-        "sceneryTargetZoneNames": [],
-        "ship_groups": [],
-        "staticTargetNameContains": "OLIVEOIL1",
-        "static_groups": [
-            "OLIVEOIL1"
-        ],
-        "targetUnitTypes": [],
-        "vehicle_groups": [],
-        "vertices": [
-            {
-                "x": -25079.947079501,
-                "y": -263517.68158693
-            },
-            {
-                "x": -25037.812749545,
-                "y": -263445.19625658
-            },
-            {
-                "x": -24951.758736667,
-                "y": -263477.68968053
-            },
-            {
-                "x": -24989.251148916,
-                "y": -263576.59823475
-            }
-        ],
-        "x": -25014.692428657,
-        "y": -263504.2914397
     },
     "TASK-6": {
         "auftrag": "BOMBING",
