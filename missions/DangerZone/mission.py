@@ -168,7 +168,7 @@ class DangerZoneCarriers(calvinball.carriers.Carriers):
                 "link4": 337
             },
             "Invincible": {
-                "ship": dcs.ships.Hms_invincible,
+                "ship": dcs.ships.hms_invincible,
                 "position": {"x":74000,"y":-199000},
                 "waypoints": [
                     {"x": 85000, "y": -72600, "speed": 25},
@@ -227,7 +227,7 @@ class DangerZoneCarriers(calvinball.carriers.Carriers):
                 "link4": 339
             },
             "Illustrious": {
-                "ship": dcs.ships.Hms_invincible,
+                "ship": dcs.ships.hms_invincible,
                 "position": {"x":96300 ,"y":-14200},
                 "waypoints": [
                     {"x": 142200, "y": 93400, "speed": 25},

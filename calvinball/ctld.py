@@ -43,7 +43,7 @@ class Ctld:
         ], dcs.mapping.Point(180657, -39472, m.terrain)).late_activation = True
 
         m.vehicle_group_platoon(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD MORTAR", [
-            dcs.vehicles.Artillery.X_2B11_mortar,
+            dcs.vehicles.Artillery.x_2B11_mortar,
         ], dcs.mapping.Point(180657, -39472, m.terrain)).late_activation = True
 
         m.vehicle_group_platoon(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD HAWK", [
@@ -83,7 +83,7 @@ class Ctld:
         m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "Downed Pilot", dcs.vehicles.Infantry.Soldier_M4, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1).late_activation = True
 
         # Herc required groups/names
-        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "2S6 Tunguska", dcs.vehicles.AirDefence.X_2S6_Tunguska, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation=True
+        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "2S6 Tunguska", dcs.vehicles.AirDefence.x_2S6_Tunguska, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation=True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "BMD-1", dcs.vehicles.Armor.BMD_1, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation=True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "BMP-1", dcs.vehicles.Armor.BMP_1, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation=True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "BMP-2", dcs.vehicles.Armor.BMP_2, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation=True

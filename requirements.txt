@@ -1,4 +1,4 @@
--e git+https://github.com/pydcs/dcs@52b1a3510829dd46d52bbb79ba18e85e8608f25c#egg=pydcs
+-e git+https://github.com/dcs-retribution/pydcs@3e4e061281c6390af48954eebea49bf8efefbc2b#egg=pydcs
 pyproj
 PrettyTable
 shapely
