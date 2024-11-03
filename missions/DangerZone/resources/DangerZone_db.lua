@@ -21441,7 +21441,7 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "1GW-Anglo-1",
-						templateGroupName = "RED 1st Goon Wing - Anglo 1GW-Anglo-1 Mi-26",
+						templateGroupName = "RED 1st Goon Wing - Anglo 1GW-Anglo-1 UH-60A",
 						initialInventory = 99,
 						takeoffCold = true,
 						parking = nil,
@@ -21451,7 +21451,7 @@ MissionDb = {
 						livery = "Russia_VVS_Grey",
 						payloads = {
 							{
-								templateGroupName = "RED 1st Goon Wing - Anglo 1GW-Anglo-1 Mi-26 LOADOUT 0",
+								templateGroupName = "RED 1st Goon Wing - Anglo 1GW-Anglo-1 UH-60A LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}
@@ -21484,7 +21484,7 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "Yes Minister 1",
-						templateGroupName = "RED FOB Yes Minister Yes Minister 1 Mi-26",
+						templateGroupName = "RED FOB Yes Minister Yes Minister 1 UH-60A",
 						initialInventory = 99,
 						takeoffCold = true,
 						parking = nil,
@@ -21494,7 +21494,7 @@ MissionDb = {
 						livery = "Russia_VVS_Grey",
 						payloads = {
 							{
-								templateGroupName = "RED FOB Yes Minister Yes Minister 1 Mi-26 LOADOUT 0",
+								templateGroupName = "RED FOB Yes Minister Yes Minister 1 UH-60A LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}
@@ -21527,7 +21527,7 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "Murray 1",
-						templateGroupName = "RED FOB Murray Murray 1 Mi-26",
+						templateGroupName = "RED FOB Murray Murray 1 UH-60A",
 						initialInventory = 99,
 						takeoffCold = true,
 						parking = nil,
@@ -21537,7 +21537,7 @@ MissionDb = {
 						livery = "Russia_VVS_Grey",
 						payloads = {
 							{
-								templateGroupName = "RED FOB Murray Murray 1 Mi-26 LOADOUT 0",
+								templateGroupName = "RED FOB Murray Murray 1 UH-60A LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}
@@ -21570,7 +21570,7 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "Smith 1",
-						templateGroupName = "RED FOB Smith Smith 1 Mi-26",
+						templateGroupName = "RED FOB Smith Smith 1 UH-60A",
 						initialInventory = 99,
 						takeoffCold = true,
 						parking = nil,
@@ -21580,7 +21580,7 @@ MissionDb = {
 						livery = "Russia_VVS_Grey",
 						payloads = {
 							{
-								templateGroupName = "RED FOB Smith Smith 1 Mi-26 LOADOUT 0",
+								templateGroupName = "RED FOB Smith Smith 1 UH-60A LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}
@@ -22104,7 +22104,7 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "Bo'ohw'o'wo'er 1",
-						templateGroupName = "RED FOB Bo'ohw'o'wo'er Bo'ohw'o'wo'er 1 Mi-26",
+						templateGroupName = "RED FOB Bo'ohw'o'wo'er Bo'ohw'o'wo'er 1 UH-60A",
 						initialInventory = 99,
 						takeoffCold = true,
 						parking = nil,
@@ -22114,7 +22114,7 @@ MissionDb = {
 						livery = "Russia_VVS_Grey",
 						payloads = {
 							{
-								templateGroupName = "RED FOB Bo'ohw'o'wo'er Bo'ohw'o'wo'er 1 Mi-26 LOADOUT 0",
+								templateGroupName = "RED FOB Bo'ohw'o'wo'er Bo'ohw'o'wo'er 1 UH-60A LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}
@@ -22147,7 +22147,7 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "Innit 1",
-						templateGroupName = "RED FOB Innit Innit 1 Mi-26",
+						templateGroupName = "RED FOB Innit Innit 1 UH-60A",
 						initialInventory = 99,
 						takeoffCold = true,
 						parking = nil,
@@ -22157,7 +22157,7 @@ MissionDb = {
 						livery = "Russia_VVS_Grey",
 						payloads = {
 							{
-								templateGroupName = "RED FOB Innit Innit 1 Mi-26 LOADOUT 0",
+								templateGroupName = "RED FOB Innit Innit 1 UH-60A LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}
@@ -22877,7 +22877,7 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "Amiens-Glisy 1",
-						templateGroupName = "RED FOB Amiens-Glisy 1 Amiens-Glisy 1 Mi-26",
+						templateGroupName = "RED FOB Amiens-Glisy 1 Amiens-Glisy 1 UH-60A",
 						initialInventory = 99,
 						takeoffCold = true,
 						parking = nil,
@@ -22887,7 +22887,7 @@ MissionDb = {
 						livery = "Russia_VVS_Grey",
 						payloads = {
 							{
-								templateGroupName = "RED FOB Amiens-Glisy 1 Amiens-Glisy 1 Mi-26 LOADOUT 0",
+								templateGroupName = "RED FOB Amiens-Glisy 1 Amiens-Glisy 1 UH-60A LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}

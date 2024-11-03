@@ -1418,6 +1418,7 @@ local function syncWarehouseStorage()
                                 warehouse:SetItem('Mi-28N', 0)
                                 warehouse:SetItem('Ka-50 III', 0)
                                 warehouse:SetItem('CH-47D', 0)
+                                warehouse:SetItem('UH-60A', 0)
                             end, {}, delay)
                             delay = delay + 1
                             SCHEDULER:New(nil, function()
@@ -1438,6 +1439,7 @@ local function syncWarehouseStorage()
                                 warehouse:SetItem('Mi-28N', 100)
                                 warehouse:SetItem('Ka-50 III', 100)
                                 warehouse:SetItem('CH-47D', 100)
+                                warehouse:SetItem('UH-60A', 100)
                             end, {}, delay)
                             delay = delay + 1
                         end

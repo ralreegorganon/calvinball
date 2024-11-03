@@ -1047,7 +1047,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                 "warehouse": "Anglo Airwing Warehouse#00001",
                 "squadrons": {
                     "1GW-Anglo-1": {
-                        "airframe": dcs.helicopters.Mi_26,
+                        "airframe": dcs.helicopters.UH_60A,
                         "groupSize": 1,
                         "initialInventory": 99,
                         "takeoffCold": "true",
@@ -1080,7 +1080,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                 "warehouse": "FOB Yes Minister Airwing Warehouse#00001",
                 "squadrons": {
                     "Yes Minister 1": {
-                        "airframe": dcs.helicopters.Mi_26,
+                        "airframe": dcs.helicopters.UH_60A,
                         "groupSize": 1,
                         "initialInventory": 99,
                         "takeoffCold": "true",
@@ -1113,7 +1113,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                 "warehouse": "FOB Murray Airwing Warehouse#00001",
                 "squadrons": {
                     "Murray 1": {
-                        "airframe": dcs.helicopters.Mi_26,
+                        "airframe": dcs.helicopters.UH_60A,
                         "groupSize": 1,
                         "initialInventory": 99,
                         "takeoffCold": "true",
@@ -1146,7 +1146,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                 "warehouse": "FOB Smith Airwing Warehouse#00001",
                 "squadrons": {
                     "Smith 1": {
-                        "airframe": dcs.helicopters.Mi_26,
+                        "airframe": dcs.helicopters.UH_60A,
                         "groupSize": 1,
                         "initialInventory": 99,
                         "takeoffCold": "true",
@@ -1510,7 +1510,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                 "warehouse": "FOB Bo'ohw'o'wo'er Airwing Warehouse#00001",
                 "squadrons": {
                     "Bo'ohw'o'wo'er 1": {
-                        "airframe": dcs.helicopters.Mi_26,
+                        "airframe": dcs.helicopters.UH_60A,
                         "groupSize": 1,
                         "initialInventory": 99,
                         "takeoffCold": "true",
@@ -1543,7 +1543,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                 "warehouse": "FOB Innit Airwing Warehouse#00001",
                 "squadrons": {
                     "Innit 1": {
-                        "airframe": dcs.helicopters.Mi_26,
+                        "airframe": dcs.helicopters.UH_60A,
                         "groupSize": 1,
                         "initialInventory": 99,
                         "takeoffCold": "true",
@@ -2036,7 +2036,7 @@ class DangerZoneRedAirwings(calvinball.redairwing.RedAirwings):
                 "warehouse": "FOB Amiens-Glisy Airwing Warehouse 1#00001",
                 "squadrons": {
                     "Amiens-Glisy 1": {
-                        "airframe": dcs.helicopters.Mi_26,
+                        "airframe": dcs.helicopters.UH_60A,
                         "groupSize": 1,
                         "initialInventory": 99,
                         "takeoffCold": "true",
