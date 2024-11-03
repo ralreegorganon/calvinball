@@ -1396,6 +1396,54 @@ local function syncWarehouseStorage()
                     end
                 end
             end
+            for _, qrf in ipairs(objective.qrfs) do
+                for _, static in ipairs(qrf.staticGroups) do
+                    if static.state == "active" then
+                        if static.template.type == ENUMS.FARPObjectTypeNamesAndShape[ENUMS.FARPType.INVISIBLE].TypeName or static.template.type == ENUMS.FARPObjectTypeNamesAndShape[ENUMS.FARPType.FARP].TypeName then
+                            SCHEDULER:New(nil, function()
+                                --MESSAGE:New(string.format("Clearing warehouse storage for %s - %s.", farp.name, static.name), 5):ToAll()
+                                local warehouse = STORAGE:New(static.name)
+                                warehouse:SetLiquid(STORAGE.Liquid.DIESEL, 0)
+                                warehouse:SetLiquid(STORAGE.Liquid.GASOLINE, 0)
+                                warehouse:SetLiquid(STORAGE.Liquid.JETFUEL, 0)
+                                warehouse:SetLiquid(STORAGE.Liquid.MW50, 0)
+                                for _, nitem in pairs(ENUMS.Storage.weapons) do
+                                    for _, item in pairs(nitem) do
+                                        warehouse:SetItem(item, 0)
+                                    end
+                                end
+                                -- Bullshit hardcoding of the airframes for Chief spawned ops
+                                warehouse:SetItem('Mi-24P', 0)
+                                warehouse:SetItem('Mi-26', 0)
+                                warehouse:SetItem('Mi-28N', 0)
+                                warehouse:SetItem('Ka-50 III', 0)
+                                warehouse:SetItem('CH-47D', 0)
+                            end, {}, delay)
+                            delay = delay + 1
+                            SCHEDULER:New(nil, function()
+                                --MESSAGE:New(string.format("Syncing warehouse storage for %s - %s.", farp.name, static.name), 5):ToAll()
+                                local warehouse = STORAGE:New(static.name)
+                                warehouse:SetLiquid(STORAGE.Liquid.DIESEL, 100000)
+                                warehouse:SetLiquid(STORAGE.Liquid.GASOLINE, 100000)
+                                warehouse:SetLiquid(STORAGE.Liquid.JETFUEL, 100000)
+                                warehouse:SetLiquid(STORAGE.Liquid.MW50, 100000)
+                                for _, nitem in pairs(ENUMS.Storage.weapons) do
+                                    for _, item in pairs(nitem) do
+                                        warehouse:SetItem(item, 9999)
+                                    end
+                                end
+                                -- Bullshit hardcoding of the airframes for Chief spawned ops
+                                warehouse:SetItem('Mi-24P', 100)
+                                warehouse:SetItem('Mi-26', 100)
+                                warehouse:SetItem('Mi-28N', 100)
+                                warehouse:SetItem('Ka-50 III', 100)
+                                warehouse:SetItem('CH-47D', 100)
+                            end, {}, delay)
+                            delay = delay + 1
+                        end
+                    end
+                end
+            end
         end
     end
 end
