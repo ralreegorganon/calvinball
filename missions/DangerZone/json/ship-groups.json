@@ -1,14 +1,5 @@
 {
-    "blue": {
-        "BLUE Naval Escort RG 1": [
-            {
-                "heading": 84.91796746917271,
-                "type": "PERRY",
-                "x": 66965.117245419,
-                "y": -201708.968
-            }
-        ]
-    },
+    "blue": {},
     "neutrals": {},
     "red": {
         "Naval-1": [
