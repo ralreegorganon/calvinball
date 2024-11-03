@@ -1309,22 +1309,6 @@ local function spawnGroupsAtThing(thing, staticCountry)
                         end
                     end
                 end
-
-                -- TODO: Don't always fully populate the resources...
-                if static.template.type == ENUMS.FARPObjectTypeNamesAndShape[ENUMS.FARPType.INVISIBLE].TypeName then
-                    local warehouse = STORAGE:New(static.name)
-                    warehouse:SetLiquid(STORAGE.Liquid.DIESEL, 100000)
-                    warehouse:SetLiquid(STORAGE.Liquid.GASOLINE, 100000)
-                    warehouse:SetLiquid(STORAGE.Liquid.JETFUEL, 100000)
-                    warehouse:SetLiquid(STORAGE.Liquid.MW50, 100000)
-
-                    for _, nitem in pairs(ENUMS.Storage.weapons) do
-                        for _, item in pairs(nitem) do
-                            warehouse:SetItem(item, 999999)
-                        end
-                    end
-                end
-
                 static.state = "active"
             end
         end
@@ -1332,6 +1316,51 @@ local function spawnGroupsAtThing(thing, staticCountry)
 
     if MissionDb.invokeOnActivate[thing.name] then
         MissionDb.invokeOnActivate[thing.name]()
+    end
+end
+
+local function syncWarehouseStorage()
+    local delay = 1
+    if MissionDb.lateActivateStatics then
+        MESSAGE:New(string.format("Syncing warehouse storage, hope you're not rearming..."), 5):ToAll()
+        for _, objective in ipairs(MissionDb.objectives) do
+            for _, farp in ipairs(objective.farps) do
+                for _, static in ipairs(farp.staticGroups) do
+                    if static.state == "active" then
+                        if static.template.type == ENUMS.FARPObjectTypeNamesAndShape[ENUMS.FARPType.INVISIBLE].TypeName then
+                            SCHEDULER:New(nil, function()
+                                --MESSAGE:New(string.format("Clearing warehouse storage for %s - %s.", farp.name, static.name), 5):ToAll()
+                                local warehouse = STORAGE:New(static.name)
+                                warehouse:SetLiquid(STORAGE.Liquid.DIESEL, 0)
+                                warehouse:SetLiquid(STORAGE.Liquid.GASOLINE, 0)
+                                warehouse:SetLiquid(STORAGE.Liquid.JETFUEL, 0)
+                                warehouse:SetLiquid(STORAGE.Liquid.MW50, 0)
+                                for _, nitem in pairs(ENUMS.Storage.weapons) do
+                                    for _, item in pairs(nitem) do
+                                        warehouse:SetItem(item, 0)
+                                    end
+                                end
+                            end, {}, delay)
+                            delay = delay + 1
+                            SCHEDULER:New(nil, function()
+                                --MESSAGE:New(string.format("Syncing warehouse storage for %s - %s.", farp.name, static.name), 5):ToAll()
+                                local warehouse = STORAGE:New(static.name)
+                                warehouse:SetLiquid(STORAGE.Liquid.DIESEL, 100000)
+                                warehouse:SetLiquid(STORAGE.Liquid.GASOLINE, 100000)
+                                warehouse:SetLiquid(STORAGE.Liquid.JETFUEL, 100000)
+                                warehouse:SetLiquid(STORAGE.Liquid.MW50, 100000)
+                                for _, nitem in pairs(ENUMS.Storage.weapons) do
+                                    for _, item in pairs(nitem) do
+                                        warehouse:SetItem(item, 9999)
+                                    end
+                                end
+                            end, {}, delay)
+                            delay = delay + 1
+                        end
+                    end
+                end
+            end
+        end
     end
 end
 
@@ -2595,16 +2624,21 @@ local function initializeStrandMenus()
         end
 
         MENU_MISSION_COMMAND:New("Save", menuDebug, saveState)
-        MENU_MISSION_COMMAND:New("Spawn QRF", menuDebug, randomEnemyReinforcement)
-        MENU_MISSION_COMMAND:New("Spawn Enemy Air Missions", menuDebug, randomChiefMissions)
-        MENU_MISSION_COMMAND:New("Spawn Friendly Reinforcement", menuDebug, randomFriendlyReinforcement)
 
-        local menuDebugAirwingResupply = MENU_MISSION:New("Resupply Airwings", menuDebug)
+        local menuSpawn = MENU_MISSION:New("Spawn", menuDebug)
+
+        MENU_MISSION_COMMAND:New("Spawn QRF", menuSpawn, randomEnemyReinforcement)
+        MENU_MISSION_COMMAND:New("Spawn Enemy Air Missions", menuSpawn, randomChiefMissions)
+        MENU_MISSION_COMMAND:New("Spawn Friendly Reinforcement", menuSpawn, randomFriendlyReinforcement)
+
+        local menuResupply = MENU_MISSION:New("Resupply", menuDebug)
+
+        local menuDebugAirwingResupply = MENU_MISSION:New("Resupply Airwings", menuResupply)
         for _, airwing in ipairs(MissionDb.redchief.airwings) do
             MENU_MISSION_COMMAND:New(airwing.name, menuDebugAirwingResupply, debugResupplyAirwing, { name = airwing.name, state = airwing.state })
         end
 
-        local menuDebugBrigadeResupply = MENU_MISSION:New("Resupply Brigades", menuDebug)
+        local menuDebugBrigadeResupply = MENU_MISSION:New("Resupply Brigades", menuResupply)
         local menuDebugBrigadeResupplyRed = MENU_MISSION:New("RED", menuDebugBrigadeResupply)
         for _, brigade in ipairs(MissionDb.redchief.brigades) do
             MENU_MISSION_COMMAND:New(brigade.name, menuDebugBrigadeResupplyRed, debugResupplyBrigade, { brigade = brigade })
@@ -2616,6 +2650,7 @@ local function initializeStrandMenus()
 
         MENU_MISSION_COMMAND:New("CTLD Cleanup", menuDebug, pruneCtldForInactiveObjectives)
         MENU_MISSION_COMMAND:New("Add ops token", menuDebug, addOpsToken)
+        MENU_MISSION_COMMAND:New("Sync Warehouse Storage", menuDebug, syncWarehouseStorage)
     end
 
     local menuRequest = MENU_MISSION:New("Request")
@@ -2974,6 +3009,8 @@ SCHEDULER:New(nil, blueBrigadeReinforcement, {}, math.random(120, 120), 3600)
 SCHEDULER:New(nil, industryAwareBlueTokenSupply, {}, math.random(MissionDb.settings.blueIndustryTokenSupply.minStart, MissionDb.settings.blueIndustryTokenSupply.maxStart), MissionDb.settings.blueIndustryTokenSupply.repeatAfter)
 
 SCHEDULER:New(nil, calculateIndustryPercentage, {}, 60, 60)
+
+SCHEDULER:New(nil, syncWarehouseStorage, {}, 60, 300)
 
 -- Global wrappers for local functions, to be called from discord bot
 function DebugRandomEnemyReinforcement()
