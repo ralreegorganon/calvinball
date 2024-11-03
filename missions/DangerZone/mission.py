@@ -142,7 +142,7 @@ class DangerZoneCarriers(calvinball.carriers.Carriers):
     def define(self, m: dcs.mission):
         return {
             "Teddy": {
-                "ship": dcs.ships.CVN_71,
+                "ship": dcs.ships.Stennis,
                 "position": {"x":80500,"y":-202400},
                 "waypoints": [
                     {"x": 91500, "y": -76000, "speed": 25},
@@ -154,8 +154,8 @@ class DangerZoneCarriers(calvinball.carriers.Carriers):
                 "radio": 301,
                 "link4": 336
             },
-            "Forrestal": {
-                "ship": dcs.ships.Forrestal,
+            "Stennis": {
+                "ship": dcs.ships.Stennis,
                 "position": {"x":88000 ,"y":-195000},
                 "waypoints": [
                     {"x": 99000, "y": -68600, "speed": 25},
@@ -201,7 +201,7 @@ class DangerZoneCarriers(calvinball.carriers.Carriers):
                 "radio": 305
             },
             "Abe": {
-                "ship": dcs.ships.CVN_72,
+                "ship": dcs.ships.Stennis,
                 "position": {"x":105300 ,"y":-10200},
                 "waypoints": [
                     {"x": 151200, "y": 97400, "speed": 25},
@@ -213,8 +213,8 @@ class DangerZoneCarriers(calvinball.carriers.Carriers):
                 "radio": 306,
                 "link4": 338
             },
-            "Saratoga": {
-                "ship": dcs.ships.Forrestal,
+            "GW": {
+                "ship": dcs.ships.Stennis,
                 "position": {"x":111300 ,"y":-13200},
                 "waypoints": [
                     {"x": 157200, "y": 94400, "speed": 25},
@@ -283,11 +283,11 @@ class DangerZoneClients(calvinball.clients.Clients):
             },
             {
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
-                "carrier": "Forrestal",
+                "carrier": "Stennis",
                 "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
-                    { "airframe": dcs.planes.F_14B, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True } },
-                    { "airframe": dcs.planes.FA_18C_hornet, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "VX-31 CoNA" },
+                    { "airframe": dcs.planes.F_14B, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True } },
+                    { "airframe": dcs.planes.FA_18C_hornet, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "VX-31 CoNA" },
                 ]
             },
             {
@@ -304,9 +304,10 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.helicopters.Mi_24P, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation" },
-                    { "airframe": dcs.helicopters.Mi_8MT, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
+                    { "airframe": dcs.helicopters.Mi_8MT, "count": 2, "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
                     { "airframe": dcs.helicopters.SA342L, "count": 1, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2" },
                     { "airframe": dcs.helicopters.SA342M, "count": 1, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet" },
+                    { "airframe": dcs.helicopters.CH_47Fbl1, "count": 1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces" },
                 ]
             },
             {
@@ -314,9 +315,10 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "carrier": "Peleliu",
                 "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
-                    { "airframe": dcs.helicopters.UH_1H, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972" },
-                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
+                    { "airframe": dcs.helicopters.UH_1H, "count": 2, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972" },
+                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 2, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
                     { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
+                    { "airframe": dcs.helicopters.OH58D, "count": 2, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional" },
                 ]
             },
             {
@@ -354,6 +356,14 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "positions": [{"heading": 208, "x": 111649.66011679, "y": -157033.82496261}, {"heading": 212, "x": 111640.64113112, "y": -157011.27749845}],
                         "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":10,"x":111405.689521884,"y":-157079.74693265},{"heading":333,"x":111408.00435473901,"y":-157049.71193094002},{"heading":324,"x":111415.82382230501,"y":-157023.71220128002},{"heading":322,"x":111429.89886392301,"y":-156996.73503818005}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":314,"x":111444.93355867,"y":-156985.25219448},{"heading":305,"x":111465.075303241,"y":-156969.69718382004},{"heading":299,"x":111484.511483127,"y":-156958.69228920006},{"heading":289,"x":111506.17758631601,"y":-156950.11804411004}]
+                    },
                 ]
             },
             {
@@ -390,6 +400,14 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf",
                         "positions": [{"heading": 208, "x": 134271.29617518, "y": -133782.22736469}, {"heading": 212, "x": 134262.27718951, "y": -133759.67990053}],
                         "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
+                    },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":10,"x":134026.151520674,"y":-133828.7275578},{"heading":333,"x":134028.466353529,"y":-133798.69255609},{"heading":324,"x":134036.285821095,"y":-133772.69282643002},{"heading":322,"x":134050.360862713,"y":-133745.71566333005}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":314,"x":134065.39555746,"y":-133734.23281963},{"heading":305,"x":134085.53730203098,"y":-133718.67780897004},{"heading":299,"x":134104.973481917,"y":-133707.67291435006},{"heading":289,"x":134126.639585106,"y":-133699.09866926004}]
                     },
                 ]
             },
@@ -455,11 +473,11 @@ class DangerZoneClients(calvinball.clients.Clients):
             },
             {
                 "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
-                "carrier": "Saratoga",
+                "carrier": "GW",
                 "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
-                    { "airframe": dcs.planes.F_14B, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True } },
-                    { "airframe": dcs.planes.FA_18C_hornet, "count": 2, "fuel": 1, "loadout": "Empty", "livery": "VX-31 CoNA" },
+                    { "airframe": dcs.planes.F_14B, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "Santa", "properties": { dcs.planes.F_14B.Properties.INSAlignmentStored.id: True } },
+                    { "airframe": dcs.planes.FA_18C_hornet, "count": 4, "fuel": 1, "loadout": "Empty", "livery": "VX-31 CoNA" },
                 ]
             },
             {
@@ -476,9 +494,10 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
                     { "airframe": dcs.helicopters.Mi_24P, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation" },
-                    { "airframe": dcs.helicopters.Mi_8MT, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
+                    { "airframe": dcs.helicopters.Mi_8MT, "count": 2, "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN" },
                     { "airframe": dcs.helicopters.SA342L, "count": 1, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2" },
                     { "airframe": dcs.helicopters.SA342M, "count": 1, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet" },
+                    { "airframe": dcs.helicopters.CH_47Fbl1, "count": 1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces" },
                 ]
             },
             {
@@ -486,9 +505,10 @@ class DangerZoneClients(calvinball.clients.Clients):
                 "carrier": "Saipan",
                 "start_type": dcs.mission.StartType.Warm,
                 "airframes": [
-                    { "airframe": dcs.helicopters.UH_1H, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972" },
-                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 3, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
+                    { "airframe": dcs.helicopters.UH_1H, "count": 2, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972" },
+                    { "airframe": dcs.helicopters.AH_64D_BLK_II, "count": 2, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit" },
                     { "airframe": dcs.helicopters.Ka_50_3, "count": 2, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf", "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed } },
+                    { "airframe": dcs.helicopters.OH58D, "count": 2, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional" },
                 ]
             },
             {
@@ -526,6 +546,14 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "positions": [{"heading": 208, "x": 225342.42642045, "y": 26981.753724942}, {"heading": 212, "x": 225333.40743478, "y": 27004.301189102}],
                         "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":10,"x":225095.131998574,"y":26936.472917706997},{"heading":333,"x":225097.446831429,"y":26966.507919416996},{"heading":324,"x":225105.266298995,"y":26992.507649076986},{"heading":322,"x":225119.341340613,"y":27019.48481217696}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":314,"x":225134.37603536,"y":27030.967655877},{"heading":305,"x":225154.517779931,"y":27046.52266653697},{"heading":299,"x":225173.953959817,"y":27057.527561156952},{"heading":289,"x":225195.620063006,"y":27066.101806246967}]
+                    },
                 ]
             },
             {
@@ -562,6 +590,14 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf",
                         "positions": [{"heading": 208, "x": 177981.80856228, "y": 42638.089545099}, {"heading": 212, "x": 177972.78957661, "y": 42660.637009259}],
                         "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
+                    },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":10,"x":177736.57431989402,"y":42593.708490066994},{"heading":333,"x":177738.889152749,"y":42623.74349177699},{"heading":324,"x":177746.708620315,"y":42649.743221436984},{"heading":322,"x":177760.783661933,"y":42676.72038453696}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":314,"x":177775.81835668,"y":42688.203228237},{"heading":305,"x":177795.960101251,"y":42703.75823889697},{"heading":299,"x":177815.39628113701,"y":42714.76313351695},{"heading":289,"x":177837.062384326,"y":42723.337378606964}]
                     },
                 ]
             },
@@ -657,6 +693,14 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "positions": [{"heading": 212, "x": 182942.41451128, "y": 98550.724321465}, {"heading": 208, "x": 182951.43349695, "y": 98528.176857305}],
                         "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":10,"x":182705.384291274,"y":98484.396125695},{"heading":333,"x":182707.699124129,"y":98514.431127405},{"heading":324,"x":182715.518591695,"y":98540.43085706499},{"heading":322,"x":182729.593633313,"y":98567.40802016496}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":314,"x":182744.62832806,"y":98578.890863865},{"heading":305,"x":182764.77007263098,"y":98594.44587452497},{"heading":299,"x":182784.206252517,"y":98605.45076914495},{"heading":289,"x":182805.872355706,"y":98614.02501423497}]
+                    },
                 ]
             },
             {
@@ -726,6 +770,14 @@ class DangerZoneClients(calvinball.clients.Clients):
                         "positions": [{"heading": 212, "x": 160316.65587465, "y": 146459.33559441}, {"heading": 208, "x": 160325.67486032, "y": 146436.78813025}],
                         "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
                     },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":10,"x":160079.89767207397,"y":146392.97654156},{"heading":333,"x":160082.212504929,"y":146423.01154327},{"heading":324,"x":160090.031972495,"y":146449.01127293},{"heading":322,"x":160104.107014113,"y":146475.98843602996}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading":314,"x":160119.14170886,"y":146487.47127973},{"heading":305,"x":160139.28345343098,"y":146503.02629038997},{"heading":299,"x":160158.719633317,"y":146514.03118500995},{"heading":289,"x":160180.385736506,"y":146522.60543009997}]
+                    },
                 ]
             },
         ]
@@ -750,6 +802,8 @@ class DangerZoneClients(calvinball.clients.Clients):
             dcs.helicopters.SA342L: ["vhf_fm"],
             dcs.helicopters.SA342M: ["vhf_fm"],
             dcs.helicopters.UH_1H: ["uhf"],
+            dcs.helicopters.OH58D: ["uhf", "vhf_am", "vhf_fm", "vhf_fm"],
+            dcs.helicopters.CH_47Fbl1: ["vhf_fm"],
             dcs.planes.A_10A: ["vhf_am"],
             dcs.planes.A_10C_2: ["vhf_am", "uhf", "vhf_fm"],
             dcs.planes.AJS37: ["uhf"],
@@ -2218,9 +2272,9 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                     }
                 }
             },
-            "5th CAW - Forrestal": {
-                "airbase": "Forrestal Unit #1",
-                "warehouse": "Forrestal Unit #1",
+            "5th CAW - Stennis": {
+                "airbase": "Stennis Unit #1",
+                "warehouse": "Stennis Unit #1",
                 "squadrons": {
                     "5S-01": {
                         "airframe": dcs.helicopters.CH_47D,
@@ -2236,9 +2290,9 @@ class DangerZoneBlueAirwings(calvinball.blueairwing.BlueAirwings):
                     }
                 }
             },
-            "6th CAW - Saratoga": {
-                "airbase": "Saratoga Unit #1",
-                "warehouse": "Saratoga Unit #1",
+            "6th CAW - GW": {
+                "airbase": "GW Unit #1",
+                "warehouse": "GW Unit #1",
                 "squadrons": {
                     "6S-01": {
                         "airframe": dcs.helicopters.CH_47D,
@@ -2498,10 +2552,10 @@ class DangerZoneBlueBrigades(calvinball.bluebrigade.BlueBrigades):
 
     def define(self, m: dcs.Mission):
         blue_brigades = {
-            "1st Forrestal": {
-                "warehouse": "Forrestal Unit #1",
+            "1st Stennis": {
+                "warehouse": "Stennis Unit #1",
                 "platoons": {
-                    "Forrestal-01": {
+                    "Stennis-01": {
                         "units": [
                             dcs.vehicles.Infantry.Soldier_M4,
                             dcs.vehicles.Infantry.Soldier_M4,
@@ -2515,10 +2569,10 @@ class DangerZoneBlueBrigades(calvinball.bluebrigade.BlueBrigades):
                     }
                 }
             },
-            "1st Saratoga": {
-                "warehouse": "Saratoga Unit #1",
+            "1st GW": {
+                "warehouse": "GW Unit #1",
                 "platoons": {
-                    "Saratoga-01": {
+                    "GW-01": {
                         "units": [
                             dcs.vehicles.Infantry.Soldier_M4,
                             dcs.vehicles.Infantry.Soldier_M4,
