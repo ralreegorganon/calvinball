@@ -37,21 +37,25 @@ def add_controlpoint(counter, x, z, controlpoints):
 def calculate_distance(x1, z1, x2, z2):
     return math.sqrt((x2 - x1) ** 2 + (z2 - z1) ** 2)
 
-def process_objective(objective_key, objectives, airbases, farps, objective_current_airbase_or_farp, output_folder, strand_index, objective_index):
+def process_objective(objective_key, objectives, airbases, farps, carriers, objective_current_airbase_or_farp_or_carrier, output_folder, strand_index, objective_index):
     objective = objectives[objective_key]
     waypoints, notebook, controlpoints = [], [], []
     waypoint_counter, controlpoint_counter = 1, 1
 
-    current_airbase_or_farp = objective_current_airbase_or_farp.get(objective_key)
-    if current_airbase_or_farp:
-        if current_airbase_or_farp in airbases:
-            airbase = airbases[current_airbase_or_farp]
+    current_airbase_or_farp_or_carrier = objective_current_airbase_or_farp_or_carrier.get(objective_key)
+    if current_airbase_or_farp_or_carrier:
+        if current_airbase_or_farp_or_carrier in airbases:
+            airbase = airbases[current_airbase_or_farp_or_carrier]
             waypoint_counter = add_waypoint_and_notebook_entry(waypoint_counter, airbase['x'], airbase['y'], airbase['label'], waypoints, notebook)
             reference_x, reference_z = airbase['x'], airbase['y']
-        elif current_airbase_or_farp in farps:
-            farp = farps[current_airbase_or_farp]
+        elif current_airbase_or_farp_or_carrier in farps:
+            farp = farps[current_airbase_or_farp_or_carrier]
             waypoint_counter = add_waypoint_and_notebook_entry(waypoint_counter, farp['x'], farp['y'], farp['label'], waypoints, notebook)
             reference_x, reference_z = farp['x'], farp['y']
+        elif current_airbase_or_farp_or_carrier in carriers:
+            carrier = carriers[current_airbase_or_farp_or_carrier]
+            waypoint_counter = add_waypoint_and_notebook_entry(waypoint_counter, carrier['x'], carrier['y'], carrier['label'], waypoints, notebook)
+            reference_x, reference_z = carrier['x'], carrier['y']
 
     nodes = sorted(objective['nodes'].values(), key=lambda node: calculate_distance(reference_x, reference_z, node['x'], node['y']))
     for node in nodes:
@@ -82,7 +86,8 @@ def process_objective(objective_key, objectives, airbases, farps, objective_curr
     prepoints = [{"index": i, "type": 0} for i in range(1, len(waypoints))]
 
     mission_name = f"S{strand_index+1}-O{objective_index+1}"
-    output_filename = f"Mission3 - {objective.get('label', 'Unknown')}.json"
+    valid_filename = "".join( x for x in objective.get('label', 'Unknown') if (x.isalnum() or x in "._- "))
+    output_filename = f"Mission3 - {valid_filename}.json"
     output_filepath = os.path.join(output_folder, output_filename)
     filename = Path(output_folder)
     filename.mkdir(parents=True, exist_ok=True)
@@ -107,40 +112,47 @@ def main(args):
     strands = objectives_data['strands']
     airbases = load_json(args.airbases_file)
     farps = load_json(args.farps_file)
+    carriers = {}
 
-    objective_current_airbase_or_farp = {}
+    if args.carriers_file:
+        carriers = load_json(args.carriers_file)
+
+    objective_current_airbase_or_farp_or_carrier = {}
     for strand_index, (strand, objective_list) in enumerate(strands.items()):
-        current_airbase_or_farp = None
+        current_airbase_or_farp_or_carrier = None
         for objective_index, objective_key in enumerate(objective_list):
             objective = objectives[objective_key]
             airbases_unlocked = objective.get('airbases', [])
             farps_unlocked = objective.get('farps', [])
+            carriers_unlocked = [carrier for carrier in objective.get('carriers', []) if carrier in carriers]
 
             if airbases_unlocked:
-                current_airbase_or_farp = airbases_unlocked[-1]
+                current_airbase_or_farp_or_carrier = airbases_unlocked[-1]
             elif farps_unlocked:
-                current_airbase_or_farp = farps_unlocked[-1]
+                current_airbase_or_farp_or_carrier = farps_unlocked[-1]
+            elif carriers_unlocked:
+                current_airbase_or_farp_or_carrier = carriers_unlocked[-1]
 
-            objective_current_airbase_or_farp[objective_key] = current_airbase_or_farp
+            objective_current_airbase_or_farp_or_carrier[objective_key] = current_airbase_or_farp_or_carrier
 
     fixup = None
     for strand, objs in strands.items():
-        if fixup is None and objective_current_airbase_or_farp[objs[0]] is not None:
-            fixup = objective_current_airbase_or_farp[objs[0]]
+        if fixup is None and objective_current_airbase_or_farp_or_carrier[objs[0]] is not None:
+            fixup = objective_current_airbase_or_farp_or_carrier[objs[0]]
     for strand, objs in strands.items():
-        if objective_current_airbase_or_farp[objs[0]] is None:
-            objective_current_airbase_or_farp[objs[0]] = fixup
+        if objective_current_airbase_or_farp_or_carrier[objs[0]] is None:
+            objective_current_airbase_or_farp_or_carrier[objs[0]] = fixup
 
     if args.objective_key:
         for strand_index, (strand, objective_list) in enumerate(strands.items()):
             if args.objective_key in objective_list:
                 objective_index = objective_list.index(args.objective_key)
-                process_objective(args.objective_key, objectives, airbases, farps, objective_current_airbase_or_farp, args.output_folder, strand_index, objective_index)
+                process_objective(args.objective_key, objectives, airbases, farps, carriers, objective_current_airbase_or_farp_or_carrier, args.output_folder, strand_index, objective_index)
                 break
     else:
         for strand_index, (strand, objective_list) in enumerate(strands.items()):
             for objective_index, objective_key in enumerate(objective_list):
-                process_objective(objective_key, objectives, airbases, farps, objective_current_airbase_or_farp, args.output_folder, strand_index, objective_index)
+                process_objective(objective_key, objectives, airbases, farps, carriers, objective_current_airbase_or_farp_or_carrier, args.output_folder, strand_index, objective_index)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Generate waypoints and notebook entries for objectives from objectives JSON.')
@@ -149,5 +161,6 @@ if __name__ == "__main__":
     parser.add_argument('farps_file', type=str, help='Path to the input JSON file containing FARPs.')
     parser.add_argument('output_folder', type=str, help='Path to the output folder where the JSON files will be saved.')
     parser.add_argument('--objective_key', type=str, help='The key of the objective to process. If not provided, all objectives will be processed.')
+    parser.add_argument('--carriers_file', type=str, help='Path to the input JSON file containing carriers.')
     args = parser.parse_args()
     main(args)

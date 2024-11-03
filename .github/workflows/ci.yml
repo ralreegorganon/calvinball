@@ -26,6 +26,13 @@ jobs:
             ./missions/RockTheCasbah/json/airbases.json \
             ./missions/RockTheCasbah/json/farps.json \
             ./build/OH58D-MissionData/RockTheCasbah
+      - run: |
+          python ./archive/kiowhat.py \
+            ./missions/DangerZone/json/objectives.json \
+            ./missions/DangerZone/json/airbases.json \
+            ./missions/DangerZone/json/farps.json \
+            ./build/OH58D-MissionData/DangerZone \
+            --carriers_file ./missions/DangerZone/json/carriers.json
       - uses: actions/upload-artifact@v4
         with:
           name: missions

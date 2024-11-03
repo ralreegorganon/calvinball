@@ -1,0 +1,12 @@
+{
+    "Peleliu": {
+        "label": "Peleliu",
+        "x":99500 ,
+        "y":-165500
+    },
+    "Saipan": {
+        "label": "Saipan",
+        "x":133900 ,
+        "y":-24700
+    }
+}
