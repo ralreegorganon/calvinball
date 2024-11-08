@@ -929,6 +929,7 @@ local function enemyReinforceZone(targetZoneName)
         local guardMission = AUFTRAG:NewARMOREDGUARD(targetCoord)
         guardMission:SetEngageDetected()
         ag:AddMission(guardMission)
+        ag:SetReturnToLegion(false)
 
         function ag:OnAfterPassingWaypoint(From, Event, To, Waypoint)
             if ag:HasPassedFinalWaypoint() then
@@ -1008,6 +1009,7 @@ local function friendlyReinforceZone(targetZoneName)
         local guardMission = AUFTRAG:NewARMOREDGUARD(targetCoord)
         guardMission:SetEngageDetected()
         ag:AddMission(guardMission)
+        ag:SetReturnToLegion(false)
 
         function ag:OnAfterPassingWaypoint(From, Event, To, Waypoint)
             if ag:HasPassedFinalWaypoint() then
@@ -1477,11 +1479,13 @@ local function activateBrigades(chief, side)
                     function brigade.instance:OnAfterArmyOnMission(From, Event, To, ArmyGroup, Mission)
                         local text=string.format("BLUE has launched a new mission: %s.", Mission:GetType())
                         MESSAGE:New(text, 15):ToAll()
+                        ArmyGroup:SetReturnToLegion(false)
                     end
                 else
                     function brigade.instance:OnAfterArmyOnMission(From, Event, To, ArmyGroup, Mission)
                         local text=string.format("RED has launched a new mission: %s.", Mission:GetType())
                         MESSAGE:New(text, 15):ToAll()
+                        ArmyGroup:SetReturnToLegion(false)
                     end
                 end
 
