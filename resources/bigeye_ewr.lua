@@ -6,6 +6,8 @@ original EWRS script updated by Apple 30/11/2023
 original EWRS concept by Steggles - https://github.com/Bob7heBuilder/EWRS
 
 changelog
+1.0.0 - default A2A BRAA instead of BULLS, tune threat levels to report civilian traffic, refactor to Ops.INTEL instead of DETECTION_UNITS
+0.0.8 - added option to have either group name or NATO reporting name in report
 0.0.7 - target heading to aspect Hot, Cold, Flanking, remove bulls reference, TTS compliant, add altitude cutoff, NCTR
 0.0.6 - order contacts by distance
 0.0.5 - added Speed cutoff to filter slow movers, Checked for client to be reported to being alive
@@ -17,12 +19,12 @@ changelog
 -- CONSTANTS *************************************************************************************
 
 EWR = {}
-EWR.version = "0.0.7"
+EWR.version = "1.0.1-SNAPSHOT"
 EWR.debug = false
 
 _SETTINGS:SetPlayerMenuOff()
 _SETTINGS:SetEraCold()
-_SETTINGS:SetA2A_BULLS()
+_SETTINGS:SetA2A_BRAA()
 _SETTINGS:SetA2G_LL_DDM()
 
 --[[
@@ -54,12 +56,10 @@ EWR.redDetectedGroups = SET_GROUP:New()
 -- Constants
 EWR.blueCoalition = "blue"
 EWR.redCoalition = "red"
-EWR.minThreatLevel = 0
-EWR.maxThreatLevel = 10
+EWR.minThreatLevel = -99
+EWR.maxThreatLevel = 99
 EWR.unitInternationalSystem = "isu"
 EWR.unitImperial = "imp"
-EWR.speedCutoff = 150
-EWR.altitudeAglCutoff = 1000
 
 -- Report timings and settings
 EWR.displayMessageTime = 10
@@ -82,41 +82,68 @@ EWR.blueHasRWR = true
 EWR.blueHasIRST = false
 -- DETECTION Red
 EWR.redHasDLINK = false
-EWR.redHasRWR = true
+EWR.redHasRWR = false
 EWR.redHasIRST = false
 
 EWR.isAvailableNCTR = false
+EWR.reportUnitNameNATO = true
 
 -- in case of respawned units, use keepUnitNames so that they can be added to the filter dinamically
-blueDetectionGroup = SET_GROUP:New():FilterCoalitions("blue"):FilterStart()
-blueDetection = DETECTION_UNITS:New(blueDetectionGroup, 1000):InitDetectVisual(true):InitDetectOptical(true):InitDetectRadar(true)
-blueDetection:InitDetectDLINK(EWR.blueHasDLINK)
-blueDetection:InitDetectRWR(EWR.blueHasRWR)
-blueDetection:InitDetectIRST(EWR.blueHasIRST)
-blueDetection:FilterCategories({ Unit.Category.AIRPLANE, Unit.Category.HELICOPTER })
-blueDetection:Start()
+blueDetectionGroup = SET_GROUP:New():FilterCoalitions(EWR.blueCoalition):FilterStart()
+blueIntel = INTEL:New(blueDetectionGroup, EWR.blueCoalition, "Blue BigEye")
+blueIntel:SetClusterAnalysis(true, false, false)
+blueIntel:SetDetectionTypes(true, true, true, blueHasIRST, blueHasRWR, blueHasDLINK)
+blueIntel:SetFilterCategory({ Unit.Category.AIRPLANE, Unit.Category.HELICOPTER })
+if EWR.debug then
+    blueIntel:SetVerbosity(2)
+else
+    blueIntel:SetVerbosity(0)
+end
+blueIntel:__Start(2)
 
-redDetectionGroup = SET_GROUP:New():FilterCoalitions("red"):FilterStart()
-redDetection = DETECTION_UNITS:New(redDetectionGroup, 1000):InitDetectVisual(true):InitDetectOptical(true):InitDetectRadar(true)
-redDetection:InitDetectDLINK(EWR.redHasDLINK)
-redDetection:InitDetectRWR(EWR.redHasRWR)
-redDetection:InitDetectIRST(EWR.redHasIRST)
-redDetection:FilterCategories({ Unit.Category.AIRPLANE, Unit.Category.HELICOPTER })
-redDetection:Start()
+redDetectionGroup = SET_GROUP:New():FilterCoalitions(EWR.redCoalition):FilterStart()
+redIntel = INTEL:New(redDetectionGroup, EWR.redCoalition, "Red BigEye")
+redIntel:SetClusterAnalysis(true, false, false)
+redIntel:SetDetectionTypes(true, true, true, redHasIRST, redHasRWR, redHasDLINK)
+redIntel:SetFilterCategory({ Unit.Category.AIRPLANE, Unit.Category.HELICOPTER })
+if EWR.debug then
+    redIntel:SetVerbosity(2)
+else
+    redIntel:SetVerbosity(0)
+end
+redIntel:__Start(2)
+
+-- DETECTION CALLBACKS ***
+function blueIntel:OnAfterNewContact(From, Event, To, Contact)
+    local detectedGroup = blueIntel:GetContactGroup(Contact)
+    if not EWR.blueDetectedGroups:IsInSet(detectedGroup) then
+        EWR.blueDetectedGroups:AddGroup(detectedGroup)
+    end
+    if EWR.debug then
+        env.info(string.format("BigEye BLUE detected %s", detectedGroup:GetName()))
+    end
+end
+
+function redIntel:OnAfterNewContact(From, Event, To, Contact)
+    local detectedGroup = redIntel:GetContactGroup(Contact)
+    if not EWR.redDetectedGroups:IsInSet(detectedGroup) then
+        EWR.redDetectedGroups:AddGroup(detectedGroup)
+    end
+    if EWR.debug then
+        env.info(string.format("BigEye RED detected %s", detectedGroup:GetName()))
+    end
+end
 
 -- UTILS / MISC (yeah, misc and utils where stuff you don't know the concern goes) ***
-
--- @param #DETECTION_BASE.DetectedItem
--- @return #Wrapper.Unit#UNIT the detected unit
-function EWR.detectedItemToWrapperUnit(detectedItem)
-    local detectedSet = detectedItem.Set
-    local detectedUnit = detectedSet:GetFirst()
-    return detectedUnit
-end
 
 -- @param DCS#Vec2 Vec2 objects to calculate distance
 -- @return #number distance in meters
 function EWR.getDistance(object1Vec2, object2Vec2)
+    -- TODO for some reason the input params might be null, reasons are unclear and might be DCS being DCS
+    if object1Vec2 == nil or object2Vec2 == nil then
+        env.info("BigEye caught null objectvec in EWR.getDistance")
+        return 0
+    end
     local xDiff = object1Vec2.x - object2Vec2.x
     local yDiff = object1Vec2.y - object2Vec2.y
     local distanceInMeters = math.sqrt(xDiff * xDiff + yDiff * yDiff)
@@ -127,6 +154,11 @@ end
 -- @param DCS#Vec2 objectToVec2 the destination
 -- @return #number angle in degrees
 function EWR.getAbsoluteBearing(objectFromVec2, objectToVec2)
+    -- TODO for some reason the input params might be null, reasons are unclear and might be DCS being DCS
+    if objectFromVec2 == nil or objectToVec2 == nil then
+        env.info("BigEye caught null objectvec in EWR.getAbsoluteBearing")
+        return 0
+    end
     -- Calculate the relative bearing
     local bearing = math.atan2(objectToVec2.y - objectFromVec2.y, objectToVec2.x - objectFromVec2.x)
 
@@ -142,6 +174,11 @@ end
 -- @param DCS#Vec2 objectToVec2 the destination
 -- @return #number angle in degrees
 function EWR.getRelativeBearing(objectFromVec2, objectToVec2, objectFromHeading)
+    -- TODO for some reason the input params might be null, reasons are unclear and might be DCS being DCS
+    if objectFromVec2 == nil or objectToVec2 == nil or objectFromHeading == nil then
+        env.info("BigEye caught null objectvec in EWR.getRelativeBearing")
+        return 0
+    end
     -- Calculate the relative bearing
     local bearing = math.atan2(objectToVec2.y - objectFromVec2.y, objectToVec2.x - objectFromVec2.x)
     env.info("bearing " .. bearing)
@@ -197,7 +234,7 @@ end
 -- @param #SET_UNIT setUnit, in our case the SET_UNITS that contain detected units
 -- @param #ZONE_POLYGON the airspace zone
 -- @return #Wrapper.Unit#UNIT the assigned target unit
-function EWR.findAndAssignNearestThreat(playerGroupId, detectedUnitGroup)
+function EWR.findAndAssignNearestThreat(playerGroupId, detectedGroup)
 
     local clientName = EWR.playerData[playerGroupId]["clientName"]
     local clientUnit = UNIT:FindByName(clientName)
@@ -207,7 +244,7 @@ function EWR.findAndAssignNearestThreat(playerGroupId, detectedUnitGroup)
     local clientDistanceCutoff = clientPreferences["reportDistanceCutoff"]
     local unitDistance = clientDistanceCutoff
 
-    detectedUnitGroup:ForEachGroup(
+    detectedGroup:ForEachGroup(
             function(group)
                 if group ~= nil and group:IsAlive() then
                     if group:GetThreatLevel() > EWR.minThreatLevel and
@@ -230,7 +267,7 @@ end
 -- @param #number unitPreference EWRS.playerEwrPreferences[groupId]["reportUnits"]
 function EWR.setUnitPreference(groupId, unitPreference)
     if EWR.debug then
-        env.info(string.format("EWR group %s set unit preference to %s", groupId, unitPreference))
+        env.info(string.format("BigEye group %s set unit preference to %s", groupId, unitPreference))
     end
     local playerPreferences = EWR.playerData[groupId]
     playerPreferences["reportUnits"] = unitPreference
@@ -243,7 +280,7 @@ end
 -- @param #string reportFrequencyPreference EWRS.playerEwrPreferences[groupId]["reportFrequency"]
 function EWR.setReportFrequencyPreference(groupId, reportFrequencyPreference)
     if EWR.debug then
-        env.info(string.format("EWR group %s set preference report frequency to %2d", groupId, reportFrequencyPreference))
+        env.info(string.format("BigEye group %s set preference report frequency to %2d", groupId, reportFrequencyPreference))
     end
     local playerPreferences = EWR.playerData[groupId]
     playerPreferences["reportFrequency"] = reportFrequencyPreference
@@ -256,7 +293,7 @@ end
 -- @param #string cutoffDistancePreference EWRS.playerEwrPreferences[groupId]["reportDistanceCutoff"]
 function EWR.setCutoffDistancePreference(groupId, cutoffDistancePreference)
     if EWR.debug then
-        env.info(string.format("EWR group %s set cutoff distance %2d", groupId, cutoffDistancePreference))
+        env.info(string.format("BigEye group %s set cutoff distance %2d", groupId, cutoffDistancePreference))
     end
     local playerPreferences = EWR.playerData[groupId]
     playerPreferences["reportDistanceCutoff"] = cutoffDistancePreference
@@ -269,7 +306,7 @@ end
 -- @param #boolean reportEnabledPreference boolean, will start or stop player scheduler in EWR.playerEwrPreferences[groupId]["playerReportScheduler"]
 function EWR.setReportEnabledPreference(groupId, reportEnabledPreference)
     if EWR.debug then
-        env.info(string.format("EWR group %s set preference report enable %s", groupId, tostring(reportEnabledPreference)))
+        env.info(string.format("BigEye group %s set preference report enable %s", groupId, tostring(reportEnabledPreference)))
     end
     local playerReportScheduler = EWR.playerData[groupId]["playerReportScheduler"]
     if reportEnabledPreference then
@@ -286,7 +323,7 @@ end
 -- @param #boolean reportEnabledPreference boolean, will start or stop player scheduler in EWR.playerEwrPreferences[groupId]["playerReportScheduler"]
 function EWR.setGciTaskingAvailablePreference(groupId, gciEnabledPreference)
     if EWR.debug then
-        env.info(string.format("EWR group %s set preference GCI available %s", groupId, tostring(gciEnabledPreference)))
+        env.info(string.format("BigEye group %s set preference GCI available %s", groupId, tostring(gciEnabledPreference)))
     end
     local playerReportScheduler = EWR.playerData[groupId]["playerReportScheduler"]
     local playerGciAssignTargetScheduler = EWR.playerData[groupId]["playerGciScheduler"]
@@ -353,40 +390,17 @@ function EWR.replacePlayerReportSchedulerWith(groupId, newReportScheduler)
     playerReportScheduler:Start()
 end
 
--- DETECTION CALLBACKS ***
-function blueDetection:OnAfterDetectedItem(From, Event, To, DetectedItem)
-    local detectedUnit = EWR.detectedItemToWrapperUnit(DetectedItem)
-    local detectedUnitGroup = detectedUnit:GetGroup()
-    if not EWR.blueDetectedGroups:IsInSet(detectedUnitGroup) and
-            detectedUnitGroup:GetVelocityKNOTS() > EWR.speedCutoff and
-            detectedUnitGroup:GetAltitude(true) > EWR.altitudeAglCutoff then
-        EWR.blueDetectedGroups:AddGroup(detectedUnitGroup)
-    end
-    if EWR.debug then
-        env.info(string.format("EWR BLUE detected %s", detectedUnit:GetName()))
-    end
-end
-
-function redDetection:OnAfterDetectedItem(From, Event, To, DetectedItem)
-    local detectedUnit = EWR.detectedItemToWrapperUnit(DetectedItem)
-    local detectedUnitGroup = detectedUnit:GetGroup()
-    if not EWR.redDetectedGroups:IsInSet(detectedUnitGroup) and
-            detectedUnitGroup:GetVelocityKNOTS() > EWR.speedCutoff and
-            detectedUnitGroup:GetAltitude(true) > EWR.altitudeAglCutoff then
-        EWR.redDetectedGroups:AddGroup(detectedUnitGroup)
-    end
-    if EWR.debug then
-        env.info(string.format("EWR RED detected %s", detectedUnit:GetName()))
-    end
-end
-
 -- REPORTS ***
 
 -- @param #number playerGroupId of client group
 -- @param #Wrapper.Unit#UNIT assignedTargetUnit is the unit to generate report of
 function EWR.printGciReport(groupId, assignedTargetGroup)
+    if assignedTargetGroup == nil or assignedTargetGroup:GetID() == nil then
+            env.info("BigEye assignedTargetGroup is null")
+        return
+    end
     if EWR.debug then
-        env.info(string.format("EWR GCI report for group %3d, %s", groupId, assignedTargetGroup:GetID()))
+        env.info(string.format("BigEye GCI report for group %3d, %s", groupId, assignedTargetGroup:GetID()))
     end
 
     local clientName = EWR.playerData[groupId]["clientName"]
@@ -466,7 +480,7 @@ function EWR.printBogeyReport(playerGroupId, isOnDemand)
     local playerCoalition = EWR.playerData[playerGroupId]["playerCoalition"]
 
     if EWR.debug then
-        env.info(string.format("EWR report for group %s", playerGroupId))
+        env.info(string.format("BigEye report for group %s", playerGroupId))
     end
     local client = CLIENT:FindByName(clientName)
     if not client:IsAlive() then
@@ -569,7 +583,7 @@ function EWR.printFriendliesReport(playerGroupId)
     local playerCoalition = EWR.playerData[playerGroupId]["playerCoalition"]
 
     if EWR.debug then
-        env.info(string.format("EWR find friendlies for %3d %s", playerGroupId, clientName))
+        env.info(string.format("BigEye find friendlies for %3d %s", playerGroupId, clientName))
     end
     -- cannot use { Unit.Category.AIRPLANE, Unit.Category.HELICOPTER } here, inconsistent API with others
     local friendlyUnitSet = SET_GROUP
@@ -628,7 +642,11 @@ end
 -- @return #string with report entry for @param unit
 function EWR.getTextReportForGroup(group, clientPreferences, referenceVec2, isFriendlyReport)
     if EWR.debug then
-        env.info(string.format("EWR prepare text report for %s", group:GetName()))
+        if group == nil or clientPreferences == nil or referenceVec2 == nil then
+            env.info("BigEye getTextReportForGroup caught nil object")
+            return
+        end
+        env.info(string.format("BigEye prepare text report for %s", group:GetName()))
     end
 
     local isAltitudeFromGround = false
@@ -656,13 +674,31 @@ function EWR.getTextReportForGroup(group, clientPreferences, referenceVec2, isFr
         unitDistanceToString = string.format("%03d kilometers", UTILS.Round(unitDistance / 1000, 0))
     end
 
+    -- collect group coordinates and defensive logs
     local UnitCoordinate = group:GetCoordinate()
+    if UnitCoordinate == nil then
+        env.info("BigEye UnitCoordinate is nil")
+        return
+    end
+    if EWR.debug then
+        env.info("BigEye UnitCoordinate heading " .. UnitCoordinate:GetHeading())
+    end
     local ReferenceCoordinate = COORDINATE:NewFromVec2(referenceVec2)
-    local aspect = UnitCoordinate:ToStringAspect(ReferenceCoordinate)
+    local aspect
+    if EWR.debug and ReferenceCoordinate == nil then
+        env.info("BigEye ReferenceCoordinate is nil")
+        aspect = "ERROR"
+    else
+        aspect = UnitCoordinate:ToStringAspect(ReferenceCoordinate)
+    end
 
     local groupName
     if isFriendlyReport or EWR.isAvailableNCTR then
-        groupName = string.format("| %2d %s", group:CountAliveUnits(), group:GetNatoReportingName())
+        if EWR.reportUnitNameNATO then
+            groupName = string.format("| %2d %s", group:CountAliveUnits(), group:GetNatoReportingName())
+        else
+            groupName = string.format("| %2d %s", group:CountAliveUnits(), group:GetTypeName())
+        end
     else
         groupName = ""
     end
@@ -702,7 +738,7 @@ end
 
 function EWR.setupClientsHelper(playerGroupId, client, playerCoalition)
     if EWR.debug then
-        env.info(string.format("EWR client setup for group %s %s", playerGroupId, client:GetName()))
+        env.info(string.format("BigEye client setup for group %s %s", playerGroupId, client:GetName()))
     end
 
     local reportUnit
@@ -794,13 +830,13 @@ cleanupScheduler = SCHEDULER:New(nil,
                 local client = CLIENT:FindByName(clientName, nil, false)
                 if client == nil or not client:IsPlayer() then
                     if EWR.debug then
-                        env.info(string.format("EWR client clean up for %s", groupId))
+                        env.info(string.format("BigEye client clean up for %s", groupId))
                     end
                     local playerReportScheduler = EWR.getReportSchedulerForPlayerGroup(groupId)
                     playerReportScheduler:Stop()
                     local gciReportScheduler = EWR.getGciSchedulerForPlayerGroup(groupId)
                     gciReportScheduler:Stop()
-                    env.info(string.format("EWR stopping scheduler for %s, %s", clientPreferences["groupId"], clientPreferences["clientName"]))
+                    env.info(string.format("BigEye stopping scheduler for %s, %s", clientPreferences["groupId"], clientPreferences["clientName"]))
                     EWR.playerData[groupId] = nil
                     EWR.radioMenusAdded[groupId] = nil
                 end
