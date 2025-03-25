@@ -64,8 +64,6 @@ class Mission:
         self.__write_db(ctld_groups, csar_groups, farp_groups, roadbase_groups, airbase_groups, red_airwings, blue_airwings, carriers, carrier_groups, red_brigades, blue_brigades, edit, devmode)
         self.__save_mission(package, edit)
 
-        print("Make sure to manually add a late activated `Downed Pilot`")
-
     def __configure_output(self, output):
         if output:
             self.mission_root_path = os.path.join(

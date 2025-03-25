@@ -18,3 +18,5 @@ args = parser.parse_args()
 missions = [CyprusInvasion(), DangerZone(), GeorgianOffensive(), AndeanAbyss(), RockTheCasbah(), AcesHigh()]
 for m in missions:
     m.build(args.edit, args.package, args.debug, args.output)
+
+print("Make sure to manually add a late activated unit in the ME and save the mission(s), because the database is whack otherwise.")
