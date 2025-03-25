@@ -71,7 +71,6 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.AV8BNA, "count": 2, "parking": [32, 37], "fuel": 1, "loadout": "Empty", "livery": "vma-214" },
                     { "airframe": dcs.planes.A_10C_2, "count": 2, "parking": [30, 31], "fuel": 0.6, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)" },
                     { "airframe": dcs.planes.A_10A, "count": 1, "parking": [23], "fuel": 1, "loadout": "Empty", "livery": "355th fs eielson afb, alaska (ak)", "start_type": dcs.mission.StartType.Cold },
-                    { "airframe": dcs.planes.P_51D_30_NA, "count": 1, "parking": [46], "fuel": 1, "loadout": "Empty", "livery": "Ukraine Modern" },
                     { "airframe": dcs.planes.AJS37, "count": 1, "parking": [28], "fuel": 1, "loadout": "Empty", "livery": "SF-37 Akktu Stakki - F21" },
                     { "airframe": dcs.planes.C_101CC, "count": 1, "parking": [27], "fuel": 1, "loadout": "Empty", "livery": "usaf agressor fictional" },
                     { "airframe": dcs.planes.L_39ZA, "count": 1, "parking": [26], "fuel": 1, "loadout": "Empty", "livery": "algerian af tiger nl-36" },
@@ -87,7 +86,7 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                     {
                         "airframe": dcs.planes.F_4E_45MC, "fuel": 1, "loadout": "Empty", "livery": "RS68-517_SEA_526TFS", "start_type": dcs.mission.StartType.Warm,
                         "properties": { dcs.planes.F_4E_45MC.Properties.INSAlignmentStored.id: True },
-                        "positions": [{"heading": 39, "x": -36534.195408274, "y": -268106.95968465}, {"heading": 39, "x": -36545.359641738, "y": -268091.51582836}, {"heading": 39, "x": -36574.200578189, "y": -268053.18529346}, {"heading": 39, "x": -36586.481235, "y": -268036.62501383}], "F-5E-3": [{"heading": 0, "x": -36566.1484375, "y": -267705.40625}, {"heading": 0, "x": -36518.046875, "y": -267725.15625}]
+                        "positions": [{"heading": 39, "x": -36534.195408274, "y": -268106.95968465}, {"heading": 39, "x": -36545.359641738, "y": -268091.51582836}, {"heading": 39, "x": -36574.200578189, "y": -268053.18529346}, {"heading": 39, "x": -36586.481235, "y": -268036.62501383}]
                     },
                     {
                         "airframe": dcs.planes.F_4E_45MC, "fuel": 1, "loadout": "Empty", "livery": "RS68-517_SEA_526TFS", "start_type": dcs.mission.StartType.Cold,
@@ -102,6 +101,38 @@ class CyprusInvasionClients(calvinball.clients.Clients):
                         "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
                         "positions": [{"heading": 179, "x": -35434.138411381, "y": -270550.99015479}, {"heading": 1, "x": -35561.888929925, "y": -270562.67162244}, {"heading": 90, "x": -35489.066163518, "y": -270674.7640035}, {"heading": 94, "x": -35496.522419464, "y": -270550.74161293}]
                     },
+                    {
+                        "airframe": dcs.planes.P_51D_30_NA, "fuel": 1, "loadout": "Empty", "livery": "USAF 363rd FS, 357th FG DESERT RAT",
+                        "positions": [{"heading": 358, "x": -35777.245850066, "y": -270149.3475387}]
+                    },
+                    {
+                        "airframe": dcs.planes.P_47D_30, "fuel": 1, "loadout": "Empty", "livery": "Maj_Howard_Park_1945",
+                        "positions": [{"heading": 355, "x": -35778.724861285, "y": -270128.76463257}]
+                    },
+                    {
+                        "airframe": dcs.planes.FW_190D9, "fuel": 1, "loadout": "Empty", "livery": "FW-190D9_GB",
+                        "positions": [{"heading": 346, "x": -35769.850793971, "y": -270111.87925449}]
+                    },
+                    {
+                        "airframe": dcs.planes.FW_190A8, "fuel": 1, "loadout": "Empty", "livery": "FW-190A8_RAF",
+                        "positions": [{"heading": 346, "x": -35755.430434586, "y": -270099.80066287}]
+                    },
+                    {
+                        "airframe": dcs.planes.Bf_109K_4, "fuel": 1, "loadout": "Empty", "livery": "Bf-109 K4 Irmgard",
+                        "positions": [{"heading": 350, "x": -35768.942122464, "y": -270193.85027315}]
+                    },
+                    {
+                        "airframe": dcs.planes.SpitfireLFMkIXCW, "fuel": 1, "loadout": "Empty", "livery": "RAF, No. 145 Squadron",
+                        "positions": [{"heading": 350, "x": -35766.214008811, "y": -270208.40021263}]
+                    },
+                    {
+                        "airframe": dcs.planes.I_16, "fuel": 1, "loadout": "Empty", "livery": "Red Army Standard",
+                        "positions": [{"heading": 350, "x": -35765.07729479, "y": -270223.06382351}]
+                    },
+                    {
+                        "airframe": dcs.planes.MosquitoFBMkVI, "fuel": 1, "loadout": "Empty", "livery": "605 Sqn",
+                        "positions": [{"heading": 350, "x": -35759.39372468, "y": -270240.11453384}]
+                    }
                 ]
             },
             {
@@ -410,7 +441,8 @@ class CyprusInvasionClients(calvinball.clients.Clients):
         comms_plan = {
             "uhf": { 1: 250, 2: 251, 3: 252, 4: 253, 5: 254 },
             "vhf_am": { 1: 135, 2: 136, 3: 137, 4: 138, 5: 139 },
-            "vhf_fm": { 1: 31, 2: 32, 3: 33, 4: 34, 5: 35 }
+            "vhf_fm": { 1: 31, 2: 32, 3: 33, 4: 34, 5: 35 },
+            "vhf_am_de": { 1: 39, 2: 40, 3: 41, 4: 42 }
         }
 
         radio_override = {
@@ -443,6 +475,14 @@ class CyprusInvasionClients(calvinball.clients.Clients):
             dcs.planes.MiG_21Bis: ["uhf"],
             dcs.planes.Mirage_F1EE: ["vhf_am", "uhf"],
             dcs.planes.P_51D_30_NA: ["vhf_am"],
+            dcs.planes.P_47D_30: ["vhf_am"],
+            dcs.planes.FW_190D9: ["vhf_am_de"],
+            dcs.planes.FW_190A8: ["vhf_am_de"],
+            dcs.planes.Bf_109K_4: ["vhf_am_de"],
+            dcs.planes.SpitfireLFMkIX: ["vhf_am"],
+            dcs.planes.SpitfireLFMkIXCW: ["vhf_am"],
+            dcs.planes.I_16: ["vhf_am"],
+            dcs.planes.MosquitoFBMkVI: ["vhf_am"],
             dcs.planes.Su_25: ["vhf_am"],
             dcs.planes.Su_25T: ["vhf_am"],
             dcs.planes.F_15ESE: ["uhf", "vhf_am"],
