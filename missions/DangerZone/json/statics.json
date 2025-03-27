@@ -332,28 +332,6 @@
             "x": 140506.54212207,
             "y": -85026.110469956
         },
-        "Static Big smoke-1": {
-            "canCargo": false,
-            "category": "Effects",
-            "effectPreset": "1",
-            "effectTransparency": 1,
-            "heading": 0.0877298168986,
-            "name": "Static Big smoke-1",
-            "type": "big_smoke",
-            "x": 127184.64768307,
-            "y": -169081.54825432
-        },
-        "Static Big smoke-2": {
-            "canCargo": false,
-            "category": "Effects",
-            "effectPreset": "1",
-            "effectTransparency": 1,
-            "heading": 0.0877298168986,
-            "name": "Static Big smoke-2",
-            "type": "big_smoke",
-            "x": 127865.981874,
-            "y": -170103.21338777
-        },
         "Static Container 20ft-1": {
             "canCargo": false,
             "category": "Fortifications",
