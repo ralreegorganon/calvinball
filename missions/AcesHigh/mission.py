@@ -27,7 +27,7 @@ class AcesHigh(calvinball.mission.Mission):
         max = len(dcs.cloud_presets.CLOUD_PRESETS) - 1
         preset_name = list(dcs.cloud_presets.CLOUD_PRESETS)[random.randint(0, max)]
         cloud_preset = dcs.weather.CloudPreset.by_name(preset_name)
-        self.m.weather.clouds_base = random.randrange(cloud_preset.min_base, cloud_preset.max_base)
+        self.m.weather.clouds_base = random.randrange(int(cloud_preset.min_base), int(cloud_preset.max_base))
         self.m.weather.clouds_preset = cloud_preset
         wind_dir = random.randrange(0, 359) + 180
         wind_speed = random.randrange(5, 10)
