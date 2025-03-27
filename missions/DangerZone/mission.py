@@ -2320,7 +2320,7 @@ class DangerZoneRedBrigades(calvinball.redbrigade.RedBrigades):
             "1st Anglo": {
                 "warehouse": "Anglo Brigade Warehouse#00001",
                 "platoons": {
-                    "1GW-Anglo-2": {
+                    "1GW-Anglo-3": {
                         "units": [
                             dcs.vehicles.Infantry.Paratrooper_AKS_74,
                             dcs.vehicles.Infantry.Paratrooper_AKS_74,
@@ -2332,7 +2332,7 @@ class DangerZoneRedBrigades(calvinball.redbrigade.RedBrigades):
                             "AUFTRAG.Type.ONGUARD": 50
                         }
                     },
-                    "1GW-Anglo-3": {
+                    "1GW-Anglo-4": {
                         "units": [
                             dcs.vehicles.Artillery.Uragan_BM_27,
                             dcs.vehicles.Artillery.Uragan_BM_27,
