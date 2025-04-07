@@ -12387,36 +12387,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Static Big smoke-1#00001",
-							template = {
-								name = "Static Big smoke-1",
-								type = "big_smoke",
-								x = 127184.64768307,
-								y = -169081.54825432,
-								heading = 0.0877298168986,
-								category = "Effects",
-								canCargo = false,
-								shape_name = "",
-								rate = 50,
-								dead = false
-							}
-						},
-						{
-							name = "Static Big smoke-2#00001",
-							template = {
-								name = "Static Big smoke-2",
-								type = "big_smoke",
-								x = 127865.981874,
-								y = -170103.21338777,
-								heading = 0.0877298168986,
-								category = "Effects",
-								canCargo = false,
-								shape_name = "",
-								rate = 50,
-								dead = false
-							}
-						},
-						{
 							name = "Static Container 20ft-13#00001",
 							template = {
 								name = "Static Container 20ft-13",
@@ -22927,16 +22897,16 @@ MissionDb = {
 				warehouse = "Anglo Brigade Warehouse#00001",
 				platoons = {
 					{
-						name = "1GW-Anglo-2",
-						templateGroupName = "RED 1st Anglo 1GW-Anglo-2",
+						name = "1GW-Anglo-3",
+						templateGroupName = "RED 1st Anglo 1GW-Anglo-3",
 						initialInventory = 3,
 						capabilities = {
 							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
 						},
 					},
 					{
-						name = "1GW-Anglo-3",
-						templateGroupName = "RED 1st Anglo 1GW-Anglo-3",
+						name = "1GW-Anglo-4",
+						templateGroupName = "RED 1st Anglo 1GW-Anglo-4",
 						initialInventory = 1,
 						capabilities = {
 							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
