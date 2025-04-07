@@ -2780,6 +2780,7 @@ local function initializeCtld()
 
     MissionDb.ctld.instance:Start()
     MissionDb.ctld.instance:AddTroopsCargo("Infantry (8)", { "CTLD Inf M4 8" }, CTLD_CARGO.Enum.TROOPS, 8, 80)
+    MissionDb.ctld.instance:AddTroopsCargo("CH Test (2)", { "CTLD CH Test" }, CTLD_CARGO.Enum.TROOPS, 2, 80)
     MissionDb.ctld.instance:AddTroopsCargo("Infantry - AA (6)", { "CTLD Infantry AA" }, CTLD_CARGO.Enum.TROOPS, 6, 80)
     MissionDb.ctld.instance:AddTroopsCargo("Infantry - AT (8)", { "CTLD Infantry AT" }, CTLD_CARGO.Enum.TROOPS, 8, 80)
     MissionDb.ctld.instance:AddTroopsCargo("JTAC (1)", { "CTLD BLUE RECCE JTAC" }, CTLD_CARGO.Enum.TROOPS, 1, 80)

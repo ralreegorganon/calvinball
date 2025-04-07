@@ -1,7 +1,13 @@
 import dcs
+import pydcs_extensions
 
 class Ctld:
     def build(self, m: dcs.Mission):
+        m.vehicle_group_platoon(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD CH Test", [
+            dcs.vehicles.Infantry.Soldier_M4,
+            pydcs_extensions.CH_USInfantry_FGM148
+        ], dcs.mapping.Point(180657, -39472, m.terrain)).late_activation = True
+
         m.vehicle_group_platoon(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD Inf M4 8", [
             dcs.vehicles.Infantry.Soldier_M4,
             dcs.vehicles.Infantry.Soldier_M4,
