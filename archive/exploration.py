@@ -1,4 +1,3 @@
-from msilib.schema import tables
 import dcs
 from prettytable import PrettyTable
 import csv
@@ -117,7 +116,8 @@ def radios():
 #radios()
 
 #parking_slot_names(dcs.terrain.Normandy().airports["Needs Oar Point"])
-parking_slot_names(dcs.terrain.PersianGulf().airports["Al Dhafra AFB"])
+#parking_slot_names(dcs.terrain.PersianGulf().airports["Al Dhafra AFB"])
+parking_slot_names(dcs.terrain.GermanyColdWar().airports["Ramstein"])
 
 
 #print(dcs.mapping.Point.from_latlng(dcs.mapping.LatLng(50.66526, -2.63873), dcs.terrain.Normandy()))
