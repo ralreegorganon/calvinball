@@ -1,0 +1,12 @@
+{
+    "AIRBASE-1": {
+        "component": "airbase",
+        "label": "Ramstein",
+        "radius": 2300.0208,
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicle_groups": [],
+        "x": -498863.8331858,
+        "y": -934922.55805842
+    }
+}

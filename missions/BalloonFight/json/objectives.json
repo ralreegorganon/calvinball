@@ -1,0 +1,62 @@
+{
+    "objectives": {
+        "OBJ-1": {
+            "airbases": [],
+            "blueAwacsZones": [
+                "BLUE-AWACS-1"
+            ],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Danger Close",
+            "nodes": {
+                "NODE-1": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Desert Way",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -515786.99495052,
+                    "y": -945801.59123895
+                }
+            },
+            "qrfKillOnComplete": [],
+            "qrfs": [],
+            "redAwacsZones": [],
+            "reinforcements": [],
+            "roadbases": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": -521885.27228933,
+                    "y": -940723.90787443
+                },
+                {
+                    "x": -509135.51828423,
+                    "y": -937165.6913584
+                },
+                {
+                    "x": -509329.7542701,
+                    "y": -947628.89082858
+                },
+                {
+                    "x": -522012.98228378,
+                    "y": -952486.28951855
+                }
+            ],
+            "x": -515590.88178186,
+            "y": -944501.19489499
+        }
+    },
+    "strands": {
+        "STRAND-1": [
+            "OBJ-1"
+        ]
+    }
+}
