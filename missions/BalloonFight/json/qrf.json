@@ -211,9 +211,9 @@
         "ship_groups": [],
         "static_groups": [
             "Bitburg Airwing Warehouse",
-            "Spangdahlem Brigade Warehouse",
+            "Bitburg Brigade Warehouse",
             "Spangdahlem Airwing Warehouse",
-            "Bitburg Brigade Warehouse"
+            "Spangdahlem Brigade Warehouse"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [],

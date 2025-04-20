@@ -2,9 +2,7 @@
     "objectives": {
         "OBJ-1": {
             "airbases": [],
-            "blueAwacsZones": [
-                "BLUE-AWACS-1"
-            ],
+            "blueAwacsZones": [],
             "borderZones": [],
             "capZones": [],
             "carriers": [],
@@ -82,9 +80,7 @@
         },
         "OBJ-2": {
             "airbases": [],
-            "blueAwacsZones": [
-                "BLUE-AWACS-1"
-            ],
+            "blueAwacsZones": [],
             "borderZones": [],
             "capZones": [],
             "carriers": [],
@@ -181,9 +177,7 @@
         },
         "OBJ-3": {
             "airbases": [],
-            "blueAwacsZones": [
-                "BLUE-AWACS-1"
-            ],
+            "blueAwacsZones": [],
             "borderZones": [],
             "capZones": [],
             "carriers": [],

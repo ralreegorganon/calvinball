@@ -121,9 +121,9 @@ class BalloonFightClients(calvinball.clients.Clients):
         }
 
         if not edit:
-            airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 7, "parking": [244, 243, 242, 241, 240, 239, 238], "fuel": 0.75, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
-            airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.Bronco_OV_10A, "count": 4, "parking": [253, 106, 105, 102], "fuel": 1, "loadout": "Empty", "livery": "colombian 2221" })
-            airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.Hercules, "count": 2, "parking": [100, 104], "fuel": 0.6, "loadout": "Empty" })
+            # airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.A_4E_C, "count": 7, "parking": [244, 243, 242, 241, 240, 239, 238], "fuel": 0.75, "loadout": "Empty", "livery": "Aggressor USN VF-126 Bandits" })
+            # airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.Bronco_OV_10A, "count": 4, "parking": [253, 106, 105, 102], "fuel": 1, "loadout": "Empty", "livery": "colombian 2221" })
+            # airport_set[0]["airframes"].append({ "airframe": pydcs_extensions.Hercules, "count": 2, "parking": [100, 104], "fuel": 0.6, "loadout": "Empty" })
 
             radios[pydcs_extensions.A_4E_C] = ["uhf"]
             radios[pydcs_extensions.Bronco_OV_10A] = ["vhf_fm"]
@@ -557,6 +557,38 @@ class BalloonFightRedBrigades(calvinball.redbrigade.RedBrigades):
                         }
                     },
                     "Spangdahlem B 2": {
+                        "units": [
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Unarmed.Ural_375,
+                            dcs.vehicles.Unarmed.Ural_375
+                        ],
+                        "initialInventory": 1,
+                        "capabilities": {
+                            "AUFTRAG.Type.ARTY": 50
+                        }
+                    }
+                }
+            },
+            "Pottschutthohe": {
+                "warehouse": "Pottschutthohe Brigade Warehouse#00001",
+                "platoons": {
+                    "Pottschutthohe B 1": {
+                        "units": [
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                        ],
+                        "initialInventory": 3,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    },
+                    "Pottschutthohe B 2": {
                         "units": [
                             dcs.vehicles.Artillery.Uragan_BM_27,
                             dcs.vehicles.Artillery.Uragan_BM_27,

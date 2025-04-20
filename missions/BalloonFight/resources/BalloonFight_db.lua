@@ -11,7 +11,6 @@ MissionDb = {
 			redAwacsZones = {
 			},
 			blueAwacsZones = {
-				"BLUE-AWACS-1",
 			},
 			nodes = {
 				{ name = "NODE-4", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -43,9 +42,9 @@ MissionDb = {
 					template = {
 						name = "Zweibrucken Airwing Warehouse",
 						type = ".Ammunition depot",
-						x = -521230.58035697,
-						y = -954348.98607784,
-						heading = 5.9166661642608,
+						x = -521099.45358541,
+						y = -954121.97303728,
+						heading = 5.4279739737024,
 						category = "Warehouses",
 						canCargo = false,
 						shape_name = "SkladC",
@@ -58,9 +57,9 @@ MissionDb = {
 					template = {
 						name = "Zweibrucken Brigade Warehouse",
 						type = ".Ammunition depot",
-						x = -521032.95228301,
-						y = -954262.81064045,
-						heading = 5.4803338512622,
+						x = -520464.10029252,
+						y = -953417.40732299,
+						heading = 5.4454272662223,
 						category = "Warehouses",
 						canCargo = false,
 						shape_name = "SkladC",
@@ -81,7 +80,6 @@ MissionDb = {
 			redAwacsZones = {
 			},
 			blueAwacsZones = {
-				"BLUE-AWACS-1",
 			},
 			nodes = {
 				{ name = "NODE-12", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -128,7 +126,6 @@ MissionDb = {
 			redAwacsZones = {
 			},
 			blueAwacsZones = {
-				"BLUE-AWACS-1",
 			},
 			nodes = {
 				{ name = "NODE-1", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -173,13 +170,13 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Spangdahlem Brigade Warehouse#00001",
+							name = "Bitburg Brigade Warehouse#00001",
 							template = {
-								name = "Spangdahlem Brigade Warehouse",
+								name = "Bitburg Brigade Warehouse",
 								type = ".Ammunition depot",
-								x = -425151.80611765,
-								y = -987853.62702063,
-								heading = 4.9567350756639,
+								x = -427857.55516395,
+								y = -998832.55355415,
+								heading = 5.7246799465414,
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "SkladC",
@@ -203,13 +200,13 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Bitburg Brigade Warehouse#00001",
+							name = "Spangdahlem Brigade Warehouse#00001",
 							template = {
-								name = "Bitburg Brigade Warehouse",
+								name = "Spangdahlem Brigade Warehouse",
 								type = ".Ammunition depot",
-								x = -427757.18875882,
-								y = -997280.21235139,
-								heading = 5.8643062867009,
+								x = -426613.26853992,
+								y = -988387.87915898,
+								heading = 4.0666171571468,
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "SkladC",
@@ -248,9 +245,9 @@ MissionDb = {
 							template = {
 								name = "Hahn Brigade Warehouse",
 								type = ".Ammunition depot",
-								x = -436740.51709991,
-								y = -946785.2617476,
-								heading = 5.5676003138619,
+								x = -438053.25576891,
+								y = -948315.25135146,
+								heading = 5.4977871437821,
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "SkladC",
@@ -274,9 +271,9 @@ MissionDb = {
 							template = {
 								name = "Pferdsfeld Airwing Warehouse",
 								type = ".Ammunition depot",
-								x = -451466.40153599,
-								y = -925901.45848767,
-								heading = 5.8643062867009,
+								x = -452299.13117981,
+								y = -925781.38531776,
+								heading = 4.7472955654246,
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "SkladC",
@@ -289,9 +286,9 @@ MissionDb = {
 							template = {
 								name = "Pferdsfeld Brigade Warehouse",
 								type = ".Ammunition depot",
-								x = -451973.81553143,
-								y = -925673.49030877,
-								heading = 0.1919862177194,
+								x = -451654.21006616,
+								y = -926243.2941622,
+								heading = 5.8119464091411,
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "SkladC",
@@ -330,9 +327,9 @@ MissionDb = {
 							template = {
 								name = "Buchel Brigade Warehouse",
 								type = ".Ammunition depot",
-								x = -411359.11972796,
-								y = -958551.18059241,
-								heading = 0.628318530718,
+								x = -409768.43564071,
+								y = -957931.67232925,
+								heading = 5.3930673886625,
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "SkladC",
@@ -413,9 +410,9 @@ MissionDb = {
 							template = {
 								name = "Pottschutthohe Brigade Warehouse",
 								type = ".Ammunition depot",
-								x = -516501.3464845,
-								y = -945932.06078099,
-								heading = 5.9864793343406,
+								x = -516454.07130567,
+								y = -945931.11988573,
+								heading = 4.4156830075457,
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "SkladC",
@@ -949,6 +946,28 @@ MissionDb = {
 					{
 						name = "Spangdahlem B 2",
 						templateGroupName = "RED Spangdahlem Spangdahlem B 2",
+						initialInventory = 1,
+						capabilities = {
+							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
+						},
+					},
+				}
+			},
+			{
+				name = "Pottschutthohe",
+				warehouse = "Pottschutthohe Brigade Warehouse#00001",
+				platoons = {
+					{
+						name = "Pottschutthohe B 1",
+						templateGroupName = "RED Pottschutthohe Pottschutthohe B 1",
+						initialInventory = 3,
+						capabilities = {
+							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
+						},
+					},
+					{
+						name = "Pottschutthohe B 2",
+						templateGroupName = "RED Pottschutthohe Pottschutthohe B 2",
 						initialInventory = 1,
 						capabilities = {
 							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
