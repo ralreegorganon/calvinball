@@ -141,10 +141,152 @@ MissionDb = {
 			roadbases = {
 			},
 			airbases = {
+				{
+					name = "AIRBASE-1",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "Ramstein Brigade Warehouse#00001",
+							template = {
+								name = "Ramstein Brigade Warehouse",
+								type = ".Ammunition depot",
+								x = -498436.63244188,
+								y = -935351.92822897,
+								heading = 4.1538836197465,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "Ramstein Airwing Warehouse#00001",
+							template = {
+								name = "Ramstein Airwing Warehouse",
+								type = ".Ammunition depot",
+								x = -498449.15278501,
+								y = -935247.07035534,
+								heading = 4.1538836197465,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+					},
+					clients = {
+							"Ramstein A-10C_2 Warm 1",
+							"Ramstein A-10C_2 Warm 2",
+							"Ramstein A-10C_2 Warm 3",
+							"Ramstein A-10C_2 Warm 4",
+					}
+				},
 			},
 			carriers = {
 			},
 			qrfs = {
+				{
+					name = "QRF-7",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "FOB Roth Airwing Warehouse#00001",
+							template = {
+								name = "FOB Roth Airwing Warehouse",
+								type = ".Ammunition depot",
+								x = -430822.06822149,
+								y = -940755.12996351,
+								heading = 3.1415926535898,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "FOB Roth Brigade Warehouse#00001",
+							template = {
+								name = "FOB Roth Brigade Warehouse",
+								type = ".Ammunition depot",
+								x = -430823.04885971,
+								y = -940871.42641386,
+								heading = 0.0174532925199,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+					},
+				},
+				{
+					name = "QRF-8",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "FOB Schenker Airwing Warehouse#00001",
+							template = {
+								name = "FOB Schenker Airwing Warehouse",
+								type = ".Ammunition depot",
+								x = -409627.94789641,
+								y = -984286.26523697,
+								heading = 3.1415926535898,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "FOB Schenker Brigade Warehouse#00001",
+							template = {
+								name = "FOB Schenker Brigade Warehouse",
+								type = ".Ammunition depot",
+								x = -409697.17858197,
+								y = -984287.62183088,
+								heading = 0.0174532925199,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "FOB Schenker FARP#00001",
+							template = {
+								name = "FOB Schenker FARP",
+								type = "FARP",
+								x = -409666.5390408,
+								y = -984061.35513107,
+								heading = 3.1939525311496,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "FARPS",
+								rate = 50,
+								dead = false
+							}
+						},
+					},
+				},
 				{
 					name = "QRF-2",
 					spawnGroups = {
@@ -170,21 +312,6 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Bitburg Brigade Warehouse#00001",
-							template = {
-								name = "Bitburg Brigade Warehouse",
-								type = ".Ammunition depot",
-								x = -427857.55516395,
-								y = -998832.55355415,
-								heading = 5.7246799465414,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "SkladC",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
 							name = "Spangdahlem Airwing Warehouse#00001",
 							template = {
 								name = "Spangdahlem Airwing Warehouse",
@@ -192,21 +319,6 @@ MissionDb = {
 								x = -427579.54449645,
 								y = -987993.31613517,
 								heading = 5.8293997016611,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "SkladC",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Spangdahlem Brigade Warehouse#00001",
-							template = {
-								name = "Spangdahlem Brigade Warehouse",
-								type = ".Ammunition depot",
-								x = -426613.26853992,
-								y = -988387.87915898,
-								heading = 4.0666171571468,
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "SkladC",
@@ -240,21 +352,6 @@ MissionDb = {
 								dead = false
 							}
 						},
-						{
-							name = "Hahn Brigade Warehouse#00001",
-							template = {
-								name = "Hahn Brigade Warehouse",
-								type = ".Ammunition depot",
-								x = -438053.25576891,
-								y = -948315.25135146,
-								heading = 5.4977871437821,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "SkladC",
-								rate = 100,
-								dead = false
-							}
-						},
 					},
 				},
 				{
@@ -281,21 +378,6 @@ MissionDb = {
 								dead = false
 							}
 						},
-						{
-							name = "Pferdsfeld Brigade Warehouse#00001",
-							template = {
-								name = "Pferdsfeld Brigade Warehouse",
-								type = ".Ammunition depot",
-								x = -451654.21006616,
-								y = -926243.2941622,
-								heading = 5.8119464091411,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "SkladC",
-								rate = 100,
-								dead = false
-							}
-						},
 					},
 				},
 				{
@@ -312,24 +394,9 @@ MissionDb = {
 							template = {
 								name = "Buchel Airwing Warehouse",
 								type = ".Ammunition depot",
-								x = -409996.67161385,
-								y = -958241.506489,
-								heading = 0.0872664625997,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "SkladC",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "Buchel Brigade Warehouse#00001",
-							template = {
-								name = "Buchel Brigade Warehouse",
-								type = ".Ammunition depot",
-								x = -409768.43564071,
-								y = -957931.67232925,
-								heading = 5.3930673886625,
+								x = -409993.23646031,
+								y = -958207.21247988,
+								heading = 0.0349065850399,
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "SkladC",
@@ -410,9 +477,9 @@ MissionDb = {
 							template = {
 								name = "Pottschutthohe Brigade Warehouse",
 								type = ".Ammunition depot",
-								x = -516454.07130567,
-								y = -945931.11988573,
-								heading = 4.4156830075457,
+								x = -516072.34438508,
+								y = -945739.38264247,
+								heading = 4.1538836197465,
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "SkladC",
@@ -508,23 +575,6 @@ MissionDb = {
 							},
 						}
 					},
-					{
-						name = "Pferdsfeld AW 2",
-						templateGroupName = "RED Pferdsfeld Pferdsfeld AW 2 UH-60A",
-						initialInventory = 99,
-						takeoffCold = true,
-						parking = nil,
-						capabilities = {
-							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
-						},
-						livery = "Russia_VVS_Grey",
-						payloads = {
-							{
-								templateGroupName = "RED Pferdsfeld Pferdsfeld AW 2 UH-60A LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
-							},
-						}
-					},
 				}
 			},
 			{
@@ -561,23 +611,6 @@ MissionDb = {
 							{
 								templateGroupName = "RED Hahn Hahn AW 1 JF-17 LOADOUT 2",
 								missionTypes = { AUFTRAG.Type.SEAD }
-							},
-						}
-					},
-					{
-						name = "Hahn AW 2",
-						templateGroupName = "RED Hahn Hahn AW 2 UH-60A",
-						initialInventory = 99,
-						takeoffCold = true,
-						parking = nil,
-						capabilities = {
-							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
-						},
-						livery = "Russia_VVS_Grey",
-						payloads = {
-							{
-								templateGroupName = "RED Hahn Hahn AW 2 UH-60A LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}
 					},
@@ -620,23 +653,6 @@ MissionDb = {
 							},
 						}
 					},
-					{
-						name = "Buchel AW 2",
-						templateGroupName = "RED Buchel Buchel AW 2 UH-60A",
-						initialInventory = 99,
-						takeoffCold = true,
-						parking = nil,
-						capabilities = {
-							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
-						},
-						livery = "Russia_VVS_Grey",
-						payloads = {
-							{
-								templateGroupName = "RED Buchel Buchel AW 2 UH-60A LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
-							},
-						}
-					},
 				}
 			},
 			{
@@ -676,23 +692,6 @@ MissionDb = {
 							},
 						}
 					},
-					{
-						name = "Shangdahlem AW 2",
-						templateGroupName = "RED Spangdahlem Shangdahlem AW 2 UH-60A",
-						initialInventory = 99,
-						takeoffCold = true,
-						parking = nil,
-						capabilities = {
-							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
-						},
-						livery = "Russia_VVS_Grey",
-						payloads = {
-							{
-								templateGroupName = "RED Spangdahlem Shangdahlem AW 2 UH-60A LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
-							},
-						}
-					},
 				}
 			},
 			{
@@ -729,23 +728,6 @@ MissionDb = {
 							{
 								templateGroupName = "RED Bitburg Bitburg AW 1 JF-17 LOADOUT 2",
 								missionTypes = { AUFTRAG.Type.SEAD }
-							},
-						}
-					},
-					{
-						name = "Bitburg AW 2",
-						templateGroupName = "RED Bitburg Bitburg AW 2 UH-60A",
-						initialInventory = 99,
-						takeoffCold = true,
-						parking = nil,
-						capabilities = {
-							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
-						},
-						livery = "Russia_VVS_Grey",
-						payloads = {
-							{
-								templateGroupName = "RED Bitburg Bitburg AW 2 UH-60A LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}
 					},
@@ -844,9 +826,16 @@ MissionDb = {
 							},
 						}
 					},
+				}
+			},
+			{
+				name = "FOB Roth",
+				warehouse = "FOB Roth Airwing Warehouse#00001",
+				airbase = "H FRG 30",
+				squadrons = {
 					{
-						name = "Zweibrucken AW 2",
-						templateGroupName = "RED Zweibrucken Zweibrucken AW 2 UH-60A",
+						name = "FOB Roth AW 1",
+						templateGroupName = "RED FOB Roth FOB Roth AW 1 UH-60A",
 						initialInventory = 99,
 						takeoffCold = true,
 						parking = nil,
@@ -856,7 +845,31 @@ MissionDb = {
 						livery = "Russia_VVS_Grey",
 						payloads = {
 							{
-								templateGroupName = "RED Zweibrucken Zweibrucken AW 2 UH-60A LOADOUT 0",
+								templateGroupName = "RED FOB Roth FOB Roth AW 1 UH-60A LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
+							},
+						}
+					},
+				}
+			},
+			{
+				name = "FOB Schenker",
+				warehouse = "FOB Schenker Airwing Warehouse#00001",
+				airbase = "FOB Schenker FARP#00001",
+				squadrons = {
+					{
+						name = "FOB Schenker AW 1",
+						templateGroupName = "RED FOB Schenker FOB Schenker AW 1 UH-60A",
+						initialInventory = 99,
+						takeoffCold = true,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
+						},
+						livery = "Russia_VVS_Grey",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Schenker FOB Schenker AW 1 UH-60A LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
 							},
 						}
@@ -888,111 +901,29 @@ MissionDb = {
 				}
 			},
 			{
-				name = "Hahn",
-				warehouse = "Hahn Brigade Warehouse#00001",
+				name = "FOB Schenker",
+				warehouse = "FOB Schenker Brigade Warehouse#00001",
 				platoons = {
 					{
 						name = "Hahn B 1",
-						templateGroupName = "RED Hahn Hahn B 1",
+						templateGroupName = "RED FOB Schenker Hahn B 1",
 						initialInventory = 3,
 						capabilities = {
 							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
-						},
-					},
-					{
-						name = "Hahn B 2",
-						templateGroupName = "RED Hahn Hahn B 2",
-						initialInventory = 1,
-						capabilities = {
-							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
 						},
 					},
 				}
 			},
 			{
-				name = "Buchel",
-				warehouse = "Buchel Brigade Warehouse#00001",
+				name = "FOB Roth",
+				warehouse = "FOB Roth Brigade Warehouse#00001",
 				platoons = {
 					{
-						name = "Buchel B 1",
-						templateGroupName = "RED Buchel Buchel B 1",
+						name = "FOB Roth B 1",
+						templateGroupName = "RED FOB Roth FOB Roth B 1",
 						initialInventory = 3,
 						capabilities = {
 							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
-						},
-					},
-					{
-						name = "Buchel B 2",
-						templateGroupName = "RED Buchel Buchel B 2",
-						initialInventory = 1,
-						capabilities = {
-							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
-						},
-					},
-				}
-			},
-			{
-				name = "Spangdahlem",
-				warehouse = "Spangdahlem Brigade Warehouse#00001",
-				platoons = {
-					{
-						name = "Spangdahlem B 1",
-						templateGroupName = "RED Spangdahlem Spangdahlem B 1",
-						initialInventory = 3,
-						capabilities = {
-							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
-						},
-					},
-					{
-						name = "Spangdahlem B 2",
-						templateGroupName = "RED Spangdahlem Spangdahlem B 2",
-						initialInventory = 1,
-						capabilities = {
-							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
-						},
-					},
-				}
-			},
-			{
-				name = "Pottschutthohe",
-				warehouse = "Pottschutthohe Brigade Warehouse#00001",
-				platoons = {
-					{
-						name = "Pottschutthohe B 1",
-						templateGroupName = "RED Pottschutthohe Pottschutthohe B 1",
-						initialInventory = 3,
-						capabilities = {
-							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
-						},
-					},
-					{
-						name = "Pottschutthohe B 2",
-						templateGroupName = "RED Pottschutthohe Pottschutthohe B 2",
-						initialInventory = 1,
-						capabilities = {
-							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
-						},
-					},
-				}
-			},
-			{
-				name = "Bitburg",
-				warehouse = "Bitburg Brigade Warehouse#00001",
-				platoons = {
-					{
-						name = "Bitburg B 1",
-						templateGroupName = "RED Bitburg Bitburg B 1",
-						initialInventory = 3,
-						capabilities = {
-							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
-						},
-					},
-					{
-						name = "Bitburg B 2",
-						templateGroupName = "RED Bitburg Bitburg B 2",
-						initialInventory = 1,
-						capabilities = {
-							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
 						},
 					},
 				}
@@ -1007,8 +938,78 @@ MissionDb = {
 	},
 	bluechief = {
 	    airwings = {
+			{
+				name = "Ramstein",
+				warehouse = "Ramstein Airwing Warehouse#00001",
+				airbase = "Ramstein",
+				squadrons = {
+					{
+						name = "Ramstein AW 1",
+						templateGroupName = "BLUE Ramstein Ramstein AW 1 JF-17",
+						initialInventory = 1,
+						takeoffCold = false,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "PLAAF 125th AB (Fictional)",
+						payloads = {
+							{
+								templateGroupName = "BLUE Ramstein Ramstein AW 1 JF-17 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "BLUE Ramstein Ramstein AW 1 JF-17 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "BLUE Ramstein Ramstein AW 1 JF-17 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "Ramstein AW 2",
+						templateGroupName = "BLUE Ramstein Ramstein AW 2 UH-60A",
+						initialInventory = 99,
+						takeoffCold = true,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.OPSTRANSPORT, performance = 50 },
+						},
+						livery = "Russia_VVS_Grey",
+						payloads = {
+							{
+								templateGroupName = "BLUE Ramstein Ramstein AW 2 UH-60A LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
+							},
+						}
+					},
+				}
+			},
 		},
 		brigades = {
+			{
+				name = "Ramstein",
+				warehouse = "Ramstein Brigade Warehouse#00001",
+				platoons = {
+					{
+						name = "Ramstein B 1",
+						templateGroupName = "BLUE Ramstein Ramstein B 1",
+						initialInventory = 99,
+						capabilities = {
+							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
+						},
+					},
+				}
+			},
 		},
 		strategicZoneResources = {
 			defaultOccupied = nil,

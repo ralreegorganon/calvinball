@@ -171,20 +171,7 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.SEAD": 50,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
-                    },
-                    "Pferdsfeld AW 2": {
-                        "airframe": dcs.helicopters.UH_60A,
-                        "groupSize": 1,
-                        "initialInventory": 99,
-                        "takeoffCold": "true",
-                        "livery": "Russia_VVS_Grey",
-                        "loadouts": {
-                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
-                        },
-                        "capabilities": {
-                            "AUFTRAG.Type.OPSTRANSPORT": 50
-                        }
-                    },
+                    }
                 }
             },
             "Hahn": {
@@ -211,20 +198,7 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.SEAD": 50,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
-                    },
-                    "Hahn AW 2": {
-                        "airframe": dcs.helicopters.UH_60A,
-                        "groupSize": 1,
-                        "initialInventory": 99,
-                        "takeoffCold": "true",
-                        "livery": "Russia_VVS_Grey",
-                        "loadouts": {
-                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
-                        },
-                        "capabilities": {
-                            "AUFTRAG.Type.OPSTRANSPORT": 50
-                        }
-                    },
+                    }
                 }
             },
             "Buchel": {
@@ -251,20 +225,7 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.SEAD": 50,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
-                    },
-                    "Buchel AW 2": {
-                        "airframe": dcs.helicopters.UH_60A,
-                        "groupSize": 1,
-                        "initialInventory": 99,
-                        "takeoffCold": "true",
-                        "livery": "Russia_VVS_Grey",
-                        "loadouts": {
-                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
-                        },
-                        "capabilities": {
-                            "AUFTRAG.Type.OPSTRANSPORT": 50
-                        }
-                    },
+                    }
                 }
             },
             "Spangdahlem": {
@@ -291,20 +252,7 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.SEAD": 50,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
-                    },
-                     "Shangdahlem AW 2": {
-                        "airframe": dcs.helicopters.UH_60A,
-                        "groupSize": 1,
-                        "initialInventory": 99,
-                        "takeoffCold": "true",
-                        "livery": "Russia_VVS_Grey",
-                        "loadouts": {
-                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
-                        },
-                        "capabilities": {
-                            "AUFTRAG.Type.OPSTRANSPORT": 50
-                        }
-                    },
+                    }
                 }
             },
             "Bitburg": {
@@ -331,20 +279,7 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.SEAD": 50,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
-                    },
-                    "Bitburg AW 2": {
-                        "airframe": dcs.helicopters.UH_60A,
-                        "groupSize": 1,
-                        "initialInventory": 99,
-                        "takeoffCold": "true",
-                        "livery": "Russia_VVS_Grey",
-                        "loadouts": {
-                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
-                        },
-                        "capabilities": {
-                            "AUFTRAG.Type.OPSTRANSPORT": 50
-                        }
-                    },
+                    }
                 }
             },
             "Pottschutthohe": {
@@ -373,7 +308,7 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                         }
                     },
                     "Pottschutthohe AW 2": {
-                        "airframe": dcs.helicopters.UH_60A,
+                         "airframe": dcs.helicopters.UH_60A,
                         "groupSize": 1,
                         "initialInventory": 99,
                         "takeoffCold": "true",
@@ -384,7 +319,7 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                         "capabilities": {
                             "AUFTRAG.Type.OPSTRANSPORT": 50
                         }
-                    },
+                    }
                 }
             },
             "Zweibrucken": {
@@ -411,9 +346,15 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.SEAD": 50,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
-                    },
-                    "Zweibrucken AW 2": {
-                        "airframe": dcs.helicopters.UH_60A,
+                    }
+                }
+            },
+            "FOB Roth": {
+                "airbase": "H FRG 30",
+                "warehouse": "FOB Roth Airwing Warehouse#00001",
+                "squadrons": {
+                    "FOB Roth AW 1": {
+                         "airframe": dcs.helicopters.UH_60A,
                         "groupSize": 1,
                         "initialInventory": 99,
                         "takeoffCold": "true",
@@ -424,7 +365,26 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                         "capabilities": {
                             "AUFTRAG.Type.OPSTRANSPORT": 50
                         }
-                    },
+                    }
+                }
+            },
+            "FOB Schenker": {
+                "airbase": "FOB Schenker FARP#00001",
+                "warehouse": "FOB Schenker Airwing Warehouse#00001",
+                "squadrons": {
+                    "FOB Schenker AW 1": {
+                         "airframe": dcs.helicopters.UH_60A,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    }
                 }
             },
         }
@@ -436,6 +396,46 @@ class BalloonFightBlueAirwings(calvinball.blueairwing.BlueAirwings):
 
     def define(self, m: dcs.Mission):
         blue_airwings = {
+            "Ramstein": {
+                "airbase": "Ramstein",
+                "warehouse": "Ramstein Airwing Warehouse#00001",
+                "squadrons": {
+                    "Ramstein AW 1": {
+                        "airframe": dcs.planes.JF_17,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "PLAAF 125th AB (Fictional)",
+                        "loadouts": {
+                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Ramstein AW 2": {
+                         "airframe": dcs.helicopters.UH_60A,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    }
+                }
+            },
         }
         return blue_airwings
 
@@ -477,8 +477,8 @@ class BalloonFightRedBrigades(calvinball.redbrigade.RedBrigades):
                     }
                 }
             },
-            "Hahn": {
-                "warehouse": "Hahn Brigade Warehouse#00001",
+            "FOB Schenker": {
+                "warehouse": "FOB Schenker Brigade Warehouse#00001",
                 "platoons": {
                     "Hahn B 1": {
                         "units": [
@@ -492,27 +492,12 @@ class BalloonFightRedBrigades(calvinball.redbrigade.RedBrigades):
                             "AUFTRAG.Type.ONGUARD": 50
                         }
                     },
-                    "Hahn B 2": {
-                        "units": [
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Unarmed.Ural_375,
-                            dcs.vehicles.Unarmed.Ural_375
-                        ],
-                        "initialInventory": 1,
-                        "capabilities": {
-                            "AUFTRAG.Type.ARTY": 50
-                        }
-                    }
                 }
             },
-            "Buchel": {
-                "warehouse": "Buchel Brigade Warehouse#00001",
+            "FOB Roth": {
+                "warehouse": "FOB Roth Brigade Warehouse#00001",
                 "platoons": {
-                    "Buchel B 1": {
+                    "FOB Roth B 1": {
                         "units": [
                             dcs.vehicles.Infantry.Paratrooper_AKS_74,
                             dcs.vehicles.Infantry.Paratrooper_AKS_74,
@@ -524,117 +509,6 @@ class BalloonFightRedBrigades(calvinball.redbrigade.RedBrigades):
                             "AUFTRAG.Type.ONGUARD": 50
                         }
                     },
-                    "Buchel B 2": {
-                        "units": [
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Unarmed.Ural_375,
-                            dcs.vehicles.Unarmed.Ural_375
-                        ],
-                        "initialInventory": 1,
-                        "capabilities": {
-                            "AUFTRAG.Type.ARTY": 50
-                        }
-                    }
-                }
-            },
-            "Spangdahlem": {
-                "warehouse": "Spangdahlem Brigade Warehouse#00001",
-                "platoons": {
-                    "Spangdahlem B 1": {
-                        "units": [
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
-                        ],
-                        "initialInventory": 3,
-                        "capabilities": {
-                            "AUFTRAG.Type.ONGUARD": 50
-                        }
-                    },
-                    "Spangdahlem B 2": {
-                        "units": [
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Unarmed.Ural_375,
-                            dcs.vehicles.Unarmed.Ural_375
-                        ],
-                        "initialInventory": 1,
-                        "capabilities": {
-                            "AUFTRAG.Type.ARTY": 50
-                        }
-                    }
-                }
-            },
-            "Pottschutthohe": {
-                "warehouse": "Pottschutthohe Brigade Warehouse#00001",
-                "platoons": {
-                    "Pottschutthohe B 1": {
-                        "units": [
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
-                        ],
-                        "initialInventory": 3,
-                        "capabilities": {
-                            "AUFTRAG.Type.ONGUARD": 50
-                        }
-                    },
-                    "Pottschutthohe B 2": {
-                        "units": [
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Unarmed.Ural_375,
-                            dcs.vehicles.Unarmed.Ural_375
-                        ],
-                        "initialInventory": 1,
-                        "capabilities": {
-                            "AUFTRAG.Type.ARTY": 50
-                        }
-                    }
-                }
-            },
-            "Bitburg": {
-                "warehouse": "Bitburg Brigade Warehouse#00001",
-                "platoons": {
-                    "Bitburg B 1": {
-                        "units": [
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
-                        ],
-                        "initialInventory": 3,
-                        "capabilities": {
-                            "AUFTRAG.Type.ONGUARD": 50
-                        }
-                    },
-                    "Bitburg B 2": {
-                        "units": [
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Unarmed.Ural_375,
-                            dcs.vehicles.Unarmed.Ural_375
-                        ],
-                        "initialInventory": 1,
-                        "capabilities": {
-                            "AUFTRAG.Type.ARTY": 50
-                        }
-                    }
                 }
             },
         }
@@ -646,5 +520,22 @@ class BalloonFightBlueBrigades(calvinball.bluebrigade.BlueBrigades):
 
     def define(self, m: dcs.Mission):
         blue_brigades = {
+            "Ramstein": {
+                "warehouse": "Ramstein Brigade Warehouse#00001",
+                "platoons": {
+                    "Ramstein B 1": {
+                        "units": [
+                            dcs.vehicles.Infantry.Soldier_M4,
+                            dcs.vehicles.Infantry.Soldier_M4,
+                            dcs.vehicles.Infantry.Soldier_RPG,
+                            dcs.vehicles.Infantry.Soldier_RPG,
+                        ],
+                        "initialInventory": 99,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    }
+                }
+            },
         }
         return blue_brigades

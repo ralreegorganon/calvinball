@@ -6,9 +6,9 @@
         "static_groups": [],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
-            "BLUE SAM Rapier 1",
-            "BLUE SAM Rapier 2",
-            "BLUE SAM Roland 1",
+            "RED SAM Rapier 1",
+            "RED SAM Rapier 2",
+            "RED SAM Roland 1",
             "RED EWR 301",
             "RED EWR 302",
             "RED EWR 303",
@@ -211,9 +211,7 @@
         "ship_groups": [],
         "static_groups": [
             "Bitburg Airwing Warehouse",
-            "Bitburg Brigade Warehouse",
-            "Spangdahlem Airwing Warehouse",
-            "Spangdahlem Brigade Warehouse"
+            "Spangdahlem Airwing Warehouse"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [],
@@ -274,8 +272,7 @@
         "label": "",
         "ship_groups": [],
         "static_groups": [
-            "Hahn Airwing Warehouse",
-            "Hahn Brigade Warehouse"
+            "Hahn Airwing Warehouse"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [],
@@ -305,8 +302,7 @@
         "label": "",
         "ship_groups": [],
         "static_groups": [
-            "Pferdsfeld Airwing Warehouse",
-            "Pferdsfeld Brigade Warehouse"
+            "Pferdsfeld Airwing Warehouse"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [],
@@ -336,8 +332,7 @@
         "label": "",
         "ship_groups": [],
         "static_groups": [
-            "Buchel Airwing Warehouse",
-            "Buchel Brigade Warehouse"
+            "Buchel Airwing Warehouse"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [],
@@ -361,5 +356,68 @@
         ],
         "x": -409931.69622656,
         "y": -957974.50415335
+    },
+    "QRF-7": {
+        "component": "qrf",
+        "label": "FOB Roth",
+        "ship_groups": [],
+        "static_groups": [
+            "FOB Roth Airwing Warehouse",
+            "FOB Roth Brigade Warehouse"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -430479.83498828,
+                "y": -940329.86478011
+            },
+            {
+                "x": -431568.98768757,
+                "y": -940320.4755327
+            },
+            {
+                "x": -431561.47628964,
+                "y": -941788.95382726
+            },
+            {
+                "x": -430464.81219242,
+                "y": -941794.58737571
+            }
+        ],
+        "x": -431018.77778948,
+        "y": -941058.47037894
+    },
+    "QRF-8": {
+        "component": "qrf",
+        "label": "FOB Schenker",
+        "ship_groups": [],
+        "static_groups": [
+            "FOB Schenker Airwing Warehouse",
+            "FOB Schenker Brigade Warehouse",
+            "FOB Schenker FARP"
+        ],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -409185.65999443,
+                "y": -983411.74213293
+            },
+            {
+                "x": -410274.81269372,
+                "y": -983402.35288552
+            },
+            {
+                "x": -410267.30129579,
+                "y": -984870.83118008
+            },
+            {
+                "x": -409170.63719858,
+                "y": -984876.46472853
+            }
+        ],
+        "x": -409724.60279563,
+        "y": -984140.34773177
     }
 }

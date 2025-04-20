@@ -4,7 +4,10 @@
         "label": "Ramstein",
         "radius": 2300.0208,
         "ship_groups": [],
-        "static_groups": [],
+        "static_groups": [
+            "Ramstein Brigade Warehouse",
+            "Ramstein Airwing Warehouse"
+        ],
         "vehicle_groups": [],
         "x": -498863.8331858,
         "y": -934922.55805842

@@ -176,7 +176,9 @@
             "y": -982983.23744567
         },
         "OBJ-3": {
-            "airbases": [],
+            "airbases": [
+                "AIRBASE-1"
+            ],
             "blueAwacsZones": [],
             "borderZones": [],
             "capZones": [],
@@ -229,6 +231,8 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [
+                "QRF-7",
+                "QRF-8",
                 "QRF-2",
                 "QRF-4",
                 "QRF-5",
