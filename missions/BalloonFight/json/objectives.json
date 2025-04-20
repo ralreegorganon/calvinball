@@ -52,11 +52,58 @@
             ],
             "x": -515590.88178186,
             "y": -944501.19489499
+        },
+        "OBJ-2": {
+            "airbases": [],
+            "blueAwacsZones": [
+                "BLUE-AWACS-1"
+            ],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "Danger Close",
+            "nodes": {},
+            "qrfKillOnComplete": [],
+            "qrfs": [],
+            "redAwacsZones": [],
+            "reinforcements": [],
+            "roadbases": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [],
+            "vertices": [
+                {
+                    "x": -490501.47492625,
+                    "y": -861179.94100295
+                },
+                {
+                    "x": -363303.83480826,
+                    "y": -915457.22713864
+                },
+                {
+                    "x": -397965.54572271,
+                    "y": -1023728.3775811
+                },
+                {
+                    "x": -498090.14749263,
+                    "y": -981063.59882006
+                }
+            ],
+            "x": -437465.25073746,
+            "y": -945357.28613569
         }
     },
     "strands": {
         "STRAND-1": [
             "OBJ-1"
+        ],
+        "STRAND-2": [
+            "OBJ-2"
         ]
     }
 }
