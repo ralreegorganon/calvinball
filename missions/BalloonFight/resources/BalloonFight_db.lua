@@ -9,8 +9,10 @@ MissionDb = {
 			capZones = {
 			},
 			redAwacsZones = {
+				"RED AWACS ZONE-1",
 			},
 			blueAwacsZones = {
+				"BLUE AWACS ZONE-1",
 			},
 			nodes = {
 				{ name = "NODE-4", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -78,8 +80,10 @@ MissionDb = {
 			capZones = {
 			},
 			redAwacsZones = {
+				"RED AWACS ZONE-1",
 			},
 			blueAwacsZones = {
+				"BLUE AWACS ZONE-1",
 			},
 			nodes = {
 				{ name = "NODE-12", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -122,10 +126,13 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+				"CAP-1",
 			},
 			redAwacsZones = {
+				"RED AWACS ZONE-1",
 			},
 			blueAwacsZones = {
+				"BLUE AWACS ZONE-1",
 			},
 			nodes = {
 				{ name = "NODE-1", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -144,17 +151,22 @@ MissionDb = {
 				{
 					name = "AIRBASE-1",
 					vehicleGroups = {
+						{ name = "FARP MASH 1-1" },
+						{ name = "FARP MASH 1-2" },
+						{ name = "FARP MASH 1-3" },
+						{ name = "FARP MASH 1-4" },
+						{ name = "FARP MASH 1-5" },
 					},
 					shipGroups = {
 					},
 					staticGroups = {
 						{
-							name = "Ramstein Brigade Warehouse#00001",
+							name = "Ramstein Airwing Warehouse#00001",
 							template = {
-								name = "Ramstein Brigade Warehouse",
+								name = "Ramstein Airwing Warehouse",
 								type = ".Ammunition depot",
-								x = -498436.63244188,
-								y = -935351.92822897,
+								x = -498423.94010734,
+								y = -935361.83725896,
 								heading = 4.1538836197465,
 								category = "Warehouses",
 								canCargo = false,
@@ -164,13 +176,13 @@ MissionDb = {
 							}
 						},
 						{
-							name = "Ramstein Airwing Warehouse#00001",
+							name = "Ramstein Brigade Warehouse#00001",
 							template = {
-								name = "Ramstein Airwing Warehouse",
+								name = "Ramstein Brigade Warehouse",
 								type = ".Ammunition depot",
-								x = -498449.15278501,
-								y = -935247.07035534,
-								heading = 4.1538836197465,
+								x = -497985.66107574,
+								y = -935273.7002072,
+								heading = 4.2760566673861,
 								category = "Warehouses",
 								canCargo = false,
 								shape_name = "SkladC",
@@ -560,10 +572,13 @@ MissionDb = {
 			borderZones = {
 			},
 			capZones = {
+				"CAP-1",
 			},
 			redAwacsZones = {
+				"RED AWACS ZONE-1",
 			},
 			blueAwacsZones = {
+				"BLUE AWACS ZONE-1",
 			},
 			nodes = {
 				{ name = "NODE-2", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
@@ -757,7 +772,7 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "Pferdsfeld AW 1",
-						templateGroupName = "RED Pferdsfeld Pferdsfeld AW 1 JF-17",
+						templateGroupName = "RED Pferdsfeld Pferdsfeld AW 1 F-4E-45MC",
 						initialInventory = 1,
 						takeoffCold = false,
 						parking = nil,
@@ -771,18 +786,18 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
-						livery = "PLAAF 125th AB (Fictional)",
+						livery = "38+10_N72_JG71",
 						payloads = {
 							{
-								templateGroupName = "RED Pferdsfeld Pferdsfeld AW 1 JF-17 LOADOUT 0",
+								templateGroupName = "RED Pferdsfeld Pferdsfeld AW 1 F-4E-45MC LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
 							},
 							{
-								templateGroupName = "RED Pferdsfeld Pferdsfeld AW 1 JF-17 LOADOUT 1",
+								templateGroupName = "RED Pferdsfeld Pferdsfeld AW 1 F-4E-45MC LOADOUT 1",
 								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
 							},
 							{
-								templateGroupName = "RED Pferdsfeld Pferdsfeld AW 1 JF-17 LOADOUT 2",
+								templateGroupName = "RED Pferdsfeld Pferdsfeld AW 1 F-4E-45MC LOADOUT 2",
 								missionTypes = { AUFTRAG.Type.SEAD }
 							},
 						}
@@ -796,7 +811,7 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "Hahn AW 1",
-						templateGroupName = "RED Hahn Hahn AW 1 JF-17",
+						templateGroupName = "RED Hahn Hahn AW 1 F-4E-45MC",
 						initialInventory = 1,
 						takeoffCold = false,
 						parking = nil,
@@ -810,19 +825,72 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
-						livery = "PLAAF 125th AB (Fictional)",
+						livery = "38+10_N72_JG71",
 						payloads = {
 							{
-								templateGroupName = "RED Hahn Hahn AW 1 JF-17 LOADOUT 0",
+								templateGroupName = "RED Hahn Hahn AW 1 F-4E-45MC LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
 							},
 							{
-								templateGroupName = "RED Hahn Hahn AW 1 JF-17 LOADOUT 1",
+								templateGroupName = "RED Hahn Hahn AW 1 F-4E-45MC LOADOUT 1",
 								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
 							},
 							{
-								templateGroupName = "RED Hahn Hahn AW 1 JF-17 LOADOUT 2",
+								templateGroupName = "RED Hahn Hahn AW 1 F-4E-45MC LOADOUT 2",
 								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "Hahn AW 2",
+						templateGroupName = "RED Hahn Hahn AW 2 F-16C_50",
+						initialInventory = 1,
+						takeoffCold = false,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
+							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
+							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "18th AGRS BDU Splinter",
+						payloads = {
+							{
+								templateGroupName = "RED Hahn Hahn AW 2 F-16C_50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+							},
+							{
+								templateGroupName = "RED Hahn Hahn AW 2 F-16C_50 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+							{
+								templateGroupName = "RED Hahn Hahn AW 2 F-16C_50 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.BOMBCARPET}
+							},
+							{
+								templateGroupName = "RED Hahn Hahn AW 2 F-16C_50 LOADOUT 3",
+								missionTypes = { AUFTRAG.Type.SEAD }
+							},
+						}
+					},
+					{
+						name = "Hahn AW 3",
+						templateGroupName = "RED Hahn Hahn AW 3 E-2C",
+						initialInventory = 99,
+						takeoffCold = false,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
+						},
+						livery = "VAW-125 Tigertails",
+						payloads = {
+							{
+								templateGroupName = "RED Hahn Hahn AW 3 E-2C LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.AWACS }
 							},
 						}
 					},
@@ -835,7 +903,7 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "Buchel AW 1",
-						templateGroupName = "RED Buchel Buchel AW 1 JF-17",
+						templateGroupName = "RED Buchel Buchel AW 1 Tornado IDS",
 						initialInventory = 1,
 						takeoffCold = false,
 						parking = nil,
@@ -849,18 +917,14 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
-						livery = "PLAAF 125th AB (Fictional)",
+						livery = "jagdbombergeschwader 33 buchel ab no. 43+19 experimental scheme",
 						payloads = {
 							{
-								templateGroupName = "RED Buchel Buchel AW 1 JF-17 LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+								templateGroupName = "RED Buchel Buchel AW 1 Tornado IDS LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.BOMBCARPET }
 							},
 							{
-								templateGroupName = "RED Buchel Buchel AW 1 JF-17 LOADOUT 1",
-								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
-							},
-							{
-								templateGroupName = "RED Buchel Buchel AW 1 JF-17 LOADOUT 2",
+								templateGroupName = "RED Buchel Buchel AW 1 Tornado IDS LOADOUT 1",
 								missionTypes = { AUFTRAG.Type.SEAD }
 							},
 						}
@@ -874,7 +938,7 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "Spangdahlem AW 1",
-						templateGroupName = "RED Spangdahlem Spangdahlem AW 1 JF-17",
+						templateGroupName = "RED Spangdahlem Spangdahlem AW 1 A-10A",
 						initialInventory = 1,
 						takeoffCold = false,
 						parking = nil,
@@ -888,19 +952,11 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
-						livery = "PLAAF 125th AB (Fictional)",
+						livery = "Canada RCAF 442 Snow Scheme",
 						payloads = {
 							{
-								templateGroupName = "RED Spangdahlem Spangdahlem AW 1 JF-17 LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
-							},
-							{
-								templateGroupName = "RED Spangdahlem Spangdahlem AW 1 JF-17 LOADOUT 1",
+								templateGroupName = "RED Spangdahlem Spangdahlem AW 1 A-10A LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
-							},
-							{
-								templateGroupName = "RED Spangdahlem Spangdahlem AW 1 JF-17 LOADOUT 2",
-								missionTypes = { AUFTRAG.Type.SEAD }
 							},
 						}
 					},
@@ -913,7 +969,7 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "Bitburg AW 1",
-						templateGroupName = "RED Bitburg Bitburg AW 1 JF-17",
+						templateGroupName = "RED Bitburg Bitburg AW 1 F-15C",
 						initialInventory = 1,
 						takeoffCold = false,
 						parking = nil,
@@ -927,19 +983,28 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
-						livery = "PLAAF 125th AB (Fictional)",
+						livery = "65th Aggressor SQN (WA) MiG",
 						payloads = {
 							{
-								templateGroupName = "RED Bitburg Bitburg AW 1 JF-17 LOADOUT 0",
+								templateGroupName = "RED Bitburg Bitburg AW 1 F-15C LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
 							},
+						}
+					},
+					{
+						name = "Bitburg AW 2",
+						templateGroupName = "RED Bitburg Bitburg AW 2 E-2C",
+						initialInventory = 99,
+						takeoffCold = false,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
+						},
+						livery = "VAW-125 Tigertails",
+						payloads = {
 							{
-								templateGroupName = "RED Bitburg Bitburg AW 1 JF-17 LOADOUT 1",
-								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
-							},
-							{
-								templateGroupName = "RED Bitburg Bitburg AW 1 JF-17 LOADOUT 2",
-								missionTypes = { AUFTRAG.Type.SEAD }
+								templateGroupName = "RED Bitburg Bitburg AW 2 E-2C LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.AWACS }
 							},
 						}
 					},
@@ -952,39 +1017,7 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "Pottschutthohe AW 1",
-						templateGroupName = "RED Pottschutthohe Pottschutthohe AW 1 JF-17",
-						initialInventory = 1,
-						takeoffCold = false,
-						parking = nil,
-						capabilities = {
-							{ mission = AUFTRAG.Type.CAP, performance = 50 },
-							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
-							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
-							{ mission = AUFTRAG.Type.BAI, performance = 50 },
-							{ mission = AUFTRAG.Type.CAS, performance = 50 },
-							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
-							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
-							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
-						},
-						livery = "PLAAF 125th AB (Fictional)",
-						payloads = {
-							{
-								templateGroupName = "RED Pottschutthohe Pottschutthohe AW 1 JF-17 LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
-							},
-							{
-								templateGroupName = "RED Pottschutthohe Pottschutthohe AW 1 JF-17 LOADOUT 1",
-								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
-							},
-							{
-								templateGroupName = "RED Pottschutthohe Pottschutthohe AW 1 JF-17 LOADOUT 2",
-								missionTypes = { AUFTRAG.Type.SEAD }
-							},
-						}
-					},
-					{
-						name = "Pottschutthohe AW 2",
-						templateGroupName = "RED Pottschutthohe Pottschutthohe AW 2 UH-60A",
+						templateGroupName = "RED Pottschutthohe Pottschutthohe AW 1 UH-60A",
 						initialInventory = 99,
 						takeoffCold = true,
 						parking = nil,
@@ -994,8 +1027,65 @@ MissionDb = {
 						livery = "Russia_VVS_Grey",
 						payloads = {
 							{
-								templateGroupName = "RED Pottschutthohe Pottschutthohe AW 2 UH-60A LOADOUT 0",
+								templateGroupName = "RED Pottschutthohe Pottschutthohe AW 1 UH-60A LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
+							},
+						}
+					},
+					{
+						name = "Pottschutthohe AW 2",
+						templateGroupName = "RED Pottschutthohe Pottschutthohe AW 2 AH-64D_BLK_II",
+						initialInventory = 1,
+						takeoffCold = false,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "UAE Armed Forces - OD",
+						payloads = {
+							{
+								templateGroupName = "RED Pottschutthohe Pottschutthohe AW 2 AH-64D_BLK_II LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+					{
+						name = "Pottschutthohe AW 3",
+						templateGroupName = "RED Pottschutthohe Pottschutthohe AW 3 AH-1W",
+						initialInventory = 1,
+						takeoffCold = false,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "Standard",
+						payloads = {
+							{
+								templateGroupName = "RED Pottschutthohe Pottschutthohe AW 3 AH-1W LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+					{
+						name = "Pottschutthohe AW 4",
+						templateGroupName = "RED Pottschutthohe Pottschutthohe AW 4 OH58D",
+						initialInventory = 1,
+						takeoffCold = false,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "DE Army Fictional",
+						payloads = {
+							{
+								templateGroupName = "RED Pottschutthohe Pottschutthohe AW 4 OH58D LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
 							},
 						}
 					},
@@ -1008,7 +1098,7 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "Zweibrucken AW 1",
-						templateGroupName = "RED Zweibrucken Zweibrucken AW 1 JF-17",
+						templateGroupName = "RED Zweibrucken Zweibrucken AW 1 F-4E-45MC",
 						initialInventory = 1,
 						takeoffCold = false,
 						parking = nil,
@@ -1022,18 +1112,18 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
 							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
 						},
-						livery = "PLAAF 125th AB (Fictional)",
+						livery = "38+10_N72_JG71",
 						payloads = {
 							{
-								templateGroupName = "RED Zweibrucken Zweibrucken AW 1 JF-17 LOADOUT 0",
+								templateGroupName = "RED Zweibrucken Zweibrucken AW 1 F-4E-45MC LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
 							},
 							{
-								templateGroupName = "RED Zweibrucken Zweibrucken AW 1 JF-17 LOADOUT 1",
+								templateGroupName = "RED Zweibrucken Zweibrucken AW 1 F-4E-45MC LOADOUT 1",
 								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
 							},
 							{
-								templateGroupName = "RED Zweibrucken Zweibrucken AW 1 JF-17 LOADOUT 2",
+								templateGroupName = "RED Zweibrucken Zweibrucken AW 1 F-4E-45MC LOADOUT 2",
 								missionTypes = { AUFTRAG.Type.SEAD }
 							},
 						}
@@ -1062,6 +1152,63 @@ MissionDb = {
 							},
 						}
 					},
+					{
+						name = "FOB Roth AW 2",
+						templateGroupName = "RED FOB Roth FOB Roth AW 2 AH-64D_BLK_II",
+						initialInventory = 1,
+						takeoffCold = false,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "UAE Armed Forces - OD",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Roth FOB Roth AW 2 AH-64D_BLK_II LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+					{
+						name = "FOB Roth AW 3",
+						templateGroupName = "RED FOB Roth FOB Roth AW 3 AH-1W",
+						initialInventory = 1,
+						takeoffCold = false,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "Standard",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Roth FOB Roth AW 3 AH-1W LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+					{
+						name = "FOB Roth AW 4",
+						templateGroupName = "RED FOB Roth FOB Roth AW 4 OH58D",
+						initialInventory = 1,
+						takeoffCold = false,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "DE Army Fictional",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Roth FOB Roth AW 4 OH58D LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
 				}
 			},
 			{
@@ -1083,6 +1230,63 @@ MissionDb = {
 							{
 								templateGroupName = "RED FOB Schenker FOB Schenker AW 1 UH-60A LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
+							},
+						}
+					},
+					{
+						name = "FOB Schenker AW 2",
+						templateGroupName = "RED FOB Schenker FOB Schenker AW 2 AH-64D_BLK_II",
+						initialInventory = 1,
+						takeoffCold = false,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "UAE Armed Forces - OD",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Schenker FOB Schenker AW 2 AH-64D_BLK_II LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+					{
+						name = "FOB Schenker AW 3",
+						templateGroupName = "RED FOB Schenker FOB Schenker AW 3 AH-1W",
+						initialInventory = 1,
+						takeoffCold = false,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "Standard",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Schenker FOB Schenker AW 3 AH-1W LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
+							},
+						}
+					},
+					{
+						name = "FOB Schenker AW 4",
+						templateGroupName = "RED FOB Schenker FOB Schenker AW 4 OH58D",
+						initialInventory = 1,
+						takeoffCold = false,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.BAI, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+						},
+						livery = "DE Army Fictional",
+						payloads = {
+							{
+								templateGroupName = "RED FOB Schenker FOB Schenker AW 4 OH58D LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }
 							},
 						}
 					},
@@ -1157,32 +1361,37 @@ MissionDb = {
 				squadrons = {
 					{
 						name = "Ramstein AW 1",
-						templateGroupName = "BLUE Ramstein Ramstein AW 1 JF-17",
-						initialInventory = 1,
+						templateGroupName = "BLUE Ramstein Ramstein AW 1 F-16C_50",
+						initialInventory = 99,
 						takeoffCold = false,
 						parking = nil,
 						capabilities = {
-							{ mission = AUFTRAG.Type.CAP, performance = 50 },
-							{ mission = AUFTRAG.Type.INTERCEPT, performance = 50 },
-							{ mission = AUFTRAG.Type.ESCORT, performance = 50 },
-							{ mission = AUFTRAG.Type.BAI, performance = 50 },
-							{ mission = AUFTRAG.Type.CAS, performance = 50 },
-							{ mission = AUFTRAG.Type.BOMBCARPET, performance = 50 },
+							{ mission = AUFTRAG.Type.BOMBING, performance = 50 },
+							{ mission = AUFTRAG.Type.STRIKE, performance = 50 },
 							{ mission = AUFTRAG.Type.SEAD, performance = 50 },
-							{ mission = AUFTRAG.Type.CASENHANCED, performance = 50 },
+							{ mission = AUFTRAG.Type.CAS, performance = 50 },
+							{ mission = AUFTRAG.Type.CAP, performance = 50 },
 						},
-						livery = "PLAAF 125th AB (Fictional)",
+						livery = "18th AGRS Arctic Splinter",
 						payloads = {
 							{
-								templateGroupName = "BLUE Ramstein Ramstein AW 1 JF-17 LOADOUT 0",
-								missionTypes = { AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }
+								templateGroupName = "BLUE Ramstein Ramstein AW 1 F-16C_50 LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.BOMBING }
 							},
 							{
-								templateGroupName = "BLUE Ramstein Ramstein AW 1 JF-17 LOADOUT 1",
-								missionTypes = { AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }
+								templateGroupName = "BLUE Ramstein Ramstein AW 1 F-16C_50 LOADOUT 1",
+								missionTypes = { AUFTRAG.Type.STRIKE }
 							},
 							{
-								templateGroupName = "BLUE Ramstein Ramstein AW 1 JF-17 LOADOUT 2",
+								templateGroupName = "BLUE Ramstein Ramstein AW 1 F-16C_50 LOADOUT 2",
+								missionTypes = { AUFTRAG.Type.CAP }
+							},
+							{
+								templateGroupName = "BLUE Ramstein Ramstein AW 1 F-16C_50 LOADOUT 3",
+								missionTypes = { AUFTRAG.Type.CAS }
+							},
+							{
+								templateGroupName = "BLUE Ramstein Ramstein AW 1 F-16C_50 LOADOUT 4",
 								missionTypes = { AUFTRAG.Type.SEAD }
 							},
 						}
@@ -1201,6 +1410,23 @@ MissionDb = {
 							{
 								templateGroupName = "BLUE Ramstein Ramstein AW 2 UH-60A LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.OPSTRANSPORT }
+							},
+						}
+					},
+					{
+						name = "Ramstein AW 3",
+						templateGroupName = "BLUE Ramstein Ramstein AW 3 E-2C",
+						initialInventory = 99,
+						takeoffCold = false,
+						parking = nil,
+						capabilities = {
+							{ mission = AUFTRAG.Type.AWACS, performance = 50 },
+						},
+						livery = "VAW-125 Tigertails",
+						payloads = {
+							{
+								templateGroupName = "BLUE Ramstein Ramstein AW 3 E-2C LOADOUT 0",
+								missionTypes = { AUFTRAG.Type.AWACS }
 							},
 						}
 					},

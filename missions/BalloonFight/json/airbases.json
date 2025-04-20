@@ -5,10 +5,16 @@
         "radius": 2300.0208,
         "ship_groups": [],
         "static_groups": [
-            "Ramstein Brigade Warehouse",
-            "Ramstein Airwing Warehouse"
+            "Ramstein Airwing Warehouse",
+            "Ramstein Brigade Warehouse"
         ],
-        "vehicle_groups": [],
+        "vehicle_groups": [
+            "FARP MASH 1-1",
+            "FARP MASH 1-2",
+            "FARP MASH 1-3",
+            "FARP MASH 1-4",
+            "FARP MASH 1-5"
+        ],
         "x": -498863.8331858,
         "y": -934922.55805842
     }

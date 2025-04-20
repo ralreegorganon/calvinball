@@ -2,7 +2,9 @@
     "objectives": {
         "OBJ-1": {
             "airbases": [],
-            "blueAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE-1"
+            ],
             "borderZones": [],
             "capZones": [],
             "carriers": [],
@@ -46,7 +48,9 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
-            "redAwacsZones": [],
+            "redAwacsZones": [
+                "RED AWACS ZONE-1"
+            ],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
@@ -80,7 +84,9 @@
         },
         "OBJ-2": {
             "airbases": [],
-            "blueAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE-1"
+            ],
             "borderZones": [],
             "capZones": [],
             "carriers": [],
@@ -140,7 +146,9 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [],
-            "redAwacsZones": [],
+            "redAwacsZones": [
+                "RED AWACS ZONE-1"
+            ],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
@@ -179,9 +187,13 @@
             "airbases": [
                 "AIRBASE-1"
             ],
-            "blueAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE-1"
+            ],
             "borderZones": [],
-            "capZones": [],
+            "capZones": [
+                "CAP-1"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -238,7 +250,9 @@
                 "QRF-5",
                 "QRF-6"
             ],
-            "redAwacsZones": [],
+            "redAwacsZones": [
+                "RED AWACS ZONE-1"
+            ],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
@@ -275,9 +289,13 @@
         },
         "OBJ-4": {
             "airbases": [],
-            "blueAwacsZones": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE-1"
+            ],
             "borderZones": [],
-            "capZones": [],
+            "capZones": [
+                "CAP-1"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -305,7 +323,9 @@
             "qrfs": [
                 "QRF-3"
             ],
-            "redAwacsZones": [],
+            "redAwacsZones": [
+                "RED AWACS ZONE-1"
+            ],
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],

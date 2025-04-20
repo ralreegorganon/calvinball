@@ -190,14 +190,14 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                 "warehouse": "Pferdsfeld Airwing Warehouse#00001",
                 "squadrons": {
                     "Pferdsfeld AW 1": {
-                        "airframe": dcs.planes.JF_17,
+                        "airframe": dcs.planes.F_4E_45MC,
                         "groupSize": 2,
                         "initialInventory": 1,
-                        "livery": "PLAAF 125th AB (Fictional)",
+                        "livery": "38+10_N72_JG71",
                         "loadouts": {
-                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
-                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
-                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                            "A2A MEDIUM RANGE: Aim-7M*4, Aim-9M*4, ALE-40 (30-60)*1, Sargent Fletcher Fuel Tank 370 GAL*2": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "IRON: Mk-82 Snakeye*24, Aim-7E2*3, ALQ-131 ECM*1, ALE-40 (30-60)*1": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "SEAD + ATGM: AGM-45A*2, AGM-65D*2, Aim-7F*3, Aim-9L*4, ALQ-131*1, ALE-40 (30-60)*1, Sargent Fl. Fuel Tank 600 Gal*1": "{ AUFTRAG.Type.SEAD }"
                         },
                         "capabilities": {
                             "AUFTRAG.Type.CAP": 50,
@@ -217,14 +217,14 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                 "warehouse": "Hahn Airwing Warehouse#00001",
                 "squadrons": {
                     "Hahn AW 1": {
-                        "airframe": dcs.planes.JF_17,
+                        "airframe": dcs.planes.F_4E_45MC,
                         "groupSize": 2,
                         "initialInventory": 1,
-                        "livery": "PLAAF 125th AB (Fictional)",
+                        "livery": "38+10_N72_JG71",
                         "loadouts": {
-                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
-                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
-                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                            "A2A MEDIUM RANGE: Aim-7M*4, Aim-9M*4, ALE-40 (30-60)*1, Sargent Fletcher Fuel Tank 370 GAL*2": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "IRON: Mk-82 Snakeye*24, Aim-7E2*3, ALQ-131 ECM*1, ALE-40 (30-60)*1": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "SEAD + ATGM: AGM-45A*2, AGM-65D*2, Aim-7F*3, Aim-9L*4, ALQ-131*1, ALE-40 (30-60)*1, Sargent Fl. Fuel Tank 600 Gal*1": "{ AUFTRAG.Type.SEAD }"
                         },
                         "capabilities": {
                             "AUFTRAG.Type.CAP": 50,
@@ -236,22 +236,55 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.SEAD": 50,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
-                    }
-                }
+                    },
+                    "Hahn AW 2": {
+                        "airframe": dcs.planes.F_16C_50,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "18th AGRS BDU Splinter",
+                        "loadouts": {
+                            "AIM-120C*4, AIM-9X*2, FUEL*2, ECM": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "AIM-120C*2, AIM-9X*2, AGM-65D*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
+                            "AIM-120C*2, AIM-9X*2, CBU-105*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BOMBCARPET}",
+                            "AIM-120C*4, AGM-88C*4, ECM, TGP, HTS": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Hahn AW 3": {
+                        "airframe": dcs.planes.E_2C,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "VAW-125 Tigertails",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.AWACS }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.AWACS": 50
+                        }
+                    },
+                },
             },
             "Buchel": {
                 "airbase": "Buchel",
                 "warehouse": "Buchel Airwing Warehouse#00001",
                 "squadrons": {
                     "Buchel AW 1": {
-                        "airframe": dcs.planes.JF_17,
+                        "airframe": dcs.planes.Tornado_IDS,
                         "groupSize": 2,
                         "initialInventory": 1,
-                        "livery": "PLAAF 125th AB (Fictional)",
+                        "livery": "jagdbombergeschwader 33 buchel ab no. 43+19 experimental scheme",
                         "loadouts": {
-                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
-                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
-                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                            "Mk-82*4,AIM-9*2,Fuel*2": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.BOMBCARPET }",
+                            "AGM-88*4,AIM-9*2,ECM": "{ AUFTRAG.Type.SEAD }"
                         },
                         "capabilities": {
                             "AUFTRAG.Type.CAP": 50,
@@ -271,14 +304,12 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                 "warehouse": "Spangdahlem Airwing Warehouse#00001",
                 "squadrons": {
                     "Spangdahlem AW 1": {
-                        "airframe": dcs.planes.JF_17,
+                        "airframe": dcs.planes.A_10A,
                         "groupSize": 2,
                         "initialInventory": 1,
-                        "livery": "PLAAF 125th AB (Fictional)",
+                        "livery": "Canada RCAF 442 Snow Scheme",
                         "loadouts": {
-                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
-                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
-                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                            "MK-84*2 , LAU-68*2 , AGM-65K*2": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
                         },
                         "capabilities": {
                             "AUFTRAG.Type.CAP": 50,
@@ -298,41 +329,12 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                 "warehouse": "Bitburg Airwing Warehouse#00001",
                 "squadrons": {
                     "Bitburg AW 1": {
-                        "airframe": dcs.planes.JF_17,
+                        "airframe": dcs.planes.F_15C,
                         "groupSize": 2,
                         "initialInventory": 1,
-                        "livery": "PLAAF 125th AB (Fictional)",
+                        "livery": "65th Aggressor SQN (WA) MiG",
                         "loadouts": {
-                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
-                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
-                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
-                        },
-                        "capabilities": {
-                            "AUFTRAG.Type.CAP": 50,
-                            "AUFTRAG.Type.INTERCEPT": 50,
-                            "AUFTRAG.Type.ESCORT": 50,
-                            "AUFTRAG.Type.BAI": 50,
-                            "AUFTRAG.Type.CAS": 50,
-                            "AUFTRAG.Type.BOMBCARPET": 50,
-                            "AUFTRAG.Type.SEAD": 50,
-                            "AUFTRAG.Type.CASENHANCED": 50
-                        }
-                    }
-                }
-            },
-            "Pottschutthohe": {
-                "airbase": "Pottschutthohe",
-                "warehouse": "Pottschutthohe Airwing Warehouse#00001",
-                "squadrons": {
-                    "Pottschutthohe AW 1": {
-                        "airframe": dcs.planes.JF_17,
-                        "groupSize": 2,
-                        "initialInventory": 1,
-                        "livery": "PLAAF 125th AB (Fictional)",
-                        "loadouts": {
-                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
-                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
-                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                            "AIM-120B*4, AIM-7M*2, AIM-9M*2, Fuel*3": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
                         },
                         "capabilities": {
                             "AUFTRAG.Type.CAP": 50,
@@ -345,7 +347,25 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
                     },
-                    "Pottschutthohe AW 2": {
+                    "Bitburg AW 2": {
+                        "airframe": dcs.planes.E_2C,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "VAW-125 Tigertails",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.AWACS }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.AWACS": 50
+                        }
+                    },
+                }
+            },
+            "Pottschutthohe": {
+                "airbase": "Pottschutthohe",
+                "warehouse": "Pottschutthohe Airwing Warehouse#00001",
+                "squadrons": {
+                    "Pottschutthohe AW 1": {
                          "airframe": dcs.helicopters.UH_60A,
                         "groupSize": 1,
                         "initialInventory": 99,
@@ -357,7 +377,49 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                         "capabilities": {
                             "AUFTRAG.Type.OPSTRANSPORT": 50
                         }
-                    }
+                    },
+                    "Pottschutthohe AW 2": {
+                        "airframe": dcs.helicopters.AH_64D_BLK_II,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "UAE Armed Forces - OD",
+                        "loadouts": {
+                            "2 * M261: C - M274 (6SK), D/E - M151 (6PD), 2 * Hellfire station: 4*AGM-114K": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Pottschutthohe AW 3": {
+                        "airframe": dcs.helicopters.AH_1W,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Standard",
+                        "loadouts": {
+                            "8xAGM-114, 38xHYDRA-70": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Pottschutthohe AW 4": {
+                        "airframe": dcs.helicopters.OH58D,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "DE Army Fictional",
+                        "loadouts": {
+                            "2x Hellfire, APKWS": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
                 }
             },
             "Zweibrucken": {
@@ -365,14 +427,14 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                 "warehouse": "Zweibrucken Airwing Warehouse#00001",
                 "squadrons": {
                     "Zweibrucken AW 1": {
-                        "airframe": dcs.planes.JF_17,
+                        "airframe": dcs.planes.F_4E_45MC,
                         "groupSize": 2,
                         "initialInventory": 1,
-                        "livery": "PLAAF 125th AB (Fictional)",
+                        "livery": "38+10_N72_JG71",
                         "loadouts": {
-                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
-                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
-                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                            "A2A MEDIUM RANGE: Aim-7M*4, Aim-9M*4, ALE-40 (30-60)*1, Sargent Fletcher Fuel Tank 370 GAL*2": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "IRON: Mk-82 Snakeye*24, Aim-7E2*3, ALQ-131 ECM*1, ALE-40 (30-60)*1": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "SEAD + ATGM: AGM-45A*2, AGM-65D*2, Aim-7F*3, Aim-9L*4, ALQ-131*1, ALE-40 (30-60)*1, Sargent Fl. Fuel Tank 600 Gal*1": "{ AUFTRAG.Type.SEAD }"
                         },
                         "capabilities": {
                             "AUFTRAG.Type.CAP": 50,
@@ -384,7 +446,7 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                             "AUFTRAG.Type.SEAD": 50,
                             "AUFTRAG.Type.CASENHANCED": 50
                         }
-                    }
+                    },
                 }
             },
             "FOB Roth": {
@@ -403,7 +465,49 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                         "capabilities": {
                             "AUFTRAG.Type.OPSTRANSPORT": 50
                         }
-                    }
+                    },
+                    "FOB Roth AW 2": {
+                        "airframe": dcs.helicopters.AH_64D_BLK_II,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "UAE Armed Forces - OD",
+                        "loadouts": {
+                            "2 * M261: C - M274 (6SK), D/E - M151 (6PD), 2 * Hellfire station: 4*AGM-114K": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "FOB Roth AW 3": {
+                        "airframe": dcs.helicopters.AH_1W,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Standard",
+                        "loadouts": {
+                            "8xAGM-114, 38xHYDRA-70": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "FOB Roth AW 4": {
+                        "airframe": dcs.helicopters.OH58D,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "DE Army Fictional",
+                        "loadouts": {
+                            "2x Hellfire, APKWS": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
                 }
             },
             "FOB Schenker": {
@@ -422,7 +526,49 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
                         "capabilities": {
                             "AUFTRAG.Type.OPSTRANSPORT": 50
                         }
-                    }
+                    },
+                    "FOB Schenker AW 2": {
+                        "airframe": dcs.helicopters.AH_64D_BLK_II,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "UAE Armed Forces - OD",
+                        "loadouts": {
+                            "2 * M261: C - M274 (6SK), D/E - M151 (6PD), 2 * Hellfire station: 4*AGM-114K": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "FOB Schenker AW 3": {
+                        "airframe": dcs.helicopters.AH_1W,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "Standard",
+                        "loadouts": {
+                            "8xAGM-114, 38xHYDRA-70": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "FOB Schenker AW 4": {
+                        "airframe": dcs.helicopters.OH58D,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "DE Army Fictional",
+                        "loadouts": {
+                            "2x Hellfire, APKWS": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
                 }
             },
         }
@@ -439,24 +585,23 @@ class BalloonFightBlueAirwings(calvinball.blueairwing.BlueAirwings):
                 "warehouse": "Ramstein Airwing Warehouse#00001",
                 "squadrons": {
                     "Ramstein AW 1": {
-                        "airframe": dcs.planes.JF_17,
+                        "airframe": dcs.planes.F_16C_50,
                         "groupSize": 2,
-                        "initialInventory": 1,
-                        "livery": "PLAAF 125th AB (Fictional)",
+                        "initialInventory": 99,
+                        "livery": "18th AGRS Arctic Splinter",
                         "loadouts": {
-                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
-                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
-                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                            "AIM-120C*2, AIM-9X*2, MK-82HD*6, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BOMBING }",
+                            "AIM-120C*2, AIM-9X*2, GBU-38*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.STRIKE }",
+                            "AIM-120C*4, AIM-9X*2, FUEL*2, ECM": "{ AUFTRAG.Type.CAP }",
+                            "AIM-120C*2, AIM-9X*2, AGM-65D*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.CAS }",
+                            "AIM-120C*4, AGM-88C*4, ECM, TGP, HTS": "{ AUFTRAG.Type.SEAD }"
                         },
                         "capabilities": {
-                            "AUFTRAG.Type.CAP": 50,
-                            "AUFTRAG.Type.INTERCEPT": 50,
-                            "AUFTRAG.Type.ESCORT": 50,
-                            "AUFTRAG.Type.BAI": 50,
-                            "AUFTRAG.Type.CAS": 50,
-                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.BOMBING": 50,
+                            "AUFTRAG.Type.STRIKE": 50,
                             "AUFTRAG.Type.SEAD": 50,
-                            "AUFTRAG.Type.CASENHANCED": 50
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.CAP": 50,
                         }
                     },
                     "Ramstein AW 2": {
@@ -471,7 +616,19 @@ class BalloonFightBlueAirwings(calvinball.blueairwing.BlueAirwings):
                         "capabilities": {
                             "AUFTRAG.Type.OPSTRANSPORT": 50
                         }
-                    }
+                    },
+                    "Ramstein AW 3": {
+                        "airframe": dcs.planes.E_2C,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "VAW-125 Tigertails",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.AWACS }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.AWACS": 50
+                        }
+                    },
                 }
             },
         }

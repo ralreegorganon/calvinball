@@ -8,19 +8,19 @@
             "rate": 100,
             "shape_name": "SkladC",
             "type": ".Ammunition depot",
-            "x": -498449.15278501,
-            "y": -935247.07035534
+            "x": -498423.94010734,
+            "y": -935361.83725896
         },
         "Ramstein Brigade Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
-            "heading": 4.1538836197465,
+            "heading": 4.2760566673861,
             "name": "Ramstein Brigade Warehouse",
             "rate": 100,
             "shape_name": "SkladC",
             "type": ".Ammunition depot",
-            "x": -498436.63244188,
-            "y": -935351.92822897
+            "x": -497985.66107574,
+            "y": -935273.7002072
         }
     },
     "neutrals": {},

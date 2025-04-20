@@ -1,5 +1,46 @@
 {
-    "blue": {},
+    "blue": {
+        "FARP MASH 1-1": [
+            {
+                "heading": 99.00000000000078,
+                "type": "NASAMS_Command_Post",
+                "x": -498240.85236304,
+                "y": -935914.40179126
+            }
+        ],
+        "FARP MASH 1-2": [
+            {
+                "heading": 99.00000000000078,
+                "type": "NASAMS_Command_Post",
+                "x": -498994.38703905,
+                "y": -935938.83059622
+            }
+        ],
+        "FARP MASH 1-3": [
+            {
+                "heading": 99.00000000000078,
+                "type": "NASAMS_Command_Post",
+                "x": -499110.85724904,
+                "y": -933371.64726161
+            }
+        ],
+        "FARP MASH 1-4": [
+            {
+                "heading": 99.00000000000078,
+                "type": "NASAMS_Command_Post",
+                "x": -498600.85522067,
+                "y": -933242.78165272
+            }
+        ],
+        "FARP MASH 1-5": [
+            {
+                "heading": 99.00000000000078,
+                "type": "NASAMS_Command_Post",
+                "x": -498823.63983263,
+                "y": -934789.16895932
+            }
+        ]
+    },
     "neutrals": {},
     "red": {
         "RED EWR 301": [
