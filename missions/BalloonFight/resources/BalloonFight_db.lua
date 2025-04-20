@@ -14,7 +14,8 @@ MissionDb = {
 				"BLUE-AWACS-1",
 			},
 			nodes = {
-				{ name = "NODE-1", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-4", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-5", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
 			},
@@ -37,12 +38,173 @@ MissionDb = {
 			staticGroups = {
 			}
 		},
+		{
+			name = "OBJ-2",
+			strand = "STRAND-2",
+			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE-AWACS-1",
+			},
+			nodes = {
+			},
+			tasks = {
+			},
+			farps = {
+			},
+			roadbases = {
+			},
+			airbases = {
+			},
+			carriers = {
+			},
+			qrfs = {
+			},
+			reinforcements = {
+			},
+			vehicleGroups = {
+			},
+			shipGroups = {
+			},
+			staticGroups = {
+			}
+		},
+		{
+			name = "OBJ-3",
+			strand = "STRAND-2",
+			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+				"BLUE-AWACS-1",
+			},
+			nodes = {
+			},
+			tasks = {
+			},
+			farps = {
+			},
+			roadbases = {
+			},
+			airbases = {
+			},
+			carriers = {
+			},
+			qrfs = {
+				{
+					name = "QRF-2",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					},
+				},
+				{
+					name = "QRF-4",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					},
+				},
+				{
+					name = "QRF-5",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					},
+				},
+			},
+			reinforcements = {
+			},
+			vehicleGroups = {
+			},
+			shipGroups = {
+			},
+			staticGroups = {
+			}
+		},
+		{
+			name = "OBJ-4",
+			strand = "STRAND-1",
+			completeSound = "",
+			borderZones = {
+			},
+			capZones = {
+			},
+			redAwacsZones = {
+			},
+			blueAwacsZones = {
+			},
+			nodes = {
+				{ name = "NODE-2", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+				{ name = "NODE-3", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
+			},
+			tasks = {
+			},
+			farps = {
+			},
+			roadbases = {
+			},
+			airbases = {
+			},
+			carriers = {
+			},
+			qrfs = {
+				{
+					name = "QRF-3",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					},
+				},
+			},
+			reinforcements = {
+			},
+			vehicleGroups = {
+			},
+			shipGroups = {
+			},
+			staticGroups = {
+			}
+		},
 	},
 	strands = {
 		{
 			name = "STRAND-1",
 			sequence = {
+				"OBJ-4",
 				"OBJ-1",
+				},
+			},
+		{
+			name = "STRAND-2",
+			sequence = {
+				"OBJ-3",
+				"OBJ-2",
 				},
 			},
 	},

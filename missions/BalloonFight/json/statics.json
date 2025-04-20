@@ -1,7 +1,83 @@
 {
-    "blue": {
-    },
+    "blue": {},
     "neutrals": {},
     "red": {
+        "Stoney Cross Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.9864793343406,
+            "name": "Stoney Cross Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": -428305.16276651,
+            "y": -998193.26091301
+        },
+        "Stoney Cross Airwing Warehouse-1": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.9864793343406,
+            "name": "Stoney Cross Airwing Warehouse-1",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": -426636.74837198,
+            "y": -988092.2896609
+        },
+        "Stoney Cross Airwing Warehouse-2": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.9864793343406,
+            "name": "Stoney Cross Airwing Warehouse-2",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": -410003.00221113,
+            "y": -957722.69754863
+        },
+        "Stoney Cross Airwing Warehouse-3": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.9864793343406,
+            "name": "Stoney Cross Airwing Warehouse-3",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": -437826.16317786,
+            "y": -948344.00180632
+        },
+        "Stoney Cross Airwing Warehouse-4": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.9864793343406,
+            "name": "Stoney Cross Airwing Warehouse-4",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": -452292.88577414,
+            "y": -925867.21762682
+        },
+        "Stoney Cross Airwing Warehouse-5": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.9864793343406,
+            "name": "Stoney Cross Airwing Warehouse-5",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": -516097.82375168,
+            "y": -945894.49658488
+        },
+        "Stoney Cross Airwing Warehouse-6": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.9864793343406,
+            "name": "Stoney Cross Airwing Warehouse-6",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": -520745.61288806,
+            "y": -953868.19269812
+        }
     }
 }

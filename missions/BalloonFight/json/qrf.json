@@ -3,7 +3,15 @@
         "component": "qrf",
         "label": "",
         "ship_groups": [],
-        "static_groups": [],
+        "static_groups": [
+            "Stoney Cross Airwing Warehouse",
+            "Stoney Cross Airwing Warehouse-1",
+            "Stoney Cross Airwing Warehouse-2",
+            "Stoney Cross Airwing Warehouse-3",
+            "Stoney Cross Airwing Warehouse-4",
+            "Stoney Cross Airwing Warehouse-5",
+            "Stoney Cross Airwing Warehouse-6"
+        ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
             "RED EWR 901 ",
@@ -214,5 +222,117 @@
         ],
         "x": -250206.48967552,
         "y": -686312.68436578
+    },
+    "QRF-2": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -423417.6255613,
+                "y": -986800.5290021
+            },
+            {
+                "x": -428270.75952838,
+                "y": -983286.61428163
+            },
+            {
+                "x": -433025.6021746,
+                "y": -1000487.5954308
+            },
+            {
+                "x": -426636.66631921,
+                "y": -1002318.2712816
+            }
+        ],
+        "x": -427837.66339587,
+        "y": -993223.25249903
+    },
+    "QRF-3": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -515436.98052526,
+                "y": -945080.12109646
+            },
+            {
+                "x": -517549.15522148,
+                "y": -944749.41221957
+            },
+            {
+                "x": -517247.56044362,
+                "y": -947386.88812003
+            },
+            {
+                "x": -515367.02829935,
+                "y": -946901.97102623
+            }
+        ],
+        "x": -516400.18112243,
+        "y": -946029.59811557
+    },
+    "QRF-4": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -434614.81133427,
+                "y": -948132.55089014
+            },
+            {
+                "x": -437255.33691613,
+                "y": -943943.32995235
+            },
+            {
+                "x": -441622.65781985,
+                "y": -949224.38111607
+            },
+            {
+                "x": -438285.21932782,
+                "y": -953049.65864522
+            }
+        ],
+        "x": -437944.50634952,
+        "y": -948587.48015094
+    },
+    "QRF-5": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -449755.04462721,
+                "y": -922905.43241886
+            },
+            {
+                "x": -455164.7184613,
+                "y": -923659.23942852
+            },
+            {
+                "x": -454490.72631148,
+                "y": -928811.73204755
+            },
+            {
+                "x": -449604.28322528,
+                "y": -928439.26270159
+            }
+        ],
+        "x": -452253.69315632,
+        "y": -925953.91664913
     }
 }
