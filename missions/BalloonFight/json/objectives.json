@@ -28,6 +28,22 @@
                     "redSurrenderThreshold": "1",
                     "x": -519696.69085852,
                     "y": -953198.36349365
+                },
+                "NODE-6": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Desert Way",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -516472.62999372,
+                    "y": -955846.42283623
+                },
+                "NODE-7": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Desert Way",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -519514.81193785,
+                    "y": -949149.57143956
                 }
             },
             "qrfKillOnComplete": [],
@@ -36,7 +52,10 @@
             "reinforcements": [],
             "roadbases": [],
             "ship_groups": [],
-            "static_groups": [],
+            "static_groups": [
+                "Zweibrucken Airwing Warehouse",
+                "Zweibrucken Brigade Warehouse"
+            ],
             "strand": "STRAND-1",
             "tasks": [],
             "vehicle_groups": [],
@@ -73,7 +92,56 @@
             "component": "objective",
             "farps": [],
             "label": "Danger Close",
-            "nodes": {},
+            "nodes": {
+                "NODE-12": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Desert Way",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -411291.09928088,
+                    "y": -959433.65929538
+                },
+                "NODE-13": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Desert Way",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -408609.50469974,
+                    "y": -957067.48055525
+                },
+                "NODE-14": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Desert Way",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -432875.21488997,
+                    "y": -991617.5039197
+                },
+                "NODE-15": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Desert Way",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -428103.85440083,
+                    "y": -998992.9615023
+                },
+                "NODE-16": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Desert Way",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -427825.95034039,
+                    "y": -988505.99443863
+                },
+                "NODE-17": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Desert Way",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -425700.49520375,
+                    "y": -987387.76788116
+                }
+            },
             "qrfKillOnComplete": [],
             "qrfs": [],
             "redAwacsZones": [],
@@ -83,7 +151,13 @@
             "static_groups": [],
             "strand": "STRAND-2",
             "tasks": [],
-            "vehicle_groups": [],
+            "vehicle_groups": [
+                "RED SAM Hawk 36",
+                "RED SAM Hawk 37",
+                "RED SAM Hawk 38",
+                "RED SAM Patriot 12",
+                "RED SAM Patriot 13"
+            ],
             "vertices": [
                 {
                     "x": -421725.23584754,
@@ -117,12 +191,54 @@
             "component": "objective",
             "farps": [],
             "label": "Danger Close",
-            "nodes": {},
+            "nodes": {
+                "NODE-1": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Desert Way",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -451458.45960295,
+                    "y": -926941.15610382
+                },
+                "NODE-10": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Desert Way",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -438529.14581159,
+                    "y": -948155.90016647
+                },
+                "NODE-11": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Desert Way",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -476156.29561153,
+                    "y": -946881.87729374
+                },
+                "NODE-8": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Desert Way",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -451999.76696777,
+                    "y": -925199.20484008
+                },
+                "NODE-9": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Desert Way",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -441000.48555702,
+                    "y": -946600.99648979
+                }
+            },
             "qrfKillOnComplete": [],
             "qrfs": [
                 "QRF-2",
                 "QRF-4",
-                "QRF-5"
+                "QRF-5",
+                "QRF-6"
             ],
             "redAwacsZones": [],
             "reinforcements": [],
@@ -131,7 +247,13 @@
             "static_groups": [],
             "strand": "STRAND-2",
             "tasks": [],
-            "vehicle_groups": [],
+            "vehicle_groups": [
+                "RED SAM Hawk 33",
+                "RED SAM Hawk 34",
+                "RED SAM Hawk 35",
+                "RED SAM Patriot 14",
+                "RED SAM Patriot 15"
+            ],
             "vertices": [
                 {
                     "x": -491861.20572342,
@@ -169,16 +291,16 @@
                     "label": "Desert Way",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
-                    "x": -517542.76337986,
-                    "y": -938047.33336802
+                    "x": -517584.86007799,
+                    "y": -938037.11572284
                 },
                 "NODE-3": {
                     "blueCaptureThreshold": "0",
                     "label": "Desert Way",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
-                    "x": -501972.179965,
-                    "y": -938288.13995213
+                    "x": -501932.67067391,
+                    "y": -938264.76825881
                 }
             },
             "qrfKillOnComplete": [],

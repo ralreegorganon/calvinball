@@ -147,55 +147,286 @@ class BalloonFightRedAirwings(calvinball.redairwing.RedAirwings):
 
     def define(self, m: dcs.Mission):
         red_airwings = {
-            # "Stoney Cross": {
-            #     "airbase": "Stoney Cross",
-            #     "warehouse": "Stoney Cross Airwing Warehouse#00001",
-            #     "squadrons": {
-            #         "Stoney Cross 1": {
-            #             "airframe": dcs.planes.JF_17,
-            #             "groupSize": 2,
-            #             "initialInventory": 1,
-            #             "livery": "PLAAF 125th AB (Fictional)",
-            #             "loadouts": {
-            #                 "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
-            #                 "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
-            #                 "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
-            #             },
-            #             "capabilities": {
-            #                 "AUFTRAG.Type.CAP": 50,
-            #                 "AUFTRAG.Type.INTERCEPT": 50,
-            #                 "AUFTRAG.Type.ESCORT": 50,
-            #                 "AUFTRAG.Type.BAI": 50,
-            #                 "AUFTRAG.Type.CAS": 50,
-            #                 "AUFTRAG.Type.BOMBCARPET": 50,
-            #                 "AUFTRAG.Type.SEAD": 50,
-            #                 "AUFTRAG.Type.CASENHANCED": 50
-            #             }
-            #         },
-            #         "Stoney Cross 2": {
-            #             "airframe": dcs.planes.F_16C_50,
-            #             "groupSize": 2,
-            #             "initialInventory": 1,
-            #             "livery": "18th AGRS BDU Splinter",
-            #             "loadouts": {
-            #                 "AIM-120C*4, AIM-9X*2, FUEL*2, ECM": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
-            #                 "AIM-120C*2, AIM-9X*2, AGM-65D*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.CASENHANCED }",
-            #                 "AIM-120C*2, AIM-9X*2, CBU-105*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BOMBCARPET}",
-            #                 "AIM-120C*4, AGM-88C*4, ECM, TGP, HTS": "{ AUFTRAG.Type.SEAD }"
-            #             },
-            #             "capabilities": {
-            #                 "AUFTRAG.Type.CAP": 50,
-            #                 "AUFTRAG.Type.INTERCEPT": 50,
-            #                 "AUFTRAG.Type.ESCORT": 50,
-            #                 "AUFTRAG.Type.BAI": 50,
-            #                 "AUFTRAG.Type.CAS": 50,
-            #                 "AUFTRAG.Type.BOMBCARPET": 50,
-            #                 "AUFTRAG.Type.SEAD": 50,
-            #                 "AUFTRAG.Type.CASENHANCED": 50
-            #             }
-            #         }
-            #     }
-            # },
+            "Pferdsfeld": {
+                "airbase": "Pferdsfeld",
+                "warehouse": "Pferdsfeld Airwing Warehouse#00001",
+                "squadrons": {
+                    "Pferdsfeld AW 1": {
+                        "airframe": dcs.planes.JF_17,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "PLAAF 125th AB (Fictional)",
+                        "loadouts": {
+                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Pferdsfeld AW 2": {
+                        "airframe": dcs.helicopters.UH_60A,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    },
+                }
+            },
+            "Hahn": {
+                "airbase": "Hahn",
+                "warehouse": "Hahn Airwing Warehouse#00001",
+                "squadrons": {
+                    "Hahn AW 1": {
+                        "airframe": dcs.planes.JF_17,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "PLAAF 125th AB (Fictional)",
+                        "loadouts": {
+                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Hahn AW 2": {
+                        "airframe": dcs.helicopters.UH_60A,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    },
+                }
+            },
+            "Buchel": {
+                "airbase": "Buchel",
+                "warehouse": "Buchel Airwing Warehouse#00001",
+                "squadrons": {
+                    "Buchel AW 1": {
+                        "airframe": dcs.planes.JF_17,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "PLAAF 125th AB (Fictional)",
+                        "loadouts": {
+                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Buchel AW 2": {
+                        "airframe": dcs.helicopters.UH_60A,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    },
+                }
+            },
+            "Spangdahlem": {
+                "airbase": "Spangdahlem",
+                "warehouse": "Spangdahlem Airwing Warehouse#00001",
+                "squadrons": {
+                    "Spangdahlem AW 1": {
+                        "airframe": dcs.planes.JF_17,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "PLAAF 125th AB (Fictional)",
+                        "loadouts": {
+                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                     "Shangdahlem AW 2": {
+                        "airframe": dcs.helicopters.UH_60A,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    },
+                }
+            },
+            "Bitburg": {
+                "airbase": "Bitburg",
+                "warehouse": "Bitburg Airwing Warehouse#00001",
+                "squadrons": {
+                    "Bitburg AW 1": {
+                        "airframe": dcs.planes.JF_17,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "PLAAF 125th AB (Fictional)",
+                        "loadouts": {
+                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Bitburg AW 2": {
+                        "airframe": dcs.helicopters.UH_60A,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    },
+                }
+            },
+            "Pottschutthohe": {
+                "airbase": "Pottschutthohe",
+                "warehouse": "Pottschutthohe Airwing Warehouse#00001",
+                "squadrons": {
+                    "Pottschutthohe AW 1": {
+                        "airframe": dcs.planes.JF_17,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "PLAAF 125th AB (Fictional)",
+                        "loadouts": {
+                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Pottschutthohe AW 2": {
+                        "airframe": dcs.helicopters.UH_60A,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    },
+                }
+            },
+            "Zweibrucken": {
+                "airbase": "Zweibrucken",
+                "warehouse": "Zweibrucken Airwing Warehouse#00001",
+                "squadrons": {
+                    "Zweibrucken AW 1": {
+                        "airframe": dcs.planes.JF_17,
+                        "groupSize": 2,
+                        "initialInventory": 1,
+                        "livery": "PLAAF 125th AB (Fictional)",
+                        "loadouts": {
+                            "PL-5Ex2, 2*SD-10x2, 800L Tank": "{ AUFTRAG.Type.CAP, AUFTRAG.Type.INTERCEPT, AUFTRAG.Type.ESCORT }",
+                            "PL-5Ex2, 2*MK-82x2, MK-83x2, MK-84": "{ AUFTRAG.Type.BAI, AUFTRAG.Type.CAS, AUFTRAG.Type.BOMBCARPET, AUFTRAG.Type.CASENHANCED }",
+                            "PL-5Ex2, 2*LD-10x2, GB-6-HEx2, SPJ": "{ AUFTRAG.Type.SEAD }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.CAP": 50,
+                            "AUFTRAG.Type.INTERCEPT": 50,
+                            "AUFTRAG.Type.ESCORT": 50,
+                            "AUFTRAG.Type.BAI": 50,
+                            "AUFTRAG.Type.CAS": 50,
+                            "AUFTRAG.Type.BOMBCARPET": 50,
+                            "AUFTRAG.Type.SEAD": 50,
+                            "AUFTRAG.Type.CASENHANCED": 50
+                        }
+                    },
+                    "Zweibrucken AW 2": {
+                        "airframe": dcs.helicopters.UH_60A,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "takeoffCold": "true",
+                        "livery": "Russia_VVS_Grey",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.OPSTRANSPORT }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.OPSTRANSPORT": 50
+                        }
+                    },
+                }
+            },
         }
         return red_airwings
 
@@ -214,6 +445,166 @@ class BalloonFightRedBrigades(calvinball.redbrigade.RedBrigades):
 
     def define(self, m: dcs.Mission):
         red_brigades = {
+            "Pferdsfeld": {
+                "warehouse": "Pferdsfeld Brigade Warehouse#00001",
+                "platoons": {
+                    "Pferdsfeld B 1": {
+                        "units": [
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                        ],
+                        "initialInventory": 3,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    },
+                    "Pferdsfeld B 2": {
+                        "units": [
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Unarmed.Ural_375,
+                            dcs.vehicles.Unarmed.Ural_375
+                        ],
+                        "initialInventory": 1,
+                        "capabilities": {
+                            "AUFTRAG.Type.ARTY": 50
+                        }
+                    }
+                }
+            },
+            "Hahn": {
+                "warehouse": "Hahn Brigade Warehouse#00001",
+                "platoons": {
+                    "Hahn B 1": {
+                        "units": [
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                        ],
+                        "initialInventory": 3,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    },
+                    "Hahn B 2": {
+                        "units": [
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Unarmed.Ural_375,
+                            dcs.vehicles.Unarmed.Ural_375
+                        ],
+                        "initialInventory": 1,
+                        "capabilities": {
+                            "AUFTRAG.Type.ARTY": 50
+                        }
+                    }
+                }
+            },
+            "Buchel": {
+                "warehouse": "Buchel Brigade Warehouse#00001",
+                "platoons": {
+                    "Buchel B 1": {
+                        "units": [
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                        ],
+                        "initialInventory": 3,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    },
+                    "Buchel B 2": {
+                        "units": [
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Unarmed.Ural_375,
+                            dcs.vehicles.Unarmed.Ural_375
+                        ],
+                        "initialInventory": 1,
+                        "capabilities": {
+                            "AUFTRAG.Type.ARTY": 50
+                        }
+                    }
+                }
+            },
+            "Spangdahlem": {
+                "warehouse": "Spangdahlem Brigade Warehouse#00001",
+                "platoons": {
+                    "Spangdahlem B 1": {
+                        "units": [
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                        ],
+                        "initialInventory": 3,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    },
+                    "Spangdahlem B 2": {
+                        "units": [
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Unarmed.Ural_375,
+                            dcs.vehicles.Unarmed.Ural_375
+                        ],
+                        "initialInventory": 1,
+                        "capabilities": {
+                            "AUFTRAG.Type.ARTY": 50
+                        }
+                    }
+                }
+            },
+            "Bitburg": {
+                "warehouse": "Bitburg Brigade Warehouse#00001",
+                "platoons": {
+                    "Bitburg B 1": {
+                        "units": [
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                        ],
+                        "initialInventory": 3,
+                        "capabilities": {
+                            "AUFTRAG.Type.ONGUARD": 50
+                        }
+                    },
+                    "Bitburg B 2": {
+                        "units": [
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Artillery.Uragan_BM_27,
+                            dcs.vehicles.Unarmed.Ural_375,
+                            dcs.vehicles.Unarmed.Ural_375
+                        ],
+                        "initialInventory": 1,
+                        "capabilities": {
+                            "AUFTRAG.Type.ARTY": 50
+                        }
+                    }
+                }
+            },
         }
         return red_brigades
 

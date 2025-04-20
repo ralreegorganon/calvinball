@@ -2,82 +2,159 @@
     "blue": {},
     "neutrals": {},
     "red": {
-        "Stoney Cross Airwing Warehouse": {
+        "Bitburg Airwing Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
-            "heading": 5.9864793343406,
-            "name": "Stoney Cross Airwing Warehouse",
+            "heading": 5.7595865315813,
+            "name": "Bitburg Airwing Warehouse",
             "rate": 100,
             "shape_name": "SkladC",
             "type": ".Ammunition depot",
-            "x": -428305.16276651,
-            "y": -998193.26091301
+            "x": -427899.92500256,
+            "y": -998918.04647387
         },
-        "Stoney Cross Airwing Warehouse-1": {
+        "Bitburg Brigade Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
-            "heading": 5.9864793343406,
-            "name": "Stoney Cross Airwing Warehouse-1",
+            "heading": 5.8643062867009,
+            "name": "Bitburg Brigade Warehouse",
             "rate": 100,
             "shape_name": "SkladC",
             "type": ".Ammunition depot",
-            "x": -426636.74837198,
-            "y": -988092.2896609
+            "x": -427757.18875882,
+            "y": -997280.21235139
         },
-        "Stoney Cross Airwing Warehouse-2": {
+        "Buchel Airwing Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
-            "heading": 5.9864793343406,
-            "name": "Stoney Cross Airwing Warehouse-2",
+            "heading": 0.0872664625997,
+            "name": "Buchel Airwing Warehouse",
             "rate": 100,
             "shape_name": "SkladC",
             "type": ".Ammunition depot",
-            "x": -410003.00221113,
-            "y": -957722.69754863
+            "x": -409996.67161385,
+            "y": -958241.506489
         },
-        "Stoney Cross Airwing Warehouse-3": {
+        "Buchel Brigade Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
-            "heading": 5.9864793343406,
-            "name": "Stoney Cross Airwing Warehouse-3",
+            "heading": 0.628318530718,
+            "name": "Buchel Brigade Warehouse",
             "rate": 100,
             "shape_name": "SkladC",
             "type": ".Ammunition depot",
-            "x": -437826.16317786,
-            "y": -948344.00180632
+            "x": -411359.11972796,
+            "y": -958551.18059241
         },
-        "Stoney Cross Airwing Warehouse-4": {
+        "Hahn Airwing Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
-            "heading": 5.9864793343406,
-            "name": "Stoney Cross Airwing Warehouse-4",
+            "heading": 5.5676003138619,
+            "name": "Hahn Airwing Warehouse",
             "rate": 100,
             "shape_name": "SkladC",
             "type": ".Ammunition depot",
-            "x": -452292.88577414,
-            "y": -925867.21762682
+            "x": -439097.59184609,
+            "y": -948406.65057655
         },
-        "Stoney Cross Airwing Warehouse-5": {
+        "Hahn Brigade Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
-            "heading": 5.9864793343406,
-            "name": "Stoney Cross Airwing Warehouse-5",
+            "heading": 5.5676003138619,
+            "name": "Hahn Brigade Warehouse",
             "rate": 100,
             "shape_name": "SkladC",
             "type": ".Ammunition depot",
-            "x": -516097.82375168,
-            "y": -945894.49658488
+            "x": -436740.51709991,
+            "y": -946785.2617476
         },
-        "Stoney Cross Airwing Warehouse-6": {
+        "Pferdsfeld Airwing Warehouse": {
             "canCargo": false,
             "category": "Warehouses",
-            "heading": 5.9864793343406,
-            "name": "Stoney Cross Airwing Warehouse-6",
+            "heading": 5.8643062867009,
+            "name": "Pferdsfeld Airwing Warehouse",
             "rate": 100,
             "shape_name": "SkladC",
             "type": ".Ammunition depot",
-            "x": -520745.61288806,
-            "y": -953868.19269812
+            "x": -451466.40153599,
+            "y": -925901.45848767
+        },
+        "Pferdsfeld Brigade Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 0.1919862177194,
+            "name": "Pferdsfeld Brigade Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": -451973.81553143,
+            "y": -925673.49030877
+        },
+        "Pottschutthohe Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.9864793343406,
+            "name": "Pottschutthohe Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": -516467.51229288,
+            "y": -945822.9833871
+        },
+        "Pottschutthohe Brigade Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.9864793343406,
+            "name": "Pottschutthohe Brigade Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": -516501.3464845,
+            "y": -945932.06078099
+        },
+        "Spangdahlem Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.8293997016611,
+            "name": "Spangdahlem Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": -427579.54449645,
+            "y": -987993.31613517
+        },
+        "Spangdahlem Brigade Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 4.9567350756639,
+            "name": "Spangdahlem Brigade Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": -425151.80611765,
+            "y": -987853.62702063
+        },
+        "Zweibrucken Airwing Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.9166661642608,
+            "name": "Zweibrucken Airwing Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": -521230.58035697,
+            "y": -954348.98607784
+        },
+        "Zweibrucken Brigade Warehouse": {
+            "canCargo": false,
+            "category": "Warehouses",
+            "heading": 5.4803338512622,
+            "name": "Zweibrucken Brigade Warehouse",
+            "rate": 100,
+            "shape_name": "SkladC",
+            "type": ".Ammunition depot",
+            "x": -521032.95228301,
+            "y": -954262.81064045
         }
     }
 }
