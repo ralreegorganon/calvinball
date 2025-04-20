@@ -2,7 +2,7 @@ MissionDb = {
 	objectives = {
 		{
 			name = "OBJ-1",
-			strand = "",
+			strand = "STRAND-1",
 			completeSound = "",
 			borderZones = {
 			},
