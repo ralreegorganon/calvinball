@@ -104,6 +104,62 @@ MissionDb = {
 			carriers = {
 			},
 			qrfs = {
+				{
+					name = "QRF-8",
+					spawnGroups = {
+					},
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+						{
+							name = "FOB Schenker Airwing Warehouse#00001",
+							template = {
+								name = "FOB Schenker Airwing Warehouse",
+								type = ".Ammunition depot",
+								x = -409627.94789641,
+								y = -984286.26523697,
+								heading = 3.1415926535898,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "FOB Schenker Brigade Warehouse#00001",
+							template = {
+								name = "FOB Schenker Brigade Warehouse",
+								type = ".Ammunition depot",
+								x = -409697.17858197,
+								y = -984287.62183088,
+								heading = 0.0174532925199,
+								category = "Warehouses",
+								canCargo = false,
+								shape_name = "SkladC",
+								rate = 100,
+								dead = false
+							}
+						},
+						{
+							name = "FOB Schenker FARP#00001",
+							template = {
+								name = "FOB Schenker FARP",
+								type = "FARP",
+								x = -409666.5390408,
+								y = -984061.35513107,
+								heading = 3.1939525311496,
+								category = "Heliports",
+								canCargo = false,
+								shape_name = "FARPS",
+								rate = 50,
+								dead = false
+							}
+						},
+					},
+				},
 			},
 			reinforcements = {
 			},
@@ -370,62 +426,6 @@ MissionDb = {
 								canCargo = false,
 								shape_name = "SkladC",
 								rate = 100,
-								dead = false
-							}
-						},
-					},
-				},
-				{
-					name = "QRF-8",
-					spawnGroups = {
-					},
-					vehicleGroups = {
-					},
-					shipGroups = {
-					},
-					staticGroups = {
-						{
-							name = "FOB Schenker Airwing Warehouse#00001",
-							template = {
-								name = "FOB Schenker Airwing Warehouse",
-								type = ".Ammunition depot",
-								x = -409627.94789641,
-								y = -984286.26523697,
-								heading = 3.1415926535898,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "SkladC",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "FOB Schenker Brigade Warehouse#00001",
-							template = {
-								name = "FOB Schenker Brigade Warehouse",
-								type = ".Ammunition depot",
-								x = -409697.17858197,
-								y = -984287.62183088,
-								heading = 0.0174532925199,
-								category = "Warehouses",
-								canCargo = false,
-								shape_name = "SkladC",
-								rate = 100,
-								dead = false
-							}
-						},
-						{
-							name = "FOB Schenker FARP#00001",
-							template = {
-								name = "FOB Schenker FARP",
-								type = "FARP",
-								x = -409666.5390408,
-								y = -984061.35513107,
-								heading = 3.1939525311496,
-								category = "Heliports",
-								canCargo = false,
-								shape_name = "FARPS",
-								rate = 50,
 								dead = false
 							}
 						},

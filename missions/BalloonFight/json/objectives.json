@@ -11,11 +11,11 @@
             "completeSound": "",
             "component": "objective",
             "farps": [],
-            "label": "Danger Close",
+            "label": "Bungling Backfield",
             "nodes": {
                 "NODE-4": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "Zweibrucken South",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
                     "x": -522644.77510207,
@@ -23,7 +23,7 @@
                 },
                 "NODE-5": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "Zweibrucken North",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
                     "x": -519696.69085852,
@@ -31,7 +31,7 @@
                 },
                 "NODE-6": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "Nighttime in the Switching Yard",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
                     "x": -516472.62999372,
@@ -39,7 +39,7 @@
                 },
                 "NODE-7": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "Long Train Running",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
                     "x": -519514.81193785,
@@ -79,7 +79,7 @@
                     "y": -959843.72281359
                 }
             ],
-            "x": -520653.71264801,
+            "x": -520653.712648,
             "y": -952894.3716636
         },
         "OBJ-2": {
@@ -93,7 +93,7 @@
             "completeSound": "",
             "component": "objective",
             "farps": [],
-            "label": "Danger Close",
+            "label": "Drive Down Uber Alley",
             "nodes": {
                 "NODE-12": {
                     "blueCaptureThreshold": "0",
@@ -113,7 +113,7 @@
                 },
                 "NODE-14": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "Deutsche Bahn?",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
                     "x": -432875.21488997,
@@ -121,7 +121,7 @@
                 },
                 "NODE-15": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "Bitburg Prime",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
                     "x": -428103.85440083,
@@ -129,15 +129,15 @@
                 },
                 "NODE-16": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "Spangdahlem South",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
-                    "x": -427825.95034039,
+                    "x": -427822.43957491,
                     "y": -988505.99443863
                 },
                 "NODE-17": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "Spangdahlem North",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
                     "x": -425700.49520375,
@@ -145,7 +145,9 @@
                 }
             },
             "qrfKillOnComplete": [],
-            "qrfs": [],
+            "qrfs": [
+                "QRF-8"
+            ],
             "redAwacsZones": [
                 "RED AWACS ZONE-1"
             ],
@@ -181,7 +183,7 @@
                 }
             ],
             "x": -421351.21247769,
-            "y": -982983.23744567
+            "y": -982983.23744566
         },
         "OBJ-3": {
             "airbases": [
@@ -198,11 +200,11 @@
             "completeSound": "",
             "component": "objective",
             "farps": [],
-            "label": "Danger Close",
+            "label": "No Way Out But Through",
             "nodes": {
                 "NODE-1": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "Pferdsfeld West",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
                     "x": -451458.45960295,
@@ -210,7 +212,7 @@
                 },
                 "NODE-10": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "Goldie",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
                     "x": -438529.14581159,
@@ -218,7 +220,7 @@
                 },
                 "NODE-11": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "Bum Holder",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
                     "x": -476156.29561153,
@@ -226,7 +228,7 @@
                 },
                 "NODE-8": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "Pferdsfeld East",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
                     "x": -451999.76696777,
@@ -234,7 +236,7 @@
                 },
                 "NODE-9": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "99 Lead Balloons",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
                     "x": -441000.48555702,
@@ -244,7 +246,6 @@
             "qrfKillOnComplete": [],
             "qrfs": [
                 "QRF-7",
-                "QRF-8",
                 "QRF-2",
                 "QRF-4",
                 "QRF-5",
@@ -300,11 +301,11 @@
             "completeSound": "",
             "component": "objective",
             "farps": [],
-            "label": "Danger Close",
+            "label": "Barbarians At The Gates",
             "nodes": {
                 "NODE-2": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "Stop And Look",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
                     "x": -517584.86007799,
@@ -312,7 +313,7 @@
                 },
                 "NODE-3": {
                     "blueCaptureThreshold": "0",
-                    "label": "Desert Way",
+                    "label": "Routine Procedure",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
                     "x": -501932.67067391,
