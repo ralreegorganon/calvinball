@@ -1,9 +1,8 @@
-MissionDb.enableConvoys = true
+MissionDb.enableConvoys = false
+MissionDb.enableElint = true
 
 MissionDb.redchief.strategicZoneResources.defaultEmptyFunc = function(chief)
     local resourceEmpty, resourceInfantry = chief:CreateResource(AUFTRAG.Type.ONGUARD, 1, 1, GROUP.Attribute.GROUND_INFANTRY)
-    -- chief:AddToResource(resourceEmpty, AUFTRAG.Type.ONGUARD, 0, 1, GROUP.Attribute.GROUND_TANK)
-    -- chief:AddToResource(resourceEmpty, AUFTRAG.Type.ONGUARD, 0, 1, GROUP.Attribute.GROUND_IFV)
     chief:AddTransportToResource(resourceInfantry, 1, 1, {GROUP.Attribute.AIR_TRANSPORTHELO, GROUP.Attribute.GROUND_APC})
     return resourceEmpty
 end
@@ -16,8 +15,6 @@ end
 
 MissionDb.bluechief.strategicZoneResources.defaultEmptyFunc = function(chief)
     local resourceEmpty, resourceInfantry = chief:CreateResource(AUFTRAG.Type.ONGUARD, 1, 1, GROUP.Attribute.GROUND_INFANTRY)
-    -- chief:AddToResource(resourceEmpty, AUFTRAG.Type.ONGUARD, 0, 1, GROUP.Attribute.GROUND_TANK)
-    -- chief:AddToResource(resourceEmpty, AUFTRAG.Type.ONGUARD, 0, 1, GROUP.Attribute.GROUND_IFV)
     chief:AddTransportToResource(resourceInfantry, 1, 1, {GROUP.Attribute.AIR_TRANSPORTHELO, GROUP.Attribute.GROUND_APC})
     return resourceEmpty
 end

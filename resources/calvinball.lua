@@ -2798,6 +2798,7 @@ local function initializeCtld()
     MissionDb.ctld.instance:AddTroopsCargo("Infantry - AA (6)", { "CTLD Infantry AA" }, CTLD_CARGO.Enum.TROOPS, 6, 80)
     MissionDb.ctld.instance:AddTroopsCargo("Infantry - AT (8)", { "CTLD Infantry AT" }, CTLD_CARGO.Enum.TROOPS, 8, 80)
     MissionDb.ctld.instance:AddTroopsCargo("JTAC (1)", { "CTLD BLUE RECCE JTAC" }, CTLD_CARGO.Enum.TROOPS, 1, 80)
+    -- MissionDb.ctld.instance:AddTroopsCargo("ELINT (1)", { "CTLD BLUE RECCE ELINT" }, CTLD_CARGO.Enum.TROOPS, 1, 80)
     MissionDb.ctld.instance:AddTroopsCargo("MORTAR (5)", { "CTLD MORTAR" }, CTLD_CARGO.Enum.TROOPS, 5, 122)
     MissionDb.ctld.instance:AddTroopsCargo("SK Special - AT (2)", { "CTLD AT SK Special 2" }, CTLD_CARGO.Enum.TROOPS, 2, 80)
     MissionDb.ctld.instance:AddTroopsCargo("SK Special - AA (2)", { "CTLD AA SK Special 2" }, CTLD_CARGO.Enum.TROOPS, 2, 80)
@@ -3071,6 +3072,32 @@ local function initializeSlotBlocker()
     end
 end
 
+local function initializeElint()
+    SCHEDULER:New(nil, function()
+        MissionDb.elint.instance = HoundElint:create(coalition.side.BLUE)
+        MissionDb.elint.instance:setMarkerType(HOUND.MARKER.DIAMOND)
+        MissionDb.elint.instance:systemOn()
+        MissionDb.elint.instance:enableController() 
+        MissionDb.elint.instance:enableText("all")
+        MissionDb.elint.instance:onScreenDebug(true)
+
+        MissionDb.elint.units = SET_UNIT:New():FilterAlive():FilterPrefixes("ELINT"):FilterCoalitions("blue"):FilterStart()
+
+        MissionDb.elint.units:ForEachUnit(function(unit)
+            MissionDb.elint.instance:addPlatform(unit:GetName())
+        end)
+
+        function MissionDb.elint.units:OnAfterAdded(From, Event, To, ObjectName, Object)
+            MissionDb.elint.instance:addPlatform(ObjectName)
+        end
+
+        function MissionDb.elint.units:OnAfterRemoved(From, Event, To, ObjectName, Object)
+            MissionDb.elint.instance:removePlatform(ObjectName)
+        end
+
+    end, {}, 60)
+end
+
 initializeCtld()
 
 initializeCsar()
@@ -3088,6 +3115,9 @@ end
 initializeMantis()
 
 initializeMarkerOps()
+if MissionDb.enableElint then
+    initializeElint()
+end
 
 -- initializePlayerRecce()
 

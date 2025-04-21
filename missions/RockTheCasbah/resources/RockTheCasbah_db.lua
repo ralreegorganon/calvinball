@@ -492,6 +492,7 @@ MissionDb = {
 		}
 	},
 	autolase = {},
+	elint = {},
 	playerRecce = {},
 	strandtasks = {},
 	samnetwork = {},
@@ -719,6 +720,7 @@ MissionDb = {
 	lateActivateStatics = false,
 	enableConvoys = true,
 	enableAutolase = true,
+	enableElint = false,
 	missionName = "RockTheCasbah",
 	settings = {
 		blueCasevacChance = 10,

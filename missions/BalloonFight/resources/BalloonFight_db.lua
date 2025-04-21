@@ -809,6 +809,7 @@ MissionDb = {
 		}
 	},
 	autolase = {},
+	elint = {},
 	playerRecce = {},
 	strandtasks = {},
 	samnetwork = {},
@@ -1363,14 +1364,6 @@ MissionDb = {
 							{ mission = AUFTRAG.Type.ONGUARD, performance = 50 },
 						},
 					},
-					{
-						name = "Pferdsfeld B 2",
-						templateGroupName = "RED Pferdsfeld Pferdsfeld B 2",
-						initialInventory = 1,
-						capabilities = {
-							{ mission = AUFTRAG.Type.ARTY, performance = 50 },
-						},
-					},
 				}
 			},
 			{
@@ -1488,8 +1481,8 @@ MissionDb = {
 						}
 					},
 					{
-						name = "Ramstein AW 4 JTAC",
-						templateGroupName = "BLUE Ramstein Ramstein AW 4 JTAC S-3B",
+						name = "Ramstein AW 4 JTAC ELINT",
+						templateGroupName = "BLUE Ramstein Ramstein AW 4 JTAC ELINT S-3B",
 						initialInventory = 99,
 						takeoffCold = false,
 						parking = nil,
@@ -1499,7 +1492,7 @@ MissionDb = {
 						livery = "usaf standard",
 						payloads = {
 							{
-								templateGroupName = "BLUE Ramstein Ramstein AW 4 JTAC S-3B LOADOUT 0",
+								templateGroupName = "BLUE Ramstein Ramstein AW 4 JTAC ELINT S-3B LOADOUT 0",
 								missionTypes = { AUFTRAG.Type.RECON }
 							},
 						}
@@ -1541,6 +1534,7 @@ MissionDb = {
 	lateActivateStatics = false,
 	enableConvoys = true,
 	enableAutolase = true,
+	enableElint = false,
 	missionName = "BalloonFight",
 	settings = {
 		blueCasevacChance = 10,

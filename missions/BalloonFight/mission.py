@@ -629,7 +629,7 @@ class BalloonFightBlueAirwings(calvinball.blueairwing.BlueAirwings):
                             "AUFTRAG.Type.AWACS": 50
                         }
                     },
-                    "Ramstein AW 4 JTAC": {
+                    "Ramstein AW 4 JTAC ELINT": {
                         "airframe": dcs.planes.S_3B,
                         "groupSize": 1,
                         "initialInventory": 99,
@@ -657,29 +657,14 @@ class BalloonFightRedBrigades(calvinball.redbrigade.RedBrigades):
                 "platoons": {
                     "Pferdsfeld B 1": {
                         "units": [
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Soldier_M4,
+                            dcs.vehicles.Infantry.Soldier_M4,
+                            dcs.vehicles.Infantry.Soldier_RPG,
+                            dcs.vehicles.Infantry.Soldier_RPG,
                         ],
                         "initialInventory": 3,
                         "capabilities": {
                             "AUFTRAG.Type.ONGUARD": 50
-                        }
-                    },
-                    "Pferdsfeld B 2": {
-                        "units": [
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Artillery.Uragan_BM_27,
-                            dcs.vehicles.Unarmed.Ural_375,
-                            dcs.vehicles.Unarmed.Ural_375
-                        ],
-                        "initialInventory": 1,
-                        "capabilities": {
-                            "AUFTRAG.Type.ARTY": 50
                         }
                     }
                 }
@@ -689,10 +674,10 @@ class BalloonFightRedBrigades(calvinball.redbrigade.RedBrigades):
                 "platoons": {
                     "Hahn B 1": {
                         "units": [
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Soldier_M4,
+                            dcs.vehicles.Infantry.Soldier_M4,
+                            dcs.vehicles.Infantry.Soldier_RPG,
+                            dcs.vehicles.Infantry.Soldier_RPG,
                         ],
                         "initialInventory": 3,
                         "capabilities": {
@@ -706,10 +691,10 @@ class BalloonFightRedBrigades(calvinball.redbrigade.RedBrigades):
                 "platoons": {
                     "FOB Roth B 1": {
                         "units": [
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_AKS_74,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
-                            dcs.vehicles.Infantry.Paratrooper_RPG_16,
+                            dcs.vehicles.Infantry.Soldier_M4,
+                            dcs.vehicles.Infantry.Soldier_M4,
+                            dcs.vehicles.Infantry.Soldier_RPG,
+                            dcs.vehicles.Infantry.Soldier_RPG,
                         ],
                         "initialInventory": 3,
                         "capabilities": {

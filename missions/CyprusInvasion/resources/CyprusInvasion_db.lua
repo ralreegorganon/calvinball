@@ -5728,6 +5728,7 @@ MissionDb = {
 		}
 	},
 	autolase = {},
+	elint = {},
 	playerRecce = {},
 	strandtasks = {},
 	samnetwork = {},
@@ -6428,6 +6429,7 @@ MissionDb = {
 	lateActivateStatics = false,
 	enableConvoys = true,
 	enableAutolase = true,
+	enableElint = false,
 	missionName = "CyprusInvasion",
 	settings = {
 		blueCasevacChance = 10,

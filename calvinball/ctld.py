@@ -68,6 +68,7 @@ class Ctld:
         ], dcs.mapping.Point(180657, -39472, m.terrain), formation=dcs.unitgroup.VehicleGroup.Formation.Scattered).late_activation = True
 
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD BLUE RECCE JTAC", dcs.vehicles.Infantry.Soldier_M4, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
+        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD BLUE RECCE ELINT", dcs.vehicles.Infantry.Soldier_M4, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD BLUE RECCE JTAC HMMWV", dcs.vehicles.Unarmed.Hummer, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD HMMWV MG", dcs.vehicles.Armor.M1043_HMMWV_Armament, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD HMMWV TOW", dcs.vehicles.Armor.M1045_HMMWV_TOW, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
