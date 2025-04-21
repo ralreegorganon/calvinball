@@ -246,7 +246,11 @@
             "Pottschutthohe Brigade Warehouse"
         ],
         "vehicleQrfTemplates": [],
-        "vehicle_groups": [],
+        "vehicle_groups": [
+            "RED Chaparral 483-1",
+            "RED AIR DEFENSE BATTERY D 497-3",
+            "RED AIR DEFENSE BATTERY E 499-1"
+        ],
         "vertices": [
             {
                 "x": -515436.98052526,

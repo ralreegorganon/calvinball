@@ -558,7 +558,6 @@ MissionDb = {
 				{ name = "RED SAM Hawk 34" },
 				{ name = "RED SAM Hawk 35" },
 				{ name = "RED SAM Patriot 14" },
-				{ name = "RED SAM Patriot 15" },
 			},
 			shipGroups = {
 			},
