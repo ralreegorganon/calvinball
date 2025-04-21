@@ -61,10 +61,10 @@
             "strand": "STRAND-1",
             "tasks": [],
             "vehicle_groups": [
-                "RED AIR DEFENSE BATTERY E 499-2",
                 "RED AIR DEFENSE BATTERY D 497-4",
-                "RED RG 501-1",
+                "RED AIR DEFENSE BATTERY E 499-2",
                 "RED Chaparral 483-2",
+                "RED RG 501-1",
                 "RED RG 501-6"
             ],
             "vertices": [
@@ -164,11 +164,17 @@
             "strand": "STRAND-2",
             "tasks": [],
             "vehicle_groups": [
+                "RED AIR DEFENSE BATTERY E 512-2",
+                "RED Chaparral 496-1",
+                "RED RG 514-13",
+                "RED RG 514-6",
                 "RED SAM Hawk 36",
                 "RED SAM Hawk 37",
                 "RED SAM Hawk 38",
                 "RED SAM Patriot 12",
-                "RED SAM Patriot 13"
+                "RED SAM Patriot 13",
+                "RED RG 514-1",
+                "RED RG 514-2"
             ],
             "vertices": [
                 {
@@ -267,6 +273,13 @@
             "strand": "STRAND-2",
             "tasks": [],
             "vehicle_groups": [
+                "RED RG 514-10",
+                "RED RG 514-11",
+                "RED RG 514-12",
+                "RED RG 514-5",
+                "RED RG 514-7",
+                "RED RG 514-8",
+                "RED RG 514-9",
                 "RED SAM Hawk 33",
                 "RED SAM Hawk 34",
                 "RED SAM Hawk 35",
@@ -339,11 +352,11 @@
             "strand": "STRAND-1",
             "tasks": [],
             "vehicle_groups": [
-                "RED RG 501-4",
-                "RED Rapier 493-1",
                 "RED AIR DEFENSE BATTERY D 497-1",
+                "RED AIR DEFENSE BATTERY D 497-2",
+                "RED RG 501-4",
                 "RED RG 501-5",
-                "RED AIR DEFENSE BATTERY D 497-2"
+                "RED Rapier 493-1"
             ],
             "vertices": [
                 {

@@ -120,14 +120,12 @@ def build_copypasta_templates(m: dcs.Mission):
              { "unit": dcs.vehicles.Armor.MCV_80, "min": 4, "max": 8},
              { "unit": dcs.vehicles.Unarmed.M_818, "min": 1, "max": 3},
              { "unit": dcs.vehicles.Unarmed.Hummer, "min": 1, "max": 2},
-             { "unit": dcs.vehicles.Infantry.Soldier_M4, "min": 4, "max": 8},
              { "unit": dcs.vehicles.AirDefence.Vulcan, "min": 1, "max": 2},
         ],
         "blue mobile 3": [
              { "unit": dcs.vehicles.Armor.M_2_Bradley, "min": 4, "max": 8},
              { "unit": dcs.vehicles.Unarmed.M_818, "min": 1, "max": 3},
              { "unit": dcs.vehicles.Unarmed.Hummer, "min": 1, "max": 2},
-             { "unit": dcs.vehicles.Infantry.Soldier_M4, "min": 4, "max": 8},
              { "unit": dcs.vehicles.AirDefence.Vulcan, "min": 1, "max": 2},
         ],
         "blue mobile 4": [
@@ -136,6 +134,11 @@ def build_copypasta_templates(m: dcs.Mission):
              { "unit": dcs.vehicles.Unarmed.Hummer, "min": 1, "max": 2},
              { "unit": dcs.vehicles.Infantry.Soldier_M4, "min": 4, "max": 8},
              { "unit": dcs.vehicles.AirDefence.Vulcan, "min": 1, "max": 2},
+        ],
+        "blue dudes": [
+             { "unit": dcs.vehicles.Unarmed.M_818, "min": 2, "max": 4},
+             { "unit": dcs.vehicles.Unarmed.Hummer, "min": 1, "max": 2},
+             { "unit": dcs.vehicles.Infantry.Soldier_M4, "min": 4, "max": 8},
         ],
     }
 
@@ -182,10 +185,11 @@ def build_copypasta_templates(m: dcs.Mission):
         "blue": {
             "qty": 1,
             "templates": [
-                { "id": "blue mobile 1", "min": 1, "max": 3},
-                { "id": "blue mobile 2", "min": 1, "max": 3},
-                { "id": "blue mobile 3", "min": 1, "max": 3},
-                { "id": "blue mobile 4", "min": 1, "max": 3},
+                { "id": "blue mobile 1", "min": 1, "max": 1},
+                { "id": "blue mobile 2", "min": 1, "max": 1},
+                { "id": "blue mobile 3", "min": 1, "max": 1},
+                { "id": "blue mobile 4", "min": 1, "max": 1},
+                { "id": "blue dudes", "min": 1, "max": 1},
             ]
         }
     }

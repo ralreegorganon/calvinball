@@ -629,6 +629,18 @@ class BalloonFightBlueAirwings(calvinball.blueairwing.BlueAirwings):
                             "AUFTRAG.Type.AWACS": 50
                         }
                     },
+                    "Ramstein AW 4 JTAC": {
+                        "airframe": dcs.planes.S_3B,
+                        "groupSize": 1,
+                        "initialInventory": 99,
+                        "livery": "usaf standard",
+                        "loadouts": {
+                            "Empty": "{ AUFTRAG.Type.RECON }"
+                        },
+                        "capabilities": {
+                            "AUFTRAG.Type.RECON": 50
+                        }
+                    }
                 }
             },
         }
