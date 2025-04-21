@@ -1768,13 +1768,18 @@ local function updateBorderZones()
 end
 
 local function updateRedAwacsZones()
-    local intendedAwacsZones = {}
+    local zoneSet = {} 
     for _, objective in ipairs(MissionDb.objectives) do
         if objective.state == "active" then
             for _, awacsZoneName in ipairs(objective.redAwacsZones) do
-                table.insert(intendedAwacsZones, awacsZoneName)
+                zoneSet[awacsZoneName] = true
             end
         end
+    end
+
+    local intendedAwacsZones = {}
+    for zoneName, _ in pairs(zoneSet) do
+        table.insert(intendedAwacsZones, zoneName)
     end
 
     local commander = MissionDb.redchief.instance:GetCommander()
@@ -1815,13 +1820,18 @@ local function updateRedAwacsZones()
 end
 
 local function updateBlueAwacsZones()
-    local intendedAwacsZones = {}
+    local zoneSet = {} 
     for _, objective in ipairs(MissionDb.objectives) do
         if objective.state == "active" then
             for _, awacsZoneName in ipairs(objective.blueAwacsZones) do
-                table.insert(intendedAwacsZones, awacsZoneName)
+                zoneSet[awacsZoneName] = true
             end
         end
+    end
+
+    local intendedAwacsZones = {}
+    for zoneName, _ in pairs(zoneSet) do
+        table.insert(intendedAwacsZones, zoneName)
     end
 
     local commander = MissionDb.bluechief.instance:GetCommander()
@@ -1868,13 +1878,18 @@ local function updateAwacsZones()
 end
 
 local function updateCapZones()
-    local intendedCapZones = {}
+    local zoneSet = {}
     for _, objective in ipairs(MissionDb.objectives) do
         if objective.state == "active" then
             for _, capZoneName in ipairs(objective.capZones) do
-                table.insert(intendedCapZones, capZoneName)
+                zoneSet[capZoneName] = true
             end
         end
+    end
+    
+    local intendedCapZones = {}
+    for zoneName, _ in pairs(zoneSet) do
+        table.insert(intendedCapZones, zoneName)
     end
 
     local commander = MissionDb.redchief.instance:GetCommander()
