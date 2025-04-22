@@ -33,6 +33,12 @@ jobs:
             ./missions/DangerZone/json/farps.json \
             ./build/OH58D-MissionData/DangerZone \
             --carriers_file ./missions/DangerZone/json/carriers.json
+      - run: |
+          python ./archive/kiowhat.py \
+            ./missions/BalloonFight/json/objectives.json \
+            ./missions/BalloonFight/json/airbases.json \
+            ./missions/BalloonFight/json/farps.json \
+            ./build/OH58D-MissionData/BalloonFight
       - uses: actions/upload-artifact@v4
         with:
           name: missions

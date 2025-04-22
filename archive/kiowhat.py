@@ -57,6 +57,7 @@ def process_objective(objective_key, objectives, airbases, farps, carriers, obje
             waypoint_counter = add_waypoint_and_notebook_entry(waypoint_counter, carrier['x'], carrier['y'], carrier['label'], waypoints, notebook)
             reference_x, reference_z = carrier['x'], carrier['y']
 
+    print(objective_key)
     nodes = sorted(objective['nodes'].values(), key=lambda node: calculate_distance(reference_x, reference_z, node['x'], node['y']))
     for node in nodes:
         waypoint_counter = add_waypoint_and_notebook_entry(waypoint_counter, node['x'], node['y'], node['label'], waypoints, notebook)
@@ -134,6 +135,8 @@ def main(args):
                 current_airbase_or_farp_or_carrier = carriers_unlocked[-1]
 
             objective_current_airbase_or_farp_or_carrier[objective_key] = current_airbase_or_farp_or_carrier
+
+    print(objective_current_airbase_or_farp_or_carrier)
 
     fixup = None
     for strand, objs in strands.items():
