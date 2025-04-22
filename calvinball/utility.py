@@ -455,7 +455,7 @@ def build_sam_templates(m: dcs.Mission):
             dcs.vehicles.AirDefence.ZSU_57_2,
         ],
         # NATO Variations
-        "RED Avenger": [
+        "RED SAM Avenger": [
             dcs.vehicles.AirDefence.M1097_Avenger,
             dcs.vehicles.AirDefence.M1097_Avenger,
             dcs.vehicles.AirDefence.M1097_Avenger,
@@ -463,7 +463,7 @@ def build_sam_templates(m: dcs.Mission):
             dcs.vehicles.Unarmed.M_818,
             dcs.vehicles.Unarmed.M_818,
         ],
-        "RED Chaparral": [
+        "RED SAM Chaparral": [
             dcs.vehicles.AirDefence.M48_Chaparral,
             dcs.vehicles.AirDefence.M48_Chaparral,
             dcs.vehicles.AirDefence.M48_Chaparral,
@@ -471,7 +471,7 @@ def build_sam_templates(m: dcs.Mission):
             dcs.vehicles.Unarmed.M_818,
             dcs.vehicles.Unarmed.M_818,
         ],
-        "RED Hawk": [
+        "RED SAM Hawk": [
             dcs.vehicles.AirDefence.Hawk_sr,
             dcs.vehicles.AirDefence.Hawk_tr,
             dcs.vehicles.AirDefence.Hawk_tr,
@@ -489,7 +489,7 @@ def build_sam_templates(m: dcs.Mission):
             dcs.vehicles.Unarmed.M_818,
             dcs.vehicles.Unarmed.M_818,
         ],
-        "RED Linebacker": [
+        "RED SAM Linebacker": [
             dcs.vehicles.AirDefence.M6_Linebacker,
             dcs.vehicles.AirDefence.M6_Linebacker,
             dcs.vehicles.AirDefence.M6_Linebacker,
@@ -497,7 +497,7 @@ def build_sam_templates(m: dcs.Mission):
             dcs.vehicles.Unarmed.M_818,
             dcs.vehicles.Unarmed.M_818,
         ],
-        "RED NASAMS": [
+        "RED SAM NASAMS": [
             dcs.vehicles.AirDefence.NASAMS_Command_Post,
             dcs.vehicles.AirDefence.NASAMS_Radar_MPQ64F1,
             dcs.vehicles.AirDefence.NASAMS_Radar_MPQ64F1,
@@ -523,7 +523,7 @@ def build_sam_templates(m: dcs.Mission):
             dcs.vehicles.Unarmed.M_818,
             dcs.vehicles.Unarmed.M_818,
         ],
-        "RED Patriot": [
+        "RED SAM Patriot": [
             dcs.vehicles.AirDefence.Patriot_ECS,
             dcs.vehicles.AirDefence.Patriot_ECS,
             dcs.vehicles.AirDefence.Patriot_ECS,
@@ -610,14 +610,14 @@ def build_sam_templates(m: dcs.Mission):
             dcs.vehicles.Unarmed.HEMTT_TFFT,
             dcs.vehicles.Unarmed.HEMTT_TFFT,
         ],
-        "RED Rapier": [
+        "RED SAM Rapier": [
             dcs.vehicles.AirDefence.rapier_fsa_launcher,
             dcs.vehicles.AirDefence.rapier_fsa_blindfire_radar,
             dcs.vehicles.AirDefence.rapier_fsa_optical_tracker_unit,
             dcs.vehicles.Unarmed.Land_Rover_101_FC,
             dcs.vehicles.Unarmed.M_818,
         ],
-        "RED Roland": [
+        "RED SAM Roland": [
             dcs.vehicles.AirDefence.Roland_ADS,
             dcs.vehicles.AirDefence.Roland_Radar,
             dcs.vehicles.Unarmed.M_818,

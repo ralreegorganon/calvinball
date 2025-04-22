@@ -37,7 +37,7 @@ MissionDb = {
 			vehicleGroups = {
 				{ name = "RED AIR DEFENSE BATTERY D 497-4" },
 				{ name = "RED AIR DEFENSE BATTERY E 499-2" },
-				{ name = "RED Chaparral 483-2" },
+				{ name = "RED SAM Chaparral 483-2" },
 				{ name = "RED RG 501-1" },
 				{ name = "RED RG 501-6" },
 			},
@@ -114,8 +114,8 @@ MissionDb = {
 					spawnGroups = {
 					},
 					vehicleGroups = {
-						{ name = "RED Avenger 494-2" },
-						{ name = "RED Linebacker 500-1" },
+						{ name = "RED SAM Avenger 494-2" },
+						{ name = "RED SAM Linebacker 500-1" },
 					},
 					shipGroups = {
 					},
@@ -172,7 +172,7 @@ MissionDb = {
 			},
 			vehicleGroups = {
 				{ name = "RED AIR DEFENSE BATTERY E 512-2" },
-				{ name = "RED Chaparral 496-1" },
+				{ name = "RED SAM Chaparral 496-1" },
 				{ name = "RED RG 514-13" },
 				{ name = "RED RG 514-6" },
 				{ name = "RED SAM Hawk 36" },
@@ -408,8 +408,8 @@ MissionDb = {
 					spawnGroups = {
 					},
 					vehicleGroups = {
-						{ name = "RED Avenger 494-3" },
-						{ name = "RED Linebacker 500-6" },
+						{ name = "RED SAM Avenger 494-3" },
+						{ name = "RED SAM Linebacker 500-6" },
 					},
 					shipGroups = {
 					},
@@ -455,11 +455,11 @@ MissionDb = {
 						{ name = "RED AIR DEFENSE BATTERY D 510-2" },
 						{ name = "RED AIR DEFENSE BATTERY D 510-3" },
 						{ name = "RED AIR DEFENSE BATTERY E 512-1" },
-						{ name = "RED Avenger 494-1" },
-						{ name = "RED Linebacker 500-2" },
-						{ name = "RED Linebacker 500-3" },
-						{ name = "RED NASAMS 502-2" },
-						{ name = "RED NASAMS 502-3" },
+						{ name = "RED SAM Avenger 494-1" },
+						{ name = "RED SAM Linebacker 500-2" },
+						{ name = "RED SAM Linebacker 500-3" },
+						{ name = "RED SAM NASAMS 502-2" },
+						{ name = "RED SAM NASAMS 502-3" },
 					},
 					shipGroups = {
 					},
@@ -503,9 +503,9 @@ MissionDb = {
 					vehicleGroups = {
 						{ name = "RED AIR DEFENSE BATTERY D 510-6" },
 						{ name = "RED AIR DEFENSE BATTERY E 512-5" },
-						{ name = "RED Chaparral 496-3" },
-						{ name = "RED Linebacker 500-4" },
-						{ name = "RED NASAMS 502-1" },
+						{ name = "RED SAM Chaparral 496-3" },
+						{ name = "RED SAM Linebacker 500-4" },
+						{ name = "RED SAM NASAMS 502-1" },
 					},
 					shipGroups = {
 					},
@@ -534,11 +534,11 @@ MissionDb = {
 					vehicleGroups = {
 						{ name = "RED AIR DEFENSE BATTERY D 510-5" },
 						{ name = "RED AIR DEFENSE BATTERY E 512-4" },
-						{ name = "RED Chaparral 496-2" },
-						{ name = "RED Linebacker 500-5" },
-						{ name = "RED NASAMS 502-4" },
-						{ name = "RED Rapier 506-3" },
-						{ name = "RED Roland 508-4" },
+						{ name = "RED SAM Chaparral 496-2" },
+						{ name = "RED SAM Linebacker 500-5" },
+						{ name = "RED SAM NASAMS 502-4" },
+						{ name = "RED SAM Rapier 506-3" },
+						{ name = "RED SAM Roland 508-4" },
 					},
 					shipGroups = {
 					},
@@ -567,11 +567,11 @@ MissionDb = {
 					vehicleGroups = {
 						{ name = "RED AIR DEFENSE BATTERY D 510-4" },
 						{ name = "RED AIR DEFENSE BATTERY E 512-3" },
-						{ name = "RED Rapier 506-1" },
-						{ name = "RED Rapier 506-2" },
-						{ name = "RED Roland 508-1" },
-						{ name = "RED Roland 508-2" },
-						{ name = "RED Roland 508-3" },
+						{ name = "RED SAM Rapier 506-1" },
+						{ name = "RED SAM Rapier 506-2" },
+						{ name = "RED SAM Roland 508-1" },
+						{ name = "RED SAM Roland 508-2" },
+						{ name = "RED SAM Roland 508-3" },
 					},
 					shipGroups = {
 					},
@@ -651,7 +651,7 @@ MissionDb = {
 					vehicleGroups = {
 						{ name = "RED AIR DEFENSE BATTERY D 497-3" },
 						{ name = "RED AIR DEFENSE BATTERY E 499-1" },
-						{ name = "RED Chaparral 483-1" },
+						{ name = "RED SAM Chaparral 483-1" },
 					},
 					shipGroups = {
 					},
@@ -696,7 +696,7 @@ MissionDb = {
 				{ name = "RED AIR DEFENSE BATTERY D 497-2" },
 				{ name = "RED RG 501-4" },
 				{ name = "RED RG 501-5" },
-				{ name = "RED Rapier 493-1" },
+				{ name = "RED SAM Rapier 493-1" },
 			},
 			shipGroups = {
 			},

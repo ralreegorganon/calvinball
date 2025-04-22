@@ -869,7 +869,7 @@
                 "y": -948385.22322664
             }
         ],
-        "RED Avenger 494-1": [
+        "RED SAM Avenger 494-1": [
             {
                 "heading": 0.0,
                 "type": "M1097 Avenger",
@@ -907,7 +907,7 @@
                 "y": -987142.43076831
             }
         ],
-        "RED Avenger 494-2": [
+        "RED SAM Avenger 494-2": [
             {
                 "heading": 0.0,
                 "type": "M1097 Avenger",
@@ -945,7 +945,7 @@
                 "y": -983621.69754386
             }
         ],
-        "RED Avenger 494-3": [
+        "RED SAM Avenger 494-3": [
             {
                 "heading": 0.0,
                 "type": "M1097 Avenger",
@@ -983,7 +983,7 @@
                 "y": -940942.30777498
             }
         ],
-        "RED Chaparral 483-1": [
+        "RED SAM Chaparral 483-1": [
             {
                 "heading": 38.00000000000314,
                 "type": "M48 Chaparral",
@@ -1021,7 +1021,7 @@
                 "y": -945889.88158229
             }
         ],
-        "RED Chaparral 483-2": [
+        "RED SAM Chaparral 483-2": [
             {
                 "heading": 73.00000000000226,
                 "type": "M48 Chaparral",
@@ -1059,7 +1059,7 @@
                 "y": -952593.63387676
             }
         ],
-        "RED Chaparral 496-1": [
+        "RED SAM Chaparral 496-1": [
             {
                 "heading": 0.0,
                 "type": "M48 Chaparral",
@@ -1079,7 +1079,7 @@
                 "y": -990990.39740912
             }
         ],
-        "RED Chaparral 496-2": [
+        "RED SAM Chaparral 496-2": [
             {
                 "heading": 0.0,
                 "type": "M48 Chaparral",
@@ -1117,7 +1117,7 @@
                 "y": -926910.60403039
             }
         ],
-        "RED Chaparral 496-3": [
+        "RED SAM Chaparral 496-3": [
             {
                 "heading": 0.0,
                 "type": "M48 Chaparral",
@@ -1579,7 +1579,7 @@
                 "y": -654870.14484
             }
         ],
-        "RED Linebacker 500-1": [
+        "RED SAM Linebacker 500-1": [
             {
                 "heading": 0.0,
                 "type": "M6 Linebacker",
@@ -1617,7 +1617,7 @@
                 "y": -983549.09693163
             }
         ],
-        "RED Linebacker 500-2": [
+        "RED SAM Linebacker 500-2": [
             {
                 "heading": 288.99999999999926,
                 "type": "M6 Linebacker",
@@ -1655,7 +1655,7 @@
                 "y": -997880.72338529
             }
         ],
-        "RED Linebacker 500-3": [
+        "RED SAM Linebacker 500-3": [
             {
                 "heading": 288.99999999999926,
                 "type": "M6 Linebacker",
@@ -1693,7 +1693,7 @@
                 "y": -987447.6325117
             }
         ],
-        "RED Linebacker 500-4": [
+        "RED SAM Linebacker 500-4": [
             {
                 "heading": 288.99999999999926,
                 "type": "M6 Linebacker",
@@ -1731,7 +1731,7 @@
                 "y": -946854.57389128
             }
         ],
-        "RED Linebacker 500-5": [
+        "RED SAM Linebacker 500-5": [
             {
                 "heading": 288.99999999999926,
                 "type": "M6 Linebacker",
@@ -1769,7 +1769,7 @@
                 "y": -924129.77525681
             }
         ],
-        "RED Linebacker 500-6": [
+        "RED SAM Linebacker 500-6": [
             {
                 "heading": 0.0,
                 "type": "M6 Linebacker",
@@ -1807,7 +1807,7 @@
                 "y": -940752.62407212
             }
         ],
-        "RED NASAMS 502-1": [
+        "RED SAM NASAMS 502-1": [
             {
                 "heading": 0.0,
                 "type": "NASAMS_Command_Post",
@@ -1953,7 +1953,7 @@
                 "y": -947024.53719328
             }
         ],
-        "RED NASAMS 502-2": [
+        "RED SAM NASAMS 502-2": [
             {
                 "heading": 0.0,
                 "type": "NASAMS_Command_Post",
@@ -2099,7 +2099,7 @@
                 "y": -998076.93083703
             }
         ],
-        "RED NASAMS 502-3": [
+        "RED SAM NASAMS 502-3": [
             {
                 "heading": 0.0,
                 "type": "NASAMS_Command_Post",
@@ -2245,7 +2245,7 @@
                 "y": -987602.66936496
             }
         ],
-        "RED NASAMS 502-4": [
+        "RED SAM NASAMS 502-4": [
             {
                 "heading": 0.0,
                 "type": "NASAMS_Command_Post",
@@ -4143,7 +4143,7 @@
                 "y": -948763.23758133
             }
         ],
-        "RED Rapier 493-1": [
+        "RED SAM Rapier 493-1": [
             {
                 "heading": 0.0,
                 "type": "rapier_fsa_launcher",
@@ -4175,7 +4175,7 @@
                 "y": -936795.22167271
             }
         ],
-        "RED Rapier 506-1": [
+        "RED SAM Rapier 506-1": [
             {
                 "heading": 0.0,
                 "type": "rapier_fsa_launcher",
@@ -4207,7 +4207,7 @@
                 "y": -958597.43420726
             }
         ],
-        "RED Rapier 506-2": [
+        "RED SAM Rapier 506-2": [
             {
                 "heading": 0.0,
                 "type": "rapier_fsa_launcher",
@@ -4239,7 +4239,7 @@
                 "y": -956617.88550641
             }
         ],
-        "RED Rapier 506-3": [
+        "RED SAM Rapier 506-3": [
             {
                 "heading": 0.0,
                 "type": "rapier_fsa_launcher",
@@ -4271,7 +4271,7 @@
                 "y": -926819.01091001
             }
         ],
-        "RED Roland 508-1": [
+        "RED SAM Roland 508-1": [
             {
                 "heading": 0.0,
                 "type": "Roland ADS",
@@ -4291,7 +4291,7 @@
                 "y": -956289.9299828
             }
         ],
-        "RED Roland 508-2": [
+        "RED SAM Roland 508-2": [
             {
                 "heading": 323.9999999999984,
                 "type": "Roland ADS",
@@ -4311,7 +4311,7 @@
                 "y": -957057.20657964
             }
         ],
-        "RED Roland 508-3": [
+        "RED SAM Roland 508-3": [
             {
                 "heading": 323.9999999999984,
                 "type": "Roland ADS",
@@ -4331,7 +4331,7 @@
                 "y": -957024.67009575
             }
         ],
-        "RED Roland 508-4": [
+        "RED SAM Roland 508-4": [
             {
                 "heading": 0.0,
                 "type": "Roland ADS",

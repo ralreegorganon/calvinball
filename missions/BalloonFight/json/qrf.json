@@ -220,11 +220,11 @@
             "RED AIR DEFENSE BATTERY D 510-2",
             "RED AIR DEFENSE BATTERY D 510-3",
             "RED AIR DEFENSE BATTERY E 512-1",
-            "RED Avenger 494-1",
-            "RED Linebacker 500-2",
-            "RED Linebacker 500-3",
-            "RED NASAMS 502-2",
-            "RED NASAMS 502-3"
+            "RED SAM Avenger 494-1",
+            "RED SAM Linebacker 500-2",
+            "RED SAM Linebacker 500-3",
+            "RED SAM NASAMS 502-2",
+            "RED SAM NASAMS 502-3"
         ],
         "vertices": [
             {
@@ -259,7 +259,7 @@
         "vehicle_groups": [
             "RED AIR DEFENSE BATTERY D 497-3",
             "RED AIR DEFENSE BATTERY E 499-1",
-            "RED Chaparral 483-1"
+            "RED SAM Chaparral 483-1"
         ],
         "vertices": [
             {
@@ -293,9 +293,9 @@
         "vehicle_groups": [
             "RED AIR DEFENSE BATTERY D 510-6",
             "RED AIR DEFENSE BATTERY E 512-5",
-            "RED Chaparral 496-3",
-            "RED Linebacker 500-4",
-            "RED NASAMS 502-1"
+            "RED SAM Chaparral 496-3",
+            "RED SAM Linebacker 500-4",
+            "RED SAM NASAMS 502-1"
         ],
         "vertices": [
             {
@@ -329,11 +329,11 @@
         "vehicle_groups": [
             "RED AIR DEFENSE BATTERY D 510-5",
             "RED AIR DEFENSE BATTERY E 512-4",
-            "RED Chaparral 496-2",
-            "RED Linebacker 500-5",
-            "RED NASAMS 502-4",
-            "RED Rapier 506-3",
-            "RED Roland 508-4"
+            "RED SAM Chaparral 496-2",
+            "RED SAM Linebacker 500-5",
+            "RED SAM NASAMS 502-4",
+            "RED SAM Rapier 506-3",
+            "RED SAM Roland 508-4"
         ],
         "vertices": [
             {
@@ -367,11 +367,11 @@
         "vehicle_groups": [
             "RED AIR DEFENSE BATTERY D 510-4",
             "RED AIR DEFENSE BATTERY E 512-3",
-            "RED Rapier 506-1",
-            "RED Rapier 506-2",
-            "RED Roland 508-1",
-            "RED Roland 508-2",
-            "RED Roland 508-3"
+            "RED SAM Rapier 506-1",
+            "RED SAM Rapier 506-2",
+            "RED SAM Roland 508-1",
+            "RED SAM Roland 508-2",
+            "RED SAM Roland 508-3"
         ],
         "vertices": [
             {
@@ -404,8 +404,8 @@
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
-            "RED Avenger 494-3",
-            "RED Linebacker 500-6"
+            "RED SAM Avenger 494-3",
+            "RED SAM Linebacker 500-6"
         ],
         "vertices": [
             {
@@ -439,8 +439,8 @@
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [
-            "RED Avenger 494-2",
-            "RED Linebacker 500-1"
+            "RED SAM Avenger 494-2",
+            "RED SAM Linebacker 500-1"
         ],
         "vertices": [
             {

@@ -63,7 +63,7 @@
             "vehicle_groups": [
                 "RED AIR DEFENSE BATTERY D 497-4",
                 "RED AIR DEFENSE BATTERY E 499-2",
-                "RED Chaparral 483-2",
+                "RED SAM Chaparral 483-2",
                 "RED RG 501-1",
                 "RED RG 501-6"
             ],
@@ -165,7 +165,7 @@
             "tasks": [],
             "vehicle_groups": [
                 "RED AIR DEFENSE BATTERY E 512-2",
-                "RED Chaparral 496-1",
+                "RED SAM Chaparral 496-1",
                 "RED RG 514-13",
                 "RED RG 514-6",
                 "RED SAM Hawk 36",
@@ -356,7 +356,7 @@
                 "RED AIR DEFENSE BATTERY D 497-2",
                 "RED RG 501-4",
                 "RED RG 501-5",
-                "RED Rapier 493-1"
+                "RED SAM Rapier 493-1"
             ],
             "vertices": [
                 {
