@@ -3079,7 +3079,7 @@ local function initializeElint()
         MissionDb.elint.instance:systemOn()
         MissionDb.elint.instance:enableController() 
         MissionDb.elint.instance:enableText("all")
-        MissionDb.elint.instance:onScreenDebug(true)
+        MissionDb.elint.instance:onScreenDebug(false)
 
         MissionDb.elint.units = SET_UNIT:New():FilterAlive():FilterPrefixes("ELINT"):FilterCoalitions("blue"):FilterStart()
 

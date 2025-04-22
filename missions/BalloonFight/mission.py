@@ -590,7 +590,7 @@ class BalloonFightBlueAirwings(calvinball.blueairwing.BlueAirwings):
                         "initialInventory": 99,
                         "livery": "18th AGRS Arctic Splinter",
                         "loadouts": {
-                            "AIM-120C*2, AIM-9X*2, MK-82HD*6, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BOMBING }",
+                            "AIM-120C*2, AIM-9X*2, MK-84*2, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.BOMBING }",
                             "AIM-120C*2, AIM-9X*2, GBU-38*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.STRIKE }",
                             "AIM-120C*4, AIM-9X*2, FUEL*2, ECM": "{ AUFTRAG.Type.CAP }",
                             "AIM-120C*2, AIM-9X*2, AGM-65D*4, FUEL*2, ECM, TGP": "{ AUFTRAG.Type.CAS }",
