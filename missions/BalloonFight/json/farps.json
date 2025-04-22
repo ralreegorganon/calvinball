@@ -1,2 +1,13 @@
 {
+    "FARP-1": {
+        "clearScenery": "all",
+        "component": "farp",
+        "label": "FARP TEMP",
+        "radius": 137.16,
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicle_groups": [],
+        "x": -525188.78516044,
+        "y": -879104.51568112
+    }
 }

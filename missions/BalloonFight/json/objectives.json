@@ -166,15 +166,15 @@
             "vehicle_groups": [
                 "RED AIR DEFENSE BATTERY E 512-2",
                 "RED SAM Chaparral 496-1",
+                "RED RG 514-1",
                 "RED RG 514-13",
+                "RED RG 514-2",
                 "RED RG 514-6",
                 "RED SAM Hawk 36",
                 "RED SAM Hawk 37",
                 "RED SAM Hawk 38",
                 "RED SAM Patriot 12",
-                "RED SAM Patriot 13",
-                "RED RG 514-1",
-                "RED RG 514-2"
+                "RED SAM Patriot 13"
             ],
             "vertices": [
                 {
@@ -342,7 +342,8 @@
             },
             "qrfKillOnComplete": [],
             "qrfs": [
-                "QRF-3"
+                "QRF-3",
+                "QRF-9"
             ],
             "redAwacsZones": [
                 "RED AWACS ZONE-1"
@@ -380,16 +381,172 @@
             ],
             "x": -510428.0634434,
             "y": -937614.28572408
+        },
+        "OBJ-5": {
+            "airbases": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE-1"
+            ],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "OBJ TEMP",
+            "nodes": {},
+            "qrfKillOnComplete": [],
+            "qrfs": [],
+            "redAwacsZones": [
+                "RED AWACS ZONE-1"
+            ],
+            "reinforcements": [],
+            "roadbases": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED SAM Hawk 13"
+            ],
+            "vertices": [
+                {
+                    "x": -480271.33774839,
+                    "y": -862190.55395503
+                },
+                {
+                    "x": -404329.23807765,
+                    "y": -880524.13056649
+                },
+                {
+                    "x": -413891.14656897,
+                    "y": -916163.97130687
+                },
+                {
+                    "x": -484331.40233504,
+                    "y": -898386.46164104
+                }
+            ],
+            "x": -445705.78118251,
+            "y": -889316.27936736
+        },
+        "OBJ-6": {
+            "airbases": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE-1"
+            ],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [
+                "FARP-1"
+            ],
+            "label": "OBJ TEMP",
+            "nodes": {},
+            "qrfKillOnComplete": [],
+            "qrfs": [],
+            "redAwacsZones": [
+                "RED AWACS ZONE-1"
+            ],
+            "reinforcements": [],
+            "roadbases": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED SAM Patriot 15"
+            ],
+            "vertices": [
+                {
+                    "x": -530234.22634541,
+                    "y": -855766.15786709
+                },
+                {
+                    "x": -482986.84961307,
+                    "y": -866676.0066762
+                },
+                {
+                    "x": -485821.69221701,
+                    "y": -896914.32778489
+                },
+                {
+                    "x": -530320.13066674,
+                    "y": -870885.31842144
+                }
+            ],
+            "x": -507340.72471056,
+            "y": -872560.4526874
+        },
+        "OBJ-7": {
+            "airbases": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE-1"
+            ],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "OBJ TEMP",
+            "nodes": {},
+            "qrfKillOnComplete": [],
+            "qrfs": [],
+            "redAwacsZones": [
+                "RED AWACS ZONE-1"
+            ],
+            "reinforcements": [],
+            "roadbases": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-2",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED EWR 301",
+                "RED EWR 302",
+                "RED SAM Patriot 1",
+                "RED SAM Patriot 2",
+                "RED SAM Patriot 3",
+                "RED SAM Patriot 4",
+                "RED SAM Patriot 5",
+                "RED SAM Patriot 8"
+            ],
+            "vertices": [
+                {
+                    "x": -528582.74064103,
+                    "y": -765632.04522775
+                },
+                {
+                    "x": -229262.53687316,
+                    "y": -841120.9439528
+                },
+                {
+                    "x": -336260.18884891,
+                    "y": -895870.20648968
+                },
+                {
+                    "x": -528360.41084157,
+                    "y": -850562.02862216
+                }
+            ],
+            "x": -405616.46930117,
+            "y": -838296.3060731
         }
     },
     "strands": {
         "STRAND-1": [
             "OBJ-4",
-            "OBJ-1"
+            "OBJ-1",
+            "OBJ-6"
         ],
         "STRAND-2": [
             "OBJ-3",
-            "OBJ-2"
+            "OBJ-2",
+            "OBJ-5",
+            "OBJ-7"
         ]
     }
 }
