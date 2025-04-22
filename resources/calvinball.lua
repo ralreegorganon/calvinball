@@ -2087,11 +2087,16 @@ local function startObjective(objective)
 
                 local sceneryTargetZoneNames = taskZone:GetProperty("sceneryTargetZoneNames")
                 if sceneryTargetZoneNames ~= "" then
+                    local scenerySet = SET_SCENERY:New()
                     local zones = UTILS.Split(sceneryTargetZoneNames, ",")
                     for _, zoneName in ipairs(zones) do
-                        local set = SET_SCENERY:NewFromZone(zoneName)
-                        table.insert(possibleSets, set)
+                        local scenery = SCENERY:FindByZoneName(zoneName)
+                        if scenery then
+                            scenerySet:AddScenery(scenery)
+                        end
                     end
+
+                    table.insert(possibleSets, scenerySet)
                 end
 
                 local target = TARGET:New(possibleSets[1])

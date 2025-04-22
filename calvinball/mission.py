@@ -398,7 +398,16 @@ class Mission:
                 if "radius" in unclassified:
                     self.m.triggers.add_triggerzone(p, unclassified["radius"], name=unclassified_name)
                 if "vertices" in unclassified:
-                    self.m.triggers.add_triggerzone_quad(p, [dcs.mapping.Point(v["x"], v["y"], self.m.terrain) for v in unclassified["vertices"]], name=unclassified_name)
+                    props = {}
+                    if "objectid" in unclassified:
+                        props_a = [
+                            {"key": "ROLE", "value": unclassified["role"]},
+                            {"key": "VALUE", "value": unclassified["value"]},
+                            {"key": "OBJECT ID", "value": unclassified["objectid"]},
+                            {"key": "NAME", "value": unclassified["name"]},
+                        ]
+                        props = {k+1: v for k, v in enumerate(props_a)}
+                    self.m.triggers.add_triggerzone_quad(p, [dcs.mapping.Point(v["x"], v["y"], self.m.terrain) for v in unclassified["vertices"]], name=unclassified_name, properties=props)
 
     def __qrfs(self):
         with open(self.qrfs_json_path) as json_file:

@@ -37,9 +37,9 @@ MissionDb = {
 			vehicleGroups = {
 				{ name = "RED AIR DEFENSE BATTERY D 497-4" },
 				{ name = "RED AIR DEFENSE BATTERY E 499-2" },
-				{ name = "RED SAM Chaparral 483-2" },
 				{ name = "RED RG 501-1" },
 				{ name = "RED RG 501-6" },
+				{ name = "RED SAM Chaparral 483-2" },
 			},
 			shipGroups = {
 			},
@@ -172,11 +172,11 @@ MissionDb = {
 			},
 			vehicleGroups = {
 				{ name = "RED AIR DEFENSE BATTERY E 512-2" },
-				{ name = "RED SAM Chaparral 496-1" },
 				{ name = "RED RG 514-1" },
 				{ name = "RED RG 514-13" },
 				{ name = "RED RG 514-2" },
 				{ name = "RED RG 514-6" },
+				{ name = "RED SAM Chaparral 496-1" },
 				{ name = "RED SAM Hawk 36" },
 				{ name = "RED SAM Hawk 37" },
 				{ name = "RED SAM Hawk 38" },
@@ -634,6 +634,17 @@ MissionDb = {
 				{ name = "NODE-3", redSurrenderThreshold = 1, blueCaptureThreshold = 0 },
 			},
 			tasks = {
+				{
+					name = "TASK-1",
+					completeSound = "",
+					auftrag = "BOMBING",
+					vehicleGroups = {
+					},
+					shipGroups = {
+					},
+					staticGroups = {
+					}
+				},
 			},
 			farps = {
 			},

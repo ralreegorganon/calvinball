@@ -300,11 +300,23 @@ def get_unclassified_zones(m: dcs.Mission):
     for z in m.triggers.zones():
         label = None
         component = None
+        role = None
+        value = None
+        objectid = None
+        name = None
         for v in z.properties.values():
             if(v["key"] == "label"):
                 label = v["value"]
             if(v["key"] == "component"):
                 component = v["value"]
+            if(v["key"] == "ROLE"):
+                role = v["value"]
+            if(v["key"] == "VALUE"):
+                value = v["value"]
+            if(v["key"] == "OBJECT ID"):
+                objectid = v["value"]
+            if(v["key"] == "NAME"):
+                name = v["value"]
         
         if(component == None and isinstance(z, dcs.triggers.TriggerZoneCircular)):
             zones[z.name] = { "x": z.position.x, "y": z.position.y, "radius": z.radius }
@@ -313,8 +325,14 @@ def get_unclassified_zones(m: dcs.Mission):
             zones[z.name] = { 
                 "x": z.position.x,
                 "y": z.position.y,
-                "vertices": [{"x": v.x, "y": v.y } for v in z.verticies]
+                "vertices": [{"x": v.x, "y": v.y } for v in z.verticies],
             }
+            # for the "assign as" target zones
+            if objectid != None:
+                zones[z.name]["role"] = role
+                zones[z.name]["value"] = value
+                zones[z.name]["objectid"] = objectid
+                zones[z.name]["name"] = name
 
     return zones
 

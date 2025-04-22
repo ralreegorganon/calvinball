@@ -1,2 +1,52 @@
 {
+    "TASK-1": {
+        "auftrag": "BOMBING",
+        "completeSound": "",
+        "component": "task",
+        "description": "Do some shit.",
+        "groupTargetNameContains": "",
+        "label": "Disable Factories",
+        "sceneryTargetZoneNames": [
+            "industrial_eu_04",
+            "industrial_eu_04-1",
+            "safshungar02",
+            "safshungar02-1",
+            "silo_01",
+            "silo_01-1",
+            "silo_01-2",
+            "silo_02",
+            "silo_02-1",
+            "silo_03",
+            "silo_03-1",
+            "silo_03-2",
+            "silo_03-3",
+            "silo_03-4",
+            "silo_03-5"
+        ],
+        "ship_groups": [],
+        "staticTargetNameContains": "",
+        "static_groups": [],
+        "targetUnitTypes": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -532770.46443496,
+                "y": -901896.77378253
+            },
+            {
+                "x": -532761.94894918,
+                "y": -901788.91096273
+            },
+            {
+                "x": -532669.6978533,
+                "y": -901790.33021036
+            },
+            {
+                "x": -532665.44011041,
+                "y": -901891.09679201
+            }
+        ],
+        "x": -532716.88783696,
+        "y": -901841.77793691
+    }
 }
