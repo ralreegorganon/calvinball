@@ -95,7 +95,7 @@ class BalloonFightClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.MB_339A, "count": 2, "parking": [23, 128], "fuel": 1, "loadout": "Empty", "livery": "MB339AN 'NIGERIA'" },
                     { "airframe": dcs.planes.MiG_19P, "count": 2, "parking": [79, 75], "fuel": 1, "loadout": "Empty", "livery": "DDR - Fictional" },
                     { "airframe": dcs.planes.MiG_21Bis, "count": 6, "parking": [74, 72, 82, 184, 90, 183], "fuel": 1, "loadout": "Empty", "livery": "HuAF 31st AB (Turul Sqn)" },
-                    { "airframe": dcs.planes.MiG_29S, "count": 2, "parking": [52, 171], "fuel": 1, "loadout": "Empty", "livery": "MB339AN 'NIGERIA'" },
+                    { "airframe": dcs.planes.MiG_29S, "count": 2, "parking": [52, 171], "fuel": 1, "loadout": "Empty", "livery": "MB339AN 'NIGERIA'", "start_type": dcs.mission.StartType.Cold  },
                     { "airframe": dcs.planes.Mirage_F1EE, "count": 4, "parking": [25, 129, 27, 136], "fuel": 1, "loadout": "Empty", "livery": "USA AGGRESSOR Colour (CE)" },
                     { "airframe": dcs.planes.P_51D_30_NA, "count": 2, "parking": [96, 66], "fuel": 1, "loadout": "Empty", "livery": "Ukraine Modern" },
                     { "airframe": dcs.planes.Su_25, "count": 4, "parking": [114, 103, 35, 140], "fuel": 1, "loadout": "Empty", "livery": "petal camo scheme #1 (native). 299th brigade", "start_type": dcs.mission.StartType.Cold },
