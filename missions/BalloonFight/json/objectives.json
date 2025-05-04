@@ -445,8 +445,33 @@
             "farps": [
                 "FARP-1"
             ],
-            "label": "OBJ TEMP",
-            "nodes": {},
+            "label": "Eastbound & Down",
+            "nodes": {
+                "NODE-18": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Walldorf",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -526511.00346964,
+                    "y": -860543.93859707
+                },
+                "NODE-19": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Hockenheim",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -522851.27149807,
+                    "y": -869603.82956507
+                },
+                "NODE-20": {
+                    "blueCaptureThreshold": "0",
+                    "label": "Herrenteich",
+                    "radius": 359.9688,
+                    "redSurrenderThreshold": "1",
+                    "x": -520032.89408208,
+                    "y": -872042.89768487
+                }
+            },
             "qrfKillOnComplete": [],
             "qrfs": [],
             "redAwacsZones": [
@@ -457,30 +482,30 @@
             "ship_groups": [],
             "static_groups": [],
             "strand": "STRAND-1",
-            "tasks": [],
-            "vehicle_groups": [
-                "RED SAM Patriot 15"
+            "tasks": [
+                "TASK-2"
             ],
+            "vehicle_groups": [],
             "vertices": [
                 {
-                    "x": -530234.22634541,
-                    "y": -855766.15786709
+                    "x": -530104.78021534,
+                    "y": -851171.62540436
                 },
                 {
-                    "x": -482986.84961307,
-                    "y": -866676.0066762
+                    "x": -506885.5508548,
+                    "y": -857088.84013247
                 },
                 {
-                    "x": -485821.69221701,
-                    "y": -896914.32778489
+                    "x": -509861.18568278,
+                    "y": -882894.8412664
                 },
                 {
-                    "x": -530320.13066674,
-                    "y": -870885.31842144
+                    "x": -530812.98132437,
+                    "y": -872282.76322576
                 }
             ],
-            "x": -507340.72471056,
-            "y": -872560.4526874
+            "x": -519416.12451932,
+            "y": -865859.51750725
         },
         "OBJ-7": {
             "airbases": [],
@@ -536,13 +561,62 @@
             ],
             "x": -405616.46930117,
             "y": -838296.3060731
+        },
+        "OBJ-8": {
+            "airbases": [],
+            "blueAwacsZones": [
+                "BLUE AWACS ZONE-1"
+            ],
+            "borderZones": [],
+            "capZones": [],
+            "carriers": [],
+            "completeSound": "",
+            "component": "objective",
+            "farps": [],
+            "label": "OBJ TEMP",
+            "nodes": {},
+            "qrfKillOnComplete": [],
+            "qrfs": [],
+            "redAwacsZones": [
+                "RED AWACS ZONE-1"
+            ],
+            "reinforcements": [],
+            "roadbases": [],
+            "ship_groups": [],
+            "static_groups": [],
+            "strand": "STRAND-1",
+            "tasks": [],
+            "vehicle_groups": [
+                "RED SAM Patriot 15"
+            ],
+            "vertices": [
+                {
+                    "x": -506712.02076385,
+                    "y": -857027.40313626
+                },
+                {
+                    "x": -481036.965205,
+                    "y": -862772.87011446
+                },
+                {
+                    "x": -485211.40605635,
+                    "y": -898726.925189
+                },
+                {
+                    "x": -510527.36992906,
+                    "y": -894058.73326921
+                }
+            ],
+            "x": -495871.94048856,
+            "y": -878146.48292723
         }
     },
     "strands": {
         "STRAND-1": [
             "OBJ-4",
             "OBJ-1",
-            "OBJ-6"
+            "OBJ-6",
+            "OBJ-8"
         ],
         "STRAND-2": [
             "OBJ-3",

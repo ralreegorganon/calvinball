@@ -103,6 +103,51 @@ class BalloonFightClients(calvinball.clients.Clients):
                     { "airframe": dcs.planes.Su_27, "count": 2, "parking": [132, 55], "fuel": 1, "loadout": "Empty", "livery": "Air Force Standard old", "start_type": dcs.mission.StartType.Cold },
                     { "airframe": dcs.planes.Su_33, "count": 2, "parking": [181, 26], "fuel": 1, "loadout": "Empty", "livery": "t-10k-9 test paint scheme", "start_type": dcs.mission.StartType.Cold }
                 ]
+            },
+            {
+                "country": m.country(dcs.countries.CombinedJointTaskForcesBlue.name),
+                "farp": "FARP Puhdys",
+                "farp_zone": "FARP-1",
+                "start_type": dcs.mission.StartType.Warm,
+                "airframes": [
+                    {
+                        "airframe": dcs.helicopters.Mi_24P, "fuel": 0.6, "loadout": "Empty", "livery": "Ukrainian Army Aviation",
+                        "positions": [{"heading": 135, "x": -525096.28686341, "y": -879182.91853331}, {"heading": 141, "x": -525079.22921661, "y": -879158.01829028}, {"heading": 162, "x": -525068.8377766, "y": -879125.07938611}, {"heading": 182, "x": -525067.26925735, "y": -879096.25784496}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.Mi_8MT, "fuel": 0.6, "loadout": "Empty", "livery": "Algerian AF Green EVSAN",
+                        "positions": [{"heading": 116, "x": -525118.97542608, "y": -879200.05410454}, {"heading": 119, "x": -525148.168514, "y": -879210.53522819}, {"heading": 106, "x": -525178.65194791, "y": -879217.76461429}, {"heading": 72, "x": -525213.05242683, "y": -879215.26924276}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.UH_1H, "fuel": 0.6, "loadout": "Empty", "livery": "US ARMY 1972",
+                        "positions": [{"heading": 247, "x": -525139.9667516, "y": -878985.25952122}, {"heading": 255, "x": -525155.94404962, "y": -878979.2208574}, {"heading": 251, "x": -525173.4310136, "y": -878977.58538595}, {"heading": 257, "x": -525193.47264579, "y": -878977.83699694}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.AH_64D_BLK_II, "fuel": 0.6, "loadout": "Empty", "livery": "JGSDF——1st_Combat_Helicopter_Unit",
+                        "positions": [{"heading": 63, "x": -525240.76709246, "y": -879207.30900759}, {"heading": 45, "x": -525265.07893386, "y": -879191.49842293}, {"heading": 40, "x": -525288.21479966, "y": -879170.42919881}, {"heading": 30, "x": -525303.5274688, "y": -879142.17624589}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.SA342L, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet 2",
+                        "positions": [{"heading": 225, "x": -525089.2285268, "y": -879022.92957021}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.SA342M, "fuel": 0.6, "loadout": "Empty", "livery": "Tiger Meet",
+                        "positions": [{"heading": 234, "x": -525105.30584907, "y": -879007.63650756}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.Ka_50_3, "fuel": 0.6, "loadout": "Empty", "livery": "Ka-50_desert_werewolf",
+                        "positions": [{"heading": 208, "x": -525068.24958188, "y": -879065.27958985}, {"heading": 212, "x": -525077.26856755, "y": -879042.73212569}],
+                        "properties": { dcs.helicopters.Ka_50_3.Properties.Realistic_INS.id: dcs.helicopters.Ka_50_3.Properties.Realistic_INS.Values.No_alignment_and_fixtaking_needed }
+                    },
+                    {
+                        "airframe": dcs.helicopters.OH58D, "fuel": 0.6, "loadout": "Empty", "livery": "AUS Army Fictional", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading": 10, "x": -525312.21450729, "y": -879111.56083862}, {"heading": 333, "x": -525309.89967444, "y": -879081.52583691}, {"heading": 324, "x": -525302.08020687, "y": -879055.52610725}, {"heading": 322, "x": -525288.00516525, "y": -879028.54894415}]
+                    },
+                    {
+                        "airframe": dcs.helicopters.CH_47Fbl1, "fuel": 0.6, "loadout": "Empty", "livery": "Turkish Land Forces", "start_type": dcs.mission.StartType.Warm,
+                        "positions": [{"heading": 314, "x": -525272.97047051, "y": -879017.06610045}, {"heading": 305, "x": -525252.82872594, "y": -879001.51108979}, {"heading": 299, "x": -525233.39254605, "y": -878990.50619517}, {"heading": 289, "x": -525211.72644286, "y": -878981.93195008}]
+                    },
+                ]
             }
         ]
 

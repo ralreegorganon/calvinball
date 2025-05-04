@@ -3,25 +3,14 @@
         "auftrag": "BOMBING",
         "completeSound": "",
         "component": "task",
-        "description": "Do some shit.",
+        "description": "Destroy all the buildings with smokestacks in the designated area.",
         "groupTargetNameContains": "",
         "label": "Disable Factories",
         "sceneryTargetZoneNames": [
             "industrial_eu_04",
             "industrial_eu_04-1",
             "safshungar02",
-            "safshungar02-1",
-            "silo_01",
-            "silo_01-1",
-            "silo_01-2",
-            "silo_02",
-            "silo_02-1",
-            "silo_03",
-            "silo_03-1",
-            "silo_03-2",
-            "silo_03-3",
-            "silo_03-4",
-            "silo_03-5"
+            "safshungar02-1"
         ],
         "ship_groups": [],
         "staticTargetNameContains": "",
@@ -48,5 +37,43 @@
         ],
         "x": -532716.88783696,
         "y": -901841.77793691
+    },
+    "TASK-2": {
+        "auftrag": "BOMBING",
+        "completeSound": "",
+        "component": "task",
+        "description": "Destroy the indicated buildings.",
+        "groupTargetNameContains": "",
+        "label": "Destroy Train Depot",
+        "sceneryTargetZoneNames": [
+            "train_depot_eu",
+            "train_depot_arc_01-1",
+            "train_depot_arc_01"
+        ],
+        "ship_groups": [],
+        "staticTargetNameContains": "",
+        "static_groups": [],
+        "targetUnitTypes": [],
+        "vehicle_groups": [],
+        "vertices": [
+            {
+                "x": -517004.36403337,
+                "y": -864713.17625816
+            },
+            {
+                "x": -516995.84854759,
+                "y": -864605.31343836
+            },
+            {
+                "x": -516903.59745171,
+                "y": -864606.73268599
+            },
+            {
+                "x": -516899.33970882,
+                "y": -864707.49926764
+            }
+        ],
+        "x": -516950.78743537,
+        "y": -864658.18041254
     }
 }
