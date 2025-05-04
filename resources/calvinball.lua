@@ -2004,6 +2004,7 @@ local function startObjective(objective)
             local taskAuftrag = taskZone:GetProperty("auftrag")
             local taskDescription = taskZone:GetProperty("description")
             task.label = taskLabel
+            task.drawZones = {}
 
             -- Might consider FilterZones, but it only works for active units
             -- local targSet = SET_GROUP:New():FilterZones({taskZone}):FilterCoalitions("red"):FilterPrefixes(taskTargetNameContains):FilterOnce()
@@ -2093,6 +2094,10 @@ local function startObjective(objective)
                         local scenery = SCENERY:FindByZoneName(zoneName)
                         if scenery then
                             scenerySet:AddScenery(scenery)
+
+                            table.insert(task.drawZones, zoneName)
+                            local sceneryZone = ZONE:FindByName(zoneName)
+                            sceneryZone:DrawZone(-1, {1,0,0}, 1, {1,0,0}, 0.15, 3, true)
                         end
                     end
 
@@ -2120,6 +2125,10 @@ local function startObjective(objective)
                     task.state = "finished"
                     checkObjectiveCapture(objective)
                     saveState()
+                    for _, zoneName in ipairs(task.drawZones) do
+                        local drawZone = ZONE:FindByName(zoneName)
+                        drawZone:UndrawZone()
+                    end
                 end
 
                 MissionDb.strandtasks.instance:AddPlayerTaskToQueue(task.instance)
