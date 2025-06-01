@@ -909,7 +909,7 @@ local function enemyReinforceZone(targetZoneName)
         end
     end
 
-    if closestQrf ~= nil then
+    if closestQrf ~= nil and closestQrfDistance < 40000 then
         local qrfZone = ZONE:FindByName(closestQrf.name)
         local sg = closestQrf.spawnGroups[math.random(#closestQrf.spawnGroups)]
         local g = SPAWN:NewWithAlias(sg.name, string.format("%s-%d", sg.name, math.random(1,100000))):SpawnInZone(qrfZone, true)
@@ -979,7 +979,7 @@ local function friendlyReinforceZone(targetZoneName)
         end
     end
 
-    if closestReinforcement ~= nil then
+    if closestReinforcement ~= nil and closestReinforcementDistance <  40000  then
         local reinforcementZone = ZONE:FindByName(closestReinforcement.name)
         local sg = closestReinforcement.spawnGroups[math.random(#closestReinforcement.spawnGroups)]
         local g = SPAWN:NewWithAlias(sg.name, string.format("%s-%d", sg.name, math.random(1,100000))):SpawnInZone(reinforcementZone, true)
