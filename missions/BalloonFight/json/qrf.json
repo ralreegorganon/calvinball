@@ -201,25 +201,6 @@
         "label": "Industry Target",
         "ship_groups": [],
         "static_groups": [
-            "INDUSTRYTARGET-2",
-            "INDUSTRYTARGET-7",
-            "INDUSTRYTARGET-13",
-            "INDUSTRYTARGET-16",
-            "INDUSTRYTARGET-85",
-            "INDUSTRYTARGET-86",
-            "INDUSTRYTARGET-87",
-            "INDUSTRYTARGET-88",
-            "INDUSTRYTARGET-89",
-            "INDUSTRYTARGET-90",
-            "INDUSTRYTARGET-91",
-            "INDUSTRYTARGET-92",
-            "INDUSTRYTARGET-93",
-            "INDUSTRYTARGET-94",
-            "INDUSTRYTARGET-95",
-            "INDUSTRYTARGET-96",
-            "INDUSTRYTARGET-97",
-            "INDUSTRYTARGET-98",
-            "INDUSTRYTARGET-99",
             "INDUSTRYTARGET-100",
             "INDUSTRYTARGET-101",
             "INDUSTRYTARGET-102",
@@ -250,6 +231,7 @@
             "INDUSTRYTARGET-127",
             "INDUSTRYTARGET-128",
             "INDUSTRYTARGET-129",
+            "INDUSTRYTARGET-13",
             "INDUSTRYTARGET-130",
             "INDUSTRYTARGET-131",
             "INDUSTRYTARGET-132",
@@ -279,7 +261,25 @@
             "INDUSTRYTARGET-156",
             "INDUSTRYTARGET-157",
             "INDUSTRYTARGET-158",
-            "INDUSTRYTARGET-159"
+            "INDUSTRYTARGET-159",
+            "INDUSTRYTARGET-16",
+            "INDUSTRYTARGET-2",
+            "INDUSTRYTARGET-7",
+            "INDUSTRYTARGET-85",
+            "INDUSTRYTARGET-86",
+            "INDUSTRYTARGET-87",
+            "INDUSTRYTARGET-88",
+            "INDUSTRYTARGET-89",
+            "INDUSTRYTARGET-90",
+            "INDUSTRYTARGET-91",
+            "INDUSTRYTARGET-92",
+            "INDUSTRYTARGET-93",
+            "INDUSTRYTARGET-94",
+            "INDUSTRYTARGET-95",
+            "INDUSTRYTARGET-96",
+            "INDUSTRYTARGET-97",
+            "INDUSTRYTARGET-98",
+            "INDUSTRYTARGET-99"
         ],
         "vehicleQrfTemplates": [],
         "vehicle_groups": [],
@@ -303,6 +303,40 @@
         ],
         "x": -514468.28234451,
         "y": -896261.24293888
+    },
+    "QRF-11": {
+        "component": "qrf",
+        "label": "",
+        "ship_groups": [],
+        "static_groups": [],
+        "vehicleQrfTemplates": [
+            "RED QRF 1",
+            "RED QRF 2"
+        ],
+        "vehicle_groups": [
+            "RED QRF 1",
+            "RED QRF 2"
+        ],
+        "vertices": [
+            {
+                "x": -506900.54252534,
+                "y": -858735.16689404
+            },
+            {
+                "x": -507069.05824336,
+                "y": -858741.15856401
+            },
+            {
+                "x": -507082.16502142,
+                "y": -858845.63830918
+            },
+            {
+                "x": -506910.27898905,
+                "y": -858844.14039169
+            }
+        ],
+        "x": -506990.51119479,
+        "y": -858791.52603973
     },
     "QRF-2": {
         "component": "qrf",

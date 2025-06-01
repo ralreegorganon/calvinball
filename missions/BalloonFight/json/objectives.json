@@ -94,7 +94,9 @@
                 "BLUE AWACS ZONE-1"
             ],
             "borderZones": [],
-            "capZones": [],
+            "capZones": [
+                "CAP-1"
+            ],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -316,9 +318,7 @@
                 "BLUE AWACS ZONE-1"
             ],
             "borderZones": [],
-            "capZones": [
-                "CAP-1"
-            ],
+            "capZones": [],
             "carriers": [],
             "completeSound": "",
             "component": "objective",
@@ -470,13 +470,14 @@
                     "label": "Herrenteich",
                     "radius": 359.9688,
                     "redSurrenderThreshold": "1",
-                    "x": -520032.89408208,
-                    "y": -872042.89768487
+                    "x": -519916.78971431,
+                    "y": -872076.19231975
                 }
             },
             "qrfKillOnComplete": [],
             "qrfs": [
-                "QRF-10"
+                "QRF-10",
+                "QRF-11"
             ],
             "redAwacsZones": [
                 "RED AWACS ZONE-1"
@@ -489,7 +490,15 @@
             "tasks": [
                 "TASK-2"
             ],
-            "vehicle_groups": [],
+            "vehicle_groups": [
+                "RED AIR DEFENSE BATTERY E 499-3",
+                "RED AIR DEFENSE BATTERY D 497-5",
+                "RED SAM Chaparral 483-3",
+                "RED AIR DEFENSE BATTERY E 499-4",
+                "RED RG 501-2",
+                "RED RG 501-3",
+                "RED RG 501-7"
+            ],
             "vertices": [
                 {
                     "x": -530104.78021534,
