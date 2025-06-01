@@ -1,4 +1,4 @@
-MissionDb.enableConvoys = false
+MissionDb.enableConvoys = true
 MissionDb.enableElint = true
 
 MissionDb.redchief.strategicZoneResources.defaultEmptyFunc = function(chief)
