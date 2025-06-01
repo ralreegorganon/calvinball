@@ -98,7 +98,9 @@
             "carriers": [],
             "completeSound": "",
             "component": "objective",
-            "farps": [],
+            "farps": [
+                "FARP-2"
+            ],
             "label": "Drive Down Uber Alley",
             "nodes": {
                 "NODE-12": {
@@ -473,7 +475,9 @@
                 }
             },
             "qrfKillOnComplete": [],
-            "qrfs": [],
+            "qrfs": [
+                "QRF-10"
+            ],
             "redAwacsZones": [
                 "RED AWACS ZONE-1"
             ],
