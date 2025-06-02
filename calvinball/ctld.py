@@ -80,6 +80,12 @@ class Ctld:
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD MLRS", dcs.vehicles.Artillery.MLRS, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
         self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD M-109", dcs.vehicles.Artillery.M_109, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
 
+        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD BLUE RECCE JTAC MRAP", dcs.vehicles.Armor.MaxxPro_MRAP, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
+        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD ZBD-04A", dcs.vehicles.Armor.ZBD04A, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
+        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD Leclerc", dcs.vehicles.Armor.Leclerc, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
+        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD Dana", dcs.vehicles.Artillery.SpGH_Dana, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
+        self.__drive(m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "CTLD L118", dcs.vehicles.Artillery.L118_Unit, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1)).late_activation = True
+
         # CSAR required group
         m.vehicle_group(m.country(dcs.countries.CombinedJointTaskForcesBlue.name), "Downed Pilot", dcs.vehicles.Infantry.Soldier_M4, dcs.mapping.Point(180657, -39472, m.terrain), group_size=1).late_activation = True
 
